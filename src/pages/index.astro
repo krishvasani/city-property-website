@@ -87,7 +87,7 @@ const mapPins = localities
       </div>
       <div class="loc-split">
         <div class="loc-list">
-          {localities.slice(0, 5).map((l) => (
+          {localities.filter((l) => l.blurb).slice(0, 5).map((l) => (
             <a class="loc-item" href={`/buy?locality=${l.slug}`}>
               <div><div class="nm">{l.name}</div><div class="c">{l.blurb}</div></div>
               <span class="arr">→</span>
