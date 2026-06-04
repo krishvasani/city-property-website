@@ -1,0 +1,28 @@
+---
+import Icon from './Icon.astro';
+import { telUrl, contact } from '../lib/config';
+
+interface Props {
+  label?: string;
+  number?: string;
+  variant?: 'primary' | 'secondary' | 'ghost';
+  block?: boolean;
+  size?: 'sm' | 'lg' | '';
+  class?: string;
+}
+const {
+  label = 'Call',
+  number = contact.phone,
+  variant = 'secondary',
+  block = false,
+  size = 'sm',
+  class: className,
+} = Astro.props;
+---
+<a
+  class:list={['btn', `btn-${variant}`, size && `btn-${size}`, { 'btn-block': block }, className]}
+  href={telUrl(number)}
+>
+  <Icon name="phone" sw={1.7} style="width:16px;height:16px;" />
+  {label}
+</a>

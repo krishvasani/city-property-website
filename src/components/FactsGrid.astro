@@ -1,0 +1,19 @@
+---
+import Icon from './Icon.astro';
+import { factsFor } from '../lib/format';
+import type { Property } from '../lib/types';
+import type { IconName } from '../lib/icons';
+
+interface Props { property: Property; }
+const { property } = Astro.props;
+const facts = factsFor(property);
+---
+<div class="facts" data-stagger>
+  {facts.map((f) => (
+    <div class="fact">
+      <span class="ic"><Icon name={f.icon as IconName} /></span>
+      <span class="v">{f.value}</span>
+      <span class="k">{f.key}</span>
+    </div>
+  ))}
+</div>

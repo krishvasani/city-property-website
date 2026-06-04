@@ -1,0 +1,20 @@
+---
+import Icon from './Icon.astro';
+import type { IconName } from '../lib/icons';
+
+interface Props {
+  icon: IconName;
+  title: string;
+  count: string;
+  href: string;
+  active?: boolean;
+}
+const { icon, title, count, href, active = false } = Astro.props;
+---
+<a class:list={['type-tile', { 'is-active': active }]} href={href}>
+  <span class="ic"><Icon name={icon} sw={1.7} /></span>
+  <div>
+    <div class="t">{title}</div>
+    <div class="c">{count}</div>
+  </div>
+</a>

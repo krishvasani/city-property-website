@@ -1,0 +1,19 @@
+---
+interface Props {
+  display: string; // final rendered text, e.g. "3,000+"
+  count?: number; // animate to this value
+  suffix?: string;
+  dec?: number;
+  label: string;
+}
+const { display, count, suffix, dec, label } = Astro.props;
+---
+<div class="stat">
+  <span
+    class="n"
+    data-count={count}
+    data-suffix={suffix}
+    data-dec={dec}
+  >{display}</span>
+  <span class="l">{label}</span>
+</div>

@@ -1,0 +1,202 @@
+---
+import Base from '../layouts/Base.astro';
+import SearchBar from '../components/SearchBar.astro';
+import Stat from '../components/Stat.astro';
+import TypeTile from '../components/TypeTile.astro';
+import PropertyCard from '../components/PropertyCard.astro';
+import AgentCard from '../components/AgentCard.astro';
+import Map from '../components/Map.astro';
+import { getFeatured, getAgents, getLocalities } from '../lib/data';
+import { whatsappUrl } from '../lib/config';
+
+const featured = await getFeatured(3);
+const agents = await getAgents();
+const localities = await getLocalities();
+
+const types = [
+  { icon: 'residential' as const, title: 'Residential', count: '1,240 listings', type: 'residential' },
+  { icon: 'commercial' as const, title: 'Commercial', count: '560 listings', type: 'commercial' },
+  { icon: 'land' as const, title: 'Land & plots', count: '310 listings', type: 'land' },
+  { icon: 'industrial' as const, title: 'Industrial', count: '180 listings', type: 'industrial' },
+  { icon: 'warehousing' as const, title: 'Warehousing', count: '95 listings', type: 'warehousing' },
+];
+
+const mapPins = localities
+  .filter((l) => l.mapPos)
+  .map((l, i) => ({ label: l.name, pos: l.mapPos, geo: l.geo, active: i === 0 }));
+
+const advisorWa = whatsappUrl('Hi, I’d like to talk to an advisor about a property.');
+---
+<Base title="City Property Services — Property in Ahmedabad" active="buy" navGhost="signin">
+  <main>
+    <!-- HERO -->
+    <section class="hero wrap-wide hero-anim">
+      <div class="eyebrow">Ahmedabad · Gujarat</div>
+      <h1 class="display" style="margin:16px auto 0;">Find your place in the city.</h1>
+      <p class="hero-sub body-lg muted">From a first home in Satellite to a warehouse on the Ring Road, City Property Services guides buyers, renters and investors across every corner of Ahmedabad.</p>
+
+      <SearchBar />
+
+      <div class="hero-stats">
+        <Stat display="3,000+" count={3000} suffix="+" label="Properties listed" />
+        <Stat display="12 yrs" count={12} suffix=" yrs" label="In Ahmedabad" />
+        <Stat display="4.9★" count={4.9} dec={1} suffix="★" label="Client rating" />
+      </div>
+
+      <div class="hero-art" data-parallax>
+        <img src="/logo/hero-ahmedabad-skyline.jpg" alt="Ahmedabad skyline — modern towers on SG Highway" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- PROPERTY TYPES -->
+    <section class="section wrap-wide reveal">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Browse by category</div>
+          <h2 style="margin-top:10px;">Every kind of space</h2>
+          <p>Full-spectrum advisory across the city — pick a category to begin.</p>
+        </div>
+      </div>
+      <div class="types" data-stagger>
+        {types.map((t, i) => (
+          <TypeTile icon={t.icon} title={t.title} count={t.count} href={`/listings?type=${t.type}`} active={i === 0} />
+        ))}
+      </div>
+    </section>
+
+    <!-- FEATURED LISTINGS -->
+    <section class="section wrap-wide reveal">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Handpicked</div>
+          <h2 style="margin-top:10px;">Featured properties</h2>
+          <p>A curated set our advisors think you’ll love this week.</p>
+        </div>
+        <a class="btn btn-secondary" href="/listings">View all listings →</a>
+      </div>
+      <div class="cards" data-stagger>
+        {featured.map((p) => <PropertyCard property={p} />)}
+      </div>
+    </section>
+
+    <!-- LOCALITIES -->
+    <section class="section wrap-wide reveal">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Where to live</div>
+          <h2 style="margin-top:10px;">Explore Ahmedabad’s neighbourhoods</h2>
+          <p>Tap a locality to see active listings and average prices.</p>
+        </div>
+      </div>
+      <div class="loc-split">
+        <div class="loc-list">
+          {localities.slice(0, 5).map((l) => (
+            <a class="loc-item" href={`/listings?locality=${l.slug}`}>
+              <div><div class="nm">{l.name}</div><div class="c">{l.blurb}</div></div>
+              <span class="arr">→</span>
+            </a>
+          ))}
+        </div>
+        <Map pins={mapPins} id="home-map" />
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="section wrap-wide reveal">
+      <div class="band between" style="align-items:center;">
+        <div>
+          <h2>Thinking of selling or leasing?</h2>
+          <p style="margin-top:12px;">List with City Property Services and reach serious, verified buyers across Ahmedabad. Free valuation, professional photos, zero hassle.</p>
+          <div class="row" style="margin-top:24px;">
+            <a class="btn btn-primary btn-lg" href="/list-property">Get a free valuation</a>
+            <a class="btn btn-ghost btn-lg" href={advisorWa} target="_blank" rel="noopener" style="color:#fff;">Talk to an advisor</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENTS -->
+    <section class="section wrap-wide reveal" id="agents">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">The people</div>
+          <h2 style="margin-top:10px;">Advisors who know the city</h2>
+          <p>Local experts who’ve helped thousands of families and businesses find the right space.</p>
+        </div>
+      </div>
+      <div class="agents-grid" data-stagger>
+        {agents.slice(0, 3).map((a) => <AgentCard agent={a} variant="card" />)}
+      </div>
+    </section>
+  </main>
+</Base>
+
+<style is:global>
+  /* ---- HOME-LOCAL (ported from home.html; global so rules reach component
+     roots like .type-tile / .agent-card / .hero-search that Astro scoping
+     would otherwise miss). Only loaded on this page. ---- */
+  .hero { padding: 80px 0 28px; position: relative; text-align: center; }
+  .hero .display { max-width: 18ch; text-wrap: balance; margin: 16px auto 0; }
+  .hero-sub { max-width: 56ch; margin: 22px auto 0; text-wrap: pretty; }
+  .hero-search { margin: 38px auto 0; max-width: 884px; text-align: left; }
+  .hero-search .segment { display: flex; width: max-content; max-width: 100%; margin: 0 auto 16px; }
+  .hero-stats { display: flex; gap: 56px; margin-top: 38px; flex-wrap: wrap; justify-content: center; }
+  .hero-stats .stat { align-items: center; text-align: center; }
+  .hero-art { margin-top: 56px; border-radius: var(--r-xl); overflow: hidden; aspect-ratio: 21/8; box-shadow: var(--shadow-lg); position: relative; background: var(--surface-3); }
+  .hero-art img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 38%; display: block; }
+  .hero-art::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(180deg, rgba(8,80,112,.10) 0%, rgba(8,80,112,0) 28%, rgba(13,26,35,.18) 100%); }
+
+  .section { padding: 64px 0; }
+  .section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 32px; flex-wrap: wrap; }
+  .section-head p { margin: 8px 0 0; color: var(--text-muted); max-width: 50ch; }
+
+  .types { display: grid; grid-template-columns: repeat(5,1fr); gap: 16px; }
+  .type-tile {
+    display: flex; flex-direction: column; gap: 14px; padding: 22px;
+    border: 1px solid var(--hairline); border-radius: var(--r-lg); background: var(--surface);
+    box-shadow: var(--shadow-xs); cursor: pointer;
+    transition: transform var(--t) var(--ease-out), box-shadow var(--t) var(--ease-out), border-color var(--t) var(--ease);
+  }
+  .type-tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--surface); }
+  .type-tile .ic { width: 46px; height: 46px; border-radius: var(--r-sm); background: var(--navy-tint); color: var(--navy); display: grid; place-items: center; transition: background var(--t) var(--ease), color var(--t) var(--ease); }
+  .type-tile:hover .ic { background: var(--navy); color: #fff; }
+  .type-tile .ic svg { width: 23px; height: 23px; }
+  .type-tile .t { font-weight: 600; color: var(--ink); }
+  .type-tile .c { font-size: 13px; color: var(--text-muted); }
+
+  .cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+
+  .loc-split { display: grid; grid-template-columns: 1fr 1.05fr; gap: 32px; align-items: stretch; }
+  .loc-list { display: flex; flex-direction: column; gap: 10px; }
+  .loc-item { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 16px 18px; border: 1px solid var(--hairline); border-radius: var(--r); background: var(--surface); cursor: pointer; transition: all var(--t) var(--ease); }
+  .loc-item:hover { border-color: var(--navy); transform: translateX(4px); box-shadow: var(--shadow-xs); }
+  .loc-item .nm { font-weight: 600; color: var(--ink); }
+  .loc-item .c { font-size: 13px; color: var(--text-muted); }
+  .loc-item .arr { color: var(--navy); opacity: 0; transition: opacity var(--t) var(--ease), transform var(--t) var(--ease); }
+  .loc-item:hover .arr { opacity: 1; transform: translateX(3px); }
+
+  .band { background: var(--navy); border-radius: var(--r-xl); padding: 56px; color: #fff; position: relative; overflow: hidden; }
+  .band::after { content: ""; position: absolute; right: -80px; top: -80px; width: 320px; height: 320px; border-radius: 999px; background: rgba(72,152,208,.22); filter: blur(10px); }
+  .band h2 { color: #fff; position: relative; }
+  .band p { color: #c4d9e8; max-width: 46ch; position: relative; }
+  .band .btn-primary { background: #fff; color: var(--navy); }
+  .band .btn-primary:hover { background: #eef3f6; }
+
+  .agents-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+  .agent-card { text-align: center; padding: 28px; border: 1px solid var(--hairline); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-sm); transition: transform var(--t) var(--ease-out), box-shadow var(--t) var(--ease-out); }
+  .agent-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .agent-card .av { width: 96px; height: 96px; border-radius: 999px; margin: 0 auto 16px; }
+
+  @media (max-width: 980px) { .types { grid-template-columns: repeat(2,1fr); } .cards, .agents-grid { grid-template-columns: 1fr 1fr; } .loc-split { grid-template-columns: 1fr; } }
+  @media (max-width: 680px) { .types, .cards, .agents-grid { grid-template-columns: 1fr; } .band { padding: 36px 28px; } }
+
+  /* Hero search stacks into a column on phones (search is the primary CTA) */
+  @media (max-width: 720px) {
+    .hero-search { margin-top: 28px; }
+    .hero-search .searchbar { flex-direction: column; border-radius: var(--r-lg); padding: 8px; gap: 4px; }
+    .hero-search .searchbar .seg { width: 100%; padding: 10px 14px; }
+    .hero-search .searchbar .seg + .seg { border-left: 0; border-top: 1px solid var(--hairline); }
+    .hero-search .searchbar .btn { width: 100%; margin-top: 4px; }
+  }
+</style>

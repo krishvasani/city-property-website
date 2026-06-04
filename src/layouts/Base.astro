@@ -1,0 +1,96 @@
+---
+import '../styles/system.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import FloatingWhatsApp from '../components/FloatingWhatsApp.astro';
+import { site } from '../lib/config';
+
+interface Props {
+  title: string;
+  description?: string;
+  /** Active top-nav key: buy | rent | commercial | new | agents */
+  active?: string;
+  /** Nav variant: 'site' (public) or 'guide' (style guide) */
+  navVariant?: 'site' | 'guide';
+  /** Ghost action button in nav: 'saved' (app pages) or 'signin' (home) */
+  navGhost?: 'saved' | 'signin';
+  /** OG/social preview image (absolute or root-relative) */
+  ogImage?: string;
+  /** Hide the floating WhatsApp button (e.g. style guide) */
+  hideFloatingWhatsApp?: boolean;
+}
+
+const {
+  title,
+  description = 'Ahmedabad’s full-spectrum property advisors — residential, commercial, land, industrial and warehousing. Find your place in the city.',
+  active,
+  navVariant = 'site',
+  navGhost = 'saved',
+  ogImage = '/logo/city-property-logo.png',
+  hideFloatingWhatsApp = false,
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, site.url).href;
+const ogImageAbs = new URL(ogImage, site.url).href;
+const fullTitle = title.includes(site.name) ? title : `${title} — ${site.name}`;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <link rel="icon" href="/logo/city-property-mark.png" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content={site.name} />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={ogImageAbs} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImageAbs} />
+
+  <!-- Page-transition failsafe: mark html early, always reveal (verbatim from bundle) -->
+  <script is:inline>
+    (function () {
+      document.documentElement.classList.add('pt-js');
+      function show() {
+        if (document.body) {
+          requestAnimationFrame(function () {
+            requestAnimationFrame(function () {
+              document.body.classList.add('pt-ready');
+            });
+          });
+        }
+      }
+      if (document.readyState !== 'loading') show();
+      else document.addEventListener('DOMContentLoaded', show);
+      setTimeout(function () {
+        document.body && document.body.classList.add('pt-ready');
+      }, 1500);
+    })();
+  </script>
+</head>
+<body>
+  <Nav variant={navVariant} active={active} ghost={navGhost} />
+
+  <slot />
+
+  <Footer />
+  {!hideFloatingWhatsApp && <FloatingWhatsApp />}
+
+  <!-- Shared interactions, scroll motion, page transitions (ported from bundle) -->
+  <script>
+    import '../scripts/site.js';
+    import '../scripts/motion.js';
+    import '../scripts/transitions.js';
+    import '../scripts/favorites.ts';
+  </script>
+</body>
+</html>

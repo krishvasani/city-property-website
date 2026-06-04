@@ -1,0 +1,139 @@
+---
+import Icon from './Icon.astro';
+
+interface Props {
+  variant?: 'site' | 'guide';
+  active?: string;
+  ghost?: 'saved' | 'signin';
+}
+const { variant = 'site', active, ghost = 'saved' } = Astro.props;
+
+const siteLinks = [
+  { key: 'buy', label: 'Buy', href: '/listings' },
+  { key: 'rent', label: 'Rent', href: '/listings?status=rent' },
+  { key: 'commercial', label: 'Commercial', href: '/listings?type=commercial' },
+  { key: 'new', label: 'New projects', href: '/listings' },
+  { key: 'agents', label: 'Agents', href: '/#agents' },
+];
+const guideLinks = [
+  { key: 'foundations', label: 'Foundations', href: '#foundations' },
+  { key: 'components', label: 'Components', href: '#components' },
+  { key: 'screens', label: 'Screens', href: '#screens' },
+];
+const links = variant === 'guide' ? guideLinks : siteLinks;
+const ghostLabel = ghost === 'signin' ? 'Sign in' : 'Saved';
+---
+<header class="nav">
+  <div class="wrap-wide inner">
+    <a class="brand" href="/">
+      <img src="/logo/city-property-logo.png" alt="City Property Services" />
+    </a>
+
+    {variant === 'guide' && <div class="spacer"></div>}
+
+    <nav class="links" aria-label="Primary">
+      {links.map((l) => (
+        <a href={l.href} class={active === l.key ? 'active' : undefined}>{l.label}</a>
+      ))}
+    </nav>
+
+    {variant === 'site' && <div class="spacer"></div>}
+
+    <div class="actions">
+      {variant === 'guide' ? (
+        <a class="btn btn-secondary btn-sm" href="/">View site</a>
+      ) : (
+        <>
+          <a class="btn btn-ghost btn-sm hide-sm" href="/saved" data-saved-count={ghost === 'saved' ? '' : undefined}>{ghostLabel}</a>
+          <a class="btn btn-primary btn-sm hide-sm" href="/list-property">List property</a>
+        </>
+      )}
+      <button class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <Icon name="menu" sw={1.8} />
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile drawer -->
+  <div class="nav-drawer" id="mobile-drawer" hidden>
+    <div class="nav-drawer-panel">
+      <nav class="nav-drawer-links" aria-label="Mobile">
+        {links.map((l) => <a href={l.href}>{l.label}</a>)}
+      </nav>
+      {variant === 'site' && (
+        <div class="nav-drawer-actions">
+          <a class="btn btn-secondary btn-block" href="#">{ghostLabel}</a>
+          <a class="btn btn-primary btn-block" href="/list-property">List property</a>
+        </div>
+      )}
+    </div>
+  </div>
+</header>
+
+<style>
+  .nav-burger {
+    display: none;
+    width: 44px; height: 44px; border-radius: var(--r-pill);
+    border: 1px solid var(--border); background: var(--surface);
+    color: var(--ink); cursor: pointer; place-items: center;
+    box-shadow: var(--shadow-xs);
+    transition: border-color var(--t) var(--ease), box-shadow var(--t) var(--ease);
+  }
+  .nav-burger:hover { border-color: var(--border-strong); box-shadow: var(--shadow-sm); }
+  .nav-burger :global(svg) { width: 20px; height: 20px; }
+
+  .nav-drawer {
+    position: fixed; inset: var(--nav-h) 0 0 0; z-index: 49;
+    background: rgba(13, 26, 35, 0.34);
+    backdrop-filter: blur(2px);
+    opacity: 0; pointer-events: none; transition: opacity var(--t) var(--ease);
+  }
+  .nav-drawer.is-open { opacity: 1; pointer-events: auto; }
+  .nav-drawer-panel {
+    background: rgba(238, 241, 245, 0.96);
+    backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 1px solid var(--hairline);
+    box-shadow: var(--shadow);
+    padding: 14px 24px 22px;
+    transform: translateY(-12px); transition: transform var(--t) var(--ease-out);
+  }
+  .nav-drawer.is-open .nav-drawer-panel { transform: none; }
+  .nav-drawer-links { display: flex; flex-direction: column; gap: 2px; }
+  .nav-drawer-links a {
+    padding: 13px 12px; border-radius: var(--r-sm); font-size: 16px;
+    font-weight: 550; color: var(--text);
+  }
+  .nav-drawer-links a:hover { background: var(--surface-2); color: var(--ink); }
+  .nav-drawer-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 14px; }
+
+  @media (max-width: 860px) {
+    .nav-burger { display: grid; }
+    .hide-sm { display: none; }
+  }
+</style>
+
+<script>
+  // Mobile drawer toggle (progressive enhancement; nav links hide < 860px).
+  document.querySelectorAll('.nav').forEach((nav) => {
+    const burger = nav.querySelector('.nav-burger');
+    const drawer = nav.querySelector('.nav-drawer');
+    if (!burger || !drawer) return;
+    const setOpen = (open: boolean) => {
+      drawer.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', String(open));
+      if (open) drawer.removeAttribute('hidden');
+      else setTimeout(() => drawer.setAttribute('hidden', ''), 240);
+      document.body.style.overflow = open ? 'hidden' : '';
+    };
+    burger.addEventListener('click', () =>
+      setOpen(burger.getAttribute('aria-expanded') !== 'true'),
+    );
+    drawer.addEventListener('click', (e) => {
+      if (e.target === drawer) setOpen(false);
+    });
+    drawer.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') setOpen(false);
+    });
+  });
+</script>

@@ -1,0 +1,170 @@
+---
+import { whatsappUrl } from '../lib/config';
+
+interface Props {
+  /** Netlify form name (also used as the submission subject grouping). */
+  name: string;
+  submitLabel?: string;
+  showEmail?: boolean;
+  showMessage?: boolean;
+  messageLabel?: string;
+  messagePlaceholder?: string;
+  /** Optional "Looking for" select rendered as field `intent`. */
+  intentOptions?: string[];
+  /** Hidden context fields included with every submission (e.g. property). */
+  context?: Record<string, string>;
+  /** Two-column layout for name/phone (used on contact/valuation pages). */
+  twoCol?: boolean;
+  /** WhatsApp fallback message if the network submit fails. */
+  whatsappFallback?: string;
+}
+
+const {
+  name,
+  submitLabel = 'Send enquiry',
+  showEmail = true,
+  showMessage = true,
+  messageLabel = 'Message',
+  messagePlaceholder = 'Tell us a little about what you’re looking for…',
+  intentOptions,
+  context = {},
+  twoCol = false,
+  whatsappFallback = 'Hi, I just tried to send an enquiry on your website.',
+} = Astro.props;
+
+const waHref = whatsappUrl(whatsappFallback);
+---
+<form
+  class="lead-form"
+  name={name}
+  method="POST"
+  action="/thanks"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  data-lead-form
+>
+  <!-- Netlify needs the form name in the POST body -->
+  <input type="hidden" name="form-name" value={name} />
+  <!-- Honeypot (hidden from humans) -->
+  <p class="hp" aria-hidden="true">
+    <label>Don’t fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+  </p>
+  <!-- Hidden context for the lead email -->
+  {Object.entries(context).map(([k, v]) => <input type="hidden" name={k} value={v} />)}
+
+  <div class:list={['lead-fields', { 'two-col': twoCol }]}>
+    <div class="field">
+      <label class="label" for={`${name}-name`}>Full name</label>
+      <input class="input" id={`${name}-name`} name="name" required placeholder="e.g. Riya Mehta" />
+    </div>
+    <div class="field">
+      <label class="label" for={`${name}-phone`}>Phone</label>
+      <input class="input" id={`${name}-phone`} name="phone" type="tel" required
+        inputmode="tel" placeholder="+91 98xxx xxxxx" />
+    </div>
+    {showEmail && (
+      <div class="field" style={twoCol ? 'grid-column:1/-1;' : ''}>
+        <label class="label" for={`${name}-email`}>Email <span class="faint">(optional)</span></label>
+        <input class="input" id={`${name}-email`} name="email" type="email" placeholder="you@email.com" />
+      </div>
+    )}
+    {intentOptions && (
+      <div class="field" style={twoCol ? 'grid-column:1/-1;' : ''}>
+        <label class="label" for={`${name}-intent`}>Looking for</label>
+        <select class="select" id={`${name}-intent`} name="intent">
+          {intentOptions.map((o) => <option>{o}</option>)}
+        </select>
+      </div>
+    )}
+    {showMessage && (
+      <div class="field" style="grid-column:1/-1;">
+        <label class="label" for={`${name}-message`}>{messageLabel}</label>
+        <textarea class="textarea" id={`${name}-message`} name="message"
+          style="min-height:84px;" placeholder={messagePlaceholder}></textarea>
+      </div>
+    )}
+  </div>
+
+  <button class="btn btn-primary btn-block" type="submit" style="margin-top:14px;">{submitLabel}</button>
+
+  <p class="lead-status" data-status hidden role="status" aria-live="polite"></p>
+  <p class="lead-fallback small muted" data-fallback hidden>
+    Couldn’t send just now — please <a href={waHref} target="_blank" rel="noopener">message us on WhatsApp</a>.
+  </p>
+</form>
+
+<style>
+  .lead-fields { display: flex; flex-direction: column; gap: 12px; }
+  .lead-fields.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .hp { position: absolute; left: -9999px; height: 0; overflow: hidden; margin: 0; }
+  .lead-status { margin: 14px 0 0; padding: 12px 14px; border-radius: var(--r-sm); font-size: 14px; }
+  .lead-status.ok { background: var(--good-tint); color: var(--good); }
+  .lead-status.err { background: var(--warn-tint); color: var(--warn); }
+  .lead-fallback { margin: 8px 0 0; }
+  .lead-fallback a { color: var(--navy); font-weight: 600; }
+  @media (max-width: 560px) { .lead-fields.two-col { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+  // AJAX submit to Netlify Forms with graceful fallback. On localhost (no
+  // Netlify backend) we simulate success so the flow can be demoed.
+  function encode(data: Record<string, string>) {
+    return Object.keys(data)
+      .map((k) => encodeURIComponent(k) + '=' + encodeURIComponent(data[k]))
+      .join('&');
+  }
+
+  document.querySelectorAll<HTMLFormElement>('[data-lead-form]').forEach((form) => {
+    const statusEl = form.querySelector<HTMLElement>('[data-status]');
+    const fallbackEl = form.querySelector<HTMLElement>('[data-fallback]');
+    const submitBtn = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+
+      const fd = new FormData(form);
+      const data: Record<string, string> = {};
+      fd.forEach((v, k) => (data[k] = String(v)));
+
+      submitBtn && (submitBtn.disabled = true);
+      if (statusEl) {
+        statusEl.hidden = false;
+        statusEl.className = 'lead-status';
+        statusEl.textContent = 'Sending…';
+      }
+      fallbackEl && (fallbackEl.hidden = true);
+
+      const isLocal = ['localhost', '127.0.0.1'].includes(location.hostname);
+      try {
+        if (!isLocal) {
+          const res = await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: encode(data),
+          });
+          if (!res.ok) throw new Error('Network response was not ok');
+        } else {
+          await new Promise((r) => setTimeout(r, 500)); // demo delay
+        }
+        if (statusEl) {
+          statusEl.className = 'lead-status ok';
+          statusEl.textContent =
+            'Thanks! Your enquiry is in — an advisor will reach out shortly.';
+        }
+        form.querySelectorAll('input, textarea, select').forEach((el) => {
+          const node = el as HTMLInputElement;
+          if (node.type !== 'hidden') node.value = '';
+        });
+      } catch (err) {
+        if (statusEl) {
+          statusEl.className = 'lead-status err';
+          statusEl.textContent = 'Something went wrong sending your enquiry.';
+        }
+        fallbackEl && (fallbackEl.hidden = false);
+      } finally {
+        submitBtn && (submitBtn.disabled = false);
+      }
+    });
+  });
+</script>

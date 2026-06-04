@@ -1,0 +1,38 @@
+---
+import { ICONS } from '../lib/icons';
+
+interface Props {
+  name: keyof typeof ICONS;
+  sw?: number | string; // stroke width
+  size?: number | string; // optional explicit px size (else CSS controls it)
+  class?: string;
+  fill?: string;
+  stroke?: string;
+  'aria-hidden'?: boolean;
+}
+
+const {
+  name,
+  sw = 1.7,
+  size,
+  class: className,
+  fill = 'none',
+  stroke = 'currentColor',
+  ...rest
+} = Astro.props;
+
+const inner = ICONS[name];
+if (!inner) throw new Error(`Unknown icon: "${String(name)}"`);
+const sizeAttrs = size ? { width: size, height: size } : {};
+---
+<svg
+  viewBox="0 0 24 24"
+  fill={fill}
+  stroke={stroke}
+  stroke-width={sw}
+  class={className}
+  aria-hidden="true"
+  {...sizeAttrs}
+  {...rest}
+  set:html={inner}
+/>

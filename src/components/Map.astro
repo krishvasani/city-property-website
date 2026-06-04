@@ -1,0 +1,143 @@
+---
+import { map as mapCfg } from '../lib/config';
+
+export interface MapPin {
+  label: string; // dot text, e.g. "₹1.45 Cr" or "SG Highway"
+  pos?: { left: string; top: string }; // position on the stylised CSS map
+  geo?: { lat: number; lng: number }; // real coords (used by Mapbox)
+  slug?: string; // links a pin to a listing card for list↔map sync
+  active?: boolean;
+}
+
+interface Props {
+  pins: MapPin[];
+  id?: string;
+  height?: string;
+  class?: string;
+  style?: string;
+}
+const { pins, id, height, class: className, style } = Astro.props;
+const styleAttr = [height ? `height:${height};` : '', style ?? ''].join('');
+const hasToken = mapCfg.enabled;
+---
+<div
+  class:list={['map', className]}
+  id={id}
+  style={styleAttr}
+  data-map
+  data-token={hasToken ? mapCfg.token : undefined}
+  data-style={mapCfg.style}
+>
+  {pins.map((p) => (
+    <div
+      class:list={['map-pin', { 'is-active': p.active }]}
+      style={p.pos ? `left:${p.pos.left};top:${p.pos.top};` : undefined}
+      data-slug={p.slug}
+      data-lat={p.geo?.lat}
+      data-lng={p.geo?.lng}
+      data-label={p.label}
+    >
+      <span class="dot">{p.label}</span>
+      <span class="stem"></span>
+    </div>
+  ))}
+</div>
+
+<style is:global>
+  /* Mapbox-rendered navy pill markers (match the stylised .map-pin .dot) */
+  .mb-pin {
+    background: var(--navy); color: #fff; font-weight: 700; font-size: 13px;
+    padding: 7px 13px; border-radius: var(--r-pill); box-shadow: var(--shadow);
+    white-space: nowrap; cursor: pointer;
+    transition: transform var(--t) var(--ease-out), background var(--t) var(--ease);
+  }
+  .mb-pin:hover, .mb-pin.is-active { background: var(--sky); transform: translateY(-3px) scale(1.04); }
+  .map.is-live .map-pin { display: none; } /* hide CSS pins once Mapbox mounts */
+  .map .mapboxgl-canvas { border-radius: inherit; }
+</style>
+
+<script>
+  // Progressive upgrade: if a Mapbox token is present, lazy-load Mapbox GL from
+  // CDN and replace the stylised CSS pins with a real interactive map. Without a
+  // token, the stylised map (and site.js pin selection) is used as-is.
+  type Pin = { slug?: string; lat: number; lng: number; label: string; active: boolean };
+
+  function loadCss(href: string) {
+    if (document.querySelector(`link[href="${href}"]`)) return;
+    const l = document.createElement('link');
+    l.rel = 'stylesheet';
+    l.href = href;
+    document.head.appendChild(l);
+  }
+  function loadScript(src: string): Promise<void> {
+    return new Promise((resolve, reject) => {
+      if ((window as any).mapboxgl) return resolve();
+      const s = document.createElement('script');
+      s.src = src;
+      s.onload = () => resolve();
+      s.onerror = reject;
+      document.head.appendChild(s);
+    });
+  }
+
+  async function initMap(el: HTMLElement) {
+    const token = el.getAttribute('data-token');
+    if (!token) return; // keep the stylised fallback
+    const styleUrl = el.getAttribute('data-style') || 'mapbox://styles/mapbox/light-v11';
+
+    const pins: Pin[] = Array.from(el.querySelectorAll('.map-pin'))
+      .map((p) => ({
+        slug: p.getAttribute('data-slug') || undefined,
+        lat: parseFloat(p.getAttribute('data-lat') || ''),
+        lng: parseFloat(p.getAttribute('data-lng') || ''),
+        label: p.getAttribute('data-label') || '',
+        active: p.classList.contains('is-active'),
+      }))
+      .filter((p) => !isNaN(p.lat) && !isNaN(p.lng));
+    if (!pins.length) return;
+
+    try {
+      loadCss('https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css');
+      await loadScript('https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js');
+    } catch {
+      return; // network blocked — stylised map stays
+    }
+    const mapboxgl = (window as any).mapboxgl;
+    mapboxgl.accessToken = token;
+    el.classList.add('is-live');
+
+    const map = new mapboxgl.Map({
+      container: el,
+      style: styleUrl,
+      center: [pins[0].lng, pins[0].lat],
+      zoom: 12,
+      attributionControl: false,
+    });
+    map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), 'top-right');
+
+    const markers = new Map<string, any>();
+    const bounds = new mapboxgl.LngLatBounds();
+    pins.forEach((pin) => {
+      const node = document.createElement('div');
+      node.className = 'mb-pin' + (pin.active ? ' is-active' : '');
+      node.textContent = pin.label;
+      node.addEventListener('click', () => {
+        if (pin.slug) document.dispatchEvent(new CustomEvent('map:select', { detail: pin.slug }));
+      });
+      new mapboxgl.Marker({ element: node, anchor: 'bottom' })
+        .setLngLat([pin.lng, pin.lat])
+        .addTo(map);
+      if (pin.slug) markers.set(pin.slug, node);
+      bounds.extend([pin.lng, pin.lat]);
+    });
+    if (pins.length > 1) map.fitBounds(bounds, { padding: 60, maxZoom: 14 });
+
+    // External highlight (e.g. hovering a card) -> activate matching marker
+    document.addEventListener('card:focus', (e: Event) => {
+      const slug = (e as CustomEvent).detail as string;
+      markers.forEach((node, key) => node.classList.toggle('is-active', key === slug));
+    });
+  }
+
+  document.querySelectorAll<HTMLElement>('[data-map]').forEach(initMap);
+</script>

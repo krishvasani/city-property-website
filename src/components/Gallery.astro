@@ -1,0 +1,33 @@
+---
+import type { Photo } from '../lib/types';
+
+interface Props {
+  photos?: Photo[];
+  totalCount?: number;
+}
+const { photos = [], totalCount } = Astro.props;
+
+// Always present a 5-cell layout; pad with labelled placeholders if needed.
+const fallbackLabels = ['Living room · main photo', 'Kitchen', 'Bedroom', 'Balcony', 'Bathroom'];
+const cells: Photo[] = Array.from({ length: 5 }, (_, i) => photos[i] ?? { label: fallbackLabels[i] });
+const count = totalCount ?? Math.max(photos.length, 18);
+---
+<section class="gallery">
+  {cells.map((photo, i) => (
+    <div class:list={['cell', { g0: i === 0 }]}>
+      {photo.url ? (
+        <img src={photo.url} alt={photo.alt ?? photo.label} loading={i === 0 ? 'eager' : 'lazy'} />
+      ) : (
+        <div class="ph" data-label={photo.label}></div>
+      )}
+      {i === 4 && <button class="btn btn-secondary btn-sm more" type="button">View all {count} photos</button>}
+    </div>
+  ))}
+</section>
+
+<style>
+  /* gallery image fill (placeholders already fill via .ph height rule below) */
+  .gallery .cell img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform var(--t-slow) var(--ease-out); }
+  .gallery .cell:hover img { transform: scale(1.04); }
+  .gallery .cell .ph { height: 100%; }
+</style>

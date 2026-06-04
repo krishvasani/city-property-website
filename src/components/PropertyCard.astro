@@ -1,0 +1,49 @@
+---
+import Icon from './Icon.astro';
+import Tag from './Tag.astro';
+import { cardMetaFor, tagVariantFor } from '../lib/format';
+import type { Property } from '../lib/types';
+
+interface Props { property: Property; }
+const { property: p } = Astro.props;
+
+const meta = cardMetaFor(p);
+const variant = tagVariantFor(p);
+const href = `/property/${p.slug}`;
+const photo = p.photos?.[0];
+---
+<a
+  class="prop"
+  href={href}
+  data-slug={p.slug}
+  data-type={p.propertyType}
+  data-status={p.status}
+  data-price={p.priceValue ?? ''}
+  data-area={p.areaSqft ?? ''}
+  data-locality={p.localitySlug ?? ''}
+  data-new={p.newAt ?? ''}
+>
+  <div class="prop-media">
+    {photo?.url ? (
+      <img src={photo.url} alt={photo.alt ?? p.title} loading="lazy" />
+    ) : (
+      <div class="ph" data-label={photo?.label ?? 'Property photo'} style="height:100%;"></div>
+    )}
+    <div class="top">
+      <Tag variant={variant}>{p.statusLabel}</Tag>
+      <button class="prop-fav" type="button" aria-label="Save" data-fav={p.slug}>
+        <Icon name="heart" sw={1.8} />
+      </button>
+    </div>
+  </div>
+  <div class="prop-body">
+    <div class="prop-price">{p.priceDisplay}{p.pricePer && <span class="per">{p.pricePer}</span>}</div>
+    <div class="prop-title">{p.title}</div>
+    <div class="prop-loc"><Icon name="pin" sw={1.8} />{p.localityName}</div>
+    <div class="prop-meta">
+      {meta.map((m) => (
+        <span class="m"><Icon name={m.icon as any} />{m.label}</span>
+      ))}
+    </div>
+  </div>
+</a>

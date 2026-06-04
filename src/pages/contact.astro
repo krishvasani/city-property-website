@@ -1,0 +1,66 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import LeadForm from '../components/LeadForm.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import CallButton from '../components/CallButton.astro';
+import { contact, whatsappUrl } from '../lib/config';
+---
+<Base title="Contact us" description="Talk to a City Property Services advisor about buying, renting, selling or leasing in Ahmedabad.">
+  <main class="wrap">
+    <section class="page-hero">
+      <div class="eyebrow">We’re here to help</div>
+      <h1 class="h1" style="margin-top:10px;">Talk to an advisor</h1>
+      <p class="body-lg muted" style="max-width:54ch;margin-top:14px;">Buying, renting, selling or leasing — tell us what you’re after and a local expert will get back to you, usually the same day.</p>
+    </section>
+
+    <div class="contact-grid">
+      <div class="stack">
+        <div class="reach">
+          <a class="reach-row" href={`tel:${contact.phone.replace(/[^\d+]/g, '')}`}>
+            <span class="ic"><Icon name="phone" sw={1.7} /></span>
+            <span><b>Call</b><span class="muted small">{contact.phone}</span></span>
+          </a>
+          <a class="reach-row" href={whatsappUrl('Hi City Property Services, I have a question.')} target="_blank" rel="noopener">
+            <span class="ic"><Icon name="whatsapp" sw={1.7} /></span>
+            <span><b>WhatsApp</b><span class="muted small">Chat with us now</span></span>
+          </a>
+          <a class="reach-row" href={`mailto:${contact.email}`}>
+            <span class="ic"><Icon name="share" sw={1.7} /></span>
+            <span><b>Email</b><span class="muted small">{contact.email}</span></span>
+          </a>
+        </div>
+        <div class="quick">
+          <CallButton block />
+          <WhatsAppButton message="Hi City Property Services, I’d like to talk to an advisor." block />
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3 style="margin-bottom:16px;">Send us a message</h3>
+        <LeadForm
+          name="contact"
+          submitLabel="Send message"
+          twoCol
+          intentOptions={['Buy a home', 'Rent a home', 'Sell / list a property', 'Commercial space', 'Something else']}
+          messagePlaceholder="Tell us a little about what you’re looking for…"
+        />
+      </div>
+    </div>
+  </main>
+</Base>
+
+<style is:global>
+  .page-hero { padding: 64px 0 8px; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 32px; align-items: start; padding: 32px 0 96px; }
+  .panel { background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 28px; }
+  .reach { display: flex; flex-direction: column; gap: 8px; }
+  .reach-row { display: flex; align-items: center; gap: 14px; padding: 16px 18px; border: 1px solid var(--hairline); border-radius: var(--r); background: var(--surface); transition: all var(--t) var(--ease); }
+  .reach-row:hover { border-color: var(--navy); transform: translateX(3px); box-shadow: var(--shadow-xs); }
+  .reach-row .ic { width: 44px; height: 44px; border-radius: var(--r-sm); background: var(--navy-tint); color: var(--navy); display: grid; place-items: center; flex: none; }
+  .reach-row .ic svg { width: 20px; height: 20px; }
+  .reach-row span span { display: block; }
+  .reach-row b { color: var(--ink); }
+  .quick { display: flex; gap: 10px; margin-top: 16px; }
+  @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
+</style>

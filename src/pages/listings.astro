@@ -1,0 +1,252 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import PropertyCard from '../components/PropertyCard.astro';
+import Map from '../components/Map.astro';
+import { getProperties } from '../lib/data';
+
+const properties = await getProperties();
+
+// Map rail pins: every geolocated listing, labelled with its price.
+const pins = properties
+  .filter((p) => p.geo)
+  .map((p, i) => ({
+    label: p.priceDisplay,
+    geo: p.geo,
+    slug: p.slug,
+    // Spread stylised pins across the fallback CSS map.
+    pos: { left: `${20 + ((i * 13) % 60)}%`, top: `${24 + ((i * 17) % 52)}%` },
+    active: i === 0,
+  }));
+
+const typeChips = [
+  { label: 'Residential', type: 'residential' },
+  { label: 'Commercial', type: 'commercial' },
+  { label: 'Land', type: 'land' },
+  { label: 'Industrial', type: 'industrial' },
+  { label: 'Warehousing', type: 'warehousing' },
+];
+---
+<Base title="Properties in Ahmedabad" description="Browse homes, commercial space, land and industrial property for sale and rent across Ahmedabad." active="buy">
+  <!-- FILTER BAR -->
+  <div class="filterbar">
+    <div class="wrap-wide">
+      <div class="row1">
+        <div class="mini-search">
+          <Icon name="search" sw={2} />
+          <input id="mini-search" value="SG Highway, Ahmedabad" aria-label="Search location" />
+        </div>
+        <div class="chips" id="type-chips">
+          <button class="chip is-active" data-type="">All</button>
+          {typeChips.map((c) => <button class="chip" data-type={c.type}>{c.label}</button>)}
+        </div>
+        <button class="btn btn-secondary btn-sm" id="more-filters">
+          <Icon name="filters" sw={1.8} style="width:16px;height:16px;" />
+          More filters
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap-wide">
+    <div class="layout">
+      <!-- RESULTS -->
+      <section class="results">
+        <div class="results-head">
+          <div>
+            <h1 class="h1" id="results-title">Homes for sale in Ahmedabad</h1>
+            <p class="small muted" style="margin:6px 0 0;"><span id="results-count">{properties.length}</span> properties · updated today</p>
+          </div>
+          <div class="sort">
+            <span class="small muted">Sort</span>
+            <select id="sort-select">
+              <option value="recommended">Recommended</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="newest">Newest first</option>
+              <option value="area-desc">Area: large to small</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="results-grid" id="grid" data-stagger>
+          {properties.map((p) => <PropertyCard property={p} />)}
+        </div>
+
+        <p class="no-results" id="no-results" hidden>No properties match these filters. <button class="btn btn-ghost btn-sm" id="clear-filters">Clear filters</button></p>
+
+        <div class="pager" id="pager"></div>
+      </section>
+
+      <!-- MAP RAIL -->
+      <aside class="map-rail">
+        <Map pins={pins} id="results-map" />
+      </aside>
+    </div>
+  </main>
+</Base>
+
+<style is:global>
+  .filterbar { position: sticky; top: var(--nav-h); z-index: 40; background: rgba(238,241,245,.8); backdrop-filter: saturate(180%) blur(16px); -webkit-backdrop-filter: saturate(180%) blur(16px); border-bottom: 1px solid var(--hairline); }
+  .filterbar .row1 { display: flex; align-items: center; gap: 12px; padding: 16px 0; flex-wrap: wrap; }
+  .mini-search { display: flex; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-pill); padding: 8px 8px 8px 16px; box-shadow: var(--shadow-xs); min-width: 280px; }
+  .mini-search svg { width: 18px; height: 18px; color: var(--text-faint); flex: none; }
+  .mini-search input { border: none; outline: none; background: transparent; font: inherit; font-size: 15px; width: 100%; color: var(--ink); }
+  .filterbar .chips { display: flex; gap: 9px; flex-wrap: wrap; }
+  .layout { display: grid; grid-template-columns: 1.55fr 1fr; gap: 0; align-items: start; }
+  .results { padding: 28px 28px 28px 0; }
+  .results-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 22px; flex-wrap: wrap; }
+  .results-head h1 { font-size: 24px; }
+  .sort { display: flex; align-items: center; gap: 8px; }
+  .sort select { border: 1px solid var(--border); border-radius: var(--r-pill); padding: 9px 16px; font: inherit; font-size: 14px; font-weight: 600; color: var(--ink); background: var(--surface); cursor: pointer; }
+  .results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .no-results { margin: 28px 0; color: var(--text-muted); }
+  .map-rail { position: sticky; top: calc(var(--nav-h) + 73px); height: calc(100vh - var(--nav-h) - 73px); }
+  .map-rail .map { height: 100%; border-radius: 0; border-top: 0; border-right: 0; border-bottom: 0; }
+  .pager { display: flex; justify-content: center; gap: 6px; margin-top: 36px; flex-wrap: wrap; }
+  .pager button { width: 40px; height: 40px; display: grid; place-items: center; border-radius: var(--r-sm); border: 1px solid var(--border); font-size: 14px; font-weight: 600; color: var(--text); background: var(--surface); cursor: pointer; transition: all var(--t) var(--ease); }
+  .pager button:hover:not(:disabled) { border-color: var(--navy); color: var(--navy); }
+  .pager button.active { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .pager button:disabled { opacity: .4; cursor: default; }
+  .prop.dimmed { outline: 2px solid var(--sky); outline-offset: 2px; }
+  @media (max-width: 1100px) { .layout { grid-template-columns: 1fr; } .map-rail { display: none; } .results { padding: 28px 0; } .results-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 680px) { .results-grid { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+  const PER_PAGE = 6;
+
+  const grid = document.getElementById('grid')!;
+  const cards = Array.from(grid.querySelectorAll<HTMLElement>('.prop'));
+  const countEl = document.getElementById('results-count')!;
+  const titleEl = document.getElementById('results-title')!;
+  const pager = document.getElementById('pager')!;
+  const noResults = document.getElementById('no-results')!;
+  const sortSelect = document.getElementById('sort-select') as HTMLSelectElement;
+  const miniSearch = document.getElementById('mini-search') as HTMLInputElement;
+  const typeChips = Array.from(document.querySelectorAll<HTMLElement>('#type-chips .chip'));
+
+  const state = { type: '', status: '', locality: '', budget: '', q: '', sort: 'recommended', page: 1 };
+
+  // ── Read initial state from the URL (set by the hero search / footer links)
+  const params = new URLSearchParams(location.search);
+  state.type = params.get('type') || '';
+  state.status = params.get('status') || '';
+  state.locality = params.get('locality') || '';
+  state.budget = params.get('budget') || '';
+  state.q = params.get('q') || '';
+  if (state.q) miniSearch.value = state.q;
+  typeChips.forEach((c) => c.classList.toggle('is-active', (c.dataset.type || '') === state.type));
+
+  function budgetRange(b: string): [number, number] {
+    const [lo, hi] = b.split('-');
+    return [lo ? +lo : 0, hi ? +hi : Infinity];
+  }
+
+  function matches(card: HTMLElement): boolean {
+    const d = card.dataset;
+    if (state.type && d.type !== state.type) return false;
+    if (state.status && d.status !== state.status) return false;
+    if (state.locality && d.locality !== state.locality) return false;
+    if (state.budget) {
+      const [lo, hi] = budgetRange(state.budget);
+      const price = +(d.price || 0);
+      if (price < lo || price > hi) return false;
+    }
+    return true;
+  }
+
+  function sortCards(list: HTMLElement[]): HTMLElement[] {
+    const by = state.sort;
+    const num = (el: HTMLElement, k: string) => +(el.dataset[k] || 0);
+    const arr = [...list];
+    if (by === 'price-asc') arr.sort((a, b) => num(a, 'price') - num(b, 'price'));
+    else if (by === 'price-desc') arr.sort((a, b) => num(b, 'price') - num(a, 'price'));
+    else if (by === 'area-desc') arr.sort((a, b) => num(b, 'area') - num(a, 'area'));
+    else if (by === 'newest')
+      arr.sort((a, b) => (b.dataset.new || '').localeCompare(a.dataset.new || ''));
+    return arr;
+  }
+
+  function updateTitle(n: number) {
+    const verb = state.status === 'rent' ? 'for rent' : 'for sale';
+    const place = state.locality
+      ? state.locality.replace(/-/g, ' ').replace(/\b\w/g, (m) => m.toUpperCase())
+      : 'Ahmedabad';
+    const noun = state.type && state.type !== 'residential' ? 'Properties' : 'Homes';
+    titleEl.textContent = `${noun} ${verb} in ${place}`;
+  }
+
+  function render() {
+    const filtered = sortCards(cards.filter(matches));
+    countEl.textContent = String(filtered.length);
+    updateTitle(filtered.length);
+
+    const pages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
+    if (state.page > pages) state.page = pages;
+    const start = (state.page - 1) * PER_PAGE;
+    const visible = new Set(filtered.slice(start, start + PER_PAGE));
+
+    // Order + visibility
+    cards.forEach((c) => (c.style.display = 'none'));
+    filtered.forEach((c) => grid.appendChild(c)); // reflow into sorted order
+    visible.forEach((c) => (c.style.display = ''));
+
+    noResults.hidden = filtered.length !== 0;
+    renderPager(pages);
+  }
+
+  function renderPager(pages: number) {
+    pager.innerHTML = '';
+    if (pages <= 1) { return; }
+    const add = (label: string, page: number, opts: { active?: boolean; disabled?: boolean } = {}) => {
+      const b = document.createElement('button');
+      b.textContent = label;
+      if (opts.active) b.classList.add('active');
+      if (opts.disabled) b.disabled = true;
+      else b.addEventListener('click', () => { state.page = page; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+      pager.appendChild(b);
+    };
+    add('‹', state.page - 1, { disabled: state.page === 1 });
+    for (let i = 1; i <= pages; i++) add(String(i), i, { active: i === state.page });
+    add('›', state.page + 1, { disabled: state.page === pages });
+  }
+
+  // ── Controls
+  typeChips.forEach((chip) =>
+    chip.addEventListener('click', () => {
+      typeChips.forEach((c) => c.classList.remove('is-active'));
+      chip.classList.add('is-active');
+      state.type = chip.dataset.type || '';
+      state.page = 1;
+      render();
+    }),
+  );
+  sortSelect.addEventListener('change', () => { state.sort = sortSelect.value; state.page = 1; render(); });
+  document.getElementById('clear-filters')?.addEventListener('click', () => {
+    state.type = state.status = state.locality = state.budget = ''; state.page = 1;
+    typeChips.forEach((c) => c.classList.toggle('is-active', !c.dataset.type));
+    render();
+  });
+
+  // ── List ↔ map sync
+  document.addEventListener('map:select', (e: Event) => {
+    const slug = (e as CustomEvent).detail as string;
+    const card = cards.find((c) => c.dataset.slug === slug);
+    if (card) { card.scrollIntoView({ behavior: 'smooth', block: 'center' }); card.classList.add('dimmed'); setTimeout(() => card.classList.remove('dimmed'), 1400); }
+  });
+  cards.forEach((card) =>
+    card.addEventListener('mouseenter', () =>
+      document.dispatchEvent(new CustomEvent('card:focus', { detail: card.dataset.slug })),
+    ),
+  );
+  // Stylised-map fallback: clicking a CSS pin selects its card
+  document.querySelectorAll('#results-map .map-pin').forEach((pin) =>
+    pin.addEventListener('click', () => {
+      const slug = pin.getAttribute('data-slug');
+      if (slug) document.dispatchEvent(new CustomEvent('map:select', { detail: slug }));
+    }),
+  );
+
+  render();
+</script>

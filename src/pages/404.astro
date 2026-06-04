@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Page not found" description="The page you’re looking for doesn’t exist.">
+  <main class="wrap">
+    <section style="text-align:center;padding:120px 0 140px;">
+      <div class="display" style="color:var(--navy-tint);font-size:clamp(80px,16vw,160px);line-height:1;">404</div>
+      <h1 class="h1" style="margin-top:8px;">We couldn’t find that page.</h1>
+      <p class="body-lg muted" style="max-width:46ch;margin:14px auto 0;">It may have moved, or the property may no longer be listed.</p>
+      <div class="row" style="justify-content:center;gap:12px;margin-top:28px;">
+        <a class="btn btn-primary" href="/listings">Browse properties</a>
+        <a class="btn btn-secondary" href="/">Back home</a>
+      </div>
+    </section>
+  </main>
+</Base>

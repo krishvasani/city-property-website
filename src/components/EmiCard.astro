@@ -1,0 +1,98 @@
+---
+import { emiMonthly, formatINRShort } from '../lib/format';
+
+interface Props {
+  priceValue?: number;
+  rate?: number;
+  years?: number;
+  ltv?: number; // loan-to-value %
+}
+const { priceValue = 14_500_000, rate = 8.5, years = 20, ltv = 80 } = Astro.props;
+
+const loan = (priceValue * ltv) / 100;
+const emi = Math.round(emiMonthly(loan, rate, years));
+const emiDisplay = `₹ ${emi.toLocaleString('en-IN')}`;
+const loanDisplay = formatINRShort(loan);
+---
+<div class="emi" data-emi data-price={priceValue}>
+  <div class="row between">
+    <span class="small muted">Est. EMI</span>
+    <span class="mono small" data-emi-terms style="color:var(--navy);font-weight:600;">@ {rate}% · {years} yr</span>
+  </div>
+  <div class="h2" style="margin:6px 0 2px;">
+    <span data-emi-value>{emiDisplay}</span><span style="font-size:14px;font-weight:500;color:var(--text-muted);"> /mo</span>
+  </div>
+  <div class="caption muted">On {ltv}% loan of <span data-emi-loan>{loanDisplay}</span>. Indicative only.</div>
+
+  <button class="btn btn-ghost btn-sm" type="button" data-emi-toggle style="margin-top:12px;padding-left:0;">
+    Open EMI calculator →
+  </button>
+
+  <div class="emi-calc" data-emi-calc hidden>
+    <label class="emi-ctl">
+      <span>Interest rate <b data-out="rate">{rate}%</b></span>
+      <input type="range" name="rate" min="6" max="12" step="0.1" value={rate} />
+    </label>
+    <label class="emi-ctl">
+      <span>Tenure <b data-out="years">{years} yr</b></span>
+      <input type="range" name="years" min="5" max="30" step="1" value={years} />
+    </label>
+    <label class="emi-ctl">
+      <span>Loan-to-value <b data-out="ltv">{ltv}%</b></span>
+      <input type="range" name="ltv" min="50" max="90" step="5" value={ltv} />
+    </label>
+  </div>
+</div>
+
+<style>
+  .emi-calc { margin-top: 14px; display: flex; flex-direction: column; gap: 14px; }
+  .emi-ctl { display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--text-muted); }
+  .emi-ctl span { display: flex; justify-content: space-between; }
+  .emi-ctl b { color: var(--ink); font-weight: 600; }
+  .emi-ctl input[type="range"] { width: 100%; accent-color: var(--navy); }
+</style>
+
+<script>
+  function fmtShort(r: number) {
+    if (r >= 1e7) return `₹${(r / 1e7).toFixed(2).replace(/\.00$/, '')} Cr`;
+    if (r >= 1e5) return `₹${Math.round(r / 1e5)} L`;
+    return `₹${Math.round(r).toLocaleString('en-IN')}`;
+  }
+  function emi(p: number, rate: number, years: number) {
+    const r = rate / 12 / 100, n = years * 12;
+    const pow = Math.pow(1 + r, n);
+    return (p * r * pow) / (pow - 1);
+  }
+  document.querySelectorAll<HTMLElement>('[data-emi]').forEach((card) => {
+    const price = parseFloat(card.getAttribute('data-price') || '0');
+    const toggle = card.querySelector('[data-emi-toggle]');
+    const calc = card.querySelector<HTMLElement>('[data-emi-calc]');
+    const valueEl = card.querySelector('[data-emi-value]');
+    const termsEl = card.querySelector('[data-emi-terms]');
+    const loanEl = card.querySelector('[data-emi-loan]');
+    const inputs = card.querySelectorAll<HTMLInputElement>('input[type="range"]');
+
+    toggle?.addEventListener('click', () => {
+      if (!calc) return;
+      const open = calc.hasAttribute('hidden');
+      if (open) calc.removeAttribute('hidden');
+      else calc.setAttribute('hidden', '');
+      toggle.textContent = open ? 'Hide EMI calculator ↑' : 'Open EMI calculator →';
+    });
+
+    const recompute = () => {
+      const vals: Record<string, number> = {};
+      inputs.forEach((i) => (vals[i.name] = parseFloat(i.value)));
+      const { rate, years, ltv } = vals;
+      const loan = (price * ltv) / 100;
+      const monthly = Math.round(emi(loan, rate, years));
+      valueEl && (valueEl.textContent = `₹ ${monthly.toLocaleString('en-IN')}`);
+      termsEl && (termsEl.textContent = `@ ${rate}% · ${years} yr`);
+      loanEl && (loanEl.textContent = fmtShort(loan));
+      card.querySelector('[data-out="rate"]')!.textContent = `${rate}%`;
+      card.querySelector('[data-out="years"]')!.textContent = `${years} yr`;
+      card.querySelector('[data-out="ltv"]')!.textContent = `${ltv}%`;
+    };
+    inputs.forEach((i) => i.addEventListener('input', recompute));
+  });
+</script>

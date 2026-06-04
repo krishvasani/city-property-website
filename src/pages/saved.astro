@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+import PropertyCard from '../components/PropertyCard.astro';
+import { getProperties } from '../lib/data';
+const properties = await getProperties();
+---
+<Base title="Saved properties" description="Your shortlisted properties." active="buy">
+  <main class="wrap-wide">
+    <section style="padding:48px 0 16px;">
+      <div class="eyebrow">Your shortlist</div>
+      <h1 class="h1" style="margin-top:10px;">Saved properties</h1>
+      <p class="small muted" style="margin-top:6px;"><span id="saved-n">0</span> saved · tap the heart on any listing to add it here.</p>
+    </section>
+
+    <div class="saved-grid" id="saved-grid" data-stagger>
+      {properties.map((p) => <PropertyCard property={p} />)}
+    </div>
+
+    <div id="saved-empty" hidden style="padding:40px 0 100px;">
+      <p class="muted">Nothing saved yet. <a href="/listings" style="color:var(--navy);font-weight:600;">Browse listings →</a></p>
+    </div>
+  </main>
+</Base>
+
+<style>
+  .saved-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; padding-bottom: 100px; }
+  @media (max-width: 980px) { .saved-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 680px) { .saved-grid { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+  import { getSaved } from '../scripts/favorites';
+  const grid = document.getElementById('saved-grid')!;
+  const empty = document.getElementById('saved-empty')!;
+  const nEl = document.getElementById('saved-n')!;
+
+  function refresh() {
+    const saved = new Set(getSaved());
+    const cards = Array.from(grid.querySelectorAll<HTMLElement>('.prop'));
+    let shown = 0;
+    cards.forEach((c) => {
+      const on = saved.has(c.dataset.slug || '');
+      c.style.display = on ? '' : 'none';
+      if (on) shown++;
+    });
+    nEl.textContent = String(shown);
+    empty.hidden = shown !== 0;
+    grid.hidden = shown === 0;
+  }
+  refresh();
+  // Reflect un-saving from this page immediately
+  grid.addEventListener('click', (e) => {
+    if ((e.target as HTMLElement).closest('.prop-fav')) setTimeout(refresh, 0);
+  });
+</script>

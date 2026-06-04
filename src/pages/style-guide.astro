@@ -1,0 +1,216 @@
+---
+// Living design-system reference (internal). Ported from the bundle's index.html.
+// Not linked in the public nav; visit /style-guide directly.
+import Base from '../layouts/Base.astro';
+---
+<Base title="Design System — City Property Services" description="The living design-system reference for City Property Services." navVariant="guide" hideFloatingWhatsApp>
+  <main class="wrap">
+    <!-- HERO / RATIONALE -->
+    <section class="ds-hero hero-anim">
+      <div class="eyebrow">Design System · v1.0 · Ahmedabad</div>
+      <h1 class="display" style="margin:16px 0 0;max-width:20ch;text-wrap:balance;">A calm, confident home for City&nbsp;Property&nbsp;Services.</h1>
+      <p class="body-lg muted" style="max-width:62ch;margin:22px 0 0;">
+        A monochromatic, whitespace-first system built on Apple’s interface principles — soft 16px radii,
+        diffuse shadows, and one deep-navy accent drawn straight from the logo.
+      </p>
+
+      <div class="panel" style="margin-top:36px;">
+        <div class="label-sm">Design notes — read me first</div>
+        <div class="demo-grid cols-3" style="margin-top:18px;">
+          <div>
+            <h4>Assumptions</h4>
+            <p class="small muted" style="margin:8px 0 0;">Light theme only. Deep navy <span class="mono">#085070</span> is the single accent; sky blue is a sparing highlight. Real photography replaces every <span class="mono">.ph</span> slot.</p>
+          </div>
+          <div>
+            <h4>Principles</h4>
+            <p class="small muted" style="margin:8px 0 0;">Generous whitespace over density. One accent, used decisively. Motion is gentle and purposeful — lifts, fades, zoom-on-hover.</p>
+          </div>
+          <div>
+            <h4>What’s inside</h4>
+            <p class="small muted" style="margin:8px 0 0;">Foundations (logo, color, type, space, motion) and components (buttons, fields, search, cards, chips, maps, nav, footer).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREENS -->
+    <section class="ds-section reveal" id="screens">
+      <div class="sec-head">
+        <span class="num">01</span>
+        <div><h2>Sample screens</h2><p>The real pages, assembled from this system.</p></div>
+      </div>
+      <div class="screens" data-stagger>
+        <a class="screen-card" href="/"><div class="ph thumb" data-label="Homepage"></div><div class="cap"><span class="t">Homepage</span><span class="arr">→</span></div></a>
+        <a class="screen-card" href="/listings"><div class="ph thumb" data-label="Search & listings"></div><div class="cap"><span class="t">Listings</span><span class="arr">→</span></div></a>
+        <a class="screen-card" href="/property/iscon-platinum-3bhk"><div class="ph thumb" data-label="Property detail"></div><div class="cap"><span class="t">Property detail</span><span class="arr">→</span></div></a>
+      </div>
+    </section>
+
+    <!-- LOGO -->
+    <section class="ds-section reveal" id="foundations">
+      <div class="sec-head">
+        <span class="num">02</span>
+        <div><h2>Logo</h2><p>Three lockups for different surfaces.</p></div>
+      </div>
+      <div class="demo-grid cols-3">
+        <div><div class="logo-tile" style="background:var(--surface);"><img src="/logo/city-property-logo.png" alt="Primary logo"></div><div class="label-sm" style="margin-top:12px;">Primary · on light</div></div>
+        <div><div class="logo-tile" style="background:var(--ink);border-color:var(--ink);"><img src="/logo/city-property-logo-white.png" alt="Reversed logo"></div><div class="label-sm" style="margin-top:12px;">Reversed · on ink</div></div>
+        <div><div class="logo-tile" style="background:var(--surface-2);"><img src="/logo/city-property-mark.png" alt="Mark" style="height:64px;"></div><div class="label-sm" style="margin-top:12px;">Mark only · avatars, favicons</div></div>
+      </div>
+    </section>
+
+    <!-- COLOR -->
+    <section class="ds-section reveal">
+      <div class="sec-head"><span class="num">03</span><div><h2>Color</h2><p>A cool monochrome neutral scale carries the interface; navy does all the work.</p></div></div>
+      <div class="label-sm" style="margin-bottom:12px;">Brand</div>
+      <div class="swatches" style="margin-bottom:28px;">
+        <div class="sw"><div class="fill" style="background:#085070;"></div><div class="meta"><div class="nm">Navy · accent</div><div class="hx">#085070</div></div></div>
+        <div class="sw"><div class="fill" style="background:#073f59;"></div><div class="meta"><div class="nm">Navy 700</div><div class="hx">#073f59</div></div></div>
+        <div class="sw"><div class="fill" style="background:#4898d0;"></div><div class="meta"><div class="nm">Sky · highlight</div><div class="hx">#4898d0</div></div></div>
+        <div class="sw"><div class="fill" style="background:#eef3f6;"></div><div class="meta"><div class="nm">Navy tint</div><div class="hx">#eef3f6</div></div></div>
+        <div class="sw"><div class="fill" style="background:#c0c0c0;"></div><div class="meta"><div class="nm">Brand gray</div><div class="hx">#c0c0c0</div></div></div>
+      </div>
+      <div class="label-sm" style="margin-bottom:12px;">Neutrals</div>
+      <div class="swatches">
+        <div class="sw"><div class="fill" style="background:#0d1a23;"></div><div class="meta"><div class="nm">Ink</div><div class="hx">#0d1a23</div></div></div>
+        <div class="sw"><div class="fill" style="background:#2a3640;"></div><div class="meta"><div class="nm">Text</div><div class="hx">#2a3640</div></div></div>
+        <div class="sw"><div class="fill" style="background:#5d6c76;"></div><div class="meta"><div class="nm">Muted</div><div class="hx">#5d6c76</div></div></div>
+        <div class="sw"><div class="fill" style="background:#8f9ba4;"></div><div class="meta"><div class="nm">Faint</div><div class="hx">#8f9ba4</div></div></div>
+        <div class="sw"><div class="fill" style="background:#dbe1e7;"></div><div class="meta"><div class="nm">Border</div><div class="hx">#dbe1e7</div></div></div>
+        <div class="sw"><div class="fill" style="background:#f3f6f8;"></div><div class="meta"><div class="nm">Surface 2</div><div class="hx">#f3f6f8</div></div></div>
+        <div class="sw"><div class="fill" style="background:#e9edf1;"></div><div class="meta"><div class="nm">Background</div><div class="hx">#e9edf1</div></div></div>
+        <div class="sw"><div class="fill" style="background:#ffffff;"></div><div class="meta"><div class="nm">Surface</div><div class="hx">#ffffff</div></div></div>
+      </div>
+    </section>
+
+    <!-- TYPE -->
+    <section class="ds-section reveal">
+      <div class="sec-head"><span class="num">04</span><div><h2>Typography</h2><p>The native system stack — SF Pro on Apple, system-ui elsewhere.</p></div></div>
+      <div class="panel">
+        <div class="type-row"><div class="spec">Display<br>clamp 40–68<br>700 · -3.2%</div><div class="display">Find your place in the city.</div></div>
+        <div class="type-row"><div class="spec">H1<br>clamp 32–44<br>700 · -2.6%</div><div class="h1">Homes that feel like home</div></div>
+        <div class="type-row"><div class="spec">H2<br>clamp 25–32<br>650 · -2%</div><div class="h2">Curated across Ahmedabad</div></div>
+        <div class="type-row"><div class="spec">H3<br>21 · 600</div><div class="h3">Prahlad Nagar · 3 BHK apartment</div></div>
+        <div class="type-row"><div class="spec">Body Large<br>18 · 1.6</div><div class="body-lg">A friendly, trustworthy interface that helps buyers, renters and investors move with confidence.</div></div>
+        <div class="type-row"><div class="spec">Body<br>16 · 1.55</div><div class="body">Spacious by default, the layout keeps the focus on the property and the people behind every deal.</div></div>
+        <div class="type-row"><div class="spec">Caption / Mono<br>13</div><div><span class="caption muted">Listed 3 days ago · RERA registered</span> &nbsp; <span class="mono caption">₹ 1.45 Cr</span></div></div>
+        <div class="type-row"><div class="spec">Eyebrow<br>12.5 · .12em</div><div class="eyebrow">Featured neighbourhood</div></div>
+      </div>
+    </section>
+
+    <!-- SPACE / RADIUS / SHADOW -->
+    <section class="ds-section reveal">
+      <div class="sec-head"><span class="num">05</span><div><h2>Space, radius &amp; elevation</h2><p>A 4px base rhythm, soft corners, and layered shadows that lift on interaction.</p></div></div>
+      <div class="demo-grid cols-2">
+        <div class="panel">
+          <div class="label-sm">Radius</div>
+          <div class="tok-grid" style="margin-top:16px;">
+            <div><div class="radius-demo" style="border-radius:var(--r-sm);"></div><div class="label-sm" style="margin-top:8px;">sm · 12</div></div>
+            <div><div class="radius-demo" style="border-radius:var(--r);"></div><div class="label-sm" style="margin-top:8px;">base · 16</div></div>
+            <div><div class="radius-demo" style="border-radius:var(--r-lg);"></div><div class="label-sm" style="margin-top:8px;">lg · 22</div></div>
+            <div><div class="radius-demo" style="border-radius:var(--r-pill);"></div><div class="label-sm" style="margin-top:8px;">pill</div></div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="label-sm">Elevation</div>
+          <div class="tok-grid" style="margin-top:16px;">
+            <div><div class="shadow-demo" style="box-shadow:var(--shadow-xs);"></div><div class="label-sm" style="margin-top:8px;">xs</div></div>
+            <div><div class="shadow-demo" style="box-shadow:var(--shadow-sm);"></div><div class="label-sm" style="margin-top:8px;">sm</div></div>
+            <div><div class="shadow-demo" style="box-shadow:var(--shadow);"></div><div class="label-sm" style="margin-top:8px;">base</div></div>
+            <div><div class="shadow-demo" style="box-shadow:var(--shadow-lg);"></div><div class="label-sm" style="margin-top:8px;">lg</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUTTONS -->
+    <section class="ds-section reveal" id="components">
+      <div class="sec-head"><span class="num">06</span><div><h2>Buttons &amp; controls</h2><p>Pill buttons with a gentle lift on hover.</p></div></div>
+      <div class="panel">
+        <div class="flexwrap">
+          <button class="btn btn-primary">Book a viewing</button>
+          <button class="btn btn-secondary">Save search</button>
+          <button class="btn btn-ghost">Learn more</button>
+          <button class="btn btn-primary btn-lg">Get started</button>
+          <button class="btn btn-secondary btn-sm">Filter</button>
+        </div>
+        <hr class="hr" style="margin:24px 0;">
+        <div class="flexwrap">
+          <div class="segment" data-single="button"><button class="is-active">Buy</button><button>Rent</button><button>Sell</button></div>
+          <label class="switch"><input type="checkbox" checked><span class="track"></span><span class="small">Verified only</span></label>
+          <label class="switch"><input type="checkbox"><span class="track"></span><span class="small">Include new projects</span></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHIPS / TAGS -->
+    <section class="ds-section reveal">
+      <div class="sec-head"><span class="num">07</span><div><h2>Chips, tags &amp; location pins</h2><p>Property types and localities as selectable chips; status tags for cards.</p></div></div>
+      <div class="panel stack">
+        <div>
+          <div class="label-sm" style="margin-bottom:12px;">Property type</div>
+          <div class="flexwrap" data-single=".chip">
+            <button class="chip is-active">Residential</button>
+            <button class="chip">Commercial</button>
+            <button class="chip">Land &amp; plots</button>
+            <button class="chip">Industrial</button>
+            <button class="chip">Warehousing</button>
+          </div>
+        </div>
+        <div>
+          <div class="label-sm" style="margin:18px 0 12px;">Status tags</div>
+          <div class="flexwrap">
+            <span class="tag tag-navy">For sale</span>
+            <span class="tag tag-soft">For rent</span>
+            <span class="tag tag-good">RERA verified</span>
+            <span class="tag tag-glass">New listing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTE -->
+    <section class="ds-section reveal">
+      <div class="sec-head"><span class="num">08</span><div><h2>Components in context</h2><p>See property cards, fields, the search bar, agent cards and maps working together on the <a href="/" style="color:var(--navy);font-weight:600;">homepage</a>, <a href="/listings" style="color:var(--navy);font-weight:600;">listings</a> and <a href="/property/iscon-platinum-3bhk" style="color:var(--navy);font-weight:600;">property detail</a> pages.</p></div></div>
+    </section>
+  </main>
+</Base>
+
+<style is:global>
+  .ds-hero { padding: 72px 0 28px; }
+  .ds-section { padding: 56px 0; border-top: 1px solid var(--hairline); }
+  .ds-section:first-of-type { border-top: 0; }
+  .sec-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 32px; flex-wrap: wrap; }
+  .sec-head .num { font-family: var(--mono); font-size: 13px; color: var(--text-faint); }
+  .sec-head p { margin: 0; color: var(--text-muted); max-width: 52ch; }
+  .panel { background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 28px; }
+  .label-sm { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--text-faint); }
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); gap: 14px; }
+  .sw { border-radius: var(--r); overflow: hidden; border: 1px solid var(--hairline); background: var(--surface); box-shadow: var(--shadow-xs); transition: transform var(--t) var(--ease-out), box-shadow var(--t) var(--ease-out); }
+  .sw:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+  .sw .fill { height: 88px; }
+  .sw .meta { padding: 11px 13px; }
+  .sw .meta .nm { font-size: 13.5px; font-weight: 600; color: var(--ink); }
+  .sw .meta .hx { font-family: var(--mono); font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+  .type-row { display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 18px 0; border-top: 1px solid var(--hairline); align-items: baseline; }
+  .type-row:first-child { border-top: 0; }
+  .type-row .spec { font-family: var(--mono); font-size: 12px; color: var(--text-faint); line-height: 1.7; }
+  .tok-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px,1fr)); gap: 16px; }
+  .radius-demo { height: 76px; background: var(--navy-tint); border: 1px solid var(--border); }
+  .shadow-demo { height: 76px; background: var(--surface); border-radius: var(--r); }
+  .demo-grid { display: grid; gap: 22px; }
+  .cols-2 { grid-template-columns: 1fr 1fr; }
+  .cols-3 { grid-template-columns: repeat(3,1fr); }
+  .flexwrap { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .logo-tile { border-radius: var(--r-lg); border: 1px solid var(--hairline); padding: 36px; display: grid; place-items: center; min-height: 150px; }
+  .logo-tile img { height: 56px; }
+  .screens { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+  .screen-card { display: block; border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--hairline); background: var(--surface); box-shadow: var(--shadow-sm); transition: transform var(--t) var(--ease-out), box-shadow var(--t) var(--ease-out); }
+  .screen-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+  .screen-card .thumb { aspect-ratio: 16/11; }
+  .screen-card .cap { padding: 16px 18px; display: flex; align-items: center; justify-content: space-between; }
+  .screen-card .cap .t { font-weight: 600; color: var(--ink); }
+  .screen-card .cap .arr { color: var(--navy); transition: transform var(--t) var(--ease); }
+  .screen-card:hover .cap .arr { transform: translateX(4px); }
+  @media (max-width: 900px) { .cols-2, .cols-3, .screens { grid-template-columns: 1fr; } .type-row { grid-template-columns: 1fr; gap: 6px; } }
+</style>

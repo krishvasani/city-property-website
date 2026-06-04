@@ -1,0 +1,34 @@
+---
+import Icon from './Icon.astro';
+import { whatsappUrl, contact } from '../lib/config';
+
+interface Props {
+  message: string;
+  label?: string;
+  number?: string;
+  variant?: 'primary' | 'secondary' | 'ghost';
+  block?: boolean;
+  size?: 'sm' | 'lg' | '';
+  class?: string;
+}
+const {
+  message,
+  label = 'WhatsApp',
+  number = contact.whatsapp,
+  variant = 'secondary',
+  block = false,
+  size = 'sm',
+  class: className,
+} = Astro.props;
+
+const href = whatsappUrl(message, number);
+---
+<a
+  class:list={['btn', `btn-${variant}`, size && `btn-${size}`, { 'btn-block': block }, className]}
+  href={href}
+  target="_blank"
+  rel="noopener"
+>
+  <Icon name="whatsapp" sw={1.7} style="width:16px;height:16px;" />
+  {label}
+</a>

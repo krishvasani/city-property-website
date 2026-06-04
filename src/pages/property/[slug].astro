@@ -1,0 +1,241 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import Tag from '../../components/Tag.astro';
+import Gallery from '../../components/Gallery.astro';
+import FactsGrid from '../../components/FactsGrid.astro';
+import EmiCard from '../../components/EmiCard.astro';
+import PropertyCard from '../../components/PropertyCard.astro';
+import WhatsAppButton from '../../components/WhatsAppButton.astro';
+import CallButton from '../../components/CallButton.astro';
+import LeadForm from '../../components/LeadForm.astro';
+import Map from '../../components/Map.astro';
+import { getProperties, getProperty, getSimilar, getAgent, getLocalities } from '../../lib/data';
+import { contact } from '../../lib/config';
+
+export async function getStaticPaths() {
+  const properties = await getProperties();
+  return properties.map((p) => ({ params: { slug: p.slug } }));
+}
+
+const { slug } = Astro.params;
+const property = await getProperty(slug!);
+if (!property) return Astro.redirect('/listings');
+
+const agent = await getAgent(property.agentId);
+const similar = await getSimilar(property.slug, 3);
+const localities = await getLocalities();
+const selfLoc = localities.find((l) => l.slug === property.localitySlug);
+const sg = localities.find((l) => l.slug === 'sg-highway');
+
+// Location map pins (property + a couple of nearby landmarks)
+const mapPins = [
+  property.geo && { label: property.title.split('·').pop()?.trim() || property.localityName, geo: property.geo, pos: { left: '46%', top: '44%' }, active: true, slug: property.slug },
+  selfLoc?.geo && { label: selfLoc.name, geo: selfLoc.geo, pos: { left: '24%', top: '64%' } },
+  sg?.geo && sg.slug !== property.localitySlug && { label: 'SG Highway', geo: sg.geo, pos: { left: '70%', top: '34%' } },
+].filter(Boolean) as { label: string; geo: { lat: number; lng: number }; pos: { left: string; top: string }; active?: boolean; slug?: string }[];
+
+const agentName = agent?.name ?? 'an advisor';
+const agentSub = agent ? [agent.role, agent.exp].filter(Boolean).join(' · ') : '';
+const leadContext = {
+  property: property.title,
+  propertyUrl: new URL(Astro.url.pathname, Astro.site ?? 'https://cityproperty.example.com').href,
+  price: property.priceDisplay,
+  agent: agentName,
+};
+const waMessage = `Hi ${agentName}, I’m interested in "${property.title}" (${property.priceDisplay}) in ${property.localityName}. Could you share more details?`;
+const photoCount = property.photos?.length ? Math.max(property.photos.length, 18) : 18;
+---
+<Base title={`${property.title} — ${property.localityName}`} description={`${property.priceDisplay} · ${property.title} in ${property.localityName}, Ahmedabad.`} active="buy">
+  <main class="wrap-wide">
+    <nav class="crumb">
+      <a href="/">Home</a><span class="sep">›</span>
+      <a href="/listings">Buy in Ahmedabad</a><span class="sep">›</span>
+      <a href={`/listings?locality=${property.localitySlug}`}>{property.localityName}</a><span class="sep">›</span>
+      <span style="color:var(--ink);">{property.title}</span>
+    </nav>
+
+    <Gallery photos={property.photos} totalCount={photoCount} />
+
+    <!-- HEADER -->
+    <div class="det-head">
+      <div>
+        <div class="row" style="gap:8px;margin-bottom:10px;">
+          <Tag variant={property.status === 'rent' ? 'soft' : 'navy'}>{property.statusLabel}</Tag>
+          <Tag variant="good">RERA verified</Tag>
+          <span class="tag tag-glass" style="box-shadow:none;border:1px solid var(--border);">Ready to move</span>
+        </div>
+        <div class="price">{property.priceDisplay}{property.pricePer && <span style="font-size:16px;font-weight:500;color:var(--text-muted);">{property.pricePer}</span>}</div>
+        <div class="ttl">{property.title}</div>
+        <div class="loc">
+          <Icon name="pin" sw={1.8} />{property.address ?? `${property.localityName}, Ahmedabad`}{property.perSqftDisplay && ` · ${property.perSqftDisplay}`}
+        </div>
+      </div>
+      <div class="det-actions">
+        <button class="btn btn-secondary btn-sm" data-save={property.slug}>
+          <Icon name="heart" sw={1.7} style="width:16px;height:16px;" />Save
+        </button>
+        <button class="btn btn-secondary btn-sm" data-share>
+          <Icon name="share" sw={1.7} style="width:16px;height:16px;" />Share
+        </button>
+      </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="det-body">
+      <!-- LEFT -->
+      <div>
+        <FactsGrid property={property} />
+
+        {property.description?.length && (
+          <div class="block desc reveal">
+            <h3>About this home</h3>
+            {property.description.map((para) => <p>{para}</p>)}
+          </div>
+        )}
+
+        {property.amenities?.length && (
+          <div class="block reveal">
+            <h3>Amenities</h3>
+            <div class="amen" data-stagger>
+              {property.amenities.map((a) => (
+                <div class="a"><span class="ck"><Icon name="check" sw={2.4} /></span>{a}</div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div class="block reveal">
+          <h3>Location</h3>
+          <Map pins={mapPins} id="prop-map" height="300px" />
+        </div>
+      </div>
+
+      <!-- RIGHT STICKY -->
+      <aside class="sticky">
+        <div class="contact-card">
+          <div class="agent-row">
+            {agent?.avatar?.url ? (
+              <img class="av" src={agent.avatar.url} alt={agent.name} />
+            ) : (
+              <div class="ph av" data-label=""></div>
+            )}
+            <div style="flex:1;">
+              <div class="nm">{agentName}</div>
+              {agentSub && <div class="rl">{agentSub}</div>}
+            </div>
+          </div>
+          <LeadForm
+            name="viewing"
+            submitLabel="Request a viewing"
+            showEmail={false}
+            messageLabel="Message"
+            messagePlaceholder="I’d like to schedule a viewing…"
+            context={leadContext}
+            whatsappFallback={waMessage}
+          />
+          <div class="row" style="gap:10px;margin-top:12px;">
+            <CallButton number={agent?.phone ?? contact.phone} block />
+            <WhatsAppButton message={waMessage} number={agent?.whatsapp} block />
+          </div>
+        </div>
+
+        <EmiCard priceValue={property.priceValue} />
+      </aside>
+    </div>
+
+    <!-- SIMILAR -->
+    {similar.length > 0 && (
+      <section class="block reveal" style="margin-top:64px;">
+        <div class="between" style="margin-bottom:22px;">
+          <h2>Similar homes nearby</h2>
+          <a class="btn btn-secondary btn-sm" href="/listings">View all →</a>
+        </div>
+        <div class="similar-grid" data-stagger>
+          {similar.map((p) => <PropertyCard property={p} />)}
+        </div>
+      </section>
+    )}
+  </main>
+</Base>
+
+<style is:global>
+  .crumb { display: flex; align-items: center; gap: 8px; padding: 22px 0 6px; font-size: 13.5px; color: var(--text-muted); flex-wrap: wrap; }
+  .crumb a:hover { color: var(--navy); }
+  .crumb .sep { color: var(--text-faint); }
+
+  .gallery { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 10px; height: 460px; border-radius: var(--r-xl); overflow: hidden; }
+  .gallery .g0 { grid-row: 1 / 3; }
+  .gallery .cell { position: relative; cursor: pointer; overflow: hidden; }
+  .gallery .more { position: absolute; right: 12px; bottom: 12px; }
+
+  .det-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; margin: 28px 0 8px; flex-wrap: wrap; }
+  .det-head .price { font-size: clamp(28px,3.4vw,40px); font-weight: 700; letter-spacing: -.026em; color: var(--ink); }
+  .det-head .ttl { font-size: 19px; font-weight: 600; color: var(--ink); margin-top: 4px; }
+  .det-head .loc { display: flex; align-items: center; gap: 7px; color: var(--text-muted); margin-top: 8px; font-size: 14.5px; }
+  .det-head .loc svg { width: 16px; height: 16px; color: var(--sky); }
+  .det-actions { display: flex; gap: 10px; }
+
+  .det-body { display: grid; grid-template-columns: 1.7fr 1fr; gap: 40px; align-items: start; margin-top: 28px; }
+
+  .facts { display: grid; grid-template-columns: repeat(4,1fr); gap: 4px; background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); padding: 6px; box-shadow: var(--shadow-sm); }
+  .fact { display: flex; flex-direction: column; gap: 6px; padding: 18px 16px; border-radius: var(--r); }
+  .fact .ic { color: var(--navy); }
+  .fact .ic svg { width: 21px; height: 21px; }
+  .fact .v { font-weight: 700; color: var(--ink); font-size: 17px; }
+  .fact .k { font-size: 12.5px; color: var(--text-muted); }
+
+  .block { margin-top: 36px; }
+  .block h3 { margin-bottom: 14px; }
+  .desc p { color: var(--text); margin: 0 0 14px; line-height: 1.65; }
+
+  .amen { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px 20px; }
+  .amen .a { display: flex; align-items: center; gap: 10px; font-size: 14.5px; color: var(--text); }
+  .amen .a .ck { width: 22px; height: 22px; border-radius: 999px; background: var(--good-tint); color: var(--good); display: grid; place-items: center; flex: none; }
+  .amen .a .ck svg { width: 13px; height: 13px; }
+
+  .sticky { position: sticky; top: calc(var(--nav-h) + 20px); display: flex; flex-direction: column; gap: 18px; }
+  .contact-card { background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); box-shadow: var(--shadow); padding: 22px; }
+  .contact-card .agent-row { display: flex; align-items: center; gap: 14px; padding-bottom: 18px; border-bottom: 1px solid var(--hairline); margin-bottom: 18px; }
+  .contact-card .av { width: 54px; height: 54px; border-radius: 999px; object-fit: cover; }
+  .contact-card .nm { font-weight: 650; color: var(--ink); }
+  .contact-card .rl { font-size: 13px; color: var(--text-muted); }
+  .btn-block { width: 100%; }
+  .emi { background: var(--navy-tint); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 20px; }
+  .emi .row { justify-content: space-between; }
+
+  .similar-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+
+  @media (max-width: 1000px) { .det-body { grid-template-columns: 1fr; } .sticky { position: static; } .amen { grid-template-columns: 1fr 1fr; } .facts { grid-template-columns: 1fr 1fr; } .gallery { grid-template-columns: 1fr 1fr; grid-template-rows: 220px 140px; height: auto; } .gallery .g0 { grid-row: auto; grid-column: 1 / 3; } .similar-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 760px) { .similar-grid { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+  import { isSaved, toggleSaved } from '../../scripts/favorites';
+
+  // Save toggle (persisted) on the detail header
+  document.querySelectorAll<HTMLButtonElement>('[data-save]').forEach((btn) => {
+    const slug = btn.getAttribute('data-save')!;
+    const sync = () => {
+      const on = isSaved(slug);
+      btn.classList.toggle('is-on', on);
+      btn.style.borderColor = on ? 'var(--navy)' : '';
+      btn.style.color = on ? 'var(--navy)' : '';
+      const label = btn.childNodes[btn.childNodes.length - 1];
+      if (label) label.textContent = on ? 'Saved' : 'Save';
+    };
+    btn.addEventListener('click', () => { toggleSaved(slug); sync(); });
+    sync();
+  });
+
+  // Share via Web Share API with clipboard fallback
+  document.querySelectorAll<HTMLButtonElement>('[data-share]').forEach((btn) =>
+    btn.addEventListener('click', async () => {
+      const data = { title: document.title, url: location.href };
+      try {
+        if (navigator.share) await navigator.share(data);
+        else { await navigator.clipboard.writeText(location.href); btn.lastChild!.textContent = 'Copied!'; setTimeout(() => (btn.lastChild!.textContent = 'Share'), 1500); }
+      } catch {}
+    }),
+  );
+</script>

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "astro",
+  "comment": "If deploying to Vercel instead of Netlify, note that Netlify Forms will NOT work here. Swap LeadForm's submit to a form service (Web3Forms/Formspree) or a Vercel serverless function. See README."
+}
