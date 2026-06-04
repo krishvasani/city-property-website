@@ -112,7 +112,9 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
 
           <div class="ciril">
             <div class="ciril-head">
-              <span class="ciril-badge">CIRIL</span>
+              <a class="ciril-logo-chip" href="https://www.ciril.in/" target="_blank" rel="noopener" aria-label="CIRIL website">
+                <img class="ciril-logo" src="/logo/ciril-logo.jpg" alt="CIRIL" />
+              </a>
               <span class="ciril-tag">Part of the CIRIL network. Innovate through network.</span>
             </div>
             <div class="ciril-services">
@@ -124,7 +126,7 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
           </div>
 
           <div class="row" style="margin-top:24px;gap:12px;flex-wrap:wrap;">
-            <a class="btn btn-primary" href="/consult">Talk to our team</a>
+            <a class="btn btn-primary" href="https://www.ciril.in/" target="_blank" rel="noopener">Know more about CIRIL</a>
             <a class="btn btn-secondary" href="/sell">Get a free valuation</a>
           </div>
         </div>
@@ -209,7 +211,9 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
   .about-text strong { color: var(--ink); font-weight: 650; }
   .ciril { margin-top: 22px; padding: 20px; border: 1px solid var(--border); border-radius: var(--r-lg); background: var(--navy-tint); }
   .ciril-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-  .ciril-badge { font-weight: 800; letter-spacing: .1em; color: #fff; background: var(--navy); padding: 5px 12px; border-radius: var(--r-xs); font-size: 14px; }
+  .ciril-logo-chip { display: inline-flex; align-items: center; background: #fff; border: 1px solid var(--border); border-radius: var(--r-xs); padding: 7px 12px; box-shadow: var(--shadow-xs); transition: box-shadow var(--t) var(--ease), transform var(--t) var(--ease); }
+  .ciril-logo-chip:hover { box-shadow: var(--shadow-sm); transform: translateY(-1px); }
+  .ciril-logo { height: 26px; width: auto; display: block; }
   .ciril-tag { font-size: 13px; color: var(--text-muted); }
   .ciril-services { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 14px; }
   .ciril-services .cs { display: inline-flex; align-items: center; gap: 7px; font-size: 13.5px; color: var(--text); font-weight: 500; }
