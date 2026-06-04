@@ -5,12 +5,12 @@ import Icon from '../components/Icon.astro';
 
 const buyerSteps = [
   ['Understand your budget & loan eligibility', 'Work out what you can comfortably spend, including a buffer. Get a loan pre-approval so you know your real range before you fall in love with a place.'],
-  ['Choose localities that fit your life', 'Weigh commute, schools, daily needs, future growth and price. SG Highway, Satellite, Bopal, Shela and Gota all feel very different — pick what suits you.'],
+  ['Choose localities that fit your life', 'Weigh commute, schools, daily needs, future growth and price. SG Highway, Satellite, Bopal, Shela and Gota all feel very different, so pick what suits you.'],
   ['Shortlist properties', 'Narrow to a handful that match your budget, size and locality. Quality over quantity saves a lot of running around.'],
   ['Visit and compare', 'See them in person, ideally at different times of day. Check light, water, parking, noise and the neighbours.'],
   ['Check RERA registration', 'For under-construction and many new projects, confirm the RERA number on the Gujarat RERA site. It protects you.'],
   ['Verify title & legal documents', 'Confirm clear title, ownership, approved plans, NOC and society dues. A lawyer’s title check is money well spent.'],
-  ['Negotiate price and terms', 'Negotiate on price, payment schedule, what stays in the home, and the possession date — not just the number.'],
+  ['Negotiate price and terms', 'Negotiate on price, payment schedule, what stays in the home, and the possession date, not just the number.'],
   ['Pay the token amount', 'Only after basic verification, pay a token to hold the property, with a simple written receipt and agreed timeline.'],
   ['Sign the sale agreement', 'A clear agreement records price, payment plan, possession date and penalties. Read it carefully before signing.'],
   ['Complete the home loan process', 'If you’re taking a loan, submit documents, get the valuation done, and align disbursement with your payment schedule.'],
@@ -20,37 +20,37 @@ const buyerSteps = [
 ];
 
 const sellerSteps = [
-  ['Estimate the current market value', 'Start with a realistic, evidence-based price using recent deals in your locality — not an aspirational number.'],
+  ['Estimate the current market value', 'Start with a realistic, evidence-based price using recent deals in your locality, not an aspirational number.'],
   ['Prepare your documents', 'Gather title deed, approved plans, tax receipts, society NOC and any loan papers up front to avoid delays later.'],
   ['Decide your price & negotiation range', 'Set an asking price and the lowest you’ll accept, so you can negotiate calmly and confidently.'],
   ['Improve presentation', 'Declutter, fix the small stuff, and clean thoroughly. First impressions move price and speed.'],
-  ['Professional photos & listing', 'Good photos and an honest, detailed listing bring more — and more serious — enquiries.'],
+  ['Professional photos & listing', 'Good photos and an honest, detailed listing bring more, and more serious, enquiries.'],
   ['Screen buyers', 'Focus your time on genuine, financially-ready buyers instead of casual lookers.'],
   ['Site visits', 'Host visits at convenient times and be ready to answer questions about the home and the area.'],
   ['Negotiate the price', 'Negotiate on price and terms, keeping your walk-away number in mind.'],
   ['Token & agreement', 'Accept a token with a written agreement covering price, timeline and conditions.'],
-  ['Legal verification', 'Let the buyer’s side verify documents — being ready here keeps the deal moving.'],
+  ['Legal verification', 'Let the buyer’s side verify documents, and being ready here keeps the deal moving.'],
   ['Register the sale deed', 'Execute and register the sale deed, with stamp duty and registration handled correctly.'],
   ['Final payment & handover', 'Collect the final payment, hand over keys and documents, and transfer utilities and society membership.'],
 ];
 ---
 <Base
   title="Ahmedabad Buyer & Seller Guide"
-  description="A simple, trustworthy guide to buying and selling property in Ahmedabad — every step explained in plain language."
+  description="A simple, trustworthy guide to buying and selling property in Ahmedabad, with every step explained in plain language."
   active="guide"
 >
   <main class="wrap">
     <section class="page-hero">
       <div class="eyebrow">Free guide</div>
       <h1 class="display" style="max-width:18ch;margin-top:12px;">The Ahmedabad Buyer &amp; Seller Guide</h1>
-      <p class="body-lg muted" style="max-width:60ch;margin-top:18px;">Buying or selling a property can feel confusing — RERA, title checks, stamp duty, possession. We’ve broken the whole process down into clear, friendly steps for both buyers and sellers in Ahmedabad.</p>
+      <p class="body-lg muted" style="max-width:60ch;margin-top:18px;">Buying or selling a property can feel confusing, with RERA, title checks, stamp duty and possession to navigate. We’ve broken the whole process down into clear, friendly steps for both buyers and sellers in Ahmedabad.</p>
     </section>
 
     <!-- CONTACT WALL -->
     <section class="wall" id="wall">
       <div class="wall-card">
         <h3 style="margin-bottom:4px;">Unlock the full guide</h3>
-        <p class="small muted" style="margin:0 0 18px;">Tell us a little about you and we’ll open the complete buyer’s and seller’s guide — and tailor a tip or two to your plans.</p>
+        <p class="small muted" style="margin:0 0 18px;">Tell us a little about you and we’ll open the complete buyer’s and seller’s guide, and tailor a tip or two to your plans.</p>
         <LeadForm
           name="guide"
           submitLabel="Unlock the Guide"
@@ -58,11 +58,11 @@ const sellerSteps = [
           intentOptions={['Buying', 'Selling', 'Both', 'Just researching']}
           intentLabel="Are you buying or selling?"
           extraFields={[
-            { name: 'locality', label: 'Preferred locality', type: 'locality', optional: true, placeholder: 'Type a locality — e.g. Bopal, Shela, Kudasan…', full: true },
+            { name: 'locality', label: 'Preferred locality', type: 'locality', optional: true, placeholder: 'Type a locality, e.g. Bopal, Shela, Kudasan…', full: true },
           ]}
           showMessage={false}
           context={{ source: 'guide' }}
-          successMessage="You’re in — your guide is unlocked below. Enjoy!"
+          successMessage="You’re in, your guide is unlocked below. Enjoy!"
           whatsappFallback="Hi, I’d like the Ahmedabad buyer/seller guide."
         />
       </div>
@@ -88,7 +88,7 @@ const sellerSteps = [
 
       <div class="guide-section" data-panel="buyer">
         <h2>Buyer’s Guide for Ahmedabad</h2>
-        <p class="muted" style="max-width:60ch;margin:8px 0 24px;">Your step-by-step path from “maybe” to keys in hand — without nasty surprises.</p>
+        <p class="muted" style="max-width:60ch;margin:8px 0 24px;">Your step by step path from “maybe” to keys in hand, without nasty surprises.</p>
         <ol class="steps">
           {buyerSteps.map(([t, d], i) => (
             <li><span class="n">{i + 1}</span><div><b>{t}</b><span class="muted">{d}</span></div></li>

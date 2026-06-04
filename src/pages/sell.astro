@@ -5,7 +5,7 @@ import Icon from '../components/Icon.astro';
 import Stat from '../components/Stat.astro';
 
 const sellFields = [
-  { name: 'locality', label: 'Property location / locality', type: 'locality' as const, required: true, placeholder: 'Type a locality — e.g. Prahlad Nagar, Sanand, Vatva GIDC…', full: true },
+  { name: 'locality', label: 'Property location / locality', type: 'locality' as const, required: true, placeholder: 'Type a locality, e.g. Prahlad Nagar, Sanand, Vatva GIDC…', full: true },
   { name: 'propertyType', label: 'Property type', type: 'select' as const, required: true, placeholder: 'Select type',
     options: ['Apartment / Flat', 'Villa / Bungalow', 'Plot / Land', 'Office', 'Shop / Showroom', 'Warehouse', 'Industrial shed', 'Other'] },
   { name: 'size', label: 'Property size', type: 'text' as const, placeholder: 'e.g. 1,950 sqft · 3 BHK' },
@@ -17,9 +17,9 @@ const sellFields = [
 ];
 
 const trust = [
-  { icon: 'pin', title: 'Local Ahmedabad market knowledge', body: 'We price against real, recent deals in your exact locality — not guesswork.' },
+  { icon: 'pin', title: 'Local Ahmedabad market knowledge', body: 'We price against real, recent deals in your exact locality, not guesswork.' },
   { icon: 'search', title: 'Help with pricing & buyer matching', body: 'Professional photos, the right listing, and serious, pre-screened buyers.' },
-  { icon: 'check', title: 'Support through paperwork & closing', body: 'From token to sale deed, registration and handover — we’re with you to the end.' },
+  { icon: 'check', title: 'Support through paperwork & closing', body: 'From token to sale deed, registration and handover, and we’re with you to the end.' },
 ];
 ---
 <Base
@@ -31,7 +31,7 @@ const trust = [
     <section class="page-hero">
       <div class="eyebrow">Sell with confidence</div>
       <h1 class="display" style="max-width:18ch;margin-top:12px;">Sell Your Property in Ahmedabad</h1>
-      <p class="body-lg muted" style="max-width:60ch;margin-top:18px;">Share a few details about your property and we’ll come back with a free, grounded estimate. We help with pricing, finding genuine buyers, and managing the entire selling process — so you don’t have to chase anyone.</p>
+      <p class="body-lg muted" style="max-width:60ch;margin-top:18px;">Share a few details about your property and we’ll come back with a free, grounded estimate. We help with pricing, finding genuine buyers, and managing the entire selling process, so you don’t have to chase anyone.</p>
       <div class="vstats">
         <Stat display="2,400+" label="Deals closed" />
         <Stat display="12 yrs" label="In Ahmedabad" />
@@ -49,7 +49,7 @@ const trust = [
           twoCol
           extraFields={sellFields}
           messageLabel="Message / additional details"
-          messagePlaceholder="Anything else we should know — amenities, parking, floor, reason for selling…"
+          messagePlaceholder="Anything else we should know, like amenities, parking, floor or reason for selling…"
           context={{ source: 'sell' }}
           successMessage="Thanks! We’ll review your property and get back to you with a free estimate, usually within a day."
           whatsappFallback="Hi, I’d like a free estimate to sell my property in Ahmedabad."

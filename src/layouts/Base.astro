@@ -20,7 +20,7 @@ interface Props {
 
 const {
   title,
-  description = 'Ahmedabad’s full-spectrum property advisors — residential, commercial, land, industrial and warehousing. Find your place in the city.',
+  description = 'Ahmedabad’s full spectrum property advisors for residential, commercial, land, industrial and warehousing. Find your place in the city.',
   active,
   navVariant = 'site',
   ogImage = '/logo/city-property-logo.png',
@@ -29,7 +29,7 @@ const {
 
 const canonical = new URL(Astro.url.pathname, site.url).href;
 const ogImageAbs = new URL(ogImage, site.url).href;
-const fullTitle = title.includes(site.name) ? title : `${title} — ${site.name}`;
+const fullTitle = title.includes(site.name) ? title : `${title} · ${site.name}`;
 ---
 <!DOCTYPE html>
 <html lang="en">

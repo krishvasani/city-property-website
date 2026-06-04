@@ -155,7 +155,7 @@ export const properties: Property[] = [
     geo: { lat: 23.0125, lng: 72.5095 },
     newAt: '2026-05-30',
     description: [
-      'A bright, east-facing 3 BHK on the 7th floor of Iscon Platinum — one of Prahlad Nagar’s most sought-after towers. Floor-to-ceiling windows draw light deep into a wide living-dining space, with a balcony overlooking landscaped gardens.',
+      'A bright, east-facing 3 BHK on the 7th floor of Iscon Platinum, one of Prahlad Nagar’s most sought after towers. Floor-to-ceiling windows draw light deep into a wide living-dining space, with a balcony overlooking landscaped gardens.',
       'The home has been gently maintained, comes semi-furnished with modular kitchen and wardrobes, and sits minutes from Iscon Mega Mall, leading schools and the SG Highway corridor. Two covered parking bays and 24×7 security included.',
     ],
     amenities: [
@@ -483,7 +483,7 @@ export const properties: Property[] = [
     propertyType: 'warehousing',
     localityName: 'Changodar',
     localitySlug: 'changodar',
-    address: 'Sarkhej–Bavla Road, Changodar, Ahmedabad',
+    address: 'Sarkhej Bavla Road, Changodar, Ahmedabad',
     area: '12,000 sqft',
     areaSqft: 12000,
     agentId: 'kunal-desai',

@@ -14,9 +14,9 @@ const categories = [
 const reasons = categories.map((c) => c.label);
 
 const why = [
-  'Local Ahmedabad expertise — we know each locality, not just the headlines.',
+  'Local Ahmedabad expertise, so we know each locality and not just the headlines.',
   'Residential and commercial knowledge under one roof.',
-  'Practical, honest guidance — not generic advice.',
+  'Practical, honest guidance, not generic advice.',
   'Help at every step, from your first search to the final transaction.',
 ];
 ---
@@ -52,8 +52,8 @@ const why = [
           intentOptions={reasons}
           intentLabel="What do you need help with?"
           extraFields={[
-            { name: 'locality', label: 'Preferred locality', type: 'locality', optional: true, placeholder: 'Type a locality — e.g. Satellite, GIFT City, Changodar…', full: true },
-            { name: 'budget', label: 'Budget range', type: 'text', optional: true, placeholder: 'e.g. ₹80 L – 1.2 Cr (optional)', full: true },
+            { name: 'locality', label: 'Preferred locality', type: 'locality', optional: true, placeholder: 'Type a locality, e.g. Satellite, GIFT City, Changodar…', full: true },
+            { name: 'budget', label: 'Budget range', type: 'text', optional: true, placeholder: 'e.g. ₹80 L to 1.2 Cr (optional)', full: true },
           ]}
           messagePlaceholder="Tell us a little about your situation and what you’d like help with…"
           context={{ source: 'consult' }}

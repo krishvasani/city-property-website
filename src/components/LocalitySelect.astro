@@ -10,7 +10,7 @@ interface Props {
   required?: boolean;
   value?: string;
 }
-const { name, id = name, placeholder = 'Type a locality — e.g. Bopal, Sanand, GIFT, warehouse…', required = false, value = '' } = Astro.props;
+const { name, id = name, placeholder = 'Type a locality, e.g. Bopal, Sanand, GIFT, warehouse…', required = false, value = '' } = Astro.props;
 
 const groups = getGroupedLocalities();
 const blob = (s: string[]) => s.filter(Boolean).join(' ').toLowerCase();
@@ -47,7 +47,7 @@ const blob = (s: string[]) => s.filter(Boolean).join(' ').toLowerCase();
         ))}
       </div>
     ))}
-    <div class="loc-empty" hidden>No match — just type your own area, we’ll still get it.</div>
+    <div class="loc-empty" hidden>No match, just type your own area and we’ll still get it.</div>
   </div>
 </div>
 

@@ -47,7 +47,7 @@ const data = resolved.map(({ p, lat, lng, region }) => ({
 }));
 ---
 <Base
-  title="Property Map — Explore Ahmedabad"
+  title="Property Map of Ahmedabad"
   description="Explore every City Property Services listing on a live map of Ahmedabad. Pan and zoom to see only the properties in view, with filters for buy, rent and lease."
   active="map"
 >
@@ -197,12 +197,12 @@ const data = resolved.map(({ p, lat, lng, region }) => ({
   const cardsWrap = document.getElementById('map-cards')!;
 
   const SALE_BUDGETS = [
-    ['Up to ₹50 L', '0-5000000'], ['₹50 L – 1 Cr', '5000000-10000000'],
-    ['₹1 – 2 Cr', '10000000-20000000'], ['₹2 Cr +', '20000000-'],
+    ['Up to ₹50 L', '0-5000000'], ['₹50 L to 1 Cr', '5000000-10000000'],
+    ['₹1 to 2 Cr', '10000000-20000000'], ['₹2 Cr +', '20000000-'],
   ];
   const RENT_BUDGETS = [
-    ['Up to ₹25,000', '0-25000'], ['₹25k – 50k', '25000-50000'],
-    ['₹50k – 1 L', '50000-100000'], ['₹1 L +', '100000-'],
+    ['Up to ₹25,000', '0-25000'], ['₹25k to 50k', '25000-50000'],
+    ['₹50k to 1 L', '50000-100000'], ['₹1 L +', '100000-'],
   ];
 
   const state = { status: '', type: '', region: '', locality: '', beds: 0, budget: '', sort: 'recommended' };

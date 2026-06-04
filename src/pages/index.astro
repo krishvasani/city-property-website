@@ -26,11 +26,10 @@ const types = [
   { icon: 'warehousing' as const, title: 'Warehousing', count: '95 listings', type: 'warehousing' },
 ];
 
-// CIRIL member cities + the five services the name stands for
-const cirilCities = ['Ahmedabad', 'Bengaluru', 'Chennai', 'Hyderabad', 'Kolkata', 'Mumbai', 'Nagpur', 'Pune'];
+// The five services the CIRIL name stands for
 const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industrial & Logistics', 'Land'];
 ---
-<Base title="City Property Services — Property in Ahmedabad">
+<Base title="City Property Services · Property in Ahmedabad">
   <main>
     <!-- HERO -->
     <section class="hero wrap-wide hero-anim">
@@ -47,7 +46,7 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
       </div>
 
       <div class="hero-art" data-parallax>
-        <img src="/logo/hero-ahmedabad-skyline.jpg" alt="Ahmedabad skyline — modern towers on SG Highway" loading="lazy" />
+        <img src="/logo/hero-ahmedabad-skyline.jpg" alt="Ahmedabad skyline with modern towers on SG Highway" loading="lazy" />
       </div>
     </section>
 
@@ -57,7 +56,7 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
         <div>
           <div class="eyebrow">Browse by category</div>
           <h2 style="margin-top:10px;">Every kind of space</h2>
-          <p>Full-spectrum advisory across the city — pick a category to begin.</p>
+          <p>Full spectrum advisory across the city, so pick a category to begin.</p>
         </div>
       </div>
       <div class="types" data-stagger>
@@ -102,25 +101,26 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
           <h2 style="margin-top:10px;">27 years of trusted property advice in Ahmedabad</h2>
           <p>Founded and led by <strong>Mukesh Vasani</strong>, City Property Services has spent over
             <strong>27 years</strong> helping families, investors and businesses across Ahmedabad find the
-            right space — and the right deal. From a first home in Satellite to corporate offices on SG Highway
+            right space at the right price. From a first home in Satellite to corporate offices on SG Highway
             and warehouses on the Ring Road, we advise across residential, commercial, retail, office,
             industrial, warehousing and land.</p>
-          <p>What sets us apart is a deep, on-the-ground feel for every micro-market in the city, paired with
-            a national reach. We’re the Ahmedabad member of <strong>CIRIL</strong> — India’s owner-operated
-            network of commercial real-estate specialists — which connects us to vetted partners in eight
-            cities and to opportunities that rarely reach the open market.</p>
+          <p>What sets us apart is a genuine feel for every part of the city paired with a national reach.
+            Mukesh Vasani is also a <strong>Co-founder of CIRIL</strong>, an owner operated network of
+            commercial real estate specialists, and City Property Services is its Ahmedabad member. That
+            connection gives our clients access to vetted partners and to opportunities that rarely reach
+            the open market.</p>
 
           <div class="ciril">
             <div class="ciril-head">
               <span class="ciril-badge">CIRIL</span>
-              <span class="ciril-tag">Part of the CIRIL network · Innovate through network</span>
+              <span class="ciril-tag">Part of the CIRIL network. Innovate through network.</span>
             </div>
             <div class="ciril-services">
               {cirilServices.map((s) => (
                 <span class="cs"><Icon name="check" sw={2.4} />{s}</span>
               ))}
             </div>
-            <div class="ciril-cities">Offices across {cirilCities.join(' · ')}</div>
+            <div class="ciril-cities">A growing network with a presence in 30+ cities across India.</div>
           </div>
 
           <div class="row" style="margin-top:24px;gap:12px;flex-wrap:wrap;">
@@ -135,8 +135,8 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
     <section class="section wrap-wide reveal">
       <div class="band between" style="align-items:center;">
         <div>
-          <h2>Thinking of selling — or not sure what to do?</h2>
-          <p style="margin-top:12px;">Get a free valuation and reach serious, verified buyers across Ahmedabad — or just talk it through with a local expert. No pressure, no hassle.</p>
+          <h2>Thinking of selling, or not sure what to do?</h2>
+          <p style="margin-top:12px;">Get a free valuation and reach serious, verified buyers across Ahmedabad, or simply talk it through with a local expert. No pressure and no hassle.</p>
           <div class="row" style="margin-top:24px;">
             <a class="btn btn-primary btn-lg" href="/sell">Sell your property</a>
             <a class="btn btn-ghost btn-lg" href="/consult" style="color:#fff;">Talk to an expert</a>
@@ -198,8 +198,8 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
   .cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
 
   /* About us / founder */
-  .about-split { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 44px; align-items: center; }
-  .founder { position: relative; }
+  .about-split { display: grid; grid-template-columns: 280px 1fr; gap: 44px; align-items: center; }
+  .founder { position: relative; max-width: 280px; }
   .founder-photo { aspect-ratio: 4/5; width: 100%; border-radius: var(--r-xl); box-shadow: var(--shadow-lg); }
   img.founder-photo { object-fit: cover; object-position: 50% 25%; display: block; }
   .founder-meta { position: absolute; left: 16px; right: 16px; bottom: 16px; background: rgba(255,255,255,.92); backdrop-filter: saturate(160%) blur(8px); border-radius: var(--r); padding: 12px 16px; box-shadow: var(--shadow-sm); }
@@ -228,7 +228,7 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
   .agent-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
   .agent-card .av { width: 96px; height: 96px; border-radius: 999px; margin: 0 auto 16px; }
 
-  @media (max-width: 980px) { .types { grid-template-columns: repeat(2,1fr); } .cards, .agents-grid { grid-template-columns: 1fr 1fr; } .about-split { grid-template-columns: 1fr; gap: 28px; } .founder { max-width: 360px; } }
+  @media (max-width: 980px) { .types { grid-template-columns: repeat(2,1fr); } .cards, .agents-grid { grid-template-columns: 1fr 1fr; } .about-split { grid-template-columns: 1fr; gap: 28px; } .founder { max-width: 240px; } }
   @media (max-width: 680px) { .types, .cards, .agents-grid { grid-template-columns: 1fr; } .band { padding: 36px 28px; } }
 
   /* Hero search stacks into a column on phones (search is the primary CTA) */

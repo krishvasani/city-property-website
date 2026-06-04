@@ -49,7 +49,7 @@ const {
   context = {},
   twoCol = false,
   whatsappFallback = 'Hi, I just tried to send an enquiry on your website.',
-  successMessage = 'Thanks! Your enquiry is in — an advisor will reach out shortly.',
+  successMessage = 'Thanks! Your enquiry is in and an advisor will reach out shortly.',
 } = Astro.props;
 
 const waHref = whatsappUrl(whatsappFallback);
@@ -130,7 +130,7 @@ const fid = (f: string) => `${name}-${f}`;
 
   <p class="lead-status" data-status hidden role="status" aria-live="polite"></p>
   <p class="lead-fallback small muted" data-fallback hidden>
-    Couldn’t send just now — please <a href={waHref} target="_blank" rel="noopener">message us on WhatsApp</a>.
+    Couldn’t send just now, so please <a href={waHref} target="_blank" rel="noopener">message us on WhatsApp</a>.
   </p>
 </form>
 
@@ -192,7 +192,7 @@ const fid = (f: string) => `${name}-${f}`;
           statusEl.className = 'lead-status ok';
           statusEl.textContent =
             form.getAttribute('data-success') ||
-            'Thanks! Your enquiry is in — an advisor will reach out shortly.';
+            'Thanks! Your enquiry is in and an advisor will reach out shortly.';
         }
         form.querySelectorAll('input, textarea, select').forEach((el) => {
           const node = el as HTMLInputElement;

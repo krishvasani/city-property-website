@@ -46,7 +46,7 @@ const leadContext = {
 const waMessage = `Hi ${agentName}, I’m interested in "${property.title}" (${property.priceDisplay}) in ${property.localityName}. Could you share more details?`;
 const photoCount = property.photos?.length ? Math.max(property.photos.length, 18) : 18;
 ---
-<Base title={`${property.title} — ${property.localityName}`} description={`${property.priceDisplay} · ${property.title} in ${property.localityName}, Ahmedabad.`} active="buy">
+<Base title={`${property.title} · ${property.localityName}`} description={`${property.priceDisplay} · ${property.title} in ${property.localityName}, Ahmedabad.`} active="buy">
   <main class="wrap-wide">
     <nav class="crumb">
       <a href="/">Home</a><span class="sep">›</span>
