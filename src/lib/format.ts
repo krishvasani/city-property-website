@@ -53,9 +53,14 @@ export function emiMonthly(principal: number, annualRatePct: number, years: numb
   return (principal * r * pow) / (pow - 1);
 }
 
-/** Tag variant for a status pill: navy = sale, soft = rent. */
+/** Tag variant for a status pill: navy = sale, soft = rent/lease. */
 export function tagVariantFor(p: Property): 'navy' | 'soft' {
-  return p.status === 'rent' ? 'soft' : 'navy';
+  return p.status === 'sale' ? 'navy' : 'soft';
+}
+
+/** Whether a property belongs on the Rent page (rent OR lease). */
+export function isRental(p: Property): boolean {
+  return p.status === 'rent' || p.status === 'lease';
 }
 
 /** Maps a property type to its tile icon name. */

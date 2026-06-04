@@ -1,0 +1,343 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { getProperties } from '../lib/data';
+import { map as mapCfg } from '../lib/config';
+
+const all = await getProperties();
+const properties = all.filter((p) => p.geo);
+
+const TYPE_LABELS: Record<string, string> = {
+  residential: 'Residential', commercial: 'Commercial', land: 'Land', industrial: 'Industrial', warehousing: 'Warehousing',
+};
+const typesPresent = [...new Set(properties.map((p) => p.propertyType))];
+const localities = [...new Map(properties.filter((p) => p.localitySlug).map((p) => [p.localitySlug, p.localityName])).entries()];
+
+// Compact data for the client (markers + bounds filtering)
+const data = properties.map((p) => ({
+  slug: p.slug,
+  title: p.title,
+  price: p.priceDisplay,
+  per: p.pricePer ?? '',
+  loc: p.localityName,
+  type: p.propertyType,
+  status: p.status,
+  statusLabel: p.statusLabel,
+  priceValue: p.priceValue ?? 0,
+  area: p.areaSqft ?? 0,
+  beds: typeof p.beds === 'number' ? p.beds : 0,
+  newAt: p.newAt ?? '',
+  lat: p.geo!.lat,
+  lng: p.geo!.lng,
+  localitySlug: p.localitySlug ?? '',
+}));
+---
+<Base
+  title="Property Map — Explore Ahmedabad"
+  description="Explore every City Property Services listing on a live map of Ahmedabad. Pan and zoom to see only the properties in view, with filters for buy, rent and lease."
+  active="map"
+>
+  <main class="mapx">
+    <!-- FILTERS -->
+    <div class="mapx-filters">
+      <div class="mapx-filters-inner">
+        <div class="segment" id="purpose-seg" role="tablist" aria-label="Purpose">
+          <button class="is-active" data-status="">All</button>
+          <button data-status="sale">Buy</button>
+          <button data-status="rent">Rent</button>
+          <button data-status="lease">Lease</button>
+        </div>
+        <select class="filter-select" id="f-type" aria-label="Property type">
+          <option value="">All types</option>
+          {typesPresent.map((t) => <option value={t}>{TYPE_LABELS[t] ?? t}</option>)}
+        </select>
+        <select class="filter-select" id="f-locality" aria-label="Locality">
+          <option value="">All localities</option>
+          {localities.map(([slug, name]) => <option value={slug}>{name}</option>)}
+        </select>
+        <select class="filter-select" id="f-beds" aria-label="Bedrooms">
+          <option value="">Any beds</option>
+          <option value="1">1+ beds</option>
+          <option value="2">2+ beds</option>
+          <option value="3">3+ beds</option>
+          <option value="4">4+ beds</option>
+        </select>
+        <select class="filter-select" id="f-budget" aria-label="Budget"><option value="">Any budget</option></select>
+        <div class="grow"></div>
+        <select class="filter-select" id="f-sort" aria-label="Sort">
+          <option value="recommended">Sort: Recommended</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+          <option value="newest">Newest first</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- SPLIT: map + list -->
+    <div class="mapx-split">
+      <div class="mapx-map" id="map" data-token={mapCfg.enabled ? mapCfg.token : undefined} data-style={mapCfg.style}>
+        {!mapCfg.enabled && (
+          <div class="map-missing">Map needs a Mapbox token (PUBLIC_MAPBOX_TOKEN) to display.</div>
+        )}
+      </div>
+
+      <aside class="mapx-list">
+        <div class="mapx-list-head">
+          <span><b id="area-count">{properties.length}</b> in this area</span>
+        </div>
+        <div class="mapx-cards" id="map-cards">
+          {properties.map((p) => (
+            <article
+              class="mcard"
+              data-slug={p.slug}
+              data-type={p.propertyType}
+              data-status={p.status}
+              data-price={p.priceValue ?? 0}
+              data-area={p.areaSqft ?? 0}
+              data-beds={typeof p.beds === 'number' ? p.beds : 0}
+              data-new={p.newAt ?? ''}
+              data-locality={p.localitySlug ?? ''}
+            >
+              <div class="mcard-media"><div class="ph" data-label="Photo"></div></div>
+              <div class="mcard-body">
+                <div class="mcard-price">{p.priceDisplay}{p.pricePer && <span class="per">{p.pricePer}</span>}</div>
+                <div class="mcard-title">{p.title}</div>
+                <div class="mcard-loc"><Icon name="pin" sw={1.8} />{p.localityName}</div>
+                <a class="mcard-link" href={`/property/${p.slug}`}>View details →</a>
+              </div>
+            </article>
+          ))}
+        </div>
+        <div class="mapx-empty" id="map-empty" hidden>
+          <p class="muted">No properties in this area match your filters. Try zooming out or clearing a filter.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+</Base>
+
+<script type="application/json" id="map-data" is:inline set:html={JSON.stringify(data)} />
+
+<style is:global>
+  .mapx { display: flex; flex-direction: column; height: calc(100vh - var(--nav-h)); }
+  .mapx-filters { border-bottom: 1px solid var(--hairline); background: var(--surface); flex: none; }
+  .mapx-filters-inner { display: flex; align-items: center; gap: 10px; padding: 12px 24px; flex-wrap: wrap; }
+  .mapx-filters .grow { flex: 1; }
+  .filter-select { border: 1px solid var(--border); border-radius: var(--r-pill); padding: 9px 14px; font: inherit; font-size: 14px; font-weight: 600; color: var(--ink); background: var(--surface); cursor: pointer; }
+  .mapx-split { flex: 1; display: grid; grid-template-columns: 1fr 420px; min-height: 0; }
+  .mapx-map { position: relative; background: #eef1f3; }
+  .mapx-map .map-missing { position: absolute; inset: 0; display: grid; place-items: center; color: var(--text-muted); padding: 24px; text-align: center; }
+  .mapx-list { border-left: 1px solid var(--hairline); display: flex; flex-direction: column; min-height: 0; background: var(--bg-2); }
+  .mapx-list-head { padding: 14px 20px; border-bottom: 1px solid var(--hairline); font-size: 14px; color: var(--text-muted); flex: none; background: var(--surface); }
+  .mapx-list-head b { color: var(--ink); }
+  .mapx-cards { overflow-y: auto; padding: 14px; display: flex; flex-direction: column; gap: 12px; }
+  .mcard { display: grid; grid-template-columns: 104px 1fr; gap: 12px; border: 1px solid var(--hairline); border-radius: var(--r); background: var(--surface); overflow: hidden; box-shadow: var(--shadow-xs); cursor: pointer; transition: border-color var(--t) var(--ease), box-shadow var(--t) var(--ease), transform var(--t) var(--ease); }
+  .mcard:hover, .mcard.is-active { border-color: var(--navy); box-shadow: var(--shadow-sm); transform: translateY(-1px); }
+  .mcard-media { background: var(--surface-3); }
+  .mcard-media .ph { height: 100%; }
+  .mcard-body { padding: 12px 14px 12px 0; min-width: 0; }
+  .mcard-price { font-weight: 700; color: var(--ink); font-size: 16px; }
+  .mcard-price .per { font-size: 12px; font-weight: 500; color: var(--text-muted); }
+  .mcard-title { font-size: 13.5px; font-weight: 600; color: var(--ink); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .mcard-loc { display: flex; align-items: center; gap: 5px; font-size: 12.5px; color: var(--text-muted); margin-top: 4px; }
+  .mcard-loc svg { width: 13px; height: 13px; color: var(--sky); flex: none; }
+  .mcard-link { display: inline-block; margin-top: 8px; font-size: 12.5px; font-weight: 600; color: var(--navy); }
+  .mapx-empty { padding: 28px 20px; }
+
+  /* Mapbox marker pills + popup */
+  .mb-pin { background: var(--navy); color: #fff; font-weight: 700; font-size: 13px; padding: 6px 12px; border-radius: var(--r-pill); box-shadow: var(--shadow); white-space: nowrap; cursor: pointer; transition: transform var(--t) var(--ease-out), background var(--t) var(--ease); }
+  .mb-pin:hover, .mb-pin.is-active { background: var(--sky); transform: translateY(-2px) scale(1.05); z-index: 2; }
+  .mpop { font-family: var(--font); padding: 2px 2px 4px; min-width: 168px; }
+  .mpop-price { font-weight: 700; color: var(--ink); font-size: 15px; }
+  .mpop-title { font-size: 13px; color: var(--text); margin: 2px 0; }
+  .mpop-loc { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+  .mpop a { font-size: 12.5px; font-weight: 600; color: var(--navy); }
+  .mapboxgl-popup-content { border-radius: var(--r-sm); box-shadow: var(--shadow); padding: 12px 14px; }
+
+  @media (max-width: 900px) {
+    .mapx { height: auto; }
+    .mapx-split { grid-template-columns: 1fr; }
+    .mapx-map { height: 56vh; }
+    .mapx-list { border-left: 0; border-top: 1px solid var(--hairline); }
+    .mapx-cards { max-height: none; }
+  }
+</style>
+
+<script>
+  type P = {
+    slug: string; title: string; price: string; per: string; loc: string; type: string;
+    status: string; statusLabel: string; priceValue: number; area: number; beds: number;
+    newAt: string; lat: number; lng: number; localitySlug: string;
+  };
+  const data: P[] = JSON.parse(document.getElementById('map-data')!.textContent || '[]');
+  const bySlug = new Map(data.map((p) => [p.slug, p]));
+
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('.mcard'));
+  const cardBySlug = new Map(cards.map((c) => [c.dataset.slug!, c]));
+  const countEl = document.getElementById('area-count')!;
+  const emptyEl = document.getElementById('map-empty')!;
+  const cardsWrap = document.getElementById('map-cards')!;
+
+  const SALE_BUDGETS = [
+    ['Up to ₹50 L', '0-5000000'], ['₹50 L – 1 Cr', '5000000-10000000'],
+    ['₹1 – 2 Cr', '10000000-20000000'], ['₹2 Cr +', '20000000-'],
+  ];
+  const RENT_BUDGETS = [
+    ['Up to ₹25,000', '0-25000'], ['₹25k – 50k', '25000-50000'],
+    ['₹50k – 1 L', '50000-100000'], ['₹1 L +', '100000-'],
+  ];
+
+  const state = { status: '', type: '', locality: '', beds: 0, budget: '', sort: 'recommended' };
+
+  const seg = document.getElementById('purpose-seg')!;
+  const fType = document.getElementById('f-type') as HTMLSelectElement;
+  const fLoc = document.getElementById('f-locality') as HTMLSelectElement;
+  const fBeds = document.getElementById('f-beds') as HTMLSelectElement;
+  const fBudget = document.getElementById('f-budget') as HTMLSelectElement;
+  const fSort = document.getElementById('f-sort') as HTMLSelectElement;
+
+  function repopulateBudget() {
+    const opts = state.status === 'rent' || state.status === 'lease' ? RENT_BUDGETS
+      : state.status === 'sale' ? SALE_BUDGETS : [];
+    fBudget.innerHTML = '<option value="">Any budget</option>' +
+      opts.map(([l, v]) => `<option value="${v}">${l}</option>`).join('');
+    state.budget = '';
+  }
+
+  function passesFilters(p: P): boolean {
+    if (state.status && p.status !== state.status) return false;
+    if (state.type && p.type !== state.type) return false;
+    if (state.locality && p.localitySlug !== state.locality) return false;
+    if (state.beds && p.beds < state.beds) return false;
+    if (state.budget) {
+      const [lo, hi] = state.budget.split('-');
+      const min = lo ? +lo : 0, max = hi ? +hi : Infinity;
+      if (p.priceValue < min || p.priceValue > max) return false;
+    }
+    return true;
+  }
+
+  function sortList(list: P[]): P[] {
+    const a = [...list];
+    if (state.sort === 'price-asc') a.sort((x, y) => x.priceValue - y.priceValue);
+    else if (state.sort === 'price-desc') a.sort((x, y) => y.priceValue - x.priceValue);
+    else if (state.sort === 'newest') a.sort((x, y) => (y.newAt || '').localeCompare(x.newAt || ''));
+    return a;
+  }
+
+  // ── Mapbox ─────────────────────────────────────────────────────────
+  const mapEl = document.getElementById('map')!;
+  const token = mapEl.getAttribute('data-token');
+  let map: any = null;
+  const markers = new Map<string, any>();
+  let popup: any = null;
+
+  function loadCss(href: string) { if (!document.querySelector(`link[href="${href}"]`)) { const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = href; document.head.appendChild(l); } }
+  function loadScript(src: string): Promise<void> { return new Promise((res, rej) => { if ((window as any).mapboxgl) return res(); const s = document.createElement('script'); s.src = src; s.onload = () => res(); s.onerror = rej; document.head.appendChild(s); }); }
+
+  // Apply filters: update which markers exist on the map, then refresh the
+  // in-view list. Without a map, just filter the list directly.
+  function applyFilters() {
+    const eligible = data.filter(passesFilters);
+    const eligibleSlugs = new Set(eligible.map((p) => p.slug));
+    if (map) {
+      data.forEach((p) => {
+        const m = markers.get(p.slug);
+        if (!m) return;
+        const on = eligibleSlugs.has(p.slug);
+        m.getElement().style.display = on ? '' : 'none';
+      });
+      refreshInView();
+    } else {
+      // No map: show all eligible
+      const sorted = sortList(eligible);
+      renderList(sorted);
+    }
+  }
+
+  function refreshInView() {
+    if (!map) return;
+    const b = map.getBounds();
+    const inView = data.filter((p) => passesFilters(p) && b.contains([p.lng, p.lat]));
+    renderList(sortList(inView));
+  }
+
+  function renderList(list: P[]) {
+    const show = new Set(list.map((p) => p.slug));
+    cards.forEach((c) => (c.style.display = show.has(c.dataset.slug!) ? '' : 'none'));
+    // reorder
+    list.forEach((p) => { const c = cardBySlug.get(p.slug); if (c) cardsWrap.appendChild(c); });
+    countEl.textContent = String(list.length);
+    emptyEl.hidden = list.length !== 0;
+  }
+
+  function openPopup(slug: string, fly = false) {
+    const p = bySlug.get(slug); if (!p || !map) return;
+    if (fly) map.flyTo({ center: [p.lng, p.lat], zoom: Math.max(map.getZoom(), 14), duration: 600 });
+    markers.forEach((m, s) => m.getElement().classList.toggle('is-active', s === slug));
+    popup?.remove();
+    popup = new (window as any).mapboxgl.Popup({ offset: 18, closeButton: false })
+      .setLngLat([p.lng, p.lat])
+      .setHTML(`<div class="mpop"><div class="mpop-price">${p.price}${p.per ? `<span style="font-weight:500;color:var(--text-muted);font-size:12px;">${p.per}</span>` : ''}</div><div class="mpop-title">${p.title}</div><div class="mpop-loc">${p.loc}</div><a href="/property/${p.slug}">View details →</a></div>`)
+      .addTo(map);
+  }
+
+  async function initMap() {
+    if (!token) { applyFilters(); return; }
+    try {
+      loadCss('https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css');
+      await loadScript('https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js');
+    } catch { applyFilters(); return; }
+    const mapboxgl = (window as any).mapboxgl;
+    mapboxgl.accessToken = token;
+    map = new mapboxgl.Map({
+      container: mapEl,
+      style: mapEl.getAttribute('data-style') || 'mapbox://styles/mapbox/light-v11',
+      center: [72.52, 23.02], zoom: 11, attributionControl: false,
+    });
+    map.addControl(new mapboxgl.NavigationControl({ showCompass: false }), 'top-right');
+
+    const bounds = new mapboxgl.LngLatBounds();
+    data.forEach((p) => {
+      const el = document.createElement('div');
+      el.className = 'mb-pin';
+      el.textContent = p.price;
+      el.addEventListener('click', (e) => { e.stopPropagation(); openPopup(p.slug); const c = cardBySlug.get(p.slug); c?.scrollIntoView({ behavior: 'smooth', block: 'center' }); });
+      const m = new mapboxgl.Marker({ element: el, anchor: 'bottom' }).setLngLat([p.lng, p.lat]).addTo(map);
+      markers.set(p.slug, m);
+      bounds.extend([p.lng, p.lat]);
+    });
+    if (data.length > 1) map.fitBounds(bounds, { padding: 70, maxZoom: 13 });
+
+    map.on('moveend', refreshInView);
+    map.on('load', () => { applyFilters(); });
+    applyFilters();
+  }
+
+  // ── Card interactions ──────────────────────────────────────────────
+  cards.forEach((card) => {
+    const slug = card.dataset.slug!;
+    card.addEventListener('mouseenter', () => markers.get(slug)?.getElement().classList.add('is-active'));
+    card.addEventListener('mouseleave', () => markers.get(slug)?.getElement().classList.remove('is-active'));
+    card.addEventListener('click', (e) => {
+      if ((e.target as HTMLElement).closest('.mcard-link')) return; // let the link navigate
+      openPopup(slug, true);
+    });
+  });
+
+  // ── Filter controls ────────────────────────────────────────────────
+  seg.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+    seg.querySelectorAll('button').forEach((x) => x.classList.remove('is-active'));
+    b.classList.add('is-active');
+    state.status = b.getAttribute('data-status') || '';
+    repopulateBudget();
+    applyFilters();
+  }));
+  fType.addEventListener('change', () => { state.type = fType.value; applyFilters(); });
+  fLoc.addEventListener('change', () => { state.locality = fLoc.value; applyFilters(); });
+  fBeds.addEventListener('change', () => { state.beds = +fBeds.value || 0; applyFilters(); });
+  fBudget.addEventListener('change', () => { state.budget = fBudget.value; applyFilters(); });
+  fSort.addEventListener('change', () => { state.sort = fSort.value; refreshInView(); });
+
+  initMap();
+</script>

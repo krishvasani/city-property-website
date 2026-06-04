@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import ListingExplorer from '../components/ListingExplorer.astro';
+import { getProperties } from '../lib/data';
+
+const all = await getProperties();
+const properties = all.filter((p) => p.status === 'sale');
+
+const budgetOptions = [
+  { label: 'Up to ₹50 L', value: '0-5000000' },
+  { label: '₹50 L – 1 Cr', value: '5000000-10000000' },
+  { label: '₹1 – 2 Cr', value: '10000000-20000000' },
+  { label: '₹2 Cr +', value: '20000000-' },
+];
+---
+<Base
+  title="Properties for Sale in Ahmedabad"
+  description="Browse homes, plots, offices and industrial property for sale across Ahmedabad — Prahlad Nagar, Satellite, SG Highway, Bopal, Shela and more."
+  active="buy"
+>
+  <ListingExplorer
+    properties={properties}
+    heading="Properties for Sale in Ahmedabad"
+    intro="From first homes in Satellite to villas in Shela and sheds on the Ring Road — here’s everything currently for sale, with honest pricing and local advisors who actually know each pocket of the city."
+    emptyText="No sale properties match your filters right now."
+    budgetOptions={budgetOptions}
+    budgetLabel="Budget"
+  />
+</Base>

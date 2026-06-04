@@ -1,0 +1,84 @@
+---
+import Base from '../layouts/Base.astro';
+import LeadForm from '../components/LeadForm.astro';
+import Icon from '../components/Icon.astro';
+import Stat from '../components/Stat.astro';
+
+const sellFields = [
+  { name: 'locality', label: 'Property location / locality', type: 'text' as const, required: true, placeholder: 'e.g. Prahlad Nagar, Ahmedabad', full: true },
+  { name: 'propertyType', label: 'Property type', type: 'select' as const, required: true, placeholder: 'Select type',
+    options: ['Apartment / Flat', 'Villa / Bungalow', 'Plot / Land', 'Office', 'Shop / Showroom', 'Warehouse', 'Industrial shed', 'Other'] },
+  { name: 'size', label: 'Property size', type: 'text' as const, placeholder: 'e.g. 1,950 sqft · 3 BHK' },
+  { name: 'expectedPrice', label: 'Expected price', type: 'text' as const, optional: true, placeholder: 'e.g. ₹1.4 Cr (optional)' },
+  { name: 'condition', label: 'Property condition', type: 'select' as const, placeholder: 'Select condition',
+    options: ['Ready to move', 'Newly built', 'Under construction', 'Needs renovation'] },
+  { name: 'occupied', label: 'Currently occupied?', type: 'select' as const, placeholder: 'Select',
+    options: ['Vacant', 'Self-occupied', 'Tenanted'] },
+];
+
+const trust = [
+  { icon: 'pin', title: 'Local Ahmedabad market knowledge', body: 'We price against real, recent deals in your exact locality — not guesswork.' },
+  { icon: 'search', title: 'Help with pricing & buyer matching', body: 'Professional photos, the right listing, and serious, pre-screened buyers.' },
+  { icon: 'check', title: 'Support through paperwork & closing', body: 'From token to sale deed, registration and handover — we’re with you to the end.' },
+];
+---
+<Base
+  title="Sell Your Property in Ahmedabad"
+  description="Tell us about your property and get a free estimate. City Property Services helps Ahmedabad owners price right, find serious buyers, and handle the paperwork."
+  active="sell"
+>
+  <main class="wrap">
+    <section class="page-hero">
+      <div class="eyebrow">Sell with confidence</div>
+      <h1 class="display" style="max-width:18ch;margin-top:12px;">Sell Your Property in Ahmedabad</h1>
+      <p class="body-lg muted" style="max-width:60ch;margin-top:18px;">Share a few details about your property and we’ll come back with a free, grounded estimate. We help with pricing, finding genuine buyers, and managing the entire selling process — so you don’t have to chase anyone.</p>
+      <div class="vstats">
+        <Stat display="2,400+" label="Deals closed" />
+        <Stat display="12 yrs" label="In Ahmedabad" />
+        <Stat display="4.9★" label="Client rating" />
+      </div>
+    </section>
+
+    <div class="vgrid">
+      <div class="panel">
+        <h3 style="margin-bottom:4px;">Tell us about your property</h3>
+        <p class="small muted" style="margin:0 0 18px;">No obligation. We’ll only use these details to prepare your estimate.</p>
+        <LeadForm
+          name="sell"
+          submitLabel="Request a Free Estimate"
+          twoCol
+          extraFields={sellFields}
+          messageLabel="Message / additional details"
+          messagePlaceholder="Anything else we should know — amenities, parking, floor, reason for selling…"
+          context={{ source: 'sell' }}
+          successMessage="Thanks! We’ll review your property and get back to you with a free estimate, usually within a day."
+          whatsappFallback="Hi, I’d like a free estimate to sell my property in Ahmedabad."
+        />
+      </div>
+
+      <div class="trust">
+        <h3 style="margin-bottom:6px;">Why sell with City Property Services</h3>
+        {trust.map((t) => (
+          <div class="trust-row">
+            <span class="ic"><Icon name={t.icon as any} sw={1.7} /></span>
+            <div><b>{t.title}</b><span class="muted">{t.body}</span></div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </main>
+</Base>
+
+<style is:global>
+  .page-hero { padding: 64px 0 8px; }
+  .vstats { display: flex; gap: 48px; margin-top: 32px; flex-wrap: wrap; }
+  .vgrid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 32px; align-items: start; padding: 32px 0 96px; }
+  .panel { background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 28px; }
+  .trust { display: flex; flex-direction: column; gap: 14px; }
+  .trust-row { display: flex; gap: 14px; padding: 18px 20px; border: 1px solid var(--hairline); border-radius: var(--r); background: var(--surface); box-shadow: var(--shadow-xs); }
+  .trust-row .ic { width: 44px; height: 44px; border-radius: var(--r-sm); background: var(--navy-tint); color: var(--navy); display: grid; place-items: center; flex: none; }
+  .trust-row .ic svg { width: 20px; height: 20px; }
+  .trust-row b { color: var(--ink); display: block; }
+  .trust-row .muted { display: block; font-size: 14px; margin-top: 2px; }
+  @media (max-width: 860px) { .vgrid { grid-template-columns: 1fr; } }
+</style>

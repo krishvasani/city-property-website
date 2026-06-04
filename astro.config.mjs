@@ -12,6 +12,12 @@ export default defineConfig({
   // Sanity -> Netlify build hook republishes when content changes. Netlify
   // Forms work with static HTML (the form markup is present at build time).
   output: 'static',
+  // Old routes → new structure (keeps bookmarks/links alive).
+  redirects: {
+    '/listings': '/buy',
+    '/list-property': '/sell',
+    '/contact': '/consult',
+  },
   integrations: [sitemap()],
   // Keep the build output clean; assets already hashed by Astro.
   build: { inlineStylesheets: 'never' },

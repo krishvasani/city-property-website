@@ -18,7 +18,7 @@ export default defineType({
     defineField({ name: 'slug', type: 'slug', group: 'main', options: { source: 'title' }, validation: (r) => r.required() }),
     defineField({
       name: 'status', type: 'string', group: 'main',
-      options: { list: [{ title: 'For sale', value: 'sale' }, { title: 'For rent', value: 'rent' }], layout: 'radio' },
+      options: { list: [{ title: 'For sale', value: 'sale' }, { title: 'For rent', value: 'rent' }, { title: 'For lease', value: 'lease' }], layout: 'radio' },
       initialValue: 'sale', validation: (r) => r.required(),
     }),
     defineField({ name: 'statusLabel', title: 'Status label (optional override)', type: 'string', group: 'meta', description: 'Defaults to "For sale" / "For rent".' }),

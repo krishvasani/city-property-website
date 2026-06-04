@@ -11,6 +11,8 @@ const meta = cardMetaFor(p);
 const variant = tagVariantFor(p);
 const href = `/property/${p.slug}`;
 const photo = p.photos?.[0];
+const bedsNum = typeof p.beds === 'number' ? p.beds : '';
+const searchText = [p.title, p.localityName, p.address].filter(Boolean).join(' ').toLowerCase();
 ---
 <a
   class="prop"
@@ -20,8 +22,12 @@ const photo = p.photos?.[0];
   data-status={p.status}
   data-price={p.priceValue ?? ''}
   data-area={p.areaSqft ?? ''}
+  data-beds={bedsNum}
   data-locality={p.localitySlug ?? ''}
   data-new={p.newAt ?? ''}
+  data-lat={p.geo?.lat ?? ''}
+  data-lng={p.geo?.lng ?? ''}
+  data-search={searchText}
 >
   <div class="prop-media">
     {photo?.url ? (

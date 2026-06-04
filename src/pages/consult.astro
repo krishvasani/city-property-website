@@ -1,0 +1,107 @@
+---
+import Base from '../layouts/Base.astro';
+import LeadForm from '../components/LeadForm.astro';
+import Icon from '../components/Icon.astro';
+
+const categories = [
+  { icon: 'compass', label: 'Investment advice', desc: 'Where to put your money for the best long-term return.' },
+  { icon: 'residential', label: 'Buying guidance', desc: 'Buy vs rent, the right locality, and a fair price.' },
+  { icon: 'share', label: 'Selling strategy', desc: 'When to sell, pricing, and reaching serious buyers.' },
+  { icon: 'furnished', label: 'Rental / leasing help', desc: 'Renting a home or leasing commercial space.' },
+  { icon: 'commercial', label: 'Commercial property advice', desc: 'Offices, shops, warehouses and industrial.' },
+  { icon: 'filters', label: 'Market report request', desc: 'A clear read on a locality or the wider market.' },
+];
+const reasons = categories.map((c) => c.label);
+
+const why = [
+  'Local Ahmedabad expertise — we know each locality, not just the headlines.',
+  'Residential and commercial knowledge under one roof.',
+  'Practical, honest guidance — not generic advice.',
+  'Help at every step, from your first search to the final transaction.',
+];
+---
+<Base
+  title="Talk to a Property Expert"
+  description="Speak with a local City Property Services expert for investment advice, buying guidance, selling strategy, leasing help or a market report on Ahmedabad."
+  active="consult"
+>
+  <main class="wrap">
+    <section class="page-hero">
+      <div class="eyebrow">No pressure, just clarity</div>
+      <h1 class="display" style="max-width:16ch;margin-top:12px;">Talk to a Property Expert</h1>
+      <p class="body-lg muted" style="max-width:60ch;margin-top:18px;">Not sure whether to buy or rent? Wondering if it’s the right time to sell, or where to invest next? Speak with a local expert for honest guidance on buying, selling, leasing, commercial decisions, or just a clear read on the market.</p>
+    </section>
+
+    <section class="cat-grid" aria-label="Consultation topics">
+      {categories.map((c) => (
+        <button class="cat" data-reason={c.label} type="button">
+          <span class="ic"><Icon name={c.icon as any} sw={1.7} /></span>
+          <span class="t">{c.label}</span>
+          <span class="d">{c.desc}</span>
+        </button>
+      ))}
+    </section>
+
+    <div class="vgrid" id="consult-form">
+      <div class="panel">
+        <h3 style="margin-bottom:16px;">Request a consultation</h3>
+        <LeadForm
+          name="consult"
+          submitLabel="Request a Consultation"
+          twoCol
+          intentOptions={reasons}
+          intentLabel="What do you need help with?"
+          extraFields={[
+            { name: 'locality', label: 'Preferred locality', type: 'text', optional: true, placeholder: 'e.g. Satellite, SG Highway', full: true },
+            { name: 'budget', label: 'Budget range', type: 'text', optional: true, placeholder: 'e.g. ₹80 L – 1.2 Cr (optional)', full: true },
+          ]}
+          messagePlaceholder="Tell us a little about your situation and what you’d like help with…"
+          context={{ source: 'consult' }}
+          successMessage="Thanks! An expert will reach out to set up your consultation, usually the same day."
+          whatsappFallback="Hi, I’d like to book a consultation with a property expert."
+        />
+      </div>
+      <div class="why">
+        <h3 style="margin-bottom:6px;">Why consult with us</h3>
+        {why.map((w) => (
+          <div class="why-row"><span class="ck"><Icon name="check" sw={2.4} /></span><span>{w}</span></div>
+        ))}
+      </div>
+    </div>
+  </main>
+</Base>
+
+<style is:global>
+  .page-hero { padding: 64px 0 8px; }
+  .cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 24px 0 8px; }
+  .cat { text-align: left; display: flex; flex-direction: column; gap: 8px; padding: 20px; border: 1px solid var(--hairline); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-xs); cursor: pointer; transition: transform var(--t) var(--ease-out), box-shadow var(--t) var(--ease-out), border-color var(--t) var(--ease); }
+  .cat:hover, .cat.is-active { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--navy); }
+  .cat .ic { width: 44px; height: 44px; border-radius: var(--r-sm); background: var(--navy-tint); color: var(--navy); display: grid; place-items: center; }
+  .cat.is-active .ic { background: var(--navy); color: #fff; }
+  .cat .ic svg { width: 22px; height: 22px; }
+  .cat .t { font-weight: 600; color: var(--ink); }
+  .cat .d { font-size: 13px; color: var(--text-muted); }
+  .vgrid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 32px; align-items: start; padding: 28px 0 96px; }
+  .panel { background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 28px; }
+  .why { display: flex; flex-direction: column; gap: 14px; }
+  .why-row { display: flex; gap: 12px; align-items: flex-start; font-size: 15px; color: var(--text); }
+  .why-row .ck { width: 24px; height: 24px; border-radius: 999px; background: var(--good-tint); color: var(--good); display: grid; place-items: center; flex: none; }
+  .why-row .ck svg { width: 14px; height: 14px; }
+  @media (max-width: 900px) { .cat-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 860px) { .vgrid { grid-template-columns: 1fr; } }
+  @media (max-width: 560px) { .cat-grid { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+  // Clicking a topic card pre-selects the form's reason and scrolls to it.
+  const select = document.querySelector('#consult-intent') as HTMLSelectElement | null;
+  document.querySelectorAll<HTMLButtonElement>('.cat').forEach((cat) => {
+    cat.addEventListener('click', () => {
+      document.querySelectorAll('.cat').forEach((c) => c.classList.remove('is-active'));
+      cat.classList.add('is-active');
+      const reason = cat.dataset.reason || '';
+      if (select) select.value = reason;
+      document.getElementById('consult-form')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>

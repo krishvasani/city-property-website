@@ -10,7 +10,8 @@ export type PropertyType =
   | 'industrial'
   | 'warehousing';
 
-export type Status = 'sale' | 'rent';
+// The listing's purpose / type. Drives the Buy vs Rent split and the status tag.
+export type Status = 'sale' | 'rent' | 'lease';
 
 export interface Photo {
   /** Resolved image URL (Sanity CDN or /public path). Empty => render .ph placeholder. */

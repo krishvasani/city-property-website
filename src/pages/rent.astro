@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import ListingExplorer from '../components/ListingExplorer.astro';
+import { getProperties } from '../lib/data';
+import { isRental } from '../lib/format';
+
+const all = await getProperties();
+const properties = all.filter(isRental);
+
+const budgetOptions = [
+  { label: 'Up to ₹25,000', value: '0-25000' },
+  { label: '₹25,000 – 50,000', value: '25000-50000' },
+  { label: '₹50,000 – 1 L', value: '50000-100000' },
+  { label: '₹1 L +', value: '100000-' },
+];
+---
+<Base
+  title="Properties for Rent and Lease in Ahmedabad"
+  description="Find homes to rent, office space, retail and warehouse leases across Ahmedabad — furnished and unfurnished, with monthly rents that make sense."
+  active="rent"
+>
+  <ListingExplorer
+    properties={properties}
+    heading="Properties for Rent and Lease in Ahmedabad"
+    intro="Looking for a place to live or a space to grow your business? Browse homes to rent and commercial, office and warehouse leases — we’ll help you move in without the usual runaround."
+    emptyText="No rental or lease properties match your filters right now."
+    budgetOptions={budgetOptions}
+    budgetLabel="Monthly rent"
+  />
+</Base>

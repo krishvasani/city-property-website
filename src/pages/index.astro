@@ -7,7 +7,6 @@ import PropertyCard from '../components/PropertyCard.astro';
 import AgentCard from '../components/AgentCard.astro';
 import Map from '../components/Map.astro';
 import { getFeatured, getAgents, getLocalities } from '../lib/data';
-import { whatsappUrl } from '../lib/config';
 
 const featured = await getFeatured(3);
 const agents = await getAgents();
@@ -24,10 +23,8 @@ const types = [
 const mapPins = localities
   .filter((l) => l.mapPos)
   .map((l, i) => ({ label: l.name, pos: l.mapPos, geo: l.geo, active: i === 0 }));
-
-const advisorWa = whatsappUrl('Hi, I’d like to talk to an advisor about a property.');
 ---
-<Base title="City Property Services — Property in Ahmedabad" active="buy" navGhost="signin">
+<Base title="City Property Services — Property in Ahmedabad">
   <main>
     <!-- HERO -->
     <section class="hero wrap-wide hero-anim">
@@ -59,7 +56,7 @@ const advisorWa = whatsappUrl('Hi, I’d like to talk to an advisor about a prop
       </div>
       <div class="types" data-stagger>
         {types.map((t, i) => (
-          <TypeTile icon={t.icon} title={t.title} count={t.count} href={`/listings?type=${t.type}`} active={i === 0} />
+          <TypeTile icon={t.icon} title={t.title} count={t.count} href={`/buy?type=${t.type}`} active={i === 0} />
         ))}
       </div>
     </section>
@@ -72,7 +69,7 @@ const advisorWa = whatsappUrl('Hi, I’d like to talk to an advisor about a prop
           <h2 style="margin-top:10px;">Featured properties</h2>
           <p>A curated set our advisors think you’ll love this week.</p>
         </div>
-        <a class="btn btn-secondary" href="/listings">View all listings →</a>
+        <a class="btn btn-secondary" href="/buy">View all listings →</a>
       </div>
       <div class="cards" data-stagger>
         {featured.map((p) => <PropertyCard property={p} />)}
@@ -91,7 +88,7 @@ const advisorWa = whatsappUrl('Hi, I’d like to talk to an advisor about a prop
       <div class="loc-split">
         <div class="loc-list">
           {localities.slice(0, 5).map((l) => (
-            <a class="loc-item" href={`/listings?locality=${l.slug}`}>
+            <a class="loc-item" href={`/buy?locality=${l.slug}`}>
               <div><div class="nm">{l.name}</div><div class="c">{l.blurb}</div></div>
               <span class="arr">→</span>
             </a>
@@ -105,11 +102,11 @@ const advisorWa = whatsappUrl('Hi, I’d like to talk to an advisor about a prop
     <section class="section wrap-wide reveal">
       <div class="band between" style="align-items:center;">
         <div>
-          <h2>Thinking of selling or leasing?</h2>
-          <p style="margin-top:12px;">List with City Property Services and reach serious, verified buyers across Ahmedabad. Free valuation, professional photos, zero hassle.</p>
+          <h2>Thinking of selling — or not sure what to do?</h2>
+          <p style="margin-top:12px;">Get a free valuation and reach serious, verified buyers across Ahmedabad — or just talk it through with a local expert. No pressure, no hassle.</p>
           <div class="row" style="margin-top:24px;">
-            <a class="btn btn-primary btn-lg" href="/list-property">Get a free valuation</a>
-            <a class="btn btn-ghost btn-lg" href={advisorWa} target="_blank" rel="noopener" style="color:#fff;">Talk to an advisor</a>
+            <a class="btn btn-primary btn-lg" href="/sell">Sell your property</a>
+            <a class="btn btn-ghost btn-lg" href="/consult" style="color:#fff;">Talk to an expert</a>
           </div>
         </div>
       </div>

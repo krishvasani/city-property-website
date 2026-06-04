@@ -1,0 +1,80 @@
+---
+import Base from '../layouts/Base.astro';
+import { posts } from '../data/blog';
+
+const fmt = (iso: string) =>
+  new Date(iso).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+const sorted = [...posts].sort((a, b) => b.date.localeCompare(a.date));
+const [lead, ...rest] = sorted;
+---
+<Base
+  title="Ahmedabad Property Market Blog"
+  description="Market updates, locality reports, buying and selling tips, and investment insights for the Ahmedabad real estate market."
+  active="blog"
+>
+  <main class="wrap">
+    <section class="page-hero">
+      <div class="eyebrow">Insights</div>
+      <h1 class="display" style="max-width:18ch;margin-top:12px;">Ahmedabad Property Market Blog</h1>
+      <p class="body-lg muted" style="max-width:60ch;margin-top:18px;">Market updates, locality reports, practical buying and selling tips, and honest investment insights — published regularly to help you make confident decisions in Ahmedabad.</p>
+    </section>
+
+    {lead && (
+      <a class="lead-post" href={`/blog/${lead.slug}`}>
+        <div class="ph thumb" data-label={lead.category}></div>
+        <div class="lead-body">
+          <div class="row" style="gap:10px;">
+            <span class="tag tag-soft">{lead.category}</span>
+            <span class="small muted">{fmt(lead.date)}</span>
+          </div>
+          <h2 style="margin:12px 0 8px;">{lead.title}</h2>
+          <p class="muted">{lead.excerpt}</p>
+          <span class="readmore">Read more →</span>
+        </div>
+      </a>
+    )}
+
+    <div class="blog-grid">
+      {rest.map((p) => (
+        <a class="post-card" href={`/blog/${p.slug}`}>
+          <div class="ph thumb" data-label={p.category}></div>
+          <div class="post-body">
+            <div class="row" style="gap:10px;">
+              <span class="tag tag-soft">{p.category}</span>
+              <span class="caption muted">{fmt(p.date)}</span>
+            </div>
+            <h3 style="margin:10px 0 8px;">{p.title}</h3>
+            <p class="small muted">{p.excerpt}</p>
+            <span class="readmore">Read more →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <div class="blog-sub">
+      <div>
+        <h3>Get market updates in your inbox</h3>
+        <p class="muted" style="margin:6px 0 0;">We publish locality reports and tips every couple of weeks.</p>
+      </div>
+      <a class="btn btn-primary" href="/consult">Talk to an expert</a>
+    </div>
+  </main>
+</Base>
+
+<style is:global>
+  .page-hero { padding: 64px 0 8px; }
+  .lead-post { display: grid; grid-template-columns: 1.1fr 1fr; gap: 0; border: 1px solid var(--hairline); border-radius: var(--r-xl); overflow: hidden; background: var(--surface); box-shadow: var(--shadow-sm); margin: 24px 0 28px; transition: transform var(--t) var(--ease-out), box-shadow var(--t) var(--ease-out); }
+  .lead-post:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+  .lead-post .thumb { min-height: 280px; }
+  .lead-body { padding: 32px; align-self: center; }
+  .readmore { color: var(--navy); font-weight: 600; font-size: 14.5px; display: inline-block; margin-top: 14px; }
+  .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .post-card { display: flex; flex-direction: column; border: 1px solid var(--hairline); border-radius: var(--r-lg); overflow: hidden; background: var(--surface); box-shadow: var(--shadow-sm); transition: transform var(--t) var(--ease-out), box-shadow var(--t) var(--ease-out); }
+  .post-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .post-card .thumb { aspect-ratio: 16/10; }
+  .post-body { padding: 18px 20px 20px; display: flex; flex-direction: column; flex: 1; }
+  .blog-sub { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin: 36px 0 96px; padding: 28px; border-radius: var(--r-lg); background: var(--navy-tint); border: 1px solid var(--border); }
+  .blog-sub h3 { color: var(--ink); }
+  @media (max-width: 980px) { .blog-grid { grid-template-columns: 1fr 1fr; } .lead-post { grid-template-columns: 1fr; } .lead-post .thumb { min-height: 200px; } }
+  @media (max-width: 640px) { .blog-grid { grid-template-columns: 1fr; } }
+</style>

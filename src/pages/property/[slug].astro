@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 const property = await getProperty(slug!);
-if (!property) return Astro.redirect('/listings');
+if (!property) return Astro.redirect('/buy');
 
 const agent = await getAgent(property.agentId);
 const similar = await getSimilar(property.slug, 3);
@@ -50,8 +50,8 @@ const photoCount = property.photos?.length ? Math.max(property.photos.length, 18
   <main class="wrap-wide">
     <nav class="crumb">
       <a href="/">Home</a><span class="sep">›</span>
-      <a href="/listings">Buy in Ahmedabad</a><span class="sep">›</span>
-      <a href={`/listings?locality=${property.localitySlug}`}>{property.localityName}</a><span class="sep">›</span>
+      <a href="/buy">Buy in Ahmedabad</a><span class="sep">›</span>
+      <a href={`/buy?locality=${property.localitySlug}`}>{property.localityName}</a><span class="sep">›</span>
       <span style="color:var(--ink);">{property.title}</span>
     </nav>
 
@@ -61,7 +61,7 @@ const photoCount = property.photos?.length ? Math.max(property.photos.length, 18
     <div class="det-head">
       <div>
         <div class="row" style="gap:8px;margin-bottom:10px;">
-          <Tag variant={property.status === 'rent' ? 'soft' : 'navy'}>{property.statusLabel}</Tag>
+          <Tag variant={property.status === 'sale' ? 'navy' : 'soft'}>{property.statusLabel}</Tag>
           <Tag variant="good">RERA verified</Tag>
           <span class="tag tag-glass" style="box-shadow:none;border:1px solid var(--border);">Ready to move</span>
         </div>
@@ -149,7 +149,7 @@ const photoCount = property.photos?.length ? Math.max(property.photos.length, 18
       <section class="block reveal" style="margin-top:64px;">
         <div class="between" style="margin-bottom:22px;">
           <h2>Similar homes nearby</h2>
-          <a class="btn btn-secondary btn-sm" href="/listings">View all →</a>
+          <a class="btn btn-secondary btn-sm" href="/buy">View all →</a>
         </div>
         <div class="similar-grid" data-stagger>
           {similar.map((p) => <PropertyCard property={p} />)}

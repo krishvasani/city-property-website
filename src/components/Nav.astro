@@ -4,16 +4,17 @@ import Icon from './Icon.astro';
 interface Props {
   variant?: 'site' | 'guide';
   active?: string;
-  ghost?: 'saved' | 'signin';
 }
-const { variant = 'site', active, ghost = 'saved' } = Astro.props;
+const { variant = 'site', active } = Astro.props;
 
+// Primary navigation. Consult is the standout CTA (rendered as the button).
 const siteLinks = [
-  { key: 'buy', label: 'Buy', href: '/listings' },
-  { key: 'rent', label: 'Rent', href: '/listings?status=rent' },
-  { key: 'commercial', label: 'Commercial', href: '/listings?type=commercial' },
-  { key: 'new', label: 'New projects', href: '/listings' },
-  { key: 'agents', label: 'Agents', href: '/#agents' },
+  { key: 'buy', label: 'Buy', href: '/buy' },
+  { key: 'rent', label: 'Rent', href: '/rent' },
+  { key: 'sell', label: 'Sell', href: '/sell' },
+  { key: 'map', label: 'Map', href: '/map' },
+  { key: 'guide', label: 'Guide', href: '/guide' },
+  { key: 'blog', label: 'Blog', href: '/blog' },
 ];
 const guideLinks = [
   { key: 'foundations', label: 'Foundations', href: '#foundations' },
@@ -21,7 +22,6 @@ const guideLinks = [
   { key: 'screens', label: 'Screens', href: '#screens' },
 ];
 const links = variant === 'guide' ? guideLinks : siteLinks;
-const ghostLabel = ghost === 'signin' ? 'Sign in' : 'Saved';
 ---
 <header class="nav">
   <div class="wrap-wide inner">
@@ -43,10 +43,7 @@ const ghostLabel = ghost === 'signin' ? 'Sign in' : 'Saved';
       {variant === 'guide' ? (
         <a class="btn btn-secondary btn-sm" href="/">View site</a>
       ) : (
-        <>
-          <a class="btn btn-ghost btn-sm hide-sm" href="/saved" data-saved-count={ghost === 'saved' ? '' : undefined}>{ghostLabel}</a>
-          <a class="btn btn-primary btn-sm hide-sm" href="/list-property">List property</a>
-        </>
+        <a class:list={['btn', 'btn-primary', 'btn-sm', 'hide-sm', { active: active === 'consult' }]} href="/consult">Consult</a>
       )}
       <button class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
         <Icon name="menu" sw={1.8} />
@@ -58,12 +55,13 @@ const ghostLabel = ghost === 'signin' ? 'Sign in' : 'Saved';
   <div class="nav-drawer" id="mobile-drawer" hidden>
     <div class="nav-drawer-panel">
       <nav class="nav-drawer-links" aria-label="Mobile">
-        {links.map((l) => <a href={l.href}>{l.label}</a>)}
+        {links.map((l) => <a href={l.href} class={active === l.key ? 'active' : undefined}>{l.label}</a>)}
+        {variant === 'site' && <a href="/consult" class={active === 'consult' ? 'active' : undefined}>Consult</a>}
+        {variant === 'site' && <a href="/saved">Saved properties</a>}
       </nav>
       {variant === 'site' && (
         <div class="nav-drawer-actions">
-          <a class="btn btn-secondary btn-block" href="#">{ghostLabel}</a>
-          <a class="btn btn-primary btn-block" href="/list-property">List property</a>
+          <a class="btn btn-primary btn-block" href="/consult">Talk to an expert</a>
         </div>
       )}
     </div>
@@ -104,6 +102,7 @@ const ghostLabel = ghost === 'signin' ? 'Sign in' : 'Saved';
     font-weight: 550; color: var(--text);
   }
   .nav-drawer-links a:hover { background: var(--surface-2); color: var(--ink); }
+  .nav-drawer-links a.active { color: var(--navy); }
   .nav-drawer-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 14px; }
 
   @media (max-width: 860px) {

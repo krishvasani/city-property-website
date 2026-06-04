@@ -1,0 +1,176 @@
+---
+import Base from '../layouts/Base.astro';
+import LeadForm from '../components/LeadForm.astro';
+import Icon from '../components/Icon.astro';
+
+const buyerSteps = [
+  ['Understand your budget & loan eligibility', 'Work out what you can comfortably spend, including a buffer. Get a loan pre-approval so you know your real range before you fall in love with a place.'],
+  ['Choose localities that fit your life', 'Weigh commute, schools, daily needs, future growth and price. SG Highway, Satellite, Bopal, Shela and Gota all feel very different — pick what suits you.'],
+  ['Shortlist properties', 'Narrow to a handful that match your budget, size and locality. Quality over quantity saves a lot of running around.'],
+  ['Visit and compare', 'See them in person, ideally at different times of day. Check light, water, parking, noise and the neighbours.'],
+  ['Check RERA registration', 'For under-construction and many new projects, confirm the RERA number on the Gujarat RERA site. It protects you.'],
+  ['Verify title & legal documents', 'Confirm clear title, ownership, approved plans, NOC and society dues. A lawyer’s title check is money well spent.'],
+  ['Negotiate price and terms', 'Negotiate on price, payment schedule, what stays in the home, and the possession date — not just the number.'],
+  ['Pay the token amount', 'Only after basic verification, pay a token to hold the property, with a simple written receipt and agreed timeline.'],
+  ['Sign the sale agreement', 'A clear agreement records price, payment plan, possession date and penalties. Read it carefully before signing.'],
+  ['Complete the home loan process', 'If you’re taking a loan, submit documents, get the valuation done, and align disbursement with your payment schedule.'],
+  ['Pay stamp duty & register', 'Pay stamp duty and registration charges and register the sale deed at the sub-registrar office.'],
+  ['Final payment & possession', 'Make the final payment, collect keys, and do a joint handover check of the property.'],
+  ['Transfer utilities & society handover', 'Transfer electricity, gas, and the society membership into your name, and collect all documents.'],
+];
+
+const sellerSteps = [
+  ['Estimate the current market value', 'Start with a realistic, evidence-based price using recent deals in your locality — not an aspirational number.'],
+  ['Prepare your documents', 'Gather title deed, approved plans, tax receipts, society NOC and any loan papers up front to avoid delays later.'],
+  ['Decide your price & negotiation range', 'Set an asking price and the lowest you’ll accept, so you can negotiate calmly and confidently.'],
+  ['Improve presentation', 'Declutter, fix the small stuff, and clean thoroughly. First impressions move price and speed.'],
+  ['Professional photos & listing', 'Good photos and an honest, detailed listing bring more — and more serious — enquiries.'],
+  ['Screen buyers', 'Focus your time on genuine, financially-ready buyers instead of casual lookers.'],
+  ['Site visits', 'Host visits at convenient times and be ready to answer questions about the home and the area.'],
+  ['Negotiate the price', 'Negotiate on price and terms, keeping your walk-away number in mind.'],
+  ['Token & agreement', 'Accept a token with a written agreement covering price, timeline and conditions.'],
+  ['Legal verification', 'Let the buyer’s side verify documents — being ready here keeps the deal moving.'],
+  ['Register the sale deed', 'Execute and register the sale deed, with stamp duty and registration handled correctly.'],
+  ['Final payment & handover', 'Collect the final payment, hand over keys and documents, and transfer utilities and society membership.'],
+];
+---
+<Base
+  title="Ahmedabad Buyer & Seller Guide"
+  description="A simple, trustworthy guide to buying and selling property in Ahmedabad — every step explained in plain language."
+  active="guide"
+>
+  <main class="wrap">
+    <section class="page-hero">
+      <div class="eyebrow">Free guide</div>
+      <h1 class="display" style="max-width:18ch;margin-top:12px;">The Ahmedabad Buyer &amp; Seller Guide</h1>
+      <p class="body-lg muted" style="max-width:60ch;margin-top:18px;">Buying or selling a property can feel confusing — RERA, title checks, stamp duty, possession. We’ve broken the whole process down into clear, friendly steps for both buyers and sellers in Ahmedabad.</p>
+    </section>
+
+    <!-- CONTACT WALL -->
+    <section class="wall" id="wall">
+      <div class="wall-card">
+        <h3 style="margin-bottom:4px;">Unlock the full guide</h3>
+        <p class="small muted" style="margin:0 0 18px;">Tell us a little about you and we’ll open the complete buyer’s and seller’s guide — and tailor a tip or two to your plans.</p>
+        <LeadForm
+          name="guide"
+          submitLabel="Unlock the Guide"
+          twoCol
+          intentOptions={['Buying', 'Selling', 'Both', 'Just researching']}
+          intentLabel="Are you buying or selling?"
+          extraFields={[
+            { name: 'locality', label: 'Preferred locality', type: 'text', optional: true, placeholder: 'e.g. Bopal (optional)', full: true },
+          ]}
+          showMessage={false}
+          context={{ source: 'guide' }}
+          successMessage="You’re in — your guide is unlocked below. Enjoy!"
+          whatsappFallback="Hi, I’d like the Ahmedabad buyer/seller guide."
+        />
+      </div>
+      <div class="wall-teaser" aria-hidden="true">
+        <div class="teaser-inner">
+          <h3>Inside the guide</h3>
+          <ul>
+            <li><Icon name="check" sw={2.4} /> The full 13-step buying process</li>
+            <li><Icon name="check" sw={2.4} /> The 12-step selling process</li>
+            <li><Icon name="check" sw={2.4} /> RERA, title checks &amp; registration explained</li>
+            <li><Icon name="check" sw={2.4} /> Negotiation &amp; possession tips</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUIDE CONTENT (revealed after the wall) -->
+    <section class="guide-content" id="guide-content" hidden>
+      <div class="guide-toggle" role="tablist">
+        <button class="is-active" data-guide="buyer">Buyer’s guide</button>
+        <button data-guide="seller">Seller’s guide</button>
+      </div>
+
+      <div class="guide-section" data-panel="buyer">
+        <h2>Buyer’s Guide for Ahmedabad</h2>
+        <p class="muted" style="max-width:60ch;margin:8px 0 24px;">Your step-by-step path from “maybe” to keys in hand — without nasty surprises.</p>
+        <ol class="steps">
+          {buyerSteps.map(([t, d], i) => (
+            <li><span class="n">{i + 1}</span><div><b>{t}</b><span class="muted">{d}</span></div></li>
+          ))}
+        </ol>
+      </div>
+
+      <div class="guide-section" data-panel="seller" hidden>
+        <h2>Seller’s Guide for Ahmedabad</h2>
+        <p class="muted" style="max-width:60ch;margin:8px 0 24px;">How to sell at a fair price, to the right buyer, with the paperwork done properly.</p>
+        <ol class="steps">
+          {sellerSteps.map(([t, d], i) => (
+            <li><span class="n">{i + 1}</span><div><b>{t}</b><span class="muted">{d}</span></div></li>
+          ))}
+        </ol>
+      </div>
+
+      <div class="guide-cta">
+        <div>
+          <h3>Want this tailored to your situation?</h3>
+          <p class="muted" style="margin:6px 0 0;">Talk to a local expert, or get a free estimate for your property.</p>
+        </div>
+        <div class="row" style="gap:10px;">
+          <a class="btn btn-primary" href="/consult">Talk to an expert</a>
+          <a class="btn btn-secondary" href="/sell">Get a free estimate</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Base>
+
+<style is:global>
+  .page-hero { padding: 64px 0 8px; }
+  .wall { display: grid; grid-template-columns: 1.1fr 1fr; gap: 0; margin: 24px 0 96px; border: 1px solid var(--hairline); border-radius: var(--r-xl); overflow: hidden; box-shadow: var(--shadow-sm); }
+  .wall-card { background: var(--surface); padding: 32px; }
+  .wall-teaser { background: var(--navy); color: #fff; padding: 32px; display: grid; align-items: center; position: relative; overflow: hidden; }
+  .wall-teaser::after { content: ""; position: absolute; right: -70px; top: -70px; width: 240px; height: 240px; border-radius: 999px; background: rgba(72,152,208,.25); filter: blur(8px); }
+  .wall-teaser h3 { color: #fff; position: relative; }
+  .wall-teaser ul { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; position: relative; }
+  .wall-teaser li { display: flex; align-items: center; gap: 10px; color: #dbe8f0; font-size: 15px; }
+  .wall-teaser li svg { width: 16px; height: 16px; color: var(--sky); flex: none; }
+
+  .guide-content { padding: 8px 0 96px; }
+  .guide-toggle { display: inline-flex; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--r-pill); padding: 4px; gap: 2px; margin-bottom: 28px; }
+  .guide-toggle button { border: none; background: transparent; padding: 9px 20px; border-radius: var(--r-pill); font-size: 14px; font-weight: 600; color: var(--text-muted); cursor: pointer; transition: all var(--t) var(--ease); }
+  .guide-toggle button.is-active { background: var(--surface); color: var(--ink); box-shadow: var(--shadow-xs); }
+  .steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; counter-reset: step; max-width: 760px; }
+  .steps li { display: flex; gap: 16px; padding: 18px 20px; border: 1px solid var(--hairline); border-radius: var(--r); background: var(--surface); box-shadow: var(--shadow-xs); }
+  .steps .n { width: 30px; height: 30px; border-radius: 999px; background: var(--navy); color: #fff; font-weight: 700; font-size: 14px; display: grid; place-items: center; flex: none; }
+  .steps b { color: var(--ink); display: block; }
+  .steps .muted { display: block; font-size: 14.5px; margin-top: 3px; line-height: 1.55; }
+  .guide-cta { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-top: 36px; padding: 28px; border-radius: var(--r-lg); background: var(--navy-tint); border: 1px solid var(--border); }
+  .guide-cta h3 { color: var(--ink); }
+  @media (max-width: 860px) { .wall { grid-template-columns: 1fr; } .wall-teaser { display: none; } }
+</style>
+
+<script>
+  const wall = document.getElementById('wall')!;
+  const content = document.getElementById('guide-content')!;
+  const KEY = 'cps:guideUnlocked';
+
+  function unlock(scroll = false) {
+    wall.style.display = 'none';
+    content.hidden = false;
+    if (scroll) content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  if (localStorage.getItem(KEY) === '1') unlock(false);
+
+  // LeadForm dispatches lead:success on submit
+  wall.addEventListener('lead:success', () => {
+    localStorage.setItem(KEY, '1');
+    setTimeout(() => unlock(true), 700);
+  });
+
+  // Buyer / seller toggle
+  const panels = document.querySelectorAll<HTMLElement>('[data-panel]');
+  document.querySelectorAll<HTMLButtonElement>('.guide-toggle button').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.guide-toggle button').forEach((b) => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      const key = btn.dataset.guide;
+      panels.forEach((p) => (p.hidden = p.dataset.panel !== key));
+    });
+  });
+</script>

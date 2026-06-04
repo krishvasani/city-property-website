@@ -1,0 +1,91 @@
+---
+import Base from '../../layouts/Base.astro';
+import { posts, getPost } from '../../data/blog';
+
+export async function getStaticPaths() {
+  return posts.map((p) => ({ params: { slug: p.slug } }));
+}
+
+const { slug } = Astro.params;
+const post = getPost(slug!);
+if (!post) return Astro.redirect('/blog');
+
+const fmt = (iso: string) =>
+  new Date(iso).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
+const related = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
+---
+<Base
+  title={post.title}
+  description={post.excerpt}
+  active="blog"
+>
+  <main class="wrap">
+    <article class="article">
+      <nav class="crumb">
+        <a href="/">Home</a><span class="sep">›</span>
+        <a href="/blog">Blog</a><span class="sep">›</span>
+        <span style="color:var(--ink);">{post.category}</span>
+      </nav>
+
+      <div class="row" style="gap:10px;margin-top:14px;">
+        <span class="tag tag-soft">{post.category}</span>
+        <span class="small muted">{fmt(post.date)}</span>
+      </div>
+      <h1 class="h1" style="margin:14px 0 0;max-width:24ch;">{post.title}</h1>
+      <p class="body-lg muted" style="margin:16px 0 0;max-width:60ch;">{post.excerpt}</p>
+
+      <div class="ph hero-img" data-label={post.category}></div>
+
+      <div class="prose">
+        {post.body.map((para) => <p>{para}</p>)}
+      </div>
+
+      <div class="article-cta">
+        <div>
+          <h3>Thinking about your next move?</h3>
+          <p class="muted" style="margin:6px 0 0;">Get tailored advice for your budget and locality.</p>
+        </div>
+        <div class="row" style="gap:10px;">
+          <a class="btn btn-primary" href="/consult">Talk to an expert</a>
+          <a class="btn btn-secondary" href="/buy">Browse properties</a>
+        </div>
+      </div>
+    </article>
+
+    <section class="related">
+      <h2 style="margin-bottom:18px;">More from the blog</h2>
+      <div class="rel-grid">
+        {related.map((p) => (
+          <a class="post-card" href={`/blog/${p.slug}`}>
+            <div class="ph thumb" data-label={p.category}></div>
+            <div class="post-body">
+              <span class="tag tag-soft" style="align-self:flex-start;">{p.category}</span>
+              <h3 style="margin:10px 0 6px;font-size:17px;">{p.title}</h3>
+              <span class="readmore">Read more →</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+</Base>
+
+<style is:global>
+  .article { max-width: 760px; margin: 0 auto; padding: 22px 0 8px; }
+  .article .crumb { display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--text-muted); flex-wrap: wrap; }
+  .article .crumb a:hover { color: var(--navy); }
+  .article .crumb .sep { color: var(--text-faint); }
+  .hero-img { border-radius: var(--r-xl); aspect-ratio: 16/8; margin: 28px 0 8px; }
+  .prose { font-size: 17px; line-height: 1.7; color: var(--text); }
+  .prose p { margin: 22px 0 0; }
+  .article-cta { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin: 40px 0 0; padding: 28px; border-radius: var(--r-lg); background: var(--navy-tint); border: 1px solid var(--border); }
+  .article-cta h3 { color: var(--ink); }
+  .related { max-width: 1100px; margin: 64px auto 96px; }
+  .rel-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .rel-grid .post-card { display: flex; flex-direction: column; border: 1px solid var(--hairline); border-radius: var(--r-lg); overflow: hidden; background: var(--surface); box-shadow: var(--shadow-sm); transition: transform var(--t) var(--ease-out), box-shadow var(--t) var(--ease-out); }
+  .rel-grid .post-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .rel-grid .thumb { aspect-ratio: 16/10; }
+  .rel-grid .post-body { padding: 16px 18px 18px; }
+  .readmore { color: var(--navy); font-weight: 600; font-size: 14px; }
+  @media (max-width: 860px) { .rel-grid { grid-template-columns: 1fr; } }
+</style>

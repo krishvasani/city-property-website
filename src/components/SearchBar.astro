@@ -6,15 +6,11 @@ interface Props {
 }
 const { location = 'SG Highway, Ahmedabad' } = Astro.props;
 ---
-<form class="hero-search" action="/listings" method="get" data-hero-search>
+<form class="hero-search" action="/buy" method="get" data-hero-search>
   <div class="segment" role="tablist" aria-label="Search mode">
-    <button type="button" class="is-active" data-status="sale">Buy</button>
-    <button type="button" data-status="rent">Rent</button>
-    <button type="button" data-type="commercial">Commercial</button>
+    <button type="button" class="is-active" data-target="/buy">Buy</button>
+    <button type="button" data-target="/rent">Rent</button>
   </div>
-
-  <input type="hidden" name="status" value="sale" />
-  <input type="hidden" name="type" value="" />
 
   <div class="searchbar">
     <div class="seg">
@@ -23,7 +19,8 @@ const { location = 'SG Highway, Ahmedabad' } = Astro.props;
     </div>
     <div class="seg">
       <label for="hero-type">Type</label>
-      <select id="hero-type" name="typeSelect">
+      <select id="hero-type" name="type">
+        <option value="">Any type</option>
         <option value="residential">Residential</option>
         <option value="commercial">Commercial</option>
         <option value="land">Land &amp; plots</option>
@@ -34,6 +31,7 @@ const { location = 'SG Highway, Ahmedabad' } = Astro.props;
     <div class="seg">
       <label for="hero-budget">Budget</label>
       <select id="hero-budget" name="budget">
+        <option value="">Any budget</option>
         <option value="0-5000000">Up to ₹50 L</option>
         <option value="5000000-10000000">₹50 L – 1 Cr</option>
         <option value="10000000-20000000">₹1 – 2 Cr</option>
@@ -48,27 +46,29 @@ const { location = 'SG Highway, Ahmedabad' } = Astro.props;
 </form>
 
 <script>
-  // Wire the Buy/Rent/Commercial segment to hidden status/type inputs.
-  document.querySelectorAll('[data-hero-search]').forEach((form) => {
+  // The Buy/Rent segment chooses which results page the search submits to.
+  document.querySelectorAll<HTMLFormElement>('[data-hero-search]').forEach((form) => {
     const seg = form.querySelector('.segment');
-    const statusInput = form.querySelector('input[name="status"]') as HTMLInputElement;
-    const typeInput = form.querySelector('input[name="type"]') as HTMLInputElement;
-    const typeSelect = form.querySelector('select[name="typeSelect"]') as HTMLSelectElement;
+    const budgetSeg = form.querySelector('#hero-budget')?.closest('.seg') as HTMLElement | null;
     if (!seg) return;
+    let target = '/buy';
 
-    const apply = (btn: Element) => {
-      const status = btn.getAttribute('data-status') || '';
-      const type = btn.getAttribute('data-type') || '';
-      statusInput.value = status;
-      typeInput.value = type;
-    };
     seg.querySelectorAll('button').forEach((btn) =>
-      btn.addEventListener('click', () => apply(btn)),
+      btn.addEventListener('click', () => {
+        seg.querySelectorAll('button').forEach((b) => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        target = btn.getAttribute('data-target') || '/buy';
+        // The sale-oriented budget ranges don't apply to rentals — hide for Rent.
+        if (budgetSeg) budgetSeg.style.display = target === '/rent' ? 'none' : '';
+      }),
     );
-    // On submit, prefer the Type dropdown unless the segment forced Commercial.
+
     form.addEventListener('submit', () => {
-      if (!typeInput.value && typeSelect?.value) typeInput.value = typeSelect.value;
-      typeSelect.removeAttribute('name'); // keep the URL clean
+      form.setAttribute('action', target);
+      if (target === '/rent') {
+        const b = form.querySelector('#hero-budget') as HTMLSelectElement | null;
+        if (b) b.removeAttribute('name'); // drop sale budget from the rent query
+      }
     });
   });
 </script>
