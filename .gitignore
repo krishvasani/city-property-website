@@ -21,3 +21,4 @@ sanity/dist/
 
 # Local Netlify folder
 .netlify
+seed.ndjson

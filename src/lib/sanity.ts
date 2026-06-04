@@ -7,11 +7,23 @@ import imageUrlBuilder from '@sanity/image-url';
 const projectId = import.meta.env.PUBLIC_SANITY_PROJECT_ID;
 const dataset = import.meta.env.PUBLIC_SANITY_DATASET || 'production';
 const apiVersion = import.meta.env.PUBLIC_SANITY_API_VERSION || '2024-01-01';
+// Server-only read token (no PUBLIC_ prefix => never shipped to the browser).
+// Used at build time so content works even with a private/non-anonymous dataset.
+const token = import.meta.env.SANITY_API_READ_TOKEN || undefined;
 
 export const isSanityConfigured = Boolean(projectId);
 
 export const sanityClient: SanityClient | null = isSanityConfigured
-  ? createClient({ projectId, dataset, apiVersion, useCdn: true })
+  ? createClient({
+      projectId,
+      dataset,
+      apiVersion,
+      token,
+      // With a token we read live (CDN can't be used with auth for fresh data);
+      // without one, use the CDN.
+      useCdn: !token,
+      perspective: 'published',
+    })
   : null;
 
 const builder = sanityClient ? imageUrlBuilder(sanityClient) : null;

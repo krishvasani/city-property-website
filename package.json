@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@sanity/vision": "^3.66.1",
-    "sanity": "^3.66.1"
+    "sanity": "^3.66.1",
+    "tsx": "^4.22.4"
   }
 }

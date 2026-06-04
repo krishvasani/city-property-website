@@ -42,21 +42,27 @@ async function sanity<T>(query: string, params: Record<string, unknown> = {}): P
 }
 
 // ── Public API ───────────────────────────────────────────────────────
-export async function getProperties(): Promise<Property[]> {
-  if (!isSanityConfigured) return sampleProperties;
-  const docs = await sanity<any[]>(
-    `*[_type == "property"]|order(coalesce(newAt,_createdAt) desc){${PROPERTY_FIELDS}}`,
-  );
-  return docs.map(mapProperty);
+// Memoize collection fetches so a single build doesn't re-query Sanity for
+// every page (getStaticPaths + per-page getSimilar/getFeatured/getAgent).
+let _properties: Promise<Property[]> | null = null;
+let _agents: Promise<Agent[]> | null = null;
+let _localities: Promise<Locality[]> | null = null;
+
+export function getProperties(): Promise<Property[]> {
+  if (_properties) return _properties;
+  _properties = (async () => {
+    if (!isSanityConfigured) return sampleProperties;
+    const docs = await sanity<any[]>(
+      `*[_type == "property"]|order(coalesce(newAt,_createdAt) desc){${PROPERTY_FIELDS}}`,
+    );
+    return docs.map(mapProperty);
+  })();
+  return _properties;
 }
 
 export async function getProperty(slug: string): Promise<Property | undefined> {
-  if (!isSanityConfigured) return sampleProperties.find((p) => p.slug === slug);
-  const doc = await sanity<any>(
-    `*[_type == "property" && slug.current == $slug][0]{${PROPERTY_FIELDS}}`,
-    { slug },
-  );
-  return doc ? mapProperty(doc) : undefined;
+  const all = await getProperties();
+  return all.find((p) => p.slug === slug);
 }
 
 export async function getFeatured(limit = 3): Promise<Property[]> {
@@ -75,15 +81,19 @@ export async function getSimilar(slug: string, limit = 3): Promise<Property[]> {
   return [...sameLoc, ...rest].slice(0, limit);
 }
 
-export async function getAgents(): Promise<Agent[]> {
-  if (!isSanityConfigured) return sampleAgents;
-  const docs = await sanity<any[]>(
-    `*[_type == "agent"]|order(name asc){
-      "id": _id, "slug": slug.current, name, role, region, phone, whatsapp, email,
-      "avatar": { "url": image.asset->url, "alt": name }
-    }`,
-  );
-  return docs as Agent[];
+export function getAgents(): Promise<Agent[]> {
+  if (_agents) return _agents;
+  _agents = (async () => {
+    if (!isSanityConfigured) return sampleAgents;
+    const docs = await sanity<any[]>(
+      `*[_type == "agent"]|order(name asc){
+        "id": _id, "slug": slug.current, name, role, exp, region, phone, whatsapp, email,
+        "avatar": { "url": image.asset->url, "alt": name }
+      }`,
+    );
+    return docs as Agent[];
+  })();
+  return _agents;
 }
 
 export async function getAgent(id?: string): Promise<Agent | undefined> {
@@ -92,12 +102,16 @@ export async function getAgent(id?: string): Promise<Agent | undefined> {
   return all.find((a) => a.id === id || a.slug === id);
 }
 
-export async function getLocalities(): Promise<Locality[]> {
-  if (!isSanityConfigured) return sampleLocalities;
-  const docs = await sanity<any[]>(
-    `*[_type == "locality"]|order(name asc){
-      "id": _id, "slug": slug.current, name, blurb, avgPriceDisplay, mapPos, geo
-    }`,
-  );
-  return docs as Locality[];
+export function getLocalities(): Promise<Locality[]> {
+  if (_localities) return _localities;
+  _localities = (async () => {
+    if (!isSanityConfigured) return sampleLocalities;
+    const docs = await sanity<any[]>(
+      `*[_type == "locality"]|order(name asc){
+        "id": _id, "slug": slug.current, name, blurb, avgPriceDisplay, mapPos, geo
+      }`,
+    );
+    return docs as Locality[];
+  })();
+  return _localities;
 }
