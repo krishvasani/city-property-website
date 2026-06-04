@@ -65,13 +65,31 @@ the loader in `src/components/Map.astro`.)
 - **WhatsApp / Call:** set `PUBLIC_WHATSAPP` (digits only) and `PUBLIC_PHONE`.
   Every property's WhatsApp button is prefilled with the property + price.
 
-## Deploy (Netlify — recommended)
-1. Push this folder to a Git repo, connect it on Netlify.
-2. Build command `npm run build`, publish dir `dist` (already in `netlify.toml`).
-3. Add env vars in **Site settings → Environment** (`PUBLIC_*`, `SITE_URL`).
-4. **Forms:** add an email notification (above).
-5. **Auto-publish from Sanity:** create a Netlify **build hook**, then a Sanity
-   **webhook** pointing at it, so new/edited listings trigger a rebuild.
+## Deploy — LIVE
+- **Production:** https://city-property-ahmedabad.netlify.app
+- **Admin:** https://app.netlify.com/projects/city-property-ahmedabad
+- **Repo:** https://github.com/krishvasani/city-property-website (private)
+
+### Continuous deployment (already wired)
+Every push to `main` auto-builds and publishes:
+`git push` → GitHub push webhook → Netlify build hook → Netlify clones the repo
+(via a read-only deploy key) → `npm run build` → deploy. Build command/publish dir
+come from `netlify.toml` (`dist`, Node 22).
+
+So the normal workflow is just:
+```bash
+git add -A && git commit -m "…" && git push
+```
+and the site updates in ~1–2 minutes.
+
+### Lead emails
+Form submissions email **krishvasani04@gmail.com** (Netlify notification hook) and
+also appear under **Netlify → Forms**. Change the recipient in the Netlify UI
+(Forms → Notifications) or ask to have it repointed.
+
+### Auto-publish from Sanity (optional, once Sanity is set up)
+Create a Sanity **webhook** pointing at the same Netlify build hook so new/edited
+listings trigger a rebuild.
 
 Vercel works for the static site too, but **Netlify Forms won't run there** —
 see `vercel.json` for the swap needed.
