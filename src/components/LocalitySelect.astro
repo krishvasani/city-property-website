@@ -1,0 +1,135 @@
+---
+// Searchable, grouped locality combobox. Free-text is allowed (type your own
+// area) so it always supports an "Other" case. Powered by src/data/localities.ts.
+import { getGroupedLocalities } from '../data/localities';
+
+interface Props {
+  name: string;
+  id?: string;
+  placeholder?: string;
+  required?: boolean;
+  value?: string;
+}
+const { name, id = name, placeholder = 'Type a locality — e.g. Bopal, Sanand, GIFT, warehouse…', required = false, value = '' } = Astro.props;
+
+const groups = getGroupedLocalities();
+const blob = (s: string[]) => s.filter(Boolean).join(' ').toLowerCase();
+---
+<div class="loc-combo" data-loc-combo>
+  <input
+    class="input"
+    id={id}
+    name={name}
+    value={value}
+    required={required}
+    autocomplete="off"
+    role="combobox"
+    aria-expanded="false"
+    aria-autocomplete="list"
+    aria-controls={`${id}-panel`}
+    placeholder={placeholder}
+  />
+  <div class="loc-panel" id={`${id}-panel`} role="listbox" hidden>
+    {groups.map((g) => (
+      <div class="loc-group" data-group>
+        <div class="loc-group-h">{g.group}</div>
+        {g.items.map((it) => (
+          <button
+            type="button"
+            class="loc-opt"
+            role="option"
+            data-name={it.name}
+            data-search={blob([it.name, ...it.aliases, it.region, it.microMarket, it.group, ...it.type, ...it.popularFor, ...it.searchKeywords])}
+          >
+            <span class="loc-opt-name">{it.name}</span>
+            <span class="loc-opt-sub">{it.region} · {it.type.join(', ')}</span>
+          </button>
+        ))}
+      </div>
+    ))}
+    <div class="loc-empty" hidden>No match — just type your own area, we’ll still get it.</div>
+  </div>
+</div>
+
+<style>
+  .loc-combo { position: relative; }
+  .loc-panel {
+    position: absolute; top: calc(100% + 6px); left: 0; right: 0; z-index: 30;
+    max-height: 320px; overflow-y: auto;
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-sm);
+    box-shadow: var(--shadow-lg); padding: 6px;
+  }
+  .loc-group-h {
+    font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+    color: var(--text-faint); padding: 10px 10px 4px;
+  }
+  .loc-opt {
+    display: flex; flex-direction: column; gap: 1px; width: 100%; text-align: left;
+    border: none; background: transparent; cursor: pointer; padding: 8px 10px; border-radius: var(--r-xs);
+  }
+  .loc-opt:hover, .loc-opt.is-active { background: var(--navy-tint); }
+  .loc-opt-name { font-size: 14.5px; font-weight: 600; color: var(--ink); }
+  .loc-opt-sub { font-size: 12px; color: var(--text-muted); text-transform: capitalize; }
+  .loc-empty { padding: 12px 10px; font-size: 13px; color: var(--text-muted); }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-loc-combo]').forEach((combo) => {
+    const input = combo.querySelector('input') as HTMLInputElement;
+    const panel = combo.querySelector('.loc-panel') as HTMLElement;
+    const groups = Array.from(combo.querySelectorAll<HTMLElement>('.loc-group'));
+    const opts = Array.from(combo.querySelectorAll<HTMLElement>('.loc-opt'));
+    const empty = combo.querySelector('.loc-empty') as HTMLElement;
+    let active = -1;
+
+    const open = () => { panel.hidden = false; input.setAttribute('aria-expanded', 'true'); };
+    const close = () => { panel.hidden = true; input.setAttribute('aria-expanded', 'false'); active = -1; opts.forEach((o) => o.classList.remove('is-active')); };
+
+    function filter() {
+      const q = input.value.trim().toLowerCase();
+      let shown = 0;
+      opts.forEach((o) => {
+        const match = !q || (o.dataset.search || '').includes(q);
+        o.style.display = match ? '' : 'none';
+        if (match) shown++;
+      });
+      groups.forEach((g) => {
+        const any = Array.from(g.querySelectorAll<HTMLElement>('.loc-opt')).some((o) => o.style.display !== 'none');
+        g.style.display = any ? '' : 'none';
+      });
+      empty.hidden = shown !== 0;
+      active = -1;
+      opts.forEach((o) => o.classList.remove('is-active'));
+    }
+
+    const visible = () => opts.filter((o) => o.style.display !== 'none');
+
+    input.addEventListener('focus', () => { filter(); open(); });
+    input.addEventListener('input', () => { filter(); open(); });
+    input.addEventListener('keydown', (e) => {
+      const vis = visible();
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (panel.hidden) { filter(); open(); }
+        active = e.key === 'ArrowDown' ? Math.min(active + 1, vis.length - 1) : Math.max(active - 1, 0);
+        opts.forEach((o) => o.classList.remove('is-active'));
+        vis[active]?.classList.add('is-active');
+        vis[active]?.scrollIntoView({ block: 'nearest' });
+      } else if (e.key === 'Enter' && active >= 0 && vis[active]) {
+        e.preventDefault();
+        input.value = vis[active].dataset.name || '';
+        close();
+      } else if (e.key === 'Escape') {
+        close();
+      }
+    });
+    opts.forEach((o) =>
+      o.addEventListener('mousedown', (e) => {
+        e.preventDefault(); // keep focus, beat blur
+        input.value = o.dataset.name || '';
+        close();
+      }),
+    );
+    document.addEventListener('click', (e) => { if (!combo.contains(e.target as Node)) close(); });
+  });
+</script>

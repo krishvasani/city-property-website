@@ -58,7 +58,7 @@ const sellerSteps = [
           intentOptions={['Buying', 'Selling', 'Both', 'Just researching']}
           intentLabel="Are you buying or selling?"
           extraFields={[
-            { name: 'locality', label: 'Preferred locality', type: 'text', optional: true, placeholder: 'e.g. Bopal (optional)', full: true },
+            { name: 'locality', label: 'Preferred locality', type: 'locality', optional: true, placeholder: 'Type a locality — e.g. Bopal, Shela, Kudasan…', full: true },
           ]}
           showMessage={false}
           context={{ source: 'guide' }}

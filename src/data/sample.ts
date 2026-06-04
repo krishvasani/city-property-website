@@ -45,6 +45,11 @@ export const agents: Agent[] = [
   },
 ];
 
+// NOTE: This is the small curated set used for the homepage "neighbourhoods"
+// strip + the Sanity fallback (it carries blurb/avgPrice/mapPos for that UI).
+// The CANONICAL, full locality/micro-market dataset lives in
+// src/data/localities.ts — use that for search, filters, the Map page and forms.
+// Keep ids here in sync with locality ids there.
 export const localities: Locality[] = [
   {
     id: 'sg-highway',

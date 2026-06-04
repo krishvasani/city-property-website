@@ -1,10 +1,11 @@
 ---
 import { whatsappUrl } from '../lib/config';
+import LocalitySelect from './LocalitySelect.astro';
 
 export interface LeadField {
   name: string;
   label: string;
-  type?: 'text' | 'tel' | 'email' | 'number' | 'select' | 'textarea';
+  type?: 'text' | 'tel' | 'email' | 'number' | 'select' | 'textarea' | 'locality';
   required?: boolean;
   placeholder?: string;
   options?: string[]; // for type 'select'
@@ -92,7 +93,9 @@ const fid = (f: string) => `${name}-${f}`;
     {extraFields.map((f) => (
       <div class="field" style={twoCol && f.full ? 'grid-column:1/-1;' : ''}>
         <label class="label" for={fid(f.name)}>{f.label}{f.optional && <span class="faint"> (optional)</span>}</label>
-        {f.type === 'select' ? (
+        {f.type === 'locality' ? (
+          <LocalitySelect name={f.name} id={fid(f.name)} required={f.required} placeholder={f.placeholder} />
+        ) : f.type === 'select' ? (
           <select class="select" id={fid(f.name)} name={f.name} required={f.required}>
             <option value="" disabled selected>{f.placeholder ?? 'Select…'}</option>
             {(f.options ?? []).map((o) => <option>{o}</option>)}

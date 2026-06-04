@@ -2,19 +2,32 @@
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import { getProperties } from '../lib/data';
+import { getLocalityById } from '../data/localities';
 import { map as mapCfg } from '../lib/config';
+import type { Property } from '../lib/types';
 
 const all = await getProperties();
-const properties = all.filter((p) => p.geo);
+// Resolve coordinates: use the property's own geo, else fall back to the
+// locality centroid from the locality dataset. Drop only those with neither.
+const resolved = all
+  .map((p) => {
+    const loc = p.localitySlug ? getLocalityById(p.localitySlug) : undefined;
+    const lat = p.geo?.lat ?? loc?.latitude ?? null;
+    const lng = p.geo?.lng ?? loc?.longitude ?? null;
+    return { p, lat, lng, region: loc?.region ?? '' };
+  })
+  .filter((x): x is { p: Property; lat: number; lng: number; region: string } => x.lat != null && x.lng != null);
+const properties = resolved.map((x) => x.p);
 
 const TYPE_LABELS: Record<string, string> = {
   residential: 'Residential', commercial: 'Commercial', land: 'Land', industrial: 'Industrial', warehousing: 'Warehousing',
 };
 const typesPresent = [...new Set(properties.map((p) => p.propertyType))];
 const localities = [...new Map(properties.filter((p) => p.localitySlug).map((p) => [p.localitySlug, p.localityName])).entries()];
+const regionsPresent = [...new Set(resolved.map((x) => x.region).filter(Boolean))].sort();
 
 // Compact data for the client (markers + bounds filtering)
-const data = properties.map((p) => ({
+const data = resolved.map(({ p, lat, lng, region }) => ({
   slug: p.slug,
   title: p.title,
   price: p.priceDisplay,
@@ -27,9 +40,10 @@ const data = properties.map((p) => ({
   area: p.areaSqft ?? 0,
   beds: typeof p.beds === 'number' ? p.beds : 0,
   newAt: p.newAt ?? '',
-  lat: p.geo!.lat,
-  lng: p.geo!.lng,
+  lat,
+  lng,
   localitySlug: p.localitySlug ?? '',
+  region,
 }));
 ---
 <Base
@@ -50,6 +64,10 @@ const data = properties.map((p) => ({
         <select class="filter-select" id="f-type" aria-label="Property type">
           <option value="">All types</option>
           {typesPresent.map((t) => <option value={t}>{TYPE_LABELS[t] ?? t}</option>)}
+        </select>
+        <select class="filter-select" id="f-region" aria-label="Region">
+          <option value="">All regions</option>
+          {regionsPresent.map((r) => <option value={r}>{r}</option>)}
         </select>
         <select class="filter-select" id="f-locality" aria-label="Locality">
           <option value="">All localities</option>
@@ -167,7 +185,7 @@ const data = properties.map((p) => ({
   type P = {
     slug: string; title: string; price: string; per: string; loc: string; type: string;
     status: string; statusLabel: string; priceValue: number; area: number; beds: number;
-    newAt: string; lat: number; lng: number; localitySlug: string;
+    newAt: string; lat: number; lng: number; localitySlug: string; region: string;
   };
   const data: P[] = JSON.parse(document.getElementById('map-data')!.textContent || '[]');
   const bySlug = new Map(data.map((p) => [p.slug, p]));
@@ -187,10 +205,11 @@ const data = properties.map((p) => ({
     ['₹50k – 1 L', '50000-100000'], ['₹1 L +', '100000-'],
   ];
 
-  const state = { status: '', type: '', locality: '', beds: 0, budget: '', sort: 'recommended' };
+  const state = { status: '', type: '', region: '', locality: '', beds: 0, budget: '', sort: 'recommended' };
 
   const seg = document.getElementById('purpose-seg')!;
   const fType = document.getElementById('f-type') as HTMLSelectElement;
+  const fRegion = document.getElementById('f-region') as HTMLSelectElement;
   const fLoc = document.getElementById('f-locality') as HTMLSelectElement;
   const fBeds = document.getElementById('f-beds') as HTMLSelectElement;
   const fBudget = document.getElementById('f-budget') as HTMLSelectElement;
@@ -207,6 +226,7 @@ const data = properties.map((p) => ({
   function passesFilters(p: P): boolean {
     if (state.status && p.status !== state.status) return false;
     if (state.type && p.type !== state.type) return false;
+    if (state.region && p.region !== state.region) return false;
     if (state.locality && p.localitySlug !== state.locality) return false;
     if (state.beds && p.beds < state.beds) return false;
     if (state.budget) {
@@ -334,6 +354,7 @@ const data = properties.map((p) => ({
     applyFilters();
   }));
   fType.addEventListener('change', () => { state.type = fType.value; applyFilters(); });
+  fRegion.addEventListener('change', () => { state.region = fRegion.value; applyFilters(); });
   fLoc.addEventListener('change', () => { state.locality = fLoc.value; applyFilters(); });
   fBeds.addEventListener('change', () => { state.beds = +fBeds.value || 0; applyFilters(); });
   fBudget.addEventListener('change', () => { state.budget = fBudget.value; applyFilters(); });

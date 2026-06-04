@@ -5,7 +5,7 @@ import Icon from '../components/Icon.astro';
 import Stat from '../components/Stat.astro';
 
 const sellFields = [
-  { name: 'locality', label: 'Property location / locality', type: 'text' as const, required: true, placeholder: 'e.g. Prahlad Nagar, Ahmedabad', full: true },
+  { name: 'locality', label: 'Property location / locality', type: 'locality' as const, required: true, placeholder: 'Type a locality — e.g. Prahlad Nagar, Sanand, Vatva GIDC…', full: true },
   { name: 'propertyType', label: 'Property type', type: 'select' as const, required: true, placeholder: 'Select type',
     options: ['Apartment / Flat', 'Villa / Bungalow', 'Plot / Land', 'Office', 'Shop / Showroom', 'Warehouse', 'Industrial shed', 'Other'] },
   { name: 'size', label: 'Property size', type: 'text' as const, placeholder: 'e.g. 1,950 sqft · 3 BHK' },
