@@ -1,0 +1,54 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { serviceLinks } from '../../lib/services';
+---
+<Base
+  title="Our Services"
+  description="City Property Services helps you with corporate offices, retail spaces, industrial and warehouse property, investment assets, homes and land across Ahmedabad."
+  active="services"
+>
+  <main class="wrap">
+    <section class="page-hero">
+      <div class="eyebrow">What we do</div>
+      <h1 class="display" style="max-width:16ch;margin-top:12px;">Our Services</h1>
+      <p class="body-lg muted" style="max-width:62ch;margin-top:18px;">From a first office to a full warehouse, a family home to a plot of land, we help you lease, buy, sell and invest across Ahmedabad. Pick the area you need help with and we will take it from there.</p>
+    </section>
+
+    <section class="svc-cards" aria-label="Service categories">
+      {serviceLinks.map((s) => (
+        <a class="svc-card" href={s.href}>
+          <span class="svc-card-ic"><Icon name={s.icon as any} sw={1.7} /></span>
+          <span class="svc-card-t">{s.label}</span>
+          <span class="svc-card-d">{s.blurb}</span>
+          <span class="svc-card-cta">Learn more <Icon name="arrowRight" sw={2} /></span>
+        </a>
+      ))}
+    </section>
+
+    <section class="svc-band">
+      <div>
+        <h2 class="h2" style="color:#fff;">Not sure where to start?</h2>
+        <p style="color:#dbe8f0;margin:8px 0 0;max-width:52ch;">Tell us what you are trying to do and we will point you to the right help, with no pressure.</p>
+      </div>
+      <a class="btn btn-primary" href="/consult">Talk to Our Team</a>
+    </section>
+  </main>
+</Base>
+
+<style is:global>
+  .page-hero { padding: 64px 0 8px; }
+  .svc-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding: 26px 0 8px; }
+  .svc-card { display: flex; flex-direction: column; gap: 9px; padding: 24px; border: 1px solid var(--hairline); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-xs); transition: transform var(--t) var(--ease-out), box-shadow var(--t) var(--ease-out), border-color var(--t) var(--ease); }
+  .svc-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--navy); }
+  .svc-card-ic { width: 48px; height: 48px; border-radius: var(--r-sm); background: var(--navy-tint); color: var(--navy); display: grid; place-items: center; }
+  .svc-card-ic svg { width: 24px; height: 24px; }
+  .svc-card-t { font-size: 18px; font-weight: 650; color: var(--ink); }
+  .svc-card-d { font-size: 14.5px; color: var(--text-muted); line-height: 1.55; flex: 1; }
+  .svc-card-cta { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: var(--navy); margin-top: 4px; }
+  .svc-card-cta svg { width: 16px; height: 16px; transition: transform var(--t) var(--ease); }
+  .svc-card:hover .svc-card-cta svg { transform: translateX(3px); }
+  .svc-band { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin: 40px 0 96px; padding: 36px 40px; border-radius: var(--r-xl); background: var(--navy); position: relative; overflow: hidden; }
+  @media (max-width: 900px) { .svc-cards { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .svc-cards { grid-template-columns: 1fr; } }
+</style>

@@ -1,0 +1,152 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { serviceLinks } from '../lib/services';
+import { existsSync } from 'node:fs';
+
+const founderPhoto = existsSync(new URL('../../public/team/mukesh-vasani.jpg', import.meta.url))
+  ? '/team/mukesh-vasani.jpg'
+  : null;
+
+const helpWith = [
+  'Corporate offices',
+  'Retail spaces',
+  'Warehouses',
+  'Industrial land',
+  'Residential properties',
+  'Plots',
+  'Investment properties',
+  'Preleased properties',
+  'Prelaunched projects',
+];
+
+const why = [
+  { icon: 'pin', title: 'Local Ahmedabad knowledge', text: 'We know the city pocket by pocket, so our advice is grounded in how each area really lives and trades.' },
+  { icon: 'residential', title: 'Access to quality properties', text: 'Years of relationships mean we often hear about the right property before it is widely listed.' },
+  { icon: 'check', title: 'Transparent guidance', text: 'You get honest pros and cons, fair pricing and clear next steps, never pressure.' },
+  { icon: 'compass', title: 'Support from search to closing', text: 'We stay with you through visits, negotiation, paperwork and final handover.' },
+  { icon: 'commercial', title: 'Residential and commercial expertise', text: 'Homes, offices, retail, industrial and land, all under one roof.' },
+  { icon: 'heart', title: 'Long term relationships', text: 'We would rather earn a client for life than push a single deal.' },
+];
+---
+<Base
+  title="About Us"
+  description="City Property Services is a trusted Ahmedabad real estate consultancy helping clients buy, sell, lease, rent and invest, led by the experience of Mr. Mukesh Vasani."
+  active="about"
+>
+  <main class="wrap">
+    <section class="page-hero">
+      <div class="eyebrow">About us</div>
+      <h1 class="display" style="max-width:18ch;margin-top:12px;">About City Property Services</h1>
+      <p class="body-lg muted" style="max-width:64ch;margin-top:18px;">City Property Services is a trusted Ahmedabad real estate consultancy. We help people and businesses buy, sell, lease, rent and invest in the right properties, with honest advice and steady support from the first conversation to the final handover.</p>
+    </section>
+
+    <!-- STORY -->
+    <section class="ab-story">
+      <div class="ab-story-text">
+        <h2 class="h2">Our story</h2>
+        <p>We have spent many years helping clients across Ahmedabad and Gujarat make sound property decisions. In that time the city has grown a lot, and so has the kind of help people need, from a first family home to a corporate office, a warehouse or a long term investment.</p>
+        <p>Our work is led by Mr. Mukesh Vasani, whose experience and steady judgement shape how we treat every client. He is also one of the founders of CIRIL, a commercial real estate network that works in more than thirty cities across India. That wider reach sits quietly behind the local, personal service you get from our team here in Ahmedabad.</p>
+        <p>We are proud of the relationships we have built over the years. A lot of our work comes from clients who return to us, and from the people they refer, which is the kind of trust we try to earn every single day.</p>
+      </div>
+      <aside class="ab-founder">
+        <div class="ab-founder-photo">
+          {founderPhoto
+            ? <img src={founderPhoto} alt="Mukesh Vasani, Founder of City Property Services" />
+            : <div class="ph" data-label="Mukesh Vasani"></div>}
+        </div>
+        <div class="ab-founder-meta">
+          <b>Mukesh Vasani</b>
+          <span>Founder, City Property Services</span>
+          <span class="muted">One of the founders of CIRIL</span>
+        </div>
+      </aside>
+    </section>
+
+    <!-- WHAT WE HELP WITH -->
+    <section class="ab-block">
+      <h2 class="h2">What we help with</h2>
+      <p class="muted" style="max-width:60ch;margin:0 0 18px;">We cover the full range of property needs in and around Ahmedabad.</p>
+      <div class="ab-help">
+        {helpWith.map((h) => (
+          <div class="ab-help-item"><span class="ck"><Icon name="check" sw={2.4} /></span><span>{h}</span></div>
+        ))}
+      </div>
+      <a class="link-arrow2" href="/services">See all our services <Icon name="arrowRight" sw={2} /></a>
+    </section>
+
+    <!-- WHY -->
+    <section class="ab-block">
+      <h2 class="h2">Why clients choose us</h2>
+      <div class="ab-why">
+        {why.map((w) => (
+          <div class="ab-why-card">
+            <span class="ic"><Icon name={w.icon as any} sw={1.8} /></span>
+            <b>{w.title}</b>
+            <p>{w.text}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- VISION -->
+    <section class="ab-vision">
+      <h2 class="h2" style="color:#fff;">Our vision</h2>
+      <p>We want City Property Services to be the name people in Ahmedabad trust first when it comes to property. Not because we are the loudest, but because we are dependable, professional and genuinely useful.</p>
+      <p>Our aim is simple. Give clear, practical guidance, treat every client with respect, and help people build long term value through the right property decisions. When you do well, we do well, and that is exactly how we like it.</p>
+    </section>
+
+    <!-- CTA -->
+    <section class="ab-cta">
+      <div>
+        <h2 class="h2">Let’s find the right property for you</h2>
+        <p class="muted" style="margin:8px 0 0;max-width:52ch;">Tell us what you need and a local advisor will guide you, with no pressure.</p>
+      </div>
+      <div class="ab-cta-btns">
+        <a class="btn btn-primary" href="/consult">Talk to Our Team</a>
+        <a class="btn btn-secondary" href="/services">See our services</a>
+      </div>
+    </section>
+  </main>
+</Base>
+
+<style is:global>
+  .page-hero { padding: 64px 0 8px; }
+  .ab-story { display: grid; grid-template-columns: 1fr 320px; gap: 40px; align-items: start; padding: 30px 0 8px; }
+  .ab-story-text .h2 { font-size: 24px; margin-bottom: 14px; }
+  .ab-story-text p { font-size: 16px; line-height: 1.7; color: var(--text); margin: 0 0 14px; max-width: 64ch; }
+  .ab-founder { border: 1px solid var(--hairline); border-radius: var(--r-lg); overflow: hidden; background: var(--surface); box-shadow: var(--shadow-xs); position: sticky; top: calc(var(--nav-h) + 20px); }
+  .ab-founder-photo { aspect-ratio: 4 / 5; background: var(--surface-3); }
+  .ab-founder-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
+  .ab-founder-meta { padding: 16px 18px; display: flex; flex-direction: column; gap: 2px; }
+  .ab-founder-meta b { color: var(--ink); font-size: 16px; }
+  .ab-founder-meta span { font-size: 13.5px; color: var(--text-muted); }
+
+  .ab-block { padding: 36px 0 0; }
+  .ab-block .h2 { font-size: 24px; margin-bottom: 16px; }
+  .ab-help { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px 28px; }
+  .ab-help-item { display: flex; gap: 12px; align-items: center; font-size: 15px; font-weight: 550; color: var(--text); }
+  .ab-help-item .ck { width: 24px; height: 24px; border-radius: 999px; background: var(--good-tint); color: var(--good); display: grid; place-items: center; flex: none; }
+  .ab-help-item .ck svg { width: 14px; height: 14px; }
+  .link-arrow2 { display: inline-flex; align-items: center; gap: 6px; margin-top: 20px; font-weight: 600; font-size: 14.5px; color: var(--navy); }
+  .link-arrow2 svg { width: 16px; height: 16px; }
+
+  .ab-why { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .ab-why-card { padding: 22px; border: 1px solid var(--hairline); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-xs); }
+  .ab-why-card .ic { width: 44px; height: 44px; border-radius: var(--r-sm); background: var(--navy-tint); color: var(--navy); display: grid; place-items: center; margin-bottom: 12px; }
+  .ab-why-card .ic svg { width: 22px; height: 22px; }
+  .ab-why-card b { color: var(--ink); display: block; margin-bottom: 5px; }
+  .ab-why-card p { font-size: 14px; color: var(--text-muted); line-height: 1.55; margin: 0; }
+
+  .ab-vision { margin: 44px 0 0; padding: 40px; border-radius: var(--r-xl); background: var(--navy); }
+  .ab-vision .h2 { font-size: 24px; margin-bottom: 14px; }
+  .ab-vision p { color: #dbe8f0; font-size: 16px; line-height: 1.7; margin: 0 0 14px; max-width: 70ch; }
+  .ab-vision p:last-child { margin-bottom: 0; }
+
+  .ab-cta { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin: 36px 0 96px; padding: 32px; border-radius: var(--r-lg); background: var(--navy-tint); border: 1px solid var(--border); }
+  .ab-cta .h2 { font-size: 22px; }
+  .ab-cta-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+  @media (max-width: 900px) { .ab-story { grid-template-columns: 1fr; } .ab-founder { position: static; max-width: 320px; } .ab-help { grid-template-columns: 1fr 1fr; } .ab-why { grid-template-columns: 1fr; } }
+  @media (max-width: 560px) { .ab-help { grid-template-columns: 1fr; } }
+</style>

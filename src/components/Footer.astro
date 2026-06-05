@@ -1,5 +1,6 @@
 ---
 import { site, contact, social, whatsappUrl, telUrl } from '../lib/config';
+import { serviceLinks } from '../lib/services';
 const year = new Date().getFullYear();
 const waHref = whatsappUrl('Hi City Property Services, I have a question.');
 ---
@@ -27,8 +28,16 @@ const waHref = whatsappUrl('Hi City Property Services, I have a question.');
         </ul>
       </div>
       <div>
+        <h5>Our Services</h5>
+        <ul>
+          {serviceLinks.map((s) => <li><a href={s.href}>{s.label}</a></li>)}
+        </ul>
+      </div>
+      <div>
         <h5>Company</h5>
         <ul>
+          <li><a href="/about-us">About us</a></li>
+          <li><a href="/services">Our services</a></li>
           <li><a href="/sell">Sell your property</a></li>
           <li><a href="/guide">Buyer &amp; seller guide</a></li>
           <li><a href="/blog">Market blog</a></li>

@@ -288,7 +288,7 @@ h4, .h4 { font-size: 17px; line-height: 1.35; letter-spacing: -.008em; font-weig
 .footer { background: var(--ink); color: #c4d0d8; margin-top: var(--s-24); }
 .footer a { color: #c4d0d8; transition: color var(--t) var(--ease); }
 .footer a:hover { color: #fff; }
-.footer .top { display: grid; grid-template-columns: 1.6fr repeat(3, 1fr); gap: 40px; padding: 64px 0 48px; }
+.footer .top { display: grid; grid-template-columns: 1.5fr repeat(4, 1fr); gap: 40px; padding: 64px 0 48px; }
 .footer h5 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: #74858f; margin: 0 0 16px; font-weight: 600; }
 .footer ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 11px; font-size: 14.5px; }
 .footer .brand img { height: 40px; margin-bottom: 16px; }
@@ -410,9 +410,11 @@ h4, .h4 { font-size: 17px; line-height: 1.35; letter-spacing: -.008em; font-weig
 /* keep the card lift from the base rule from fighting the tilt transform */
 .prop.tilt:hover, .type-tile.tilt:hover { transform: perspective(1100px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(var(--lift,-6px)); }
 
+@media (max-width: 1024px) {
+  .nav .links { display: none; }
+}
 @media (max-width: 860px) {
   .footer .top { grid-template-columns: 1fr 1fr; gap: 32px; }
-  .nav .links { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; }

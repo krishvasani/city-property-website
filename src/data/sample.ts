@@ -523,9 +523,9 @@ export const properties: Property[] = [
   {
     id: 'sindhu-bhavan-prelease-offices',
     slug: 'sindhu-bhavan-prelease-offices',
-    title: 'Pre-leased offices · Sindhu Bhavan Road',
+    title: 'Preleased offices · Sindhu Bhavan Road',
     status: 'sale',
-    statusLabel: 'Pre-leased',
+    statusLabel: 'Preleased',
     priceDisplay: '₹ 2.10 Cr',
     priceValue: 21_000_000,
     propertyType: 'investment',
@@ -538,9 +538,9 @@ export const properties: Property[] = [
     geo: { lat: 23.045, lng: 72.5 },
     newAt: '2026-05-27',
     cardMeta: [
-      { icon: 'commercial', label: 'Pre-leased · 7% yield' },
+      { icon: 'commercial', label: 'Preleased · 7% yield' },
       { icon: 'ruler', label: '2,200 sqft' },
     ],
-    photos: [{ label: 'Property photo', alt: 'Pre-leased office on Sindhu Bhavan Road' }],
+    photos: [{ label: 'Property photo', alt: 'Preleased office on Sindhu Bhavan Road' }],
   },
 ];

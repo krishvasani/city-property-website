@@ -59,9 +59,14 @@ export const ICONS: Record<string, string> = {
     '<path d="M4 20l1.4-4A8 8 0 1 1 9 19.2L4 20z"/><path d="M9 9c0 4 2 6 6 6"/>',
   check:
     '<path d="m5 12 4 4 10-10"/>',
+  // retail — storefront with awning
+  retail:
+    '<path d="M3 9l1.5-4.5h15L21 9M4 9v11h16V9M4 9a2.4 2.4 0 0 0 4 0 2.4 2.4 0 0 0 4 0 2.4 2.4 0 0 0 4 0 2.4 2.4 0 0 0 4 0M9.5 20v-5.5h5V20"/>',
   // nav
   menu:
     '<path d="M4 7h16M4 12h16M4 17h16"/>',
+  chevron:
+    '<path d="m6 9 6 6 6-6"/>',
   close:
     '<path d="M6 6l12 12M18 6 6 18"/>',
   arrowRight:
