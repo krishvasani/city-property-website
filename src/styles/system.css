@@ -255,13 +255,6 @@ h4, .h4 { font-size: 17px; line-height: 1.35; letter-spacing: -.008em; font-weig
 .prop-meta .m { display: flex; align-items: center; gap: 7px; font-size: 13.5px; color: var(--text); }
 .prop-meta .m svg { width: 16px; height: 16px; color: var(--text-faint); }
 
-/* Agent / contact card */
-.agent { display: flex; align-items: center; gap: 16px; padding: 18px; border: 1px solid var(--hairline); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-sm); }
-.agent .avatar { width: 60px; height: 60px; border-radius: 999px; object-fit: cover; flex: none; background: var(--surface-3); }
-.agent .info { flex: 1; min-width: 0; }
-.agent .nm { font-weight: 650; color: var(--ink); }
-.agent .rl { font-size: 13.5px; color: var(--text-muted); }
-
 /* Stat / trust */
 .stat { display: flex; flex-direction: column; gap: 2px; }
 .stat .n { font-size: clamp(28px, 3vw, 38px); font-weight: 700; letter-spacing: -.026em; color: var(--ink); font-variant-numeric: tabular-nums; }
@@ -415,6 +408,18 @@ h4, .h4 { font-size: 17px; line-height: 1.35; letter-spacing: -.008em; font-weig
 }
 @media (max-width: 860px) {
   .footer .top { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+
+/* ---- Mobile safety + polish (small phones) ---- */
+/* Never allow a stray wide element to force horizontal scroll. */
+html, body { overflow-x: clip; max-width: 100%; }
+@media (max-width: 560px) {
+  .wrap, .wrap-wide { padding: 0 16px; }
+  /* full width, comfortably stacked buttons in CTA rows */
+  .btn-block { width: 100%; }
+}
+@media (max-width: 520px) {
+  .footer .top { grid-template-columns: 1fr; gap: 28px; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; }

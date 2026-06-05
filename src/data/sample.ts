@@ -4,46 +4,7 @@
 // neighbourhoods. Once PUBLIC_SANITY_PROJECT_ID is set, src/lib/data.ts reads
 // live content instead and this is ignored.
 
-import type { Agent, Locality, Property } from '../lib/types';
-
-export const agents: Agent[] = [
-  {
-    id: 'anand-shah',
-    slug: 'anand-shah',
-    name: 'Anand Shah',
-    role: 'Senior Advisor',
-    exp: '12 yrs',
-    region: 'West Ahmedabad',
-    phone: '+91 98249 00778',
-    whatsapp: '919824900778',
-    email: 'coordinator@cityprop.co.in',
-    avatar: { label: '', alt: 'Anand Shah' },
-  },
-  {
-    id: 'riya-mehta',
-    slug: 'riya-mehta',
-    name: 'Riya Mehta',
-    role: 'Residential Specialist',
-    exp: '8 yrs',
-    region: 'Satellite',
-    phone: '+91 98249 00778',
-    whatsapp: '919824900778',
-    email: 'coordinator@cityprop.co.in',
-    avatar: { label: '', alt: 'Riya Mehta' },
-  },
-  {
-    id: 'kunal-desai',
-    slug: 'kunal-desai',
-    name: 'Kunal Desai',
-    role: 'Commercial & Industrial',
-    exp: '10 yrs',
-    region: '',
-    phone: '+91 98249 00778',
-    whatsapp: '919824900778',
-    email: 'coordinator@cityprop.co.in',
-    avatar: { label: '', alt: 'Kunal Desai' },
-  },
-];
+import type { Locality, Property } from '../lib/types';
 
 // NOTE: This is the small curated set used for the homepage "neighbourhoods"
 // strip + the Sanity fallback (it carries blurb/avgPrice/mapPos for that UI).
@@ -151,7 +112,6 @@ export const properties: Property[] = [
     parking: '2',
     furnishing: 'Semi',
     featured: true,
-    agentId: 'anand-shah',
     geo: { lat: 23.0125, lng: 72.5095 },
     newAt: '2026-05-30',
     description: [
@@ -194,7 +154,6 @@ export const properties: Property[] = [
     area: '3,400 sqft',
     areaSqft: 3400,
     featured: true,
-    agentId: 'riya-mehta',
     geo: { lat: 23.0078, lng: 72.4762 },
     newAt: '2026-05-28',
     photos: [{ label: 'Property photo', alt: 'Applewoods Estate villa' }],
@@ -216,7 +175,6 @@ export const properties: Property[] = [
     areaSqft: 2400,
     furnishing: 'Furnished',
     featured: true,
-    agentId: 'kunal-desai',
     geo: { lat: 23.0305, lng: 72.5085 },
     newAt: '2026-05-29',
     cardMeta: [
@@ -241,7 +199,6 @@ export const properties: Property[] = [
     baths: 2,
     area: '1,240 sqft',
     areaSqft: 1240,
-    agentId: 'riya-mehta',
     geo: { lat: 23.0332, lng: 72.4695 },
     newAt: '2026-05-20',
     photos: [{ label: 'Property photo', alt: 'Safal Parisar apartment' }],
@@ -264,7 +221,6 @@ export const properties: Property[] = [
     furnishing: 'Semi-furnished',
     area: '1,180 sqft',
     areaSqft: 1180,
-    agentId: 'riya-mehta',
     geo: { lat: 23.0395, lng: 72.5292 },
     newAt: '2026-05-18',
     photos: [{ label: 'Property photo', alt: 'Shivalik Shilp flat' }],
@@ -285,7 +241,6 @@ export const properties: Property[] = [
     baths: 3,
     area: '1,720 sqft',
     areaSqft: 1720,
-    agentId: 'anand-shah',
     geo: { lat: 23.0069, lng: 72.4781 },
     newAt: '2026-05-15',
     photos: [{ label: 'Property photo', alt: 'Goyal Orchid Whitefield' }],
@@ -306,7 +261,6 @@ export const properties: Property[] = [
     baths: '3-phase',
     area: '9,000 sqft',
     areaSqft: 9000,
-    agentId: 'kunal-desai',
     geo: { lat: 22.9692, lng: 72.6285 },
     newAt: '2026-05-10',
     cardMeta: [
@@ -331,7 +285,6 @@ export const properties: Property[] = [
     baths: 1,
     area: '690 sqft',
     areaSqft: 690,
-    agentId: 'riya-mehta',
     geo: { lat: 23.1012, lng: 72.5435 },
     newAt: '2026-05-08',
     photos: [{ label: 'Property photo', alt: 'Sun South Park compact home' }],
@@ -351,7 +304,6 @@ export const properties: Property[] = [
     address: 'SG Highway, Ahmedabad',
     area: '2,800 sqft',
     areaSqft: 2800,
-    agentId: 'kunal-desai',
     geo: { lat: 23.0356, lng: 72.5079 },
     newAt: '2026-05-05',
     cardMeta: [
@@ -377,7 +329,6 @@ export const properties: Property[] = [
     baths: 3,
     area: '2,050 sqft',
     areaSqft: 2050,
-    agentId: 'anand-shah',
     geo: { lat: 23.0118, lng: 72.5112 },
     newAt: '2026-05-02',
     photos: [{ label: 'Property photo', alt: 'Shivalik Sharda Park' }],
@@ -398,7 +349,6 @@ export const properties: Property[] = [
     baths: 3,
     area: '1,820 sqft',
     areaSqft: 1820,
-    agentId: 'riya-mehta',
     geo: { lat: 23.0289, lng: 72.5215 },
     newAt: '2026-04-28',
     photos: [{ label: 'Property photo', alt: 'Goyal Orchid Harmony' }],
@@ -419,7 +369,6 @@ export const properties: Property[] = [
     baths: 4,
     area: '2,640 sqft',
     areaSqft: 2640,
-    agentId: 'anand-shah',
     geo: { lat: 23.0401, lng: 72.5271 },
     newAt: '2026-04-25',
     photos: [{ label: 'Property photo', alt: 'Devnandan Skyzone' }],
@@ -443,7 +392,6 @@ export const properties: Property[] = [
     area: '1,850 sqft',
     areaSqft: 1850,
     furnishing: 'Furnished',
-    agentId: 'riya-mehta',
     geo: { lat: 23.0312, lng: 72.5198 },
     newAt: '2026-05-31',
     photos: [{ label: 'Property photo', alt: '3 BHK rental at Mansi Circle' }],
@@ -466,7 +414,6 @@ export const properties: Property[] = [
     area: '1,080 sqft',
     areaSqft: 1080,
     furnishing: 'Unfurnished',
-    agentId: 'riya-mehta',
     geo: { lat: 23.1005, lng: 72.5448 },
     newAt: '2026-05-26',
     photos: [{ label: 'Property photo', alt: '2 BHK rental in Gota' }],
@@ -486,7 +433,6 @@ export const properties: Property[] = [
     address: 'Sarkhej Bavla Road, Changodar, Ahmedabad',
     area: '12,000 sqft',
     areaSqft: 12000,
-    agentId: 'kunal-desai',
     geo: { lat: 22.911, lng: 72.4486 },
     newAt: '2026-05-22',
     cardMeta: [
@@ -511,7 +457,6 @@ export const properties: Property[] = [
     beds: 2,
     area: '2 & 3 BHK',
     areaSqft: 1150,
-    agentId: 'riya-mehta',
     geo: { lat: 23.0072, lng: 72.4788 },
     newAt: '2026-06-02',
     cardMeta: [
@@ -534,7 +479,6 @@ export const properties: Property[] = [
     address: 'Sindhu Bhavan Road, Ahmedabad',
     area: '2,200 sqft',
     areaSqft: 2200,
-    agentId: 'kunal-desai',
     geo: { lat: 23.045, lng: 72.5 },
     newAt: '2026-05-27',
     cardMeta: [

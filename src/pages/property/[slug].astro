@@ -10,7 +10,7 @@ import WhatsAppButton from '../../components/WhatsAppButton.astro';
 import CallButton from '../../components/CallButton.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import Map from '../../components/Map.astro';
-import { getProperties, getProperty, getSimilar, getAgent, getLocalities } from '../../lib/data';
+import { getProperties, getProperty, getSimilar, getLocalities } from '../../lib/data';
 import { contact } from '../../lib/config';
 
 export async function getStaticPaths() {
@@ -22,7 +22,6 @@ const { slug } = Astro.params;
 const property = await getProperty(slug!);
 if (!property) return Astro.redirect('/buy');
 
-const agent = await getAgent(property.agentId);
 const similar = await getSimilar(property.slug, 3);
 const localities = await getLocalities();
 const selfLoc = localities.find((l) => l.slug === property.localitySlug);
@@ -35,15 +34,12 @@ const mapPins = [
   sg?.geo && sg.slug !== property.localitySlug && { label: 'SG Highway', geo: sg.geo, pos: { left: '70%', top: '34%' } },
 ].filter(Boolean) as { label: string; geo: { lat: number; lng: number }; pos: { left: string; top: string }; active?: boolean; slug?: string }[];
 
-const agentName = agent?.name ?? 'an advisor';
-const agentSub = agent ? [agent.role, agent.exp].filter(Boolean).join(' · ') : '';
 const leadContext = {
   property: property.title,
   propertyUrl: new URL(Astro.url.pathname, Astro.site ?? 'https://cityproperty.example.com').href,
   price: property.priceDisplay,
-  agent: agentName,
 };
-const waMessage = `Hi ${agentName}, I’m interested in "${property.title}" (${property.priceDisplay}) in ${property.localityName}. Could you share more details?`;
+const waMessage = `Hi City Property Services, I’m interested in "${property.title}" (${property.priceDisplay}) in ${property.localityName}. Could you share more details?`;
 const photoCount = property.photos?.length ? Math.max(property.photos.length, 18) : 18;
 ---
 <Base title={`${property.title} · ${property.localityName}`} description={`${property.priceDisplay} · ${property.title} in ${property.localityName}, Ahmedabad.`} active="buy">
@@ -114,28 +110,21 @@ const photoCount = property.photos?.length ? Math.max(property.photos.length, 18
       <!-- RIGHT STICKY -->
       <aside class="sticky">
         <div class="contact-card">
-          <div class="agent-row">
-            {agent?.avatar?.url ? (
-              <img class="av" src={agent.avatar.url} alt={agent.name} />
-            ) : (
-              <div class="ph av" data-label=""></div>
-            )}
-            <div style="flex:1;">
-              <div class="nm">{agentName}</div>
-              {agentSub && <div class="rl">{agentSub}</div>}
-            </div>
+          <div class="cc-head">
+            <h3 class="cc-h">Interested in this property?</h3>
+            <p class="cc-p">Share your details with City Property Services and our team will help you with pricing, visits, negotiation and the next steps.</p>
           </div>
           <LeadForm
             name="viewing"
-            submitLabel="Request a viewing"
+            submitLabel="Request Details"
             messageLabel="Message"
-            messagePlaceholder="I’d like to schedule a viewing…"
+            messagePlaceholder="I’d like to know more or schedule a visit…"
             context={leadContext}
             whatsappFallback={waMessage}
           />
           <div class="row" style="gap:10px;margin-top:12px;">
-            <CallButton number={agent?.phone ?? contact.phone} block />
-            <WhatsAppButton message={waMessage} number={agent?.whatsapp} block />
+            <CallButton label="Call Now" number={contact.phone} block />
+            <WhatsAppButton label="WhatsApp Us" message={waMessage} block />
           </div>
         </div>
 
@@ -195,10 +184,9 @@ const photoCount = property.photos?.length ? Math.max(property.photos.length, 18
 
   .sticky { position: sticky; top: calc(var(--nav-h) + 20px); display: flex; flex-direction: column; gap: 18px; }
   .contact-card { background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); box-shadow: var(--shadow); padding: 22px; }
-  .contact-card .agent-row { display: flex; align-items: center; gap: 14px; padding-bottom: 18px; border-bottom: 1px solid var(--hairline); margin-bottom: 18px; }
-  .contact-card .av { width: 54px; height: 54px; border-radius: 999px; object-fit: cover; }
-  .contact-card .nm { font-weight: 650; color: var(--ink); }
-  .contact-card .rl { font-size: 13px; color: var(--text-muted); }
+  .contact-card .cc-head { padding-bottom: 16px; border-bottom: 1px solid var(--hairline); margin-bottom: 18px; }
+  .contact-card .cc-h { font-size: 18px; color: var(--ink); margin: 0 0 6px; }
+  .contact-card .cc-p { font-size: 13.5px; color: var(--text-muted); line-height: 1.55; margin: 0; }
   .btn-block { width: 100%; }
   .emi { background: var(--navy-tint); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 20px; }
   .emi .row { justify-content: space-between; }

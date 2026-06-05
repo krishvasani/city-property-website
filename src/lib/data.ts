@@ -1,10 +1,9 @@
 // Data façade. Pages/components call these and never need to know whether the
 // content came from Sanity or the bundled sample fallback.
-import type { Agent, Locality, Property } from './types';
+import type { Locality, Property } from './types';
 import { isSanityConfigured, sanityClient, urlForImage } from './sanity';
 import {
   properties as sampleProperties,
-  agents as sampleAgents,
   localities as sampleLocalities,
 } from '../data/sample';
 
@@ -19,7 +18,6 @@ const PROPERTY_FIELDS = `
   address, perSqftDisplay,
   beds, baths, area, areaSqft, floor, builtYear, facing, parking, furnishing,
   description, amenities, geo, featured, cardMeta,
-  "agentId": agent->slug.current,
   "newAt": coalesce(newAt, _createdAt),
   "photos": photos[]{ "ref": asset, alt, label }
 `;
@@ -45,7 +43,6 @@ async function sanity<T>(query: string, params: Record<string, unknown> = {}): P
 // Memoize collection fetches so a single build doesn't re-query Sanity for
 // every page (getStaticPaths + per-page getSimilar/getFeatured/getAgent).
 let _properties: Promise<Property[]> | null = null;
-let _agents: Promise<Agent[]> | null = null;
 let _localities: Promise<Locality[]> | null = null;
 
 export function getProperties(): Promise<Property[]> {
@@ -79,27 +76,6 @@ export async function getSimilar(slug: string, limit = 3): Promise<Property[]> {
   const sameLoc = all.filter((p) => p.slug !== slug && p.localityName === self.localityName);
   const rest = all.filter((p) => p.slug !== slug && p.localityName !== self.localityName);
   return [...sameLoc, ...rest].slice(0, limit);
-}
-
-export function getAgents(): Promise<Agent[]> {
-  if (_agents) return _agents;
-  _agents = (async () => {
-    if (!isSanityConfigured) return sampleAgents;
-    const docs = await sanity<any[]>(
-      `*[_type == "agent"]|order(name asc){
-        "id": _id, "slug": slug.current, name, role, exp, region, phone, whatsapp, email,
-        "avatar": { "url": image.asset->url, "alt": name }
-      }`,
-    );
-    return docs as Agent[];
-  })();
-  return _agents;
-}
-
-export async function getAgent(id?: string): Promise<Agent | undefined> {
-  if (!id) return undefined;
-  const all = await getAgents();
-  return all.find((a) => a.id === id || a.slug === id);
 }
 
 export function getLocalities(): Promise<Locality[]> {

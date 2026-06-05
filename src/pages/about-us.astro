@@ -100,7 +100,7 @@ const why = [
     <section class="ab-cta">
       <div>
         <h2 class="h2">Let’s find the right property for you</h2>
-        <p class="muted" style="margin:8px 0 0;max-width:52ch;">Tell us what you need and a local advisor will guide you, with no pressure.</p>
+        <p class="muted" style="margin:8px 0 0;max-width:52ch;">Tell us what you need and our team will guide you, with no pressure.</p>
       </div>
       <div class="ab-cta-btns">
         <a class="btn btn-primary" href="/consult">Talk to Our Team</a>
@@ -148,5 +148,11 @@ const why = [
   .ab-cta-btns { display: flex; gap: 12px; flex-wrap: wrap; }
 
   @media (max-width: 900px) { .ab-story { grid-template-columns: 1fr; } .ab-founder { position: static; max-width: 320px; } .ab-help { grid-template-columns: 1fr 1fr; } .ab-why { grid-template-columns: 1fr; } }
-  @media (max-width: 560px) { .ab-help { grid-template-columns: 1fr; } }
+  @media (max-width: 560px) {
+    .ab-help { grid-template-columns: 1fr; }
+    .ab-vision { padding: 28px 22px; }
+    .ab-cta { padding: 24px; }
+    .ab-cta-btns { flex-direction: column; align-items: stretch; width: 100%; }
+    .ab-cta-btns .btn { width: 100%; }
+  }
 </style>

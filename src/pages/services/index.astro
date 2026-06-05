@@ -50,5 +50,9 @@ import { serviceLinks } from '../../lib/services';
   .svc-card:hover .svc-card-cta svg { transform: translateX(3px); }
   .svc-band { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin: 40px 0 96px; padding: 36px 40px; border-radius: var(--r-xl); background: var(--navy); position: relative; overflow: hidden; }
   @media (max-width: 900px) { .svc-cards { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 600px) { .svc-cards { grid-template-columns: 1fr; } }
+  @media (max-width: 600px) {
+    .svc-cards { grid-template-columns: 1fr; }
+    .svc-band { padding: 28px 22px; flex-direction: column; align-items: flex-start; }
+    .svc-band .btn { width: 100%; }
+  }
 </style>

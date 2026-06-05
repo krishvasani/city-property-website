@@ -7,7 +7,7 @@
  *   npx tsx scripts/seed.ts > seed.ndjson
  *   npx sanity dataset import seed.ndjson production --replace
  */
-import { properties, agents, localities } from '../src/data/sample';
+import { properties, localities } from '../src/data/sample';
 
 type Doc = Record<string, unknown>;
 const lines: string[] = [];
@@ -31,21 +31,6 @@ for (const l of localities) {
   });
 }
 
-for (const a of agents) {
-  emit({
-    _id: `agent.${a.slug}`,
-    _type: 'agent',
-    name: a.name,
-    slug: slug(a.slug),
-    role: a.role,
-    exp: a.exp,
-    region: a.region || undefined,
-    phone: a.phone,
-    whatsapp: a.whatsapp,
-    email: a.email,
-  });
-}
-
 for (const p of properties) {
   emit({
     _id: `property.${p.slug}`,
@@ -61,7 +46,6 @@ for (const p of properties) {
     ...(p.localitySlug ? { locality: { _type: 'reference', _ref: `locality.${p.localitySlug}` } } : {}),
     address: p.address,
     perSqftDisplay: p.perSqftDisplay,
-    ...(p.agentId ? { agent: { _type: 'reference', _ref: `agent.${p.agentId}` } } : {}),
     featured: !!p.featured,
     beds: p.beds !== undefined ? String(p.beds) : undefined,
     baths: p.baths !== undefined ? String(p.baths) : undefined,
@@ -83,4 +67,4 @@ for (const p of properties) {
 }
 
 process.stdout.write(lines.join('\n') + '\n');
-process.stderr.write(`seed: ${localities.length} localities, ${agents.length} agents, ${properties.length} properties\n`);
+process.stderr.write(`seed: ${localities.length} localities, ${properties.length} properties\n`);

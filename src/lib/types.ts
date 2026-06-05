@@ -36,19 +36,6 @@ export interface Fact {
   key: string;
 }
 
-export interface Agent {
-  id: string;
-  slug: string;
-  name: string;
-  role: string; // e.g. "Senior Advisor"
-  exp?: string; // e.g. "12 yrs"
-  region?: string;
-  phone?: string; // human-readable, for tel:
-  whatsapp?: string; // digits only, for wa.me
-  email?: string;
-  avatar?: Photo;
-}
-
 export interface Locality {
   id: string;
   slug: string;
@@ -88,7 +75,6 @@ export interface Property {
   amenities?: string[];
   photos?: Photo[];
   geo?: { lat: number; lng: number };
-  agentId?: string;
   featured?: boolean;
   /** Optional override for the card meta row; otherwise derived from fields. */
   cardMeta?: CardMeta[];

@@ -4,9 +4,8 @@ import SearchBar from '../components/SearchBar.astro';
 import Stat from '../components/Stat.astro';
 import TypeTile from '../components/TypeTile.astro';
 import PropertyCard from '../components/PropertyCard.astro';
-import AgentCard from '../components/AgentCard.astro';
 import Icon from '../components/Icon.astro';
-import { getFeatured, getAgents, getProperties } from '../lib/data';
+import { getFeatured, getProperties } from '../lib/data';
 import { categoryFor } from '../lib/format';
 import { existsSync } from 'node:fs';
 
@@ -17,8 +16,15 @@ const founderPhoto = existsSync(new URL('../../public/team/mukesh-vasani.jpg', i
   : null;
 
 const featured = await getFeatured(3);
-const agents = await getAgents();
 const allProperties = await getProperties();
+
+// Company level "why us" points (replaces the old advisor profiles).
+const whyUs = [
+  { icon: 'pin', title: 'Local market knowledge', text: 'We know Ahmedabad pocket by pocket, so our advice fits how each area really lives and trades.' },
+  { icon: 'check', title: 'Honest, clear guidance', text: 'Fair pricing, real pros and cons and clear next steps, with no pressure.' },
+  { icon: 'compass', title: 'From search to closing', text: 'We stay with you through visits, negotiation, paperwork and the final handover.' },
+  { icon: 'commercial', title: 'Homes and commercial', text: 'Residential, offices, retail, industrial and land, all under one roof.' },
+];
 
 // Live counts per category (tracks the real number of listings we have).
 const catCount = (c: string) => allProperties.filter((p) => categoryFor(p.propertyType) === c).length;
@@ -81,7 +87,7 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
         <div>
           <div class="eyebrow">Handpicked</div>
           <h2 style="margin-top:10px;">Featured properties</h2>
-          <p>A curated set our advisors think you’ll love this week.</p>
+          <p>A curated set our team thinks you’ll love this week.</p>
         </div>
         <a class="btn btn-secondary" href="/buy">View all listings →</a>
       </div>
@@ -156,17 +162,23 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
       </div>
     </section>
 
-    <!-- AGENTS -->
-    <section class="section wrap-wide reveal" id="agents">
+    <!-- WHY US -->
+    <section class="section wrap-wide reveal" id="why-us">
       <div class="section-head">
         <div>
-          <div class="eyebrow">The people</div>
-          <h2 style="margin-top:10px;">Advisors who know the city</h2>
-          <p>Local experts who’ve helped thousands of families and businesses find the right space.</p>
+          <div class="eyebrow">Why City Property Services</div>
+          <h2 style="margin-top:10px;">One trusted team for every property need</h2>
+          <p>We are a local Ahmedabad company that helps you buy, sell, rent, lease and invest, with honest guidance from your first search to the final handover.</p>
         </div>
       </div>
-      <div class="agents-grid" data-stagger>
-        {agents.slice(0, 3).map((a) => <AgentCard agent={a} variant="card" />)}
+      <div class="why-grid" data-stagger>
+        {whyUs.map((w) => (
+          <div class="why-card">
+            <span class="ic"><Icon name={w.icon as any} sw={1.8} /></span>
+            <h3>{w.title}</h3>
+            <p>{w.text}</p>
+          </div>
+        ))}
       </div>
     </section>
   </main>
@@ -181,7 +193,7 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
   .hero-sub { max-width: 56ch; margin: 22px auto 0; text-wrap: pretty; }
   .hero-search { margin: 38px auto 0; max-width: 884px; text-align: left; position: relative; z-index: 30; }
   /* the open results panel must sit cleanly above the stats/art below it */
-  .hero-search .loc-panel { min-width: 440px; }
+  .hero-search .loc-panel { min-width: min(440px, calc(100vw - 32px)); }
   .hero-search .segment { display: flex; width: max-content; max-width: 100%; margin: 0 auto 16px; }
   .hero-stats { display: flex; gap: 56px; margin-top: 38px; flex-wrap: wrap; justify-content: center; }
   .hero-stats .stat { align-items: center; text-align: center; }
@@ -238,13 +250,16 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
   .band .btn-primary { background: #fff; color: var(--navy); }
   .band .btn-primary:hover { background: #eef3f6; }
 
-  .agents-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
-  .agent-card { text-align: center; padding: 28px; border: 1px solid var(--hairline); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-sm); transition: transform var(--t) var(--ease-out), box-shadow var(--t) var(--ease-out); }
-  .agent-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-  .agent-card .av { width: 96px; height: 96px; border-radius: 999px; margin: 0 auto 16px; }
+  .why-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
+  .why-card { padding: 24px; border: 1px solid var(--hairline); border-radius: var(--r-lg); background: var(--surface); box-shadow: var(--shadow-xs); transition: transform var(--t) var(--ease-out), box-shadow var(--t) var(--ease-out); }
+  .why-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+  .why-card .ic { width: 46px; height: 46px; border-radius: var(--r-sm); background: var(--navy-tint); color: var(--navy); display: grid; place-items: center; margin-bottom: 14px; }
+  .why-card .ic svg { width: 23px; height: 23px; }
+  .why-card h3 { font-size: 16.5px; color: var(--ink); margin: 0 0 6px; }
+  .why-card p { font-size: 14px; color: var(--text-muted); line-height: 1.55; margin: 0; }
 
-  @media (max-width: 980px) { .types { grid-template-columns: repeat(2,1fr); } .cards, .agents-grid { grid-template-columns: 1fr 1fr; } .about-split { grid-template-columns: 1fr; gap: 28px; } .founder { max-width: 240px; } }
-  @media (max-width: 680px) { .types, .cards, .agents-grid { grid-template-columns: 1fr; } .band { padding: 36px 28px; } }
+  @media (max-width: 980px) { .types { grid-template-columns: repeat(2,1fr); } .cards { grid-template-columns: 1fr 1fr; } .why-grid { grid-template-columns: 1fr 1fr; } .about-split { grid-template-columns: 1fr; gap: 28px; } .founder { max-width: 240px; } }
+  @media (max-width: 680px) { .types, .cards { grid-template-columns: 1fr; } .why-grid { grid-template-columns: 1fr; } .band { padding: 36px 28px; } }
 
   /* Hero search stacks into a column on phones (search is the primary CTA) */
   @media (max-width: 720px) {
@@ -253,5 +268,11 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
     .hero-search .searchbar .seg { width: 100%; padding: 10px 14px; }
     .hero-search .searchbar .seg + .seg { border-left: 0; border-top: 1px solid var(--hairline); }
     .hero-search .searchbar .btn { width: 100%; margin-top: 4px; }
+  }
+  @media (max-width: 560px) {
+    .hero { padding: 56px 0 20px; }
+    .hero-stats { gap: 20px 30px; margin-top: 30px; }
+    .hero-art { margin-top: 40px; aspect-ratio: 16/11; }
+    .section { padding: 44px 0; }
   }
 </style>

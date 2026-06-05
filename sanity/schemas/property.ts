@@ -29,7 +29,6 @@ export default defineType({
     defineField({ name: 'locality', title: 'Locality', type: 'reference', to: [{ type: 'locality' }], group: 'main' }),
     defineField({ name: 'address', type: 'string', group: 'main', description: 'e.g. "Prahlad Nagar, Ahmedabad"' }),
     defineField({ name: 'perSqftDisplay', title: 'Price per sqft (display)', type: 'string', group: 'main' }),
-    defineField({ name: 'agent', title: 'Advisor', type: 'reference', to: [{ type: 'agent' }], group: 'main' }),
     defineField({ name: 'featured', title: 'Featured on homepage', type: 'boolean', group: 'main', initialValue: false }),
 
     // Facts

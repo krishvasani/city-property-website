@@ -49,7 +49,7 @@ const {
   context = {},
   twoCol = false,
   whatsappFallback = 'Hi, I just tried to send an enquiry on your website.',
-  successMessage = 'Thanks! Your enquiry is in and an advisor will reach out shortly.',
+  successMessage = 'Thanks! Your enquiry is in and our team will reach out shortly.',
 } = Astro.props;
 
 const waHref = whatsappUrl(whatsappFallback);
@@ -77,7 +77,7 @@ const fid = (f: string) => `${name}-${f}`;
   <div class:list={['lead-fields', { 'two-col': twoCol }]}>
     <div class="field">
       <label class="label" for={`${name}-name`}>Full name</label>
-      <input class="input" id={`${name}-name`} name="name" required placeholder="e.g. Riya Mehta" />
+      <input class="input" id={`${name}-name`} name="name" required placeholder="Your full name" />
     </div>
     <div class="field">
       <label class="label" for={`${name}-phone`}>Phone</label>
@@ -192,7 +192,7 @@ const fid = (f: string) => `${name}-${f}`;
           statusEl.className = 'lead-status ok';
           statusEl.textContent =
             form.getAttribute('data-success') ||
-            'Thanks! Your enquiry is in and an advisor will reach out shortly.';
+            'Thanks! Your enquiry is in and our team will reach out shortly.';
         }
         form.querySelectorAll('input, textarea, select').forEach((el) => {
           const node = el as HTMLInputElement;
