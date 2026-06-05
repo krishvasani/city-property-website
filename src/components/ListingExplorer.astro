@@ -2,6 +2,7 @@
 import Icon from './Icon.astro';
 import PropertyCard from './PropertyCard.astro';
 import Map from './Map.astro';
+import LocalityAutocomplete from './LocalityAutocomplete.astro';
 import type { Property } from '../lib/types';
 
 interface BudgetOption { label: string; value: string }
@@ -13,7 +14,6 @@ interface Props {
   emptyText?: string;
   budgetOptions?: BudgetOption[];
   budgetLabel?: string;
-  searchValue?: string;
 }
 
 const {
@@ -23,7 +23,6 @@ const {
   emptyText = 'No properties match your filters right now.',
   budgetOptions = [],
   budgetLabel = 'Budget',
-  searchValue = '',
 } = Astro.props;
 
 const TYPE_LABELS: Record<string, string> = {
@@ -54,7 +53,7 @@ const hasResidential = typesPresent.includes('residential');
     <div class="row1">
       <div class="mini-search">
         <Icon name="search" sw={2} />
-        <input id="explorer-search" value={searchValue} placeholder="Search locality or project…" aria-label="Search location" />
+        <LocalityAutocomplete id="explorer-search" paramKey="locality" placeholder="Search a locality or area…" />
       </div>
       <div class="chips" id="type-chips">
         <button class="chip is-active" data-type="">All</button>
@@ -154,19 +153,18 @@ const hasResidential = typesPresent.includes('residential');
   const pager = document.getElementById('pager')!;
   const noResults = document.getElementById('no-results')!;
   const sortSelect = document.getElementById('sort-select') as HTMLSelectElement;
-  const search = document.getElementById('explorer-search') as HTMLInputElement;
   const bedsSelect = document.getElementById('beds-select') as HTMLSelectElement | null;
   const budgetSelect = document.getElementById('budget-select') as HTMLSelectElement | null;
   const typeChips = Array.from(document.querySelectorAll<HTMLElement>('#type-chips .chip'));
 
-  const state = { type: '', beds: 0, budget: '', q: '', sort: 'recommended', page: 1 };
+  const state = { type: '', beds: 0, budget: '', locality: '', sort: 'recommended', page: 1 };
 
-  // Seed from the URL (?type=, ?locality=, ?q=, ?budget=, ?beds=)
+  // Seed from the URL (?type=, ?locality=, ?budget=, ?beds=). The locality
+  // search box preselects ?locality itself (paramKey="locality").
   const params = new URLSearchParams(location.search);
   state.type = params.get('type') || '';
   state.budget = params.get('budget') || '';
-  state.q = params.get('q') || params.get('locality')?.replace(/-/g, ' ') || '';
-  if (state.q) search.value = state.q;
+  state.locality = params.get('locality') || '';
   typeChips.forEach((c) => c.classList.toggle('is-active', (c.dataset.type || '') === state.type));
   if (budgetSelect && state.budget) budgetSelect.value = state.budget;
 
@@ -184,10 +182,7 @@ const hasResidential = typesPresent.includes('residential');
       const price = +(d.price || 0);
       if (price < lo || price > hi) return false;
     }
-    if (state.q) {
-      const q = state.q.trim().toLowerCase();
-      if (q && !(d.search || '').includes(q)) return false;
-    }
+    if (state.locality && d.locality !== state.locality) return false;
     return true;
   }
 
@@ -240,12 +235,17 @@ const hasResidential = typesPresent.includes('residential');
   sortSelect.addEventListener('change', () => { state.sort = sortSelect.value; state.page = 1; render(); });
   bedsSelect?.addEventListener('change', () => { state.beds = +bedsSelect.value || 0; state.page = 1; render(); });
   budgetSelect?.addEventListener('change', () => { state.budget = budgetSelect.value; state.page = 1; render(); });
-  let qt: number;
-  search.addEventListener('input', () => { clearTimeout(qt); qt = window.setTimeout(() => { state.q = search.value; state.page = 1; render(); }, 180); });
+  // Locality search box (restricted to our localities) drives the locality filter.
+  document.addEventListener('locality:change', (e: Event) => {
+    state.locality = ((e as CustomEvent).detail?.id as string) || '';
+    state.page = 1;
+    render();
+  });
   document.getElementById('clear-filters')?.addEventListener('click', () => {
-    state.type = ''; state.beds = 0; state.budget = ''; state.q = ''; state.page = 1;
-    search.value = ''; if (bedsSelect) bedsSelect.value = ''; if (budgetSelect) budgetSelect.value = '';
+    state.type = ''; state.beds = 0; state.budget = ''; state.locality = ''; state.page = 1;
+    if (bedsSelect) bedsSelect.value = ''; if (budgetSelect) budgetSelect.value = '';
     typeChips.forEach((c) => c.classList.toggle('is-active', !c.dataset.type));
+    document.dispatchEvent(new CustomEvent('locality:reset'));
     render();
   });
 

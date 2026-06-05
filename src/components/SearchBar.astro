@@ -1,10 +1,6 @@
 ---
 import Icon from './Icon.astro';
-
-interface Props {
-  location?: string;
-}
-const { location = 'SG Highway, Ahmedabad' } = Astro.props;
+import LocalityAutocomplete from './LocalityAutocomplete.astro';
 ---
 <form class="hero-search" action="/buy" method="get" data-hero-search>
   <div class="segment" role="tablist" aria-label="Search mode">
@@ -13,9 +9,9 @@ const { location = 'SG Highway, Ahmedabad' } = Astro.props;
   </div>
 
   <div class="searchbar">
-    <div class="seg">
+    <div class="seg seg-loc">
       <label for="hero-loc">Location</label>
-      <input id="hero-loc" name="q" value={location} autocomplete="off" />
+      <LocalityAutocomplete id="hero-loc" hiddenName="locality" placeholder="Search a locality or area…" />
     </div>
     <div class="seg">
       <label for="hero-type">Type</label>
@@ -65,6 +61,9 @@ const { location = 'SG Highway, Ahmedabad' } = Astro.props;
 
     form.addEventListener('submit', () => {
       form.setAttribute('action', target);
+      // Drop an empty locality so the URL stays clean.
+      const loc = form.querySelector('.loc-ac-hidden') as HTMLInputElement | null;
+      if (loc && !loc.value) loc.removeAttribute('name');
       if (target === '/rent') {
         const b = form.querySelector('#hero-budget') as HTMLSelectElement | null;
         if (b) b.removeAttribute('name'); // drop sale budget from the rent query
