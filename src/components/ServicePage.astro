@@ -196,6 +196,9 @@ const otherLinks = serviceLinks.filter((s) => s.key !== serviceKey);
   .svc-rel-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 
   .svc-inquiry { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: start; padding: 44px 0 96px; margin-top: 20px; }
+  /* grid/flex children must be allowed to shrink below their content width */
+  .svc-inquiry > *, .svc-form-panel, .svc-side, .svc-help-item, .svc-help-item > span, .svc-steps li > div { min-width: 0; }
+  .svc-side-links a { overflow-wrap: anywhere; }
   .svc-form-panel { background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); box-shadow: var(--shadow-sm); padding: 28px; }
   .svc-side { position: sticky; top: calc(var(--nav-h) + 20px); }
   .svc-side-card { background: var(--navy-tint); border: 1px solid var(--hairline); border-radius: var(--r-lg); padding: 22px; }

@@ -11,7 +11,9 @@ const href = whatsappUrl(message);
 
 <style>
   .fab-wa {
-    position: fixed; right: 20px; bottom: 20px; z-index: 60;
+    position: fixed; z-index: 60;
+    right: calc(18px + env(safe-area-inset-right, 0px));
+    bottom: calc(18px + env(safe-area-inset-bottom, 0px));
     display: inline-flex; align-items: center; gap: 9px;
     padding: 13px 18px 13px 15px; border-radius: var(--r-pill);
     background: #1faf54; color: #fff; font-weight: 600; font-size: 15px;
@@ -21,9 +23,12 @@ const href = whatsappUrl(message);
   .fab-wa:hover { transform: translateY(-2px); background: #1a9a4a; }
   .fab-wa:active { transform: translateY(0) scale(.98); }
   .fab-wa svg { width: 22px; height: 22px; }
+  /* Icon-only, slightly smaller and tucked into the corner on phones so it
+     does not cover CTA or submit buttons. */
   @media (max-width: 560px) {
     .fab-wa span { display: none; }
-    .fab-wa { padding: 14px; }
+    .fab-wa { padding: 12px; right: calc(14px + env(safe-area-inset-right, 0px)); bottom: calc(14px + env(safe-area-inset-bottom, 0px)); }
+    .fab-wa svg { width: 21px; height: 21px; }
   }
   @media (prefers-reduced-motion: reduce) {
     .fab-wa { transition: background var(--t) var(--ease); }

@@ -165,6 +165,9 @@ const photoCount = property.photos?.length ? Math.max(property.photos.length, 18
   .det-actions { display: flex; gap: 10px; }
 
   .det-body { display: grid; grid-template-columns: 1.7fr 1fr; gap: 40px; align-items: start; margin-top: 28px; }
+  /* allow grid columns + their contents (facts, amenities, map, cards) to shrink */
+  .det-body > *, .det-main, .sticky, .facts, .amen, .block, .contact-card { min-width: 0; }
+  .det-body :global(.map), .det-body :global(.mapboxgl-canvas) { max-width: 100%; }
 
   .facts { display: grid; grid-template-columns: repeat(4,1fr); gap: 4px; background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); padding: 6px; box-shadow: var(--shadow-sm); }
   .fact { display: flex; flex-direction: column; gap: 6px; padding: 18px 16px; border-radius: var(--r); }

@@ -154,9 +154,9 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
         <div>
           <h2>Thinking of selling, or not sure what to do?</h2>
           <p style="margin-top:12px;">Get a free valuation and reach serious, verified buyers across Ahmedabad, or simply talk it through with a local expert. No pressure and no hassle.</p>
-          <div class="row" style="margin-top:24px;">
+          <div class="row band-cta" style="margin-top:24px;">
             <a class="btn btn-primary btn-lg" href="/sell">Sell your property</a>
-            <a class="btn btn-ghost btn-lg" href="/consult" style="color:#fff;">Talk to an expert</a>
+            <a class="btn btn-ghost btn-lg" href="/consult" style="color:#fff;">Request a consultation</a>
           </div>
         </div>
       </div>
@@ -274,5 +274,9 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
     .hero-stats { gap: 20px 30px; margin-top: 30px; }
     .hero-art { margin-top: 40px; aspect-ratio: 16/11; }
     .section { padding: 44px 0; }
+    /* Sell band: stack the two CTAs so neither is clipped by the band */
+    .band { padding: 30px 22px; }
+    .band-cta { flex-direction: column; align-items: stretch; gap: 10px; }
+    .band-cta .btn { width: 100%; }
   }
 </style>

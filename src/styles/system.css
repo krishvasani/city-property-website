@@ -411,8 +411,10 @@ h4, .h4 { font-size: 17px; line-height: 1.35; letter-spacing: -.008em; font-weig
 }
 
 /* ---- Mobile safety + polish (small phones) ---- */
-/* Never allow a stray wide element to force horizontal scroll. */
-html, body { overflow-x: clip; max-width: 100%; }
+/* Root overflow causes are fixed in the components; this is only a backstop. */
+html, body { max-width: 100%; overflow-x: clip; }
+/* Media never wider than its container. */
+img, svg, video, canvas, iframe { max-width: 100%; }
 @media (max-width: 560px) {
   .wrap, .wrap-wide { padding: 0 16px; }
   /* full width, comfortably stacked buttons in CTA rows */
