@@ -1,7 +1,7 @@
 ---
 import Icon from './Icon.astro';
 import Tag from './Tag.astro';
-import { cardMetaFor, tagVariantFor } from '../lib/format';
+import { cardMetaFor, tagVariantFor, categoryFor } from '../lib/format';
 import type { Property } from '../lib/types';
 
 interface Props { property: Property; }
@@ -19,6 +19,7 @@ const searchText = [p.title, p.localityName, p.address].filter(Boolean).join(' '
   href={href}
   data-slug={p.slug}
   data-type={p.propertyType}
+  data-category={categoryFor(p.propertyType)}
   data-status={p.status}
   data-price={p.priceValue ?? ''}
   data-area={p.areaSqft ?? ''}

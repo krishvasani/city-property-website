@@ -3,6 +3,7 @@ import Icon from './Icon.astro';
 import PropertyCard from './PropertyCard.astro';
 import Map from './Map.astro';
 import LocalityAutocomplete from './LocalityAutocomplete.astro';
+import { categoryFor, CATEGORY_LABEL, CATEGORY_ORDER } from '../lib/format';
 import type { Property } from '../lib/types';
 
 interface BudgetOption { label: string; value: string }
@@ -25,14 +26,7 @@ const {
   budgetLabel = 'Budget',
 } = Astro.props;
 
-const TYPE_LABELS: Record<string, string> = {
-  residential: 'Residential',
-  commercial: 'Commercial',
-  land: 'Land',
-  industrial: 'Industrial',
-  warehousing: 'Warehousing',
-};
-const typesPresent = [...new Set(properties.map((p) => p.propertyType))];
+const catsPresent = CATEGORY_ORDER.filter((c) => properties.some((p) => categoryFor(p.propertyType) === c));
 
 // Map rail pins (real coords if available; spread on the stylised fallback)
 const pins = properties
@@ -45,7 +39,7 @@ const pins = properties
     active: i === 0,
   }));
 
-const hasResidential = typesPresent.includes('residential');
+const hasResidential = catsPresent.includes('residential');
 ---
 <!-- FILTER BAR -->
 <div class="filterbar">
@@ -57,7 +51,7 @@ const hasResidential = typesPresent.includes('residential');
       </div>
       <div class="chips" id="type-chips">
         <button class="chip is-active" data-type="">All</button>
-        {typesPresent.map((t) => <button class="chip" data-type={t}>{TYPE_LABELS[t] ?? t}</button>)}
+        {catsPresent.map((c) => <button class="chip" data-type={c}>{CATEGORY_LABEL[c]}</button>)}
       </div>
       {hasResidential && (
         <select class="filter-select" id="beds-select" aria-label="Bedrooms">
@@ -175,7 +169,7 @@ const hasResidential = typesPresent.includes('residential');
 
   function matches(card: HTMLElement): boolean {
     const d = card.dataset;
-    if (state.type && d.type !== state.type) return false;
+    if (state.type && d.category !== state.type) return false;
     if (state.beds && +(d.beds || 0) < state.beds) return false;
     if (state.budget) {
       const [lo, hi] = budgetRange(state.budget);

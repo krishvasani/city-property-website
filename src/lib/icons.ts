@@ -34,6 +34,9 @@ export const ICONS: Record<string, string> = {
     '<path d="M3 21V11l6-3v3l6-3v3l6-3v13M7 21v-4M13 21v-4M19 21v-4"/>',
   warehousing:
     '<path d="M3 21V9l9-5 9 5v12M3 21h18M8 21v-7h8v7"/>',
+  // investments — upward trend / growth
+  investment:
+    '<path d="M4 19h16M4 19V5M8 15l3-3 3 2 5-6M16 7h4v4"/>',
   // detail facts
   floor:
     '<path d="M4 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16M8 7h0M12 7h0M8 11h0M12 11h0M8 15h0M12 15h0"/>',

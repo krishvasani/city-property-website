@@ -1,6 +1,6 @@
 import { defineType, defineField } from 'sanity';
 
-const TYPES = ['residential', 'commercial', 'land', 'industrial', 'warehousing'];
+const TYPES = ['residential', 'commercial', 'land', 'industrial', 'warehousing', 'investment'];
 const ICONS = ['bed', 'bath', 'ruler', 'furnished', 'plot', 'commercial', 'parking'];
 
 export default defineType({

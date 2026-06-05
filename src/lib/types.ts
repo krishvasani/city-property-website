@@ -8,7 +8,8 @@ export type PropertyType =
   | 'commercial'
   | 'land'
   | 'industrial'
-  | 'warehousing';
+  | 'warehousing'
+  | 'investment'; // prelaunch / prelease investment projects
 
 // The listing's purpose / type. Drives the Buy vs Rent split and the status tag.
 export type Status = 'sale' | 'rent' | 'lease';

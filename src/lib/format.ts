@@ -70,4 +70,35 @@ export const TYPE_ICON: Record<Property['propertyType'], string> = {
   land: 'land',
   industrial: 'industrial',
   warehousing: 'warehousing',
+  investment: 'investment',
 };
+
+// ── Search categories ────────────────────────────────────────────────
+// The buckets shown in search/filters. Industrial + Warehousing are merged
+// into one category; "Investments" covers prelaunch / prelease projects.
+export type Category = 'residential' | 'commercial' | 'land' | 'industrial' | 'investment';
+
+export const CATEGORY_LABEL: Record<Category, string> = {
+  residential: 'Residential',
+  commercial: 'Commercial',
+  land: 'Land & plots',
+  industrial: 'Industrial & Warehousing',
+  investment: 'Investments',
+};
+
+export const CATEGORY_ICON: Record<Category, string> = {
+  residential: 'residential',
+  commercial: 'commercial',
+  land: 'land',
+  industrial: 'industrial',
+  investment: 'investment',
+};
+
+export const CATEGORY_ORDER: Category[] = ['residential', 'commercial', 'land', 'industrial', 'investment'];
+
+/** Maps a granular property type to its search category. */
+export function categoryFor(t: Property['propertyType']): Category {
+  if (t === 'warehousing' || t === 'industrial') return 'industrial';
+  if (t === 'investment') return 'investment';
+  return t as Category; // residential | commercial | land
+}

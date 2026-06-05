@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import { getProperties } from '../lib/data';
 import { getLocalityById } from '../data/localities';
+import { categoryFor, CATEGORY_LABEL, CATEGORY_ORDER } from '../lib/format';
 import { map as mapCfg } from '../lib/config';
 import type { Property } from '../lib/types';
 
@@ -19,10 +20,7 @@ const resolved = all
   .filter((x): x is { p: Property; lat: number; lng: number; region: string } => x.lat != null && x.lng != null);
 const properties = resolved.map((x) => x.p);
 
-const TYPE_LABELS: Record<string, string> = {
-  residential: 'Residential', commercial: 'Commercial', land: 'Land', industrial: 'Industrial', warehousing: 'Warehousing',
-};
-const typesPresent = [...new Set(properties.map((p) => p.propertyType))];
+const catsPresent = CATEGORY_ORDER.filter((c) => properties.some((p) => categoryFor(p.propertyType) === c));
 const localities = [...new Map(properties.filter((p) => p.localitySlug).map((p) => [p.localitySlug, p.localityName])).entries()];
 const regionsPresent = [...new Set(resolved.map((x) => x.region).filter(Boolean))].sort();
 
@@ -34,6 +32,7 @@ const data = resolved.map(({ p, lat, lng, region }) => ({
   per: p.pricePer ?? '',
   loc: p.localityName,
   type: p.propertyType,
+  category: categoryFor(p.propertyType),
   status: p.status,
   statusLabel: p.statusLabel,
   priceValue: p.priceValue ?? 0,
@@ -63,7 +62,7 @@ const data = resolved.map(({ p, lat, lng, region }) => ({
         </div>
         <select class="filter-select" id="f-type" aria-label="Property type">
           <option value="">All types</option>
-          {typesPresent.map((t) => <option value={t}>{TYPE_LABELS[t] ?? t}</option>)}
+          {catsPresent.map((c) => <option value={c}>{CATEGORY_LABEL[c]}</option>)}
         </select>
         <select class="filter-select" id="f-region" aria-label="Region">
           <option value="">All regions</option>
@@ -183,7 +182,7 @@ const data = resolved.map(({ p, lat, lng, region }) => ({
 
 <script>
   type P = {
-    slug: string; title: string; price: string; per: string; loc: string; type: string;
+    slug: string; title: string; price: string; per: string; loc: string; type: string; category: string;
     status: string; statusLabel: string; priceValue: number; area: number; beds: number;
     newAt: string; lat: number; lng: number; localitySlug: string; region: string;
   };
@@ -225,7 +224,7 @@ const data = resolved.map(({ p, lat, lng, region }) => ({
 
   function passesFilters(p: P): boolean {
     if (state.status && p.status !== state.status) return false;
-    if (state.type && p.type !== state.type) return false;
+    if (state.type && p.category !== state.type) return false;
     if (state.region && p.region !== state.region) return false;
     if (state.locality && p.localitySlug !== state.locality) return false;
     if (state.beds && p.beds < state.beds) return false;
