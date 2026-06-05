@@ -40,6 +40,12 @@ const links = variant === 'guide' ? guideLinks : siteLinks;
     {variant === 'site' && <div class="spacer"></div>}
 
     <div class="actions">
+      {variant === 'site' && (
+        <a class="nav-wish" href="/saved" aria-label="Saved properties">
+          <Icon name="heart" sw={1.8} />
+          <span class="wish-count" data-wish-count hidden>0</span>
+        </a>
+      )}
       {variant === 'guide' ? (
         <a class="btn btn-secondary btn-sm" href="/">View site</a>
       ) : (
@@ -79,6 +85,24 @@ const links = variant === 'guide' ? guideLinks : siteLinks;
   }
   .nav-burger:hover { border-color: var(--border-strong); box-shadow: var(--shadow-sm); }
   .nav-burger :global(svg) { width: 20px; height: 20px; }
+
+  /* Wishlist / liked button */
+  .nav-wish {
+    position: relative; display: inline-grid; place-items: center;
+    width: 40px; height: 40px; border-radius: var(--r-pill);
+    border: 1px solid var(--border); background: var(--surface); color: var(--ink);
+    box-shadow: var(--shadow-xs); flex: none;
+    transition: border-color var(--t) var(--ease), color var(--t) var(--ease), box-shadow var(--t) var(--ease), transform var(--t) var(--ease);
+  }
+  .nav-wish:hover { border-color: var(--navy); color: var(--navy); box-shadow: var(--shadow-sm); transform: translateY(-1px); }
+  .nav-wish :global(svg) { width: 19px; height: 19px; }
+  .nav-wish.has-saved { color: #d6566a; border-color: #f0c9d0; }
+  .wish-count {
+    position: absolute; top: -6px; right: -6px; min-width: 18px; height: 18px;
+    padding: 0 5px; border-radius: 999px; background: var(--navy); color: #fff;
+    font-size: 11px; font-weight: 700; line-height: 18px; text-align: center;
+    box-shadow: 0 0 0 2px var(--bg);
+  }
 
   .nav-drawer {
     position: fixed; inset: var(--nav-h) 0 0 0; z-index: 49;

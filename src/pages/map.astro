@@ -148,7 +148,7 @@ const data = resolved.map(({ p, lat, lng, region }) => ({
   .mapx-list-head { padding: 14px 20px; border-bottom: 1px solid var(--hairline); font-size: 14px; color: var(--text-muted); flex: none; background: var(--surface); }
   .mapx-list-head b { color: var(--ink); }
   .mapx-cards { overflow-y: auto; padding: 14px; display: flex; flex-direction: column; gap: 12px; }
-  .mcard { display: grid; grid-template-columns: 104px 1fr; gap: 12px; border: 1px solid var(--hairline); border-radius: var(--r); background: var(--surface); overflow: hidden; box-shadow: var(--shadow-xs); cursor: pointer; transition: border-color var(--t) var(--ease), box-shadow var(--t) var(--ease), transform var(--t) var(--ease); }
+  .mcard { display: grid; grid-template-columns: 104px 1fr; gap: 12px; flex: 0 0 auto; min-height: 96px; border: 1px solid var(--hairline); border-radius: var(--r); background: var(--surface); overflow: hidden; box-shadow: var(--shadow-xs); cursor: pointer; transition: border-color var(--t) var(--ease), box-shadow var(--t) var(--ease), transform var(--t) var(--ease); }
   .mcard:hover, .mcard.is-active { border-color: var(--navy); box-shadow: var(--shadow-sm); transform: translateY(-1px); }
   .mcard-media { background: var(--surface-3); }
   .mcard-media .ph { height: 100%; }

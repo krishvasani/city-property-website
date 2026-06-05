@@ -31,6 +31,12 @@ function updateCounts() {
   document.querySelectorAll<HTMLElement>('[data-saved-count]').forEach((el) => {
     el.textContent = n ? `Saved (${n})` : 'Saved';
   });
+  // Wishlist badge + heart state in the nav
+  document.querySelectorAll<HTMLElement>('[data-wish-count]').forEach((el) => {
+    el.textContent = String(n);
+    el.hidden = n === 0;
+    el.closest('.nav-wish')?.classList.toggle('has-saved', n > 0);
+  });
 }
 
 function fillFav(btn: Element, on: boolean) {
