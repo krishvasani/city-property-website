@@ -188,7 +188,10 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
   /* ---- HOME-LOCAL (ported from home.html; global so rules reach component
      roots like .type-tile / .agent-card / .hero-search that Astro scoping
      would otherwise miss). Only loaded on this page. ---- */
-  .hero { padding: 80px 0 28px; position: relative; text-align: center; }
+  /* padding-block only, so the horizontal padding from .wrap-wide is preserved
+     (the shorthand `padding: 80px 0` used to zero out the side padding, which
+     made content touch the screen edge on mobile). */
+  .hero { padding-block: 80px 28px; position: relative; text-align: center; }
   .hero .display { max-width: 18ch; text-wrap: balance; margin: 16px auto 0; }
   .hero-sub { max-width: 56ch; margin: 22px auto 0; text-wrap: pretty; }
   .hero-search { margin: 38px auto 0; max-width: 884px; text-align: left; position: relative; z-index: 30; }
@@ -202,7 +205,7 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
   .hero-art::after { content: ""; position: absolute; inset: 0; pointer-events: none;
     background: linear-gradient(180deg, rgba(8,80,112,.10) 0%, rgba(8,80,112,0) 28%, rgba(13,26,35,.18) 100%); }
 
-  .section { padding: 64px 0; }
+  .section { padding-block: 64px; }
   .section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 32px; flex-wrap: wrap; }
   .section-head p { margin: 8px 0 0; color: var(--text-muted); max-width: 50ch; }
 
@@ -270,10 +273,10 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
     .hero-search .searchbar .btn { width: 100%; margin-top: 4px; }
   }
   @media (max-width: 560px) {
-    .hero { padding: 56px 0 20px; }
+    .hero { padding-block: 56px 20px; }
     .hero-stats { gap: 20px 30px; margin-top: 30px; }
     .hero-art { margin-top: 40px; aspect-ratio: 16/11; }
-    .section { padding: 44px 0; }
+    .section { padding-block: 44px; }
     /* Sell band: stack the two CTAs so neither is clipped by the band */
     .band { padding: 30px 22px; }
     .band-cta { flex-direction: column; align-items: stretch; gap: 10px; }
