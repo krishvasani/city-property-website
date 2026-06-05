@@ -6,7 +6,8 @@ import TypeTile from '../components/TypeTile.astro';
 import PropertyCard from '../components/PropertyCard.astro';
 import AgentCard from '../components/AgentCard.astro';
 import Icon from '../components/Icon.astro';
-import { getFeatured, getAgents } from '../lib/data';
+import { getFeatured, getAgents, getProperties } from '../lib/data';
+import { categoryFor } from '../lib/format';
 import { existsSync } from 'node:fs';
 
 // Drop a real photo at public/team/mukesh-vasani.jpg and the build uses it
@@ -17,13 +18,21 @@ const founderPhoto = existsSync(new URL('../../public/team/mukesh-vasani.jpg', i
 
 const featured = await getFeatured(3);
 const agents = await getAgents();
+const allProperties = await getProperties();
+
+// Live counts per category (tracks the real number of listings we have).
+const catCount = (c: string) => allProperties.filter((p) => categoryFor(p.propertyType) === c).length;
+const countLabel = (c: string) => {
+  const n = catCount(c);
+  return n > 0 ? `${n} listing${n === 1 ? '' : 's'}` : 'Coming soon';
+};
 
 const types = [
-  { icon: 'residential' as const, title: 'Residential', count: '1,240 listings', type: 'residential' },
-  { icon: 'commercial' as const, title: 'Commercial', count: '560 listings', type: 'commercial' },
-  { icon: 'land' as const, title: 'Land & plots', count: '310 listings', type: 'land' },
-  { icon: 'industrial' as const, title: 'Industrial & Warehousing', count: '275 listings', type: 'industrial' },
-  { icon: 'investment' as const, title: 'Investments', count: 'Prelaunch & prelease', type: 'investment' },
+  { icon: 'residential' as const, title: 'Residential', count: countLabel('residential'), type: 'residential' },
+  { icon: 'commercial' as const, title: 'Commercial', count: countLabel('commercial'), type: 'commercial' },
+  { icon: 'land' as const, title: 'Land & plots', count: countLabel('land'), type: 'land' },
+  { icon: 'industrial' as const, title: 'Industrial & Warehousing', count: countLabel('industrial'), type: 'industrial' },
+  { icon: 'investment' as const, title: 'Investments', count: countLabel('investment'), type: 'investment' },
 ];
 
 // The five services the CIRIL name stands for
@@ -170,7 +179,9 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
   .hero { padding: 80px 0 28px; position: relative; text-align: center; }
   .hero .display { max-width: 18ch; text-wrap: balance; margin: 16px auto 0; }
   .hero-sub { max-width: 56ch; margin: 22px auto 0; text-wrap: pretty; }
-  .hero-search { margin: 38px auto 0; max-width: 884px; text-align: left; }
+  .hero-search { margin: 38px auto 0; max-width: 884px; text-align: left; position: relative; z-index: 30; }
+  /* the open results panel must sit cleanly above the stats/art below it */
+  .hero-search .loc-panel { min-width: 440px; }
   .hero-search .segment { display: flex; width: max-content; max-width: 100%; margin: 0 auto 16px; }
   .hero-stats { display: flex; gap: 56px; margin-top: 38px; flex-wrap: wrap; justify-content: center; }
   .hero-stats .stat { align-items: center; text-align: center; }
