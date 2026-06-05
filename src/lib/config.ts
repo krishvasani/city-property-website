@@ -13,10 +13,16 @@ export const site = {
 
 export const contact = {
   /** Digits-only international number for wa.me links. */
-  whatsapp: env.PUBLIC_WHATSAPP || '919876543210',
+  whatsapp: env.PUBLIC_WHATSAPP || '919824900778',
   /** Human-readable number for tel: links. */
-  phone: env.PUBLIC_PHONE || '+91 98765 43210',
-  email: env.PUBLIC_LEAD_EMAIL || 'leads@cityproperty.example.com',
+  phone: env.PUBLIC_PHONE || '+91 98249 00778',
+  email: env.PUBLIC_LEAD_EMAIL || 'coordinator@cityprop.co.in',
+};
+
+/** Social profiles. */
+export const social = {
+  instagram: 'https://www.instagram.com/citypropertyservices.in/',
+  linkedin: 'https://in.linkedin.com/company/city-propertyservices',
 };
 
 export const map = {
