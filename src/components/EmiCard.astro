@@ -15,41 +15,48 @@ const emiDisplay = `₹ ${emi.toLocaleString('en-IN')}`;
 const loanDisplay = formatINRShort(loan);
 ---
 <div class="emi" data-emi data-price={priceValue}>
-  <div class="row between">
-    <span class="small muted">Est. EMI</span>
-    <span class="mono small" data-emi-terms style="color:var(--navy);font-weight:600;">@ {rate}% · {years} yr</span>
-  </div>
-  <div class="h2" style="margin:6px 0 2px;">
-    <span data-emi-value>{emiDisplay}</span><span style="font-size:14px;font-weight:500;color:var(--text-muted);"> /mo</span>
-  </div>
-  <div class="caption muted">On {ltv}% loan of <span data-emi-loan>{loanDisplay}</span>. Indicative only.</div>
+  <div class="emi-grid">
+    <div class="emi-summary">
+      <div class="emi-top">
+        <span class="small muted">Est. EMI</span>
+        <span class="mono small" data-emi-terms>@ {rate}% · {years} yr</span>
+      </div>
+      <div class="emi-value"><span data-emi-value>{emiDisplay}</span><span class="per"> /mo</span></div>
+      <div class="caption muted">On <span data-emi-ltv>{ltv}</span>% loan of <span data-emi-loan>{loanDisplay}</span>. Indicative only.</div>
+    </div>
 
-  <button class="btn btn-ghost btn-sm" type="button" data-emi-toggle style="margin-top:12px;padding-left:0;">
-    Open EMI calculator →
-  </button>
-
-  <div class="emi-calc" data-emi-calc hidden>
-    <label class="emi-ctl">
-      <span>Interest rate <b data-out="rate">{rate}%</b></span>
-      <input type="range" name="rate" min="6" max="12" step="0.1" value={rate} />
-    </label>
-    <label class="emi-ctl">
-      <span>Tenure <b data-out="years">{years} yr</b></span>
-      <input type="range" name="years" min="5" max="30" step="1" value={years} />
-    </label>
-    <label class="emi-ctl">
-      <span>Loan-to-value <b data-out="ltv">{ltv}%</b></span>
-      <input type="range" name="ltv" min="50" max="90" step="5" value={ltv} />
-    </label>
+    <div class="emi-calc">
+      <label class="emi-ctl">
+        <span>Interest rate <b data-out="rate">{rate}%</b></span>
+        <input type="range" name="rate" min="6" max="12" step="0.1" value={rate} />
+      </label>
+      <label class="emi-ctl">
+        <span>Tenure <b data-out="years">{years} yr</b></span>
+        <input type="range" name="years" min="5" max="30" step="1" value={years} />
+      </label>
+      <label class="emi-ctl">
+        <span>Loan to value <b data-out="ltv">{ltv}%</b></span>
+        <input type="range" name="ltv" min="10" max="100" step="5" value={ltv} />
+      </label>
+    </div>
   </div>
 </div>
 
 <style>
-  .emi-calc { margin-top: 14px; display: flex; flex-direction: column; gap: 14px; }
+  .emi { background: var(--navy-tint); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 24px; }
+  .emi-grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: 30px; align-items: center; }
+  .emi-summary { min-width: 0; }
+  .emi-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+  .emi-top [data-emi-terms] { color: var(--navy); font-weight: 600; }
+  .emi-value { font-size: clamp(26px, 2.6vw, 32px); font-weight: 650; color: var(--ink); letter-spacing: -.02em; margin: 6px 0 4px; line-height: 1.1; }
+  .emi-value .per { font-size: 14px; font-weight: 500; color: var(--text-muted); }
+  .emi-calc { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
   .emi-ctl { display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--text-muted); }
-  .emi-ctl span { display: flex; justify-content: space-between; }
+  .emi-ctl > span { display: flex; justify-content: space-between; gap: 10px; }
   .emi-ctl b { color: var(--ink); font-weight: 600; }
   .emi-ctl input[type="range"] { width: 100%; accent-color: var(--navy); }
+  /* stack on narrow columns / mobile */
+  @media (max-width: 620px) { .emi-grid { grid-template-columns: 1fr; gap: 20px; } }
 </style>
 
 <script>
@@ -65,20 +72,11 @@ const loanDisplay = formatINRShort(loan);
   }
   document.querySelectorAll<HTMLElement>('[data-emi]').forEach((card) => {
     const price = parseFloat(card.getAttribute('data-price') || '0');
-    const toggle = card.querySelector('[data-emi-toggle]');
-    const calc = card.querySelector<HTMLElement>('[data-emi-calc]');
     const valueEl = card.querySelector('[data-emi-value]');
     const termsEl = card.querySelector('[data-emi-terms]');
     const loanEl = card.querySelector('[data-emi-loan]');
+    const ltvEl = card.querySelector('[data-emi-ltv]');
     const inputs = card.querySelectorAll<HTMLInputElement>('input[type="range"]');
-
-    toggle?.addEventListener('click', () => {
-      if (!calc) return;
-      const open = calc.hasAttribute('hidden');
-      if (open) calc.removeAttribute('hidden');
-      else calc.setAttribute('hidden', '');
-      toggle.textContent = open ? 'Hide EMI calculator ↑' : 'Open EMI calculator →';
-    });
 
     const recompute = () => {
       const vals: Record<string, number> = {};
@@ -89,6 +87,7 @@ const loanDisplay = formatINRShort(loan);
       valueEl && (valueEl.textContent = `₹ ${monthly.toLocaleString('en-IN')}`);
       termsEl && (termsEl.textContent = `@ ${rate}% · ${years} yr`);
       loanEl && (loanEl.textContent = fmtShort(loan));
+      ltvEl && (ltvEl.textContent = `${ltv}`);
       card.querySelector('[data-out="rate"]')!.textContent = `${rate}%`;
       card.querySelector('[data-out="years"]')!.textContent = `${years} yr`;
       card.querySelector('[data-out="ltv"]')!.textContent = `${ltv}%`;

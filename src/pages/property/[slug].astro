@@ -101,6 +101,13 @@ const photoCount = property.photos?.length ? Math.max(property.photos.length, 18
           </div>
         )}
 
+        {property.status === 'sale' && (
+          <div class="block reveal">
+            <h3>Estimate your monthly EMI</h3>
+            <EmiCard priceValue={property.priceValue} />
+          </div>
+        )}
+
         <div class="block reveal">
           <h3>Location</h3>
           <Map pins={mapPins} id="prop-map" height="300px" />
@@ -127,8 +134,6 @@ const photoCount = property.photos?.length ? Math.max(property.photos.length, 18
             <WhatsAppButton label="WhatsApp Us" message={waMessage} block />
           </div>
         </div>
-
-        <EmiCard priceValue={property.priceValue} />
       </aside>
     </div>
 
@@ -191,8 +196,6 @@ const photoCount = property.photos?.length ? Math.max(property.photos.length, 18
   .contact-card .cc-h { font-size: 18px; color: var(--ink); margin: 0 0 6px; }
   .contact-card .cc-p { font-size: 13.5px; color: var(--text-muted); line-height: 1.55; margin: 0; }
   .btn-block { width: 100%; }
-  .emi { background: var(--navy-tint); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 20px; }
-  .emi .row { justify-content: space-between; }
 
   .similar-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
 
