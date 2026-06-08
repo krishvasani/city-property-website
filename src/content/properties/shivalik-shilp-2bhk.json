@@ -1,0 +1,32 @@
+{
+  "title": "2 BHK Flat · Shivalik Shilp",
+  "slug": "shivalik-shilp-2bhk",
+  "status": "rent",
+  "propertyType": "residential",
+  "priceDisplay": "₹ 28,000",
+  "localityName": "Vastrapur",
+  "city": "Ahmedabad",
+  "featured": false,
+  "draft": false,
+  "statusLabel": "For rent",
+  "priceValue": 28000,
+  "pricePer": " /month",
+  "localitySlug": "vastrapur",
+  "address": "Vastrapur, Ahmedabad",
+  "beds": 2,
+  "baths": 2,
+  "area": "1,180 sqft",
+  "areaSqft": 1180,
+  "furnishing": "Semi-furnished",
+  "geo": {
+    "lat": 23.0395,
+    "lng": 72.5292
+  },
+  "newAt": "2026-05-18",
+  "photos": [
+    {
+      "alt": "Shivalik Shilp flat",
+      "label": "Property photo"
+    }
+  ]
+}

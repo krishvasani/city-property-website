@@ -1,0 +1,200 @@
+# Decap CMS configuration for City Property Services.
+# Edits commit to the Git repo and Netlify rebuilds the site automatically.
+# See ADMIN_SETUP.md for the one time authentication setup.
+
+backend:
+  name: github
+  repo: krishvasani/city-property-website
+  branch: main
+
+# Lets you test the editor locally with `npx decap-server` (does not affect prod).
+local_backend: true
+
+# Uploaded media is stored in the repo under public/uploads and served from /uploads.
+media_folder: public/uploads
+public_folder: /uploads
+
+site_url: https://city-property-ahmedabad.netlify.app
+display_url: https://city-property-ahmedabad.netlify.app
+logo_url: https://city-property-ahmedabad.netlify.app/logo/city-property-logo-navy.png
+
+collections:
+  # ─────────────────────────── BLOG POSTS ───────────────────────────
+  - name: blog
+    label: Blog Posts
+    label_singular: Blog Post
+    description: News, market updates and guides for the public blog.
+    folder: src/content/blog
+    create: true
+    slug: '{{slug}}'
+    extension: md
+    format: frontmatter
+    identifier_field: title
+    sortable_fields: [date, title]
+    media_folder: /public/uploads/blog
+    public_folder: /uploads/blog
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD' }
+      - label: Category
+        name: category
+        widget: select
+        default: Ahmedabad Market
+        options:
+          - Ahmedabad Market
+          - Buying Guide
+          - Selling Guide
+          - Rental Guide
+          - Commercial
+          - Retail
+          - Industrial and Warehouse
+          - Investment
+          - Land and Plots
+          - GIFT City and Gandhinagar
+          - Gujarat Real Estate
+          - India Real Estate
+      - { label: Author, name: author, widget: string, default: City Property Services }
+      - { label: Tags, name: tags, widget: list, required: false, hint: 'e.g. Ahmedabad, Bopal, Investment' }
+      - { label: Excerpt, name: excerpt, widget: text, hint: 'Short summary shown on the blog cards' }
+      - { label: Cover image, name: coverImage, widget: image, required: false, choose_url: false }
+      - { label: Cover image alt text, name: coverAlt, widget: string, required: false, hint: 'Describe the image for accessibility' }
+      - { label: Image credit, name: imageCredit, widget: string, required: false, default: City Property Services }
+      - { label: Read time, name: readTime, widget: string, default: '5 min read' }
+      - { label: SEO title, name: seoTitle, widget: string, required: false }
+      - { label: SEO description, name: seoDescription, widget: text, required: false }
+      - { label: Featured, name: featured, widget: boolean, default: false }
+      - { label: 'Draft (hide from public site)', name: draft, widget: boolean, default: false }
+      - { label: Body, name: body, widget: markdown, hint: 'Use ## for section headings. Do not use dashes in the copy.' }
+
+  # ─────────────────────────── PROPERTIES ───────────────────────────
+  - name: properties
+    label: Properties
+    label_singular: Property
+    description: Buy, rent and lease listings shown across the site.
+    folder: src/content/properties
+    create: true
+    slug: '{{fields.slug}}'
+    extension: json
+    format: json
+    identifier_field: title
+    sortable_fields: [newAt, title, priceValue]
+    media_folder: /public/uploads/properties
+    public_folder: /uploads/properties
+    fields:
+      - { label: Property title, name: title, widget: string, hint: 'e.g. 3 BHK Apartment · Iscon Platinum' }
+      - { label: 'Slug (URL, lowercase-with-dashes)', name: slug, widget: string, hint: 'Do not change after publishing or the link breaks' }
+      - label: Listing type
+        name: status
+        widget: select
+        default: sale
+        options:
+          - { label: For sale, value: sale }
+          - { label: For rent, value: rent }
+          - { label: For lease, value: lease }
+      - { label: 'Status label (optional override)', name: statusLabel, widget: string, required: false, hint: 'e.g. Sold, Rented, Leased, Under offer' }
+      - label: Property type
+        name: propertyType
+        widget: select
+        default: residential
+        options:
+          - residential
+          - apartment
+          - villa
+          - bungalow
+          - row house
+          - commercial
+          - office
+          - shop
+          - showroom
+          - retail
+          - industrial
+          - warehousing
+          - warehouse
+          - industrial shed
+          - industrial land
+          - land
+          - plot
+          - residential land
+          - commercial land
+          - investment
+      - { label: Featured on homepage, name: featured, widget: boolean, default: false }
+      - { label: 'Draft (hide from public site)', name: draft, widget: boolean, default: false }
+
+      - { label: 'Price (display)', name: priceDisplay, widget: string, hint: 'e.g. ₹ 1.45 Cr or ₹ 65,000' }
+      - { label: 'Price (numeric ₹, for sorting and filters)', name: priceValue, widget: number, required: false, value_type: int }
+      - { label: Price suffix, name: pricePer, widget: string, required: false, hint: 'e.g.  /month for rentals' }
+      - { label: Price on request, name: priceOnRequest, widget: boolean, default: false, required: false }
+      - { label: Deposit, name: deposit, widget: string, required: false }
+      - { label: Maintenance, name: maintenance, widget: string, required: false }
+      - { label: Price per sqft (display), name: perSqftDisplay, widget: string, required: false }
+
+      - { label: Locality, name: localityName, widget: string, hint: 'e.g. Prahlad Nagar, SG Highway, Changodar' }
+      - { label: 'Locality slug (for filters)', name: localitySlug, widget: string, required: false, hint: 'lowercase id, e.g. prahlad-nagar' }
+      - { label: City, name: city, widget: string, default: Ahmedabad }
+      - { label: District, name: district, widget: string, default: Ahmedabad, required: false }
+      - { label: Region, name: region, widget: string, required: false }
+      - { label: Address, name: address, widget: string, required: false }
+      - label: Map location
+        name: geo
+        widget: object
+        required: false
+        collapsed: true
+        fields:
+          - { label: Latitude, name: lat, widget: number, value_type: float, required: false }
+          - { label: Longitude, name: lng, widget: number, value_type: float, required: false }
+      - { label: Nearby areas, name: nearby, widget: list, required: false }
+      - { label: Landmarks, name: landmarks, widget: list, required: false }
+
+      - { label: Bedrooms, name: beds, widget: string, required: false }
+      - { label: Bathrooms, name: baths, widget: string, required: false }
+      - { label: 'Area (display)', name: area, widget: string, required: false, hint: 'e.g. 1,950 sqft' }
+      - { label: 'Area (numeric sqft, for sorting)', name: areaSqft, widget: number, required: false, value_type: int }
+      - { label: Carpet area, name: carpetArea, widget: string, required: false }
+      - { label: Built up area, name: builtUpArea, widget: string, required: false }
+      - { label: Plot size, name: plotSize, widget: string, required: false }
+      - { label: Floor, name: floor, widget: string, required: false }
+      - { label: Total floors, name: totalFloors, widget: string, required: false }
+      - { label: Furnishing, name: furnishing, widget: string, required: false }
+      - { label: Parking, name: parking, widget: string, required: false }
+      - { label: Facing, name: facing, widget: string, required: false }
+      - { label: Age of property, name: age, widget: string, required: false }
+      - { label: Possession status, name: possession, widget: string, required: false }
+      - { label: RERA number, name: rera, widget: string, required: false }
+      - { label: Amenities, name: amenities, widget: list, required: false }
+      - { label: Suitable for, name: suitableFor, widget: list, required: false }
+      - label: Description
+        name: description
+        widget: list
+        required: false
+        field: { label: Paragraph, name: paragraph, widget: text }
+        hint: 'One paragraph per item. Avoid dashes in the copy.'
+
+      - { label: 'Road width (commercial/industrial)', name: roadWidth, widget: string, required: false }
+      - { label: Ceiling height, name: ceilingHeight, widget: string, required: false }
+      - { label: Power load, name: powerLoad, widget: string, required: false }
+      - { label: Loading access, name: loadingAccess, widget: string, required: false }
+      - { label: Warehouse type, name: warehouseType, widget: string, required: false }
+      - { label: Industrial use, name: industrialUse, widget: string, required: false }
+      - { label: Plot zoning, name: plotZoning, widget: string, required: false }
+      - { label: N.A. status, name: naStatus, widget: string, required: false }
+      - { label: Frontage, name: frontage, widget: string, required: false }
+      - { label: Dock access, name: dockAccess, widget: string, required: false }
+
+      - { label: Main image, name: mainImage, widget: image, required: false, choose_url: false }
+      - label: Image gallery
+        name: photos
+        widget: list
+        required: false
+        fields:
+          - { label: Image, name: url, widget: image, required: false, choose_url: false }
+          - { label: Alt text, name: alt, widget: string, required: false }
+          - { label: Caption, name: label, widget: string, required: false }
+      - { label: Video link, name: videoUrl, widget: string, required: false }
+      - { label: Brochure PDF, name: brochure, widget: file, required: false }
+
+      - { label: Listed date, name: newAt, widget: datetime, date_format: 'YYYY-MM-DD', time_format: false, format: 'YYYY-MM-DD', required: false }
+      - { label: SEO title, name: seoTitle, widget: string, required: false }
+      - { label: SEO description, name: seoDescription, widget: text, required: false }
+      - { label: Search keywords, name: searchKeywords, widget: string, required: false }
+      - { label: Inquiry button text, name: inquiryLabel, widget: string, required: false }
+      - { label: WhatsApp message text, name: whatsappText, widget: string, required: false }

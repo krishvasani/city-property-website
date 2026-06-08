@@ -1,0 +1,43 @@
+{
+  "title": "Showroom · Pakwan Cross Roads",
+  "slug": "pakwan-cross-roads-showroom",
+  "status": "lease",
+  "propertyType": "commercial",
+  "priceDisplay": "₹ 2.20 L",
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "featured": false,
+  "draft": false,
+  "statusLabel": "For lease",
+  "priceValue": 220000,
+  "pricePer": " /month",
+  "localitySlug": "sg-highway",
+  "address": "SG Highway, Ahmedabad",
+  "area": "2,800 sqft",
+  "areaSqft": 2800,
+  "cardMeta": [
+    {
+      "icon": "commercial",
+      "label": "Retail"
+    },
+    {
+      "icon": "bath",
+      "label": "2 WC"
+    },
+    {
+      "icon": "ruler",
+      "label": "2,800 sqft"
+    }
+  ],
+  "geo": {
+    "lat": 23.0356,
+    "lng": 72.5079
+  },
+  "newAt": "2026-05-05",
+  "photos": [
+    {
+      "alt": "Pakwan Cross Roads showroom",
+      "label": "Property photo"
+    }
+  ]
+}

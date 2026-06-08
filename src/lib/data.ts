@@ -1,58 +1,89 @@
-// Data façade. Pages/components call these and never need to know whether the
-// content came from Sanity or the bundled sample fallback.
-import type { Locality, Property } from './types';
-import { isSanityConfigured, sanityClient, urlForImage } from './sanity';
-import {
-  properties as sampleProperties,
-  localities as sampleLocalities,
-} from '../data/sample';
+// Data façade. Pages/components call these; content now lives in editable
+// Astro Content Collections (src/content/properties, edited via Decap CMS at
+// /cps-admin). Localities stay in the bundled dataset.
+import { getCollection } from 'astro:content';
+import type { Locality, Photo, Property, Status } from './types';
+import { localities as sampleLocalities } from '../data/sample';
 
-// ── Sanity GROQ projections ──────────────────────────────────────────
-const PROPERTY_FIELDS = `
-  "id": _id,
-  "slug": slug.current,
-  title, status, statusLabel, priceDisplay, priceValue, pricePer,
-  propertyType,
-  "localityName": locality->name,
-  "localitySlug": locality->slug.current,
-  address, perSqftDisplay,
-  beds, baths, area, areaSqft, floor, builtYear, facing, parking, furnishing,
-  description, amenities, geo, featured, cardMeta,
-  "newAt": coalesce(newAt, _createdAt),
-  "photos": photos[]{ "ref": asset, alt, label }
-`;
+const defaultStatusLabel = (s: Status) =>
+  s === 'rent' ? 'For rent' : s === 'lease' ? 'For lease' : 'For sale';
+
+// CMS number fields can arrive as strings; coerce pure-numeric ones to numbers
+// so sorting and the beds filter keep working.
+const num = (v: unknown) =>
+  typeof v === 'string' && /^\d+$/.test(v.trim()) ? Number(v) : (v as number | string | undefined);
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-function mapProperty(doc: any): Property {
+function toProperty(d: any): Property {
+  const photos: Photo[] = (d.photos || []).map((p: any) => ({
+    url: p.url || undefined,
+    alt: p.alt || d.title,
+    label: p.label || 'Property photo',
+  }));
+  if (d.mainImage && !photos.some((p) => p.url)) {
+    photos.unshift({ url: d.mainImage, alt: d.title, label: 'Property photo' });
+  }
   return {
-    ...doc,
-    statusLabel: doc.statusLabel || (doc.status === 'rent' ? 'For rent' : 'For sale'),
-    photos: (doc.photos || []).map((p: any) => ({
-      url: urlForImage(p.ref, 1200, 900),
-      label: p.label || 'Property photo',
-      alt: p.alt || doc.title,
-    })),
-  } as Property;
+    id: d.slug,
+    slug: d.slug,
+    title: d.title,
+    status: d.status,
+    statusLabel: d.statusLabel || defaultStatusLabel(d.status),
+    priceDisplay: d.priceOnRequest ? 'Price on request' : d.priceDisplay,
+    priceValue: d.priceValue,
+    pricePer: d.pricePer,
+    propertyType: d.propertyType,
+    localityName: d.localityName,
+    localitySlug: d.localitySlug,
+    address: d.address,
+    perSqftDisplay: d.perSqftDisplay,
+    beds: num(d.beds),
+    baths: num(d.baths),
+    area: d.area,
+    areaSqft: d.areaSqft,
+    floor: d.floor,
+    builtYear: d.builtYear,
+    facing: d.facing,
+    parking: d.parking,
+    furnishing: d.furnishing,
+    description: d.description,
+    amenities: d.amenities,
+    photos,
+    geo: d.geo,
+    featured: !!d.featured,
+    cardMeta: d.cardMeta,
+    newAt: d.newAt,
+    // extended (shown in "Additional details" when present)
+    carpetArea: d.carpetArea,
+    builtUpArea: d.builtUpArea,
+    plotSize: d.plotSize,
+    totalFloors: d.totalFloors,
+    age: d.age,
+    possession: d.possession,
+    rera: d.rera,
+    roadWidth: d.roadWidth,
+    ceilingHeight: d.ceilingHeight,
+    powerLoad: d.powerLoad,
+    loadingAccess: d.loadingAccess,
+    warehouseType: d.warehouseType,
+    plotZoning: d.plotZoning,
+    naStatus: d.naStatus,
+    frontage: d.frontage,
+    dockAccess: d.dockAccess,
+    suitableFor: d.suitableFor,
+  };
 }
 
-async function sanity<T>(query: string, params: Record<string, unknown> = {}): Promise<T> {
-  return sanityClient!.fetch<T>(query, params);
-}
-
-// ── Public API ───────────────────────────────────────────────────────
-// Memoize collection fetches so a single build doesn't re-query Sanity for
-// every page (getStaticPaths + per-page getSimilar/getFeatured/getAgent).
 let _properties: Promise<Property[]> | null = null;
-let _localities: Promise<Locality[]> | null = null;
 
 export function getProperties(): Promise<Property[]> {
   if (_properties) return _properties;
   _properties = (async () => {
-    if (!isSanityConfigured) return sampleProperties;
-    const docs = await sanity<any[]>(
-      `*[_type == "property"]|order(coalesce(newAt,_createdAt) desc){${PROPERTY_FIELDS}}`,
-    );
-    return docs.map(mapProperty);
+    // Drafts never appear on the public site.
+    const entries = await getCollection('properties', ({ data }) => !data.draft);
+    return entries
+      .map((e) => toProperty({ ...e.data, slug: e.data.slug || e.id }))
+      .sort((a, b) => String(b.newAt || '').localeCompare(String(a.newAt || '')));
   })();
   return _properties;
 }
@@ -79,15 +110,5 @@ export async function getSimilar(slug: string, limit = 3): Promise<Property[]> {
 }
 
 export function getLocalities(): Promise<Locality[]> {
-  if (_localities) return _localities;
-  _localities = (async () => {
-    if (!isSanityConfigured) return sampleLocalities;
-    const docs = await sanity<any[]>(
-      `*[_type == "locality"]|order(name asc){
-        "id": _id, "slug": slug.current, name, blurb, avgPriceDisplay, mapPos, geo
-      }`,
-    );
-    return docs as Locality[];
-  })();
-  return _localities;
+  return Promise.resolve(sampleLocalities);
 }

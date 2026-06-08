@@ -1,0 +1,30 @@
+{
+  "title": "2 BHK Apartment · Safal Parisar",
+  "slug": "safal-parisar-2bhk",
+  "status": "sale",
+  "propertyType": "residential",
+  "priceDisplay": "₹ 95 L",
+  "localityName": "Bopal",
+  "city": "Ahmedabad",
+  "featured": false,
+  "draft": false,
+  "statusLabel": "For sale",
+  "priceValue": 9500000,
+  "localitySlug": "bopal",
+  "address": "Bopal, Ahmedabad",
+  "beds": 2,
+  "baths": 2,
+  "area": "1,240 sqft",
+  "areaSqft": 1240,
+  "geo": {
+    "lat": 23.0332,
+    "lng": 72.4695
+  },
+  "newAt": "2026-05-20",
+  "photos": [
+    {
+      "alt": "Safal Parisar apartment",
+      "label": "Property photo"
+    }
+  ]
+}

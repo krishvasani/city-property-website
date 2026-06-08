@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Keep the admin out of search engines -->
+    <meta name="robots" content="noindex, nofollow" />
+    <title>City Property Services Admin</title>
+    <!-- Explicit config path (admin lives at /cps-admin, not the default /admin) -->
+    <link href="/cps-admin/config.yml" type="text/yaml" rel="cms-config-url" />
+    <style>
+      :root { color-scheme: light; }
+      body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+      /* Small branded banner shown above the CMS login while it loads */
+      #cps-pre { display: flex; min-height: 100vh; align-items: center; justify-content: center; background: #eef1f5; }
+      #cps-pre .box { text-align: center; color: #16323f; }
+      #cps-pre h1 { font-size: 20px; margin: 0 0 6px; }
+      #cps-pre p { margin: 0; color: #5a6b75; font-size: 14px; }
+    </style>
+  </head>
+  <body>
+    <div id="cps-pre">
+      <div class="box">
+        <h1>City Property Services Admin</h1>
+        <p>Employee access only. Loading the editor…</p>
+      </div>
+    </div>
+
+    <!-- Decap CMS (free, open source, Git based). Pinned to v3. -->
+    <script src="https://unpkg.com/decap-cms@^3.6.0/dist/decap-cms.js"></script>
+    <script>
+      // Hide the placeholder once the CMS UI takes over.
+      if (window.CMS) {
+        window.CMS.registerEventListener({
+          name: 'mounted',
+          handler: function () {
+            var p = document.getElementById('cps-pre');
+            if (p) p.style.display = 'none';
+          },
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "title": "4 BHK · Devnandan Skyzone",
+  "slug": "devnandan-skyzone-4bhk",
+  "status": "sale",
+  "propertyType": "residential",
+  "priceDisplay": "₹ 1.95 Cr",
+  "localityName": "Vastrapur",
+  "city": "Ahmedabad",
+  "featured": false,
+  "draft": false,
+  "statusLabel": "For sale",
+  "priceValue": 19500000,
+  "localitySlug": "vastrapur",
+  "address": "Vastrapur, Ahmedabad",
+  "beds": 4,
+  "baths": 4,
+  "area": "2,640 sqft",
+  "areaSqft": 2640,
+  "geo": {
+    "lat": 23.0401,
+    "lng": 72.5271
+  },
+  "newAt": "2026-04-25",
+  "photos": [
+    {
+      "alt": "Devnandan Skyzone",
+      "label": "Property photo"
+    }
+  ]
+}

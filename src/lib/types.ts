@@ -76,6 +76,25 @@ export interface Property {
   photos?: Photo[];
   geo?: { lat: number; lng: number };
   featured?: boolean;
+  // Optional extended fields (editable via the CMS, shown in "Additional
+  // details" when present). Mostly for commercial / industrial / land.
+  carpetArea?: string;
+  builtUpArea?: string;
+  plotSize?: string;
+  totalFloors?: string;
+  age?: string;
+  possession?: string;
+  rera?: string;
+  roadWidth?: string;
+  ceilingHeight?: string;
+  powerLoad?: string;
+  loadingAccess?: string;
+  warehouseType?: string;
+  plotZoning?: string;
+  naStatus?: string;
+  frontage?: string;
+  dockAccess?: string;
+  suitableFor?: string[];
   /** Optional override for the card meta row; otherwise derived from fields. */
   cardMeta?: CardMeta[];
   newAt?: string; // ISO date for "Newest first" sort

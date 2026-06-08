@@ -1,14 +1,17 @@
 ---
 import Base from '../layouts/Base.astro';
-import { posts, COVER_FALLBACK } from '../data/blog';
+import { getCollection } from 'astro:content';
 
-const fmt = (iso: string) =>
-  new Date(iso).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
-const sorted = [...posts].sort((a, b) => b.date.localeCompare(a.date));
-const [lead, ...rest] = sorted;
+const COVER_FALLBACK = '/images/blog/ahmedabad-residential.jpg';
+const fmt = (d: Date) =>
+  d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
 
-// Category filter chips (in order of first appearance, newest first).
-const categories = [...new Set(sorted.map((p) => p.category))];
+// Published posts only, newest first.
+const entries = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+const [lead, ...rest] = entries;
+const categories = [...new Set(entries.map((e) => e.data.category))];
 ---
 <Base
   title="Ahmedabad Property Market Blog"
@@ -28,17 +31,17 @@ const categories = [...new Set(sorted.map((p) => p.category))];
     </div>
 
     {lead && (
-      <a class="lead-post" href={`/blog/${lead.slug}`} data-post data-category={lead.category}>
-        <div class="ph thumb" data-label={lead.category}>
-          <img class="cover-img" src={lead.coverImage ?? COVER_FALLBACK} alt={lead.coverAlt ?? lead.title} width="1200" height="750" onerror={`this.onerror=null;this.src='${COVER_FALLBACK}'`} />
+      <a class="lead-post" href={`/blog/${lead.slug}`} data-post data-category={lead.data.category}>
+        <div class="ph thumb" data-label={lead.data.category}>
+          <img class="cover-img" src={lead.data.coverImage ?? COVER_FALLBACK} alt={lead.data.coverAlt ?? lead.data.title} width="1200" height="750" onerror={`this.onerror=null;this.src='${COVER_FALLBACK}'`} />
         </div>
         <div class="lead-body">
           <div class="row" style="gap:10px;flex-wrap:wrap;">
-            <span class="tag tag-soft">{lead.category}</span>
-            <span class="small muted">{fmt(lead.date)} · {lead.readTime}</span>
+            <span class="tag tag-soft">{lead.data.category}</span>
+            <span class="small muted">{fmt(lead.data.date)} · {lead.data.readTime}</span>
           </div>
-          <h2 style="margin:12px 0 8px;">{lead.title}</h2>
-          <p class="muted">{lead.excerpt}</p>
+          <h2 style="margin:12px 0 8px;">{lead.data.title}</h2>
+          <p class="muted">{lead.data.excerpt}</p>
           <span class="readmore">Read more →</span>
         </div>
       </a>
@@ -46,17 +49,17 @@ const categories = [...new Set(sorted.map((p) => p.category))];
 
     <div class="blog-grid">
       {rest.map((p) => (
-        <a class="post-card" href={`/blog/${p.slug}`} data-post data-category={p.category}>
-          <div class="ph thumb" data-label={p.category}>
-            <img class="cover-img" src={p.coverImage ?? COVER_FALLBACK} alt={p.coverAlt ?? p.title} loading="lazy" width="1200" height="750" onerror={`this.onerror=null;this.src='${COVER_FALLBACK}'`} />
+        <a class="post-card" href={`/blog/${p.slug}`} data-post data-category={p.data.category}>
+          <div class="ph thumb" data-label={p.data.category}>
+            <img class="cover-img" src={p.data.coverImage ?? COVER_FALLBACK} alt={p.data.coverAlt ?? p.data.title} loading="lazy" width="1200" height="750" onerror={`this.onerror=null;this.src='${COVER_FALLBACK}'`} />
           </div>
           <div class="post-body">
             <div class="row" style="gap:10px;flex-wrap:wrap;">
-              <span class="tag tag-soft">{p.category}</span>
-              <span class="caption muted">{fmt(p.date)} · {p.readTime}</span>
+              <span class="tag tag-soft">{p.data.category}</span>
+              <span class="caption muted">{fmt(p.data.date)} · {p.data.readTime}</span>
             </div>
-            <h3 style="margin:10px 0 8px;">{p.title}</h3>
-            <p class="small muted">{p.excerpt}</p>
+            <h3 style="margin:10px 0 8px;">{p.data.title}</h3>
+            <p class="small muted">{p.data.excerpt}</p>
             <span class="readmore">Read more →</span>
           </div>
         </a>
@@ -80,7 +83,6 @@ const categories = [...new Set(sorted.map((p) => p.category))];
   .lead-post { display: grid; grid-template-columns: 1.1fr 1fr; gap: 0; border: 1px solid var(--hairline); border-radius: var(--r-xl); overflow: hidden; background: var(--surface); box-shadow: var(--shadow-sm); margin: 24px 0 28px; transition: transform var(--t) var(--ease-out), box-shadow var(--t) var(--ease-out); }
   .lead-post:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
   .lead-post .thumb { min-height: 280px; }
-  /* cover images sit on top of the .ph placeholder (which shows if one fails) */
   .thumb { position: relative; overflow: hidden; }
   .cover-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
   .lead-body { padding: 32px; align-self: center; }
@@ -102,7 +104,6 @@ const categories = [...new Set(sorted.map((p) => p.category))];
 </style>
 
 <script>
-  // Category filter: show only posts (lead + cards) matching the chosen chip.
   const chips = Array.from(document.querySelectorAll<HTMLButtonElement>('.blog-chip'));
   const items = Array.from(document.querySelectorAll<HTMLElement>('[data-post]'));
   const empty = document.getElementById('blog-empty');

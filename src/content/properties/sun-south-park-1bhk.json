@@ -1,0 +1,30 @@
+{
+  "title": "1 BHK Compact · Sun South Park",
+  "slug": "sun-south-park-1bhk",
+  "status": "sale",
+  "propertyType": "residential",
+  "priceDisplay": "₹ 52 L",
+  "localityName": "Gota",
+  "city": "Ahmedabad",
+  "featured": false,
+  "draft": false,
+  "statusLabel": "For sale",
+  "priceValue": 5200000,
+  "localitySlug": "gota",
+  "address": "Gota, Ahmedabad",
+  "beds": 1,
+  "baths": 1,
+  "area": "690 sqft",
+  "areaSqft": 690,
+  "geo": {
+    "lat": 23.1012,
+    "lng": 72.5435
+  },
+  "newAt": "2026-05-08",
+  "photos": [
+    {
+      "alt": "Sun South Park compact home",
+      "label": "Property photo"
+    }
+  ]
+}

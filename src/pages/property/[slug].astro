@@ -40,6 +40,26 @@ const leadContext = {
   price: property.priceDisplay,
 };
 const waMessage = `Hi City Property Services, I’m interested in "${property.title}" (${property.priceDisplay}) in ${property.localityName}. Could you share more details?`;
+
+// Extended spec fields, shown only when an editor has filled them in.
+const specs: [string, string][] = ([
+  ['Carpet area', property.carpetArea],
+  ['Built up area', property.builtUpArea],
+  ['Plot size', property.plotSize],
+  ['Total floors', property.totalFloors],
+  ['Age of property', property.age],
+  ['Possession', property.possession],
+  ['RERA number', property.rera],
+  ['Road width', property.roadWidth],
+  ['Ceiling height', property.ceilingHeight],
+  ['Power load', property.powerLoad],
+  ['Loading access', property.loadingAccess],
+  ['Warehouse type', property.warehouseType],
+  ['Plot zoning', property.plotZoning],
+  ['N.A. status', property.naStatus],
+  ['Frontage', property.frontage],
+  ['Dock access', property.dockAccess],
+] as [string, string | undefined][]).filter((x): x is [string, string] => Boolean(x[1]));
 const photoCount = property.photos?.length ? Math.max(property.photos.length, 18) : 18;
 ---
 <Base title={`${property.title} · ${property.localityName}`} description={`${property.priceDisplay} · ${property.title} in ${property.localityName}, Ahmedabad.`} active="buy">
@@ -97,6 +117,26 @@ const photoCount = property.photos?.length ? Math.max(property.photos.length, 18
               {property.amenities.map((a) => (
                 <div class="a"><span class="ck"><Icon name="check" sw={2.4} /></span>{a}</div>
               ))}
+            </div>
+          </div>
+        )}
+
+        {specs.length > 0 && (
+          <div class="block reveal">
+            <h3>Additional details</h3>
+            <div class="spec-grid">
+              {specs.map(([k, v]) => (
+                <div class="spec"><span class="spec-k">{k}</span><span class="spec-v">{v}</span></div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {property.suitableFor?.length && (
+          <div class="block reveal">
+            <h3>Suitable for</h3>
+            <div class="row" style="flex-wrap:wrap;gap:8px;">
+              {property.suitableFor.map((s) => <span class="tag tag-soft">{s}</span>)}
             </div>
           </div>
         )}
@@ -189,6 +229,11 @@ const photoCount = property.photos?.length ? Math.max(property.photos.length, 18
   .amen .a { display: flex; align-items: center; gap: 10px; font-size: 14.5px; color: var(--text); }
   .amen .a .ck { width: 22px; height: 22px; border-radius: 999px; background: var(--good-tint); color: var(--good); display: grid; place-items: center; flex: none; }
   .amen .a .ck svg { width: 13px; height: 13px; }
+  .spec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 28px; }
+  .spec { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--hairline); }
+  .spec-k { color: var(--text-muted); font-size: 14.5px; }
+  .spec-v { color: var(--ink); font-weight: 600; font-size: 14.5px; text-align: right; }
+  @media (max-width: 560px) { .spec-grid { grid-template-columns: 1fr; } }
 
   .sticky { position: sticky; top: calc(var(--nav-h) + 20px); display: flex; flex-direction: column; gap: 18px; }
   .contact-card { background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); box-shadow: var(--shadow); padding: 22px; }

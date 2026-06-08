@@ -1,0 +1,67 @@
+{
+  "title": "3 BHK Apartment · Iscon Platinum",
+  "slug": "iscon-platinum-3bhk",
+  "status": "sale",
+  "propertyType": "residential",
+  "priceDisplay": "₹ 1.45 Cr",
+  "localityName": "Prahlad Nagar",
+  "city": "Ahmedabad",
+  "featured": true,
+  "draft": false,
+  "statusLabel": "For sale",
+  "priceValue": 14500000,
+  "perSqftDisplay": "₹7,435/sqft",
+  "localitySlug": "prahlad-nagar",
+  "address": "Prahlad Nagar, Ahmedabad",
+  "beds": 3,
+  "baths": 3,
+  "area": "1,950 sqft",
+  "areaSqft": 1950,
+  "floor": "7 / 14",
+  "builtYear": "2019",
+  "facing": "East",
+  "parking": "2",
+  "furnishing": "Semi",
+  "description": [
+    "A bright, east-facing 3 BHK on the 7th floor of Iscon Platinum, one of Prahlad Nagar’s most sought after towers. Floor-to-ceiling windows draw light deep into a wide living-dining space, with a balcony overlooking landscaped gardens.",
+    "The home has been gently maintained, comes semi-furnished with modular kitchen and wardrobes, and sits minutes from Iscon Mega Mall, leading schools and the SG Highway corridor. Two covered parking bays and 24×7 security included."
+  ],
+  "amenities": [
+    "Clubhouse & gym",
+    "Swimming pool",
+    "24×7 security",
+    "Power backup",
+    "Covered parking",
+    "Landscaped garden",
+    "Children’s play area",
+    "Lift & visitor parking",
+    "Rainwater harvesting"
+  ],
+  "geo": {
+    "lat": 23.0125,
+    "lng": 72.5095
+  },
+  "newAt": "2026-05-30",
+  "photos": [
+    {
+      "alt": "Living room",
+      "label": "Living room · main photo"
+    },
+    {
+      "alt": "Kitchen",
+      "label": "Kitchen"
+    },
+    {
+      "alt": "Bedroom",
+      "label": "Bedroom"
+    },
+    {
+      "alt": "Balcony",
+      "label": "Balcony"
+    },
+    {
+      "alt": "Bathroom",
+      "label": "Bathroom"
+    }
+  ]
+}
