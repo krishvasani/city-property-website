@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { posts } from '../data/blog';
+import { posts, COVER_FALLBACK } from '../data/blog';
 
 const fmt = (iso: string) =>
   new Date(iso).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
@@ -29,7 +29,9 @@ const categories = [...new Set(sorted.map((p) => p.category))];
 
     {lead && (
       <a class="lead-post" href={`/blog/${lead.slug}`} data-post data-category={lead.category}>
-        <div class="ph thumb" data-label={lead.category}></div>
+        <div class="ph thumb" data-label={lead.category}>
+          <img class="cover-img" src={lead.coverImage ?? COVER_FALLBACK} alt={lead.coverAlt ?? lead.title} width="1200" height="750" onerror={`this.onerror=null;this.src='${COVER_FALLBACK}'`} />
+        </div>
         <div class="lead-body">
           <div class="row" style="gap:10px;flex-wrap:wrap;">
             <span class="tag tag-soft">{lead.category}</span>
@@ -45,7 +47,9 @@ const categories = [...new Set(sorted.map((p) => p.category))];
     <div class="blog-grid">
       {rest.map((p) => (
         <a class="post-card" href={`/blog/${p.slug}`} data-post data-category={p.category}>
-          <div class="ph thumb" data-label={p.category}></div>
+          <div class="ph thumb" data-label={p.category}>
+            <img class="cover-img" src={p.coverImage ?? COVER_FALLBACK} alt={p.coverAlt ?? p.title} loading="lazy" width="1200" height="750" onerror={`this.onerror=null;this.src='${COVER_FALLBACK}'`} />
+          </div>
           <div class="post-body">
             <div class="row" style="gap:10px;flex-wrap:wrap;">
               <span class="tag tag-soft">{p.category}</span>
@@ -76,6 +80,9 @@ const categories = [...new Set(sorted.map((p) => p.category))];
   .lead-post { display: grid; grid-template-columns: 1.1fr 1fr; gap: 0; border: 1px solid var(--hairline); border-radius: var(--r-xl); overflow: hidden; background: var(--surface); box-shadow: var(--shadow-sm); margin: 24px 0 28px; transition: transform var(--t) var(--ease-out), box-shadow var(--t) var(--ease-out); }
   .lead-post:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
   .lead-post .thumb { min-height: 280px; }
+  /* cover images sit on top of the .ph placeholder (which shows if one fails) */
+  .thumb { position: relative; overflow: hidden; }
+  .cover-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
   .lead-body { padding: 32px; align-self: center; }
   .readmore { color: var(--navy); font-weight: 600; font-size: 14.5px; display: inline-block; margin-top: 14px; }
   .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }

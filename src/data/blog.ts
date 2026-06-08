@@ -18,7 +18,13 @@ export interface BlogPost {
   seoTitle: string;
   seoDescription: string;
   body: string[]; // "## " prefix = heading, otherwise a paragraph
+  coverImage?: string; // /images/blog/*.jpg
+  coverAlt?: string;
+  imageCredit?: string;
 }
+
+/** Shared fallback shown if a cover image ever fails to load. */
+export const COVER_FALLBACK = '/images/blog/ahmedabad-residential.jpg';
 
 export const AUTHOR = 'City Property Services';
 
@@ -551,6 +557,39 @@ export const posts: BlogPost[] = [
     ],
   },
 ];
+
+// Cover image + alt text per post (royalty free photos from Pexels, stored in
+// public/images/blog). One distinct image per post for a varied listing.
+const COVERS: Record<string, { image: string; alt: string }> = {
+  'ahmedabad-property-market-update-buyers-sellers': { image: '/images/blog/ahmedabad-residential.jpg', alt: 'Residential buildings across Ahmedabad at dusk' },
+  'best-localities-first-time-home-buyers-ahmedabad': { image: '/images/blog/residential-towers.jpg', alt: 'Modern residential high rise towers in an Indian city' },
+  'bopal-south-bopal-shela-shilaj-comparison': { image: '/images/blog/city-road.jpg', alt: 'A wide city road running through a developing area' },
+  'what-to-check-before-buying-a-flat-in-ahmedabad': { image: '/images/blog/residential-balconies.jpg', alt: 'An apartment building with rows of balconies' },
+  'ready-to-move-or-under-construction-ahmedabad': { image: '/images/blog/construction.jpg', alt: 'A residential project under construction with a crane' },
+  'how-to-prepare-your-property-before-selling': { image: '/images/blog/keys-contract.jpg', alt: 'House keys resting on a property agreement' },
+  'how-sellers-should-think-about-pricing-ahmedabad': { image: '/images/blog/living-room.jpg', alt: 'A clean and well presented living room' },
+  'renting-in-ahmedabad-tenant-checklist': { image: '/images/blog/interior-furnished.jpg', alt: 'A bright and furnished apartment interior' },
+  'owner-checklist-before-renting-out-property': { image: '/images/blog/handover-keys.jpg', alt: 'Handing over the keys to a home' },
+  'how-to-choose-the-right-office-location-ahmedabad': { image: '/images/blog/office-building.jpg', alt: 'A modern glass office building' },
+  'sg-highway-sindhu-bhavan-prahlad-nagar-ashram-road-offices': { image: '/images/blog/office-building-2.jpg', alt: 'A contemporary glass and steel office tower' },
+  'what-retail-brands-should-check-before-leasing-a-showroom': { image: '/images/blog/retail-street.jpg', alt: 'Shops and storefronts along a busy street' },
+  'warehouse-demand-changodar-sanand-aslali-bavla': { image: '/images/blog/warehouse-racks.jpg', alt: 'Storage racks inside a large warehouse' },
+  'what-businesses-should-check-before-leasing-a-warehouse': { image: '/images/blog/warehouse-pallets.jpg', alt: 'Organised pallets and shelving in a warehouse' },
+  'preleased-property-basics-ahmedabad-investors': { image: '/images/blog/documents-calculator.jpg', alt: 'Reviewing property documents with a calculator' },
+  'gift-city-gandhinagar-why-investors-paying-attention': { image: '/images/blog/skyline-aerial.jpg', alt: 'An aerial view of a modern city skyline' },
+  'buying-land-near-ahmedabad-things-to-check-first': { image: '/images/blog/land-road.jpg', alt: 'Open land beside a quiet rural road' },
+  'residential-plots-versus-commercial-plots': { image: '/images/blog/land-field.jpg', alt: 'An open and level plot of land' },
+  'how-gujarat-infrastructure-growth-affects-real-estate': { image: '/images/blog/city-road-2.jpg', alt: 'A new road cutting through a growing area' },
+  'compare-rental-yield-and-appreciation-without-overthinking': { image: '/images/blog/documents-signing.jpg', alt: 'Signing real estate investment documents' },
+};
+for (const p of posts) {
+  const c = COVERS[p.slug];
+  if (c) {
+    p.coverImage = c.image;
+    p.coverAlt = c.alt;
+    p.imageCredit = 'Pexels';
+  }
+}
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
 
