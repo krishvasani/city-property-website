@@ -96,9 +96,13 @@ export const CATEGORY_ICON: Record<Category, string> = {
 
 export const CATEGORY_ORDER: Category[] = ['residential', 'commercial', 'land', 'industrial', 'investment'];
 
-/** Maps a granular property type to its search category. */
-export function categoryFor(t: Property['propertyType']): Category {
-  if (t === 'warehousing' || t === 'industrial') return 'industrial';
-  if (t === 'investment') return 'investment';
-  return t as Category; // residential | commercial | land
+/** Maps a granular property type (including CMS options) to its search category. */
+export function categoryFor(t: string): Category {
+  const v = (t || '').toLowerCase();
+  if (['apartment', 'villa', 'bungalow', 'row house', 'flat', 'residential'].includes(v)) return 'residential';
+  if (['office', 'shop', 'showroom', 'retail', 'commercial'].includes(v)) return 'commercial';
+  if (['warehouse', 'warehousing', 'industrial', 'industrial shed', 'industrial land', 'logistics'].includes(v)) return 'industrial';
+  if (['plot', 'land', 'residential land', 'commercial land'].includes(v)) return 'land';
+  if (v === 'investment') return 'investment';
+  return 'residential'; // sensible default
 }

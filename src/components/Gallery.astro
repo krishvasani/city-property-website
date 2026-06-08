@@ -133,7 +133,10 @@ const count = real.length;
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(i); }
       });
     });
-    gallery.querySelector('[data-lb-open]')?.addEventListener('click', () => open(0));
+    gallery.querySelector('[data-lb-open]')?.addEventListener('click', (e) => {
+      e.stopPropagation(); // don't also trigger the cell it sits inside
+      open(0);
+    });
     lb.querySelector('[data-lb-close]')?.addEventListener('click', close);
     lb.querySelector('[data-lb-next]')?.addEventListener('click', next);
     lb.querySelector('[data-lb-prev]')?.addEventListener('click', prev);
