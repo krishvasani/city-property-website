@@ -2,6 +2,9 @@
 [build]
   command = "npm run build"
   publish = "dist"
+  # Only deploy when triggered by the CMS "Go live" hook. Ordinary commits
+  # (saved edits) are skipped, so editors can batch many changes into one deploy.
+  ignore = "bash scripts/should-build.sh"
 
 [build.environment]
   # Astro 4 + several deps want Node >= 20.19; use current 22 LTS on Netlify.

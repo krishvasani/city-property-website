@@ -16,6 +16,18 @@
       #cps-pre .box { text-align: center; color: #16323f; }
       #cps-pre h1 { font-size: 20px; margin: 0 0 6px; }
       #cps-pre p { margin: 0; color: #5a6b75; font-size: 14px; }
+
+      /* "Go live" publish bar (only shown once logged in) */
+      #cps-publish { position: fixed; left: 0; right: 0; bottom: 0; z-index: 99999; display: none;
+        align-items: center; gap: 14px; justify-content: center; flex-wrap: wrap;
+        background: #16323f; color: #fff; padding: 10px 16px; font-size: 14px;
+        box-shadow: 0 -4px 20px rgba(0,0,0,.18); }
+      #cps-publish.show { display: flex; }
+      #cps-publish span { opacity: .9; }
+      #cps-publish button { background: #2f9e6f; color: #fff; border: none; border-radius: 8px;
+        padding: 9px 18px; font-size: 14px; font-weight: 700; cursor: pointer; }
+      #cps-publish button:hover { background: #2a8f64; }
+      #cps-publish button:disabled { opacity: .6; cursor: default; }
     </style>
   </head>
   <body>
@@ -26,19 +38,75 @@
       </div>
     </div>
 
+    <!-- Publish bar: saved edits do not go live until this is clicked -->
+    <div id="cps-publish">
+      <span id="cps-publish-msg">Your saved edits are not live yet. Click to publish them to the website.</span>
+      <button id="cps-publish-btn" type="button">Publish changes (Go live)</button>
+    </div>
+
     <!-- Decap CMS (free, open source, Git based). Pinned to v3. -->
     <script src="https://unpkg.com/decap-cms@^3.6.0/dist/decap-cms.js"></script>
     <script>
-      // Hide the placeholder once the CMS UI takes over.
-      if (window.CMS) {
-        window.CMS.registerEventListener({
-          name: 'mounted',
-          handler: function () {
-            var p = document.getElementById('cps-pre');
-            if (p) p.style.display = 'none';
-          },
+      (function () {
+        var REPO = 'krishvasani/city-property-website';
+        var bar = document.getElementById('cps-publish');
+        var btn = document.getElementById('cps-publish-btn');
+        var msg = document.getElementById('cps-publish-msg');
+
+        if (window.CMS) {
+          window.CMS.registerEventListener({
+            name: 'mounted',
+            handler: function () {
+              var p = document.getElementById('cps-pre');
+              if (p) p.style.display = 'none';
+            },
+          });
+        }
+
+        // Read the logged-in editor's GitHub token (Decap stores it locally).
+        function getToken() {
+          var keys = ['decap-cms-user', 'netlify-cms-user'];
+          for (var i = 0; i < keys.length; i++) {
+            try {
+              var u = JSON.parse(localStorage.getItem(keys[i]));
+              if (u && u.token) return u.token;
+            } catch (e) {}
+          }
+          return null;
+        }
+
+        // Show the publish bar only when an editor is logged in.
+        setInterval(function () { bar.classList.toggle('show', !!getToken()); }, 1500);
+
+        btn.addEventListener('click', function () {
+          var token = getToken();
+          if (!token) { alert('Please log in first.'); return; }
+          if (!confirm('Publish all your saved changes to the live website now?\nThey will be live in 1 to 2 minutes.')) return;
+          btn.disabled = true;
+          msg.textContent = 'Publishing… your changes will be live in 1 to 2 minutes.';
+          fetch('https://api.github.com/repos/' + REPO + '/actions/workflows/publish.yml/dispatches', {
+            method: 'POST',
+            headers: {
+              Authorization: 'Bearer ' + token,
+              Accept: 'application/vnd.github+json',
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ ref: 'main' }),
+          })
+            .then(function (res) {
+              if (res.status === 204) {
+                msg.textContent = 'Publishing started. Your changes will be live in 1 to 2 minutes. You can keep editing.';
+                setTimeout(function () { btn.disabled = false; }, 8000);
+              } else {
+                return res.text().then(function (t) { throw new Error(res.status + ' ' + t); });
+              }
+            })
+            .catch(function (e) {
+              msg.textContent = 'Could not start publishing. Please try again or use Netlify. (' + e.message + ')';
+              btn.disabled = false;
+            });
         });
-      }
+      })();
     </script>
   </body>
 </html>
