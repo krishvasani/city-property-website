@@ -1,0 +1,19 @@
+{
+  "photos": [
+    {
+      "url": "/uploads/properties/ciril-logo.jpg"
+    }
+  ],
+  "draft": false,
+  "priceOnRequest": true,
+  "city": "Ahmedabad",
+  "slug": "aaryaman-bungalow",
+  "featured": true,
+  "localityName": "Thaltej",
+  "district": "Ahmedabad",
+  "propertyType": "bungalow",
+  "status": "rent",
+  "newAt": "2026-06-08",
+  "title": "Aaryaman Bungalows",
+  "priceDisplay": "Price On Request"
+}
