@@ -9,23 +9,10 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "sanity": "sanity",
-    "sanity:dev": "sanity dev",
-    "sanity:deploy": "sanity deploy"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.2.1",
-    "@sanity/client": "^6.22.5",
-    "@sanity/image-url": "^1.1.0",
     "astro": "^4.16.18"
-  },
-  "devDependencies": {
-    "@sanity/vision": "^3.66.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "sanity": "^3.66.1",
-    "styled-components": "^6.4.2",
-    "tsx": "^4.22.4"
   }
 }
