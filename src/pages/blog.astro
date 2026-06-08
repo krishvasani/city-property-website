@@ -6,6 +6,9 @@ const fmt = (iso: string) =>
   new Date(iso).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
 const sorted = [...posts].sort((a, b) => b.date.localeCompare(a.date));
 const [lead, ...rest] = sorted;
+
+// Category filter chips (in order of first appearance, newest first).
+const categories = [...new Set(sorted.map((p) => p.category))];
 ---
 <Base
   title="Ahmedabad Property Market Blog"
@@ -19,13 +22,18 @@ const [lead, ...rest] = sorted;
       <p class="body-lg muted" style="max-width:60ch;margin-top:18px;">Market updates, locality reports, practical buying and selling tips, and honest investment insights, published regularly to help you make confident decisions in Ahmedabad.</p>
     </section>
 
+    <div class="blog-filters" role="tablist" aria-label="Filter by category">
+      <button class="blog-chip is-active" type="button" data-cat="">All</button>
+      {categories.map((c) => <button class="blog-chip" type="button" data-cat={c}>{c}</button>)}
+    </div>
+
     {lead && (
-      <a class="lead-post" href={`/blog/${lead.slug}`}>
+      <a class="lead-post" href={`/blog/${lead.slug}`} data-post data-category={lead.category}>
         <div class="ph thumb" data-label={lead.category}></div>
         <div class="lead-body">
-          <div class="row" style="gap:10px;">
+          <div class="row" style="gap:10px;flex-wrap:wrap;">
             <span class="tag tag-soft">{lead.category}</span>
-            <span class="small muted">{fmt(lead.date)}</span>
+            <span class="small muted">{fmt(lead.date)} · {lead.readTime}</span>
           </div>
           <h2 style="margin:12px 0 8px;">{lead.title}</h2>
           <p class="muted">{lead.excerpt}</p>
@@ -36,12 +44,12 @@ const [lead, ...rest] = sorted;
 
     <div class="blog-grid">
       {rest.map((p) => (
-        <a class="post-card" href={`/blog/${p.slug}`}>
+        <a class="post-card" href={`/blog/${p.slug}`} data-post data-category={p.category}>
           <div class="ph thumb" data-label={p.category}></div>
           <div class="post-body">
-            <div class="row" style="gap:10px;">
+            <div class="row" style="gap:10px;flex-wrap:wrap;">
               <span class="tag tag-soft">{p.category}</span>
-              <span class="caption muted">{fmt(p.date)}</span>
+              <span class="caption muted">{fmt(p.date)} · {p.readTime}</span>
             </div>
             <h3 style="margin:10px 0 8px;">{p.title}</h3>
             <p class="small muted">{p.excerpt}</p>
@@ -50,6 +58,8 @@ const [lead, ...rest] = sorted;
         </a>
       ))}
     </div>
+
+    <p class="blog-empty" id="blog-empty" hidden>No posts in this category yet.</p>
 
     <div class="blog-sub">
       <div>
@@ -75,6 +85,32 @@ const [lead, ...rest] = sorted;
   .post-body { padding: 18px 20px 20px; display: flex; flex-direction: column; flex: 1; }
   .blog-sub { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin: 36px 0 96px; padding: 28px; border-radius: var(--r-lg); background: var(--navy-tint); border: 1px solid var(--border); }
   .blog-sub h3 { color: var(--ink); }
+  .blog-filters { display: flex; flex-wrap: wrap; gap: 9px; margin: 22px 0 6px; }
+  .blog-chip { border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: var(--r-pill); padding: 8px 16px; font-size: 13.5px; font-weight: 600; cursor: pointer; transition: background var(--t) var(--ease), color var(--t) var(--ease), border-color var(--t) var(--ease); }
+  .blog-chip:hover { border-color: var(--navy); color: var(--navy); }
+  .blog-chip.is-active { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .blog-empty { text-align: center; color: var(--text-muted); padding: 40px 0 0; }
   @media (max-width: 980px) { .blog-grid { grid-template-columns: 1fr 1fr; } .lead-post { grid-template-columns: 1fr; } .lead-post .thumb { min-height: 200px; } }
   @media (max-width: 640px) { .blog-grid { grid-template-columns: 1fr; } }
 </style>
+
+<script>
+  // Category filter: show only posts (lead + cards) matching the chosen chip.
+  const chips = Array.from(document.querySelectorAll<HTMLButtonElement>('.blog-chip'));
+  const items = Array.from(document.querySelectorAll<HTMLElement>('[data-post]'));
+  const empty = document.getElementById('blog-empty');
+  chips.forEach((chip) =>
+    chip.addEventListener('click', () => {
+      chips.forEach((c) => c.classList.remove('is-active'));
+      chip.classList.add('is-active');
+      const cat = chip.dataset.cat || '';
+      let shown = 0;
+      items.forEach((el) => {
+        const match = !cat || el.dataset.category === cat;
+        el.style.display = match ? '' : 'none';
+        if (match) shown++;
+      });
+      if (empty) empty.hidden = shown !== 0;
+    }),
+  );
+</script>

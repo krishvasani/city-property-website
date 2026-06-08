@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { posts, getPost } from '../../data/blog';
+import { posts, getPost, getRelated, AUTHOR } from '../../data/blog';
 
 export async function getStaticPaths() {
   return posts.map((p) => ({ params: { slug: p.slug } }));
@@ -12,11 +12,11 @@ if (!post) return Astro.redirect('/blog');
 
 const fmt = (iso: string) =>
   new Date(iso).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
-const related = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
+const related = getRelated(post.slug, 3);
 ---
 <Base
-  title={post.title}
-  description={post.excerpt}
+  title={post.seoTitle ?? post.title}
+  description={post.seoDescription ?? post.excerpt}
   active="blog"
 >
   <main class="wrap">
@@ -27,9 +27,13 @@ const related = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
         <span style="color:var(--ink);">{post.category}</span>
       </nav>
 
-      <div class="row" style="gap:10px;margin-top:14px;">
+      <div class="meta-row">
         <span class="tag tag-soft">{post.category}</span>
         <span class="small muted">{fmt(post.date)}</span>
+        <span class="dot">·</span>
+        <span class="small muted">{post.readTime}</span>
+        <span class="dot">·</span>
+        <span class="small muted">By {post.author ?? AUTHOR}</span>
       </div>
       <h1 class="h1" style="margin:14px 0 0;max-width:24ch;">{post.title}</h1>
       <p class="body-lg muted" style="margin:16px 0 0;max-width:60ch;">{post.excerpt}</p>
@@ -37,8 +41,18 @@ const related = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
       <div class="ph hero-img" data-label={post.category}></div>
 
       <div class="prose">
-        {post.body.map((para) => <p>{para}</p>)}
+        {post.body.map((item) =>
+          item.startsWith('## ')
+            ? <h2 class="prose-h">{item.slice(3)}</h2>
+            : <p set:html={item} />,
+        )}
       </div>
+
+      {post.tags?.length > 0 && (
+        <div class="article-tags">
+          {post.tags.map((t) => <span class="tag tag-soft">{t}</span>)}
+        </div>
+      )}
 
       <div class="article-cta">
         <div>
@@ -75,9 +89,15 @@ const related = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
   .article .crumb { display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--text-muted); flex-wrap: wrap; }
   .article .crumb a:hover { color: var(--navy); }
   .article .crumb .sep { color: var(--text-faint); }
+  .meta-row { display: flex; align-items: center; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+  .meta-row .dot { color: var(--text-faint); }
   .hero-img { border-radius: var(--r-xl); aspect-ratio: 16/8; margin: 28px 0 8px; }
   .prose { font-size: 17px; line-height: 1.7; color: var(--text); }
-  .prose p { margin: 22px 0 0; }
+  .prose p { margin: 18px 0 0; }
+  .prose p a { color: var(--navy); font-weight: 600; }
+  .prose p a:hover { text-decoration: underline; }
+  .prose .prose-h { font-size: 21px; line-height: 1.3; color: var(--ink); margin: 32px 0 0; letter-spacing: -.01em; }
+  .article-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 0; padding-top: 22px; border-top: 1px solid var(--hairline); }
   .article-cta { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin: 40px 0 0; padding: 28px; border-radius: var(--r-lg); background: var(--navy-tint); border: 1px solid var(--border); }
   .article-cta h3 { color: var(--ink); }
   .related { max-width: 1100px; margin: 64px auto 96px; }
