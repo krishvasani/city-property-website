@@ -122,16 +122,30 @@ Newest posts appear first automatically. **Draft** posts never show on the site.
 - **Draft = off** publishes it on the next build.
 - For properties, **Featured** controls the homepage section.
 
-## 7. What happens after you click Publish
+## 7. Saving vs publishing (important — this saves money)
 
-1. Decap commits your change to the GitHub repo (`main` branch).
-2. Netlify detects the commit and **rebuilds the site automatically**.
-3. The change is live usually within **1 to 3 minutes**.
+Editing and publishing are now **two separate steps**, so you can change as many
+properties and blogs as you like and only deploy once:
+
+1. When you **Publish** an entry in the editor, it is **saved to GitHub** but the
+   live website does **not** rebuild yet. Saving is free and unlimited.
+2. When you are done with all your edits, click the green **"Publish changes
+   (Go live)"** bar at the bottom of the admin. That triggers **one** Netlify
+   build that takes everything you changed live together.
+
+So adding 20 properties = 20 saves but **one** deploy, not 20. The "Go live" bar
+only appears once you are logged in.
+
+### What happens when you click "Go live"
+1. The button asks Netlify to build and deploy the latest content from `main`.
+2. The site is live usually within **1 to 2 minutes**.
+3. You can keep editing while it builds.
 
 ## 8. If a change does not appear immediately
 
-- Wait 1 to 3 minutes for the rebuild, then hard refresh (Cmd/Ctrl + Shift + R).
-- Check Netlify → **Deploys** to see if the build is running, queued or failed.
+- Did you click **"Publish changes (Go live)"**? Saving alone does not deploy.
+- Wait 1 to 2 minutes after Go live, then hard refresh (Cmd/Ctrl + Shift + R).
+- Check Netlify → **Deploys** to see if the build is running.
 - Make sure **Draft** is off and, for properties, that the **Listing type**
   matches the page you are checking (sale for Buy, rent/lease for Rent).
 
