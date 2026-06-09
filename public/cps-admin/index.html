@@ -56,33 +56,43 @@
         var btn = document.getElementById('cps-publish-btn');
         var msg = document.getElementById('cps-publish-msg');
 
+        var loggedIn = false;
+
+        // Detect a logged-in editor robustly: scan localStorage for any Decap /
+        // Netlify user object (the exact key name varies by version).
+        function hasUser() {
+          try {
+            for (var i = 0; i < localStorage.length; i++) {
+              var k = localStorage.key(i);
+              if (k && /user/i.test(k)) {
+                try {
+                  var v = JSON.parse(localStorage.getItem(k));
+                  if (v && (v.token || v.login || v.backendName)) return true;
+                } catch (e) {}
+              }
+            }
+          } catch (e) {}
+          return false;
+        }
+
+        function refresh() { bar.classList.toggle('show', loggedIn || hasUser()); }
+
         if (window.CMS) {
           window.CMS.registerEventListener({
             name: 'mounted',
             handler: function () {
               var p = document.getElementById('cps-pre');
               if (p) p.style.display = 'none';
+              refresh();
             },
           });
+          window.CMS.registerEventListener({ name: 'login', handler: function () { loggedIn = true; refresh(); } });
+          window.CMS.registerEventListener({ name: 'logout', handler: function () { loggedIn = false; bar.classList.remove('show'); } });
         }
-
-        // Read the logged-in editor's GitHub token (Decap stores it locally).
-        function getToken() {
-          var keys = ['decap-cms-user', 'netlify-cms-user'];
-          for (var i = 0; i < keys.length; i++) {
-            try {
-              var u = JSON.parse(localStorage.getItem(keys[i]));
-              if (u && u.token) return u.token;
-            } catch (e) {}
-          }
-          return null;
-        }
-
-        // Show the publish bar only when an editor is logged in.
-        setInterval(function () { bar.classList.toggle('show', !!getToken()); }, 1500);
+        // Fallback in case the events do not fire on this version.
+        setInterval(refresh, 1500);
 
         btn.addEventListener('click', function () {
-          if (!getToken()) { alert('Please log in first.'); return; }
           if (!confirm('Publish all your saved changes to the live website now?\nThey will be live in 1 to 2 minutes.')) return;
           btn.disabled = true;
           msg.textContent = 'Publishing… your changes will be live in 1 to 2 minutes.';
