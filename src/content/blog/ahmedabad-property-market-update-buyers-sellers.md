@@ -1,5 +1,5 @@
 ---
-title: Hyderabad Property Market Update for Buyers and Sellers
+title: Ahmedabad Property Market Update for Buyers and Sellers
 date: 2026-05-22
 category: Ahmedabad Market
 author: City Property Services
