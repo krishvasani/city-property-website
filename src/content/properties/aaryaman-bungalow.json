@@ -28,6 +28,7 @@
   "slug": "aaryaman-bungalow",
   "featured": true,
   "localityName": "Thaltej",
+  "localitySlug": "thaltej",
   "district": "Ahmedabad",
   "propertyType": "bungalow",
   "status": "rent",
