@@ -1,16 +1,21 @@
 ---
-title: "Ahmedabad Property Market Update for Buyers and Sellers"
-date: "2026-05-22"
-category: "Ahmedabad Market"
-author: "City Property Services"
-tags: ["Ahmedabad","Residential","Property Investment"]
-excerpt: "A calm, practical read on where the Ahmedabad market sits right now, and what it means whether you are buying or selling this year."
-coverImage: "/images/blog/ahmedabad-residential.jpg"
-coverAlt: "Residential buildings across Ahmedabad at dusk"
-imageCredit: "Pexels"
-readTime: "6 min read"
-seoTitle: "Ahmedabad Property Market Update for Buyers and Sellers"
-seoDescription: "A practical update on the Ahmedabad real estate market, what buyers should watch, and how sellers should think about pricing this year."
+title: Hyderabad Property Market Update for Buyers and Sellers
+date: 2026-05-22
+category: Ahmedabad Market
+author: City Property Services
+tags:
+  - Ahmedabad
+  - Residential
+  - Property Investment
+excerpt: A calm, practical read on where the Ahmedabad market sits right now,
+  and what it means whether you are buying or selling this year.
+coverImage: /images/blog/ahmedabad-residential.jpg
+coverAlt: Residential buildings across Ahmedabad at dusk
+imageCredit: Pexels
+readTime: 6 min read
+seoTitle: Ahmedabad Property Market Update for Buyers and Sellers
+seoDescription: A practical update on the Ahmedabad real estate market, what
+  buyers should watch, and how sellers should think about pricing this year.
 featured: false
 draft: false
 ---
