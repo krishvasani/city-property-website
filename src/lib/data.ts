@@ -4,9 +4,21 @@
 import { getCollection } from 'astro:content';
 import type { Locality, Photo, Property, Status } from './types';
 import { localities as sampleLocalities } from '../data/sample';
+import { getAllLocalities, getLocalityById } from '../data/localities';
 
 const defaultStatusLabel = (s: Status) =>
   s === 'rent' ? 'For rent' : s === 'lease' ? 'For lease' : 'For sale';
+
+// Map a locality NAME (what editors type in the CMS) to its dataset id/slug,
+// so filters, the map and locality links work even when the slug field is blank.
+const nameToLocalityId = new Map(getAllLocalities().map((l) => [l.name.toLowerCase(), l.id]));
+const slugify = (s: string) =>
+  s.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+function resolveLocalitySlug(name?: string, given?: string): string | undefined {
+  if (given && given.trim()) return given.trim();
+  if (!name) return undefined;
+  return nameToLocalityId.get(name.toLowerCase()) || slugify(name);
+}
 
 // CMS number fields can arrive as strings; coerce pure-numeric ones to numbers
 // so sorting and the beds filter keep working.
@@ -23,6 +35,13 @@ function toProperty(d: any): Property {
   if (d.mainImage && !photos.some((p) => p.url)) {
     photos.unshift({ url: d.mainImage, alt: d.title, label: 'Property photo' });
   }
+  // Resolve the locality slug + fall back to the locality's coordinates so the
+  // listing always filters and shows on the map, even with only a name entered.
+  const localitySlug = resolveLocalitySlug(d.localityName, d.localitySlug);
+  const loc = localitySlug ? getLocalityById(localitySlug) : undefined;
+  const geo =
+    d.geo ||
+    (loc && loc.latitude != null ? { lat: loc.latitude, lng: (loc as any).longitude } : undefined);
   return {
     id: d.slug,
     slug: d.slug,
@@ -34,7 +53,7 @@ function toProperty(d: any): Property {
     pricePer: d.pricePer,
     propertyType: d.propertyType,
     localityName: d.localityName,
-    localitySlug: d.localitySlug,
+    localitySlug,
     address: d.address,
     perSqftDisplay: d.perSqftDisplay,
     beds: num(d.beds),
@@ -49,7 +68,7 @@ function toProperty(d: any): Property {
     description: d.description,
     amenities: d.amenities,
     photos,
-    geo: d.geo,
+    geo,
     featured: !!d.featured,
     cardMeta: d.cardMeta,
     newAt: d.newAt,

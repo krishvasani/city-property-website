@@ -10,7 +10,8 @@ import WhatsAppButton from '../../components/WhatsAppButton.astro';
 import CallButton from '../../components/CallButton.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import Map from '../../components/Map.astro';
-import { getProperties, getProperty, getSimilar, getLocalities } from '../../lib/data';
+import { getProperties, getProperty, getSimilar } from '../../lib/data';
+import { getLocalityById } from '../../data/localities';
 import { contact } from '../../lib/config';
 
 export async function getStaticPaths() {
@@ -23,15 +24,20 @@ const property = await getProperty(slug!);
 if (!property) return Astro.redirect('/buy');
 
 const similar = await getSimilar(property.slug, 3);
-const localities = await getLocalities();
-const selfLoc = localities.find((l) => l.slug === property.localitySlug);
-const sg = localities.find((l) => l.slug === 'sg-highway');
 
-// Location map pins (property + a couple of nearby landmarks)
+// Listing context (Buy vs Rent) and locality, from the full locality dataset.
+const isRental = property.status === 'rent' || property.status === 'lease';
+const listPath = isRental ? '/rent' : '/buy';
+const listLabel = isRental ? 'Rent in Ahmedabad' : 'Buy in Ahmedabad';
+const selfLoc = property.localitySlug ? getLocalityById(property.localitySlug) : undefined;
+const sg = getLocalityById('sg-highway');
+const locGeo = (l: any) =>
+  l && l.latitude != null ? { lat: l.latitude, lng: l.longitude } : undefined;
+
+// Location map pins (the property + SG Highway as a reference point).
 const mapPins = [
-  property.geo && { label: property.title.split('·').pop()?.trim() || property.localityName, geo: property.geo, pos: { left: '46%', top: '44%' }, active: true, slug: property.slug },
-  selfLoc?.geo && { label: selfLoc.name, geo: selfLoc.geo, pos: { left: '24%', top: '64%' } },
-  sg?.geo && sg.slug !== property.localitySlug && { label: 'SG Highway', geo: sg.geo, pos: { left: '70%', top: '34%' } },
+  property.geo && { label: property.localityName, geo: property.geo, pos: { left: '46%', top: '44%' }, active: true, slug: property.slug },
+  locGeo(sg) && sg!.id !== property.localitySlug && { label: 'SG Highway', geo: locGeo(sg), pos: { left: '72%', top: '34%' } },
 ].filter(Boolean) as { label: string; geo: { lat: number; lng: number }; pos: { left: string; top: string }; active?: boolean; slug?: string }[];
 
 const leadContext = {
@@ -62,12 +68,14 @@ const specs: [string, string][] = ([
 ] as [string, string | undefined][]).filter((x): x is [string, string] => Boolean(x[1]));
 const photoCount = property.photos?.length ? Math.max(property.photos.length, 18) : 18;
 ---
-<Base title={`${property.title} · ${property.localityName}`} description={`${property.priceDisplay} · ${property.title} in ${property.localityName}, Ahmedabad.`} active="buy">
+<Base title={`${property.title} · ${property.localityName}`} description={`${property.priceDisplay} · ${property.title} in ${property.localityName}, Ahmedabad.`} active={isRental ? 'rent' : 'buy'}>
   <main class="wrap-wide">
     <nav class="crumb">
       <a href="/">Home</a><span class="sep">›</span>
-      <a href="/buy">Buy in Ahmedabad</a><span class="sep">›</span>
-      <a href={`/buy?locality=${property.localitySlug}`}>{property.localityName}</a><span class="sep">›</span>
+      <a href={listPath}>{listLabel}</a><span class="sep">›</span>
+      {property.localitySlug
+        ? <a href={`${listPath}?locality=${property.localitySlug}`}>{property.localityName}</a>
+        : <span>{property.localityName}</span>}<span class="sep">›</span>
       <span style="color:var(--ink);">{property.title}</span>
     </nav>
 
@@ -150,7 +158,13 @@ const photoCount = property.photos?.length ? Math.max(property.photos.length, 18
 
         <div class="block reveal">
           <h3>Location</h3>
-          <Map pins={mapPins} id="prop-map" height="300px" />
+          <p class="loc-line"><Icon name="pin" sw={1.8} />{property.address ?? `${property.localityName}, Ahmedabad`}</p>
+          {mapPins.length > 0
+            ? <Map pins={mapPins} id="prop-map" height="300px" />
+            : <p class="muted small">Map preview not available for this listing yet.</p>}
+          {property.localitySlug && (
+            <a class="btn btn-secondary btn-sm" href={`/map?locality=${property.localitySlug}`} style="margin-top:14px;">View {property.localityName} on the map →</a>
+          )}
         </div>
       </div>
 
@@ -196,6 +210,8 @@ const photoCount = property.photos?.length ? Math.max(property.photos.length, 18
   .crumb { display: flex; align-items: center; gap: 8px; padding: 22px 0 6px; font-size: 13.5px; color: var(--text-muted); flex-wrap: wrap; }
   .crumb a:hover { color: var(--navy); }
   .crumb .sep { color: var(--text-faint); }
+  .loc-line { display: flex; align-items: center; gap: 8px; color: var(--text); font-size: 15px; margin: 0 0 14px; }
+  .loc-line svg { width: 17px; height: 17px; color: var(--sky); flex: none; }
 
   .gallery { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 10px; height: 460px; border-radius: var(--r-xl); overflow: hidden; }
   .gallery .g0 { grid-row: 1 / 3; }
