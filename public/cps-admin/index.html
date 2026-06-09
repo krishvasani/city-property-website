@@ -48,7 +48,10 @@
     <script src="https://unpkg.com/decap-cms@^3.6.0/dist/decap-cms.js"></script>
     <script>
       (function () {
-        var REPO = 'krishvasani/city-property-website';
+        // Netlify "CMS Publish" build hook. Triggering it tells Netlify to build
+        // and deploy the latest content from main (ordinary saves are skipped by
+        // the netlify.toml ignore rule, so this is the only thing that goes live).
+        var PUBLISH_HOOK = 'https://api.netlify.com/build_hooks/6a26c4ca06d0872bc7454318';
         var bar = document.getElementById('cps-publish');
         var btn = document.getElementById('cps-publish-btn');
         var msg = document.getElementById('cps-publish-msg');
@@ -79,30 +82,19 @@
         setInterval(function () { bar.classList.toggle('show', !!getToken()); }, 1500);
 
         btn.addEventListener('click', function () {
-          var token = getToken();
-          if (!token) { alert('Please log in first.'); return; }
+          if (!getToken()) { alert('Please log in first.'); return; }
           if (!confirm('Publish all your saved changes to the live website now?\nThey will be live in 1 to 2 minutes.')) return;
           btn.disabled = true;
           msg.textContent = 'Publishing… your changes will be live in 1 to 2 minutes.';
-          fetch('https://api.github.com/repos/' + REPO + '/actions/workflows/publish.yml/dispatches', {
-            method: 'POST',
-            headers: {
-              Authorization: 'Bearer ' + token,
-              Accept: 'application/vnd.github+json',
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ ref: 'main' }),
-          })
-            .then(function (res) {
-              if (res.status === 204) {
-                msg.textContent = 'Publishing started. Your changes will be live in 1 to 2 minutes. You can keep editing.';
-                setTimeout(function () { btn.disabled = false; }, 8000);
-              } else {
-                return res.text().then(function (t) { throw new Error(res.status + ' ' + t); });
-              }
+          // no-cors: the request goes through (build triggers) but the response
+          // is opaque, so we optimistically report success.
+          fetch(PUBLISH_HOOK, { method: 'POST', mode: 'no-cors', body: '{}' })
+            .then(function () {
+              msg.textContent = 'Publishing started. Your changes will be live in 1 to 2 minutes. You can keep editing.';
+              setTimeout(function () { btn.disabled = false; }, 8000);
             })
             .catch(function (e) {
-              msg.textContent = 'Could not start publishing. Please try again or use Netlify. (' + e.message + ')';
+              msg.textContent = 'Could not start publishing. Please try again. (' + e.message + ')';
               btn.disabled = false;
             });
         });
