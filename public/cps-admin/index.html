@@ -3,20 +3,45 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Keep the admin out of search engines -->
     <meta name="robots" content="noindex, nofollow" />
     <title>City Property Services Admin</title>
-    <!-- Explicit config path (admin lives at /cps-admin, not the default /admin) -->
     <link href="/cps-admin/config.yml" type="text/yaml" rel="cms-config-url" />
     <style>
       :root { color-scheme: light; }
       body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
-      /* Branded banner shown above the CMS login while it loads */
       #cps-pre { display: flex; min-height: 100vh; align-items: center; justify-content: center; background: #eef1f5; }
       #cps-pre .box { text-align: center; color: #16323f; }
       #cps-pre h1 { font-size: 20px; margin: 0 0 6px; }
       #cps-pre p { margin: 0; color: #5a6b75; font-size: 14px; }
+
+      /* Always-visible publish bar (a real form, so it works without JS) */
+      #cps-publish {
+        position: fixed; left: 0; right: 0; bottom: 0; z-index: 2147483647;
+        display: flex; align-items: center; gap: 14px; justify-content: center; flex-wrap: wrap;
+        margin: 0; background: #16323f; color: #fff; padding: 11px 16px;
+        box-shadow: 0 -4px 20px rgba(0,0,0,.22);
+      }
+      #cps-publish #cps-msg { opacity: .9; font-size: 14px; }
+      #cps-publish button {
+        background: #2f9e6f; color: #fff; border: none; border-radius: 8px;
+        padding: 10px 20px; font: 700 14px system-ui, sans-serif; cursor: pointer;
+      }
+      #cps-publish button:hover { background: #2a8f64; }
     </style>
+    <script>
+      // Defined in <head> so it is always available when the form submits.
+      // Returns true to let the native form POST hit the Netlify build hook.
+      function cpsGo() {
+        try {
+          if (!window.confirm('Publish your saved changes to the live website now?\nThey will be live in 1 to 2 minutes.')) {
+            return false;
+          }
+          var m = document.getElementById('cps-msg');
+          if (m) m.textContent = 'Publishing… your changes will be live in 1 to 2 minutes. You can keep editing.';
+        } catch (e) {}
+        return true;
+      }
+    </script>
   </head>
   <body>
     <div id="cps-pre">
@@ -26,84 +51,39 @@
       </div>
     </div>
 
+    <!-- The publish action is a plain cross-origin form POST into a hidden
+         iframe. This triggers the Netlify "CMS Publish" build hook reliably,
+         with no dependency on fetch or any other JavaScript working. -->
+    <iframe name="cps-pub-frame" style="display:none" title="publish target"></iframe>
+    <form id="cps-publish" method="POST" target="cps-pub-frame"
+          action="https://api.netlify.com/build_hooks/6a26c4ca06d0872bc7454318"
+          onsubmit="return cpsGo()">
+      <span id="cps-msg">Your saved edits are not live yet.</span>
+      <button type="submit">Publish changes (Go live)</button>
+    </form>
+
     <!-- Decap CMS (free, open source, Git based). Pinned to v3. -->
     <script src="https://unpkg.com/decap-cms@^3.6.0/dist/decap-cms.js"></script>
     <script>
+      // Best-effort: hide the loading placeholder and keep the bar on top.
       (function () {
-        // Netlify "CMS Publish" build hook. Posting to it tells Netlify to build
-        // and deploy the latest content from main. Ordinary saves are skipped by
-        // the netlify.toml ignore rule, so this button is the only thing that
-        // makes saved edits go live.
-        var PUBLISH_HOOK = 'https://api.netlify.com/build_hooks/6a26c4ca06d0872bc7454318';
-
-        // Build the "Go live" bar entirely in JS so we can force it on top of the
-        // Decap app and re-attach it if Decap ever re-renders.
-        var bar = document.createElement('div');
-        bar.id = 'cps-publish';
-        bar.style.cssText = [
-          'position:fixed', 'left:0', 'right:0', 'bottom:0', 'z-index:2147483647',
-          'display:flex', 'align-items:center', 'gap:14px', 'justify-content:center',
-          'flex-wrap:wrap', 'background:#16323f', 'color:#fff', 'padding:11px 16px',
-          'font:600 14px system-ui,sans-serif', 'box-shadow:0 -4px 20px rgba(0,0,0,.22)',
-        ].join(';');
-        var msg = document.createElement('span');
-        msg.textContent = 'Your saved edits are not live yet.';
-        msg.style.cssText = 'opacity:.9;font-weight:400';
-        var btn = document.createElement('button');
-        btn.type = 'button';
-        btn.textContent = 'Publish changes (Go live)';
-        btn.style.cssText = 'background:#2f9e6f;color:#fff;border:none;border-radius:8px;padding:10px 20px;font:700 14px system-ui,sans-serif;cursor:pointer';
-        bar.appendChild(msg);
-        bar.appendChild(btn);
-
-        function attach() {
-          // keep it as the last child of body so nothing paints over it
-          if (document.body && document.body.lastElementChild !== bar) {
-            document.body.appendChild(bar);
-          }
+        var bar = document.getElementById('cps-publish');
+        var frame = document.querySelector('iframe[name="cps-pub-frame"]');
+        function keepOnTop() {
+          if (bar && document.body.lastElementChild !== bar) document.body.appendChild(bar);
         }
-        attach();
-        setInterval(attach, 1500);
-
+        setInterval(keepOnTop, 1500);
         if (window.CMS) {
           window.CMS.registerEventListener({
             name: 'mounted',
             handler: function () {
               var p = document.getElementById('cps-pre');
               if (p) p.style.display = 'none';
-              attach();
+              keepOnTop();
+              if (frame) document.body.appendChild(frame);
             },
           });
         }
-
-        // Trigger the Netlify build hook reliably from the browser. A cross
-        // origin form POST into a hidden iframe is not blocked the way a no-cors
-        // fetch can be, so this actually reaches the hook.
-        function triggerPublish() {
-          var name = 'cps-pub-' + Date.now();
-          var iframe = document.createElement('iframe');
-          iframe.name = name;
-          iframe.style.display = 'none';
-          document.body.appendChild(iframe);
-          var form = document.createElement('form');
-          form.method = 'POST';
-          form.action = PUBLISH_HOOK;
-          form.target = name;
-          document.body.appendChild(form);
-          form.submit();
-          setTimeout(function () { try { form.remove(); iframe.remove(); } catch (e) {} }, 8000);
-          // Best-effort secondary attempt.
-          try { fetch(PUBLISH_HOOK, { method: 'POST', mode: 'no-cors', body: '{}' }); } catch (e) {}
-        }
-
-        btn.addEventListener('click', function () {
-          if (!confirm('Publish all your saved changes to the live website now?\nThey will be live in 1 to 2 minutes.')) return;
-          btn.disabled = true;
-          btn.style.opacity = '.6';
-          triggerPublish();
-          msg.textContent = 'Publishing started. Your changes will be live in 1 to 2 minutes. You can keep editing.';
-          setTimeout(function () { btn.disabled = false; btn.style.opacity = '1'; }, 12000);
-        });
       })();
     </script>
   </body>
