@@ -148,6 +148,36 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
       </div>
     </section>
 
+    <!-- COMPANY LOGOS MARQUEE -->
+    <section class="logos-section reveal" aria-label="Companies City Property Services has worked with">
+      <div class="wrap-wide logos-head">
+        <div class="eyebrow">Companies We Have Worked With</div>
+        <h2 style="margin-top:10px;">Trusted by leading brands and businesses</h2>
+        <p class="logos-intro muted">City Property Services has helped companies across Ahmedabad and Gujarat with offices, retail spaces, warehouses, industrial properties, land and investment requirements.</p>
+      </div>
+
+      <div class="logo-marquee">
+        <div class="logo-row">
+          <div class="logo-track">
+            <img src="/images/company-logos/company-logo-marquee-row-1.webp" alt="Logos of companies City Property Services has worked with" loading="lazy" onerror="this.closest('.logo-row').style.display='none'" />
+            <img src="/images/company-logos/company-logo-marquee-row-1.webp" alt="" aria-hidden="true" loading="lazy" />
+          </div>
+        </div>
+        <div class="logo-row">
+          <div class="logo-track reverse">
+            <img src="/images/company-logos/company-logo-marquee-row-2.webp" alt="More companies City Property Services has worked with" loading="lazy" onerror="this.closest('.logo-row').style.display='none'" />
+            <img src="/images/company-logos/company-logo-marquee-row-2.webp" alt="" aria-hidden="true" loading="lazy" />
+          </div>
+        </div>
+        <div class="logo-row logo-row-3">
+          <div class="logo-track">
+            <img src="/images/company-logos/company-logo-marquee-row-3.webp" alt="Further companies City Property Services has worked with" loading="lazy" onerror="this.closest('.logo-row').style.display='none'" />
+            <img src="/images/company-logos/company-logo-marquee-row-3.webp" alt="" aria-hidden="true" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA BAND -->
     <section class="section wrap-wide reveal">
       <div class="band between" style="align-items:center;">
@@ -260,6 +290,25 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
   .why-card .ic svg { width: 23px; height: 23px; }
   .why-card h3 { font-size: 16.5px; color: var(--ink); margin: 0 0 6px; }
   .why-card p { font-size: 14px; color: var(--text-muted); line-height: 1.55; margin: 0; }
+
+  /* ---- Company logo marquee ---- */
+  .logos-section { padding-block: 64px; }
+  .logos-head h2 { margin-top: 10px; }
+  .logos-intro { max-width: 64ch; margin-top: 12px; }
+  .logo-marquee { margin-top: 34px; display: flex; flex-direction: column; gap: 18px; }
+  /* overflow only on the row wrapper; the track is wider than the viewport */
+  .logo-row { overflow: hidden; width: 100%; }
+  .logo-track { display: flex; width: max-content; will-change: transform; animation: logoMarquee 70s linear infinite; }
+  .logo-track.reverse { animation-name: logoMarqueeReverse; }
+  .logo-row:hover .logo-track { animation-play-state: paused; }
+  .logo-track img { height: clamp(112px, 9vw, 134px); width: auto; max-width: none; flex: 0 0 auto; display: block; }
+  @keyframes logoMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes logoMarqueeReverse { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+  @media (prefers-reduced-motion: reduce) { .logo-track { animation: none; } }
+  /* tablet: keep all 3 rows, gentler height */
+  @media (max-width: 900px) { .logos-section { padding-block: 48px; } .logo-track img { height: clamp(96px, 12vw, 116px); } .logo-marquee { gap: 14px; } }
+  /* mobile: 2 rows only (hide row 3) so it does not feel crowded */
+  @media (max-width: 560px) { .logo-track img { height: 84px; } .logo-row-3 { display: none; } }
 
   @media (max-width: 980px) { .types { grid-template-columns: repeat(2,1fr); } .cards { grid-template-columns: 1fr 1fr; } .why-grid { grid-template-columns: 1fr 1fr; } .about-split { grid-template-columns: 1fr; gap: 28px; } .founder { max-width: 240px; } }
   @media (max-width: 680px) { .types, .cards { grid-template-columns: 1fr; } .why-grid { grid-template-columns: 1fr; } .band { padding: 36px 28px; } }
