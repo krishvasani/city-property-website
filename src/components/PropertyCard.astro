@@ -44,7 +44,7 @@ const searchText = [p.title, p.localityName, p.address].filter(Boolean).join(' '
     </div>
   </div>
   <div class="prop-body">
-    <div class="prop-price">{p.priceDisplay}{p.pricePer && <span class="per">{p.pricePer}</span>}</div>
+    <div class="prop-price">{p.priceDisplay}{p.pricePer ? ' ' : ''}{p.pricePer && <span class="per">{p.pricePer}</span>}</div>
     <div class="prop-title">{p.title}</div>
     <div class="prop-loc"><Icon name="pin" sw={1.8} />{p.localityName}</div>
     <div class="prop-meta">
