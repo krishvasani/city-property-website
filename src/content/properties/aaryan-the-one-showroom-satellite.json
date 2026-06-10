@@ -1,0 +1,95 @@
+{
+  "title": "Showroom · Aaryan The One, Satellite",
+  "slug": "aaryan-the-one-showroom-satellite",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹120 / sq.ft",
+  "priceValue": 480000,
+  "localityName": "Satellite",
+  "city": "Ahmedabad",
+  "address": "Bileshwar Mahadev Mandir Rd, Jodhpur Gam Rd, Satellite, Ahmedabad, Gujarat 380015",
+  "geo": {
+    "lat": 23.01767724728546,
+    "lng": 72.52530678572163
+  },
+  "area": "4,000 sq.ft super built up",
+  "areaSqft": 4000,
+  "floor": "Ground floor",
+  "totalFloors": "G+4",
+  "age": "Under construction",
+  "amenities": [
+    "2 lifts",
+    "16 showrooms per floor"
+  ],
+  "description": [
+    "Showroom space in Aaryan The One on Jodhpur Gam Road, Satellite, with 4,000 sq.ft super built up and 2,200 sq.ft carpet on the ground floor, plus a generous 45 ft frontage.",
+    "Part of a G+4 retail development with two lifts and sixteen showrooms per floor, currently under construction. Rent is quoted at ₹120 per sq.ft on super built up or ₹218 per sq.ft on carpet. Well suited to a cafe, restaurant, fashion or designer label, salon or gym."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/aaryan-the-one-showroom-satellite/photo-1.jpg",
+      "alt": "Aaryan The One showroom in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/aaryan-the-one-showroom-satellite/photo-2.jpg",
+      "alt": "Aaryan The One showroom in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/aaryan-the-one-showroom-satellite/photo-3.jpg",
+      "alt": "Aaryan The One showroom in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/aaryan-the-one-showroom-satellite/photo-4.jpg",
+      "alt": "Aaryan The One showroom in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/aaryan-the-one-showroom-satellite/photo-5.jpg",
+      "alt": "Aaryan The One showroom in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/aaryan-the-one-showroom-satellite/photo-6.jpg",
+      "alt": "Aaryan The One showroom in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/aaryan-the-one-showroom-satellite/photo-7.jpg",
+      "alt": "Aaryan The One showroom in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/aaryan-the-one-showroom-satellite/photo-8.jpg",
+      "alt": "Aaryan The One showroom in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/aaryan-the-one-showroom-satellite/photo-9.jpg",
+      "alt": "Aaryan The One showroom in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    }
+  ],
+  "newAt": "2026-06-10",
+  "seoTitle": "Showroom · Aaryan The One, Satellite | City Property Services Ahmedabad",
+  "seoDescription": "Showroom space in Aaryan The One on Jodhpur Gam Road, Satellite, with 4,000 sq.ft super built up and 2,200 sq.ft carpet on the ground floor, plus a generou",
+  "pricePer": "per month (super built up)",
+  "perSqftDisplay": "₹120 per sq.ft super built up · ₹218 per sq.ft carpet",
+  "carpetArea": "2,200 sq.ft",
+  "builtUpArea": "4,000 sq.ft",
+  "frontage": "45 ft",
+  "suitableFor": [
+    "Cafe",
+    "Restaurant",
+    "Clothing",
+    "Garments",
+    "Designer",
+    "Salon",
+    "Gym"
+  ],
+  "mainImage": "/uploads/properties/aaryan-the-one-showroom-satellite/photo-1.jpg"
+}

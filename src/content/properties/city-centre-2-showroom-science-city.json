@@ -1,0 +1,92 @@
+{
+  "title": "Showroom · City Centre 2, Science City",
+  "slug": "city-centre-2-showroom-science-city",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹100 / sq.ft",
+  "priceValue": 340200,
+  "localityName": "Science City",
+  "city": "Ahmedabad",
+  "address": "City Centre 2, Science City Rd, near Hir Party Plot, Panchamrut Bunglows II, Sola, Ahmedabad, Gujarat 380060",
+  "geo": {
+    "lat": 23.070296373260724,
+    "lng": 72.51789067611871
+  },
+  "area": "3,402 sq.ft super built up",
+  "areaSqft": 3402,
+  "floor": "Ground floor",
+  "totalFloors": "G+14",
+  "age": "5 to 10 years",
+  "amenities": [
+    "1 lifts",
+    "3 showrooms per floor"
+  ],
+  "description": [
+    "Ground floor showroom in City Centre 2 on Science City Road, Sola, offering 3,402 sq.ft super built up and 1,940 sq.ft carpet with a 20 ft frontage.",
+    "Part of a G+14 building with one lift and three showrooms on the ground floor. Rent is quoted at ₹100 per sq.ft on super built up or ₹175 per sq.ft on carpet. Suited to furniture, fashion, jewellery, a bank, cafe or restaurant."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/city-centre-2-showroom-science-city/photo-1.jpg",
+      "alt": "City Centre 2 showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/city-centre-2-showroom-science-city/photo-2.jpg",
+      "alt": "City Centre 2 showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/city-centre-2-showroom-science-city/photo-3.jpg",
+      "alt": "City Centre 2 showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/city-centre-2-showroom-science-city/photo-4.jpg",
+      "alt": "City Centre 2 showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/city-centre-2-showroom-science-city/photo-5.jpg",
+      "alt": "City Centre 2 showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/city-centre-2-showroom-science-city/photo-6.jpg",
+      "alt": "City Centre 2 showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/city-centre-2-showroom-science-city/photo-7.jpg",
+      "alt": "City Centre 2 showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/city-centre-2-showroom-science-city/photo-8.jpg",
+      "alt": "City Centre 2 showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    }
+  ],
+  "newAt": "2026-06-10",
+  "seoTitle": "Showroom · City Centre 2, Science City | City Property Services Ahmedabad",
+  "seoDescription": "Ground floor showroom in City Centre 2 on Science City Road, Sola, offering 3,402 sq.ft super built up and 1,940 sq.ft carpet with a 20 ft frontage.",
+  "pricePer": "per month (super built up)",
+  "perSqftDisplay": "₹100 per sq.ft super built up · ₹175 per sq.ft carpet",
+  "carpetArea": "1,940 sq.ft",
+  "builtUpArea": "3,402 sq.ft",
+  "frontage": "20 ft",
+  "suitableFor": [
+    "Furniture",
+    "Clothing",
+    "Garments",
+    "Designer",
+    "Salon",
+    "Jewellery",
+    "Bank",
+    "Cafe",
+    "Restaurant"
+  ],
+  "mainImage": "/uploads/properties/city-centre-2-showroom-science-city/photo-1.jpg"
+}

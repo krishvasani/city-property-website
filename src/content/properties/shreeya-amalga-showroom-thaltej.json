@@ -1,0 +1,74 @@
+{
+  "title": "Showroom · Shreeya Amalga, Thaltej",
+  "slug": "shreeya-amalga-showroom-thaltej",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2,20,000",
+  "priceValue": 220000,
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "address": "Shreeya Amalga, near Avalon Hotel, Thaltej, Ahmedabad",
+  "geo": {
+    "lat": 23.046842672367298,
+    "lng": 72.50636011770072
+  },
+  "area": "3,420 sq.ft super built up",
+  "areaSqft": 3420,
+  "floor": "1st floor",
+  "totalFloors": "G+5",
+  "age": "1 to 5 years",
+  "amenities": [
+    "3 lifts",
+    "28 showrooms per floor"
+  ],
+  "description": [
+    "First floor showroom in Shreeya Amalga near Avalon Hotel, Thaltej, offering 3,420 sq.ft super built up and 1,980 sq.ft carpet.",
+    "Located in a G+5 commercial building with three lifts and twenty eight showrooms per floor. Rent is ₹2,20,000 per month. Set on one of Thaltej busiest commercial corridors with established retail footfall."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shreeya-amalga-showroom-thaltej/photo-1.jpg",
+      "alt": "Shreeya Amalga showroom in Thaltej, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shreeya-amalga-showroom-thaltej/photo-2.jpg",
+      "alt": "Shreeya Amalga showroom in Thaltej, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shreeya-amalga-showroom-thaltej/photo-3.jpg",
+      "alt": "Shreeya Amalga showroom in Thaltej, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shreeya-amalga-showroom-thaltej/photo-4.jpg",
+      "alt": "Shreeya Amalga showroom in Thaltej, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shreeya-amalga-showroom-thaltej/photo-5.jpg",
+      "alt": "Shreeya Amalga showroom in Thaltej, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shreeya-amalga-showroom-thaltej/photo-6.jpg",
+      "alt": "Shreeya Amalga showroom in Thaltej, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shreeya-amalga-showroom-thaltej/photo-7.jpg",
+      "alt": "Shreeya Amalga showroom in Thaltej, Ahmedabad",
+      "label": "Showroom photo"
+    }
+  ],
+  "newAt": "2026-06-10",
+  "seoTitle": "Showroom · Shreeya Amalga, Thaltej | City Property Services Ahmedabad",
+  "seoDescription": "First floor showroom in Shreeya Amalga near Avalon Hotel, Thaltej, offering 3,420 sq.ft super built up and 1,980 sq.ft carpet.",
+  "pricePer": "per month",
+  "carpetArea": "1,980 sq.ft",
+  "builtUpArea": "3,420 sq.ft",
+  "mainImage": "/uploads/properties/shreeya-amalga-showroom-thaltej/photo-1.jpg"
+}

@@ -1,0 +1,101 @@
+{
+  "title": "Showroom · Keshavbaug Capital, Vastrapur",
+  "slug": "keshavbaug-capital-showroom-vastrapur",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹80 / sq.ft",
+  "priceValue": 400000,
+  "localityName": "Vastrapur",
+  "city": "Ahmedabad",
+  "address": "Keshavbaug Capital, near Shivranjani Cross Rd, next to ITC Narmada, IIM, Vastrapur, Ahmedabad, Gujarat 380015",
+  "geo": {
+    "lat": 23.030944400417276,
+    "lng": 72.53208846186892
+  },
+  "area": "5,000 sq.ft super built up",
+  "areaSqft": 5000,
+  "floor": "3rd floor",
+  "totalFloors": "G+10",
+  "age": "Newly constructed",
+  "amenities": [
+    "2 lifts",
+    "15 showrooms per floor"
+  ],
+  "description": [
+    "Third floor showroom in Keshavbaug Capital, Vastrapur, located next to ITC Narmada and close to IIM and Shivranjani Cross Road, with 5,000 sq.ft super built up and 2,800 sq.ft carpet.",
+    "Newly constructed tower of G+10 with two lifts and fifteen showrooms per floor. Rent is quoted at ₹80 per sq.ft on super built up plus taxes. A strong fit for a jewellery brand, garments store, gym or salon."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/keshavbaug-capital-showroom-vastrapur/photo-1.jpg",
+      "alt": "Keshavbaug Capital showroom in Vastrapur, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/keshavbaug-capital-showroom-vastrapur/photo-2.jpg",
+      "alt": "Keshavbaug Capital showroom in Vastrapur, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/keshavbaug-capital-showroom-vastrapur/photo-3.jpg",
+      "alt": "Keshavbaug Capital showroom in Vastrapur, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/keshavbaug-capital-showroom-vastrapur/photo-4.jpg",
+      "alt": "Keshavbaug Capital showroom in Vastrapur, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/keshavbaug-capital-showroom-vastrapur/photo-5.jpg",
+      "alt": "Keshavbaug Capital showroom in Vastrapur, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/keshavbaug-capital-showroom-vastrapur/photo-6.jpg",
+      "alt": "Keshavbaug Capital showroom in Vastrapur, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/keshavbaug-capital-showroom-vastrapur/photo-7.jpg",
+      "alt": "Keshavbaug Capital showroom in Vastrapur, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/keshavbaug-capital-showroom-vastrapur/photo-8.jpg",
+      "alt": "Keshavbaug Capital showroom in Vastrapur, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/keshavbaug-capital-showroom-vastrapur/photo-9.jpg",
+      "alt": "Keshavbaug Capital showroom in Vastrapur, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/keshavbaug-capital-showroom-vastrapur/photo-10.jpg",
+      "alt": "Keshavbaug Capital showroom in Vastrapur, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/keshavbaug-capital-showroom-vastrapur/photo-11.jpg",
+      "alt": "Keshavbaug Capital showroom in Vastrapur, Ahmedabad",
+      "label": "Showroom photo"
+    }
+  ],
+  "newAt": "2026-06-10",
+  "seoTitle": "Showroom · Keshavbaug Capital, Vastrapur | City Property Services Ahmedabad",
+  "seoDescription": "Third floor showroom in Keshavbaug Capital, Vastrapur, located next to ITC Narmada and close to IIM and Shivranjani Cross Road, with 5,000 sq.ft super buil",
+  "pricePer": "per month (super built up)",
+  "perSqftDisplay": "₹80 per sq.ft super built up plus taxes",
+  "carpetArea": "2,800 sq.ft",
+  "builtUpArea": "5,000 sq.ft",
+  "suitableFor": [
+    "Jewellery",
+    "Garments",
+    "Gym",
+    "Salon"
+  ],
+  "mainImage": "/uploads/properties/keshavbaug-capital-showroom-vastrapur/photo-1.jpg"
+}

@@ -1,0 +1,41 @@
+{
+  "title": "5,000 sq.ft Showroom · Rangoli Road, Thaltej",
+  "slug": "rangoli-road-showroom-thaltej",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹350 / sq.ft",
+  "priceValue": 1750000,
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "address": "Rajpath Rangoli Road, PRL Colony, Thaltej, Ahmedabad, Gujarat 380058",
+  "geo": {
+    "lat": 23.057132927918023,
+    "lng": 72.51885237824658
+  },
+  "area": "5,000 sq.ft carpet",
+  "areaSqft": 5000,
+  "floor": "Ground floor",
+  "totalFloors": "Ground floor only",
+  "age": "Newly constructed",
+  "amenities": [
+    "3 showrooms per floor"
+  ],
+  "description": [
+    "Spacious ground floor showroom on Rajpath Rangoli Road in Thaltej, offering 5,000 sq.ft of carpet area with a wide 50 ft frontage on a prime retail stretch.",
+    "Newly constructed standalone retail level with three showrooms on the ground floor. Rent is quoted at ₹350 per sq.ft on carpet plus applicable taxes. Ideal for a restaurant or clothing brand that wants strong visibility."
+  ],
+  "photos": [],
+  "newAt": "2026-06-10",
+  "seoTitle": "5,000 sq.ft Showroom · Rangoli Road, Thaltej | City Property Services Ahmedabad",
+  "seoDescription": "Spacious ground floor showroom on Rajpath Rangoli Road in Thaltej, offering 5,000 sq.ft of carpet area with a wide 50 ft frontage on a prime retail stretch",
+  "pricePer": "per month",
+  "perSqftDisplay": "₹350 per sq.ft on carpet plus taxes",
+  "carpetArea": "5,000 sq.ft",
+  "frontage": "50 ft",
+  "suitableFor": [
+    "Restaurant",
+    "Clothing"
+  ]
+}

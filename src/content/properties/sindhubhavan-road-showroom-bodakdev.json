@@ -1,0 +1,98 @@
+{
+  "title": "Showroom for Sale · Sindhubhavan Road, Bodakdev",
+  "slug": "sindhubhavan-road-showroom-bodakdev",
+  "status": "sale",
+  "propertyType": "showroom",
+  "featured": true,
+  "draft": false,
+  "priceDisplay": "₹6.58 Cr",
+  "priceValue": 65800000,
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "Sindhubhavan Main Road, Bodakdev, Ahmedabad",
+  "geo": {
+    "lat": 23.03937840430518,
+    "lng": 72.49588179330567
+  },
+  "area": "4,700 sq.ft super built up",
+  "areaSqft": 4700,
+  "floor": "2nd floor",
+  "totalFloors": "G+10",
+  "age": "1 to 5 years",
+  "amenities": [
+    "2 lifts",
+    "15 showrooms per floor"
+  ],
+  "description": [
+    "Second floor showroom for sale on Sindhubhavan Main Road in Bodakdev, the most sought after commercial high street in Ahmedabad, with 4,700 sq.ft super built up and 2,600 sq.ft carpet and a 32 ft frontage.",
+    "Set in a G+10 building with two lifts and fifteen showrooms per floor. Priced at ₹14,000 per sq.ft on super built up, which works out to about ₹6.58 Cr. A premium address that suits furniture, jewellery, fashion, designer and salon brands."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/sindhubhavan-road-showroom-bodakdev/photo-1.jpg",
+      "alt": "Showroom showroom in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/sindhubhavan-road-showroom-bodakdev/photo-2.jpg",
+      "alt": "Showroom showroom in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/sindhubhavan-road-showroom-bodakdev/photo-3.jpg",
+      "alt": "Showroom showroom in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/sindhubhavan-road-showroom-bodakdev/photo-4.jpg",
+      "alt": "Showroom showroom in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/sindhubhavan-road-showroom-bodakdev/photo-5.jpg",
+      "alt": "Showroom showroom in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/sindhubhavan-road-showroom-bodakdev/photo-6.jpg",
+      "alt": "Showroom showroom in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/sindhubhavan-road-showroom-bodakdev/photo-7.jpg",
+      "alt": "Showroom showroom in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/sindhubhavan-road-showroom-bodakdev/photo-8.jpg",
+      "alt": "Showroom showroom in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/sindhubhavan-road-showroom-bodakdev/photo-9.jpg",
+      "alt": "Showroom showroom in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/sindhubhavan-road-showroom-bodakdev/photo-10.jpg",
+      "alt": "Showroom showroom in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    }
+  ],
+  "newAt": "2026-06-10",
+  "seoTitle": "Showroom for Sale · Sindhubhavan Road, Bodakdev | City Property Services Ahmedabad",
+  "seoDescription": "Second floor showroom for sale on Sindhubhavan Main Road in Bodakdev, the most sought after commercial high street in Ahmedabad, with 4,700 sq.ft super bui",
+  "perSqftDisplay": "₹14,000 per sq.ft super built up · ₹25,300 per sq.ft carpet",
+  "carpetArea": "2,600 sq.ft",
+  "builtUpArea": "4,700 sq.ft",
+  "frontage": "32 ft",
+  "suitableFor": [
+    "Furniture",
+    "Jewellery",
+    "Clothing",
+    "Garments",
+    "Designer",
+    "Salon"
+  ],
+  "mainImage": "/uploads/properties/sindhubhavan-road-showroom-bodakdev/photo-1.jpg"
+}

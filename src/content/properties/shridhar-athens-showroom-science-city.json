@@ -1,0 +1,112 @@
+{
+  "title": "Showroom · Shridhar Athens, Science City",
+  "slug": "shridhar-athens-showroom-science-city",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹80 / sq.ft",
+  "priceValue": 408000,
+  "localityName": "Science City",
+  "city": "Ahmedabad",
+  "address": "A Shridhar Athens, Shivranjani Cross Rd, Nehru Nagar, Ambawadi, Ahmedabad, Gujarat 380015",
+  "geo": {
+    "lat": 23.022970850327727,
+    "lng": 72.53299661688257
+  },
+  "area": "5,100 sq.ft super built up",
+  "areaSqft": 5100,
+  "floor": "2nd floor",
+  "totalFloors": "G+12",
+  "age": "1 to 5 years",
+  "amenities": [
+    "6 lifts",
+    "6 showrooms per floor"
+  ],
+  "description": [
+    "Second floor showroom in A Shridhar Athens near Shivranjani Cross Road, with 5,100 sq.ft super built up and 2,800 sq.ft carpet and a 28 ft frontage.",
+    "Located in a G+12 tower with six lifts and six showrooms per floor. Rent is quoted at ₹80 per sq.ft on super built up or ₹145 per sq.ft on carpet. A good fit for fashion, garments, designer and jewellery showrooms."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shridhar-athens-showroom-science-city/photo-1.jpg",
+      "alt": "A Shridhar Athens showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shridhar-athens-showroom-science-city/photo-2.jpg",
+      "alt": "A Shridhar Athens showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shridhar-athens-showroom-science-city/photo-3.jpg",
+      "alt": "A Shridhar Athens showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shridhar-athens-showroom-science-city/photo-4.jpg",
+      "alt": "A Shridhar Athens showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shridhar-athens-showroom-science-city/photo-5.jpg",
+      "alt": "A Shridhar Athens showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shridhar-athens-showroom-science-city/photo-6.jpg",
+      "alt": "A Shridhar Athens showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shridhar-athens-showroom-science-city/photo-7.jpg",
+      "alt": "A Shridhar Athens showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shridhar-athens-showroom-science-city/photo-8.jpg",
+      "alt": "A Shridhar Athens showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shridhar-athens-showroom-science-city/photo-9.jpg",
+      "alt": "A Shridhar Athens showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shridhar-athens-showroom-science-city/photo-10.jpg",
+      "alt": "A Shridhar Athens showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shridhar-athens-showroom-science-city/photo-11.jpg",
+      "alt": "A Shridhar Athens showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shridhar-athens-showroom-science-city/photo-12.jpg",
+      "alt": "A Shridhar Athens showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shridhar-athens-showroom-science-city/photo-13.jpg",
+      "alt": "A Shridhar Athens showroom in Science City, Ahmedabad",
+      "label": "Showroom photo"
+    }
+  ],
+  "newAt": "2026-06-10",
+  "seoTitle": "Showroom · Shridhar Athens, Science City | City Property Services Ahmedabad",
+  "seoDescription": "Second floor showroom in A Shridhar Athens near Shivranjani Cross Road, with 5,100 sq.ft super built up and 2,800 sq.ft carpet and a 28 ft frontage.",
+  "pricePer": "per month (super built up)",
+  "perSqftDisplay": "₹80 per sq.ft super built up · ₹145 per sq.ft carpet",
+  "carpetArea": "2,800 sq.ft",
+  "builtUpArea": "5,100 sq.ft",
+  "frontage": "28 ft",
+  "suitableFor": [
+    "Clothing",
+    "Garments",
+    "Designer",
+    "Jewellery"
+  ],
+  "mainImage": "/uploads/properties/shridhar-athens-showroom-science-city/photo-1.jpg"
+}
