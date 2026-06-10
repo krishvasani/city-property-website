@@ -76,20 +76,33 @@
           });
         }
 
+        // Trigger the Netlify build hook reliably from the browser. A cross
+        // origin form POST into a hidden iframe is not blocked the way a no-cors
+        // fetch can be, so this actually reaches the hook.
+        function triggerPublish() {
+          var name = 'cps-pub-' + Date.now();
+          var iframe = document.createElement('iframe');
+          iframe.name = name;
+          iframe.style.display = 'none';
+          document.body.appendChild(iframe);
+          var form = document.createElement('form');
+          form.method = 'POST';
+          form.action = PUBLISH_HOOK;
+          form.target = name;
+          document.body.appendChild(form);
+          form.submit();
+          setTimeout(function () { try { form.remove(); iframe.remove(); } catch (e) {} }, 8000);
+          // Best-effort secondary attempt.
+          try { fetch(PUBLISH_HOOK, { method: 'POST', mode: 'no-cors', body: '{}' }); } catch (e) {}
+        }
+
         btn.addEventListener('click', function () {
           if (!confirm('Publish all your saved changes to the live website now?\nThey will be live in 1 to 2 minutes.')) return;
           btn.disabled = true;
           btn.style.opacity = '.6';
-          msg.textContent = 'Publishing… your changes will be live in 1 to 2 minutes.';
-          fetch(PUBLISH_HOOK, { method: 'POST', mode: 'no-cors', body: '{}' })
-            .then(function () {
-              msg.textContent = 'Publishing started. Live in 1 to 2 minutes — you can keep editing.';
-              setTimeout(function () { btn.disabled = false; btn.style.opacity = '1'; }, 10000);
-            })
-            .catch(function (e) {
-              msg.textContent = 'Could not start publishing. Please try again. (' + e.message + ')';
-              btn.disabled = false; btn.style.opacity = '1';
-            });
+          triggerPublish();
+          msg.textContent = 'Publishing started. Your changes will be live in 1 to 2 minutes. You can keep editing.';
+          setTimeout(function () { btn.disabled = false; btn.style.opacity = '1'; }, 12000);
         });
       })();
     </script>
