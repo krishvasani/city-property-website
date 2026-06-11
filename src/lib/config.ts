@@ -7,7 +7,7 @@ const env = import.meta.env;
 export const site = {
   name: 'City Property Services',
   tagline: 'Property in Ahmedabad',
-  rera: 'GJ/RERA/XXXXX',
+  rera: 'AG/GJ/AHMEDABAD/AHMADABADCITY/AUDA/AA00003/220329R2',
   url: env.SITE_URL || 'https://cityproperty.example.com',
 };
 
@@ -17,6 +17,8 @@ export const contact = {
   /** Human-readable number for tel: links. */
   phone: env.PUBLIC_PHONE || '+91 98249 00778',
   email: env.PUBLIC_LEAD_EMAIL || 'coordinator@cityprop.co.in',
+  /** Office address. */
+  address: '703 & 704 Zion Prime, Near Copper Stone, Thaltej Shilaj Road, Ahmedabad, Gujarat 380052',
 };
 
 /** Social profiles. */

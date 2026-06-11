@@ -51,7 +51,7 @@ const imgFallback =
 ---
 <Base
   title="Property Map of Ahmedabad"
-  description="Explore every City Property Services listing on a live map of Ahmedabad. Pan and zoom to see only the properties in view, with filters for buy, rent and lease."
+  description="Explore every City Property Services listing on a live map of Ahmedabad. Pan and zoom to see only the properties in view, with filters for buy and rent."
   active="map"
 >
   <main class="mapx">
@@ -62,7 +62,6 @@ const imgFallback =
           <button class="is-active" data-status="">All</button>
           <button data-status="sale">Buy</button>
           <button data-status="rent">Rent</button>
-          <button data-status="lease">Lease</button>
         </div>
         <select class="filter-select" id="f-type" aria-label="Property type">
           <option value="">All types</option>
@@ -228,7 +227,7 @@ const imgFallback =
   const fSort = document.getElementById('f-sort') as HTMLSelectElement;
 
   function repopulateBudget() {
-    const opts = state.status === 'rent' || state.status === 'lease' ? RENT_BUDGETS
+    const opts = state.status === 'rent' ? RENT_BUDGETS
       : state.status === 'sale' ? SALE_BUDGETS : [];
     fBudget.innerHTML = '<option value="">Any budget</option>' +
       opts.map(([l, v]) => `<option value="${v}">${l}</option>`).join('');
@@ -236,7 +235,10 @@ const imgFallback =
   }
 
   function passesFilters(p: P): boolean {
-    if (state.status && p.status !== state.status) return false;
+    // Rent and lease are treated as the same thing: the Rent filter shows both.
+    if (state.status === 'rent') {
+      if (p.status !== 'rent' && p.status !== 'lease') return false;
+    } else if (state.status && p.status !== state.status) return false;
     if (state.type && p.category !== state.type) return false;
     if (state.region && p.region !== state.region) return false;
     if (state.locality && p.localitySlug !== state.locality) return false;
