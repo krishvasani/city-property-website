@@ -159,20 +159,20 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
       <div class="logo-marquee">
         <div class="logo-row">
           <div class="logo-track">
-            <div class="logo-copy"><img src="/images/company-logos/company-logo-marquee-row-1.webp" alt="Logos of companies City Property Services has worked with" loading="lazy" onerror="this.closest('.logo-row').style.display='none'" /></div>
-            <div class="logo-copy" aria-hidden="true"><img src="/images/company-logos/company-logo-marquee-row-1.webp" alt="" loading="lazy" /></div>
+            <div class="logo-copy"><picture><source media="(max-width: 600px)" srcset="/images/company-logos/company-logo-marquee-row-1-sm.webp" /><img src="/images/company-logos/company-logo-marquee-row-1.webp" alt="Logos of companies City Property Services has worked with" loading="lazy" decoding="async" onerror="this.closest('.logo-row').style.display='none'" /></picture></div>
+            <div class="logo-copy" aria-hidden="true"><picture><source media="(max-width: 600px)" srcset="/images/company-logos/company-logo-marquee-row-1-sm.webp" /><img src="/images/company-logos/company-logo-marquee-row-1.webp" alt="" loading="lazy" decoding="async" /></picture></div>
           </div>
         </div>
         <div class="logo-row">
           <div class="logo-track reverse">
-            <div class="logo-copy"><img src="/images/company-logos/company-logo-marquee-row-2.webp" alt="More companies City Property Services has worked with" loading="lazy" onerror="this.closest('.logo-row').style.display='none'" /></div>
-            <div class="logo-copy" aria-hidden="true"><img src="/images/company-logos/company-logo-marquee-row-2.webp" alt="" loading="lazy" /></div>
+            <div class="logo-copy"><picture><source media="(max-width: 600px)" srcset="/images/company-logos/company-logo-marquee-row-2-sm.webp" /><img src="/images/company-logos/company-logo-marquee-row-2.webp" alt="More companies City Property Services has worked with" loading="lazy" decoding="async" onerror="this.closest('.logo-row').style.display='none'" /></picture></div>
+            <div class="logo-copy" aria-hidden="true"><picture><source media="(max-width: 600px)" srcset="/images/company-logos/company-logo-marquee-row-2-sm.webp" /><img src="/images/company-logos/company-logo-marquee-row-2.webp" alt="" loading="lazy" decoding="async" /></picture></div>
           </div>
         </div>
         <div class="logo-row logo-row-3">
           <div class="logo-track">
-            <div class="logo-copy"><img src="/images/company-logos/company-logo-marquee-row-3.webp" alt="Further companies City Property Services has worked with" loading="lazy" onerror="this.closest('.logo-row').style.display='none'" /></div>
-            <div class="logo-copy" aria-hidden="true"><img src="/images/company-logos/company-logo-marquee-row-3.webp" alt="" loading="lazy" /></div>
+            <div class="logo-copy"><picture><source media="(max-width: 600px)" srcset="/images/company-logos/company-logo-marquee-row-3-sm.webp" /><img src="/images/company-logos/company-logo-marquee-row-3.webp" alt="Further companies City Property Services has worked with" loading="lazy" decoding="async" onerror="this.closest('.logo-row').style.display='none'" /></picture></div>
+            <div class="logo-copy" aria-hidden="true"><picture><source media="(max-width: 600px)" srcset="/images/company-logos/company-logo-marquee-row-3-sm.webp" /><img src="/images/company-logos/company-logo-marquee-row-3.webp" alt="" loading="lazy" decoding="async" /></picture></div>
           </div>
         </div>
       </div>
@@ -307,14 +307,15 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
   .logo-track.reverse { animation-name: logoMarqueeReverse; }
   .logo-row:hover .logo-track { animation-play-state: paused; }
   .logo-copy { flex: 0 0 auto; padding-right: calc(var(--logo-h) * var(--logo-seam-ratio)); }
+  .logo-copy picture { display: block; }
   .logo-copy img { height: var(--logo-h); width: auto; max-width: none; display: block; }
   @keyframes logoMarquee { from { transform: translate3d(0,0,0); } to { transform: translate3d(-50%,0,0); } }
   @keyframes logoMarqueeReverse { from { transform: translate3d(-50%,0,0); } to { transform: translate3d(0,0,0); } }
   @media (prefers-reduced-motion: reduce) { .logo-track { animation: none; } }
   /* tablet: keep all 3 rows, gentler height (seam gap scales with it) */
   @media (max-width: 900px) { .logos-section { padding-block: 48px; --logo-h: clamp(96px, 12vw, 116px); } .logo-marquee { gap: 14px; } }
-  /* mobile: 2 rows only (hide row 3) so it does not feel crowded */
-  @media (max-width: 560px) { .logos-section { --logo-h: 84px; } .logo-row-3 { display: none; } }
+  /* mobile: all 3 rows, lighter strip images (served via <picture>) for fast loading */
+  @media (max-width: 560px) { .logos-section { --logo-h: 82px; } .logo-marquee { gap: 12px; } }
 
   @media (max-width: 980px) { .types { grid-template-columns: repeat(2,1fr); } .cards { grid-template-columns: 1fr 1fr; } .why-grid { grid-template-columns: 1fr 1fr; } .about-split { grid-template-columns: 1fr; gap: 28px; } .founder { max-width: 240px; } }
   @media (max-width: 680px) { .types, .cards { grid-template-columns: 1fr; } .why-grid { grid-template-columns: 1fr; } .band { padding: 36px 28px; } }
