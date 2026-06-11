@@ -1,0 +1,88 @@
+{
+  "title": "3,800 sq.ft Showroom · B23, Ambli",
+  "slug": "b23-showroom-ambli",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹100 / sq.ft",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "address": "B23, Ambli Road, near Iskcon Cross Road, Sanidhya, Ahmedabad, Gujarat 380058",
+  "geo": {
+    "lat": 23.026013604630496,
+    "lng": 72.50379598071794
+  },
+  "area": "3,800 sq.ft super built up",
+  "floor": "Ground floor",
+  "totalFloors": "G+7",
+  "age": "newly constructed",
+  "amenities": [
+    "9 lifts",
+    "15 units per floor"
+  ],
+  "description": [
+    "Ground floor showroom in B23, Ambli, with 3,800 sq.ft super built up and 2,000 sq.ft carpet and a 40 ft frontage.",
+    "Set in a G+7 building with 9 lifts and 15 units per floor, newly constructed. Rent is ₹100 per sq.ft on super built up or ₹180 per sq.ft on carpet. Well suited to Cafe, Restaurant, Clothing, Garments, Designer and Salon."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/b23-showroom-ambli/photo-1.jpg",
+      "alt": "B23 in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/b23-showroom-ambli/photo-2.jpg",
+      "alt": "B23 in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/b23-showroom-ambli/photo-3.jpg",
+      "alt": "B23 in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/b23-showroom-ambli/photo-4.jpg",
+      "alt": "B23 in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/b23-showroom-ambli/photo-5.jpg",
+      "alt": "B23 in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/b23-showroom-ambli/photo-6.jpg",
+      "alt": "B23 in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/b23-showroom-ambli/photo-7.jpg",
+      "alt": "B23 in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/b23-showroom-ambli/photo-8.jpg",
+      "alt": "B23 in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    }
+  ],
+  "newAt": "2026-06-11",
+  "seoTitle": "B23 showroom Ambli | City Property Services",
+  "seoDescription": "Ground floor showroom in B23, Ambli, with 3,800 sq.ft super built up and 2,000 sq.ft carpet and a 40 ft frontage.",
+  "priceValue": 380000,
+  "pricePer": "per month (super built up)",
+  "perSqftDisplay": "₹100 per sq.ft super built up · ₹180 per sq.ft carpet",
+  "builtUpArea": "3,800 sq.ft",
+  "carpetArea": "2,000 sq.ft",
+  "frontage": "40 ft",
+  "suitableFor": [
+    "Cafe",
+    "Restaurant",
+    "Clothing",
+    "Garments",
+    "Designer",
+    "Salon"
+  ],
+  "mainImage": "/uploads/properties/b23-showroom-ambli/photo-1.jpg"
+}

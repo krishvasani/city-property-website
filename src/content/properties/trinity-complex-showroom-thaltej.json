@@ -1,0 +1,49 @@
+{
+  "title": "4,550 sq.ft Showroom · Trinity Complex, Thaltej",
+  "slug": "trinity-complex-showroom-thaltej",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹110 / sq.ft",
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "address": "Trinity Complex, Zydus Road, Thaltej, Ahmedabad",
+  "geo": {
+    "lat": 23.058396236592095,
+    "lng": 72.49748046948253
+  },
+  "area": "4,550 sq.ft super built up",
+  "floor": "Ground floor",
+  "totalFloors": "G+7",
+  "age": "around 5 to 10 years old",
+  "amenities": [
+    "1 lifts",
+    "8 units per floor"
+  ],
+  "description": [
+    "Ground floor showroom in Trinity Complex, Thaltej, with 4,550 sq.ft super built up and 2,600 sq.ft carpet and a 25 ft frontage.",
+    "Set in a G+7 building with 1 lifts and 8 units per floor, around 5 to 10 years old. Rent is ₹110 per sq.ft on super built up or ₹188 per sq.ft on carpet. Well suited to Furniture, Clothing, Garments, Designer, Salon, Jewellery, Bank, Cafe and Restaurant."
+  ],
+  "photos": [],
+  "newAt": "2026-06-11",
+  "seoTitle": "Trinity Complex showroom Thaltej | City Property Services",
+  "seoDescription": "Ground floor showroom in Trinity Complex, Thaltej, with 4,550 sq.ft super built up and 2,600 sq.ft carpet and a 25 ft frontage.",
+  "priceValue": 500500,
+  "pricePer": "per month (super built up)",
+  "perSqftDisplay": "₹110 per sq.ft super built up · ₹188 per sq.ft carpet",
+  "builtUpArea": "4,550 sq.ft",
+  "carpetArea": "2,600 sq.ft",
+  "frontage": "25 ft",
+  "suitableFor": [
+    "Furniture",
+    "Clothing",
+    "Garments",
+    "Designer",
+    "Salon",
+    "Jewellery",
+    "Bank",
+    "Cafe",
+    "Restaurant"
+  ]
+}

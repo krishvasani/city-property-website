@@ -1,0 +1,71 @@
+{
+  "title": "800 sq.ft Showroom · Siddhivinayak Complex, Satellite",
+  "slug": "siddhivinayak-complex-showroom-satellite",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "localityName": "Satellite",
+  "city": "Ahmedabad",
+  "address": "Siddhivinayak Complex, 132 Feet Ring Road, Shivranjani Cross Road, Satellite, Ahmedabad, Gujarat 380015",
+  "geo": {
+    "lat": 23.032493362162562,
+    "lng": 72.54351420581688
+  },
+  "area": "800 sq.ft carpet",
+  "floor": "Ground floor",
+  "totalFloors": "G+4",
+  "age": "around 10 to 15 years old",
+  "amenities": [
+    "2 lifts",
+    "30 units per floor"
+  ],
+  "description": [
+    "Ground floor showroom in Siddhivinayak Complex, Satellite, with 800 sq.ft carpet and a 22 ft frontage.",
+    "Set in a G+4 building with 2 lifts and 30 units per floor, around 10 to 15 years old. Rent is available on request. Well suited to Jewellery and Clothing."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/siddhivinayak-complex-showroom-satellite/photo-1.jpg",
+      "alt": "Siddhivinayak Complex in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/siddhivinayak-complex-showroom-satellite/photo-2.jpg",
+      "alt": "Siddhivinayak Complex in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/siddhivinayak-complex-showroom-satellite/photo-3.jpg",
+      "alt": "Siddhivinayak Complex in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/siddhivinayak-complex-showroom-satellite/photo-4.jpg",
+      "alt": "Siddhivinayak Complex in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/siddhivinayak-complex-showroom-satellite/photo-5.jpg",
+      "alt": "Siddhivinayak Complex in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/siddhivinayak-complex-showroom-satellite/photo-6.jpg",
+      "alt": "Siddhivinayak Complex in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    }
+  ],
+  "newAt": "2026-06-11",
+  "seoTitle": "Siddhivinayak Complex showroom Satellite | City Property Services",
+  "seoDescription": "Ground floor showroom in Siddhivinayak Complex, Satellite, with 800 sq.ft carpet and a 22 ft frontage.",
+  "priceOnRequest": true,
+  "carpetArea": "800 sq.ft",
+  "frontage": "22 ft",
+  "suitableFor": [
+    "Jewellery",
+    "Clothing"
+  ],
+  "mainImage": "/uploads/properties/siddhivinayak-complex-showroom-satellite/photo-1.jpg"
+}

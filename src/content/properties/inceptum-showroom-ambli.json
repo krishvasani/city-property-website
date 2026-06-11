@@ -1,0 +1,93 @@
+{
+  "title": "5,800 sq.ft Showroom · Inceptum, Ambli",
+  "slug": "inceptum-showroom-ambli",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹140 / sq.ft",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "address": "Inceptum, Maruti Road, Ambli Road, opp. Hotel Planet Landmark, off Sarkhej Gandhinagar Highway, Ambli, Ahmedabad, Gujarat 380058",
+  "geo": {
+    "lat": 23.02880508010395,
+    "lng": 72.47856165874559
+  },
+  "area": "5,800 sq.ft super built up",
+  "floor": "Ground floor",
+  "totalFloors": "G+10",
+  "age": "newly constructed",
+  "amenities": [
+    "3 lifts",
+    "8 units per floor"
+  ],
+  "description": [
+    "Ground floor showroom in Inceptum, Ambli, with 5,800 sq.ft super built up and 3,100 sq.ft carpet and a 38 ft frontage.",
+    "Set in a G+10 building with 3 lifts and 8 units per floor, newly constructed. Rent is ₹140 per sq.ft on super built up or ₹260 per sq.ft on carpet. Well suited to Cafe, Restaurant, Clothing, Garments, Designer and Salon."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/inceptum-showroom-ambli/photo-1.jpg",
+      "alt": "Inceptum in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/inceptum-showroom-ambli/photo-2.jpg",
+      "alt": "Inceptum in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/inceptum-showroom-ambli/photo-3.jpg",
+      "alt": "Inceptum in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/inceptum-showroom-ambli/photo-4.jpg",
+      "alt": "Inceptum in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/inceptum-showroom-ambli/photo-5.jpg",
+      "alt": "Inceptum in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/inceptum-showroom-ambli/photo-6.jpg",
+      "alt": "Inceptum in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/inceptum-showroom-ambli/photo-7.jpg",
+      "alt": "Inceptum in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/inceptum-showroom-ambli/photo-8.jpg",
+      "alt": "Inceptum in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/inceptum-showroom-ambli/photo-9.jpg",
+      "alt": "Inceptum in Ambli, Ahmedabad",
+      "label": "Showroom photo"
+    }
+  ],
+  "newAt": "2026-06-11",
+  "seoTitle": "Inceptum showroom Ambli | City Property Services",
+  "seoDescription": "Ground floor showroom in Inceptum, Ambli, with 5,800 sq.ft super built up and 3,100 sq.ft carpet and a 38 ft frontage.",
+  "priceValue": 812000,
+  "pricePer": "per month (super built up)",
+  "perSqftDisplay": "₹140 per sq.ft super built up · ₹260 per sq.ft carpet",
+  "builtUpArea": "5,800 sq.ft",
+  "carpetArea": "3,100 sq.ft",
+  "frontage": "38 ft",
+  "suitableFor": [
+    "Cafe",
+    "Restaurant",
+    "Clothing",
+    "Garments",
+    "Designer",
+    "Salon"
+  ],
+  "mainImage": "/uploads/properties/inceptum-showroom-ambli/photo-1.jpg"
+}

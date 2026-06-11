@@ -1,0 +1,96 @@
+{
+  "title": "4,200 sq.ft Showroom · One World Metro, Thaltej",
+  "slug": "one-world-metro-showroom-thaltej",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹110 / sq.ft",
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "address": "One World Metro, Thaltej Shilaj Road, Thaltej, Ahmedabad, Gujarat 380059",
+  "geo": {
+    "lat": 23.050226503367746,
+    "lng": 72.49523856214222
+  },
+  "area": "4,200 sq.ft super built up",
+  "floor": "Ground floor",
+  "totalFloors": "G+7",
+  "age": "around 5 to 10 years old",
+  "amenities": [
+    "1 lifts",
+    "8 units per floor"
+  ],
+  "description": [
+    "Ground floor showroom in One World Metro, Thaltej, with 4,200 sq.ft super built up and 2,500 sq.ft carpet and a 30 ft frontage.",
+    "Set in a G+7 building with 1 lifts and 8 units per floor, around 5 to 10 years old. Rent is ₹110 per sq.ft on super built up or ₹185 per sq.ft on carpet. Well suited to Furniture, Clothing, Garments, Designer, Salon, Jewellery, Bank, Cafe and Restaurant."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/one-world-metro-showroom-thaltej/photo-1.jpg",
+      "alt": "One World Metro in Thaltej, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/one-world-metro-showroom-thaltej/photo-2.jpg",
+      "alt": "One World Metro in Thaltej, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/one-world-metro-showroom-thaltej/photo-3.jpg",
+      "alt": "One World Metro in Thaltej, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/one-world-metro-showroom-thaltej/photo-4.jpg",
+      "alt": "One World Metro in Thaltej, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/one-world-metro-showroom-thaltej/photo-5.jpg",
+      "alt": "One World Metro in Thaltej, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/one-world-metro-showroom-thaltej/photo-6.jpg",
+      "alt": "One World Metro in Thaltej, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/one-world-metro-showroom-thaltej/photo-7.jpg",
+      "alt": "One World Metro in Thaltej, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/one-world-metro-showroom-thaltej/photo-8.jpg",
+      "alt": "One World Metro in Thaltej, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/one-world-metro-showroom-thaltej/photo-9.jpg",
+      "alt": "One World Metro in Thaltej, Ahmedabad",
+      "label": "Showroom photo"
+    }
+  ],
+  "newAt": "2026-06-11",
+  "seoTitle": "One World Metro showroom Thaltej | City Property Services",
+  "seoDescription": "Ground floor showroom in One World Metro, Thaltej, with 4,200 sq.ft super built up and 2,500 sq.ft carpet and a 30 ft frontage.",
+  "priceValue": 462000,
+  "pricePer": "per month (super built up)",
+  "perSqftDisplay": "₹110 per sq.ft super built up · ₹185 per sq.ft carpet",
+  "builtUpArea": "4,200 sq.ft",
+  "carpetArea": "2,500 sq.ft",
+  "frontage": "30 ft",
+  "suitableFor": [
+    "Furniture",
+    "Clothing",
+    "Garments",
+    "Designer",
+    "Salon",
+    "Jewellery",
+    "Bank",
+    "Cafe",
+    "Restaurant"
+  ],
+  "mainImage": "/uploads/properties/one-world-metro-showroom-thaltej/photo-1.jpg"
+}

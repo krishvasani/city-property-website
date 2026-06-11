@@ -1,0 +1,76 @@
+{
+  "title": "2,800 sq.ft Showroom · Maruti The Ridge, SG Highway",
+  "slug": "maruti-the-ridge-showroom-sg-highway",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹130 / sq.ft",
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "address": "Maruti The Ridge, opp. Wide Angle Cinema and Novotel Hotel, Iscon Cross Road, Sarkhej Gandhinagar Highway, Ahmedabad, Gujarat 380058",
+  "geo": {
+    "lat": 23.097356828593227,
+    "lng": 72.53133987796656
+  },
+  "area": "2,800 sq.ft super built up",
+  "floor": "Ground floor",
+  "totalFloors": "G+10",
+  "age": "newly constructed",
+  "amenities": [
+    "1 lifts",
+    "6 units per floor"
+  ],
+  "description": [
+    "Ground floor showroom in Maruti The Ridge, SG Highway, with 2,800 sq.ft super built up and 1,500 sq.ft carpet and a 25 ft frontage.",
+    "Set in a G+10 building with 1 lifts and 6 units per floor, newly constructed. Rent is ₹130 per sq.ft on super built up or ₹240 per sq.ft on carpet. Well suited to Clothing, Garments, Designer and Salon."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/maruti-the-ridge-showroom-sg-highway/photo-1.jpg",
+      "alt": "Maruti The Ridge in SG Highway, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/maruti-the-ridge-showroom-sg-highway/photo-2.jpg",
+      "alt": "Maruti The Ridge in SG Highway, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/maruti-the-ridge-showroom-sg-highway/photo-3.jpg",
+      "alt": "Maruti The Ridge in SG Highway, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/maruti-the-ridge-showroom-sg-highway/photo-4.jpg",
+      "alt": "Maruti The Ridge in SG Highway, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/maruti-the-ridge-showroom-sg-highway/photo-5.jpg",
+      "alt": "Maruti The Ridge in SG Highway, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/maruti-the-ridge-showroom-sg-highway/photo-6.jpg",
+      "alt": "Maruti The Ridge in SG Highway, Ahmedabad",
+      "label": "Showroom photo"
+    }
+  ],
+  "newAt": "2026-06-11",
+  "seoTitle": "Maruti The Ridge showroom SG Highway | City Property Services",
+  "seoDescription": "Ground floor showroom in Maruti The Ridge, SG Highway, with 2,800 sq.ft super built up and 1,500 sq.ft carpet and a 25 ft frontage.",
+  "priceValue": 364000,
+  "pricePer": "per month (super built up)",
+  "perSqftDisplay": "₹130 per sq.ft super built up · ₹240 per sq.ft carpet",
+  "builtUpArea": "2,800 sq.ft",
+  "carpetArea": "1,500 sq.ft",
+  "frontage": "25 ft",
+  "suitableFor": [
+    "Clothing",
+    "Garments",
+    "Designer",
+    "Salon"
+  ],
+  "mainImage": "/uploads/properties/maruti-the-ridge-showroom-sg-highway/photo-1.jpg"
+}

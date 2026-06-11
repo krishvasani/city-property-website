@@ -1,0 +1,83 @@
+{
+  "title": "3,500 sq.ft Bungalow · Judges Bungalow Road, Vastrapur",
+  "slug": "judges-bungalow-road-bungalow-vastrapur",
+  "status": "rent",
+  "propertyType": "bungalow",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹325,000",
+  "localityName": "Vastrapur",
+  "city": "Ahmedabad",
+  "address": "Judges Bungalow Road, Vastrapur, Ahmedabad",
+  "geo": {
+    "lat": 23.035402395862793,
+    "lng": 72.52995032923187
+  },
+  "area": "3,500 sq.ft carpet",
+  "floor": "Ground floor",
+  "totalFloors": "Basement + Ground",
+  "age": "around 5 to 10 years old",
+  "amenities": [
+    "1 homes per floor"
+  ],
+  "description": [
+    "Ground floor bungalow on Judges Bungalow Road, Vastrapur, with 3,500 sq.ft carpet and a 80 ft frontage.",
+    "Set in a Basement + Ground building with 1 homes per floor, around 5 to 10 years old. Fully furnished. Rent is ₹325,000 per month. Well suited to Furniture, Clothing, Garments, Designer, Salon, Jewellery, Cafe and Restaurant."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/judges-bungalow-road-bungalow-vastrapur/photo-1.jpg",
+      "alt": "Bungalow in Vastrapur, Ahmedabad",
+      "label": "Bungalow photo"
+    },
+    {
+      "url": "/uploads/properties/judges-bungalow-road-bungalow-vastrapur/photo-2.jpg",
+      "alt": "Bungalow in Vastrapur, Ahmedabad",
+      "label": "Bungalow photo"
+    },
+    {
+      "url": "/uploads/properties/judges-bungalow-road-bungalow-vastrapur/photo-3.jpg",
+      "alt": "Bungalow in Vastrapur, Ahmedabad",
+      "label": "Bungalow photo"
+    },
+    {
+      "url": "/uploads/properties/judges-bungalow-road-bungalow-vastrapur/photo-4.jpg",
+      "alt": "Bungalow in Vastrapur, Ahmedabad",
+      "label": "Bungalow photo"
+    },
+    {
+      "url": "/uploads/properties/judges-bungalow-road-bungalow-vastrapur/photo-5.jpg",
+      "alt": "Bungalow in Vastrapur, Ahmedabad",
+      "label": "Bungalow photo"
+    },
+    {
+      "url": "/uploads/properties/judges-bungalow-road-bungalow-vastrapur/photo-6.jpg",
+      "alt": "Bungalow in Vastrapur, Ahmedabad",
+      "label": "Bungalow photo"
+    },
+    {
+      "url": "/uploads/properties/judges-bungalow-road-bungalow-vastrapur/photo-7.jpg",
+      "alt": "Bungalow in Vastrapur, Ahmedabad",
+      "label": "Bungalow photo"
+    }
+  ],
+  "newAt": "2026-06-11",
+  "seoTitle": "Judges Bungalow Road bungalow Vastrapur | City Property Services",
+  "seoDescription": "Ground floor bungalow on Judges Bungalow Road, Vastrapur, with 3,500 sq.ft carpet and a 80 ft frontage.",
+  "priceValue": 325000,
+  "pricePer": "per month",
+  "carpetArea": "3,500 sq.ft",
+  "frontage": "80 ft",
+  "furnishing": "Fully furnished",
+  "suitableFor": [
+    "Furniture",
+    "Clothing",
+    "Garments",
+    "Designer",
+    "Salon",
+    "Jewellery",
+    "Cafe",
+    "Restaurant"
+  ],
+  "mainImage": "/uploads/properties/judges-bungalow-road-bungalow-vastrapur/photo-1.jpg"
+}

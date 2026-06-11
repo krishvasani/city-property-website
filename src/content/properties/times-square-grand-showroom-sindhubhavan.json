@@ -1,0 +1,88 @@
+{
+  "title": "6,865 sq.ft Showroom · Times Square Grand, Bodakdev",
+  "slug": "times-square-grand-showroom-sindhubhavan",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹70 / sq.ft",
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "Times Square Grand, Sindhu Bhavan Marg, Bodakdev, Ahmedabad, Gujarat 380059",
+  "geo": {
+    "lat": 23.038884512238834,
+    "lng": 72.50541032750391
+  },
+  "area": "6,865 sq.ft super built up",
+  "floor": "Ground floor",
+  "totalFloors": "G+7",
+  "age": "1 to 5 years old",
+  "amenities": [
+    "4 lifts",
+    "17 units per floor"
+  ],
+  "description": [
+    "Ground floor showroom in Times Square Grand, Bodakdev, with 6,865 sq.ft super built up and 3,775 sq.ft carpet and a 35 ft frontage.",
+    "Set in a G+7 building with 4 lifts and 17 units per floor, 1 to 5 years old. Rent is ₹70 per sq.ft on super built up or ₹128 per sq.ft on carpet. Well suited to Furniture, Restaurant, Clothing, Garments, Designer and Salon."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/times-square-grand-showroom-sindhubhavan/photo-1.jpg",
+      "alt": "Times Square Grand in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/times-square-grand-showroom-sindhubhavan/photo-2.jpg",
+      "alt": "Times Square Grand in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/times-square-grand-showroom-sindhubhavan/photo-3.jpg",
+      "alt": "Times Square Grand in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/times-square-grand-showroom-sindhubhavan/photo-4.jpg",
+      "alt": "Times Square Grand in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/times-square-grand-showroom-sindhubhavan/photo-5.jpg",
+      "alt": "Times Square Grand in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/times-square-grand-showroom-sindhubhavan/photo-6.jpg",
+      "alt": "Times Square Grand in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/times-square-grand-showroom-sindhubhavan/photo-7.jpg",
+      "alt": "Times Square Grand in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/times-square-grand-showroom-sindhubhavan/photo-8.jpg",
+      "alt": "Times Square Grand in Bodakdev, Ahmedabad",
+      "label": "Showroom photo"
+    }
+  ],
+  "newAt": "2026-06-11",
+  "seoTitle": "Times Square Grand showroom Bodakdev | City Property Services",
+  "seoDescription": "Ground floor showroom in Times Square Grand, Bodakdev, with 6,865 sq.ft super built up and 3,775 sq.ft carpet and a 35 ft frontage.",
+  "priceValue": 480550,
+  "pricePer": "per month (super built up)",
+  "perSqftDisplay": "₹70 per sq.ft super built up · ₹128 per sq.ft carpet",
+  "builtUpArea": "6,865 sq.ft",
+  "carpetArea": "3,775 sq.ft",
+  "frontage": "35 ft",
+  "suitableFor": [
+    "Furniture",
+    "Restaurant",
+    "Clothing",
+    "Garments",
+    "Designer",
+    "Salon"
+  ],
+  "mainImage": "/uploads/properties/times-square-grand-showroom-sindhubhavan/photo-1.jpg"
+}

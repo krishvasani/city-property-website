@@ -1,0 +1,93 @@
+{
+  "title": "1,300 sq.ft Showroom · The Verity, Satellite",
+  "slug": "the-verity-showroom-satellite",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹150 / sq.ft",
+  "localityName": "Satellite",
+  "city": "Ahmedabad",
+  "address": "The Verity, opp. Star Bazaar, Panchsheel Enclave, Satellite, Ahmedabad, Gujarat 380015",
+  "geo": {
+    "lat": 23.02933378385278,
+    "lng": 72.55038066039086
+  },
+  "area": "1,300 sq.ft super built up",
+  "floor": "Ground floor",
+  "totalFloors": "G+2",
+  "age": "newly constructed",
+  "amenities": [
+    "2 lifts",
+    "13 units per floor"
+  ],
+  "description": [
+    "Ground floor showroom in The Verity, Satellite, with 1,300 sq.ft super built up and 715 sq.ft carpet and a 15 ft frontage.",
+    "Set in a G+2 building with 2 lifts and 13 units per floor, newly constructed. Rent is ₹150 per sq.ft on super built up or ₹272 per sq.ft on carpet. Well suited to Furniture, Clothing, Garments, Designer, Salon and Jewellery."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/the-verity-showroom-satellite/photo-1.jpg",
+      "alt": "The Verity in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/the-verity-showroom-satellite/photo-2.jpg",
+      "alt": "The Verity in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/the-verity-showroom-satellite/photo-3.jpg",
+      "alt": "The Verity in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/the-verity-showroom-satellite/photo-4.jpg",
+      "alt": "The Verity in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/the-verity-showroom-satellite/photo-5.jpg",
+      "alt": "The Verity in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/the-verity-showroom-satellite/photo-6.jpg",
+      "alt": "The Verity in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/the-verity-showroom-satellite/photo-7.jpg",
+      "alt": "The Verity in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/the-verity-showroom-satellite/photo-8.jpg",
+      "alt": "The Verity in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/the-verity-showroom-satellite/photo-9.jpg",
+      "alt": "The Verity in Satellite, Ahmedabad",
+      "label": "Showroom photo"
+    }
+  ],
+  "newAt": "2026-06-11",
+  "seoTitle": "The Verity showroom Satellite | City Property Services",
+  "seoDescription": "Ground floor showroom in The Verity, Satellite, with 1,300 sq.ft super built up and 715 sq.ft carpet and a 15 ft frontage.",
+  "priceValue": 195000,
+  "pricePer": "per month (super built up)",
+  "perSqftDisplay": "₹150 per sq.ft super built up · ₹272 per sq.ft carpet",
+  "builtUpArea": "1,300 sq.ft",
+  "carpetArea": "715 sq.ft",
+  "frontage": "15 ft",
+  "suitableFor": [
+    "Furniture",
+    "Clothing",
+    "Garments",
+    "Designer",
+    "Salon",
+    "Jewellery"
+  ],
+  "mainImage": "/uploads/properties/the-verity-showroom-satellite/photo-1.jpg"
+}
