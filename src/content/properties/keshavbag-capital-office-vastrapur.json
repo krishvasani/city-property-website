@@ -1,0 +1,32 @@
+{
+  "title": "12,500 sq.ft Office · Keshavbag Capital, Vastrapur",
+  "slug": "keshavbag-capital-office-vastrapur",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹65 / sq.ft",
+  "localityName": "Vastrapur",
+  "city": "Ahmedabad",
+  "address": "Keshavbag Capital, Vastrapur, Ahmedabad",
+  "area": "12,500 sq.ft",
+  "age": "",
+  "amenities": [],
+  "description": [
+    "Office space of 12,500 sq.ft in Keshavbag Capital, Vastrapur.",
+    "Available unfurnished at ₹65 per sq.ft or fully furnished at ₹85 per sq.ft per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-11",
+  "seoTitle": "Keshavbag Capital Vastrapur | City Property Services",
+  "seoDescription": "Office space of 12,500 sq.ft in Keshavbag Capital, Vastrapur.",
+  "priceValue": 812500,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹65 per sq.ft unfurnished · ₹85 per sq.ft furnished",
+  "areaSqft": 12500,
+  "furnishing": "Unfurnished or furnished",
+  "geo": {
+    "lat": 23.029473660865925,
+    "lng": 72.53092677984758
+  }
+}

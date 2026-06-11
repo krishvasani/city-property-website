@@ -1,0 +1,33 @@
+{
+  "title": "4 BHK 4,385 sq.ft Flat for Sale · Iscon Platinium, Bopal",
+  "slug": "iscon-platinium-4bhk-bopal",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹3.11 Cr",
+  "localityName": "Bopal",
+  "city": "Ahmedabad",
+  "address": "Iscon Platinium, Bopal, Ahmedabad",
+  "area": "4,385 sq.ft",
+  "age": "7 years",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "4 BHK flat of 4,385 sq.ft in Iscon Platinium, Bopal.",
+    "Set in a 20 storey tower with two lifts, about 7 years old. Priced at ₹3.11 Cr."
+  ],
+  "photos": [],
+  "newAt": "2026-06-11",
+  "seoTitle": "Iscon Platinium Bopal | City Property Services",
+  "seoDescription": "4 BHK flat of 4,385 sq.ft in Iscon Platinium, Bopal.",
+  "priceValue": 31100000,
+  "beds": 4,
+  "areaSqft": 4385,
+  "totalFloors": "20 storeys",
+  "geo": {
+    "lat": 23.029960576008488,
+    "lng": 72.46475773307566
+  }
+}

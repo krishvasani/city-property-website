@@ -1,0 +1,34 @@
+{
+  "title": "4 BHK 5,250 sq.ft Flat for Sale · Viola, Ambli",
+  "slug": "viola-4bhk-ambli",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹4.73 Cr",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "address": "Viola, Ambli, Ahmedabad",
+  "area": "5,250 sq.ft",
+  "age": "newly constructed",
+  "amenities": [
+    "3 lifts"
+  ],
+  "description": [
+    "4 BHK flat of 5,250 sq.ft in Viola, on Ambli Road.",
+    "A newly constructed 20 storey tower with three lifts. Priced at ₹9,000 per sq.ft, about ₹4.73 Cr."
+  ],
+  "photos": [],
+  "newAt": "2026-06-11",
+  "seoTitle": "Viola Ambli | City Property Services",
+  "seoDescription": "4 BHK flat of 5,250 sq.ft in Viola, on Ambli Road.",
+  "priceValue": 47250000,
+  "perSqftDisplay": "₹9,000 per sq.ft",
+  "beds": 4,
+  "areaSqft": 5250,
+  "totalFloors": "20 storeys",
+  "geo": {
+    "lat": 23.05370161350468,
+    "lng": 72.49285645736624
+  }
+}
