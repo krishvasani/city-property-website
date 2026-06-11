@@ -1,0 +1,36 @@
+{
+  "title": "5,250 sq.ft Office · Shivalik 10, Satellite",
+  "slug": "shivalik-10-office-satellite",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹62 / sq.ft",
+  "localityName": "Satellite",
+  "city": "Ahmedabad",
+  "address": "Shivalik 10, Satellite, Ahmedabad",
+  "area": "5,250 sq.ft",
+  "totalFloors": "High rise",
+  "age": "13 years",
+  "amenities": [
+    "2 lifts",
+    "4 parking"
+  ],
+  "description": [
+    "Office space of 5,250 sq.ft in Shivalik 10, Satellite, available on rent at ₹62 per sq.ft.",
+    "A fitted out floor with 4 car parking, two lifts and a layout of 65 washrooms, 4 cabins and 4 conference rooms. About 13 years old."
+  ],
+  "photos": [],
+  "newAt": "2026-06-11",
+  "seoTitle": "Shivalik 10 Satellite | City Property Services",
+  "seoDescription": "Office space of 5,250 sq.ft in Shivalik 10, Satellite, available on rent at ₹62 per sq.ft.",
+  "priceValue": 325500,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹62 per sq.ft",
+  "areaSqft": 5250,
+  "parking": "4 parking",
+  "geo": {
+    "lat": 23.023001349019147,
+    "lng": 72.54727346964525
+  }
+}

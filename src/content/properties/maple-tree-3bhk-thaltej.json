@@ -1,0 +1,79 @@
+{
+  "title": "3 BHK 2,200 sq.ft Flat for Sale · Maple Tree, Thaltej",
+  "slug": "maple-tree-3bhk-thaltej",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.6 Cr",
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "address": "Maple Tree, Thaltej, Ahmedabad",
+  "area": "2,200 sq.ft",
+  "totalFloors": "7 floors",
+  "age": "7 years",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "Fully furnished 3 BHK flat in Maple Tree, Thaltej, with 2,200 sq.ft super built up and 1,320 sq.ft carpet on the 7th floor.",
+    "Two lifts, about 7 years old. Priced at ₹2.6 Cr."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/maple-tree-3bhk-thaltej/photo-1.jpg",
+      "alt": "Maple Tree in Thaltej, Ahmedabad",
+      "label": "Apartment photo"
+    },
+    {
+      "url": "/uploads/properties/maple-tree-3bhk-thaltej/photo-2.jpg",
+      "alt": "Maple Tree in Thaltej, Ahmedabad",
+      "label": "Apartment photo"
+    },
+    {
+      "url": "/uploads/properties/maple-tree-3bhk-thaltej/photo-3.jpg",
+      "alt": "Maple Tree in Thaltej, Ahmedabad",
+      "label": "Apartment photo"
+    },
+    {
+      "url": "/uploads/properties/maple-tree-3bhk-thaltej/photo-4.jpg",
+      "alt": "Maple Tree in Thaltej, Ahmedabad",
+      "label": "Apartment photo"
+    },
+    {
+      "url": "/uploads/properties/maple-tree-3bhk-thaltej/photo-5.jpg",
+      "alt": "Maple Tree in Thaltej, Ahmedabad",
+      "label": "Apartment photo"
+    },
+    {
+      "url": "/uploads/properties/maple-tree-3bhk-thaltej/photo-6.jpg",
+      "alt": "Maple Tree in Thaltej, Ahmedabad",
+      "label": "Apartment photo"
+    },
+    {
+      "url": "/uploads/properties/maple-tree-3bhk-thaltej/photo-7.jpg",
+      "alt": "Maple Tree in Thaltej, Ahmedabad",
+      "label": "Apartment photo"
+    },
+    {
+      "url": "/uploads/properties/maple-tree-3bhk-thaltej/photo-8.jpg",
+      "alt": "Maple Tree in Thaltej, Ahmedabad",
+      "label": "Apartment photo"
+    }
+  ],
+  "newAt": "2026-06-11",
+  "seoTitle": "Maple Tree Thaltej | City Property Services",
+  "seoDescription": "Fully furnished 3 BHK flat in Maple Tree, Thaltej, with 2,200 sq.ft super built up and 1,320 sq.ft carpet on the 7th floor.",
+  "priceValue": 26000000,
+  "beds": 3,
+  "areaSqft": 2200,
+  "builtUpArea": "2,200 sq.ft",
+  "carpetArea": "1,320 sq.ft",
+  "floor": "7th floor",
+  "furnishing": "Fully furnished",
+  "geo": {
+    "lat": 23.060844387926014,
+    "lng": 72.49009903081551
+  },
+  "mainImage": "/uploads/properties/maple-tree-3bhk-thaltej/photo-1.jpg"
+}

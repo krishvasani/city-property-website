@@ -1,0 +1,34 @@
+{
+  "title": "4 BHK 5,100 sq.ft Flat for Sale · Sankalp Grace 3, Thaltej",
+  "slug": "sankalp-grace-3-4bhk-thaltej",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹4.5 Cr",
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "address": "Sankalp Grace 3, Thaltej, Ahmedabad",
+  "area": "5,100 sq.ft",
+  "totalFloors": "High rise",
+  "age": "8 years",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "Spacious 4 BHK flat of 5,100 sq.ft in Sankalp Grace 3, Thaltej, on the 12th floor.",
+    "Set in a well maintained high rise with two lifts, about 8 years old. Priced at ₹4.5 Cr."
+  ],
+  "photos": [],
+  "newAt": "2026-06-11",
+  "seoTitle": "Sankalp Grace 3 Thaltej | City Property Services",
+  "seoDescription": "Spacious 4 BHK flat of 5,100 sq.ft in Sankalp Grace 3, Thaltej, on the 12th floor.",
+  "priceValue": 45000000,
+  "beds": 4,
+  "areaSqft": 5100,
+  "floor": "12th floor",
+  "geo": {
+    "lat": 23.055034269952248,
+    "lng": 72.48438686554186
+  }
+}

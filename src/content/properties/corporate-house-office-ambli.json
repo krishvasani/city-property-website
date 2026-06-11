@@ -1,0 +1,35 @@
+{
+  "title": "12,500 sq.ft Office · Corporate House, Ambli",
+  "slug": "corporate-house-office-ambli",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹60 / sq.ft",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "address": "Corporate House, Ambli Road, Ahmedabad",
+  "area": "12,500 sq.ft",
+  "totalFloors": "G+2",
+  "age": "10 years",
+  "amenities": [
+    "1 lifts"
+  ],
+  "description": [
+    "Standalone corporate building of 12,500 sq.ft on Ambli Road, available on rent at ₹60 per sq.ft.",
+    "An individual G+2 structure, unfurnished, with one lift, about 10 years old. Well suited to a head office or corporate occupier."
+  ],
+  "photos": [],
+  "newAt": "2026-06-11",
+  "seoTitle": "Corporate House Ambli | City Property Services",
+  "seoDescription": "Standalone corporate building of 12,500 sq.ft on Ambli Road, available on rent at ₹60 per sq.ft.",
+  "priceValue": 750000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹60 per sq.ft",
+  "areaSqft": 12500,
+  "furnishing": "Unfurnished",
+  "geo": {
+    "lat": 23.053671997465372,
+    "lng": 72.49302811873059
+  }
+}
