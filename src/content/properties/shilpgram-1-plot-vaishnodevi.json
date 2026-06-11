@@ -59,5 +59,9 @@
   "seoDescription": "Plot of 1,525 sq.yd in Shilpgram 1 near Vaishnodevi.",
   "priceOnRequest": true,
   "plotSize": "1,525 sq.yd",
-  "mainImage": "/uploads/properties/shilpgram-1-plot-vaishnodevi/photo-1.jpg"
+  "mainImage": "/uploads/properties/shilpgram-1-plot-vaishnodevi/photo-1.jpg",
+  "geo": {
+    "lat": 23.113757,
+    "lng": 72.541764
+  }
 }

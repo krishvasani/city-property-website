@@ -22,5 +22,9 @@
   "seoDescription": "Plot of 1,146 sq.yd in Prakruti, Rancharda and Ranchodpur.",
   "priceValue": 48132000,
   "perSqftDisplay": "₹42,000 per sq.yd",
-  "plotSize": "1,146 sq.yd"
+  "plotSize": "1,146 sq.yd",
+  "geo": {
+    "lat": 23.069964,
+    "lng": 72.443512
+  }
 }
