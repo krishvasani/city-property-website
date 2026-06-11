@@ -446,3 +446,17 @@ img, svg, video, canvas, iframe { max-width: 100%; }
   .pt-js body.pt-ready main { transform: none; transition: transform .6s var(--ease-out); }
 }
 
+/* ── Shared layout primitives (also defined per-page; promoted to global so
+   locality and other new pages render consistently) ──────────────────── */
+.page-hero { padding: 64px 0 8px; }
+.section { padding-block: 64px; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.between { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.band { background: var(--navy); border-radius: var(--r-xl); padding: 56px; color: #fff; position: relative; overflow: hidden; }
+.band::after { content: ""; position: absolute; right: -80px; top: -80px; width: 320px; height: 320px; border-radius: 999px; background: rgba(72,152,208,.22); filter: blur(10px); }
+.band h2, .band p { position: relative; }
+.band .btn-primary, .btn-light { background: #fff; color: var(--navy); box-shadow: var(--shadow-sm); }
+.band .btn-primary:hover, .btn-light:hover { background: #eef3f6; }
+@media (max-width: 980px) { .cards { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 680px) { .cards { grid-template-columns: 1fr; } .band { padding: 36px 28px; } }
+

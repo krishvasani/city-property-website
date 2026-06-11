@@ -1,0 +1,165 @@
+---
+import Base from '../../layouts/Base.astro';
+import PropertyCard from '../../components/PropertyCard.astro';
+import Icon from '../../components/Icon.astro';
+import { getProperties } from '../../lib/data';
+import { getAllLocalities, getLocalityById } from '../../data/localities';
+import { site } from '../../lib/config';
+
+// Generate pages for prime localities (priority 1–2) and any locality that has
+// live listings, so pages are useful (never thin) and property breadcrumbs resolve.
+export async function getStaticPaths() {
+  const localities = getAllLocalities();
+  const props = await getProperties();
+  const withListings = new Set(props.map((p) => p.localitySlug).filter(Boolean));
+  return localities
+    .filter((l) => l.priority <= 2 || withListings.has(l.id))
+    .map((l) => ({ params: { slug: l.slug }, props: { localityId: l.id } }));
+}
+
+interface Props { localityId: string }
+const { localityId } = Astro.props;
+const loc = getLocalityById(localityId)!;
+
+const all = await getProperties();
+const listings = all.filter((p) => p.localitySlug === loc.id);
+const rel = loc.propertyRelevance;
+const nearby = loc.nearbyAreas.map((id) => getLocalityById(id)).filter(Boolean).slice(0, 8) as NonNullable<ReturnType<typeof getLocalityById>>[];
+// Which nearby areas have their own landing page (so we only link to real pages).
+const pageSlugs = new Set(
+  getAllLocalities().filter((l) => l.priority <= 2 || all.some((p) => p.localitySlug === l.id)).map((l) => l.id),
+);
+
+const title = loc.seoTitle || `Property in ${loc.name}, Ahmedabad | Buy, Rent & Invest`;
+const description =
+  loc.seoDescription ||
+  `${loc.name}, ${loc.city} real estate. Buy, rent, lease and invest in property in ${loc.name} with City Property Services, Ahmedabad's full spectrum property consultants.`;
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Localities', url: '/localities' },
+  { name: loc.name, url: `/localities/${loc.slug}` },
+];
+const placeSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Place',
+  name: `${loc.name}, ${loc.city}`,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: loc.name,
+    addressRegion: 'Gujarat',
+    addressCountry: 'IN',
+    ...(loc.pincode ? { postalCode: loc.pincode } : {}),
+  },
+  ...(loc.latitude != null
+    ? { geo: { '@type': 'GeoCoordinates', latitude: loc.latitude, longitude: loc.longitude } }
+    : {}),
+};
+const relBits = [
+  rel.buy && 'buying',
+  rel.rent && 'renting',
+  rel.lease && 'leasing',
+  rel.commercial && 'commercial space',
+  rel.industrial && 'industrial property',
+  rel.warehousing && 'warehousing',
+  rel.plots && 'plots and land',
+].filter(Boolean) as string[];
+---
+<Base title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={placeSchema} active="buy">
+  <main class="wrap-wide loc-page">
+    <nav class="crumb">
+      <a href="/">Home</a> <span>/</span> <a href="/localities">Localities</a> <span>/</span>
+      <span style="color:var(--ink);">{loc.name}</span>
+    </nav>
+
+    <section class="page-hero reveal">
+      <div class="eyebrow">{loc.region}{loc.microMarket ? ` · ${loc.microMarket}` : ''}</div>
+      <h1 class="display" style="max-width:18ch;margin-top:12px;">Property in {loc.name}, Ahmedabad</h1>
+      <p class="body-lg muted" style="max-width:64ch;margin-top:16px;">{loc.description}</p>
+      <div class="loc-actions">
+        {rel.buy && <a class="btn btn-primary" href={`/buy?locality=${loc.id}`}>Buy in {loc.name}</a>}
+        {rel.rent && <a class="btn btn-secondary" href={`/rent?locality=${loc.id}`}>Rent in {loc.name}</a>}
+        <a class="btn btn-secondary" href="/map">View on map</a>
+        <a class="btn btn-secondary" href="/consult">Talk to an advisor</a>
+      </div>
+    </section>
+
+    {loc.popularFor?.length > 0 && (
+      <section class="section reveal">
+        <h2>What {loc.name} is known for</h2>
+        <div class="chips">
+          {loc.popularFor.map((p) => <span class="chip">{p}</span>)}
+        </div>
+        {relBits.length > 0 && (
+          <p class="muted" style="margin-top:16px;max-width:64ch;">
+            City Property Services advises on {relBits.join(', ')} across {loc.name} and the wider {loc.region} market.
+          </p>
+        )}
+      </section>
+    )}
+
+    {listings.length > 0 ? (
+      <section class="section reveal">
+        <h2>Properties in {loc.name}</h2>
+        <p class="muted" style="margin-bottom:20px;">{listings.length} live {listings.length === 1 ? 'listing' : 'listings'} in {loc.name}.</p>
+        <div class="cards">
+          {listings.slice(0, 9).map((p) => <PropertyCard property={p} />)}
+        </div>
+      </section>
+    ) : (
+      <section class="section reveal">
+        <div class="band between" style="align-items:center;">
+          <div>
+            <h2 style="color:#fff;">Looking for property in {loc.name}?</h2>
+            <p style="color:#c4d0d8;max-width:52ch;margin-top:8px;">We have off‑market and upcoming options in {loc.name} that are not always listed online. Tell us what you need and we will share matches.</p>
+          </div>
+          <a class="btn btn-light" href="/consult">Request options</a>
+        </div>
+      </section>
+    )}
+
+    {loc.connectivity?.length > 0 && (
+      <section class="section reveal">
+        <h2>Connectivity & access</h2>
+        <ul class="loc-list">
+          {loc.connectivity.map((c) => <li><Icon name="pin" sw={1.8} />{c}</li>)}
+        </ul>
+      </section>
+    )}
+
+    {nearby.length > 0 && (
+      <section class="section reveal">
+        <h2>Nearby areas</h2>
+        <div class="chips">
+          {nearby.map((n) => (
+            pageSlugs.has(n.id)
+              ? <a class="chip chip-link" href={`/localities/${n.slug}`}>{n.name}</a>
+              : <a class="chip chip-link" href={`/buy?locality=${n.id}`}>{n.name}</a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section class="section reveal">
+      <div class="band between" style="align-items:center;">
+        <div>
+          <h2 style="color:#fff;">Buy, sell, rent or invest in {loc.name}</h2>
+          <p style="color:#c4d0d8;max-width:54ch;margin-top:8px;">Talk to a local advisor who knows {loc.name} street by street, for honest guidance on price, locality and timing.</p>
+        </div>
+        <a class="btn btn-light" href="/consult">Request a consultation</a>
+      </div>
+    </section>
+  </main>
+</Base>
+
+<style is:global>
+  .loc-page .crumb { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--text-muted); padding: 20px 0 0; }
+  .loc-page .crumb a:hover { color: var(--navy); }
+  .loc-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .loc-page .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .loc-page .chip { display: inline-flex; align-items: center; padding: 8px 14px; border: 1px solid var(--hairline); border-radius: var(--r-pill); font-size: 13.5px; font-weight: 600; color: var(--text); background: var(--surface); }
+  .loc-page a.chip-link:hover { border-color: var(--navy); color: var(--navy); }
+  .loc-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 28px; max-width: 760px; }
+  .loc-list li { display: flex; align-items: center; gap: 10px; font-size: 15px; color: var(--text); }
+  .loc-list svg { width: 16px; height: 16px; color: var(--sky); flex: none; }
+  @media (max-width: 640px) { .loc-list { grid-template-columns: 1fr; } }
+</style>

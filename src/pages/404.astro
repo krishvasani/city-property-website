@@ -1,15 +1,18 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
-<Base title="Page not found" description="The page you’re looking for doesn’t exist.">
+<Base title="Page not found" description="The page you’re looking for doesn’t exist." noindex>
   <main class="wrap">
     <section style="text-align:center;padding:120px 0 140px;">
       <div class="display" style="color:var(--navy-tint);font-size:clamp(80px,16vw,160px);line-height:1;">404</div>
       <h1 class="h1" style="margin-top:8px;">We couldn’t find that page.</h1>
-      <p class="body-lg muted" style="max-width:46ch;margin:14px auto 0;">It may have moved, or the property may no longer be listed.</p>
-      <div class="row" style="justify-content:center;gap:12px;margin-top:28px;">
-        <a class="btn btn-primary" href="/buy">Browse properties</a>
-        <a class="btn btn-secondary" href="/">Back home</a>
+      <p class="body-lg muted" style="max-width:46ch;margin:14px auto 0;">It may have moved, or the property may no longer be listed. Here are some places to start.</p>
+      <div class="row" style="justify-content:center;gap:12px;margin-top:28px;flex-wrap:wrap;">
+        <a class="btn btn-primary" href="/buy">Buy property</a>
+        <a class="btn btn-secondary" href="/rent">Rent property</a>
+        <a class="btn btn-secondary" href="/sell">Sell your property</a>
+        <a class="btn btn-secondary" href="/consult">Talk to an expert</a>
+        <a class="btn btn-secondary" href="/blog">Read the blog</a>
       </div>
     </section>
   </main>

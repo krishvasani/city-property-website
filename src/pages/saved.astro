@@ -4,7 +4,7 @@ import PropertyCard from '../components/PropertyCard.astro';
 import { getProperties } from '../lib/data';
 const properties = await getProperties();
 ---
-<Base title="Saved properties" description="Your shortlisted properties." active="buy">
+<Base title="Saved properties" description="Your shortlisted properties." active="buy" noindex>
   <main class="wrap-wide">
     <section style="padding:48px 0 16px;">
       <div class="eyebrow">Your shortlist</div>

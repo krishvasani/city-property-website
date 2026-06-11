@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 // Public site URL — override with SITE_URL in the deploy environment.
-const site = process.env.SITE_URL || 'https://cityproperty.example.com';
+const site = process.env.SITE_URL || 'https://cityprop.co.in';
 
 // https://astro.build
 export default defineConfig({

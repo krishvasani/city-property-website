@@ -12,7 +12,7 @@ import LeadForm from '../../components/LeadForm.astro';
 import Map from '../../components/Map.astro';
 import { getProperties, getProperty, getSimilar } from '../../lib/data';
 import { getLocalityById } from '../../data/localities';
-import { contact } from '../../lib/config';
+import { contact, site } from '../../lib/config';
 
 export async function getStaticPaths() {
   const properties = await getProperties();
@@ -42,7 +42,7 @@ const mapPins = [
 
 const leadContext = {
   property: property.title,
-  propertyUrl: new URL(Astro.url.pathname, Astro.site ?? 'https://cityproperty.example.com').href,
+  propertyUrl: new URL(Astro.url.pathname, Astro.site ?? 'https://cityprop.co.in').href,
   price: property.priceDisplay,
 };
 const waMessage = `Hi City Property Services, I’m interested in "${property.title}" (${property.priceDisplay}) in ${property.localityName}. Could you share more details?`;
@@ -67,8 +67,54 @@ const specs: [string, string][] = ([
   ['Dock access', property.dockAccess],
 ] as [string, string | undefined][]).filter((x): x is [string, string] => Boolean(x[1]));
 const photoCount = property.photos?.length ? Math.max(property.photos.length, 18) : 18;
+
+// ── SEO: keyword-aligned title/description, breadcrumbs, structured data ──
+const TYPE_LABELS: Record<string, string> = {
+  apartment: 'Flat', residential: 'Home', villa: 'Villa', bungalow: 'Bungalow', 'row house': 'Row House',
+  office: 'Office Space', commercial: 'Commercial Space', shop: 'Shop', showroom: 'Showroom', retail: 'Retail Space',
+  warehouse: 'Warehouse', warehousing: 'Warehouse', 'industrial shed': 'Industrial Shed', industrial: 'Industrial Space',
+  'industrial land': 'Industrial Land', land: 'Land', plot: 'Plot', 'residential land': 'Residential Plot',
+  'commercial land': 'Commercial Plot', investment: 'Investment Property',
+};
+const typeLabel = TYPE_LABELS[property.propertyType] ?? 'Property';
+const listingWord = property.status === 'sale' ? 'for Sale' : property.status === 'lease' ? 'for Lease' : 'for Rent';
+const seoTitle = `${typeLabel} ${listingWord} in ${property.localityName}, Ahmedabad`;
+const onRequest = !property.priceValue || property.priceDisplay === 'Price on request';
+const priceBit = onRequest ? '' : ` at ${property.priceDisplay}`;
+const seoDescription = `${typeLabel} ${listingWord.toLowerCase()} in ${property.localityName}, Ahmedabad${priceBit}. ${property.area ? property.area + '. ' : ''}Contact City Property Services for photos, details and a viewing.`.slice(0, 158);
+const ogImg = property.photos?.find((p) => p.url)?.url;
+const propUrl = new URL(Astro.url.pathname, site.url).href;
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: isRental ? 'Rent' : 'Buy', url: listPath },
+  ...(selfLoc ? [{ name: property.localityName, url: `/localities/${property.localitySlug}` }] : []),
+  { name: `${typeLabel} ${listingWord}`, url: Astro.url.pathname },
+];
+const schemaImages = (property.photos ?? []).filter((p) => p.url).slice(0, 6).map((p) => new URL(p.url!, site.url).href);
+const productSchema: Record<string, any> = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: property.title,
+  description: seoDescription,
+  category: typeLabel,
+  ...(schemaImages.length ? { image: schemaImages } : {}),
+  brand: { '@type': 'Organization', name: site.name },
+};
+if (!onRequest) {
+  productSchema.offers = property.status === 'sale'
+    ? { '@type': 'Offer', price: property.priceValue, priceCurrency: 'INR', availability: 'https://schema.org/InStock', url: propUrl }
+    : { '@type': 'Offer', priceCurrency: 'INR', availability: 'https://schema.org/InStock', url: propUrl,
+        priceSpecification: { '@type': 'UnitPriceSpecification', price: property.priceValue, priceCurrency: 'INR', unitText: 'MONTH' } };
+}
 ---
-<Base title={`${property.title} · ${property.localityName}`} description={`${property.priceDisplay} · ${property.title} in ${property.localityName}, Ahmedabad.`} active={isRental ? 'rent' : 'buy'}>
+<Base
+  title={seoTitle}
+  description={seoDescription}
+  active={isRental ? 'rent' : 'buy'}
+  ogImage={ogImg}
+  breadcrumbs={breadcrumbs}
+  jsonLd={productSchema}
+>
   <main class="wrap-wide">
     <nav class="crumb">
       <a href="/">Home</a><span class="sep">›</span>

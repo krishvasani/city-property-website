@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getCollection, type CollectionEntry } from 'astro:content';
+import { site } from '../../lib/config';
 
 const COVER_FALLBACK = '/images/blog/ahmedabad-residential.jpg';
 
@@ -24,11 +25,40 @@ const all = (await getCollection('blog', ({ data }) => !data.draft)).sort(
 const same = all.filter((p) => p.slug !== entry.slug && p.data.category === post.category);
 const rest = all.filter((p) => p.slug !== entry.slug && p.data.category !== post.category);
 const related = [...same, ...rest].slice(0, 3);
+
+// ── SEO: Article schema + breadcrumbs ──
+const coverAbs = new URL(post.coverImage ?? COVER_FALLBACK, site.url).href;
+const published = post.date.toISOString();
+const updated = (post as { updated?: Date }).updated?.toISOString() ?? published;
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Blog', url: '/blog' },
+  { name: post.title, url: `/blog/${entry.slug}` },
+];
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.title,
+  description: post.seoDescription ?? post.excerpt,
+  image: coverAbs,
+  datePublished: published,
+  dateModified: updated,
+  author: { '@type': 'Organization', name: post.author ?? site.name, url: site.url },
+  publisher: { '@id': `${site.url}/#organization` },
+  mainEntityOfPage: new URL(`/blog/${entry.slug}`, site.url).href,
+  articleSection: post.category,
+};
 ---
 <Base
   title={post.seoTitle ?? post.title}
   description={post.seoDescription ?? post.excerpt}
   active="blog"
+  ogType="article"
+  ogImage={post.coverImage ?? COVER_FALLBACK}
+  publishedTime={published}
+  modifiedTime={updated}
+  breadcrumbs={breadcrumbs}
+  jsonLd={articleSchema}
 >
   <main class="wrap">
     <article class="article">

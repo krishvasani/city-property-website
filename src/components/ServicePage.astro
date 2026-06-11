@@ -6,6 +6,7 @@ import Icon from '../components/Icon.astro';
 import { serviceLinks } from '../lib/services';
 import { getProperties } from '../lib/data';
 import { categoryFor } from '../lib/format';
+import { site } from '../lib/config';
 
 interface HelpItem { title: string; text: string }
 interface ExtraSection { heading: string; intro?: string; items?: string[] }
@@ -64,8 +65,29 @@ if (relatedCategory) {
 }
 
 const otherLinks = serviceLinks.filter((s) => s.key !== serviceKey);
+
+// ── SEO: Service schema + breadcrumbs ──
+const serviceUrl = new URL(Astro.url.pathname, site.url).href;
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Services', url: '/services' },
+  { name: heading, url: Astro.url.pathname },
+];
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: heading,
+  description: seoDescription,
+  serviceType: heading,
+  url: serviceUrl,
+  provider: { '@id': `${site.url}/#organization` },
+  areaServed: [
+    { '@type': 'City', name: 'Ahmedabad' },
+    { '@type': 'City', name: 'Gandhinagar' },
+  ],
+};
 ---
-<Base title={seoTitle} description={seoDescription} active="services">
+<Base title={seoTitle} description={seoDescription} active="services" breadcrumbs={breadcrumbs} jsonLd={serviceSchema}>
   <main class="wrap">
     <section class="page-hero svc-hero">
       <div class="eyebrow">{eyebrow}</div>

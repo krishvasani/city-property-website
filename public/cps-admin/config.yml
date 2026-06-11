@@ -14,9 +14,9 @@ local_backend: true
 media_folder: public/uploads
 public_folder: /uploads
 
-site_url: https://city-property-ahmedabad.netlify.app
-display_url: https://city-property-ahmedabad.netlify.app
-logo_url: https://city-property-ahmedabad.netlify.app/logo/city-property-logo-navy.png
+site_url: https://cityprop.co.in
+display_url: https://cityprop.co.in
+logo_url: https://cityprop.co.in/logo/city-property-logo-navy.png
 
 collections:
   # ─────────────────────────── BLOG POSTS ───────────────────────────

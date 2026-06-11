@@ -24,6 +24,15 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Frame-Options = "SAMEORIGIN"
 
+# Canonical domain: 301 the old Netlify subdomain to cityprop.co.in so search
+# engines and old links consolidate on one domain. (HTTP→HTTPS and www→apex are
+# handled automatically by Netlify's primary-domain settings.)
+[[redirects]]
+  from = "https://city-property-ahmedabad.netlify.app/*"
+  to = "https://cityprop.co.in/:splat"
+  status = 301
+  force = true
+
 # NOTE on lead capture:
 # Forms are plain HTML with data-netlify="true", so Netlify auto-detects them
 # at build (forms: viewing, valuation, contact). After the first deploy, open

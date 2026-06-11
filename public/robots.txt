@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /cps-admin/
 
-Sitemap: https://city-property-ahmedabad.netlify.app/sitemap-index.xml
+Sitemap: https://cityprop.co.in/sitemap-index.xml

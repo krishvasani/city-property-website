@@ -1,0 +1,67 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getProperties } from '../../lib/data';
+import { getAllLocalities } from '../../data/localities';
+
+const all = await getProperties();
+const counts = new Map<string, number>();
+for (const p of all) if (p.localitySlug) counts.set(p.localitySlug, (counts.get(p.localitySlug) ?? 0) + 1);
+
+const localities = getAllLocalities().filter((l) => l.priority <= 2 || counts.has(l.id));
+// Group by region for a scannable directory.
+const byRegion = new Map<string, typeof localities>();
+for (const l of localities) {
+  const arr = byRegion.get(l.region) ?? [];
+  arr.push(l);
+  byRegion.set(l.region, arr);
+}
+const regions = [...byRegion.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Localities', url: '/localities' },
+];
+---
+<Base
+  title="Ahmedabad Localities | Property by Area"
+  description="Explore property by locality across Ahmedabad and Gandhinagar — Bodakdev, Satellite, SG Highway, Thaltej, Bopal, GIFT City and more. Local market insight from City Property Services."
+  breadcrumbs={breadcrumbs}
+  active="buy"
+>
+  <main class="wrap-wide loc-index">
+    <nav class="crumb">
+      <a href="/">Home</a> <span>/</span> <span style="color:var(--ink);">Localities</span>
+    </nav>
+    <section class="page-hero">
+      <div class="eyebrow">Ahmedabad & Gandhinagar</div>
+      <h1 class="display" style="max-width:20ch;margin-top:12px;">Property by locality</h1>
+      <p class="body-lg muted" style="max-width:64ch;margin-top:16px;">
+        Pick an area to see its market overview, what it is known for, connectivity and live listings. We cover residential, commercial, industrial, land and investment across every corner of the city.
+      </p>
+    </section>
+
+    {regions.map(([region, items]) => (
+      <section class="section reveal">
+        <h2>{region}</h2>
+        <div class="loc-grid">
+          {items.sort((a, b) => a.name.localeCompare(b.name)).map((l) => (
+            <a class="loc-tile" href={`/localities/${l.slug}`}>
+              <span class="loc-name">{l.name}</span>
+              {counts.get(l.id) ? <span class="loc-count">{counts.get(l.id)} live</span> : <span class="loc-count muted">Market info</span>}
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </main>
+</Base>
+
+<style is:global>
+  .loc-index .crumb { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--text-muted); padding: 20px 0 0; }
+  .loc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; }
+  .loc-tile { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px; border: 1px solid var(--hairline); border-radius: var(--r); background: var(--surface); box-shadow: var(--shadow-xs); transition: border-color var(--t) var(--ease), transform var(--t) var(--ease), box-shadow var(--t) var(--ease); }
+  .loc-tile:hover { border-color: var(--navy); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+  .loc-tile .loc-name { font-weight: 600; color: var(--ink); font-size: 15px; }
+  .loc-tile .loc-count { font-size: 12px; font-weight: 600; color: var(--good); }
+  .loc-tile .loc-count.muted { color: var(--text-faint); font-weight: 500; }
+</style>

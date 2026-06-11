@@ -8,7 +8,7 @@ export const site = {
   name: 'City Property Services',
   tagline: 'Property in Ahmedabad',
   rera: 'AG/GJ/AHMEDABAD/AHMADABADCITY/AUDA/AA00003/220329R2',
-  url: env.SITE_URL || 'https://cityproperty.example.com',
+  url: env.SITE_URL || 'https://cityprop.co.in',
 };
 
 export const contact = {
