@@ -47,7 +47,7 @@ const data = resolved.map(({ p, lat, lng, region }) => ({
 
 // If a cover image fails to load, swap it for the same placeholder used elsewhere.
 const imgFallback =
-  'this.parentElement.innerHTML=\'<div class="ph" data-label="Photo"></div>\'';
+  'this.parentElement.innerHTML=\'<div class="ph" data-label="Contact us"></div>\'';
 ---
 <Base
   title="Property Map of Ahmedabad"
@@ -122,7 +122,7 @@ const imgFallback =
                 {p.photos?.[0]?.url ? (
                   <img src={p.photos[0].url} alt={p.photos[0].alt ?? p.title} loading="lazy" onerror={imgFallback} />
                 ) : (
-                  <div class="ph" data-label="Photo"></div>
+                  <div class="ph" data-label="Contact us"></div>
                 )}
               </div>
               <div class="mcard-body">

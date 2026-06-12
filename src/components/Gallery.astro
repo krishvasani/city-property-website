@@ -11,7 +11,7 @@ const { photos = [] } = Astro.props;
 const real: Photo[] = photos.filter((p) => p.url && p.url.trim());
 
 // Keep the 5-cell hero layout; fill with real photos, pad with placeholders.
-const fallbackLabels = ['Main photo', 'Photo', 'Photo', 'Photo', 'Photo'];
+const fallbackLabels = Array(5).fill('Contact for details');
 const cells = Array.from({ length: 5 }, (_, i) => ({
   photo: real[i] as Photo | undefined,
   label: fallbackLabels[i],
@@ -20,8 +20,16 @@ const cells = Array.from({ length: 5 }, (_, i) => ({
 }));
 const count = real.length;
 ---
-<section class="gallery" data-gallery>
-  {cells.map((cell, i) => (
+<section class:list={['gallery', { 'gallery-none': count === 0 }]} data-gallery>
+  {count === 0 ? (
+    <div class="ph ph-contact">
+      <div class="ph-contact-inner">
+        <strong>Photos available on request</strong>
+        <p>Contact City Property Services for photos, floor plans and the full details of this property.</p>
+        <a class="btn btn-primary btn-sm" href="#enquire">Contact for details</a>
+      </div>
+    </div>
+  ) : cells.map((cell, i) => (
     <div
       class:list={['cell', { g0: i === 0, clickable: cell.lbIndex !== null }]}
       data-lb-index={cell.lbIndex !== null ? cell.lbIndex : undefined}
@@ -73,6 +81,14 @@ const count = real.length;
   .gallery .cell.clickable:hover img { transform: scale(1.04); }
   .gallery .cell .ph { height: 100%; }
   .gallery .more { position: absolute; right: 12px; bottom: 12px; z-index: 2; }
+
+  /* Photo-less property: a clear contact prompt instead of empty placeholder cells */
+  .gallery-none { display: block; height: auto; }
+  .gallery-none .ph-contact { min-height: clamp(220px, 38vw, 380px); border-radius: var(--r-xl); padding: 36px 28px; }
+  .ph-contact-inner { display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; max-width: 46ch; }
+  .ph-contact-inner strong { font-size: 19px; font-weight: 700; color: var(--ink); }
+  .ph-contact-inner p { font-size: 15px; color: var(--text-muted); line-height: 1.55; margin: 0; }
+  .ph-contact-inner .btn { margin-top: 4px; }
 
   /* Full screen lightbox */
   .lb { position: fixed; inset: 0; z-index: 200; background: rgba(9, 16, 22, .95); display: none; align-items: center; justify-content: center; }

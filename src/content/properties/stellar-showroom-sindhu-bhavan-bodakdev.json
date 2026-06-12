@@ -3,7 +3,7 @@
   "slug": "stellar-showroom-sindhu-bhavan-bodakdev",
   "status": "sale",
   "propertyType": "showroom",
-  "featured": false,
+  "featured": true,
   "draft": false,
   "priceDisplay": "₹3.77 Cr",
   "localityName": "Bodakdev",

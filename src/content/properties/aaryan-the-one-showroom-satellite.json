@@ -3,7 +3,7 @@
   "slug": "aaryan-the-one-showroom-satellite",
   "status": "rent",
   "propertyType": "showroom",
-  "featured": false,
+  "featured": true,
   "draft": false,
   "priceDisplay": "₹120 / sq.ft",
   "priceValue": 480000,

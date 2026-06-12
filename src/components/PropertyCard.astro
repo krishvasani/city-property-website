@@ -34,7 +34,7 @@ const searchText = [p.title, p.localityName, p.address].filter(Boolean).join(' '
     {photo?.url ? (
       <img src={photo.url} alt={photo.alt ?? p.title} loading="lazy" />
     ) : (
-      <div class="ph" data-label={photo?.label ?? 'Property photo'} style="height:100%;"></div>
+      <div class="ph" data-label="Contact for details" style="height:100%;"></div>
     )}
     <div class="top">
       <Tag variant={variant}>{p.statusLabel}</Tag>
