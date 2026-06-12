@@ -1,0 +1,57 @@
+{
+  "title": "400 sq.yd Plot for Sale · Sun Village, Ghuma",
+  "slug": "sun-village-plot-ghuma",
+  "status": "sale",
+  "propertyType": "plot",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.8 Cr",
+  "localityName": "Ghuma",
+  "city": "Ahmedabad",
+  "address": "Sun Village, Ghuma, Ahmedabad",
+  "area": "400 sq.yd",
+  "age": "",
+  "amenities": [],
+  "description": [
+    "Residential plot of 400 sq.yd in Sun Village, Ghuma, South Bopal.",
+    "A ready plot in a developing residential pocket. Priced at ₹70,000 per sq.yd, about ₹2.8 Cr."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/sun-village-plot-ghuma/photo-1.jpg",
+      "alt": "Sun Village in Ghuma, Ahmedabad",
+      "label": "Plot photo"
+    },
+    {
+      "url": "/uploads/properties/sun-village-plot-ghuma/photo-2.jpg",
+      "alt": "Sun Village in Ghuma, Ahmedabad",
+      "label": "Plot photo"
+    },
+    {
+      "url": "/uploads/properties/sun-village-plot-ghuma/photo-3.jpg",
+      "alt": "Sun Village in Ghuma, Ahmedabad",
+      "label": "Plot photo"
+    },
+    {
+      "url": "/uploads/properties/sun-village-plot-ghuma/photo-4.jpg",
+      "alt": "Sun Village in Ghuma, Ahmedabad",
+      "label": "Plot photo"
+    },
+    {
+      "url": "/uploads/properties/sun-village-plot-ghuma/photo-5.jpg",
+      "alt": "Sun Village in Ghuma, Ahmedabad",
+      "label": "Plot photo"
+    }
+  ],
+  "newAt": "2026-06-12",
+  "seoTitle": "Sun Village Ghuma | City Property Services",
+  "seoDescription": "Residential plot of 400 sq.yd in Sun Village, Ghuma, South Bopal.",
+  "priceValue": 28000000,
+  "perSqftDisplay": "₹70,000 per sq.yd",
+  "plotSize": "400 sq.yd",
+  "geo": {
+    "lat": 23.021470982461313,
+    "lng": 72.45746834255948
+  },
+  "mainImage": "/uploads/properties/sun-village-plot-ghuma/photo-1.jpg"
+}

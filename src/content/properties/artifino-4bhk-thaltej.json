@@ -1,0 +1,35 @@
+{
+  "title": "4 BHK 4,000 sq.ft Flat for Sale · Artifino, Thaltej",
+  "slug": "artifino-4bhk-thaltej",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.72 Cr",
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "address": "Artifino, Thaltej, Ahmedabad",
+  "area": "4,000 sq.ft",
+  "age": "newly constructed",
+  "amenities": [
+    "3 lifts"
+  ],
+  "description": [
+    "4 BHK flat of 4,000 sq.ft in Artifino on Zydus Road, Thaltej, on the 12th floor.",
+    "A newly constructed tower with three lifts. Priced at ₹6,800 per sq.ft, about ₹2.72 Cr."
+  ],
+  "photos": [],
+  "newAt": "2026-06-12",
+  "seoTitle": "Artifino Thaltej | City Property Services",
+  "seoDescription": "4 BHK flat of 4,000 sq.ft in Artifino on Zydus Road, Thaltej, on the 12th floor.",
+  "priceValue": 27200000,
+  "perSqftDisplay": "₹6,800 per sq.ft",
+  "beds": 4,
+  "areaSqft": 4000,
+  "floor": "12th floor",
+  "totalFloors": "High rise",
+  "geo": {
+    "lat": 23.05491104055539,
+    "lng": 72.51052346849758
+  }
+}

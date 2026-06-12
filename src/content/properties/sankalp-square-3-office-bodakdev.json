@@ -1,0 +1,33 @@
+{
+  "title": "12,800 sq.ft Office for Sale · Sankalp Square 3, Bodakdev",
+  "slug": "sankalp-square-3-office-bodakdev",
+  "status": "sale",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹16 Cr",
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "Sankalp Square 3, Bodakdev, Ahmedabad",
+  "area": "12,800 sq.ft",
+  "age": "3 years",
+  "amenities": [
+    "5 lifts"
+  ],
+  "description": [
+    "Office floor of 12,800 sq.ft for sale in Sankalp Square 3 on Sindhu Bhavan Road, Bodakdev, on the 22nd floor.",
+    "About 3 years old with five lifts. Priced at ₹12,500 per sq.ft, about ₹16 Cr."
+  ],
+  "photos": [],
+  "newAt": "2026-06-12",
+  "seoTitle": "Sankalp Square 3 Bodakdev | City Property Services",
+  "seoDescription": "Office floor of 12,800 sq.ft for sale in Sankalp Square 3 on Sindhu Bhavan Road, Bodakdev, on the 22nd floor.",
+  "priceValue": 160000000,
+  "perSqftDisplay": "₹12,500 per sq.ft",
+  "areaSqft": 12800,
+  "floor": "22nd floor",
+  "geo": {
+    "lat": 23.044192215755103,
+    "lng": 72.4810085230243
+  }
+}

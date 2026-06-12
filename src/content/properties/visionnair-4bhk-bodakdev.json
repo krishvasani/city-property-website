@@ -1,0 +1,81 @@
+{
+  "title": "4 BHK 3,280 sq.ft Flat for Sale · Visionnair, Bodakdev",
+  "slug": "visionnair-4bhk-bodakdev",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.9 Cr",
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "Visionnair, Bodakdev, Ahmedabad",
+  "area": "3,280 sq.ft",
+  "age": "5 years",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "Fully furnished 4 BHK flat of 3,280 sq.ft in Visionnair, Bodakdev.",
+    "A 10 storey building with two lifts, about 5 years old. Priced at ₹2.9 Cr."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/visionnair-4bhk-bodakdev/photo-1.jpg",
+      "alt": "Visionnair in Bodakdev, Ahmedabad",
+      "label": "Apartment photo"
+    },
+    {
+      "url": "/uploads/properties/visionnair-4bhk-bodakdev/photo-2.jpg",
+      "alt": "Visionnair in Bodakdev, Ahmedabad",
+      "label": "Apartment photo"
+    },
+    {
+      "url": "/uploads/properties/visionnair-4bhk-bodakdev/photo-3.jpg",
+      "alt": "Visionnair in Bodakdev, Ahmedabad",
+      "label": "Apartment photo"
+    },
+    {
+      "url": "/uploads/properties/visionnair-4bhk-bodakdev/photo-4.jpg",
+      "alt": "Visionnair in Bodakdev, Ahmedabad",
+      "label": "Apartment photo"
+    },
+    {
+      "url": "/uploads/properties/visionnair-4bhk-bodakdev/photo-5.jpg",
+      "alt": "Visionnair in Bodakdev, Ahmedabad",
+      "label": "Apartment photo"
+    },
+    {
+      "url": "/uploads/properties/visionnair-4bhk-bodakdev/photo-6.jpg",
+      "alt": "Visionnair in Bodakdev, Ahmedabad",
+      "label": "Apartment photo"
+    },
+    {
+      "url": "/uploads/properties/visionnair-4bhk-bodakdev/photo-7.jpg",
+      "alt": "Visionnair in Bodakdev, Ahmedabad",
+      "label": "Apartment photo"
+    },
+    {
+      "url": "/uploads/properties/visionnair-4bhk-bodakdev/photo-8.jpg",
+      "alt": "Visionnair in Bodakdev, Ahmedabad",
+      "label": "Apartment photo"
+    },
+    {
+      "url": "/uploads/properties/visionnair-4bhk-bodakdev/photo-9.jpg",
+      "alt": "Visionnair in Bodakdev, Ahmedabad",
+      "label": "Apartment photo"
+    }
+  ],
+  "newAt": "2026-06-12",
+  "seoTitle": "Visionnair Bodakdev | City Property Services",
+  "seoDescription": "Fully furnished 4 BHK flat of 3,280 sq.ft in Visionnair, Bodakdev.",
+  "priceValue": 29000000,
+  "beds": 4,
+  "areaSqft": 3280,
+  "totalFloors": "10 floors",
+  "furnishing": "Fully furnished",
+  "geo": {
+    "lat": 23.040360133871143,
+    "lng": 72.50841317981155
+  },
+  "mainImage": "/uploads/properties/visionnair-4bhk-bodakdev/photo-1.jpg"
+}

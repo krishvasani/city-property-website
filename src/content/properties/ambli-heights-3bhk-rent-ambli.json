@@ -1,0 +1,35 @@
+{
+  "title": "3 BHK 1,600 sq.ft Flat · Ambli Heights, Ambli",
+  "slug": "ambli-heights-3bhk-rent-ambli",
+  "status": "rent",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹38,000",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "address": "Ambli Heights, Ambli, Ahmedabad",
+  "area": "1,600 sq.ft",
+  "age": "newly constructed",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "Semi furnished 3 BHK flat of 1,600 sq.ft for rent in Ambli Heights, near Sindhu Bhavan Road, Ambli.",
+    "A newly constructed 13 storey building with two lifts. Rent is ₹38,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-12",
+  "seoTitle": "Ambli Heights Ambli | City Property Services",
+  "seoDescription": "Semi furnished 3 BHK flat of 1,600 sq.ft for rent in Ambli Heights, near Sindhu Bhavan Road, Ambli.",
+  "priceValue": 38000,
+  "pricePer": "per month",
+  "beds": 3,
+  "areaSqft": 1600,
+  "totalFloors": "13 floors",
+  "furnishing": "Semi furnished",
+  "geo": {
+    "lat": 23.0412052517638,
+    "lng": 72.47867994416855
+  }
+}

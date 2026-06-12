@@ -1,0 +1,82 @@
+{
+  "title": "25,800 sq.ft Office · Venus Atlantis, Prahlad Nagar",
+  "slug": "venus-atlantis-office-rent-prahladnagar",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹65 / sq.ft",
+  "localityName": "Prahlad Nagar",
+  "city": "Ahmedabad",
+  "address": "Venus Atlantis, Prahlad Nagar, Ahmedabad",
+  "area": "25,800 sq.ft",
+  "age": "10 years",
+  "amenities": [
+    "4 lifts",
+    "20 car parks"
+  ],
+  "description": [
+    "Large office of 25,800 sq.ft for rent in Venus Atlantis, Prahlad Nagar.",
+    "Fitted with 13 cabins, a conference room and 70 work stations, with four lifts and 20 car parks, about 10 years old. Rent is ₹65 per sq.ft."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/venus-atlantis-office-rent-prahladnagar/photo-1.jpg",
+      "alt": "Venus Atlantis in Prahlad Nagar, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/venus-atlantis-office-rent-prahladnagar/photo-2.jpg",
+      "alt": "Venus Atlantis in Prahlad Nagar, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/venus-atlantis-office-rent-prahladnagar/photo-3.jpg",
+      "alt": "Venus Atlantis in Prahlad Nagar, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/venus-atlantis-office-rent-prahladnagar/photo-4.jpg",
+      "alt": "Venus Atlantis in Prahlad Nagar, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/venus-atlantis-office-rent-prahladnagar/photo-5.jpg",
+      "alt": "Venus Atlantis in Prahlad Nagar, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/venus-atlantis-office-rent-prahladnagar/photo-6.jpg",
+      "alt": "Venus Atlantis in Prahlad Nagar, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/venus-atlantis-office-rent-prahladnagar/photo-7.jpg",
+      "alt": "Venus Atlantis in Prahlad Nagar, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/venus-atlantis-office-rent-prahladnagar/photo-8.jpg",
+      "alt": "Venus Atlantis in Prahlad Nagar, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/venus-atlantis-office-rent-prahladnagar/photo-9.jpg",
+      "alt": "Venus Atlantis in Prahlad Nagar, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-12",
+  "seoTitle": "Venus Atlantis Prahlad Nagar | City Property Services",
+  "seoDescription": "Large office of 25,800 sq.ft for rent in Venus Atlantis, Prahlad Nagar.",
+  "priceValue": 1677000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹65 per sq.ft",
+  "areaSqft": 25800,
+  "parking": "20 car parks",
+  "geo": {
+    "lat": 23.011398011688858,
+    "lng": 72.51244450306353
+  },
+  "mainImage": "/uploads/properties/venus-atlantis-office-rent-prahladnagar/photo-1.jpg"
+}
