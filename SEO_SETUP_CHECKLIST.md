@@ -29,13 +29,13 @@ in Google/3rd‑party dashboards** that only the owner can do.
 4. Add categories (Real Estate Agency / Commercial Real Estate Agency),
    service areas (Ahmedabad, Gandhinagar, GIFT City), photos, and post updates regularly.
 
-## 3. Google Analytics 4 (not yet installed)
-The site currently has **no analytics**. To add GA4:
-1. Create a GA4 property at https://analytics.google.com → copy the **Measurement ID** (`G-XXXXXXXXXX`).
-2. Tell me the ID and I'll add the gtag snippet sitewide (loaded async, privacy‑friendly),
-   plus event tracking for: phone click, WhatsApp click, consult/sell form submit,
-   property view, map property click, and blog CTA click.
-   (Alternatively use Google Tag Manager and I'll add the GTM container.)
+## 3. Google Analytics 4 — ✅ INSTALLED (`G-5MZTJ0FL9T`)
+Live on every page; it only runs on `cityprop.co.in` (not localhost/previews) so the data stays clean.
+- **Verify it works:** GA4 → Reports → **Realtime**, then open cityprop.co.in in another tab — you should appear as an active user within ~30 seconds.
+- **Tracked automatically:** page views (every page, incl. each property/locality).
+- **Custom events:** `phone_click`, `whatsapp_click`, and `generate_lead` (fires on form submit, with the form name).
+- **Mark leads as conversions:** GA4 → Admin → **Events** (or Key events) → toggle `generate_lead`, `phone_click`, `whatsapp_click` as **Key events**. Then you can see conversion rate by traffic source.
+- Note: standard reports take ~24–48h to populate (Realtime is instant). Some visitors with ad‑blockers won't be counted — normal for GA.
 
 ## 4. NAP consistency (update everywhere to the new domain + address)
 Make these match the footer exactly:
