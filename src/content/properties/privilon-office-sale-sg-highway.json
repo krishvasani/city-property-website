@@ -1,0 +1,63 @@
+{
+  "title": "10,000 sq.ft Office for Sale · Privilon, SG Highway",
+  "slug": "privilon-office-sale-sg-highway",
+  "status": "sale",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹11.5 Cr",
+  "priceValue": 115000000,
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "address": "Privilon, Iscon Ambli Road, SG Highway, Ahmedabad",
+  "area": "10,000 sq.ft",
+  "areaSqft": 10000,
+  "totalFloors": "22 floors",
+  "age": "5 to 10 years",
+  "amenities": [
+    "5 lifts",
+    "10 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 10,000 sq.ft for sale in Privilon, SG Highway, Ahmedabad.",
+    "Fitted with 10 car parking and 5 lifts (price negotiable). Set in a 22 floors building, 5 to 10 years. Priced at ₹11,500 per sq.ft plus taxes, about ₹11.5 Cr."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/privilon-office-sale-sg-highway/photo-1.jpg",
+      "alt": "Privilon office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/privilon-office-sale-sg-highway/photo-2.jpg",
+      "alt": "Privilon office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/privilon-office-sale-sg-highway/photo-3.jpg",
+      "alt": "Privilon office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/privilon-office-sale-sg-highway/photo-4.jpg",
+      "alt": "Privilon office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/privilon-office-sale-sg-highway/photo-5.jpg",
+      "alt": "Privilon office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Privilon office SG Highway | City Property Services",
+  "seoDescription": "Fully furnished office of 10,000 sq.ft for sale in Privilon, SG Highway, Ahmedabad.",
+  "geo": {
+    "lat": 23.028389988760114,
+    "lng": 72.50611550267556
+  },
+  "perSqftDisplay": "₹11,500 per sq.ft",
+  "furnishing": "Fully furnished",
+  "parking": "10 car parks",
+  "mainImage": "/uploads/properties/privilon-office-sale-sg-highway/photo-1.jpg"
+}

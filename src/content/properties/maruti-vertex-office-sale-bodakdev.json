@@ -1,0 +1,71 @@
+{
+  "title": "5,000 sq.ft Office for Sale · Maruti Vertex, Bodakdev",
+  "slug": "maruti-vertex-office-sale-bodakdev",
+  "status": "sale",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹7 Cr",
+  "priceValue": 70000000,
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "Maruti Vertex, Sindhu Bhavan Road, Bodakdev, Ahmedabad",
+  "area": "5,000 sq.ft",
+  "areaSqft": 5000,
+  "totalFloors": "12 floors",
+  "age": "7 years",
+  "amenities": [
+    "3 lifts"
+  ],
+  "description": [
+    "Fully furnished office of 5,000 sq.ft for sale in Maruti Vertex, Bodakdev, Ahmedabad.",
+    "Fitted with 4 cabins, a conference room, 30 work stations, pantry and washrooms, with 3 lifts. Set in a 12 floors building, 7 years. Priced at ₹14,000 per sq.ft, about ₹7 Cr."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/maruti-vertex-office-sale-bodakdev/photo-1.jpg",
+      "alt": "Maruti Vertex office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/maruti-vertex-office-sale-bodakdev/photo-2.jpg",
+      "alt": "Maruti Vertex office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/maruti-vertex-office-sale-bodakdev/photo-3.jpg",
+      "alt": "Maruti Vertex office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/maruti-vertex-office-sale-bodakdev/photo-4.jpg",
+      "alt": "Maruti Vertex office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/maruti-vertex-office-sale-bodakdev/photo-5.jpg",
+      "alt": "Maruti Vertex office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/maruti-vertex-office-sale-bodakdev/photo-6.jpg",
+      "alt": "Maruti Vertex office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/maruti-vertex-office-sale-bodakdev/photo-7.jpg",
+      "alt": "Maruti Vertex office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Maruti Vertex office Bodakdev | City Property Services",
+  "seoDescription": "Fully furnished office of 5,000 sq.ft for sale in Maruti Vertex, Bodakdev, Ahmedabad.",
+  "geo": {
+    "lat": 23.039980386160863,
+    "lng": 72.50881836180798
+  },
+  "perSqftDisplay": "₹14,000 per sq.ft",
+  "furnishing": "Fully furnished",
+  "mainImage": "/uploads/properties/maruti-vertex-office-sale-bodakdev/photo-1.jpg"
+}

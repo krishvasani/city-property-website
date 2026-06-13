@@ -1,0 +1,64 @@
+{
+  "title": "10,000 sq.ft Office · Privilon, SG Highway",
+  "slug": "privilon-office-rent-sg-highway",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹70 / sq.ft",
+  "priceValue": 700000,
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "address": "Privilon, Iscon Ambli Road, SG Highway, Ahmedabad",
+  "area": "10,000 sq.ft",
+  "areaSqft": 10000,
+  "totalFloors": "22 floors",
+  "age": "5 to 10 years",
+  "amenities": [
+    "5 lifts",
+    "10 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 10,000 sq.ft for rent in Privilon, SG Highway, Ahmedabad.",
+    "Fitted with 10 car parking and 5 lifts. Set in a 22 floors building, 5 to 10 years. Rent is ₹70 per sq.ft plus taxes."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/privilon-office-rent-sg-highway/photo-1.jpg",
+      "alt": "Privilon office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/privilon-office-rent-sg-highway/photo-2.jpg",
+      "alt": "Privilon office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/privilon-office-rent-sg-highway/photo-3.jpg",
+      "alt": "Privilon office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/privilon-office-rent-sg-highway/photo-4.jpg",
+      "alt": "Privilon office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/privilon-office-rent-sg-highway/photo-5.jpg",
+      "alt": "Privilon office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Privilon office SG Highway | City Property Services",
+  "seoDescription": "Fully furnished office of 10,000 sq.ft for rent in Privilon, SG Highway, Ahmedabad.",
+  "geo": {
+    "lat": 23.028401563841424,
+    "lng": 72.50595702798421
+  },
+  "perSqftDisplay": "₹70 per sq.ft plus taxes",
+  "pricePer": "per month",
+  "furnishing": "Fully furnished",
+  "parking": "10 car parks",
+  "mainImage": "/uploads/properties/privilon-office-rent-sg-highway/photo-1.jpg"
+}

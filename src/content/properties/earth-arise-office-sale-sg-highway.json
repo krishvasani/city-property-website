@@ -1,0 +1,60 @@
+{
+  "title": "3,655 sq.ft super built up Office for Sale · Earth Arise, SG Highway",
+  "slug": "earth-arise-office-sale-sg-highway",
+  "status": "sale",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹3.47 Cr",
+  "priceValue": 34722500,
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "address": "Earth Arise, beside YMCA Club, SG Highway, Ahmedabad",
+  "area": "3,655 sq.ft super built up",
+  "areaSqft": 3655,
+  "totalFloors": "12 floors",
+  "age": "10 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 3,655 sq.ft super built up for sale in Earth Arise, SG Highway, Ahmedabad.",
+    "Fitted with 50 work stations, 2 cabins, a meeting room, pantry, reception, server room, toilets, CCTV and access control (price negotiable). Set in a 12 floors building, 10 years. Priced at ₹9,500 per sq.ft, about ₹3.47 Cr."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/earth-arise-office-sale-sg-highway/photo-1.jpg",
+      "alt": "Earth Arise office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/earth-arise-office-sale-sg-highway/photo-2.jpg",
+      "alt": "Earth Arise office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/earth-arise-office-sale-sg-highway/photo-3.jpg",
+      "alt": "Earth Arise office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/earth-arise-office-sale-sg-highway/photo-4.jpg",
+      "alt": "Earth Arise office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/earth-arise-office-sale-sg-highway/photo-5.jpg",
+      "alt": "Earth Arise office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Earth Arise office SG Highway | City Property Services",
+  "seoDescription": "Fully furnished office of 3,655 sq.ft super built up for sale in Earth Arise, SG Highway, Ahmedabad.",
+  "geo": {
+    "lat": 23.005867524905156,
+    "lng": 72.50147635892843
+  },
+  "perSqftDisplay": "₹9,500 per sq.ft",
+  "furnishing": "Fully furnished",
+  "builtUpArea": "3,655 sq.ft",
+  "mainImage": "/uploads/properties/earth-arise-office-sale-sg-highway/photo-1.jpg"
+}

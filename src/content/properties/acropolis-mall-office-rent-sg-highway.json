@@ -1,0 +1,62 @@
+{
+  "title": "41,000 sq.ft Office · The Acropolis Mall, SG Highway",
+  "slug": "acropolis-mall-office-rent-sg-highway",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹58 / sq.ft",
+  "priceValue": 2378000,
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "address": "The Acropolis Mall, Thaltej Cross Road, SG Highway, Ahmedabad",
+  "area": "41,000 sq.ft",
+  "areaSqft": 41000,
+  "totalFloors": "5 floors",
+  "age": "12 years",
+  "amenities": [
+    "4 lifts"
+  ],
+  "description": [
+    "Fully furnished office of 41,000 sq.ft for rent in The Acropolis Mall, SG Highway, Ahmedabad.",
+    "Fitted with 4 lifts, 600 work stations, 17 cabins, 2 conference rooms, pantry, reception and 6 washrooms. Set in a 5 floors building, 12 years. Rent is ₹58 per sq.ft."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/acropolis-mall-office-rent-sg-highway/photo-1.jpg",
+      "alt": "The Acropolis Mall office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/acropolis-mall-office-rent-sg-highway/photo-2.jpg",
+      "alt": "The Acropolis Mall office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/acropolis-mall-office-rent-sg-highway/photo-3.jpg",
+      "alt": "The Acropolis Mall office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/acropolis-mall-office-rent-sg-highway/photo-4.jpg",
+      "alt": "The Acropolis Mall office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/acropolis-mall-office-rent-sg-highway/photo-5.jpg",
+      "alt": "The Acropolis Mall office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "The Acropolis Mall office SG Highway | City Property Services",
+  "seoDescription": "Fully furnished office of 41,000 sq.ft for rent in The Acropolis Mall, SG Highway, Ahmedabad.",
+  "geo": {
+    "lat": 23.04949033595966,
+    "lng": 72.5151786117298
+  },
+  "perSqftDisplay": "₹58 per sq.ft",
+  "pricePer": "per month",
+  "furnishing": "Fully furnished",
+  "mainImage": "/uploads/properties/acropolis-mall-office-rent-sg-highway/photo-1.jpg"
+}

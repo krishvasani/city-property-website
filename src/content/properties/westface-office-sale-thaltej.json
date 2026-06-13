@@ -1,0 +1,63 @@
+{
+  "title": "4,104 sq.ft Office for Sale · WestFace, Thaltej",
+  "slug": "westface-office-sale-thaltej",
+  "status": "sale",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹4.6 Cr",
+  "priceValue": 45964800,
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "address": "WestFace, near Hebatpur, Thaltej, Ahmedabad",
+  "area": "4,104 sq.ft",
+  "areaSqft": 4104,
+  "totalFloors": "6 floors",
+  "age": "1 to 5 years",
+  "amenities": [
+    "4 lifts",
+    "3 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 4,104 sq.ft for sale in WestFace, Thaltej, Ahmedabad.",
+    "Fitted with 4 lifts and 3 parking. Set in a 6 floors building, 1 to 5 years. Priced at ₹11,200 per sq.ft, about ₹4.6 Cr."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/westface-office-sale-thaltej/photo-1.jpg",
+      "alt": "WestFace office in Thaltej, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/westface-office-sale-thaltej/photo-2.jpg",
+      "alt": "WestFace office in Thaltej, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/westface-office-sale-thaltej/photo-3.jpg",
+      "alt": "WestFace office in Thaltej, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/westface-office-sale-thaltej/photo-4.jpg",
+      "alt": "WestFace office in Thaltej, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/westface-office-sale-thaltej/photo-5.jpg",
+      "alt": "WestFace office in Thaltej, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "WestFace office Thaltej | City Property Services",
+  "seoDescription": "Fully furnished office of 4,104 sq.ft for sale in WestFace, Thaltej, Ahmedabad.",
+  "geo": {
+    "lat": 23.05158110146371,
+    "lng": 72.50007798751321
+  },
+  "perSqftDisplay": "₹11,200 per sq.ft",
+  "furnishing": "Fully furnished",
+  "parking": "3 car parks",
+  "mainImage": "/uploads/properties/westface-office-sale-thaltej/photo-1.jpg"
+}

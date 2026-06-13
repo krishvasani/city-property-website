@@ -1,0 +1,62 @@
+{
+  "title": "7,800 sq.ft Office · Navratna Corporate Park, Ambli",
+  "slug": "navratna-corporate-park-7800-office-ambli",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹75 / sq.ft",
+  "priceValue": 585000,
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "address": "Navratna Corporate Park, Ambli Road, Ahmedabad",
+  "area": "7,800 sq.ft",
+  "areaSqft": 7800,
+  "totalFloors": "22 floors",
+  "age": "2 years",
+  "amenities": [
+    "10 lifts"
+  ],
+  "description": [
+    "Fully furnished office of 7,800 sq.ft for rent in Navratna Corporate Park, Ambli, Ahmedabad.",
+    "Fitted with 3 cabins, a conference room, 50 work stations, pantry and washrooms, with 10 lifts. Set in a 22 floors building, 2 years. Rent is ₹75 per sq.ft."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/navratna-corporate-park-7800-office-ambli/photo-1.jpg",
+      "alt": "Navratna Corporate Park office in Ambli, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/navratna-corporate-park-7800-office-ambli/photo-2.jpg",
+      "alt": "Navratna Corporate Park office in Ambli, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/navratna-corporate-park-7800-office-ambli/photo-3.jpg",
+      "alt": "Navratna Corporate Park office in Ambli, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/navratna-corporate-park-7800-office-ambli/photo-4.jpg",
+      "alt": "Navratna Corporate Park office in Ambli, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/navratna-corporate-park-7800-office-ambli/photo-5.jpg",
+      "alt": "Navratna Corporate Park office in Ambli, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Navratna Corporate Park office Ambli | City Property Services",
+  "seoDescription": "Fully furnished office of 7,800 sq.ft for rent in Navratna Corporate Park, Ambli, Ahmedabad.",
+  "geo": {
+    "lat": 23.029519678712635,
+    "lng": 72.49378690666586
+  },
+  "perSqftDisplay": "₹75 per sq.ft",
+  "pricePer": "per month",
+  "furnishing": "Fully furnished",
+  "mainImage": "/uploads/properties/navratna-corporate-park-7800-office-ambli/photo-1.jpg"
+}

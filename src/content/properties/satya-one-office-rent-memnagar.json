@@ -1,0 +1,73 @@
+{
+  "title": "7,144 sq.ft super built up Office · Satya One, Memnagar",
+  "slug": "satya-one-office-rent-memnagar",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹60 / sq.ft",
+  "priceValue": 428640,
+  "localityName": "Memnagar",
+  "city": "Ahmedabad",
+  "address": "Satya One, opp. Manav Mandir, Memnagar, Ahmedabad",
+  "area": "7,144 sq.ft super built up",
+  "areaSqft": 7144,
+  "totalFloors": "13 floors",
+  "age": "8 years",
+  "amenities": [
+    "3 lifts"
+  ],
+  "description": [
+    "Fully furnished office of 7,144 sq.ft super built up for rent in Satya One, Memnagar, Ahmedabad.",
+    "Fitted with 85 work desks, 4 cabins, 1 conference room, 1 cafeteria, 2 washrooms, a waiting area and reception, with 3 lifts. Set in a 13 floors building, 8 years. Rent is ₹60 per sq.ft."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/satya-one-office-rent-memnagar/photo-1.jpg",
+      "alt": "Satya One office in Memnagar, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/satya-one-office-rent-memnagar/photo-2.jpg",
+      "alt": "Satya One office in Memnagar, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/satya-one-office-rent-memnagar/photo-3.jpg",
+      "alt": "Satya One office in Memnagar, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/satya-one-office-rent-memnagar/photo-4.jpg",
+      "alt": "Satya One office in Memnagar, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/satya-one-office-rent-memnagar/photo-5.jpg",
+      "alt": "Satya One office in Memnagar, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/satya-one-office-rent-memnagar/photo-6.jpg",
+      "alt": "Satya One office in Memnagar, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/satya-one-office-rent-memnagar/photo-7.jpg",
+      "alt": "Satya One office in Memnagar, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Satya One office Memnagar | City Property Services",
+  "seoDescription": "Fully furnished office of 7,144 sq.ft super built up for rent in Satya One, Memnagar, Ahmedabad.",
+  "geo": {
+    "lat": 23.045685487352262,
+    "lng": 72.53998173351435
+  },
+  "perSqftDisplay": "₹60 per sq.ft",
+  "pricePer": "per month",
+  "furnishing": "Fully furnished",
+  "builtUpArea": "7,144 sq.ft",
+  "mainImage": "/uploads/properties/satya-one-office-rent-memnagar/photo-1.jpg"
+}

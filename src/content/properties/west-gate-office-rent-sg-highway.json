@@ -1,0 +1,111 @@
+{
+  "title": "4,250 sq.ft Office · West Gate, SG Highway",
+  "slug": "west-gate-office-rent-sg-highway",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹68 / sq.ft",
+  "priceValue": 289000,
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "address": "West Gate, SG Highway, Ahmedabad",
+  "area": "4,250 sq.ft",
+  "areaSqft": 4250,
+  "totalFloors": "19 floors",
+  "age": "8 years",
+  "amenities": [
+    "10 lifts"
+  ],
+  "description": [
+    "Office of 4,250 sq.ft for rent in West Gate, SG Highway, Ahmedabad.",
+    "Fitted with 6 cabins, a conference room, 36 work stations and reception, with 10 lifts. Set in a 19 floors building, 8 years. Rent is ₹68 per sq.ft."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/west-gate-office-rent-sg-highway/photo-1.jpg",
+      "alt": "West Gate office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/west-gate-office-rent-sg-highway/photo-2.jpg",
+      "alt": "West Gate office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/west-gate-office-rent-sg-highway/photo-3.jpg",
+      "alt": "West Gate office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/west-gate-office-rent-sg-highway/photo-4.jpg",
+      "alt": "West Gate office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/west-gate-office-rent-sg-highway/photo-5.jpg",
+      "alt": "West Gate office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/west-gate-office-rent-sg-highway/photo-6.jpg",
+      "alt": "West Gate office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/west-gate-office-rent-sg-highway/photo-7.jpg",
+      "alt": "West Gate office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/west-gate-office-rent-sg-highway/photo-8.jpg",
+      "alt": "West Gate office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/west-gate-office-rent-sg-highway/photo-9.jpg",
+      "alt": "West Gate office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/west-gate-office-rent-sg-highway/photo-10.jpg",
+      "alt": "West Gate office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/west-gate-office-rent-sg-highway/photo-11.jpg",
+      "alt": "West Gate office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/west-gate-office-rent-sg-highway/photo-12.jpg",
+      "alt": "West Gate office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/west-gate-office-rent-sg-highway/photo-13.jpg",
+      "alt": "West Gate office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/west-gate-office-rent-sg-highway/photo-14.jpg",
+      "alt": "West Gate office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/west-gate-office-rent-sg-highway/photo-15.jpg",
+      "alt": "West Gate office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "West Gate office SG Highway | City Property Services",
+  "seoDescription": "Office of 4,250 sq.ft for rent in West Gate, SG Highway, Ahmedabad.",
+  "geo": {
+    "lat": 23.001377945183517,
+    "lng": 72.50153421428249
+  },
+  "perSqftDisplay": "₹68 per sq.ft",
+  "pricePer": "per month",
+  "mainImage": "/uploads/properties/west-gate-office-rent-sg-highway/photo-1.jpg"
+}

@@ -1,0 +1,71 @@
+{
+  "title": "5,000 sq.ft Office for Sale · Anam 2, Bopal",
+  "slug": "anam-2-office-sale-bopal",
+  "status": "sale",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹3.25 Cr",
+  "priceValue": 32500000,
+  "localityName": "Bopal",
+  "city": "Ahmedabad",
+  "address": "Anam 2, Bopal Junction, Ahmedabad",
+  "area": "5,000 sq.ft",
+  "areaSqft": 5000,
+  "totalFloors": "13 floors",
+  "age": "newly constructed",
+  "amenities": [
+    "6 lifts"
+  ],
+  "description": [
+    "Unfurnished office of 5,000 sq.ft for sale in Anam 2, Bopal, Ahmedabad.",
+    "Fitted with bare shell office with 6 lifts. Set in a 13 floors building, newly constructed. Priced at ₹6,500 per sq.ft plus taxes, about ₹3.25 Cr."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/anam-2-office-sale-bopal/photo-1.jpg",
+      "alt": "Anam 2 office in Bopal, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/anam-2-office-sale-bopal/photo-2.jpg",
+      "alt": "Anam 2 office in Bopal, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/anam-2-office-sale-bopal/photo-3.jpg",
+      "alt": "Anam 2 office in Bopal, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/anam-2-office-sale-bopal/photo-4.jpg",
+      "alt": "Anam 2 office in Bopal, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/anam-2-office-sale-bopal/photo-5.jpg",
+      "alt": "Anam 2 office in Bopal, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/anam-2-office-sale-bopal/photo-6.jpg",
+      "alt": "Anam 2 office in Bopal, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/anam-2-office-sale-bopal/photo-7.jpg",
+      "alt": "Anam 2 office in Bopal, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Anam 2 office Bopal | City Property Services",
+  "seoDescription": "Unfurnished office of 5,000 sq.ft for sale in Anam 2, Bopal, Ahmedabad.",
+  "geo": {
+    "lat": 23.026950196694372,
+    "lng": 72.47594176929545
+  },
+  "perSqftDisplay": "₹6,500 per sq.ft",
+  "furnishing": "Unfurnished",
+  "mainImage": "/uploads/properties/anam-2-office-sale-bopal/photo-1.jpg"
+}
