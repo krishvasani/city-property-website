@@ -137,6 +137,37 @@ if (jsonLd) (Array.isArray(jsonLd) ? jsonLd : [jsonLd]).forEach((s) => schemas.p
   <!-- Structured data -->
   {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
 
+  <!-- Google Analytics 4 — runs only on the live domain so localhost/previews
+       don't pollute the data. Tracks page views plus lead-intent events. -->
+  <script is:inline>
+    (function () {
+      var host = location.hostname;
+      if (host !== 'cityprop.co.in' && host !== 'www.cityprop.co.in') return;
+      var ID = 'G-5MZTJ0FL9T';
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', ID);
+      // Lead-intent events: phone tap, WhatsApp tap, and form submissions.
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest ? e.target.closest('a') : null;
+        if (!a) return;
+        var h = a.getAttribute('href') || '';
+        if (h.indexOf('wa.me') > -1) gtag('event', 'whatsapp_click');
+        else if (h.indexOf('tel:') === 0) gtag('event', 'phone_click');
+      }, true);
+      document.addEventListener('lead:success', function (e) {
+        var f = (e.target && e.target.getAttribute && e.target.getAttribute('name')) || 'lead';
+        gtag('event', 'generate_lead', { form_name: f });
+      });
+    })();
+  </script>
+
   <!-- Page-transition failsafe: mark html early, always reveal (verbatim from bundle) -->
   <script is:inline>
     (function () {
