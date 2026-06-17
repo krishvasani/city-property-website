@@ -1,0 +1,41 @@
+{
+  "title": "10,000 sq.ft Office · 9th Avenue, Bodakdev",
+  "slug": "9th-avenue-office-rent-bodakdev",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹60 / sq.ft",
+  "priceValue": 600000,
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "9th Avenue, Bodakdev, Ahmedabad",
+  "area": "10,000 sq.ft",
+  "areaSqft": 10000,
+  "totalFloors": "5 floors",
+  "age": "10 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 10,000 sq.ft for rent in 9th Avenue, Bodakdev, Ahmedabad.",
+    "Fitted with 9 cabins, 1 conference room, 1 meeting room, 60 work stations, pantry, 2 washrooms, reception and 1 lift. Set in a 5 floors building, 10 years. Rent is ₹60 per sq.ft."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/9th-avenue-office-rent-bodakdev/photo-1.jpg",
+      "alt": "9th Avenue office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "9th Avenue office Bodakdev | City Property Services",
+  "seoDescription": "Fully furnished office of 10,000 sq.ft for rent in 9th Avenue, Bodakdev, Ahmedabad.",
+  "geo": {
+    "lat": 23.03449415006239,
+    "lng": 72.50650544057558
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹60 per sq.ft",
+  "furnishing": "Fully furnished",
+  "carpetArea": "6,000 sq.ft",
+  "mainImage": "/uploads/properties/9th-avenue-office-rent-bodakdev/photo-1.jpg"
+}

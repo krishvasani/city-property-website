@@ -1,0 +1,54 @@
+{
+  "title": "11,236 sq.ft Office · PV Enclave, Bodakdev",
+  "slug": "pv-enclave-office-rent-bodakdev",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹70 / sq.ft",
+  "priceValue": 786520,
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "PV Enclave, ICICI Bank Lane, Sindhu Bhavan Road, Bodakdev, Ahmedabad",
+  "area": "11,236 sq.ft",
+  "areaSqft": 11236,
+  "totalFloors": "13 floors",
+  "age": "1 to 5 years",
+  "amenities": [
+    "4 lifts",
+    "10 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 11,236 sq.ft for rent in PV Enclave, Bodakdev, Ahmedabad.",
+    "Fitted with 94 work stations, 9 cabins, 2 conference rooms, 6 washrooms, 10 car parks and 4 lifts. Set in a 13 floors building, 1 to 5 years. Rent is ₹70 per sq.ft plus taxes."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/pv-enclave-office-rent-bodakdev/photo-1.jpg",
+      "alt": "PV Enclave office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/pv-enclave-office-rent-bodakdev/photo-2.jpg",
+      "alt": "PV Enclave office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/pv-enclave-office-rent-bodakdev/photo-3.jpg",
+      "alt": "PV Enclave office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "PV Enclave office Bodakdev | City Property Services",
+  "seoDescription": "Fully furnished office of 11,236 sq.ft for rent in PV Enclave, Bodakdev, Ahmedabad.",
+  "geo": {
+    "lat": 23.03692340939133,
+    "lng": 72.50540057076475
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹70 per sq.ft plus taxes",
+  "furnishing": "Fully furnished",
+  "parking": "10 car parks",
+  "mainImage": "/uploads/properties/pv-enclave-office-rent-bodakdev/photo-1.jpg"
+}

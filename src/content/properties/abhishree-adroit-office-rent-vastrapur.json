@@ -1,0 +1,55 @@
+{
+  "title": "3,000 sq.ft Office · Abhishree Adroit, Vastrapur",
+  "slug": "abhishree-adroit-office-rent-vastrapur",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹50 / sq.ft",
+  "priceValue": 150000,
+  "localityName": "Vastrapur",
+  "city": "Ahmedabad",
+  "address": "Abhishree Adroit, Mansi Circle, Vastrapur, Ahmedabad",
+  "area": "3,000 sq.ft",
+  "areaSqft": 3000,
+  "totalFloors": "12 floors",
+  "age": "8 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 3,000 sq.ft for rent in Abhishree Adroit, Vastrapur, Ahmedabad.",
+    "Fitted with 4 cabins and 40 work stations. Set in a 12 floors building, 8 years. Rent is ₹50 per sq.ft."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/abhishree-adroit-office-rent-vastrapur/photo-1.jpg",
+      "alt": "Abhishree Adroit office in Vastrapur, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/abhishree-adroit-office-rent-vastrapur/photo-2.jpg",
+      "alt": "Abhishree Adroit office in Vastrapur, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/abhishree-adroit-office-rent-vastrapur/photo-3.jpg",
+      "alt": "Abhishree Adroit office in Vastrapur, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/abhishree-adroit-office-rent-vastrapur/photo-4.jpg",
+      "alt": "Abhishree Adroit office in Vastrapur, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Abhishree Adroit office Vastrapur | City Property Services",
+  "seoDescription": "Fully furnished office of 3,000 sq.ft for rent in Abhishree Adroit, Vastrapur, Ahmedabad.",
+  "geo": {
+    "lat": 23.034028994713623,
+    "lng": 72.52425370557086
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹50 per sq.ft",
+  "furnishing": "Fully furnished",
+  "mainImage": "/uploads/properties/abhishree-adroit-office-rent-vastrapur/photo-1.jpg"
+}

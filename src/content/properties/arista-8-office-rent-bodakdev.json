@@ -1,0 +1,48 @@
+{
+  "title": "9,800 sq.ft Office · Arista 8, Bodakdev",
+  "slug": "arista-8-office-rent-bodakdev",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹68 / sq.ft",
+  "priceValue": 666400,
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "Arista 8, off Sindhu Bhavan Road, Bodakdev, Ahmedabad",
+  "area": "9,800 sq.ft",
+  "areaSqft": 9800,
+  "totalFloors": "2 basement, ground and 4 floors",
+  "age": "7 to 8 years",
+  "amenities": [
+    "20 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 9,800 sq.ft for rent in Arista 8, Bodakdev, Ahmedabad.",
+    "Fitted with 9 cabins, a conference room, 60 work stations, pantry, 4 washrooms and 20 car parks. Set in a 2 basement, ground and 4 floors building, 7 to 8 years. Rent is ₹68 per sq.ft."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/arista-8-office-rent-bodakdev/photo-1.jpg",
+      "alt": "Arista 8 office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/arista-8-office-rent-bodakdev/photo-2.jpg",
+      "alt": "Arista 8 office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Arista 8 office Bodakdev | City Property Services",
+  "seoDescription": "Fully furnished office of 9,800 sq.ft for rent in Arista 8, Bodakdev, Ahmedabad.",
+  "geo": {
+    "lat": 23.038100127896602,
+    "lng": 72.5033450184204
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹68 per sq.ft",
+  "furnishing": "Fully furnished",
+  "parking": "20 car parks",
+  "mainImage": "/uploads/properties/arista-8-office-rent-bodakdev/photo-1.jpg"
+}

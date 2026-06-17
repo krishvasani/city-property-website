@@ -1,0 +1,63 @@
+{
+  "title": "4,300 sq.ft super built up Office · Brooklyn Towers, SG Highway",
+  "slug": "brooklyn-towers-office-rent-sg-highway",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹360,000",
+  "priceValue": 360000,
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "address": "Brooklyn Towers, SG Highway, near YMCA Club, Ahmedabad",
+  "area": "4,300 sq.ft super built up",
+  "areaSqft": 4300,
+  "totalFloors": "10 floors",
+  "age": "",
+  "amenities": [
+    "4 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 4,300 sq.ft super built up for rent in Brooklyn Towers, SG Highway, Ahmedabad.",
+    "Fitted with 50 work stations, 1 director cabin, 3 manager cabins, 1 conference room, 2 washrooms, pantry, reception and 4 car parks, plus a 2,000 sq.ft terrace. Set in a 10 floors building. Rent is ₹360,000 per month."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/brooklyn-towers-office-rent-sg-highway/photo-1.jpg",
+      "alt": "Brooklyn Towers office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/brooklyn-towers-office-rent-sg-highway/photo-2.jpg",
+      "alt": "Brooklyn Towers office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/brooklyn-towers-office-rent-sg-highway/photo-3.jpg",
+      "alt": "Brooklyn Towers office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/brooklyn-towers-office-rent-sg-highway/photo-4.jpg",
+      "alt": "Brooklyn Towers office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/brooklyn-towers-office-rent-sg-highway/photo-5.jpg",
+      "alt": "Brooklyn Towers office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Brooklyn Towers office SG Highway | City Property Services",
+  "seoDescription": "Fully furnished office of 4,300 sq.ft super built up for rent in Brooklyn Towers, SG Highway, Ahmedabad.",
+  "geo": {
+    "lat": 23.00382213370916,
+    "lng": 72.50178037322118
+  },
+  "pricePer": "per month",
+  "furnishing": "Fully furnished",
+  "builtUpArea": "4,300 sq.ft",
+  "parking": "4 car parks",
+  "mainImage": "/uploads/properties/brooklyn-towers-office-rent-sg-highway/photo-1.jpg"
+}

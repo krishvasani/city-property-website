@@ -1,0 +1,60 @@
+{
+  "title": "1,050 sq.ft Office · The First, Vastrapur",
+  "slug": "the-first-1050-office-rent-vastrapur",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹60 / sq.ft",
+  "priceValue": 63000,
+  "localityName": "Vastrapur",
+  "city": "Ahmedabad",
+  "address": "The First, Vastrapur, Ahmedabad",
+  "area": "1,050 sq.ft",
+  "areaSqft": 1050,
+  "totalFloors": "14 floors",
+  "age": "4 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 1,050 sq.ft for rent in The First, Vastrapur, Ahmedabad.",
+    "Fitted with 1 cabin, 1 conference room, 15 work stations, reception, pantry, washroom and 1 car park. Set in a 14 floors building, 4 years. Rent is ₹60 per sq.ft."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/the-first-1050-office-rent-vastrapur/photo-1.jpg",
+      "alt": "The First office in Vastrapur, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/the-first-1050-office-rent-vastrapur/photo-2.jpg",
+      "alt": "The First office in Vastrapur, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/the-first-1050-office-rent-vastrapur/photo-3.jpg",
+      "alt": "The First office in Vastrapur, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/the-first-1050-office-rent-vastrapur/photo-4.jpg",
+      "alt": "The First office in Vastrapur, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/the-first-1050-office-rent-vastrapur/photo-5.jpg",
+      "alt": "The First office in Vastrapur, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "The First office Vastrapur | City Property Services",
+  "seoDescription": "Fully furnished office of 1,050 sq.ft for rent in The First, Vastrapur, Ahmedabad.",
+  "geo": {
+    "lat": 23.03790216340053,
+    "lng": 72.51257800987074
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹60 per sq.ft",
+  "furnishing": "Fully furnished",
+  "mainImage": "/uploads/properties/the-first-1050-office-rent-vastrapur/photo-1.jpg"
+}

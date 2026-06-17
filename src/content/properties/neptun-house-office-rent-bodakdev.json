@@ -1,0 +1,59 @@
+{
+  "title": "12,860 sq.ft Office · Neptun House, Bodakdev",
+  "slug": "neptun-house-office-rent-bodakdev",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹65 / sq.ft",
+  "priceValue": 835900,
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "Neptun House, Rajpath Rangoli Road, Bodakdev, Ahmedabad",
+  "area": "12,860 sq.ft",
+  "areaSqft": 12860,
+  "totalFloors": "3 floors",
+  "age": "7 years",
+  "amenities": [
+    "2 lifts",
+    "20 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 12,860 sq.ft for rent in Neptun House, Bodakdev, Ahmedabad.",
+    "Fitted with 8 cabins, 3 conference rooms, 130 work stations, 20 car parks and 2 lifts. Set in a 3 floors building, 7 years. Rent is ₹65 per sq.ft."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/neptun-house-office-rent-bodakdev/photo-1.jpg",
+      "alt": "Neptun House office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/neptun-house-office-rent-bodakdev/photo-2.jpg",
+      "alt": "Neptun House office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/neptun-house-office-rent-bodakdev/photo-3.jpg",
+      "alt": "Neptun House office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/neptun-house-office-rent-bodakdev/photo-4.jpg",
+      "alt": "Neptun House office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Neptun House office Bodakdev | City Property Services",
+  "seoDescription": "Fully furnished office of 12,860 sq.ft for rent in Neptun House, Bodakdev, Ahmedabad.",
+  "geo": {
+    "lat": 23.034820053851135,
+    "lng": 72.50361415265282
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹65 per sq.ft",
+  "furnishing": "Fully furnished",
+  "parking": "20 car parks",
+  "mainImage": "/uploads/properties/neptun-house-office-rent-bodakdev/photo-1.jpg"
+}

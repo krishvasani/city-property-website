@@ -1,0 +1,54 @@
+{
+  "title": "1,600 sq.ft Office for Sale · Ganesh Meridian, Sola",
+  "slug": "ganesh-meridian-office-sale-sola",
+  "status": "sale",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹1.28 Cr",
+  "priceValue": 12800000,
+  "localityName": "Sola",
+  "city": "Ahmedabad",
+  "address": "Ganesh Meridian, Sola, Ahmedabad",
+  "area": "1,600 sq.ft",
+  "areaSqft": 1600,
+  "totalFloors": "10 floors",
+  "age": "10 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 1,600 sq.ft for sale in Ganesh Meridian, Sola, Ahmedabad.",
+    "Fitted with a main cabin, assistant cabin, account cabin, staff areas, 5 washrooms, a conference room and a waiting lounge. Set in a 10 floors building, 10 years. Priced at ₹8,000 per sq.ft, about ₹1.28 Cr."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/ganesh-meridian-office-sale-sola/photo-1.jpg",
+      "alt": "Ganesh Meridian office in Sola, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/ganesh-meridian-office-sale-sola/photo-2.jpg",
+      "alt": "Ganesh Meridian office in Sola, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/ganesh-meridian-office-sale-sola/photo-3.jpg",
+      "alt": "Ganesh Meridian office in Sola, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/ganesh-meridian-office-sale-sola/photo-4.jpg",
+      "alt": "Ganesh Meridian office in Sola, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Ganesh Meridian office Sola | City Property Services",
+  "seoDescription": "Fully furnished office of 1,600 sq.ft for sale in Ganesh Meridian, Sola, Ahmedabad.",
+  "geo": {
+    "lat": 23.077831957900056,
+    "lng": 72.52740858765425
+  },
+  "perSqftDisplay": "₹8,000 per sq.ft",
+  "furnishing": "Fully furnished",
+  "mainImage": "/uploads/properties/ganesh-meridian-office-sale-sola/photo-1.jpg"
+}

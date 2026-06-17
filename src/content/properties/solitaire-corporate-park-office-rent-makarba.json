@@ -1,0 +1,47 @@
+{
+  "title": "1,000 sq.ft Office · Solitaire Corporate Park, Makarba",
+  "slug": "solitaire-corporate-park-office-rent-makarba",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹42 / sq.ft",
+  "priceValue": 42000,
+  "localityName": "Makarba",
+  "city": "Ahmedabad",
+  "address": "Solitaire Corporate Park, Makarba, SG Highway, Ahmedabad",
+  "area": "1,000 sq.ft",
+  "areaSqft": 1000,
+  "totalFloors": "12 floors",
+  "age": "10 years",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "Fully furnished office of 1,000 sq.ft for rent in Solitaire Corporate Park, Makarba, Ahmedabad.",
+    "Fitted with 2 lifts, 1 cabin and 10 work stations. Set in a 12 floors building, 10 years. Rent is ₹42 per sq.ft."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/solitaire-corporate-park-office-rent-makarba/photo-1.jpg",
+      "alt": "Solitaire Corporate Park office in Makarba, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/solitaire-corporate-park-office-rent-makarba/photo-2.jpg",
+      "alt": "Solitaire Corporate Park office in Makarba, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Solitaire Corporate Park office Makarba | City Property Services",
+  "seoDescription": "Fully furnished office of 1,000 sq.ft for rent in Solitaire Corporate Park, Makarba, Ahmedabad.",
+  "geo": {
+    "lat": 22.99977689764965,
+    "lng": 72.49992379028508
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹42 per sq.ft",
+  "furnishing": "Fully furnished",
+  "mainImage": "/uploads/properties/solitaire-corporate-park-office-rent-makarba/photo-1.jpg"
+}

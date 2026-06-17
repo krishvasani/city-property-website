@@ -1,0 +1,68 @@
+{
+  "title": "19,300 sq.ft Office · Sun Avenue One, Ambawadi",
+  "slug": "sun-avenue-one-office-rent-ambawadi",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹58 / sq.ft",
+  "priceValue": 1119400,
+  "localityName": "Ambawadi",
+  "city": "Ahmedabad",
+  "address": "Sun Avenue One, Manekbaugh, Ambawadi, Ahmedabad",
+  "area": "19,300 sq.ft",
+  "areaSqft": 19300,
+  "totalFloors": "13 floors",
+  "age": "5 to 10 years",
+  "amenities": [
+    "15 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 19,300 sq.ft for rent in Sun Avenue One, Ambawadi, Ahmedabad.",
+    "Fitted with 15 car parks, 259 work stations, 7 cabins and 2 conference rooms. Set in a 13 floors building, 5 to 10 years. Rent is ₹58 per sq.ft."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/sun-avenue-one-office-rent-ambawadi/photo-1.jpg",
+      "alt": "Sun Avenue One office in Ambawadi, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/sun-avenue-one-office-rent-ambawadi/photo-2.jpg",
+      "alt": "Sun Avenue One office in Ambawadi, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/sun-avenue-one-office-rent-ambawadi/photo-3.jpg",
+      "alt": "Sun Avenue One office in Ambawadi, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/sun-avenue-one-office-rent-ambawadi/photo-4.jpg",
+      "alt": "Sun Avenue One office in Ambawadi, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/sun-avenue-one-office-rent-ambawadi/photo-5.jpg",
+      "alt": "Sun Avenue One office in Ambawadi, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/sun-avenue-one-office-rent-ambawadi/photo-6.jpg",
+      "alt": "Sun Avenue One office in Ambawadi, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Sun Avenue One office Ambawadi | City Property Services",
+  "seoDescription": "Fully furnished office of 19,300 sq.ft for rent in Sun Avenue One, Ambawadi, Ahmedabad.",
+  "geo": {
+    "lat": 23.015050260192563,
+    "lng": 72.53828034548944
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹58 per sq.ft",
+  "furnishing": "Fully furnished",
+  "parking": "15 car parks",
+  "mainImage": "/uploads/properties/sun-avenue-one-office-rent-ambawadi/photo-1.jpg"
+}

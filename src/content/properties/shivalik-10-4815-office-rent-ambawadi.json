@@ -1,0 +1,43 @@
+{
+  "title": "4,815 sq.ft super built up Office · Shivalik 10, Ambawadi",
+  "slug": "shivalik-10-4815-office-rent-ambawadi",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹60 / sq.ft",
+  "priceValue": 288900,
+  "localityName": "Ambawadi",
+  "city": "Ahmedabad",
+  "address": "Shivalik 10, Ambawadi, Ahmedabad",
+  "area": "4,815 sq.ft super built up",
+  "areaSqft": 4815,
+  "totalFloors": "4 floors",
+  "age": "5 to 10 years",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "Unfurnished office of 4,815 sq.ft super built up for rent in Shivalik 10, Ambawadi, Ahmedabad.",
+    "Fitted with 4 car parks, 2 washrooms and 2 lifts. Set in a 4 floors building, 5 to 10 years. Rent is ₹60 per sq.ft plus taxes."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shivalik-10-4815-office-rent-ambawadi/photo-1.jpg",
+      "alt": "Shivalik 10 office in Ambawadi, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Shivalik 10 office Ambawadi | City Property Services",
+  "seoDescription": "Unfurnished office of 4,815 sq.ft super built up for rent in Shivalik 10, Ambawadi, Ahmedabad.",
+  "geo": {
+    "lat": 23.02268556259493,
+    "lng": 72.54791715647256
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹60 per sq.ft plus taxes",
+  "furnishing": "Unfurnished",
+  "builtUpArea": "4,815 sq.ft",
+  "mainImage": "/uploads/properties/shivalik-10-4815-office-rent-ambawadi/photo-1.jpg"
+}

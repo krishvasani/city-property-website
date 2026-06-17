@@ -1,0 +1,65 @@
+{
+  "title": "10,000 sq.ft Office · Maradia Plaza, Navrangpura",
+  "slug": "maradia-plaza-office-rent-navrangpura",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹40 / sq.ft",
+  "priceValue": 400000,
+  "localityName": "Navrangpura",
+  "city": "Ahmedabad",
+  "address": "Maradia Plaza, CG Road, Navrangpura, Ahmedabad",
+  "area": "10,000 sq.ft",
+  "areaSqft": 10000,
+  "totalFloors": "10 floors",
+  "age": "10 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 10,000 sq.ft for rent in Maradia Plaza, Navrangpura, Ahmedabad.",
+    "Fitted with 10 cabins, a conference room and 200 work stations, plus a 1,200 sq.ft terrace. Set in a 10 floors building, 10 years. Rent is ₹40 per sq.ft."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/maradia-plaza-office-rent-navrangpura/photo-1.jpg",
+      "alt": "Maradia Plaza office in Navrangpura, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/maradia-plaza-office-rent-navrangpura/photo-2.jpg",
+      "alt": "Maradia Plaza office in Navrangpura, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/maradia-plaza-office-rent-navrangpura/photo-3.jpg",
+      "alt": "Maradia Plaza office in Navrangpura, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/maradia-plaza-office-rent-navrangpura/photo-4.jpg",
+      "alt": "Maradia Plaza office in Navrangpura, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/maradia-plaza-office-rent-navrangpura/photo-5.jpg",
+      "alt": "Maradia Plaza office in Navrangpura, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/maradia-plaza-office-rent-navrangpura/photo-6.jpg",
+      "alt": "Maradia Plaza office in Navrangpura, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Maradia Plaza office Navrangpura | City Property Services",
+  "seoDescription": "Fully furnished office of 10,000 sq.ft for rent in Maradia Plaza, Navrangpura, Ahmedabad.",
+  "geo": {
+    "lat": 23.02673238969037,
+    "lng": 72.55767799884278
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹40 per sq.ft",
+  "furnishing": "Fully furnished",
+  "mainImage": "/uploads/properties/maradia-plaza-office-rent-navrangpura/photo-1.jpg"
+}
