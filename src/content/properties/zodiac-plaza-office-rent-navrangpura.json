@@ -1,0 +1,43 @@
+{
+  "title": "7,625 sq.ft Office · Zodiac Plaza, Navrangpura",
+  "slug": "zodiac-plaza-office-rent-navrangpura",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹65 / sq.ft",
+  "priceValue": 495625,
+  "localityName": "Navrangpura",
+  "city": "Ahmedabad",
+  "address": "Zodiac Plaza, Navrangpura, Ahmedabad",
+  "area": "7,625 sq.ft",
+  "areaSqft": 7625,
+  "totalFloors": "5 floors",
+  "age": "10 years",
+  "amenities": [
+    "3 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 7,625 sq.ft for rent in Zodiac Plaza, Navrangpura, Ahmedabad.",
+    "Fitted with 75 work stations, 8 cabins, a conference room and 3 car parks. Set in a 5 floors building, 10 years. Rent is ₹65 per sq.ft."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/zodiac-plaza-office-rent-navrangpura/photo-1.jpg",
+      "alt": "Zodiac Plaza office in Navrangpura, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Zodiac Plaza office Navrangpura | City Property Services",
+  "seoDescription": "Fully furnished office of 7,625 sq.ft for rent in Zodiac Plaza, Navrangpura, Ahmedabad.",
+  "geo": {
+    "lat": 23.04286135921726,
+    "lng": 72.55747136134417
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹65 per sq.ft",
+  "furnishing": "Fully furnished",
+  "parking": "3 car parks",
+  "mainImage": "/uploads/properties/zodiac-plaza-office-rent-navrangpura/photo-1.jpg"
+}

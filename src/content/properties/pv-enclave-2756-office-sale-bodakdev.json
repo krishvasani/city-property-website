@@ -1,0 +1,41 @@
+{
+  "title": "2,756 sq.ft Office for Sale · PV Enclave, Bodakdev",
+  "slug": "pv-enclave-2756-office-sale-bodakdev",
+  "status": "sale",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.51 Cr",
+  "priceValue": 25079600,
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "PV Enclave, Sindhu Bhavan Road, Bodakdev, Ahmedabad",
+  "area": "2,756 sq.ft",
+  "areaSqft": 2756,
+  "totalFloors": "13 floors",
+  "age": "newly constructed",
+  "amenities": [
+    "4 lifts"
+  ],
+  "description": [
+    "Unfurnished office of 2,756 sq.ft for sale in PV Enclave, Bodakdev, Ahmedabad.",
+    "Fitted with 4 lifts plus a personal lift in each office, with three offices on each floor. Set in a 13 floors building, newly constructed. Priced at ₹9,100 per sq.ft, about ₹2.51 Cr."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/pv-enclave-2756-office-sale-bodakdev/photo-1.jpg",
+      "alt": "PV Enclave office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "PV Enclave office Bodakdev | City Property Services",
+  "seoDescription": "Unfurnished office of 2,756 sq.ft for sale in PV Enclave, Bodakdev, Ahmedabad.",
+  "geo": {
+    "lat": 23.03713393831844,
+    "lng": 72.50390676372571
+  },
+  "perSqftDisplay": "₹9,100 per sq.ft",
+  "furnishing": "Unfurnished",
+  "mainImage": "/uploads/properties/pv-enclave-2756-office-sale-bodakdev/photo-1.jpg"
+}

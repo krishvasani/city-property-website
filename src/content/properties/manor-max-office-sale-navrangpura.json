@@ -1,0 +1,39 @@
+{
+  "title": "4,500 sq.ft Office for Sale · Manor Max, Navrangpura",
+  "slug": "manor-max-office-sale-navrangpura",
+  "status": "sale",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹3.3 Cr",
+  "priceValue": 33000000,
+  "localityName": "Navrangpura",
+  "city": "Ahmedabad",
+  "address": "Manor Max, Navrangpura, Ahmedabad",
+  "area": "4,500 sq.ft",
+  "areaSqft": 4500,
+  "totalFloors": "7 floors",
+  "age": "5 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 4,500 sq.ft for sale in Manor Max, Navrangpura, Ahmedabad.",
+    "Fitted with 30 work stations and 2 cabins. Set in a 7 floors building, 5 years. Priced at ₹3.3 Cr."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/manor-max-office-sale-navrangpura/photo-1.jpg",
+      "alt": "Manor Max office in Navrangpura, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Manor Max office Navrangpura | City Property Services",
+  "seoDescription": "Fully furnished office of 4,500 sq.ft for sale in Manor Max, Navrangpura, Ahmedabad.",
+  "geo": {
+    "lat": 23.03413037129743,
+    "lng": 72.55682907880092
+  },
+  "perSqftDisplay": "₹7,333 per sq.ft",
+  "furnishing": "Fully furnished",
+  "mainImage": "/uploads/properties/manor-max-office-sale-navrangpura/photo-1.jpg"
+}

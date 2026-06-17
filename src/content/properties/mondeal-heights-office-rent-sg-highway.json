@@ -1,0 +1,32 @@
+{
+  "title": "3,203 sq.ft Office · Mondeal Heights, SG Highway",
+  "slug": "mondeal-heights-office-rent-sg-highway",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹134,526",
+  "priceValue": 134526,
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "address": "Mondeal Heights, Iscon Cross Road, SG Highway, Ahmedabad",
+  "area": "3,203 sq.ft",
+  "areaSqft": 3203,
+  "totalFloors": "17 floors",
+  "age": "5 years",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 3,203 sq.ft for rent in Mondeal Heights, SG Highway, Ahmedabad.",
+    "Fitted with a bare shell floor in a landmark tower. Set in a 17 floors building, 5 years. Rent is ₹134,526 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-13",
+  "seoTitle": "Mondeal Heights office SG Highway | City Property Services",
+  "seoDescription": "Unfurnished office of 3,203 sq.ft for rent in Mondeal Heights, SG Highway, Ahmedabad.",
+  "geo": {
+    "lat": 23.02274515317303,
+    "lng": 72.50777102470134
+  },
+  "pricePer": "per month",
+  "furnishing": "Unfurnished"
+}

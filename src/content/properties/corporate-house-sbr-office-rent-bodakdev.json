@@ -1,0 +1,41 @@
+{
+  "title": "9,800 sq.ft super built up Office · Corporate House, Bodakdev",
+  "slug": "corporate-house-sbr-office-rent-bodakdev",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹68 / sq.ft",
+  "priceValue": 666400,
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "Corporate House, off Sindhu Bhavan Road, Bodakdev, Ahmedabad",
+  "area": "9,800 sq.ft super built up",
+  "areaSqft": 9800,
+  "totalFloors": "5 floors",
+  "age": "4 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 9,800 sq.ft super built up for rent in Corporate House, Bodakdev, Ahmedabad.",
+    "Fitted with 4 cabins, 4 meeting rooms, 1 conference room, 65 work stations, pantry and 4 washrooms. Set in a 5 floors building, 4 years. Rent is ₹68 per sq.ft."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/corporate-house-sbr-office-rent-bodakdev/photo-1.jpg",
+      "alt": "Corporate House office in Bodakdev, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "Corporate House office Bodakdev | City Property Services",
+  "seoDescription": "Fully furnished office of 9,800 sq.ft super built up for rent in Corporate House, Bodakdev, Ahmedabad.",
+  "geo": {
+    "lat": 23.038642702856137,
+    "lng": 72.51326467986125
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹68 per sq.ft",
+  "furnishing": "Fully furnished",
+  "builtUpArea": "9,800 sq.ft",
+  "mainImage": "/uploads/properties/corporate-house-sbr-office-rent-bodakdev/photo-1.jpg"
+}

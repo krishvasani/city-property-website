@@ -1,0 +1,84 @@
+{
+  "title": "22,000 sq.ft Office · GNFC Tower, SG Highway",
+  "slug": "gnfc-tower-22000-office-rent-sg-highway",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹880,000",
+  "priceValue": 880000,
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "address": "GNFC Tower, near Pakwan, SG Road, Ahmedabad",
+  "area": "22,000 sq.ft",
+  "areaSqft": 22000,
+  "totalFloors": "10 floors",
+  "age": "15 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 22,000 sq.ft for rent in GNFC Tower, SG Highway, Ahmedabad.",
+    "Fitted with 10 cabins, 250 work stations and 2 conference rooms. Set in a 10 floors building, 15 years. Rent is ₹880,000 per month."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/gnfc-tower-22000-office-rent-sg-highway/photo-1.jpg",
+      "alt": "GNFC Tower office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/gnfc-tower-22000-office-rent-sg-highway/photo-2.jpg",
+      "alt": "GNFC Tower office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/gnfc-tower-22000-office-rent-sg-highway/photo-3.jpg",
+      "alt": "GNFC Tower office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/gnfc-tower-22000-office-rent-sg-highway/photo-4.jpg",
+      "alt": "GNFC Tower office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/gnfc-tower-22000-office-rent-sg-highway/photo-5.jpg",
+      "alt": "GNFC Tower office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/gnfc-tower-22000-office-rent-sg-highway/photo-6.jpg",
+      "alt": "GNFC Tower office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/gnfc-tower-22000-office-rent-sg-highway/photo-7.jpg",
+      "alt": "GNFC Tower office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/gnfc-tower-22000-office-rent-sg-highway/photo-8.jpg",
+      "alt": "GNFC Tower office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/gnfc-tower-22000-office-rent-sg-highway/photo-9.jpg",
+      "alt": "GNFC Tower office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/gnfc-tower-22000-office-rent-sg-highway/photo-10.jpg",
+      "alt": "GNFC Tower office in SG Highway, Ahmedabad",
+      "label": "Office photo"
+    }
+  ],
+  "newAt": "2026-06-13",
+  "seoTitle": "GNFC Tower office SG Highway | City Property Services",
+  "seoDescription": "Fully furnished office of 22,000 sq.ft for rent in GNFC Tower, SG Highway, Ahmedabad.",
+  "geo": {
+    "lat": 23.04025246285612,
+    "lng": 72.51412664556487
+  },
+  "pricePer": "per month",
+  "furnishing": "Fully furnished",
+  "mainImage": "/uploads/properties/gnfc-tower-22000-office-rent-sg-highway/photo-1.jpg"
+}
