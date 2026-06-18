@@ -1,0 +1,34 @@
+{
+  "title": "5,000 sq.ft super built up Office · Iscon Center, Satellite",
+  "slug": "iscon-center-office-rent-satellite",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹55 / sq.ft",
+  "localityName": "Satellite",
+  "city": "Ahmedabad",
+  "address": "Iscon Center, Satellite, Ahmedabad",
+  "area": "5,000 sq.ft super built up",
+  "areaSqft": 5000,
+  "totalFloors": "5 floors",
+  "age": "15 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 5,000 sq.ft super built up for rent in Iscon Center, Satellite, Ahmedabad.",
+    "Fitted with 3 small cabins, an account cabin, an 8 people sales cabin, 3 pods, a server room, an 8 person conference room, separate washrooms and 2 lifts. Set in a 5 floors building, 15 years. Rent is ₹55 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Iscon Center office Satellite | City Property Services",
+  "seoDescription": "Fully furnished office of 5,000 sq.ft super built up for rent in Iscon Center, Satellite, Ahmedabad.",
+  "geo": {
+    "lat": 23.023970914753953,
+    "lng": 72.52965939573465
+  },
+  "priceValue": 275000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹55 per sq.ft",
+  "furnishing": "Fully furnished",
+  "builtUpArea": "5,000 sq.ft"
+}

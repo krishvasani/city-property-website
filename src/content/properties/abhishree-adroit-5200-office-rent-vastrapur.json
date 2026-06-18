@@ -1,0 +1,33 @@
+{
+  "title": "5,200 sq.ft Office · Abhishree Adroit, Vastrapur",
+  "slug": "abhishree-adroit-5200-office-rent-vastrapur",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹35 / sq.ft",
+  "localityName": "Vastrapur",
+  "city": "Ahmedabad",
+  "address": "Abhishree Adroit, Vastrapur, Ahmedabad",
+  "area": "5,200 sq.ft",
+  "areaSqft": 5200,
+  "totalFloors": "12 floors",
+  "age": "10 years",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 5,200 sq.ft for rent in Abhishree Adroit, Vastrapur, Ahmedabad.",
+    "Fitted with 6 lifts. Set in a 12 floors building, 10 years. Rent is ₹35 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Abhishree Adroit office Vastrapur | City Property Services",
+  "seoDescription": "Unfurnished office of 5,200 sq.ft for rent in Abhishree Adroit, Vastrapur, Ahmedabad.",
+  "geo": {
+    "lat": 23.0335228973254,
+    "lng": 72.52443108224276
+  },
+  "priceValue": 182000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹35 per sq.ft",
+  "furnishing": "Unfurnished"
+}

@@ -1,0 +1,36 @@
+{
+  "title": "12,500 sq.ft Office · Corporate Building, Ashram Road",
+  "slug": "corporate-building-12500-office-rent-ashram-road",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹50 / sq.ft",
+  "localityName": "Ashram Road",
+  "city": "Ahmedabad",
+  "address": "Corporate Building, Ashram Road, Ahmedabad",
+  "area": "12,500 sq.ft",
+  "areaSqft": 12500,
+  "totalFloors": "11 floors",
+  "age": "newly constructed",
+  "amenities": [
+    "8 car parks"
+  ],
+  "description": [
+    "Unfurnished office of 12,500 sq.ft for rent in Corporate Building, Ashram Road, Ahmedabad.",
+    "Fitted with 7 lifts, 4 washrooms and 8 car parks. Set in a 11 floors building, newly constructed. Rent is ₹50 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Corporate Building office Ashram Road | City Property Services",
+  "seoDescription": "Unfurnished office of 12,500 sq.ft for rent in Corporate Building, Ashram Road, Ahmedabad.",
+  "geo": {
+    "lat": 23.04348206902475,
+    "lng": 72.57169430715277
+  },
+  "priceValue": 625000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹50 per sq.ft",
+  "furnishing": "Unfurnished",
+  "parking": "8 car parks"
+}

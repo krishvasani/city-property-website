@@ -1,0 +1,32 @@
+{
+  "title": "2,300 sq.ft Office · Chandan House, Navrangpura",
+  "slug": "chandan-house-2300-office-rent-navrangpura",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹138,000",
+  "localityName": "Navrangpura",
+  "city": "Ahmedabad",
+  "address": "Chandan House, Navrangpura, Ahmedabad",
+  "area": "2,300 sq.ft",
+  "areaSqft": 2300,
+  "totalFloors": "4 floors",
+  "age": "7 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 2,300 sq.ft for rent in Chandan House, Navrangpura, Ahmedabad.",
+    "Fitted with 3 cabins and 21 work stations. Set in a 4 floors building, 7 years. Rent is ₹138,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Chandan House office Navrangpura | City Property Services",
+  "seoDescription": "Fully furnished office of 2,300 sq.ft for rent in Chandan House, Navrangpura, Ahmedabad.",
+  "geo": {
+    "lat": 23.029358043880727,
+    "lng": 72.56285819779913
+  },
+  "priceValue": 138000,
+  "pricePer": "per month",
+  "furnishing": "Fully furnished"
+}

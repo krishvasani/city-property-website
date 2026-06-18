@@ -1,0 +1,36 @@
+{
+  "title": "2,477 sq.ft super built up Office · Iscon Elegance, SG Highway",
+  "slug": "iscon-elegance-office-rent-sg-highway",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹150,000",
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "address": "Iscon Elegance, SG Highway, Ahmedabad",
+  "area": "2,477 sq.ft super built up",
+  "areaSqft": 2477,
+  "totalFloors": "10 floors",
+  "age": "10 years",
+  "amenities": [
+    "2 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 2,477 sq.ft super built up for rent in Iscon Elegance, SG Highway, Ahmedabad.",
+    "Fitted with 60 plus work stations, a manager cabin, a conference room, a waiting area, pantry, 2 toilets, 2 reserved car parks and 6 lifts. Set in a 10 floors building, 10 years. Rent is ₹150,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Iscon Elegance office SG Highway | City Property Services",
+  "seoDescription": "Fully furnished office of 2,477 sq.ft super built up for rent in Iscon Elegance, SG Highway, Ahmedabad.",
+  "geo": {
+    "lat": 23.01280355046586,
+    "lng": 72.50393015219338
+  },
+  "priceValue": 150000,
+  "pricePer": "per month",
+  "furnishing": "Fully furnished",
+  "builtUpArea": "2,477 sq.ft",
+  "parking": "2 car parks"
+}

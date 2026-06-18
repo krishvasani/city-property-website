@@ -1,0 +1,33 @@
+{
+  "title": "921 sq.ft Office · Spectrum, Memnagar",
+  "slug": "spectrum-office-rent-memnagar",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹40,000",
+  "localityName": "Memnagar",
+  "city": "Ahmedabad",
+  "address": "Spectrum, Memnagar, Ahmedabad",
+  "area": "921 sq.ft",
+  "areaSqft": 921,
+  "totalFloors": "5 floors",
+  "age": "7 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 921 sq.ft for rent in Spectrum, Memnagar, Ahmedabad.",
+    "Fitted with 1 cabin and 18 work stations, with 2 lifts. Set in a 5 floors building, 7 years. Rent is ₹40,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Spectrum office Memnagar | City Property Services",
+  "seoDescription": "Fully furnished office of 921 sq.ft for rent in Spectrum, Memnagar, Ahmedabad.",
+  "geo": {
+    "lat": 23.032115217335807,
+    "lng": 72.51338427305686
+  },
+  "priceValue": 40000,
+  "pricePer": "per month",
+  "furnishing": "Fully furnished",
+  "carpetArea": "525 sq.ft"
+}

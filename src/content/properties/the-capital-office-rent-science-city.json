@@ -1,0 +1,33 @@
+{
+  "title": "19,600 sq.ft Office · The Capital, Science City",
+  "slug": "the-capital-office-rent-science-city",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹60 / sq.ft",
+  "localityName": "Science City",
+  "city": "Ahmedabad",
+  "address": "The Capital, Science City, Ahmedabad",
+  "area": "19,600 sq.ft",
+  "areaSqft": 19600,
+  "totalFloors": "20 floors",
+  "age": "8 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 19,600 sq.ft for rent in The Capital, Science City, Ahmedabad.",
+    "Fitted with 200 work stations, 9 cabins, a conference room, reception, pantry and 8 lifts. Set in a 20 floors building, 8 years. Rent is ₹60 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "The Capital office Science City | City Property Services",
+  "seoDescription": "Fully furnished office of 19,600 sq.ft for rent in The Capital, Science City, Ahmedabad.",
+  "geo": {
+    "lat": 23.0760947,
+    "lng": 72.51617539293439
+  },
+  "priceValue": 1176000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹60 per sq.ft",
+  "furnishing": "Fully furnished"
+}

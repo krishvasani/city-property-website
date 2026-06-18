@@ -1,0 +1,33 @@
+{
+  "title": "22,500 sq.ft Office · 31 Five Zaveri, Prahlad Nagar",
+  "slug": "31-five-zaveri-office-rent-prahladnagar",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹58 / sq.ft",
+  "localityName": "Prahlad Nagar",
+  "city": "Ahmedabad",
+  "address": "31 Five Zaveri, Prahlad Nagar, Ahmedabad",
+  "area": "22,500 sq.ft",
+  "areaSqft": 22500,
+  "totalFloors": "13 floors",
+  "age": "5 to 7 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 22,500 sq.ft for rent in 31 Five Zaveri, Prahlad Nagar, Ahmedabad.",
+    "Fitted with 12 cabins, 3 conference rooms, 200 work stations and 3 lifts. Set in a 13 floors building, 5 to 7 years. Rent is ₹58 per sq.ft plus taxes."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "31 Five Zaveri office Prahlad Nagar | City Property Services",
+  "seoDescription": "Fully furnished office of 22,500 sq.ft for rent in 31 Five Zaveri, Prahlad Nagar, Ahmedabad.",
+  "geo": {
+    "lat": 22.999377499243934,
+    "lng": 72.50065922642152
+  },
+  "priceValue": 1305000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹58 per sq.ft plus taxes",
+  "furnishing": "Fully furnished"
+}

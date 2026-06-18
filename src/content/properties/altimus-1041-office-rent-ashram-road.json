@@ -1,0 +1,32 @@
+{
+  "title": "1,041 sq.ft Office · Altimus, Ashram Road",
+  "slug": "altimus-1041-office-rent-ashram-road",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹30,000",
+  "localityName": "Ashram Road",
+  "city": "Ahmedabad",
+  "address": "Altimus, Ashram Road, Ahmedabad",
+  "area": "1,041 sq.ft",
+  "areaSqft": 1041,
+  "totalFloors": "15 floors",
+  "age": "newly constructed",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 1,041 sq.ft for rent in Altimus, Ashram Road, Ahmedabad.",
+    "Fitted with 8 lifts. Set in a 15 floors building, newly constructed. Rent is ₹30,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Altimus office Ashram Road | City Property Services",
+  "seoDescription": "Unfurnished office of 1,041 sq.ft for rent in Altimus, Ashram Road, Ahmedabad.",
+  "geo": {
+    "lat": 23.037552354492785,
+    "lng": 72.57098543806313
+  },
+  "priceValue": 30000,
+  "pricePer": "per month",
+  "furnishing": "Unfurnished"
+}

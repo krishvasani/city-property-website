@@ -1,0 +1,33 @@
+{
+  "title": "1,226 sq.ft Office · Iconic Shyamal, Shyamal",
+  "slug": "iconic-shyamal-1226-office-rent-shyamal",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹40 / sq.ft",
+  "localityName": "Shyamal",
+  "city": "Ahmedabad",
+  "address": "Iconic Shyamal, Shyamal, Ahmedabad",
+  "area": "1,226 sq.ft",
+  "areaSqft": 1226,
+  "totalFloors": "13 floors",
+  "age": "newly constructed",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 1,226 sq.ft for rent in Iconic Shyamal, Shyamal, Ahmedabad.",
+    "Fitted with 10 lifts. Set in a 13 floors building, newly constructed. Rent is ₹40 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Iconic Shyamal office Shyamal | City Property Services",
+  "seoDescription": "Unfurnished office of 1,226 sq.ft for rent in Iconic Shyamal, Shyamal, Ahmedabad.",
+  "geo": {
+    "lat": 23.014986503728288,
+    "lng": 72.53077163250732
+  },
+  "priceValue": 49040,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹40 per sq.ft",
+  "furnishing": "Unfurnished"
+}

@@ -1,0 +1,33 @@
+{
+  "title": "2,425 sq.ft Office · Times Square Grand, Bodakdev",
+  "slug": "times-square-grand-2425-office-rent-bodakdev",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹45 / sq.ft",
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "Times Square Grand, Bodakdev, Ahmedabad",
+  "area": "2,425 sq.ft",
+  "areaSqft": 2425,
+  "totalFloors": "7 floors",
+  "age": "newly constructed",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 2,425 sq.ft for rent in Times Square Grand, Bodakdev, Ahmedabad.",
+    "Fitted with 10 lifts. Set in a 7 floors building, newly constructed. Rent is ₹45 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Times Square Grand office Bodakdev | City Property Services",
+  "seoDescription": "Unfurnished office of 2,425 sq.ft for rent in Times Square Grand, Bodakdev, Ahmedabad.",
+  "geo": {
+    "lat": 23.040230887436916,
+    "lng": 72.49833293193379
+  },
+  "priceValue": 109125,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹45 per sq.ft",
+  "furnishing": "Unfurnished"
+}

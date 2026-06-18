@@ -1,0 +1,33 @@
+{
+  "title": "2,525 sq.ft Office · Dev Auram, Prahlad Nagar",
+  "slug": "dev-auram-office-rent-prahladnagar",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹45 / sq.ft",
+  "localityName": "Prahlad Nagar",
+  "city": "Ahmedabad",
+  "address": "Dev Auram, Prahlad Nagar, Ahmedabad",
+  "area": "2,525 sq.ft",
+  "areaSqft": 2525,
+  "totalFloors": "13 floors",
+  "age": "9 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 2,525 sq.ft for rent in Dev Auram, Prahlad Nagar, Ahmedabad.",
+    "Fitted with 10 cabins, 40 to 45 work stations, a conference room, pantry, 2 washrooms and 4 lifts. Set in a 13 floors building, 9 years. Rent is ₹45 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Dev Auram office Prahlad Nagar | City Property Services",
+  "seoDescription": "Fully furnished office of 2,525 sq.ft for rent in Dev Auram, Prahlad Nagar, Ahmedabad.",
+  "geo": {
+    "lat": 23.012078450817828,
+    "lng": 72.51497744610798
+  },
+  "priceValue": 113625,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹45 per sq.ft",
+  "furnishing": "Fully furnished"
+}

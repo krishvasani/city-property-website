@@ -1,0 +1,32 @@
+{
+  "title": "822 sq.ft Office · Shilp Epitome, Bodakdev",
+  "slug": "shilp-epitome-office-rent-bodakdev",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹41,500",
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "Shilp Epitome, Bodakdev, Ahmedabad",
+  "area": "822 sq.ft",
+  "areaSqft": 822,
+  "totalFloors": "13 floors",
+  "age": "5 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 822 sq.ft for rent in Shilp Epitome, Bodakdev, Ahmedabad.",
+    "Fitted with 2 cabins, 11 work stations and 8 lifts. Set in a 13 floors building, 5 years. Rent is ₹41,500 per month plus taxes."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Shilp Epitome office Bodakdev | City Property Services",
+  "seoDescription": "Fully furnished office of 822 sq.ft for rent in Shilp Epitome, Bodakdev, Ahmedabad.",
+  "geo": {
+    "lat": 23.035229384915493,
+    "lng": 72.50498387706565
+  },
+  "priceValue": 41500,
+  "pricePer": "per month",
+  "furnishing": "Fully furnished"
+}

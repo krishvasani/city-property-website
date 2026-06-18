@@ -1,0 +1,36 @@
+{
+  "title": "1,273 sq.ft Office · Ratnakar Nine Square, Vastrapur",
+  "slug": "ratnakar-9-square-1273-office-rent-vastrapur",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹35 / sq.ft",
+  "localityName": "Vastrapur",
+  "city": "Ahmedabad",
+  "address": "Ratnakar Nine Square, Vastrapur, Ahmedabad",
+  "area": "1,273 sq.ft",
+  "areaSqft": 1273,
+  "totalFloors": "13 floors",
+  "age": "5 years",
+  "amenities": [
+    "2 car parks"
+  ],
+  "description": [
+    "Unfurnished office of 1,273 sq.ft for rent in Ratnakar Nine Square, Vastrapur, Ahmedabad.",
+    "Fitted with 6 lifts and 2 car parks. Set in a 13 floors building, 5 years. Rent is ₹35 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Ratnakar Nine Square office Vastrapur | City Property Services",
+  "seoDescription": "Unfurnished office of 1,273 sq.ft for rent in Ratnakar Nine Square, Vastrapur, Ahmedabad.",
+  "geo": {
+    "lat": 23.02850540214157,
+    "lng": 72.53017120922696
+  },
+  "priceValue": 44555,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹35 per sq.ft",
+  "furnishing": "Unfurnished",
+  "parking": "2 car parks"
+}

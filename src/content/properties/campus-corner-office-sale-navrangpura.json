@@ -1,0 +1,32 @@
+{
+  "title": "3,000 sq.ft Office for Sale · Campus Corner, Navrangpura",
+  "slug": "campus-corner-office-sale-navrangpura",
+  "status": "sale",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.4 Cr",
+  "localityName": "Navrangpura",
+  "city": "Ahmedabad",
+  "address": "Campus Corner, Navrangpura, Ahmedabad",
+  "area": "3,000 sq.ft",
+  "areaSqft": 3000,
+  "totalFloors": "4 floors",
+  "age": "12 years",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 3,000 sq.ft for sale in Campus Corner, Navrangpura, Ahmedabad.",
+    "A unit with 2 lifts. Set in a 4 floors building, 12 years. Priced at ₹8,000 per sq.ft, about ₹2.4 Cr."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Campus Corner office Navrangpura | City Property Services",
+  "seoDescription": "Unfurnished office of 3,000 sq.ft for sale in Campus Corner, Navrangpura, Ahmedabad.",
+  "geo": {
+    "lat": 23.032879255735185,
+    "lng": 72.5554855642168
+  },
+  "priceValue": 24000000,
+  "perSqftDisplay": "₹8,000 per sq.ft",
+  "furnishing": "Unfurnished"
+}
