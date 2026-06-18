@@ -1,0 +1,32 @@
+{
+  "title": "6,250 sq.ft Office · Sankalp Square 3B, Bodakdev",
+  "slug": "sankalp-square-3b-6250-office-rent-bodakdev",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹281,250",
+  "priceValue": 281250,
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "Sankalp Square 3B, Sindhu Bhavan Road, Bodakdev, Ahmedabad",
+  "area": "6,250 sq.ft",
+  "areaSqft": 6250,
+  "totalFloors": "18 floors",
+  "age": "newly constructed",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 6,250 sq.ft for rent in Sankalp Square 3B, Bodakdev, Ahmedabad.",
+    "A new bare shell floor. Set in a 18 floors building, newly constructed. Rent is ₹281,250 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Sankalp Square 3B office Bodakdev | City Property Services",
+  "seoDescription": "Unfurnished office of 6,250 sq.ft for rent in Sankalp Square 3B, Bodakdev, Ahmedabad.",
+  "geo": {
+    "lat": 23.04346601432267,
+    "lng": 72.48205942534723
+  },
+  "pricePer": "per month",
+  "furnishing": "Unfurnished"
+}

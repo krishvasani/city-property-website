@@ -1,0 +1,35 @@
+{
+  "title": "1,380 sq.ft Office · Shapath 5, SG Highway",
+  "slug": "shapath-5-1380-office-rent-sg-highway",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹60 / sq.ft",
+  "priceValue": 82800,
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "address": "Shapath 5, near Karnavati Club, SG Road, Ahmedabad",
+  "area": "1,380 sq.ft",
+  "areaSqft": 1380,
+  "totalFloors": "17 floors",
+  "age": "10 years",
+  "amenities": [
+    "3 lifts"
+  ],
+  "description": [
+    "Fully furnished office of 1,380 sq.ft for rent in Shapath 5, SG Highway, Ahmedabad.",
+    "Fitted with 12 work stations, 2 cabins, a conference room and 3 lifts. Set in a 17 floors building, 10 years. Rent is ₹60 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Shapath 5 office SG Highway | City Property Services",
+  "seoDescription": "Fully furnished office of 1,380 sq.ft for rent in Shapath 5, SG Highway, Ahmedabad.",
+  "geo": {
+    "lat": 23.014226130172673,
+    "lng": 72.5046101105481
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹60 per sq.ft",
+  "furnishing": "Fully furnished"
+}

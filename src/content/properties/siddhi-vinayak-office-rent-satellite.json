@@ -1,0 +1,35 @@
+{
+  "title": "6,600 sq.ft Office · Siddhi Vinayak, Satellite",
+  "slug": "siddhi-vinayak-office-rent-satellite",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹60 / sq.ft",
+  "priceValue": 396000,
+  "localityName": "Satellite",
+  "city": "Ahmedabad",
+  "address": "Siddhi Vinayak, Shivranjani, Satellite, Ahmedabad",
+  "area": "6,600 sq.ft",
+  "areaSqft": 6600,
+  "totalFloors": "5 floors",
+  "age": "14 years",
+  "amenities": [
+    "4 lifts"
+  ],
+  "description": [
+    "Fully furnished office of 6,600 sq.ft for rent in Siddhi Vinayak, Satellite, Ahmedabad.",
+    "Around 100 work stations, 3 cabins, a conference room, pantry and 4 lifts. Set in a 5 floors building, 14 years. Rent is ₹60 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Siddhi Vinayak office Satellite | City Property Services",
+  "seoDescription": "Fully furnished office of 6,600 sq.ft for rent in Siddhi Vinayak, Satellite, Ahmedabad.",
+  "geo": {
+    "lat": 23.025104130341013,
+    "lng": 72.53079449573464
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹60 per sq.ft",
+  "furnishing": "Fully furnished"
+}

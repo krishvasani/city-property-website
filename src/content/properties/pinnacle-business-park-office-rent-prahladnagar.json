@@ -1,0 +1,36 @@
+{
+  "title": "1,225 sq.ft Office · Pinnacle Business Park, Prahlad Nagar",
+  "slug": "pinnacle-business-park-office-rent-prahladnagar",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹55 / sq.ft",
+  "priceValue": 67375,
+  "localityName": "Prahlad Nagar",
+  "city": "Ahmedabad",
+  "address": "Pinnacle Business Park, Corporate Road, Prahlad Nagar, Ahmedabad",
+  "area": "1,225 sq.ft",
+  "areaSqft": 1225,
+  "totalFloors": "9 floors",
+  "age": "8 years",
+  "amenities": [
+    "2 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 1,225 sq.ft for rent in Pinnacle Business Park, Prahlad Nagar, Ahmedabad.",
+    "Fitted with 17 work stations, 2 cabins, a conference room, fully air conditioned with file storage, Vaastu compliant, and 2 allotted car parks. Set in a 9 floors building, 8 years. Rent is ₹55 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Pinnacle Business Park office Prahlad Nagar | City Property Services",
+  "seoDescription": "Fully furnished office of 1,225 sq.ft for rent in Pinnacle Business Park, Prahlad Nagar, Ahmedabad.",
+  "geo": {
+    "lat": 23.007353612807073,
+    "lng": 72.50589198016182
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹55 per sq.ft",
+  "furnishing": "Fully furnished",
+  "parking": "2 car parks"
+}

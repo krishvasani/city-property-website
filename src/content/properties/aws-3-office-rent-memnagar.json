@@ -1,0 +1,36 @@
+{
+  "title": "16,000 sq.ft Office · AWS 3, Memnagar",
+  "slug": "aws-3-office-rent-memnagar",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹960,000",
+  "priceValue": 960000,
+  "localityName": "Memnagar",
+  "city": "Ahmedabad",
+  "address": "AWS 3, Memnagar, Ahmedabad",
+  "area": "16,000 sq.ft",
+  "areaSqft": 16000,
+  "totalFloors": "",
+  "age": "",
+  "amenities": [
+    "6 lifts",
+    "12 car parks"
+  ],
+  "description": [
+    "Unfurnished office of 16,000 sq.ft for rent in AWS 3, Memnagar, Ahmedabad.",
+    "Fitted with 12 allotted car parks and 6 lifts. Rent is ₹960,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "AWS 3 office Memnagar | City Property Services",
+  "seoDescription": "Unfurnished office of 16,000 sq.ft for rent in AWS 3, Memnagar, Ahmedabad.",
+  "geo": {
+    "lat": 23.045654163499826,
+    "lng": 72.53798630029637
+  },
+  "pricePer": "per month",
+  "furnishing": "Unfurnished",
+  "parking": "12 car parks"
+}
