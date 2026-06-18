@@ -1,0 +1,36 @@
+{
+  "title": "6,983 sq.ft Office · Anmol Business Center, Navrangpura",
+  "slug": "anmol-business-center-office-rent-navrangpura",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹50 / sq.ft",
+  "localityName": "Navrangpura",
+  "city": "Ahmedabad",
+  "address": "Anmol Business Center, Navrangpura, Ahmedabad",
+  "area": "6,983 sq.ft",
+  "areaSqft": 6983,
+  "totalFloors": "5 floors",
+  "age": "",
+  "amenities": [
+    "4 car parks"
+  ],
+  "description": [
+    "Unfurnished office of 6,983 sq.ft for rent in Anmol Business Center, Navrangpura, Ahmedabad.",
+    "Fitted with 4 car parks, 2 lifts and 2 washrooms. Set in a 5 floors building. Rent is ₹50 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Anmol Business Center office Navrangpura | City Property Services",
+  "seoDescription": "Unfurnished office of 6,983 sq.ft for rent in Anmol Business Center, Navrangpura, Ahmedabad.",
+  "geo": {
+    "lat": 23.047161416707954,
+    "lng": 72.55782442086789
+  },
+  "priceValue": 349150,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹50 per sq.ft",
+  "furnishing": "Unfurnished",
+  "parking": "4 car parks"
+}

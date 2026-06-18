@@ -1,0 +1,36 @@
+{
+  "title": "6,000 sq.ft Office · Shoppers Plaza 4, Navrangpura",
+  "slug": "shoppers-plaza-4-office-rent-navrangpura",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹45 / sq.ft",
+  "localityName": "Navrangpura",
+  "city": "Ahmedabad",
+  "address": "Shoppers Plaza 4, Navrangpura, Ahmedabad",
+  "area": "6,000 sq.ft",
+  "areaSqft": 6000,
+  "totalFloors": "5 floors",
+  "age": "10 years",
+  "amenities": [
+    "2 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 6,000 sq.ft for rent in Shoppers Plaza 4, Navrangpura, Ahmedabad.",
+    "Fitted with 165 work stations, 3 cabins, pantry, 2 lifts and 2 car parks. Set in a 5 floors building, 10 years. Rent is ₹45 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Shoppers Plaza 4 office Navrangpura | City Property Services",
+  "seoDescription": "Fully furnished office of 6,000 sq.ft for rent in Shoppers Plaza 4, Navrangpura, Ahmedabad.",
+  "geo": {
+    "lat": 23.03104142148176,
+    "lng": 72.5598290994383
+  },
+  "priceValue": 270000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹45 per sq.ft",
+  "furnishing": "Fully furnished",
+  "parking": "2 car parks"
+}

@@ -1,0 +1,36 @@
+{
+  "title": "12,500 sq.ft Office · Westgate Business Bay, Makarba",
+  "slug": "westgate-business-bay-office-rent-makarba",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹68 / sq.ft",
+  "localityName": "Makarba",
+  "city": "Ahmedabad",
+  "address": "Westgate Business Bay, Makarba, Ahmedabad",
+  "area": "12,500 sq.ft",
+  "areaSqft": 12500,
+  "totalFloors": "15 floors",
+  "age": "5 years",
+  "amenities": [
+    "10 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 12,500 sq.ft for rent in Westgate Business Bay, Makarba, Ahmedabad.",
+    "Fitted with 135 work stations, 4 manager cabins, 1 large conference room, a reception counter, a waiting cabin, pantry, separate washrooms, a store room, 8 lifts and 10 car parks. Set in a 15 floors building, 5 years. Rent is ₹68 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Westgate Business Bay office Makarba | City Property Services",
+  "seoDescription": "Fully furnished office of 12,500 sq.ft for rent in Westgate Business Bay, Makarba, Ahmedabad.",
+  "geo": {
+    "lat": 23.003,
+    "lng": 72.5012
+  },
+  "priceValue": 850000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹68 per sq.ft",
+  "furnishing": "Fully furnished",
+  "parking": "10 car parks"
+}

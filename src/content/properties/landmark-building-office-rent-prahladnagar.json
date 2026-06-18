@@ -1,0 +1,36 @@
+{
+  "title": "8,000 sq.ft Office · Landmark Building, Prahlad Nagar",
+  "slug": "landmark-building-office-rent-prahladnagar",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹50 / sq.ft",
+  "localityName": "Prahlad Nagar",
+  "city": "Ahmedabad",
+  "address": "Landmark Building, Prahlad Nagar, Ahmedabad",
+  "area": "8,000 sq.ft",
+  "areaSqft": 8000,
+  "totalFloors": "13 floors",
+  "age": "12 years",
+  "amenities": [
+    "8 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 8,000 sq.ft for rent in Landmark Building, Prahlad Nagar, Ahmedabad.",
+    "Fitted with 80 work stations, 3 conference rooms, 3 meeting rooms, a server room, a cafeteria and pantry, central air conditioning, 3 lifts and 8 allotted car parks. Set in a 13 floors building, 12 years. Rent is ₹50 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Landmark Building office Prahlad Nagar | City Property Services",
+  "seoDescription": "Fully furnished office of 8,000 sq.ft for rent in Landmark Building, Prahlad Nagar, Ahmedabad.",
+  "geo": {
+    "lat": 23.01109968510616,
+    "lng": 72.52124923912783
+  },
+  "priceValue": 400000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹50 per sq.ft",
+  "furnishing": "Fully furnished",
+  "parking": "8 car parks"
+}

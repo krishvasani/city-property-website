@@ -1,0 +1,32 @@
+{
+  "title": "650 sq.ft Office · Gala Empire, Memnagar",
+  "slug": "gala-empire-office-rent-memnagar",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹35,000",
+  "localityName": "Memnagar",
+  "city": "Ahmedabad",
+  "address": "Gala Empire, Memnagar, Ahmedabad",
+  "area": "650 sq.ft",
+  "areaSqft": 650,
+  "totalFloors": "12 floors",
+  "age": "6 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 650 sq.ft for rent in Gala Empire, Memnagar, Ahmedabad.",
+    "Fitted with 1 cabin and 5 work stations. Set in a 12 floors building, 6 years. Rent is ₹35,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Gala Empire office Memnagar | City Property Services",
+  "seoDescription": "Fully furnished office of 650 sq.ft for rent in Gala Empire, Memnagar, Ahmedabad.",
+  "geo": {
+    "lat": 23.049261077195453,
+    "lng": 72.52504901293108
+  },
+  "priceValue": 35000,
+  "pricePer": "per month",
+  "furnishing": "Fully furnished"
+}

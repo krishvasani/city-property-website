@@ -1,0 +1,33 @@
+{
+  "title": "1,670 sq.ft Office · Abhishree Avenue, Vastrapur",
+  "slug": "abhishree-avenue-office-rent-vastrapur",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹30 / sq.ft",
+  "localityName": "Vastrapur",
+  "city": "Ahmedabad",
+  "address": "Abhishree Avenue, Vastrapur, Ahmedabad",
+  "area": "1,670 sq.ft",
+  "areaSqft": 1670,
+  "totalFloors": "7 floors",
+  "age": "10 years",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 1,670 sq.ft for rent in Abhishree Avenue, Vastrapur, Ahmedabad.",
+    "Fitted with 3 lifts. Set in a 7 floors building, 10 years. Rent is ₹30 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Abhishree Avenue office Vastrapur | City Property Services",
+  "seoDescription": "Unfurnished office of 1,670 sq.ft for rent in Abhishree Avenue, Vastrapur, Ahmedabad.",
+  "geo": {
+    "lat": 23.02157288426663,
+    "lng": 72.5448449399143
+  },
+  "priceValue": 50100,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹30 per sq.ft",
+  "furnishing": "Unfurnished"
+}

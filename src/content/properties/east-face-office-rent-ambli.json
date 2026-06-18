@@ -1,0 +1,36 @@
+{
+  "title": "4,000 sq.ft Office · East Face, Ambli",
+  "slug": "east-face-office-rent-ambli",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹35 / sq.ft",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "address": "East Face, Ambli, Ahmedabad",
+  "area": "4,000 sq.ft",
+  "areaSqft": 4000,
+  "totalFloors": "",
+  "age": "newly constructed",
+  "amenities": [
+    "4 car parks"
+  ],
+  "description": [
+    "Unfurnished office of 4,000 sq.ft for rent in East Face, Ambli, Ahmedabad.",
+    "Fitted with 6 lifts and 4 car parks. Newly constructed. Rent is ₹35 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "East Face office Ambli | City Property Services",
+  "seoDescription": "Unfurnished office of 4,000 sq.ft for rent in East Face, Ambli, Ahmedabad.",
+  "geo": {
+    "lat": 23.024628018852024,
+    "lng": 72.4786900920312
+  },
+  "priceValue": 140000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹35 per sq.ft",
+  "furnishing": "Unfurnished",
+  "parking": "4 car parks"
+}

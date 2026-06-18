@@ -1,0 +1,33 @@
+{
+  "title": "10,000 sq.ft Office · Shital Westpark Imperia, Vastrapur",
+  "slug": "shital-westpark-imperia-10000-office-rent-vastrapur",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹51 / sq.ft",
+  "localityName": "Vastrapur",
+  "city": "Ahmedabad",
+  "address": "Shital Westpark Imperia, Vastrapur, Ahmedabad",
+  "area": "10,000 sq.ft",
+  "areaSqft": 10000,
+  "totalFloors": "12 floors",
+  "age": "newly constructed",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 10,000 sq.ft for rent in Shital Westpark Imperia, Vastrapur, Ahmedabad.",
+    "A bare shell floor with 8 lifts. Set in a 12 floors building, newly constructed. Rent is ₹51 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Shital Westpark Imperia office Vastrapur | City Property Services",
+  "seoDescription": "Unfurnished office of 10,000 sq.ft for rent in Shital Westpark Imperia, Vastrapur, Ahmedabad.",
+  "geo": {
+    "lat": 23.04156737484593,
+    "lng": 72.52980376054889
+  },
+  "priceValue": 510000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹51 per sq.ft",
+  "furnishing": "Unfurnished"
+}

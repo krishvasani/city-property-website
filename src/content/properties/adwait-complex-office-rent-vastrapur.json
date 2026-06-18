@@ -1,0 +1,33 @@
+{
+  "title": "1,250 sq.ft Office · Adwait Complex, Vastrapur",
+  "slug": "adwait-complex-office-rent-vastrapur",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹45 / sq.ft",
+  "localityName": "Vastrapur",
+  "city": "Ahmedabad",
+  "address": "Adwait Complex, Vastrapur, Ahmedabad",
+  "area": "1,250 sq.ft",
+  "areaSqft": 1250,
+  "totalFloors": "4 floors",
+  "age": "12 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 1,250 sq.ft for rent in Adwait Complex, Vastrapur, Ahmedabad.",
+    "Fitted with 1 cabin, a cubical, an account section and 20 work stations, with 2 lifts. Set in a 4 floors building, 12 years. Rent is ₹45 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Adwait Complex office Vastrapur | City Property Services",
+  "seoDescription": "Fully furnished office of 1,250 sq.ft for rent in Adwait Complex, Vastrapur, Ahmedabad.",
+  "geo": {
+    "lat": 23.04049363025968,
+    "lng": 72.52589325590269
+  },
+  "priceValue": 56250,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹45 per sq.ft",
+  "furnishing": "Fully furnished"
+}

@@ -1,0 +1,36 @@
+{
+  "title": "1,890 sq.ft Office · Westgate 1, Makarba",
+  "slug": "westgate-1-office-rent-makarba",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹65 / sq.ft",
+  "localityName": "Makarba",
+  "city": "Ahmedabad",
+  "address": "Westgate 1, Makarba, Ahmedabad",
+  "area": "1,890 sq.ft",
+  "areaSqft": 1890,
+  "totalFloors": "16 floors",
+  "age": "5 years",
+  "amenities": [
+    "2 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 1,890 sq.ft for rent in Westgate 1, Makarba, Ahmedabad.",
+    "Fitted with 3 cabins, 27 work stations, a pantry, 2 attached toilets, 2 washrooms, 7 lifts and 2 allotted car parks. Set in a 16 floors building, 5 years. Rent is ₹65 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Westgate 1 office Makarba | City Property Services",
+  "seoDescription": "Fully furnished office of 1,890 sq.ft for rent in Westgate 1, Makarba, Ahmedabad.",
+  "geo": {
+    "lat": 23.003006070533235,
+    "lng": 72.50126276081279
+  },
+  "priceValue": 122850,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹65 per sq.ft",
+  "furnishing": "Fully furnished",
+  "parking": "2 car parks"
+}

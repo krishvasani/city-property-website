@@ -1,0 +1,33 @@
+{
+  "title": "1,623 sq.ft Office · Ratnanjali Square, Jodhpur",
+  "slug": "ratnanjali-square-office-rent-jodhpur",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹90 / sq.ft",
+  "localityName": "Jodhpur",
+  "city": "Ahmedabad",
+  "address": "Ratnanjali Square, Jodhpur, Ahmedabad",
+  "area": "1,623 sq.ft",
+  "areaSqft": 1623,
+  "totalFloors": "13 floors",
+  "age": "newly constructed",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 1,623 sq.ft for rent in Ratnanjali Square, Jodhpur, Ahmedabad.",
+    "Fitted with 4 lifts. Set in a 13 floors building, newly constructed. Rent is ₹90 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Ratnanjali Square office Jodhpur | City Property Services",
+  "seoDescription": "Unfurnished office of 1,623 sq.ft for rent in Ratnanjali Square, Jodhpur, Ahmedabad.",
+  "geo": {
+    "lat": 23.014388826379026,
+    "lng": 72.51675952944296
+  },
+  "priceValue": 146070,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹90 per sq.ft",
+  "furnishing": "Unfurnished"
+}

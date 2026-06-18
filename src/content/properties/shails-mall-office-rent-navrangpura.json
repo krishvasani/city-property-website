@@ -1,0 +1,32 @@
+{
+  "title": "1,313 sq.ft Office · Shail's Mall, Navrangpura",
+  "slug": "shails-mall-office-rent-navrangpura",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹67,000",
+  "localityName": "Navrangpura",
+  "city": "Ahmedabad",
+  "address": "Shail's Mall, Navrangpura, Ahmedabad",
+  "area": "1,313 sq.ft",
+  "areaSqft": 1313,
+  "totalFloors": "5 floors",
+  "age": "15 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 1,313 sq.ft for rent in Shail's Mall, Navrangpura, Ahmedabad.",
+    "Fitted with 2 cabins, 1 conference room, reception and waiting area, 24 work stations, pantry, washroom, 5 air conditioners, water cooler, LAN cabling and CCTV. Set in a 5 floors building, 15 years. Rent is ₹67,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Shail's Mall office Navrangpura | City Property Services",
+  "seoDescription": "Fully furnished office of 1,313 sq.ft for rent in Shail's Mall, Navrangpura, Ahmedabad.",
+  "geo": {
+    "lat": 23.031445035672025,
+    "lng": 72.56158906878814
+  },
+  "priceValue": 67000,
+  "pricePer": "per month",
+  "furnishing": "Fully furnished"
+}

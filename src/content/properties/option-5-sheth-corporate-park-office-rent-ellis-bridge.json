@@ -1,0 +1,33 @@
+{
+  "title": "3,000 sq.ft Office · Option 5, Sheth Corporate Park, Ellis Bridge",
+  "slug": "option-5-sheth-corporate-park-office-rent-ellis-bridge",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹65 / sq.ft",
+  "localityName": "Ellis Bridge",
+  "city": "Ahmedabad",
+  "address": "Option 5, Sheth Corporate Park, Ellis Bridge, Ahmedabad",
+  "area": "3,000 sq.ft",
+  "areaSqft": 3000,
+  "totalFloors": "",
+  "age": "7 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 3,000 sq.ft for rent in Option 5, Sheth Corporate Park, Ellis Bridge, Ahmedabad.",
+    "Fitted with 45 work stations, 2 cabins, a conference room and 3 lifts. 7 years. Rent is ₹65 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Option 5, Sheth Corporate Park office Ellis Bridge | City Property Services",
+  "seoDescription": "Fully furnished office of 3,000 sq.ft for rent in Option 5, Sheth Corporate Park, Ellis Bridge, Ahmedabad.",
+  "geo": {
+    "lat": 23.00582708894095,
+    "lng": 72.50707476304977
+  },
+  "priceValue": 195000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹65 per sq.ft",
+  "furnishing": "Fully furnished"
+}

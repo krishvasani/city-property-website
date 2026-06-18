@@ -1,0 +1,33 @@
+{
+  "title": "16,650 sq.ft Office · Shivalik 3, Memnagar",
+  "slug": "shivalik-3-16650-office-rent-memnagar",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹30 / sq.ft",
+  "localityName": "Memnagar",
+  "city": "Ahmedabad",
+  "address": "Shivalik 3, Memnagar, Ahmedabad",
+  "area": "16,650 sq.ft",
+  "areaSqft": 16650,
+  "totalFloors": "4 floors",
+  "age": "12 years",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 16,650 sq.ft for rent in Shivalik 3, Memnagar, Ahmedabad.",
+    "A large floor with 2 lifts. Set in a 4 floors building, 12 years. Rent is ₹30 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Shivalik 3 office Memnagar | City Property Services",
+  "seoDescription": "Unfurnished office of 16,650 sq.ft for rent in Shivalik 3, Memnagar, Ahmedabad.",
+  "geo": {
+    "lat": 23.04133192292042,
+    "lng": 72.52972584970367
+  },
+  "priceValue": 499500,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹30 per sq.ft",
+  "furnishing": "Unfurnished"
+}

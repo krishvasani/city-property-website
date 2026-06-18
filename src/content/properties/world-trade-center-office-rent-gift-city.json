@@ -1,0 +1,33 @@
+{
+  "title": "1,540 sq.ft Office · World Trade Center, GIFT City",
+  "slug": "world-trade-center-office-rent-gift-city",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹45 / sq.ft",
+  "localityName": "GIFT City",
+  "city": "Ahmedabad",
+  "address": "World Trade Center, GIFT City, Ahmedabad",
+  "area": "1,540 sq.ft",
+  "areaSqft": 1540,
+  "totalFloors": "28 floors",
+  "age": "newly constructed",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 1,540 sq.ft for rent in World Trade Center, GIFT City, Ahmedabad.",
+    "Fitted with 10 lifts and 1 car park. Set in a 28 floors building, newly constructed. Rent is ₹45 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "World Trade Center office GIFT City | City Property Services",
+  "seoDescription": "Unfurnished office of 1,540 sq.ft for rent in World Trade Center, GIFT City, Ahmedabad.",
+  "geo": {
+    "lat": 23.1583,
+    "lng": 72.6841
+  },
+  "priceValue": 69300,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹45 per sq.ft",
+  "furnishing": "Unfurnished"
+}

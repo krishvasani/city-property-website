@@ -1,0 +1,33 @@
+{
+  "title": "954 sq.ft Office · Shilp Zaveri, Shyamal",
+  "slug": "shilp-zaveri-office-rent-shyamal",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹40 / sq.ft",
+  "localityName": "Shyamal",
+  "city": "Ahmedabad",
+  "address": "Shilp Zaveri, Shyamal, Ahmedabad",
+  "area": "954 sq.ft",
+  "areaSqft": 954,
+  "totalFloors": "13 floors",
+  "age": "5 years",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 954 sq.ft for rent in Shilp Zaveri, Shyamal, Ahmedabad.",
+    "Fitted with 5 lifts. Set in a 13 floors building, 5 years. Rent is ₹40 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Shilp Zaveri office Shyamal | City Property Services",
+  "seoDescription": "Unfurnished office of 954 sq.ft for rent in Shilp Zaveri, Shyamal, Ahmedabad.",
+  "geo": {
+    "lat": 23.01515410500617,
+    "lng": 72.53196451107817
+  },
+  "priceValue": 38160,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹40 per sq.ft",
+  "furnishing": "Unfurnished"
+}

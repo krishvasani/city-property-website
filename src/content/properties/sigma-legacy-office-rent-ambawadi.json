@@ -1,0 +1,33 @@
+{
+  "title": "2,000 sq.ft Office · Sigma Legacy, Ambawadi",
+  "slug": "sigma-legacy-office-rent-ambawadi",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹45 / sq.ft",
+  "localityName": "Ambawadi",
+  "city": "Ahmedabad",
+  "address": "Sigma Legacy, Ambawadi, Ahmedabad",
+  "area": "2,000 sq.ft",
+  "areaSqft": 2000,
+  "totalFloors": "4 floors",
+  "age": "13 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 2,000 sq.ft for rent in Sigma Legacy, Ambawadi, Ahmedabad.",
+    "Fitted with 20 work stations, 1 cabin, 1 conference room, pantry, CCTV, air conditioning and 2 lifts. Set in a 4 floors building, 13 years. Rent is ₹45 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Sigma Legacy office Ambawadi | City Property Services",
+  "seoDescription": "Fully furnished office of 2,000 sq.ft for rent in Sigma Legacy, Ambawadi, Ahmedabad.",
+  "geo": {
+    "lat": 23.027632079141455,
+    "lng": 72.54444325340671
+  },
+  "priceValue": 90000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹45 per sq.ft",
+  "furnishing": "Fully furnished"
+}

@@ -1,0 +1,33 @@
+{
+  "title": "1,014 sq.ft Office · Akshar Arcade, Memnagar",
+  "slug": "akshar-arcade-office-rent-memnagar",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹40 / sq.ft",
+  "localityName": "Memnagar",
+  "city": "Ahmedabad",
+  "address": "Akshar Arcade, Memnagar, Ahmedabad",
+  "area": "1,014 sq.ft",
+  "areaSqft": 1014,
+  "totalFloors": "",
+  "age": "newly constructed",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 1,014 sq.ft for rent in Akshar Arcade, Memnagar, Ahmedabad.",
+    "Fitted with 4 lifts and 1 car park. Newly constructed. Rent is ₹40 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Akshar Arcade office Memnagar | City Property Services",
+  "seoDescription": "Unfurnished office of 1,014 sq.ft for rent in Akshar Arcade, Memnagar, Ahmedabad.",
+  "geo": {
+    "lat": 23.04335031747641,
+    "lng": 72.55151621516906
+  },
+  "priceValue": 40560,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹40 per sq.ft",
+  "furnishing": "Unfurnished"
+}

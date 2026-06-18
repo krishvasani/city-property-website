@@ -1,0 +1,33 @@
+{
+  "title": "2,667 sq.ft Office · Shivalik Arcade, Prahlad Nagar",
+  "slug": "shivalik-arcade-office-rent-prahladnagar",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹45 / sq.ft",
+  "localityName": "Prahlad Nagar",
+  "city": "Ahmedabad",
+  "address": "Shivalik Arcade, Prahlad Nagar, Ahmedabad",
+  "area": "2,667 sq.ft",
+  "areaSqft": 2667,
+  "totalFloors": "2 floors",
+  "age": "15 years",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 2,667 sq.ft for rent in Shivalik Arcade, Prahlad Nagar, Ahmedabad.",
+    "A unit with 2 lifts. Set in a 2 floors building, 15 years. Rent is ₹45 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Shivalik Arcade office Prahlad Nagar | City Property Services",
+  "seoDescription": "Unfurnished office of 2,667 sq.ft for rent in Shivalik Arcade, Prahlad Nagar, Ahmedabad.",
+  "geo": {
+    "lat": 23.01151,
+    "lng": 72.51201
+  },
+  "priceValue": 120015,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹45 per sq.ft",
+  "furnishing": "Unfurnished"
+}

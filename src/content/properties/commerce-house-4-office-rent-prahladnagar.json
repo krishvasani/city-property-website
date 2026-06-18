@@ -1,0 +1,36 @@
+{
+  "title": "17,700 sq.ft Office · Commerce House 4, Prahlad Nagar",
+  "slug": "commerce-house-4-office-rent-prahladnagar",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹48 / sq.ft",
+  "localityName": "Prahlad Nagar",
+  "city": "Ahmedabad",
+  "address": "Commerce House 4, Prahlad Nagar, Ahmedabad",
+  "area": "17,700 sq.ft",
+  "areaSqft": 17700,
+  "totalFloors": "11 floors",
+  "age": "",
+  "amenities": [
+    "16 car parks"
+  ],
+  "description": [
+    "Unfurnished office of 17,700 sq.ft for rent in Commerce House 4, Prahlad Nagar, Ahmedabad.",
+    "Fitted with 4 lifts and 16 car parks. Set in a 11 floors building. Rent is ₹48 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Commerce House 4 office Prahlad Nagar | City Property Services",
+  "seoDescription": "Unfurnished office of 17,700 sq.ft for rent in Commerce House 4, Prahlad Nagar, Ahmedabad.",
+  "geo": {
+    "lat": 23.01186197753246,
+    "lng": 72.51290044970276
+  },
+  "priceValue": 849600,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹48 per sq.ft",
+  "furnishing": "Unfurnished",
+  "parking": "16 car parks"
+}

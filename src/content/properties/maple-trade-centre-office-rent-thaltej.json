@@ -1,0 +1,36 @@
+{
+  "title": "4,593 sq.ft super built up Office · Maple Trade Centre, Thaltej",
+  "slug": "maple-trade-centre-office-rent-thaltej",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹300,000",
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "address": "Maple Trade Centre, Thaltej, Ahmedabad",
+  "area": "4,593 sq.ft super built up",
+  "areaSqft": 4593,
+  "totalFloors": "10 floors",
+  "age": "5 to 10 years",
+  "amenities": [
+    "4 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 4,593 sq.ft super built up for rent in Maple Trade Centre, Thaltej, Ahmedabad.",
+    "Fitted with 4 car parks, 12 lifts and 2 washrooms. Set in a 10 floors building, 5 to 10 years. Rent is ₹300,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Maple Trade Centre office Thaltej | City Property Services",
+  "seoDescription": "Fully furnished office of 4,593 sq.ft super built up for rent in Maple Trade Centre, Thaltej, Ahmedabad.",
+  "geo": {
+    "lat": 23.05580901945727,
+    "lng": 72.5268513847419
+  },
+  "priceValue": 300000,
+  "pricePer": "per month",
+  "furnishing": "Fully furnished",
+  "builtUpArea": "4,593 sq.ft",
+  "parking": "4 car parks"
+}
