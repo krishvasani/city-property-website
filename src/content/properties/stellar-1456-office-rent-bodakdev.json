@@ -1,0 +1,33 @@
+{
+  "title": "1,457 sq.ft Office · Stellar, Bodakdev",
+  "slug": "stellar-1456-office-rent-bodakdev",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹65 / sq.ft",
+  "priceValue": 94705,
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "Stellar, Sindhu Bhavan Road, Bodakdev, Ahmedabad",
+  "area": "1,457 sq.ft",
+  "areaSqft": 1457,
+  "totalFloors": "6 floors",
+  "age": "5 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 1,457 sq.ft for rent in Stellar, Bodakdev, Ahmedabad.",
+    "Fitted with 2 cabins, 5 work stations and 1 car park. Set in a 6 floors building, 5 years. Rent is ₹65 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Stellar office Bodakdev | City Property Services",
+  "seoDescription": "Fully furnished office of 1,457 sq.ft for rent in Stellar, Bodakdev, Ahmedabad.",
+  "geo": {
+    "lat": 23.038416188151036,
+    "lng": 72.50736896465207
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹65 per sq.ft",
+  "furnishing": "Fully furnished"
+}

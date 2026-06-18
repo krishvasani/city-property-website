@@ -1,0 +1,33 @@
+{
+  "title": "2,266 sq.ft Office · Krish Cubical, Thaltej",
+  "slug": "krish-cubical-2266-office-rent-thaltej",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹35 / sq.ft",
+  "priceValue": 79310,
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "address": "Krish Cubical, Thaltej, Ahmedabad",
+  "area": "2,266 sq.ft",
+  "areaSqft": 2266,
+  "totalFloors": "13 floors",
+  "age": "newly constructed",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 2,266 sq.ft for rent in Krish Cubical, Thaltej, Ahmedabad.",
+    "A new building with 4 car parks. Set in a 13 floors building, newly constructed. Rent is ₹35 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Krish Cubical office Thaltej | City Property Services",
+  "seoDescription": "Unfurnished office of 2,266 sq.ft for rent in Krish Cubical, Thaltej, Ahmedabad.",
+  "geo": {
+    "lat": 23.04907557706266,
+    "lng": 72.50844997992402
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹35 per sq.ft",
+  "furnishing": "Unfurnished"
+}

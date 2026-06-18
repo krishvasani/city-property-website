@@ -1,0 +1,32 @@
+{
+  "title": "2,045 sq.ft Office · Regency Plaza, Anand Nagar",
+  "slug": "regency-plaza-office-rent-anand-nagar",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹85,000",
+  "priceValue": 85000,
+  "localityName": "Anand Nagar",
+  "city": "Ahmedabad",
+  "address": "Regency Plaza, Anandnagar Cross Road, Ahmedabad",
+  "area": "2,045 sq.ft",
+  "areaSqft": 2045,
+  "totalFloors": "10 floors",
+  "age": "5 to 10 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 2,045 sq.ft for rent in Regency Plaza, Anand Nagar, Ahmedabad.",
+    "Fitted with 4 cabins, 20 work stations, 2 washrooms and 2 car parks. Set in a 10 floors building, 5 to 10 years. Rent is ₹85,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Regency Plaza office Anand Nagar | City Property Services",
+  "seoDescription": "Fully furnished office of 2,045 sq.ft for rent in Regency Plaza, Anand Nagar, Ahmedabad.",
+  "geo": {
+    "lat": 22.98838775127293,
+    "lng": 72.51375044451609
+  },
+  "pricePer": "per month",
+  "furnishing": "Fully furnished"
+}

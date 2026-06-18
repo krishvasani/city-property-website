@@ -1,0 +1,33 @@
+{
+  "title": "1,035 sq.ft Office · The First, Vastrapur",
+  "slug": "the-first-1035-office-rent-vastrapur",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹40 / sq.ft",
+  "priceValue": 41400,
+  "localityName": "Vastrapur",
+  "city": "Ahmedabad",
+  "address": "The First, Vastrapur, Ahmedabad",
+  "area": "1,035 sq.ft",
+  "areaSqft": 1035,
+  "totalFloors": "14 floors",
+  "age": "5 years",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 1,035 sq.ft for rent in The First, Vastrapur, Ahmedabad.",
+    "An office floor in a landmark Vastrapur tower. Set in a 14 floors building, 5 years. Rent is ₹40 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "The First office Vastrapur | City Property Services",
+  "seoDescription": "Unfurnished office of 1,035 sq.ft for rent in The First, Vastrapur, Ahmedabad.",
+  "geo": {
+    "lat": 23.030355591622747,
+    "lng": 72.53041242475238
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹40 per sq.ft",
+  "furnishing": "Unfurnished"
+}

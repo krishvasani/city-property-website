@@ -1,0 +1,34 @@
+{
+  "title": "1,260 sq.ft Office · Aashirwad Paras 1, Makarba",
+  "slug": "aashirwad-paras-1-office-rent-makarba",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹60,000",
+  "priceValue": 60000,
+  "localityName": "Makarba",
+  "city": "Ahmedabad",
+  "address": "Aashirwad Paras 1, Makarba, Ahmedabad",
+  "area": "1,260 sq.ft",
+  "areaSqft": 1260,
+  "totalFloors": "5 floors",
+  "age": "10 years",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "Fully furnished office of 1,260 sq.ft for rent in Aashirwad Paras 1, Makarba, Ahmedabad.",
+    "Fitted with 6 work stations and 2 lifts. Set in a 5 floors building, 10 years. Rent is ₹60,000 per month plus taxes."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Aashirwad Paras 1 office Makarba | City Property Services",
+  "seoDescription": "Fully furnished office of 1,260 sq.ft for rent in Aashirwad Paras 1, Makarba, Ahmedabad.",
+  "geo": {
+    "lat": 22.997078772486805,
+    "lng": 72.49893138997592
+  },
+  "pricePer": "per month",
+  "furnishing": "Fully furnished"
+}

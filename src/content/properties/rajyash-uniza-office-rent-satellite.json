@@ -1,0 +1,32 @@
+{
+  "title": "4,765 sq.ft Office · Rajyash Uniza, Satellite",
+  "slug": "rajyash-uniza-office-rent-satellite",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹285,900",
+  "priceValue": 285900,
+  "localityName": "Satellite",
+  "city": "Ahmedabad",
+  "address": "Rajyash Uniza, Satellite, Ahmedabad",
+  "area": "4,765 sq.ft",
+  "areaSqft": 4765,
+  "totalFloors": "13 floors",
+  "age": "5 years",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 4,765 sq.ft for rent in Rajyash Uniza, Satellite, Ahmedabad.",
+    "Fitted with 2 main cabins, 2 manager cabins, a conference room, 57 work stations, a pantry with dining area, a reception with waiting area and 4 washrooms. Set in a 13 floors building, 5 years. Rent is ₹285,900 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Rajyash Uniza office Satellite | City Property Services",
+  "seoDescription": "Unfurnished office of 4,765 sq.ft for rent in Rajyash Uniza, Satellite, Ahmedabad.",
+  "geo": {
+    "lat": 23.031554373279718,
+    "lng": 72.51078894821225
+  },
+  "pricePer": "per month",
+  "furnishing": "Unfurnished"
+}
