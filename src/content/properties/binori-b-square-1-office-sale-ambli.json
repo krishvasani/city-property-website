@@ -1,0 +1,35 @@
+{
+  "title": "2,100 sq.ft Office for Sale · Binori B Square 1, Ambli",
+  "slug": "binori-b-square-1-office-sale-ambli",
+  "status": "sale",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.1 Cr",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "address": "Binori B Square 1, Ambli, Ahmedabad",
+  "area": "2,100 sq.ft",
+  "areaSqft": 2100,
+  "totalFloors": "13 floors",
+  "age": "",
+  "amenities": [
+    "3 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 2,100 sq.ft for sale in Binori B Square 1, Ambli, Ahmedabad.",
+    "Fitted with 24 work stations, 2 director cabins, 2 accounts cabins, 3 allotted car parks and 3 lifts, suitable for an IT company. Set in a 13 floors building. Priced at ₹2.1 Cr."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Binori B Square 1 office Ambli | City Property Services",
+  "seoDescription": "Fully furnished office of 2,100 sq.ft for sale in Binori B Square 1, Ambli, Ahmedabad.",
+  "geo": {
+    "lat": 23.028155358423103,
+    "lng": 72.49889879573479
+  },
+  "priceValue": 21000000,
+  "perSqftDisplay": "₹10,000 per sq.ft",
+  "furnishing": "Fully furnished",
+  "parking": "3 car parks"
+}

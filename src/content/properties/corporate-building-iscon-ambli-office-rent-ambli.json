@@ -1,0 +1,35 @@
+{
+  "title": "18,000 sq.ft super built up Office · Corporate Building, Ambli",
+  "slug": "corporate-building-iscon-ambli-office-rent-ambli",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹55 / sq.ft",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "address": "Corporate Building, Ambli, Ahmedabad",
+  "area": "18,000 sq.ft super built up",
+  "areaSqft": 18000,
+  "totalFloors": "19 floors",
+  "age": "newly constructed",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 18,000 sq.ft super built up for rent in Corporate Building, Ambli, Ahmedabad.",
+    "An individual corporate building with 3 lifts. Set in a 19 floors building, newly constructed. Rent is ₹55 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Corporate Building office Ambli | City Property Services",
+  "seoDescription": "Unfurnished office of 18,000 sq.ft super built up for rent in Corporate Building, Ambli, Ahmedabad.",
+  "geo": {
+    "lat": 23.023826456745113,
+    "lng": 72.47897521240013
+  },
+  "priceValue": 990000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹55 per sq.ft",
+  "furnishing": "Unfurnished",
+  "builtUpArea": "18,000 sq.ft",
+  "carpetArea": "9,850 sq.ft"
+}

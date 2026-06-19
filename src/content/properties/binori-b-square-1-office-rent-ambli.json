@@ -1,0 +1,36 @@
+{
+  "title": "2,100 sq.ft Office · Binori B Square 1, Ambli",
+  "slug": "binori-b-square-1-office-rent-ambli",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹65 / sq.ft",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "address": "Binori B Square 1, Ambli, Ahmedabad",
+  "area": "2,100 sq.ft",
+  "areaSqft": 2100,
+  "totalFloors": "13 floors",
+  "age": "",
+  "amenities": [
+    "3 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 2,100 sq.ft for rent in Binori B Square 1, Ambli, Ahmedabad.",
+    "Fitted with 24 work stations, 2 director cabins, 2 accounts cabins, 3 allotted car parks and 3 lifts, suitable for an IT company. Set in a 13 floors building. Rent is ₹65 per sq.ft plus taxes."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Binori B Square 1 office Ambli | City Property Services",
+  "seoDescription": "Fully furnished office of 2,100 sq.ft for rent in Binori B Square 1, Ambli, Ahmedabad.",
+  "geo": {
+    "lat": 23.028155358423103,
+    "lng": 72.49889879573479
+  },
+  "priceValue": 136500,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹65 per sq.ft plus taxes",
+  "furnishing": "Fully furnished",
+  "parking": "3 car parks"
+}

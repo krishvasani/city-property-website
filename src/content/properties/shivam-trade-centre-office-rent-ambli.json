@@ -1,0 +1,33 @@
+{
+  "title": "824 sq.ft Office · Shivam Trade Centre, Ambli",
+  "slug": "shivam-trade-centre-office-rent-ambli",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹50 / sq.ft",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "address": "Shivam Trade Centre, Ambli, Ahmedabad",
+  "area": "824 sq.ft",
+  "areaSqft": 824,
+  "totalFloors": "13 floors",
+  "age": "newly constructed",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 824 sq.ft for rent in Shivam Trade Centre, Ambli, Ahmedabad.",
+    "Fitted with 1 cabin, 1 conference room, 10 work stations, 1 car park and 4 lifts. Set in a 13 floors building, newly constructed. Rent is ₹50 per sq.ft plus taxes."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Shivam Trade Centre office Ambli | City Property Services",
+  "seoDescription": "Fully furnished office of 824 sq.ft for rent in Shivam Trade Centre, Ambli, Ahmedabad.",
+  "geo": {
+    "lat": 23.023974569683823,
+    "lng": 72.47885719520455
+  },
+  "priceValue": 41200,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹50 per sq.ft plus taxes",
+  "furnishing": "Fully furnished"
+}

@@ -1,0 +1,36 @@
+{
+  "title": "5,005 sq.ft Office · BVR EK, Paldi",
+  "slug": "bvr-ek-5005-office-rent-paldi",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹70 / sq.ft",
+  "localityName": "Paldi",
+  "city": "Ahmedabad",
+  "address": "BVR EK, Paldi, Ahmedabad",
+  "area": "5,005 sq.ft",
+  "areaSqft": 5005,
+  "totalFloors": "12 floors",
+  "age": "9 years",
+  "amenities": [
+    "4 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 5,005 sq.ft for rent in BVR EK, Paldi, Ahmedabad.",
+    "Fitted with 13 cabins, 50 work stations, 4 bathrooms, 4 car parks and 3 lifts. Set in a 12 floors building, 9 years. Rent is ₹70 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "BVR EK office Paldi | City Property Services",
+  "seoDescription": "Fully furnished office of 5,005 sq.ft for rent in BVR EK, Paldi, Ahmedabad.",
+  "geo": {
+    "lat": 23.021501361130486,
+    "lng": 72.56757819573457
+  },
+  "priceValue": 350350,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹70 per sq.ft",
+  "furnishing": "Fully furnished",
+  "parking": "4 car parks"
+}

@@ -1,0 +1,37 @@
+{
+  "title": "11,640 sq.ft super built up Office · Westgate, SG Highway",
+  "slug": "westgate-11640-office-rent-sg-highway",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹55 / sq.ft",
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "address": "Westgate, SG Highway, Ahmedabad",
+  "area": "11,640 sq.ft super built up",
+  "areaSqft": 11640,
+  "totalFloors": "22 floors",
+  "age": "5 to 10 years",
+  "amenities": [
+    "6 car parks"
+  ],
+  "description": [
+    "Unfurnished office of 11,640 sq.ft super built up for rent in Westgate, SG Highway, Ahmedabad.",
+    "Fitted with 8 lifts, 2 staircases and 6 allotted car parks. Set in a 22 floors building, 5 to 10 years. Rent is ₹55 per sq.ft plus taxes."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Westgate office SG Highway | City Property Services",
+  "seoDescription": "Unfurnished office of 11,640 sq.ft super built up for rent in Westgate, SG Highway, Ahmedabad.",
+  "geo": {
+    "lat": 23.00130745586774,
+    "lng": 72.50059757689684
+  },
+  "priceValue": 640200,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹55 per sq.ft plus taxes",
+  "furnishing": "Unfurnished",
+  "builtUpArea": "11,640 sq.ft",
+  "parking": "6 car parks"
+}

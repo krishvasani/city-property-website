@@ -1,0 +1,33 @@
+{
+  "title": "4,767 sq.ft Office · Capstone, Ellis Bridge",
+  "slug": "capstone-office-rent-ellis-bridge",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹65 / sq.ft",
+  "localityName": "Ellis Bridge",
+  "city": "Ahmedabad",
+  "address": "Capstone, Ellis Bridge, Ahmedabad",
+  "area": "4,767 sq.ft",
+  "areaSqft": 4767,
+  "totalFloors": "13 floors",
+  "age": "5 to 10 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 4,767 sq.ft for rent in Capstone, Ellis Bridge, Ahmedabad.",
+    "Fitted with 5 cabins, a conference room, 6 work stations, pantry, reception, 2 washrooms and 6 lifts. Set in a 13 floors building, 5 to 10 years. Rent is ₹65 per sq.ft plus taxes."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Capstone office Ellis Bridge | City Property Services",
+  "seoDescription": "Fully furnished office of 4,767 sq.ft for rent in Capstone, Ellis Bridge, Ahmedabad.",
+  "geo": {
+    "lat": 23.02043697697933,
+    "lng": 72.55982313435915
+  },
+  "priceValue": 309855,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹65 per sq.ft plus taxes",
+  "furnishing": "Fully furnished"
+}

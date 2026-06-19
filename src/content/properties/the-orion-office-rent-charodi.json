@@ -1,0 +1,33 @@
+{
+  "title": "3,317 sq.ft Office · The Orion, Charodi",
+  "slug": "the-orion-office-rent-charodi",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹40 / sq.ft",
+  "localityName": "Charodi",
+  "city": "Ahmedabad",
+  "address": "The Orion, Charodi, Ahmedabad",
+  "area": "3,317 sq.ft",
+  "areaSqft": 3317,
+  "totalFloors": "13 floors",
+  "age": "newly constructed",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 3,317 sq.ft for rent in The Orion, Charodi, Ahmedabad.",
+    "A front side unit with a 625 sq.ft terrace and 5 lifts. Set in a 13 floors building, newly constructed. Rent is ₹40 per sq.ft plus taxes."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "The Orion office Charodi | City Property Services",
+  "seoDescription": "Unfurnished office of 3,317 sq.ft for rent in The Orion, Charodi, Ahmedabad.",
+  "geo": {
+    "lat": 23.124715373963287,
+    "lng": 72.53870978647925
+  },
+  "priceValue": 132680,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹40 per sq.ft plus taxes",
+  "furnishing": "Unfurnished"
+}

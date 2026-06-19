@@ -1,0 +1,35 @@
+{
+  "title": "860 sq.ft Office · Kairos, Memnagar",
+  "slug": "kairos-office-rent-memnagar",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹40,000",
+  "localityName": "Memnagar",
+  "city": "Ahmedabad",
+  "address": "Kairos, Memnagar, Ahmedabad",
+  "area": "860 sq.ft",
+  "areaSqft": 860,
+  "totalFloors": "5 floors",
+  "age": "5 to 10 years",
+  "amenities": [
+    "2 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 860 sq.ft for rent in Kairos, Memnagar, Ahmedabad.",
+    "A boss cabin, 6 work stations, a projector, air conditioning and 2 car parks. Set in a 5 floors building, 5 to 10 years. Rent is ₹40,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Kairos office Memnagar | City Property Services",
+  "seoDescription": "Fully furnished office of 860 sq.ft for rent in Kairos, Memnagar, Ahmedabad.",
+  "geo": {
+    "lat": 23.046,
+    "lng": 72.525
+  },
+  "priceValue": 40000,
+  "pricePer": "per month",
+  "furnishing": "Fully furnished",
+  "parking": "2 car parks"
+}

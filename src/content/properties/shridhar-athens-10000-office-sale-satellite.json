@@ -1,0 +1,32 @@
+{
+  "title": "10,000 sq.ft Office for Sale · Shridhar Athens, Satellite",
+  "slug": "shridhar-athens-10000-office-sale-satellite",
+  "status": "sale",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹8 Cr",
+  "localityName": "Satellite",
+  "city": "Ahmedabad",
+  "address": "Shridhar Athens, Satellite, Ahmedabad",
+  "area": "10,000 sq.ft",
+  "areaSqft": 10000,
+  "totalFloors": "13 floors",
+  "age": "newly constructed",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 10,000 sq.ft for sale in Shridhar Athens, Satellite, Ahmedabad.",
+    "A bare shell floor with 6 lifts. Set in a 13 floors building, newly constructed. Priced at ₹8,000 per sq.ft plus taxes, about ₹8 Cr."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Shridhar Athens office Satellite | City Property Services",
+  "seoDescription": "Unfurnished office of 10,000 sq.ft for sale in Shridhar Athens, Satellite, Ahmedabad.",
+  "geo": {
+    "lat": 23.023415895699845,
+    "lng": 72.53303751357102
+  },
+  "priceValue": 80000000,
+  "perSqftDisplay": "₹8,000 per sq.ft",
+  "furnishing": "Unfurnished"
+}

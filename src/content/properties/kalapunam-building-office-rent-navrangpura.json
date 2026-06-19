@@ -1,0 +1,33 @@
+{
+  "title": "2,632 sq.ft Office · Kalapunam Building, Navrangpura",
+  "slug": "kalapunam-building-office-rent-navrangpura",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹50 / sq.ft",
+  "localityName": "Navrangpura",
+  "city": "Ahmedabad",
+  "address": "Kalapunam Building, Navrangpura, Ahmedabad",
+  "area": "2,632 sq.ft",
+  "areaSqft": 2632,
+  "totalFloors": "5 floors",
+  "age": "12 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 2,632 sq.ft for rent in Kalapunam Building, Navrangpura, Ahmedabad.",
+    "Fitted with 1 boss cabin, 1 extra cabin, a conference room, a pantry and 60 to 70 work stations, with 1 lift. Set in a 5 floors building, 12 years. Rent is ₹50 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Kalapunam Building office Navrangpura | City Property Services",
+  "seoDescription": "Fully furnished office of 2,632 sq.ft for rent in Kalapunam Building, Navrangpura, Ahmedabad.",
+  "geo": {
+    "lat": 23.03356414432182,
+    "lng": 72.56104461107876
+  },
+  "priceValue": 131600,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹50 per sq.ft",
+  "furnishing": "Fully furnished"
+}

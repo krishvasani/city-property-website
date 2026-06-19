@@ -1,0 +1,36 @@
+{
+  "title": "10,200 sq.ft Office · President Plaza, SG Highway",
+  "slug": "president-plaza-office-rent-sg-highway",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹45 / sq.ft",
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "address": "President Plaza, SG Highway, Ahmedabad",
+  "area": "10,200 sq.ft",
+  "areaSqft": 10200,
+  "totalFloors": "5 floors",
+  "age": "12 years",
+  "amenities": [
+    "8 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 10,200 sq.ft for rent in President Plaza, SG Highway, Ahmedabad.",
+    "Fitted with 125 work stations, 7 cabins, 2 conference rooms, a server room, a lunch area, 8 allotted car parks and 2 lifts. Set in a 5 floors building, 12 years. Rent is ₹45 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "President Plaza office SG Highway | City Property Services",
+  "seoDescription": "Fully furnished office of 10,200 sq.ft for rent in President Plaza, SG Highway, Ahmedabad.",
+  "geo": {
+    "lat": 23.051681062127436,
+    "lng": 72.51871352668824
+  },
+  "priceValue": 459000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹45 per sq.ft",
+  "furnishing": "Fully furnished",
+  "parking": "8 car parks"
+}

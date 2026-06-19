@@ -1,0 +1,38 @@
+{
+  "title": "5,000 sq.ft super built up Office · Magnet Corporate Park, Thaltej",
+  "slug": "magnet-corporate-park-office-rent-thaltej",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹40 / sq.ft",
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "address": "Magnet Corporate Park, Thaltej, Ahmedabad",
+  "area": "5,000 sq.ft super built up",
+  "areaSqft": 5000,
+  "totalFloors": "5 floors",
+  "age": "5 to 10 years",
+  "amenities": [
+    "3 car parks"
+  ],
+  "description": [
+    "Unfurnished office of 5,000 sq.ft super built up for rent in Magnet Corporate Park, Thaltej, Ahmedabad.",
+    "Fitted with 1 lift and 3 car parks. Set in a 5 floors building, 5 to 10 years. Rent is ₹40 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Magnet Corporate Park office Thaltej | City Property Services",
+  "seoDescription": "Unfurnished office of 5,000 sq.ft super built up for rent in Magnet Corporate Park, Thaltej, Ahmedabad.",
+  "geo": {
+    "lat": 23.061239207496044,
+    "lng": 72.51912171875159
+  },
+  "priceValue": 200000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹40 per sq.ft",
+  "furnishing": "Unfurnished",
+  "builtUpArea": "5,000 sq.ft",
+  "carpetArea": "3,500 sq.ft",
+  "parking": "3 car parks"
+}

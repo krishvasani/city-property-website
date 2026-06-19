@@ -1,0 +1,36 @@
+{
+  "title": "2,791 sq.ft Office · World Center, Navrangpura",
+  "slug": "world-center-2791-office-rent-navrangpura",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹50 / sq.ft",
+  "localityName": "Navrangpura",
+  "city": "Ahmedabad",
+  "address": "World Center, Navrangpura, Ahmedabad",
+  "area": "2,791 sq.ft",
+  "areaSqft": 2791,
+  "totalFloors": "11 floors",
+  "age": "5 years",
+  "amenities": [
+    "2 car parks"
+  ],
+  "description": [
+    "Unfurnished office of 2,791 sq.ft for rent in World Center, Navrangpura, Ahmedabad.",
+    "Fitted with 2 car parks. Set in a 11 floors building, 5 years. Rent is ₹50 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "World Center office Navrangpura | City Property Services",
+  "seoDescription": "Unfurnished office of 2,791 sq.ft for rent in World Center, Navrangpura, Ahmedabad.",
+  "geo": {
+    "lat": 23.039002955980024,
+    "lng": 72.57070558224301
+  },
+  "priceValue": 139550,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹50 per sq.ft",
+  "furnishing": "Unfurnished",
+  "parking": "2 car parks"
+}

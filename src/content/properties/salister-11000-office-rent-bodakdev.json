@@ -1,0 +1,37 @@
+{
+  "title": "11,000 sq.ft super built up Office · Salister, Bodakdev",
+  "slug": "salister-11000-office-rent-bodakdev",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹50 / sq.ft",
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "Salister, Bodakdev, Ahmedabad",
+  "area": "11,000 sq.ft super built up",
+  "areaSqft": 11000,
+  "totalFloors": "12 floors",
+  "age": "1 to 5 years",
+  "amenities": [
+    "6 car parks"
+  ],
+  "description": [
+    "Unfurnished office of 11,000 sq.ft super built up for rent in Salister, Bodakdev, Ahmedabad.",
+    "A bare shell floor with 4 lifts and 6 allotted car parks. Set in a 12 floors building, 1 to 5 years. Rent is ₹50 per sq.ft plus taxes."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Salister office Bodakdev | City Property Services",
+  "seoDescription": "Unfurnished office of 11,000 sq.ft super built up for rent in Salister, Bodakdev, Ahmedabad.",
+  "geo": {
+    "lat": 23.034556750758185,
+    "lng": 72.50415557880437
+  },
+  "priceValue": 550000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹50 per sq.ft plus taxes",
+  "furnishing": "Unfurnished",
+  "builtUpArea": "11,000 sq.ft",
+  "parking": "6 car parks"
+}
