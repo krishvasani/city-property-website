@@ -1,0 +1,32 @@
+{
+  "title": "900 sq.ft Office · Unicus Shyamal, Shyamal",
+  "slug": "unicus-shyamal-office-rent-shyamal",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹55,000",
+  "priceValue": 55000,
+  "localityName": "Shyamal",
+  "city": "Ahmedabad",
+  "address": "Unicus Shyamal, Shyamal, Ahmedabad",
+  "area": "900 sq.ft",
+  "areaSqft": 900,
+  "totalFloors": "13 floors",
+  "age": "newly constructed",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 900 sq.ft for rent in Unicus Shyamal, Shyamal, Ahmedabad.",
+    "An owner's cabin, a conference room, well designed employee desks for 12 to 15 people, pantry and washroom, suited to IT, CA, advocate, insurance and stock broking firms. Set in a 13 floors building, newly constructed. Rent is ₹55,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Unicus Shyamal office Shyamal | City Property Services",
+  "seoDescription": "Fully furnished office of 900 sq.ft for rent in Unicus Shyamal, Shyamal, Ahmedabad.",
+  "geo": {
+    "lat": 23.0141076600591,
+    "lng": 72.53091558832746
+  },
+  "pricePer": "per month",
+  "furnishing": "Fully furnished"
+}

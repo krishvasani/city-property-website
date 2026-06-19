@@ -1,0 +1,36 @@
+{
+  "title": "1,717 sq.ft Office · Privilon, SG Highway",
+  "slug": "privilon-1717-office-rent-sg-highway",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹45 / sq.ft",
+  "priceValue": 77265,
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "address": "Privilon, SG Highway, Ahmedabad",
+  "area": "1,717 sq.ft",
+  "areaSqft": 1717,
+  "totalFloors": "23 floors",
+  "age": "5 to 10 years",
+  "amenities": [
+    "2 car parks"
+  ],
+  "description": [
+    "Unfurnished office of 1,717 sq.ft for rent in Privilon, SG Highway, Ahmedabad.",
+    "Fitted with 6 lifts and 2 car parks. Set in a 23 floors building, 5 to 10 years. Rent is ₹45 per sq.ft plus taxes."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Privilon office SG Highway | City Property Services",
+  "seoDescription": "Unfurnished office of 1,717 sq.ft for rent in Privilon, SG Highway, Ahmedabad.",
+  "geo": {
+    "lat": 23.028229908809255,
+    "lng": 72.50518374229632
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹45 per sq.ft plus taxes",
+  "furnishing": "Unfurnished",
+  "parking": "2 car parks"
+}

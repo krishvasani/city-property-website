@@ -1,0 +1,33 @@
+{
+  "title": "8,000 sq.ft Office · The Link, Navrangpura",
+  "slug": "the-link-8000-office-rent-navrangpura",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹40 / sq.ft",
+  "priceValue": 320000,
+  "localityName": "Navrangpura",
+  "city": "Ahmedabad",
+  "address": "The Link, Navrangpura, Ahmedabad",
+  "area": "8,000 sq.ft",
+  "areaSqft": 8000,
+  "totalFloors": "7 floors",
+  "age": "less than 5 years",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 8,000 sq.ft for rent in The Link, Navrangpura, Ahmedabad.",
+    "Fitted with 2 lifts. Set in a 7 floors building, less than 5 years. Rent is ₹40 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "The Link office Navrangpura | City Property Services",
+  "seoDescription": "Unfurnished office of 8,000 sq.ft for rent in The Link, Navrangpura, Ahmedabad.",
+  "geo": {
+    "lat": 23.042372783551585,
+    "lng": 72.54814178832828
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹40 per sq.ft",
+  "furnishing": "Unfurnished"
+}

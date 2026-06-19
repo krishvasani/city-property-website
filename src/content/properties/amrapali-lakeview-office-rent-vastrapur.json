@@ -1,0 +1,35 @@
+{
+  "title": "3,012 sq.ft Office · Amrapali Lakeview, Vastrapur",
+  "slug": "amrapali-lakeview-office-rent-vastrapur",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹165,000",
+  "priceValue": 165000,
+  "localityName": "Vastrapur",
+  "city": "Ahmedabad",
+  "address": "Amrapali Lakeview, Vastrapur, Ahmedabad",
+  "area": "3,012 sq.ft",
+  "areaSqft": 3012,
+  "totalFloors": "10 floors",
+  "age": "10 years",
+  "amenities": [
+    "2 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 3,012 sq.ft for rent in Amrapali Lakeview, Vastrapur, Ahmedabad.",
+    "Fitted with 1 boss cabin, a conference room, 47 work stations, a separate 6 seat cabin, reception, a lakefront terrace with seating, 3 washrooms, pantry, 2 allotted car parks and central air conditioning. Set in a 10 floors building, 10 years. Rent is ₹165,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Amrapali Lakeview office Vastrapur | City Property Services",
+  "seoDescription": "Fully furnished office of 3,012 sq.ft for rent in Amrapali Lakeview, Vastrapur, Ahmedabad.",
+  "geo": {
+    "lat": 23.03980316796339,
+    "lng": 72.52967875129023
+  },
+  "pricePer": "per month",
+  "furnishing": "Fully furnished",
+  "parking": "2 car parks"
+}

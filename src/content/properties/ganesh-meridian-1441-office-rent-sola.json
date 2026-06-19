@@ -1,0 +1,35 @@
+{
+  "title": "1,441 sq.ft Office · Ganesh Meridian, Sola",
+  "slug": "ganesh-meridian-1441-office-rent-sola",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹65,000",
+  "priceValue": 65000,
+  "localityName": "Sola",
+  "city": "Ahmedabad",
+  "address": "Ganesh Meridian, Sola, Ahmedabad",
+  "area": "1,441 sq.ft",
+  "areaSqft": 1441,
+  "totalFloors": "12 floors",
+  "age": "6 to 10 years",
+  "amenities": [
+    "2 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 1,441 sq.ft for rent in Ganesh Meridian, Sola, Ahmedabad.",
+    "A president cabin, director cabin, manager cabin, seating for 7 staff, reception, waiting area, pantry, attached bathroom, air conditioning in all cabins and 2 allotted car parks. Set in a 12 floors building, 6 to 10 years. Rent is ₹65,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Ganesh Meridian office Sola | City Property Services",
+  "seoDescription": "Fully furnished office of 1,441 sq.ft for rent in Ganesh Meridian, Sola, Ahmedabad.",
+  "geo": {
+    "lat": 23.075846230787196,
+    "lng": 72.52638623250914
+  },
+  "pricePer": "per month",
+  "furnishing": "Fully furnished",
+  "parking": "2 car parks"
+}

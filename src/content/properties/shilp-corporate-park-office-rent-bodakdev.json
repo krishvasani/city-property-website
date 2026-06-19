@@ -1,0 +1,36 @@
+{
+  "title": "2,345 sq.ft Office · Shilp Corporate Park, Bodakdev",
+  "slug": "shilp-corporate-park-office-rent-bodakdev",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹65 / sq.ft",
+  "priceValue": 152425,
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "Shilp Corporate Park, Bodakdev, Ahmedabad",
+  "area": "2,345 sq.ft",
+  "areaSqft": 2345,
+  "totalFloors": "12 floors",
+  "age": "newly constructed",
+  "amenities": [
+    "2 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 2,345 sq.ft for rent in Shilp Corporate Park, Bodakdev, Ahmedabad.",
+    "Fitted with 3 cabins, 1 conference room, 12 work stations, ladies and gents toilets, reception, pantry, 2 car parks and 3 lifts. Set in a 12 floors building, newly constructed. Rent is ₹65 per sq.ft plus taxes."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Shilp Corporate Park office Bodakdev | City Property Services",
+  "seoDescription": "Fully furnished office of 2,345 sq.ft for rent in Shilp Corporate Park, Bodakdev, Ahmedabad.",
+  "geo": {
+    "lat": 23.033607295337966,
+    "lng": 72.50474182642266
+  },
+  "pricePer": "per month",
+  "perSqftDisplay": "₹65 per sq.ft plus taxes",
+  "furnishing": "Fully furnished",
+  "parking": "2 car parks"
+}
