@@ -32,5 +32,6 @@
   "pricePer": "per month",
   "perSqftDisplay": "₹70 per sq.ft",
   "furnishing": "Fully furnished",
-  "parking": "4 car parks"
+  "parking": "4 car parks",
+  "localitySlug": "paldi"
 }

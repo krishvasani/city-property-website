@@ -32,5 +32,6 @@
   "geo": {
     "lat": 23.031603,
     "lng": 72.516948
-  }
+  },
+  "localitySlug": "satellite"
 }

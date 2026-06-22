@@ -88,5 +88,6 @@
     "Restaurant",
     "Clothing"
   ],
-  "mainImage": "/uploads/properties/rangoli-road-showroom-thaltej/photo-1.jpg"
+  "mainImage": "/uploads/properties/rangoli-road-showroom-thaltej/photo-1.jpg",
+  "localitySlug": "thaltej"
 }

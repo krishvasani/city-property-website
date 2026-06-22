@@ -29,5 +29,6 @@
   "priceValue": 1000000,
   "pricePer": "per month",
   "perSqftDisplay": "₹50 per sq.ft",
-  "furnishing": "Unfurnished"
+  "furnishing": "Unfurnished",
+  "localitySlug": "ambli"
 }

@@ -92,5 +92,6 @@
     "Cafe",
     "Restaurant"
   ],
-  "mainImage": "/uploads/properties/one-world-metro-showroom-thaltej/photo-1.jpg"
+  "mainImage": "/uploads/properties/one-world-metro-showroom-thaltej/photo-1.jpg",
+  "localitySlug": "thaltej"
 }

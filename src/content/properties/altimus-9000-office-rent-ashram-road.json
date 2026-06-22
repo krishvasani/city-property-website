@@ -41,5 +41,6 @@
   "pricePer": "per month",
   "perSqftDisplay": "₹45 per sq.ft",
   "furnishing": "Unfurnished",
-  "mainImage": "/uploads/properties/altimus-9000-office-rent-ashram-road/photo-1.jpg"
+  "mainImage": "/uploads/properties/altimus-9000-office-rent-ashram-road/photo-1.jpg",
+  "localitySlug": "ashram-road"
 }

@@ -89,5 +89,6 @@
     "Designer",
     "Salon"
   ],
-  "mainImage": "/uploads/properties/inceptum-showroom-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/inceptum-showroom-ambli/photo-1.jpg",
+  "localitySlug": "ambli"
 }

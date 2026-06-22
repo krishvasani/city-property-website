@@ -28,5 +28,6 @@
   },
   "priceValue": 11200000,
   "perSqftDisplay": "₹10,000 per sq.ft",
-  "furnishing": "Fully furnished"
+  "furnishing": "Fully furnished",
+  "localitySlug": "vastrapur"
 }

@@ -33,5 +33,6 @@
   "pricePer": "per month",
   "perSqftDisplay": "₹45 per sq.ft",
   "furnishing": "Unfurnished",
-  "parking": "8 car parks"
+  "parking": "8 car parks",
+  "localitySlug": "bodakdev"
 }

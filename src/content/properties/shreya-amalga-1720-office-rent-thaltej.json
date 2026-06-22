@@ -28,5 +28,6 @@
   },
   "priceValue": 59000,
   "pricePer": "per month",
-  "furnishing": "Unfurnished"
+  "furnishing": "Unfurnished",
+  "localitySlug": "thaltej"
 }

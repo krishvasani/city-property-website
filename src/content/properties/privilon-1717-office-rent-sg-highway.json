@@ -32,5 +32,6 @@
   "pricePer": "per month",
   "perSqftDisplay": "₹45 per sq.ft plus taxes",
   "furnishing": "Unfurnished",
-  "parking": "2 car parks"
+  "parking": "2 car parks",
+  "localitySlug": "sg-highway"
 }

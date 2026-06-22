@@ -80,5 +80,6 @@
   },
   "pricePer": "per month",
   "furnishing": "Unfurnished",
-  "mainImage": "/uploads/properties/gnfc-tower-24000-office-rent-sg-highway/photo-1.jpg"
+  "mainImage": "/uploads/properties/gnfc-tower-24000-office-rent-sg-highway/photo-1.jpg",
+  "localitySlug": "sg-highway"
 }

@@ -51,5 +51,6 @@
   "pricePer": "per month",
   "perSqftDisplay": "₹55 per sq.ft",
   "furnishing": "Fully furnished",
-  "mainImage": "/uploads/properties/ganesh-meridian-office-rent-sola/photo-1.jpg"
+  "mainImage": "/uploads/properties/ganesh-meridian-office-rent-sola/photo-1.jpg",
+  "localitySlug": "sola"
 }

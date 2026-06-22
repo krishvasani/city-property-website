@@ -55,5 +55,6 @@
   },
   "perSqftDisplay": "₹10,000 per sq.ft",
   "furnishing": "Fully furnished",
-  "mainImage": "/uploads/properties/the-first-office-sale-vastrapur/photo-1.jpg"
+  "mainImage": "/uploads/properties/the-first-office-sale-vastrapur/photo-1.jpg",
+  "localitySlug": "vastrapur"
 }

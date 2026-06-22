@@ -28,5 +28,6 @@
     "lng": 72.48205942534723
   },
   "pricePer": "per month",
-  "furnishing": "Unfurnished"
+  "furnishing": "Unfurnished",
+  "localitySlug": "bodakdev"
 }

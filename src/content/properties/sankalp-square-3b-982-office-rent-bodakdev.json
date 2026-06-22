@@ -31,5 +31,6 @@
   },
   "pricePer": "per month",
   "perSqftDisplay": "₹42 per sq.ft",
-  "furnishing": "Unfurnished"
+  "furnishing": "Unfurnished",
+  "localitySlug": "bodakdev"
 }

@@ -84,5 +84,6 @@
     "Designer",
     "Salon"
   ],
-  "mainImage": "/uploads/properties/b23-showroom-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/b23-showroom-ambli/photo-1.jpg",
+  "localitySlug": "ambli"
 }

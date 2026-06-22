@@ -28,5 +28,6 @@
   },
   "priceValue": 22761000,
   "perSqftDisplay": "₹9,000 per sq.ft",
-  "furnishing": "Unfurnished"
+  "furnishing": "Unfurnished",
+  "localitySlug": "bodakdev"
 }

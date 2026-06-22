@@ -31,5 +31,6 @@
   "priceValue": 300000,
   "pricePer": "per month",
   "furnishing": "Fully furnished",
-  "parking": "4 car parks"
+  "parking": "4 car parks",
+  "localitySlug": "thaltej"
 }

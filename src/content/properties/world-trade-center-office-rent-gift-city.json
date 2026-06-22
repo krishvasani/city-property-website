@@ -29,5 +29,6 @@
   "priceValue": 69300,
   "pricePer": "per month",
   "perSqftDisplay": "₹45 per sq.ft",
-  "furnishing": "Unfurnished"
+  "furnishing": "Unfurnished",
+  "localitySlug": "gift-city"
 }

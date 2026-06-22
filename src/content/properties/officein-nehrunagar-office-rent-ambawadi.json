@@ -27,5 +27,6 @@
     "lng": 72.54098546816299
   },
   "priceOnRequest": true,
-  "furnishing": "Unfurnished"
+  "furnishing": "Unfurnished",
+  "localitySlug": "ambawadi"
 }

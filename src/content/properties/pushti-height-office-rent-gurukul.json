@@ -28,5 +28,6 @@
   },
   "priceValue": 55000,
   "pricePer": "per month",
-  "furnishing": "Fully furnished"
+  "furnishing": "Fully furnished",
+  "localitySlug": "gurukul"
 }

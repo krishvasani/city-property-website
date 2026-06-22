@@ -72,5 +72,6 @@
     "Designer",
     "Salon"
   ],
-  "mainImage": "/uploads/properties/maruti-the-ridge-showroom-sg-highway/photo-1.jpg"
+  "mainImage": "/uploads/properties/maruti-the-ridge-showroom-sg-highway/photo-1.jpg",
+  "localitySlug": "sg-highway"
 }

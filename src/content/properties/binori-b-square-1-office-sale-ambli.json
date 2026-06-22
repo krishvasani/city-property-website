@@ -31,5 +31,6 @@
   "priceValue": 21000000,
   "perSqftDisplay": "₹10,000 per sq.ft",
   "furnishing": "Fully furnished",
-  "parking": "3 car parks"
+  "parking": "3 car parks",
+  "localitySlug": "ambli"
 }

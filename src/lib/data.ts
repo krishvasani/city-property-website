@@ -9,9 +9,15 @@ import { getAllLocalities, getLocalityById } from '../data/localities';
 const defaultStatusLabel = (s: Status) =>
   s === 'rent' ? 'For rent' : s === 'lease' ? 'For lease' : 'For sale';
 
-// Map a locality NAME (what editors type in the CMS) to its dataset id/slug,
-// so filters, the map and locality links work even when the slug field is blank.
-const nameToLocalityId = new Map(getAllLocalities().map((l) => [l.name.toLowerCase(), l.id]));
+// Map a locality NAME or ALIAS (what editors type in the CMS) to its dataset
+// id/slug, so filters, the map and locality links work even when the slug field
+// is blank and even when the typed name is an alias (e.g. "Ellis Bridge" →
+// ellisbridge, "Shahibag" → shahibaug, "Vaishnodevi" → vaishnodevi-circle).
+const nameToLocalityId = new Map<string, string>();
+for (const l of getAllLocalities()) {
+  nameToLocalityId.set(l.name.toLowerCase(), l.id);
+  for (const a of l.aliases) nameToLocalityId.set(a.toLowerCase(), l.id);
+}
 const slugify = (s: string) =>
   s.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 function resolveLocalitySlug(name?: string, given?: string): string | undefined {

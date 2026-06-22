@@ -30,5 +30,6 @@
   "pricePer": "per month",
   "perSqftDisplay": "₹55 per sq.ft",
   "furnishing": "Fully furnished",
-  "builtUpArea": "5,000 sq.ft"
+  "builtUpArea": "5,000 sq.ft",
+  "localitySlug": "satellite"
 }

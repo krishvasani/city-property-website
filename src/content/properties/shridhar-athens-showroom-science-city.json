@@ -108,5 +108,6 @@
     "Designer",
     "Jewellery"
   ],
-  "mainImage": "/uploads/properties/shridhar-athens-showroom-science-city/photo-1.jpg"
+  "mainImage": "/uploads/properties/shridhar-athens-showroom-science-city/photo-1.jpg",
+  "localitySlug": "science-city"
 }

@@ -32,5 +32,6 @@
   },
   "pricePer": "per month",
   "furnishing": "Unfurnished",
-  "parking": "12 car parks"
+  "parking": "12 car parks",
+  "localitySlug": "memnagar"
 }

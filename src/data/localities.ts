@@ -199,7 +199,7 @@ export const localities: Locality[] = [
     ['navrangpura', 'Navrangpura', ['residential', 'commercial', 'office'], 23.038, 72.560, { priority: 1, popularFor: ['offices', 'retail', 'education hub'], nearbyAreas: ['cg-road', 'ambawadi', 'naranpura'], landmarks: ['Gujarat University', 'CG Road'] }],
     ['ambawadi', 'Ambawadi', ['residential', 'commercial'], 23.022, 72.553, { priority: 2, nearbyAreas: ['nehrunagar', 'paldi', 'navrangpura'] }],
     ['paldi', 'Paldi', ['residential', 'commercial'], 23.012, 72.565, { priority: 2, nearbyAreas: ['ellisbridge', 'vasna', 'ambawadi'] }],
-    ['ellisbridge', 'Ellisbridge', ['residential', 'commercial'], 23.022, 72.575, { priority: 2, nearbyAreas: ['paldi', 'law-garden', 'navrangpura'], landmarks: ['Sabarmati Riverfront'] }],
+    ['ellisbridge', 'Ellisbridge', ['residential', 'commercial'], 23.022, 72.575, { aliases: ['Ellis Bridge'], priority: 2, nearbyAreas: ['paldi', 'law-garden', 'navrangpura'], landmarks: ['Sabarmati Riverfront'] }],
     ['ashram-road', 'Ashram Road', ['commercial', 'office'], 23.040, 72.575, { priority: 2, popularFor: ['corporate & bank offices'], nearbyAreas: ['navrangpura', 'ellisbridge', 'usmanpura'] }],
     ['cg-road', 'CG Road', ['commercial', 'office', 'residential'], 23.030, 72.560, { aliases: ['Chimanlal Girdharlal Road'], priority: 1, popularFor: ['retail', 'offices', 'showrooms'], nearbyAreas: ['navrangpura', 'law-garden', 'ambawadi'] }],
     ['law-garden', 'Law Garden', ['residential', 'commercial'], 23.025, 72.565, { priority: 2, nearbyAreas: ['cg-road', 'ellisbridge', 'ambawadi'], landmarks: ['Law Garden Market'] }],
@@ -220,7 +220,7 @@ export const localities: Locality[] = [
     ['new-ranip', 'New Ranip', ['residential'], 23.083, 72.560, { priority: 3, nearbyAreas: ['ranip', 'jagatpur'] }],
     ['tragad', 'Tragad', ['residential', 'plots'], 23.105, 72.565, { priority: 3, nearbyAreas: ['gota', 'chandkheda', 'zundal'] }],
     ['zundal', 'Zundal', ['residential', 'plots'], 23.125, 72.560, { priority: 2, popularFor: ['plots', 'new schemes', 'Gandhinagar-side growth'], nearbyAreas: ['tragad', 'khoraj', 'adalaj', 'vaishnodevi-circle'] }],
-    ['vaishnodevi-circle', 'Vaishnodevi Circle', ['residential', 'commercial', 'plots'], 23.135, 72.545, { priority: 2, popularFor: ['new townships', 'plots', 'investment'], nearbyAreas: ['zundal', 'khoraj', 'jagatpur'], connectivity: ['SG Highway', 'SP Ring Road'] }],
+    ['vaishnodevi-circle', 'Vaishnodevi Circle', ['residential', 'commercial', 'plots'], 23.135, 72.545, { aliases: ['Vaishnodevi'], priority: 2, popularFor: ['new townships', 'plots', 'investment'], nearbyAreas: ['zundal', 'khoraj', 'jagatpur'], connectivity: ['SG Highway', 'SP Ring Road'] }],
     ['jagatpur', 'Jagatpur', ['residential', 'plots'], 23.095, 72.535, { priority: 3, nearbyAreas: ['gota', 'ranip', 'chenpur'] }],
     ['chenpur', 'Chenpur', ['residential', 'plots'], 23.110, 72.555, { priority: 3, nearbyAreas: ['jagatpur', 'tragad', 'zundal'] }],
     ['ognaj', 'Ognaj', ['residential', 'plots'], 23.085, 72.510, { priority: 3, nearbyAreas: ['bhadaj', 'science-city', 'gota'] }],
@@ -351,6 +351,23 @@ export const localities: Locality[] = [
     ['randheja', 'Randheja', ['residential', 'plots'], 23.255, 72.700, { priority: 4, nearbyAreas: ['pethapur', 'mansa', 'dehgam'] }],
     ['mansa', 'Mansa', ['residential', 'industrial', 'plots'], 23.430, 72.660, { priority: 4, city: 'Mansa', district: 'Gandhinagar', region: 'Outer Gandhinagar', popularFor: ['town + industrial', 'plots'], nearbyAreas: ['randheja', 'kalol'] }],
     ['dehgam', 'Dehgam', ['residential', 'industrial', 'plots'], 23.170, 72.820, { aliases: ['Dahegam'], priority: 3, city: 'Dehgam', district: 'Gandhinagar', region: 'Outer Gandhinagar', popularFor: ['town', 'plots', 'industrial'], nearbyAreas: ['chiloda', 'kuha', 'randheja'] }],
+  ]),
+
+  // ---------- LISTING-DERIVED AREAS (added because we have live listings here) ----------
+  ...build('West Ahmedabad', [
+    ['shyamal', 'Shyamal', ['residential', 'commercial', 'office'], 23.014918, 72.529241, { priority: 2, popularFor: ['offices', 'apartments', 'retail'], nearbyAreas: ['satellite', 'anandnagar', 'prahlad-nagar', 'jodhpur'] }],
+    ['surdhara', 'Surdhara', ['residential', 'commercial'], 23.055979, 72.501672, { aliases: ['Surdhara Circle'], priority: 2, popularFor: ['apartments', 'offices'], nearbyAreas: ['thaltej', 'sola', 'bodakdev'] }],
+    ['anandnagar', 'Anand Nagar', ['residential', 'commercial'], 22.988388, 72.513750, { priority: 2, popularFor: ['apartments', 'retail'], nearbyAreas: ['prahlad-nagar', 'satellite', 'vejalpur', 'shyamal'] }],
+    ['guma', 'Guma', ['residential', 'plots'], 23.042485, 72.439864, { priority: 3, popularFor: ['bungalows', 'plots'], nearbyAreas: ['shilaj', 'bopal', 'rancharda'] }],
+  ]),
+  ...build('North Ahmedabad', [
+    ['shahibaug', 'Shahibaug', ['residential', 'commercial'], 23.057505, 72.592453, { aliases: ['Shahibag'], priority: 2, popularFor: ['premium residential', 'established neighbourhood'], nearbyAreas: ['naranpura', 'sabarmati', 'dudheshwar'] }],
+    ['charodi', 'Charodi', ['residential', 'commercial', 'plots'], 23.124715, 72.538710, { priority: 3, popularFor: ['new offices', 'plots', 'growth corridor'], nearbyAreas: ['vaishnodevi-circle', 'zundal', 'thaltej', 'shilaj'] }],
+  ]),
+  ...build('Ahmedabad Outskirts', [
+    ['rancharda', 'Rancharda', ['residential', 'plots'], 23.069940, 72.441026, { priority: 3, popularFor: ['farmhouses', 'bungalows', 'plots'], nearbyAreas: ['shilaj', 'thol-road', 'guma', 'godhavi'] }],
+    ['thol-road', 'Thol Road', ['residential', 'plots', 'investment'], 23.092925, 72.427930, { aliases: ['Thol'], priority: 3, popularFor: ['farmhouses', 'weekend homes', 'plots'], nearbyAreas: ['rancharda', 'agol', 'godhavi'], landmarks: ['Thol Lake'] }],
+    ['agol', 'Agol', ['residential', 'plots', 'investment'], 23.139044, 72.250928, { priority: 3, popularFor: ['farmhouses', 'agricultural land', 'plots'], nearbyAreas: ['thol-road', 'kadi'], description: 'Agol is a village pocket northwest of Ahmedabad (towards Kadi), known for farmhouses and land. // approximate centroid' }],
   ]),
 ];
 

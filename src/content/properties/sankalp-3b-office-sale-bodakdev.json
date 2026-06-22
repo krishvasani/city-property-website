@@ -30,5 +30,6 @@
     "lng": 72.4820084089623
   },
   "perSqftDisplay": "₹11,000 per sq.ft",
-  "furnishing": "Unfurnished"
+  "furnishing": "Unfurnished",
+  "localitySlug": "bodakdev"
 }

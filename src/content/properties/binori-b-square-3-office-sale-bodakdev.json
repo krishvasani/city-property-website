@@ -31,5 +31,6 @@
   },
   "perSqftDisplay": "₹7,900 per sq.ft",
   "furnishing": "Unfurnished",
-  "builtUpArea": "1,350 sq.ft"
+  "builtUpArea": "1,350 sq.ft",
+  "localitySlug": "bodakdev"
 }

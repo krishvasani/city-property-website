@@ -91,5 +91,6 @@
     "Salon",
     "Gym"
   ],
-  "mainImage": "/uploads/properties/aaryan-the-one-showroom-satellite/photo-1.jpg"
+  "mainImage": "/uploads/properties/aaryan-the-one-showroom-satellite/photo-1.jpg",
+  "localitySlug": "satellite"
 }

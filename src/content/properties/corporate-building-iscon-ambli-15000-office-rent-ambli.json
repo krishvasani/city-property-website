@@ -30,5 +30,6 @@
   "pricePer": "per month",
   "perSqftDisplay": "₹48 per sq.ft",
   "furnishing": "Unfurnished",
-  "builtUpArea": "15,000 sq.ft"
+  "builtUpArea": "15,000 sq.ft",
+  "localitySlug": "ambli"
 }

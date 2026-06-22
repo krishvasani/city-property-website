@@ -31,5 +31,6 @@
   "priceValue": 90000,
   "pricePer": "per month",
   "furnishing": "Unfurnished",
-  "parking": "2 car parks"
+  "parking": "2 car parks",
+  "localitySlug": "satellite"
 }

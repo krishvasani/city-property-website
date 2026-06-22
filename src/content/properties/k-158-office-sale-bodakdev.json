@@ -27,5 +27,6 @@
     "lat": 23.04004383385761,
     "lng": 72.50445796606252
   },
-  "perSqftDisplay": "₹11,515 per sq.ft"
+  "perSqftDisplay": "₹11,515 per sq.ft",
+  "localitySlug": "bodakdev"
 }

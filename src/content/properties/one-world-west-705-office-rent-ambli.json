@@ -27,5 +27,6 @@
     "lng": 72.47784703382925
   },
   "priceOnRequest": true,
-  "furnishing": "Fully furnished"
+  "furnishing": "Fully furnished",
+  "localitySlug": "ambli"
 }

@@ -29,5 +29,6 @@
   "priceValue": 270000,
   "pricePer": "per month",
   "perSqftDisplay": "₹45 per sq.ft",
-  "furnishing": "Fully furnished"
+  "furnishing": "Fully furnished",
+  "localitySlug": "bodakdev"
 }

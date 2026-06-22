@@ -29,5 +29,6 @@
   "priceValue": 16000000,
   "perSqftDisplay": "₹24,242 per sq.ft",
   "furnishing": "Fully furnished",
-  "carpetArea": "660 sq.ft"
+  "carpetArea": "660 sq.ft",
+  "localitySlug": "ambli"
 }

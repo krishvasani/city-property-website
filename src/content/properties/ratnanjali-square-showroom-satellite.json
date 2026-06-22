@@ -78,5 +78,6 @@
     "Designer",
     "Salon"
   ],
-  "mainImage": "/uploads/properties/ratnanjali-square-showroom-satellite/photo-1.jpg"
+  "mainImage": "/uploads/properties/ratnanjali-square-showroom-satellite/photo-1.jpg",
+  "localitySlug": "satellite"
 }

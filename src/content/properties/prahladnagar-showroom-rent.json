@@ -104,5 +104,6 @@
   "suitableFor": [
     "Salon"
   ],
-  "mainImage": "/uploads/properties/prahladnagar-showroom-rent/photo-1.jpg"
+  "mainImage": "/uploads/properties/prahladnagar-showroom-rent/photo-1.jpg",
+  "localitySlug": "prahlad-nagar"
 }

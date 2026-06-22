@@ -29,5 +29,6 @@
   "priceValue": 40000,
   "pricePer": "per month",
   "furnishing": "Fully furnished",
-  "carpetArea": "525 sq.ft"
+  "carpetArea": "525 sq.ft",
+  "localitySlug": "memnagar"
 }

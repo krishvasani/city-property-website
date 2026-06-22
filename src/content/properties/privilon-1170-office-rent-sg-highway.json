@@ -28,5 +28,6 @@
     "lng": 72.50536831504712
   },
   "pricePer": "per month",
-  "furnishing": "Fully furnished"
+  "furnishing": "Fully furnished",
+  "localitySlug": "sg-highway"
 }

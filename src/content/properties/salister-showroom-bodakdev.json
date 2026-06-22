@@ -84,5 +84,6 @@
     "Designer",
     "Salon"
   ],
-  "mainImage": "/uploads/properties/salister-showroom-bodakdev/photo-1.jpg"
+  "mainImage": "/uploads/properties/salister-showroom-bodakdev/photo-1.jpg",
+  "localitySlug": "bodakdev"
 }

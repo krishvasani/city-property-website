@@ -27,5 +27,6 @@
     "lng": 72.53003730933864
   },
   "priceOnRequest": true,
-  "furnishing": "Unfurnished"
+  "furnishing": "Unfurnished",
+  "localitySlug": "vastrapur"
 }

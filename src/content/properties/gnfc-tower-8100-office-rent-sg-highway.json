@@ -80,5 +80,6 @@
   },
   "pricePer": "per month",
   "furnishing": "Fully furnished",
-  "mainImage": "/uploads/properties/gnfc-tower-8100-office-rent-sg-highway/photo-1.jpg"
+  "mainImage": "/uploads/properties/gnfc-tower-8100-office-rent-sg-highway/photo-1.jpg",
+  "localitySlug": "sg-highway"
 }

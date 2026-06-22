@@ -88,5 +88,6 @@
     "Cafe",
     "Restaurant"
   ],
-  "mainImage": "/uploads/properties/city-centre-2-showroom-science-city/photo-1.jpg"
+  "mainImage": "/uploads/properties/city-centre-2-showroom-science-city/photo-1.jpg",
+  "localitySlug": "science-city"
 }

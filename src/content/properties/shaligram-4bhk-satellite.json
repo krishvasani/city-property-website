@@ -79,5 +79,6 @@
     "lat": 23.023058685166205,
     "lng": 72.53349761208636
   },
-  "mainImage": "/uploads/properties/shaligram-4bhk-satellite/photo-1.jpg"
+  "mainImage": "/uploads/properties/shaligram-4bhk-satellite/photo-1.jpg",
+  "localitySlug": "satellite"
 }
