@@ -1,0 +1,34 @@
+{
+  "title": "2,222 sq.ft super built up Office · Sheth Corporate Tower, Ellis Bridge",
+  "slug": "sheth-corporate-tower-office-rent-ellis-bridge",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹55 / sq.ft",
+  "localityName": "Ellis Bridge",
+  "city": "Ahmedabad",
+  "address": "Sheth Corporate Tower, Ellis Bridge, Ahmedabad",
+  "area": "2,222 sq.ft super built up",
+  "areaSqft": 2222,
+  "totalFloors": "11 floors",
+  "age": "10 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 2,222 sq.ft super built up for rent in Sheth Corporate Tower, Ellis Bridge, Ahmedabad.",
+    "Fitted with 2 cabins, 1 conference room, 40 work stations, 2 private bathrooms, pantry, reception and 2 car parks. Set in a 11 floors building, 10 years. Rent is ₹55 per sq.ft plus taxes."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Sheth Corporate Tower office Ellis Bridge | City Property Services",
+  "seoDescription": "Fully furnished office of 2,222 sq.ft super built up for rent in Sheth Corporate Tower, Ellis Bridge, Ahmedabad.",
+  "geo": {
+    "lat": 23.024480363528223,
+    "lng": 72.56721407615724
+  },
+  "priceValue": 122210,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹55 per sq.ft plus taxes",
+  "furnishing": "Fully furnished",
+  "builtUpArea": "2,222 sq.ft"
+}

@@ -1,0 +1,32 @@
+{
+  "title": "928 sq.ft Office · Titanium Square, Thaltej",
+  "slug": "titanium-square-928-office-rent-thaltej",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹55,000",
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "address": "Titanium Square, Thaltej, Ahmedabad",
+  "area": "928 sq.ft",
+  "areaSqft": 928,
+  "totalFloors": "10 floors",
+  "age": "8 years",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 928 sq.ft for rent in Titanium Square, Thaltej, Ahmedabad.",
+    "Fitted with 2 lifts. Set in a 10 floors building, 8 years. Rent is ₹55,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Titanium Square office Thaltej | City Property Services",
+  "seoDescription": "Unfurnished office of 928 sq.ft for rent in Titanium Square, Thaltej, Ahmedabad.",
+  "geo": {
+    "lat": 23.050653562519635,
+    "lng": 72.51828234229706
+  },
+  "priceValue": 55000,
+  "pricePer": "per month",
+  "furnishing": "Unfurnished"
+}

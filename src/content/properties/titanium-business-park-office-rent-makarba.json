@@ -1,0 +1,36 @@
+{
+  "title": "2,260 sq.ft super built up Office · Titanium Business Park, Makarba",
+  "slug": "titanium-business-park-office-rent-makarba",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹150,000",
+  "localityName": "Makarba",
+  "city": "Ahmedabad",
+  "address": "Titanium Business Park, Makarba, Ahmedabad",
+  "area": "2,260 sq.ft super built up",
+  "areaSqft": 2260,
+  "totalFloors": "G+12 floors",
+  "age": "5 years",
+  "amenities": [
+    "3 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 2,260 sq.ft super built up for rent in Titanium Business Park, Makarba, Ahmedabad.",
+    "Fitted with 2 cabins, 1 director cabin, 20 work desks, 1 conference room, 4 lifts and 3 car parks. Set in a G+12 floors building, 5 years. Rent is ₹150,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Titanium Business Park office Makarba | City Property Services",
+  "seoDescription": "Fully furnished office of 2,260 sq.ft super built up for rent in Titanium Business Park, Makarba, Ahmedabad.",
+  "geo": {
+    "lat": 22.997142274174415,
+    "lng": 72.50143012758761
+  },
+  "priceValue": 150000,
+  "pricePer": "per month",
+  "furnishing": "Fully furnished",
+  "builtUpArea": "2,260 sq.ft",
+  "parking": "3 car parks"
+}

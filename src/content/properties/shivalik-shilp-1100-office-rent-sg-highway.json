@@ -1,0 +1,33 @@
+{
+  "title": "1,100 sq.ft Office · Shivalik Shilp, SG Highway",
+  "slug": "shivalik-shilp-1100-office-rent-sg-highway",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹55 / sq.ft",
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "address": "Shivalik Shilp, SG Highway, Ahmedabad",
+  "area": "1,100 sq.ft",
+  "areaSqft": 1100,
+  "totalFloors": "13 floors",
+  "age": "",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 1,100 sq.ft for rent in Shivalik Shilp, SG Highway, Ahmedabad.",
+    "Fitted with 1 director cabin, 20 work stations, a 4 seat conference room, desk to desk internet, telephone and LAN, camera and a server. Set in a 13 floors building. Rent is ₹55 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Shivalik Shilp office SG Highway | City Property Services",
+  "seoDescription": "Fully furnished office of 1,100 sq.ft for rent in Shivalik Shilp, SG Highway, Ahmedabad.",
+  "geo": {
+    "lat": 23.02687789397938,
+    "lng": 72.50595232706382
+  },
+  "priceValue": 60500,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹55 per sq.ft",
+  "furnishing": "Fully furnished"
+}

@@ -1,0 +1,35 @@
+{
+  "title": "2,425 sq.ft Office · Surmount Tower, Satellite",
+  "slug": "surmount-tower-office-rent-satellite",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹90,000",
+  "localityName": "Satellite",
+  "city": "Ahmedabad",
+  "address": "Surmount Tower, Satellite, Ahmedabad",
+  "area": "2,425 sq.ft",
+  "areaSqft": 2425,
+  "totalFloors": "10 floors",
+  "age": "15 years",
+  "amenities": [
+    "2 car parks"
+  ],
+  "description": [
+    "Unfurnished office of 2,425 sq.ft for rent in Surmount Tower, Satellite, Ahmedabad.",
+    "Fitted with 1 big boss cabin, 3 manager cabins, 25 work stations, 1 conference room, pantry, reception, washroom, 2 dedicated car parks and 2 lifts. Set in a 10 floors building, 15 years. Rent is ₹90,000 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Surmount Tower office Satellite | City Property Services",
+  "seoDescription": "Unfurnished office of 2,425 sq.ft for rent in Surmount Tower, Satellite, Ahmedabad.",
+  "geo": {
+    "lat": 23.029084020962294,
+    "lng": 72.50865599822842
+  },
+  "priceValue": 90000,
+  "pricePer": "per month",
+  "furnishing": "Unfurnished",
+  "parking": "2 car parks"
+}

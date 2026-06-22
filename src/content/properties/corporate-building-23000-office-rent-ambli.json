@@ -1,0 +1,36 @@
+{
+  "title": "23,000 sq.ft Office · Corporate Building, Ambli",
+  "slug": "corporate-building-23000-office-rent-ambli",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹55 / sq.ft",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "address": "Corporate Building, Ambli, Ahmedabad",
+  "area": "23,000 sq.ft",
+  "areaSqft": 23000,
+  "totalFloors": "11 floors",
+  "age": "",
+  "amenities": [
+    "18 car parks"
+  ],
+  "description": [
+    "Unfurnished office of 23,000 sq.ft for rent in Corporate Building, Ambli, Ahmedabad.",
+    "Fitted with 18 car parks. Set in a 11 floors building. Rent is ₹55 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Corporate Building office Ambli | City Property Services",
+  "seoDescription": "Unfurnished office of 23,000 sq.ft for rent in Corporate Building, Ambli, Ahmedabad.",
+  "geo": {
+    "lat": 23.030125946625287,
+    "lng": 72.4977795415329
+  },
+  "priceValue": 1265000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹55 per sq.ft",
+  "furnishing": "Unfurnished",
+  "parking": "18 car parks"
+}

@@ -1,0 +1,33 @@
+{
+  "title": "2,529 sq.ft Office · Sankalp Square 3A, Bodakdev",
+  "slug": "sankalp-square-3a-2529-office-rent-bodakdev",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹45 / sq.ft",
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "Sankalp Square 3A, Bodakdev, Ahmedabad",
+  "area": "2,529 sq.ft",
+  "areaSqft": 2529,
+  "totalFloors": "18 floors",
+  "age": "",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 2,529 sq.ft for rent in Sankalp Square 3A, Bodakdev, Ahmedabad.",
+    "Fitted with 4 lifts. Set in a 18 floors building. Rent is ₹45 per sq.ft plus taxes."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Sankalp Square 3A office Bodakdev | City Property Services",
+  "seoDescription": "Unfurnished office of 2,529 sq.ft for rent in Sankalp Square 3A, Bodakdev, Ahmedabad.",
+  "geo": {
+    "lat": 23.04479229071782,
+    "lng": 72.48285449097162
+  },
+  "priceValue": 113805,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹45 per sq.ft plus taxes",
+  "furnishing": "Unfurnished"
+}
