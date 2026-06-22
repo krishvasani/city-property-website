@@ -1,0 +1,36 @@
+{
+  "title": "2,475 sq.ft Office · Square Corporate, Science City",
+  "slug": "square-corporate-office-rent-science-city",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹42 / sq.ft",
+  "localityName": "Science City",
+  "city": "Ahmedabad",
+  "address": "Square Corporate, Science City, Ahmedabad",
+  "area": "2,475 sq.ft",
+  "areaSqft": 2475,
+  "totalFloors": "12 floors",
+  "age": "8 years",
+  "amenities": [
+    "3 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 2,475 sq.ft for rent in Square Corporate, Science City, Ahmedabad.",
+    "Fitted with 1 director chamber, 29 work stations, a conference hall, an HRD cabin, a reception cum visitor room, pantry, storage, 2 washrooms, 3 allotted car parks and 5 lifts. Set in a 12 floors building, 8 years. Rent is ₹42 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Square Corporate office Science City | City Property Services",
+  "seoDescription": "Fully furnished office of 2,475 sq.ft for rent in Square Corporate, Science City, Ahmedabad.",
+  "geo": {
+    "lat": 23.069551977846064,
+    "lng": 72.51722807548643
+  },
+  "priceValue": 103950,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹42 per sq.ft",
+  "furnishing": "Fully furnished",
+  "parking": "3 car parks"
+}

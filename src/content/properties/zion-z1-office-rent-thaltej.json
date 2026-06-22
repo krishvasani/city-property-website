@@ -1,0 +1,36 @@
+{
+  "title": "2,972 sq.ft Office · Zion Z1, Thaltej",
+  "slug": "zion-z1-office-rent-thaltej",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹65 / sq.ft",
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "address": "Zion Z1, Thaltej, Ahmedabad",
+  "area": "2,972 sq.ft",
+  "areaSqft": 2972,
+  "totalFloors": "13 floors",
+  "age": "newly constructed",
+  "amenities": [
+    "3 car parks"
+  ],
+  "description": [
+    "Fully furnished office of 2,972 sq.ft for rent in Zion Z1, Thaltej, Ahmedabad.",
+    "Fitted with 3 cabins, 1 conference room, 15 work stations, 3 washrooms, reception, 3 car parks, 2 staircases and 10 lifts. Set in a 13 floors building, newly constructed. Rent is ₹65 per sq.ft plus taxes."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Zion Z1 office Thaltej | City Property Services",
+  "seoDescription": "Fully furnished office of 2,972 sq.ft for rent in Zion Z1, Thaltej, Ahmedabad.",
+  "geo": {
+    "lat": 23.0449193640152,
+    "lng": 72.50789342271955
+  },
+  "priceValue": 193180,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹65 per sq.ft plus taxes",
+  "furnishing": "Fully furnished",
+  "parking": "3 car parks"
+}

@@ -1,0 +1,33 @@
+{
+  "title": "30,000 sq.ft Office · Corporate Building (Iscon Ambli), Ambli",
+  "slug": "corporate-building-iscon-ambli-30000-office-rent-ambli",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹48 / sq.ft",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "address": "Corporate Building (Iscon Ambli), Ambli, Ahmedabad",
+  "area": "30,000 sq.ft",
+  "areaSqft": 30000,
+  "totalFloors": "7 floors",
+  "age": "newly constructed",
+  "amenities": [],
+  "description": [
+    "Unfurnished office of 30,000 sq.ft for rent in Corporate Building (Iscon Ambli), Ambli, Ahmedabad.",
+    "An unfurnished building with 6 lifts and ample parking. Set in a 7 floors building, newly constructed. Rent is ₹48 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Corporate Building (Iscon Ambli) office Ambli | City Property Services",
+  "seoDescription": "Unfurnished office of 30,000 sq.ft for rent in Corporate Building (Iscon Ambli), Ambli, Ahmedabad.",
+  "geo": {
+    "lat": 23.02531008539933,
+    "lng": 72.4771192049932
+  },
+  "priceValue": 1440000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹48 per sq.ft",
+  "furnishing": "Unfurnished"
+}

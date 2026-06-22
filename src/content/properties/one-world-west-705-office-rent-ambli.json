@@ -1,0 +1,31 @@
+{
+  "title": "705 sq.ft Office · One World West, Ambli",
+  "slug": "one-world-west-705-office-rent-ambli",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "address": "One World West, Ambli, Ahmedabad",
+  "area": "705 sq.ft",
+  "areaSqft": 705,
+  "totalFloors": "13 floors",
+  "age": "5 to 10 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 705 sq.ft for rent in One World West, Ambli, Ahmedabad.",
+    "Fitted with 1 boss cabin, 1 manager cabin, 1 large conference room, 12 work stations, reception, washroom, pantry, an SP Ring Road front terrace, 1 allotted car park, central air conditioning and 4 lifts. Set in a 13 floors building, 5 to 10 years. Rent is available on request."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "One World West office Ambli | City Property Services",
+  "seoDescription": "Fully furnished office of 705 sq.ft for rent in One World West, Ambli, Ahmedabad.",
+  "geo": {
+    "lat": 23.02537826425089,
+    "lng": 72.47784703382925
+  },
+  "priceOnRequest": true,
+  "furnishing": "Fully furnished"
+}

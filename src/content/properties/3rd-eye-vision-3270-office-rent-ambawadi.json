@@ -1,0 +1,36 @@
+{
+  "title": "3,270 sq.ft Office · 3rd Eye Vision, Ambawadi",
+  "slug": "3rd-eye-vision-3270-office-rent-ambawadi",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹55 / sq.ft",
+  "localityName": "Ambawadi",
+  "city": "Ahmedabad",
+  "address": "3rd Eye Vision, Ambawadi, Ahmedabad",
+  "area": "3,270 sq.ft",
+  "areaSqft": 3270,
+  "totalFloors": "7 floors",
+  "age": "10 years",
+  "amenities": [
+    "3 car parks"
+  ],
+  "description": [
+    "Unfurnished office of 3,270 sq.ft for rent in 3rd Eye Vision, Ambawadi, Ahmedabad.",
+    "Fitted with 3 lifts and 3 allotted car parks. Set in a 7 floors building, 10 years. Rent is ₹55 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "3rd Eye Vision office Ambawadi | City Property Services",
+  "seoDescription": "Unfurnished office of 3,270 sq.ft for rent in 3rd Eye Vision, Ambawadi, Ahmedabad.",
+  "geo": {
+    "lat": 23.027,
+    "lng": 72.544
+  },
+  "priceValue": 179850,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹55 per sq.ft",
+  "furnishing": "Unfurnished",
+  "parking": "3 car parks"
+}

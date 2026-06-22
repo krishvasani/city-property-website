@@ -1,0 +1,33 @@
+{
+  "title": "6,000 sq.ft Office · Avdhesh House, Bodakdev",
+  "slug": "avdhesh-house-6000-office-rent-bodakdev",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹45 / sq.ft",
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "address": "Avdhesh House, Bodakdev, Ahmedabad",
+  "area": "6,000 sq.ft",
+  "areaSqft": 6000,
+  "totalFloors": "10 floors",
+  "age": "20 years",
+  "amenities": [],
+  "description": [
+    "Fully furnished office of 6,000 sq.ft for rent in Avdhesh House, Bodakdev, Ahmedabad.",
+    "Fitted with 3 cabins, 2 conference rooms, 130 work stations, 4 washrooms and 2 lifts. Set in a 10 floors building, 20 years. Rent is ₹45 per sq.ft."
+  ],
+  "photos": [],
+  "newAt": "2026-06-18",
+  "seoTitle": "Avdhesh House office Bodakdev | City Property Services",
+  "seoDescription": "Fully furnished office of 6,000 sq.ft for rent in Avdhesh House, Bodakdev, Ahmedabad.",
+  "geo": {
+    "lat": 23.04440680358177,
+    "lng": 72.51640499264968
+  },
+  "priceValue": 270000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹45 per sq.ft",
+  "furnishing": "Fully furnished"
+}
