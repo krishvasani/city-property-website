@@ -4,6 +4,7 @@ import PropertyCard from './PropertyCard.astro';
 import Map from './Map.astro';
 import LocalityAutocomplete from './LocalityAutocomplete.astro';
 import { categoryFor, CATEGORY_LABEL, CATEGORY_ORDER } from '../lib/format';
+import { getAllLocalities, localityMatchTokens } from '../data/localities';
 import type { Property } from '../lib/types';
 
 interface BudgetOption { label: string; value: string }
@@ -40,6 +41,19 @@ const pins = properties
   }));
 
 const hasResidential = catsPresent.includes('residential');
+
+// Locality → text-match tokens. A property is often tagged with its
+// administrative area (e.g. Bodakdev / Thaltej) while its address actually
+// names a sub-locality or road (e.g. "Sindhu Bhavan Road"). So we let the
+// locality filter match on the card's text blob (title + locality + address),
+// not only the exact administrative slug. Tokens are the locality name +
+// aliases, normalised (alphanumerics only) and kept to 4+ chars to avoid
+// noisy substring hits.
+const localityTokens: Record<string, string[]> = {};
+for (const l of getAllLocalities()) {
+  const toks = localityMatchTokens(l);
+  if (toks.length) localityTokens[l.id] = toks;
+}
 ---
 <!-- FILTER BAR -->
 <div class="filterbar">
@@ -97,6 +111,7 @@ const hasResidential = catsPresent.includes('residential');
       <div class="results-grid" id="grid" data-stagger>
         {properties.map((p) => <PropertyCard property={p} />)}
       </div>
+      <script type="application/json" id="locality-tokens" set:html={JSON.stringify(localityTokens)}></script>
 
       <p class="no-results" id="no-results" hidden>{emptyText} <button class="btn btn-ghost btn-sm" id="clear-filters">Clear filters</button></p>
 
@@ -153,6 +168,20 @@ const hasResidential = catsPresent.includes('residential');
 
   const state = { type: '', beds: 0, budget: '', locality: '', sort: 'recommended', page: 1 };
 
+  // Locality match tokens (name + aliases per locality id), so a property tagged
+  // with its administrative area still matches when its address names the
+  // searched road/sub-locality (e.g. Sindhu Bhavan Road inside a Bodakdev tag).
+  let LOC_TOKENS: Record<string, string[]> = {};
+  try { LOC_TOKENS = JSON.parse(document.getElementById('locality-tokens')?.textContent || '{}'); } catch {}
+  const normTxt = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+  function localityMatch(card: HTMLElement): boolean {
+    if (card.dataset.locality === state.locality) return true;
+    const toks = LOC_TOKENS[state.locality];
+    if (!toks || !toks.length) return false;
+    const hay = normTxt(card.dataset.search || '');
+    return toks.some((t) => hay.includes(t));
+  }
+
   // Seed from the URL (?type=, ?locality=, ?budget=, ?beds=). The locality
   // search box preselects ?locality itself (paramKey="locality").
   const params = new URLSearchParams(location.search);
@@ -176,7 +205,7 @@ const hasResidential = catsPresent.includes('residential');
       const price = +(d.price || 0);
       if (price < lo || price > hi) return false;
     }
-    if (state.locality && d.locality !== state.locality) return false;
+    if (state.locality && !localityMatch(card)) return false;
     return true;
   }
 

@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import PropertyCard from '../../components/PropertyCard.astro';
 import Icon from '../../components/Icon.astro';
 import { getProperties } from '../../lib/data';
-import { getAllLocalities, getLocalityById } from '../../data/localities';
+import { getAllLocalities, getLocalityById, propertyTextMatchesLocality } from '../../data/localities';
 import { site } from '../../lib/config';
 
 // Generate pages for prime localities (priority 1–2) and any locality that has
@@ -22,7 +22,13 @@ const { localityId } = Astro.props;
 const loc = getLocalityById(localityId)!;
 
 const all = await getProperties();
-const listings = all.filter((p) => p.localitySlug === loc.id);
+// Match by administrative slug OR by address/title text, so a road/sub-locality
+// (e.g. Sindhu Bhavan Road) surfaces listings tagged with their parent area.
+const listings = all.filter(
+  (p) =>
+    p.localitySlug === loc.id ||
+    propertyTextMatchesLocality([p.title, p.localityName, p.address].filter(Boolean).join(' '), loc),
+);
 const rel = loc.propertyRelevance;
 const nearby = loc.nearbyAreas.map((id) => getLocalityById(id)).filter(Boolean).slice(0, 8) as NonNullable<ReturnType<typeof getLocalityById>>[];
 // Which nearby areas have their own landing page (so we only link to real pages).

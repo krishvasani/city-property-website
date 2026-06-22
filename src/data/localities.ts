@@ -187,7 +187,7 @@ export const localities: Locality[] = [
     ['jodhpur-cross-road', 'Jodhpur Cross Road', ['commercial', 'residential'], 23.021, 72.522, { priority: 3, nearbyAreas: ['satellite', 'jodhpur'] }],
     ['iskcon', 'ISKCON', ['commercial', 'residential', 'office'], 23.027, 72.507, { aliases: ['ISKCON Cross Road'], priority: 2, popularFor: ['offices', 'retail', 'hospitality'], nearbyAreas: ['sg-highway', 'prahlad-nagar', 'bodakdev'], landmarks: ['ISKCON Temple', 'Iscon Cross Roads'] }],
     ['sg-highway', 'SG Highway', ['commercial', 'office', 'residential'], 23.030, 72.508, { aliases: ['Sarkhej-Gandhinagar Highway', 'S.G. Highway'], priority: 1, popularFor: ['commercial offices', 'showrooms', 'premium apartments', 'hospitality'], nearbyAreas: ['bodakdev', 'prahlad-nagar', 'thaltej', 'iskcon'], connectivity: ['SG Highway', 'SP Ring Road'] }],
-    ['sindhu-bhavan-road', 'Sindhu Bhavan Road', ['commercial', 'office', 'residential'], 23.045, 72.500, { aliases: ['SBR'], priority: 1, popularFor: ['new-age offices', 'cafes & retail', 'premium residential'], nearbyAreas: ['thaltej', 'bodakdev', 'pakwan'] }],
+    ['sindhu-bhavan-road', 'Sindhu Bhavan Road', ['commercial', 'office', 'residential'], 23.045, 72.500, { aliases: ['SBR', 'Sindhubhavan', 'Sindhu Bhavan', 'Sindhu Bhavan Marg'], priority: 1, popularFor: ['new-age offices', 'cafes & retail', 'premium residential'], nearbyAreas: ['thaltej', 'bodakdev', 'pakwan'] }],
     ['science-city', 'Science City', ['residential', 'commercial'], 23.078, 72.512, { priority: 2, popularFor: ['new apartments', 'family housing'], nearbyAreas: ['sola', 'bhadaj', 'ghatlodia'], landmarks: ['Gujarat Science City'] }],
     ['sola', 'Sola', ['residential', 'commercial'], 23.075, 72.525, { priority: 2, nearbyAreas: ['science-city', 'ghatlodia', 'gota'], landmarks: ['Sola Civil Hospital'] }],
     ['sola-road', 'Sola Road', ['residential', 'commercial'], 23.068, 72.535, { priority: 3, nearbyAreas: ['sola', 'naranpura', 'ghatlodia'] }],
@@ -359,6 +359,25 @@ const byId = new Map(localities.map((l) => [l.id, l]));
 
 export function getAllLocalities(): Locality[] {
   return localities;
+}
+
+/**
+ * Text-match tokens for a locality (name + aliases), normalised to alphanumerics
+ * and kept to 4+ chars. Used so a locality search/filter matches a property even
+ * when it is tagged with its administrative area but its address names the
+ * road/sub-locality (e.g. "Sindhu Bhavan Road" inside a Bodakdev-tagged listing).
+ */
+export function localityMatchTokens(loc: Locality): string[] {
+  const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, '');
+  return Array.from(
+    new Set([loc.name, ...loc.aliases].map(norm).filter((t) => t.length >= 4)),
+  );
+}
+
+/** True if a property's text (title/locality/address) belongs to a locality. */
+export function propertyTextMatchesLocality(text: string, loc: Locality): boolean {
+  const hay = text.toLowerCase().replace(/[^a-z0-9]/g, '');
+  return localityMatchTokens(loc).some((t) => hay.includes(t));
 }
 export function getLocalityById(id: string): Locality | undefined {
   return byId.get(id);
