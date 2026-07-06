@@ -1,0 +1,88 @@
+{
+  "title": "Warehouse - Vadala (60,000 sq.ft)",
+  "slug": "warehouse-vadala-60000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹16 / sq.ft",
+  "priceValue": 960000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹16 per sq.ft",
+  "localityName": "Vadala",
+  "localitySlug": "vadala",
+  "city": "Ahmedabad",
+  "address": "Vadala, Ahmedabad- kheda Highway",
+  "area": "60,000 sq.ft",
+  "areaSqft": 60000,
+  "carpetArea": "57,000 sq.ft",
+  "builtUpArea": "60,000 sq.ft",
+  "warehouseType": "PEB",
+  "ceilingHeight": "9 m clear",
+  "dockAccess": "8 docks",
+  "deposit": "4 Months",
+  "possession": "immideately",
+  "amenities": [
+    "8 loading docks",
+    "9 m clear height",
+    "PEB construction",
+    "FM2 flooring",
+    "Fire hydrants",
+    "Fire sprinklers",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 60,000 sq.ft available on lease on the Ahmedabad- kheda Highway, in Vadala, near Ahmedabad.",
+    "Specifications: PEB structure, 57,000 sq.ft carpet, 9 m clear, 8 docks. Fm2 flooring, with fire hydrants and fire noc. Quoted lease rent ₹16 per sq.ft per month. Possession: immideately."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-vadala-60000-lease/photo-1.jpg",
+      "alt": "Warehouse in Vadala, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-vadala-60000-lease/photo-2.jpg",
+      "alt": "Warehouse in Vadala, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-vadala-60000-lease/photo-3.jpg",
+      "alt": "Warehouse in Vadala, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-vadala-60000-lease/photo-4.jpg",
+      "alt": "Warehouse in Vadala, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-vadala-60000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Vadala, Ahmedabad (60,000 sq.ft)",
+  "seoDescription": "Warehouse of 60,000 sq.ft available on lease on the Ahmedabad- kheda Highway, in Vadala, near Ahmedabad.",
+  "geo": {
+    "lat": 22.8224943,
+    "lng": 72.6119878
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "60,000 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "8 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "9 m"
+    }
+  ]
+}

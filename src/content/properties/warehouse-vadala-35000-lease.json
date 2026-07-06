@@ -1,0 +1,77 @@
+{
+  "title": "Warehouse - Vadala (35,000 sq.ft)",
+  "slug": "warehouse-vadala-35000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Vadala",
+  "localitySlug": "vadala",
+  "city": "Ahmedabad",
+  "address": "Vadala, Ahmedabad",
+  "area": "35,000 sq.ft",
+  "areaSqft": 35000,
+  "carpetArea": "30,973 sq.ft",
+  "builtUpArea": "35,000 sq.ft",
+  "ceilingHeight": "9 m clear",
+  "dockAccess": "6 docks",
+  "deposit": "4 Months",
+  "possession": "2025-09-01 00:00:00",
+  "amenities": [
+    "6 loading docks",
+    "9 m clear height",
+    "Tremix flooring",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 35,000 sq.ft available on lease in Vadala, part of the Ahmedabad warehousing and logistics belt.",
+    "Specifications: 30,973 sq.ft carpet, 9 m clear, 6 docks. Tremix flooring. Possession: 2025-09-01 00:00:00."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-vadala-35000-lease/photo-1.jpg",
+      "alt": "Warehouse in Vadala, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-vadala-35000-lease/photo-2.jpg",
+      "alt": "Warehouse in Vadala, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-vadala-35000-lease/photo-3.jpg",
+      "alt": "Warehouse in Vadala, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-vadala-35000-lease/photo-4.jpg",
+      "alt": "Warehouse in Vadala, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-vadala-35000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Vadala, Ahmedabad (35,000 sq.ft)",
+  "seoDescription": "Warehouse of 35,000 sq.ft available on lease in Vadala, part of the Ahmedabad warehousing and logistics belt.",
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "35,000 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "6 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "9 m"
+    }
+  ]
+}

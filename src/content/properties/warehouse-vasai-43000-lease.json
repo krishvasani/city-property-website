@@ -1,0 +1,77 @@
+{
+  "title": "Warehouse - Vasai (43,000 sq.ft)",
+  "slug": "warehouse-vasai-43000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Vasai",
+  "localitySlug": "vasai",
+  "city": "Ahmedabad",
+  "address": "Vasai, Ahmedabad",
+  "area": "43,000 sq.ft",
+  "areaSqft": 43000,
+  "carpetArea": "40,000 sq.ft",
+  "builtUpArea": "43,000 sq.ft",
+  "ceilingHeight": "8 m clear",
+  "dockAccess": "8 docks",
+  "deposit": "4 Months",
+  "possession": "Ready",
+  "amenities": [
+    "8 loading docks",
+    "8 m clear height",
+    "Tremix flooring",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 43,000 sq.ft available on lease in Vasai, part of the Ahmedabad warehousing and logistics belt.",
+    "Specifications: 40,000 sq.ft carpet, 8 m clear, 8 docks. Tremix flooring. Possession: Ready."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-vasai-43000-lease/photo-1.jpg",
+      "alt": "Warehouse in Vasai, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-vasai-43000-lease/photo-2.jpg",
+      "alt": "Warehouse in Vasai, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-vasai-43000-lease/photo-3.jpg",
+      "alt": "Warehouse in Vasai, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-vasai-43000-lease/photo-4.jpg",
+      "alt": "Warehouse in Vasai, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-vasai-43000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Vasai, Ahmedabad (43,000 sq.ft)",
+  "seoDescription": "Warehouse of 43,000 sq.ft available on lease in Vasai, part of the Ahmedabad warehousing and logistics belt.",
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "43,000 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "8 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "8 m"
+    }
+  ]
+}

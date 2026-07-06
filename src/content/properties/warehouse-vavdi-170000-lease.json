@@ -1,0 +1,88 @@
+{
+  "title": "Warehouse - Vavdi (170,000 sq.ft)",
+  "slug": "warehouse-vavdi-170000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹17 / sq.ft",
+  "priceValue": 2890000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹17 per sq.ft",
+  "localityName": "Vavdi",
+  "localitySlug": "vavdi",
+  "city": "Ahmedabad",
+  "address": "Vavdi, Ahmedabad",
+  "area": "170,000 sq.ft",
+  "areaSqft": 170000,
+  "carpetArea": "150,000 sq.ft",
+  "builtUpArea": "170,000 sq.ft",
+  "warehouseType": "PEB",
+  "ceilingHeight": "12 m clear",
+  "dockAccess": "16 docks",
+  "deposit": "6 Months",
+  "possession": "2026-07-01 00:00:00",
+  "amenities": [
+    "16 loading docks",
+    "12 m clear height",
+    "PEB construction",
+    "FM2 flooring",
+    "Fire hydrants",
+    "Fire sprinklers",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 170,000 sq.ft available on lease in Vavdi, part of the Ahmedabad warehousing and logistics belt.",
+    "Specifications: PEB structure, 150,000 sq.ft carpet, 12 m clear, 16 docks. Fm2 flooring, with fire hydrants and fire noc. Quoted lease rent ₹17 per sq.ft per month. Possession: 2026-07-01 00:00:00."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-vavdi-170000-lease/photo-1.jpg",
+      "alt": "Warehouse in Vavdi, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-vavdi-170000-lease/photo-2.jpg",
+      "alt": "Warehouse in Vavdi, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-vavdi-170000-lease/photo-3.jpg",
+      "alt": "Warehouse in Vavdi, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-vavdi-170000-lease/photo-4.jpg",
+      "alt": "Warehouse in Vavdi, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-vavdi-170000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Vavdi, Ahmedabad (170,000 sq.ft)",
+  "seoDescription": "Warehouse of 170,000 sq.ft available on lease in Vavdi, part of the Ahmedabad warehousing and logistics belt.",
+  "geo": {
+    "lat": 22.7382447,
+    "lng": 72.6534479
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "170,000 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "16 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "12 m"
+    }
+  ]
+}

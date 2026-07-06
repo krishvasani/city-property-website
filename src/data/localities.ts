@@ -369,6 +369,22 @@ export const localities: Locality[] = [
     ['thol-road', 'Thol Road', ['residential', 'plots', 'investment'], 23.092925, 72.427930, { aliases: ['Thol'], priority: 3, popularFor: ['farmhouses', 'weekend homes', 'plots'], nearbyAreas: ['rancharda', 'agol', 'godhavi'], landmarks: ['Thol Lake'] }],
     ['agol', 'Agol', ['residential', 'plots', 'investment'], 23.139044, 72.250928, { priority: 3, popularFor: ['farmhouses', 'agricultural land', 'plots'], nearbyAreas: ['thol-road', 'kadi'], description: 'Agol is a village pocket northwest of Ahmedabad (towards Kadi), known for farmhouses and land. // approximate centroid' }],
   ]),
+
+  // ---------- WAREHOUSE / LOGISTICS BELT VILLAGES (added for warehouse listings) ----------
+  ...build('Industrial & Warehousing', [
+    ['vadala', 'Vadala', ['warehousing', 'logistics', 'industrial'], 22.805420, 72.621400, { priority: 3, popularFor: ['warehousing & logistics', 'PEB sheds'], nearbyAreas: ['vavdi', 'kheda', 'kanera', 'pinglaj'], connectivity: ['Ahmedabad-Kheda Highway'] }],
+    ['vavdi', 'Vavdi', ['warehousing', 'logistics', 'industrial'], 22.738240, 72.653450, { priority: 3, popularFor: ['large warehouses', 'logistics parks'], nearbyAreas: ['kheda', 'vadala', 'hariyala'], connectivity: ['Kheda-Rajkot Highway'] }],
+    ['bhayla', 'Bhayla', ['warehousing', 'logistics', 'industrial'], 22.763800, 72.319200, { priority: 3, popularFor: ['warehousing & logistics', 'large sheds'], nearbyAreas: ['bavla', 'rajoda', 'changodar'], connectivity: ['Ahmedabad-Rajkot Highway (NH 47)'] }],
+    ['hariyala', 'Hariyala', ['warehousing', 'logistics', 'industrial'], 22.765860, 72.652220, { priority: 3, popularFor: ['large warehouses', 'distribution centres'], nearbyAreas: ['vavdi', 'kheda', 'vadala'], connectivity: ['NH 8', 'Kheda Highway'] }],
+    ['rajoda', 'Rajoda', ['warehousing', 'logistics', 'industrial'], 22.869680, 72.407030, { priority: 3, popularFor: ['warehousing & logistics'], nearbyAreas: ['bhayla', 'bavla', 'changodar'], connectivity: ['Ahmedabad-Rajkot Highway (NH 47)'] }],
+    ['indrad', 'Indrad', ['warehousing', 'logistics', 'industrial'], 23.283480, 72.403440, { priority: 3, city: 'Gandhinagar', district: 'Gandhinagar', region: 'Gandhinagar Industrial', popularFor: ['warehousing', 'industrial sheds'], nearbyAreas: ['chhatral', 'kadi'], connectivity: ['Kadi-Chhatral Road'] }],
+    ['miroli', 'Miroli', ['warehousing', 'logistics', 'industrial'], 22.876550, 72.531040, { priority: 3, popularFor: ['warehousing & logistics'], nearbyAreas: ['pirana', 'kamod', 'moraiya'], connectivity: ['Ahmedabad-Dholka Road'] }],
+    ['pinglaj', 'Pinglaj', ['warehousing', 'logistics', 'industrial'], 22.822490, 72.611990, { priority: 3, popularFor: ['warehousing & logistics'], nearbyAreas: ['kanera', 'vadala', 'kheda'], connectivity: ['Ahmedabad-Kheda Highway'] }],
+    ['kanera', 'Kanera', ['warehousing', 'logistics', 'industrial'], 22.811290, 72.619360, { priority: 3, popularFor: ['warehousing & logistics'], nearbyAreas: ['pinglaj', 'vadala', 'kheda'], connectivity: ['Ahmedabad-Kheda Highway'] }],
+    ['pirana', 'Pirana', ['warehousing', 'logistics', 'industrial'], 22.965000, 72.605000, { priority: 3, popularFor: ['warehousing', 'godowns'], nearbyAreas: ['kamod', 'miroli', 'aslali'], connectivity: ['Ahmedabad-Dholka Road'] }],
+    ['vasai', 'Vasai', ['warehousing', 'logistics', 'industrial'], 22.780000, 72.620000, { priority: 4, popularFor: ['warehousing', 'godowns'], nearbyAreas: ['kanera', 'kheda', 'pinglaj'], description: 'Vasai is a warehousing village in the Ahmedabad-Kheda belt. // approximate centroid' }],
+    ['kheda', 'Kheda', ['warehousing', 'logistics', 'industrial', 'plots'], 22.701700, 72.568830, { priority: 3, city: 'Kheda', district: 'Kheda', region: 'Kheda Industrial', popularFor: ['warehousing & logistics', 'large distribution centres'], nearbyAreas: ['vavdi', 'vadala', 'hariyala', 'kanera'], connectivity: ['Kheda-Rajkot Highway', 'NH 48'] }],
+  ]),
 ];
 
 // ── HELPER FUNCTIONS ──────────────────────────────────────────────────

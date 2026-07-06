@@ -1,0 +1,87 @@
+{
+  "title": "Warehouse - Kamod (13,000 sq.ft)",
+  "slug": "warehouse-kamod-13000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹16 / sq.ft",
+  "priceValue": 208000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹16 per sq.ft",
+  "localityName": "Kamod",
+  "localitySlug": "kamod",
+  "city": "Ahmedabad",
+  "address": "Kamod, Ahmedabad",
+  "area": "13,000 sq.ft",
+  "areaSqft": 13000,
+  "carpetArea": "11,700 sq.ft",
+  "builtUpArea": "13,000 sq.ft",
+  "warehouseType": "PEB",
+  "ceilingHeight": "7.5 m clear",
+  "dockAccess": "3 docks",
+  "deposit": "03 Months",
+  "possession": "Immediate",
+  "amenities": [
+    "3 loading docks",
+    "7.5 m clear height",
+    "PEB construction",
+    "FM2 flooring",
+    "Fire hydrants",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 13,000 sq.ft available on lease in Kamod, part of the Ahmedabad warehousing and logistics belt.",
+    "Specifications: PEB structure, 11,700 sq.ft carpet, 7.5 m clear, 3 docks. Fm2 flooring, with fire hydrants and fire noc. Quoted lease rent ₹16 per sq.ft per month. Possession: Immediate."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-kamod-13000-lease/photo-1.jpg",
+      "alt": "Warehouse in Kamod, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-kamod-13000-lease/photo-2.jpg",
+      "alt": "Warehouse in Kamod, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-kamod-13000-lease/photo-3.jpg",
+      "alt": "Warehouse in Kamod, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-kamod-13000-lease/photo-4.jpg",
+      "alt": "Warehouse in Kamod, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-kamod-13000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Kamod, Ahmedabad (13,000 sq.ft)",
+  "seoDescription": "Warehouse of 13,000 sq.ft available on lease in Kamod, part of the Ahmedabad warehousing and logistics belt.",
+  "geo": {
+    "lat": 22.9188833,
+    "lng": 72.532557
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "13,000 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "3 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "7.5 m"
+    }
+  ]
+}

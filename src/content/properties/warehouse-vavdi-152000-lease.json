@@ -1,0 +1,88 @@
+{
+  "title": "Warehouse - Vavdi (152,000 sq.ft)",
+  "slug": "warehouse-vavdi-152000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹18 / sq.ft",
+  "priceValue": 2736000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹18 per sq.ft",
+  "localityName": "Vavdi",
+  "localitySlug": "vavdi",
+  "city": "Ahmedabad",
+  "address": "Vavdi, Kheda-Rajkot highway",
+  "area": "152,000 sq.ft",
+  "areaSqft": 152000,
+  "carpetArea": "133,500 sq.ft",
+  "builtUpArea": "152,000 sq.ft",
+  "warehouseType": "PEB",
+  "ceilingHeight": "12 m clear",
+  "dockAccess": "14 docks",
+  "deposit": "4 Months",
+  "possession": "immideately",
+  "amenities": [
+    "14 loading docks",
+    "12 m clear height",
+    "PEB construction",
+    "FM2 flooring",
+    "Fire hydrants",
+    "Fire sprinklers",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 152,000 sq.ft available on lease on the Kheda-Rajkot highway, in Vavdi, near Ahmedabad.",
+    "Specifications: PEB structure, 133,500 sq.ft carpet, 12 m clear, 14 docks. Fm2 flooring, with fire hydrants and fire noc. Quoted lease rent ₹18 per sq.ft per month. Possession: immideately."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-vavdi-152000-lease/photo-1.jpg",
+      "alt": "Warehouse in Vavdi, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-vavdi-152000-lease/photo-2.jpg",
+      "alt": "Warehouse in Vavdi, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-vavdi-152000-lease/photo-3.jpg",
+      "alt": "Warehouse in Vavdi, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-vavdi-152000-lease/photo-4.jpg",
+      "alt": "Warehouse in Vavdi, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-vavdi-152000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Vavdi, Ahmedabad (152,000 sq.ft)",
+  "seoDescription": "Warehouse of 152,000 sq.ft available on lease on the Kheda-Rajkot highway, in Vavdi, near Ahmedabad.",
+  "geo": {
+    "lat": 22.7382447,
+    "lng": 72.6534479
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "152,000 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "14 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "12 m"
+    }
+  ]
+}

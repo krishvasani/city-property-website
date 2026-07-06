@@ -1,0 +1,88 @@
+{
+  "title": "Warehouse - Kanera (45,000 sq.ft)",
+  "slug": "warehouse-kanera-45000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹17 / sq.ft",
+  "priceValue": 765000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹17 per sq.ft",
+  "localityName": "Kanera",
+  "localitySlug": "kanera",
+  "city": "Ahmedabad",
+  "address": "Kanera, Ahmedabad- kheda Highway",
+  "area": "45,000 sq.ft",
+  "areaSqft": 45000,
+  "carpetArea": "40,000 sq.ft",
+  "builtUpArea": "45,000 sq.ft",
+  "warehouseType": "PEB",
+  "ceilingHeight": "9 m clear",
+  "dockAccess": "4 docks",
+  "deposit": "4 Months",
+  "possession": "immideately",
+  "amenities": [
+    "4 loading docks",
+    "9 m clear height",
+    "PEB construction",
+    "FM2 flooring",
+    "Fire hydrants",
+    "Fire sprinklers",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 45,000 sq.ft available on lease on the Ahmedabad- kheda Highway, in Kanera, near Ahmedabad.",
+    "Specifications: PEB structure, 40,000 sq.ft carpet, 9 m clear, 4 docks. Fm2 flooring, with fire hydrants and fire noc. Quoted lease rent ₹17 per sq.ft per month. Possession: immideately."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-kanera-45000-lease/photo-1.jpg",
+      "alt": "Warehouse in Kanera, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-kanera-45000-lease/photo-2.jpg",
+      "alt": "Warehouse in Kanera, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-kanera-45000-lease/photo-3.jpg",
+      "alt": "Warehouse in Kanera, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-kanera-45000-lease/photo-4.jpg",
+      "alt": "Warehouse in Kanera, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-kanera-45000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Kanera, Ahmedabad (45,000 sq.ft)",
+  "seoDescription": "Warehouse of 45,000 sq.ft available on lease on the Ahmedabad- kheda Highway, in Kanera, near Ahmedabad.",
+  "geo": {
+    "lat": 22.811292,
+    "lng": 72.6193556
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "45,000 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "4 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "9 m"
+    }
+  ]
+}

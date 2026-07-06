@@ -1,0 +1,88 @@
+{
+  "title": "Warehouse - Hariyala (320,000 sq.ft)",
+  "slug": "warehouse-hariyala-320000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹18 / sq.ft",
+  "priceValue": 5760000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹18 per sq.ft",
+  "localityName": "Hariyala",
+  "localitySlug": "hariyala",
+  "city": "Ahmedabad",
+  "address": "Hariyala, Ahmedabad",
+  "area": "320,000 sq.ft",
+  "areaSqft": 320000,
+  "carpetArea": "295,000 sq.ft",
+  "builtUpArea": "320,000 sq.ft",
+  "warehouseType": "PEB",
+  "ceilingHeight": "13 m clear",
+  "dockAccess": "64 docks",
+  "deposit": "6 Months",
+  "possession": "30th April 2026",
+  "amenities": [
+    "64 loading docks",
+    "13 m clear height",
+    "PEB construction",
+    "FM2 flooring",
+    "Fire hydrants",
+    "Fire sprinklers",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 320,000 sq.ft available on lease in Hariyala, part of the Ahmedabad warehousing and logistics belt.",
+    "Specifications: PEB structure, 295,000 sq.ft carpet, 13 m clear, 64 docks. Fm2 flooring, with fire hydrants and fire noc. Quoted lease rent ₹18 per sq.ft per month. Possession: 30th April 2026."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-hariyala-320000-lease/photo-1.jpg",
+      "alt": "Warehouse in Hariyala, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-hariyala-320000-lease/photo-2.jpg",
+      "alt": "Warehouse in Hariyala, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-hariyala-320000-lease/photo-3.jpg",
+      "alt": "Warehouse in Hariyala, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-hariyala-320000-lease/photo-4.jpg",
+      "alt": "Warehouse in Hariyala, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-hariyala-320000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Hariyala, Ahmedabad (320,000 sq.ft)",
+  "seoDescription": "Warehouse of 320,000 sq.ft available on lease in Hariyala, part of the Ahmedabad warehousing and logistics belt.",
+  "geo": {
+    "lat": 22.7658611,
+    "lng": 72.6522222
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "320,000 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "64 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "13 m"
+    }
+  ]
+}

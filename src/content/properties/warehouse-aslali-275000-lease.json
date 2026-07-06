@@ -1,0 +1,88 @@
+{
+  "title": "Warehouse - Aslali (275,000 sq.ft)",
+  "slug": "warehouse-aslali-275000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹22 / sq.ft",
+  "priceValue": 6050000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹22 per sq.ft",
+  "localityName": "Aslali",
+  "localitySlug": "aslali",
+  "city": "Ahmedabad",
+  "address": "Aslali, Ahmedabad- Mumbai highway",
+  "area": "275,000 sq.ft",
+  "areaSqft": 275000,
+  "carpetArea": "217,000 sq.ft",
+  "builtUpArea": "275,000 sq.ft",
+  "warehouseType": "PEB",
+  "ceilingHeight": "8 m clear",
+  "dockAccess": "32 docks",
+  "deposit": "6 Months",
+  "possession": "30th June 2026",
+  "amenities": [
+    "32 loading docks",
+    "8 m clear height",
+    "PEB construction",
+    "FM2 flooring",
+    "Fire hydrants",
+    "Fire sprinklers",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 275,000 sq.ft available on lease on the Ahmedabad- Mumbai highway, in Aslali, near Ahmedabad.",
+    "Specifications: PEB structure, 217,000 sq.ft carpet, 8 m clear, 32 docks. Fm2 flooring, with fire hydrants and fire noc. Quoted lease rent ₹22 per sq.ft per month. Possession: 30th June 2026."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-aslali-275000-lease/photo-1.jpg",
+      "alt": "Warehouse in Aslali, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-aslali-275000-lease/photo-2.jpg",
+      "alt": "Warehouse in Aslali, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-aslali-275000-lease/photo-3.jpg",
+      "alt": "Warehouse in Aslali, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-aslali-275000-lease/photo-4.jpg",
+      "alt": "Warehouse in Aslali, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-aslali-275000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Aslali, Ahmedabad (275,000 sq.ft)",
+  "seoDescription": "Warehouse of 275,000 sq.ft available on lease on the Ahmedabad- Mumbai highway, in Aslali, near Ahmedabad.",
+  "geo": {
+    "lat": 22.899836,
+    "lng": 72.5906399
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "275,000 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "32 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "8 m"
+    }
+  ]
+}

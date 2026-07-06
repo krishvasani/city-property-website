@@ -1,0 +1,88 @@
+{
+  "title": "Warehouse - Moraiya (25,000 sq.ft)",
+  "slug": "warehouse-moraiya-25000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹20 / sq.ft",
+  "priceValue": 500000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹20 per sq.ft",
+  "localityName": "Moraiya",
+  "localitySlug": "moraiya",
+  "city": "Ahmedabad",
+  "address": "Moraiya, Ahmedabad- Rajkot Highway",
+  "area": "25,000 sq.ft",
+  "areaSqft": 25000,
+  "carpetArea": "22,000 sq.ft",
+  "builtUpArea": "25,000 sq.ft",
+  "warehouseType": "PEB",
+  "ceilingHeight": "9 m clear",
+  "dockAccess": "3 docks",
+  "deposit": "6 Months",
+  "possession": "1st Oct 2025",
+  "amenities": [
+    "3 loading docks",
+    "9 m clear height",
+    "PEB construction",
+    "FM2 flooring",
+    "Fire hydrants",
+    "Fire sprinklers",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 25,000 sq.ft available on lease on the Ahmedabad- Rajkot Highway, in Moraiya, near Ahmedabad.",
+    "Specifications: PEB structure, 22,000 sq.ft carpet, 9 m clear, 3 docks. Fm2 flooring, with fire hydrants and fire noc. Quoted lease rent ₹20 per sq.ft per month. Possession: 1st Oct 2025."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-moraiya-25000-lease/photo-1.jpg",
+      "alt": "Warehouse in Moraiya, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-moraiya-25000-lease/photo-2.jpg",
+      "alt": "Warehouse in Moraiya, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-moraiya-25000-lease/photo-3.jpg",
+      "alt": "Warehouse in Moraiya, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-moraiya-25000-lease/photo-4.jpg",
+      "alt": "Warehouse in Moraiya, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-moraiya-25000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Moraiya, Ahmedabad (25,000 sq.ft)",
+  "seoDescription": "Warehouse of 25,000 sq.ft available on lease on the Ahmedabad- Rajkot Highway, in Moraiya, near Ahmedabad.",
+  "geo": {
+    "lat": 22.91375,
+    "lng": 72.4241389
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "25,000 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "3 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "9 m"
+    }
+  ]
+}

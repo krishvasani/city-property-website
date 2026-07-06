@@ -1,0 +1,88 @@
+{
+  "title": "Warehouse - Changodar (90,000 sq.ft)",
+  "slug": "warehouse-changodar-90000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹20 / sq.ft",
+  "priceValue": 1800000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹20 per sq.ft",
+  "localityName": "Changodar",
+  "localitySlug": "changodar",
+  "city": "Ahmedabad",
+  "address": "Changodar, Ahmedabad-Rajkot highway",
+  "area": "90,000 sq.ft",
+  "areaSqft": 90000,
+  "carpetArea": "85,000 sq.ft",
+  "builtUpArea": "90,000 sq.ft",
+  "warehouseType": "PEB",
+  "ceilingHeight": "10 m clear",
+  "dockAccess": "9 docks",
+  "deposit": "4 Months",
+  "possession": "immideately",
+  "amenities": [
+    "9 loading docks",
+    "10 m clear height",
+    "PEB construction",
+    "FM2 flooring",
+    "Fire hydrants",
+    "Fire sprinklers",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 90,000 sq.ft available on lease on the Ahmedabad-Rajkot highway, in Changodar, near Ahmedabad.",
+    "Specifications: PEB structure, 85,000 sq.ft carpet, 10 m clear, 9 docks. Fm2 flooring, with fire hydrants and fire noc. Quoted lease rent ₹20 per sq.ft per month. Possession: immideately."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-changodar-90000-lease/photo-1.jpg",
+      "alt": "Warehouse in Changodar, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-changodar-90000-lease/photo-2.jpg",
+      "alt": "Warehouse in Changodar, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-changodar-90000-lease/photo-3.jpg",
+      "alt": "Warehouse in Changodar, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-changodar-90000-lease/photo-4.jpg",
+      "alt": "Warehouse in Changodar, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-changodar-90000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Changodar, Ahmedabad (90,000 sq.ft)",
+  "seoDescription": "Warehouse of 90,000 sq.ft available on lease on the Ahmedabad-Rajkot highway, in Changodar, near Ahmedabad.",
+  "geo": {
+    "lat": 22.8775287,
+    "lng": 72.414294
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "90,000 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "9 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "10 m"
+    }
+  ]
+}

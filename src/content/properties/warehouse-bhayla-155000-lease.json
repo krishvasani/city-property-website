@@ -1,0 +1,88 @@
+{
+  "title": "Warehouse - Bhayla (155,000 sq.ft)",
+  "slug": "warehouse-bhayla-155000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹17 / sq.ft",
+  "priceValue": 2635000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹17 per sq.ft",
+  "localityName": "Bhayla",
+  "localitySlug": "bhayla",
+  "city": "Ahmedabad",
+  "address": "Bhayla, Ahmedabad- Rajkot Highway",
+  "area": "155,000 sq.ft",
+  "areaSqft": 155000,
+  "carpetArea": "138,500 sq.ft",
+  "builtUpArea": "155,000 sq.ft",
+  "warehouseType": "PEB",
+  "ceilingHeight": "11 m clear",
+  "dockAccess": "20 docks",
+  "deposit": "4 Months",
+  "possession": "immideately",
+  "amenities": [
+    "20 loading docks",
+    "11 m clear height",
+    "PEB construction",
+    "FM2 flooring",
+    "Fire hydrants",
+    "Fire sprinklers",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 155,000 sq.ft available on lease on the Ahmedabad- Rajkot Highway, in Bhayla, near Ahmedabad.",
+    "Specifications: PEB structure, 138,500 sq.ft carpet, 11 m clear, 20 docks. Fm2 flooring, with fire hydrants and fire noc. Quoted lease rent ₹17 per sq.ft per month. Possession: immideately."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-bhayla-155000-lease/photo-1.jpg",
+      "alt": "Warehouse in Bhayla, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-bhayla-155000-lease/photo-2.jpg",
+      "alt": "Warehouse in Bhayla, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-bhayla-155000-lease/photo-3.jpg",
+      "alt": "Warehouse in Bhayla, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-bhayla-155000-lease/photo-4.jpg",
+      "alt": "Warehouse in Bhayla, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-bhayla-155000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Bhayla, Ahmedabad (155,000 sq.ft)",
+  "seoDescription": "Warehouse of 155,000 sq.ft available on lease on the Ahmedabad- Rajkot Highway, in Bhayla, near Ahmedabad.",
+  "geo": {
+    "lat": 22.7637959,
+    "lng": 72.3192
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "155,000 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "20 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "11 m"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "title": "Warehouse - Sanand (9,000 sq.ft)",
+  "slug": "warehouse-sanand-9000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Sanand",
+  "localitySlug": "sanand",
+  "city": "Ahmedabad",
+  "address": "Sanand, Ahmedabad",
+  "area": "9,000 sq.ft",
+  "areaSqft": 9000,
+  "carpetArea": "5,400 sq.ft",
+  "builtUpArea": "9,000 sq.ft",
+  "ceilingHeight": "10.5 ft clear",
+  "deposit": "06 Months",
+  "possession": "Immediate",
+  "amenities": [
+    "10.5 ft clear height",
+    "Vatrified flooring",
+    "Fire hydrants",
+    "Fire sprinklers",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 9,000 sq.ft available on lease in Sanand, part of the Ahmedabad warehousing and logistics belt.",
+    "Specifications: 5,400 sq.ft carpet, 10.5 ft clear. Vatrified flooring, with fire hydrants and fire noc. Possession: Immediate."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-sanand-9000-lease/photo-1.jpg",
+      "alt": "Warehouse in Sanand, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-sanand-9000-lease/photo-2.jpg",
+      "alt": "Warehouse in Sanand, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-sanand-9000-lease/photo-3.jpg",
+      "alt": "Warehouse in Sanand, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-sanand-9000-lease/photo-4.jpg",
+      "alt": "Warehouse in Sanand, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-sanand-9000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Sanand, Ahmedabad (9,000 sq.ft)",
+  "seoDescription": "Warehouse of 9,000 sq.ft available on lease in Sanand, part of the Ahmedabad warehousing and logistics belt.",
+  "geo": {
+    "lat": 22.9862829,
+    "lng": 72.3937641
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "9,000 sq.ft"
+    },
+    {
+      "icon": "floor",
+      "label": "10.5 ft"
+    }
+  ]
+}

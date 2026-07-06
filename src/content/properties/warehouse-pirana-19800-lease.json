@@ -1,0 +1,77 @@
+{
+  "title": "Warehouse - Pirana (19,800 sq.ft)",
+  "slug": "warehouse-pirana-19800-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Pirana",
+  "localitySlug": "pirana",
+  "city": "Ahmedabad",
+  "address": "Pirana, Ahmedabad",
+  "area": "19,800 sq.ft",
+  "areaSqft": 19800,
+  "carpetArea": "18,200 sq.ft",
+  "builtUpArea": "19,800 sq.ft",
+  "ceilingHeight": "9 m clear",
+  "dockAccess": "3 docks",
+  "deposit": "4 Months",
+  "possession": "Ready",
+  "amenities": [
+    "3 loading docks",
+    "9 m clear height",
+    "Tremix flooring",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 19,800 sq.ft available on lease in Pirana, part of the Ahmedabad warehousing and logistics belt.",
+    "Specifications: 18,200 sq.ft carpet, 9 m clear, 3 docks. Tremix flooring. Possession: Ready."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-pirana-19800-lease/photo-1.jpg",
+      "alt": "Warehouse in Pirana, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-pirana-19800-lease/photo-2.jpg",
+      "alt": "Warehouse in Pirana, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-pirana-19800-lease/photo-3.jpg",
+      "alt": "Warehouse in Pirana, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-pirana-19800-lease/photo-4.jpg",
+      "alt": "Warehouse in Pirana, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-pirana-19800-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Pirana, Ahmedabad (19,800 sq.ft)",
+  "seoDescription": "Warehouse of 19,800 sq.ft available on lease in Pirana, part of the Ahmedabad warehousing and logistics belt.",
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "19,800 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "3 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "9 m"
+    }
+  ]
+}

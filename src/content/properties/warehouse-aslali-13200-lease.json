@@ -1,0 +1,87 @@
+{
+  "title": "Warehouse - Aslali (13,200 sq.ft)",
+  "slug": "warehouse-aslali-13200-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹18 / sq.ft",
+  "priceValue": 237600,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹18 per sq.ft",
+  "localityName": "Aslali",
+  "localitySlug": "aslali",
+  "city": "Ahmedabad",
+  "address": "Aslali, Ahmedabad",
+  "area": "13,200 sq.ft",
+  "areaSqft": 13200,
+  "carpetArea": "12,600 sq.ft",
+  "builtUpArea": "13,200 sq.ft",
+  "warehouseType": "Shed",
+  "ceilingHeight": "7 m clear",
+  "dockAccess": "6 docks",
+  "deposit": "03 Months",
+  "possession": "Immediate",
+  "amenities": [
+    "6 loading docks",
+    "7 m clear height",
+    "Shed construction",
+    "Trimix flooring",
+    "Fire hydrants",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 13,200 sq.ft available on lease in Aslali, part of the Ahmedabad warehousing and logistics belt.",
+    "Specifications: Shed structure, 12,600 sq.ft carpet, 7 m clear, 6 docks. Trimix flooring, with fire hydrants and fire noc. Quoted lease rent ₹18 per sq.ft per month. Possession: Immediate."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-aslali-13200-lease/photo-1.jpg",
+      "alt": "Warehouse in Aslali, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-aslali-13200-lease/photo-2.jpg",
+      "alt": "Warehouse in Aslali, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-aslali-13200-lease/photo-3.jpg",
+      "alt": "Warehouse in Aslali, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-aslali-13200-lease/photo-4.jpg",
+      "alt": "Warehouse in Aslali, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-aslali-13200-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Aslali, Ahmedabad (13,200 sq.ft)",
+  "seoDescription": "Warehouse of 13,200 sq.ft available on lease in Aslali, part of the Ahmedabad warehousing and logistics belt.",
+  "geo": {
+    "lat": 22.9233826,
+    "lng": 72.5933272
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "13,200 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "6 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "7 m"
+    }
+  ]
+}

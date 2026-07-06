@@ -1,0 +1,77 @@
+{
+  "title": "Warehouse - Sanathal (35,000 sq.ft)",
+  "slug": "warehouse-sanathal-35000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Sanathal",
+  "localitySlug": "sanathal",
+  "city": "Ahmedabad",
+  "address": "Sanathal, Ahmedabad",
+  "area": "35,000 sq.ft",
+  "areaSqft": 35000,
+  "carpetArea": "32,000 sq.ft",
+  "builtUpArea": "35,000 sq.ft",
+  "ceilingHeight": "9 m clear",
+  "dockAccess": "5 docks",
+  "deposit": "4 Months",
+  "possession": "Ready",
+  "amenities": [
+    "5 loading docks",
+    "9 m clear height",
+    "Tremix flooring",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 35,000 sq.ft available on lease in Sanathal, part of the Ahmedabad warehousing and logistics belt.",
+    "Specifications: 32,000 sq.ft carpet, 9 m clear, 5 docks. Tremix flooring. Possession: Ready."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-sanathal-35000-lease/photo-1.jpg",
+      "alt": "Warehouse in Sanathal, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-sanathal-35000-lease/photo-2.jpg",
+      "alt": "Warehouse in Sanathal, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-sanathal-35000-lease/photo-3.jpg",
+      "alt": "Warehouse in Sanathal, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-sanathal-35000-lease/photo-4.jpg",
+      "alt": "Warehouse in Sanathal, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-sanathal-35000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Sanathal, Ahmedabad (35,000 sq.ft)",
+  "seoDescription": "Warehouse of 35,000 sq.ft available on lease in Sanathal, part of the Ahmedabad warehousing and logistics belt.",
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "35,000 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "5 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "9 m"
+    }
+  ]
+}

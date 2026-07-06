@@ -1,0 +1,88 @@
+{
+  "title": "Warehouse - Bavla (160,000 sq.ft)",
+  "slug": "warehouse-bavla-160000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹18 / sq.ft",
+  "priceValue": 2880000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹18 per sq.ft",
+  "localityName": "Bavla",
+  "localitySlug": "bavla",
+  "city": "Ahmedabad",
+  "address": "Bavla, Ahmedabad- Rajkot Highway",
+  "area": "160,000 sq.ft",
+  "areaSqft": 160000,
+  "carpetArea": "145,000 sq.ft",
+  "builtUpArea": "160,000 sq.ft",
+  "warehouseType": "PEB",
+  "ceilingHeight": "10 m clear",
+  "dockAccess": "22 docks",
+  "deposit": "4 Months",
+  "possession": "immideately",
+  "amenities": [
+    "22 loading docks",
+    "10 m clear height",
+    "PEB construction",
+    "FM2 flooring",
+    "Fire hydrants",
+    "Fire sprinklers",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 160,000 sq.ft available on lease on the Ahmedabad- Rajkot Highway, in Bavla, near Ahmedabad.",
+    "Specifications: PEB structure, 145,000 sq.ft carpet, 10 m clear, 22 docks. Fm2 flooring, with fire hydrants and fire noc. Quoted lease rent ₹18 per sq.ft per month. Possession: immideately."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-bavla-160000-lease/photo-1.jpg",
+      "alt": "Warehouse in Bavla, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-bavla-160000-lease/photo-2.jpg",
+      "alt": "Warehouse in Bavla, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-bavla-160000-lease/photo-3.jpg",
+      "alt": "Warehouse in Bavla, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-bavla-160000-lease/photo-4.jpg",
+      "alt": "Warehouse in Bavla, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-bavla-160000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Bavla, Ahmedabad (160,000 sq.ft)",
+  "seoDescription": "Warehouse of 160,000 sq.ft available on lease on the Ahmedabad- Rajkot Highway, in Bavla, near Ahmedabad.",
+  "geo": {
+    "lat": 22.7906247,
+    "lng": 72.3386732
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "160,000 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "22 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "10 m"
+    }
+  ]
+}

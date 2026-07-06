@@ -1,0 +1,76 @@
+{
+  "title": "Warehouse - Adalaj (24,000 sq.ft)",
+  "slug": "warehouse-adalaj-24000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Adalaj",
+  "localitySlug": "adalaj",
+  "city": "Ahmedabad",
+  "address": "Adalaj, Ahmedabad",
+  "area": "24,000 sq.ft",
+  "areaSqft": 24000,
+  "carpetArea": "24,000 sq.ft",
+  "builtUpArea": "24,000 sq.ft",
+  "ceilingHeight": "20 ft clear",
+  "dockAccess": "12 docks",
+  "deposit": "3.0",
+  "amenities": [
+    "12 loading docks",
+    "20 ft clear height",
+    "RCC Trimix flooring",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 24,000 sq.ft available on lease in Adalaj, part of the Ahmedabad warehousing and logistics belt.",
+    "Specifications: 24,000 sq.ft carpet, 20 ft clear, 12 docks. Rcc trimix flooring."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-adalaj-24000-lease/photo-1.jpg",
+      "alt": "Warehouse in Adalaj, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-adalaj-24000-lease/photo-2.jpg",
+      "alt": "Warehouse in Adalaj, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-adalaj-24000-lease/photo-3.jpg",
+      "alt": "Warehouse in Adalaj, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-adalaj-24000-lease/photo-4.jpg",
+      "alt": "Warehouse in Adalaj, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-adalaj-24000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Adalaj, Ahmedabad (24,000 sq.ft)",
+  "seoDescription": "Warehouse of 24,000 sq.ft available on lease in Adalaj, part of the Ahmedabad warehousing and logistics belt.",
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "24,000 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "12 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "20 ft"
+    }
+  ]
+}

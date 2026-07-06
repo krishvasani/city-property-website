@@ -1,0 +1,82 @@
+{
+  "title": "Warehouse - Kathwada (345,000 sq.ft)",
+  "slug": "warehouse-kathwada-345000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹27 / sq.ft",
+  "priceValue": 9315000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹27 per sq.ft",
+  "localityName": "Kathwada",
+  "localitySlug": "kathwada",
+  "city": "Ahmedabad",
+  "address": "Kathwada, Ahmedabad- Indore",
+  "area": "345,000 sq.ft",
+  "areaSqft": 345000,
+  "carpetArea": "307,000 sq.ft",
+  "builtUpArea": "345,000 sq.ft",
+  "warehouseType": "PEB",
+  "ceilingHeight": "12 m clear",
+  "deposit": "6 Months",
+  "possession": "10 Month After Deal",
+  "amenities": [
+    "12 m clear height",
+    "PEB construction",
+    "FM2 flooring",
+    "Fire hydrants",
+    "Fire sprinklers",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 345,000 sq.ft available on lease on the Ahmedabad- Indore, in Kathwada, near Ahmedabad.",
+    "Specifications: PEB structure, 307,000 sq.ft carpet, 12 m clear. Fm2 flooring, with fire hydrants and fire noc. Quoted lease rent ₹27 per sq.ft per month. Possession: 10 Month After Deal."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-kathwada-345000-lease/photo-1.jpg",
+      "alt": "Warehouse in Kathwada, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-kathwada-345000-lease/photo-2.jpg",
+      "alt": "Warehouse in Kathwada, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-kathwada-345000-lease/photo-3.jpg",
+      "alt": "Warehouse in Kathwada, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-kathwada-345000-lease/photo-4.jpg",
+      "alt": "Warehouse in Kathwada, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-kathwada-345000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Kathwada, Ahmedabad (345,000 sq.ft)",
+  "seoDescription": "Warehouse of 345,000 sq.ft available on lease on the Ahmedabad- Indore, in Kathwada, near Ahmedabad.",
+  "geo": {
+    "lat": 23.0347642,
+    "lng": 72.686305
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "345,000 sq.ft"
+    },
+    {
+      "icon": "floor",
+      "label": "12 m"
+    }
+  ]
+}

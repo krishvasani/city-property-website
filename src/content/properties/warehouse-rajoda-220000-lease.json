@@ -1,0 +1,82 @@
+{
+  "title": "Warehouse - Rajoda (220,000 sq.ft)",
+  "slug": "warehouse-rajoda-220000-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹18 / sq.ft",
+  "priceValue": 3960000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹18 per sq.ft",
+  "localityName": "Rajoda",
+  "localitySlug": "rajoda",
+  "city": "Ahmedabad",
+  "address": "Rajoda, Ahmedabad- Rajkot Highway",
+  "area": "220,000 sq.ft",
+  "areaSqft": 220000,
+  "carpetArea": "200,000 sq.ft",
+  "builtUpArea": "220,000 sq.ft",
+  "warehouseType": "PEB",
+  "ceilingHeight": "12 m clear",
+  "deposit": "6 Months",
+  "possession": "1st Dec 2026",
+  "amenities": [
+    "12 m clear height",
+    "PEB construction",
+    "FM2 flooring",
+    "Fire hydrants",
+    "Fire sprinklers",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 220,000 sq.ft available on lease on the Ahmedabad- Rajkot Highway, in Rajoda, near Ahmedabad.",
+    "Specifications: PEB structure, 200,000 sq.ft carpet, 12 m clear. Fm2 flooring, with fire hydrants and fire noc. Quoted lease rent ₹18 per sq.ft per month. Possession: 1st Dec 2026."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-rajoda-220000-lease/photo-1.jpg",
+      "alt": "Warehouse in Rajoda, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-rajoda-220000-lease/photo-2.jpg",
+      "alt": "Warehouse in Rajoda, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-rajoda-220000-lease/photo-3.jpg",
+      "alt": "Warehouse in Rajoda, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-rajoda-220000-lease/photo-4.jpg",
+      "alt": "Warehouse in Rajoda, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-rajoda-220000-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Rajoda, Ahmedabad (220,000 sq.ft)",
+  "seoDescription": "Warehouse of 220,000 sq.ft available on lease on the Ahmedabad- Rajkot Highway, in Rajoda, near Ahmedabad.",
+  "geo": {
+    "lat": 22.869684,
+    "lng": 72.4070273
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "220,000 sq.ft"
+    },
+    {
+      "icon": "floor",
+      "label": "12 m"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "title": "Warehouse - Sanathal (19,800 sq.ft)",
+  "slug": "warehouse-sanathal-19800-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹22 / sq.ft",
+  "priceValue": 435600,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹22 per sq.ft",
+  "localityName": "Sanathal",
+  "localitySlug": "sanathal",
+  "city": "Ahmedabad",
+  "address": "Sanathal, S P ring road",
+  "area": "19,800 sq.ft",
+  "areaSqft": 19800,
+  "carpetArea": "18,000 sq.ft",
+  "builtUpArea": "19,800 sq.ft",
+  "warehouseType": "PEB",
+  "ceilingHeight": "9 m clear",
+  "dockAccess": "6 docks",
+  "deposit": "03 Months",
+  "possession": "Immediate",
+  "amenities": [
+    "6 loading docks",
+    "9 m clear height",
+    "PEB construction",
+    "FM2 flooring",
+    "Fire hydrants",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 19,800 sq.ft available on lease on the S P ring road, in Sanathal, near Ahmedabad.",
+    "Specifications: PEB structure, 18,000 sq.ft carpet, 9 m clear, 6 docks. Fm2 flooring, with fire hydrants and fire noc. Quoted lease rent ₹22 per sq.ft per month. Possession: Immediate."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-sanathal-19800-lease/photo-1.jpg",
+      "alt": "Warehouse in Sanathal, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-sanathal-19800-lease/photo-2.jpg",
+      "alt": "Warehouse in Sanathal, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-sanathal-19800-lease/photo-3.jpg",
+      "alt": "Warehouse in Sanathal, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-sanathal-19800-lease/photo-4.jpg",
+      "alt": "Warehouse in Sanathal, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-sanathal-19800-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Sanathal, Ahmedabad (19,800 sq.ft)",
+  "seoDescription": "Warehouse of 19,800 sq.ft available on lease on the S P ring road, in Sanathal, near Ahmedabad.",
+  "geo": {
+    "lat": 22.9524136,
+    "lng": 72.4824108
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "19,800 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "6 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "9 m"
+    }
+  ]
+}

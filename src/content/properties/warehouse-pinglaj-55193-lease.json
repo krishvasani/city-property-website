@@ -1,0 +1,88 @@
+{
+  "title": "Warehouse - Pinglaj (55,193 sq.ft)",
+  "slug": "warehouse-pinglaj-55193-lease",
+  "status": "lease",
+  "propertyType": "warehouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹19 / sq.ft",
+  "priceValue": 1048667,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹19 per sq.ft",
+  "localityName": "Pinglaj",
+  "localitySlug": "pinglaj",
+  "city": "Ahmedabad",
+  "address": "Pinglaj, Ahmedabad-Kheda highway",
+  "area": "55,193 sq.ft",
+  "areaSqft": 55193,
+  "carpetArea": "49,000 sq.ft",
+  "builtUpArea": "55,193 sq.ft",
+  "warehouseType": "PEB",
+  "ceilingHeight": "9 m clear",
+  "dockAccess": "9 docks",
+  "deposit": "4 Months",
+  "possession": "immideately",
+  "amenities": [
+    "9 loading docks",
+    "9 m clear height",
+    "PEB construction",
+    "FM2 flooring",
+    "Fire hydrants",
+    "Fire sprinklers",
+    "Fire NOC",
+    "Truck movement & open area"
+  ],
+  "suitableFor": [
+    "Storage & distribution",
+    "Logistics & fulfilment",
+    "Light manufacturing"
+  ],
+  "description": [
+    "Warehouse of 55,193 sq.ft available on lease on the Ahmedabad-Kheda highway, in Pinglaj, near Ahmedabad.",
+    "Specifications: PEB structure, 49,000 sq.ft carpet, 9 m clear, 9 docks. Fm2 flooring, with fire hydrants and fire noc. Quoted lease rent ₹19 per sq.ft per month. Possession: immideately."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/warehouse-pinglaj-55193-lease/photo-1.jpg",
+      "alt": "Warehouse in Pinglaj, Ahmedabad — exterior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-pinglaj-55193-lease/photo-2.jpg",
+      "alt": "Warehouse in Pinglaj, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-pinglaj-55193-lease/photo-3.jpg",
+      "alt": "Warehouse in Pinglaj, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    },
+    {
+      "url": "/uploads/properties/warehouse-pinglaj-55193-lease/photo-4.jpg",
+      "alt": "Warehouse in Pinglaj, Ahmedabad — interior view",
+      "label": "Warehouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/warehouse-pinglaj-55193-lease/photo-1.jpg",
+  "newAt": "2026-07-06",
+  "seoTitle": "Warehouse for lease in Pinglaj, Ahmedabad (55,193 sq.ft)",
+  "seoDescription": "Warehouse of 55,193 sq.ft available on lease on the Ahmedabad-Kheda highway, in Pinglaj, near Ahmedabad.",
+  "geo": {
+    "lat": 22.8224943,
+    "lng": 72.6119878
+  },
+  "cardMeta": [
+    {
+      "icon": "ruler",
+      "label": "55,193 sq.ft"
+    },
+    {
+      "icon": "warehousing",
+      "label": "9 docks"
+    },
+    {
+      "icon": "floor",
+      "label": "9 m"
+    }
+  ]
+}
