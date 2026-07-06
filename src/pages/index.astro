@@ -32,13 +32,22 @@ const countLabel = (c: string) => {
   const n = catCount(c);
   return n > 0 ? `${n} listing${n === 1 ? '' : 's'}` : 'Coming soon';
 };
+// Send each tile to the page where that category actually has listings: Buy if
+// any are for sale, otherwise Rent (e.g. warehouses are lease-only). Prevents
+// the tile linking to an empty filtered page.
+const catPage = (c: string) => {
+  const inCat = allProperties.filter((p) => categoryFor(p.propertyType) === c);
+  if (inCat.some((p) => p.status === 'sale')) return 'buy';
+  if (inCat.some((p) => p.status === 'rent' || p.status === 'lease')) return 'rent';
+  return 'buy';
+};
 
 const types = [
-  { icon: 'residential' as const, title: 'Residential', count: countLabel('residential'), type: 'residential' },
-  { icon: 'commercial' as const, title: 'Commercial', count: countLabel('commercial'), type: 'commercial' },
-  { icon: 'land' as const, title: 'Land & plots', count: countLabel('land'), type: 'land' },
-  { icon: 'industrial' as const, title: 'Industrial & Warehousing', count: countLabel('industrial'), type: 'industrial' },
-  { icon: 'investment' as const, title: 'Investments', count: countLabel('investment'), type: 'investment' },
+  { icon: 'residential' as const, title: 'Residential', count: countLabel('residential'), type: 'residential', page: catPage('residential') },
+  { icon: 'commercial' as const, title: 'Commercial', count: countLabel('commercial'), type: 'commercial', page: catPage('commercial') },
+  { icon: 'land' as const, title: 'Land & plots', count: countLabel('land'), type: 'land', page: catPage('land') },
+  { icon: 'industrial' as const, title: 'Industrial & Warehousing', count: countLabel('industrial'), type: 'industrial', page: catPage('industrial') },
+  { icon: 'investment' as const, title: 'Investments', count: countLabel('investment'), type: 'investment', page: catPage('investment') },
 ];
 
 // The five services the CIRIL name stands for
@@ -79,7 +88,7 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
       </div>
       <div class="types" data-stagger>
         {types.map((t, i) => (
-          <TypeTile icon={t.icon} title={t.title} count={t.count} href={`/buy?type=${t.type}`} active={i === 0} />
+          <TypeTile icon={t.icon} title={t.title} count={t.count} href={`/${t.page}?type=${t.type}`} active={i === 0} />
         ))}
       </div>
     </section>
