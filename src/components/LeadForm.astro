@@ -1,5 +1,5 @@
 ---
-import { whatsappUrl } from '../lib/config';
+import { waPayload } from '../lib/config';
 import LocalitySelect from './LocalitySelect.astro';
 
 export interface LeadField {
@@ -52,7 +52,7 @@ const {
   successMessage = 'Thanks! Your enquiry is in and our team will reach out shortly.',
 } = Astro.props;
 
-const waHref = whatsappUrl(whatsappFallback);
+const waData = waPayload(whatsappFallback);
 const fid = (f: string) => `${name}-${f}`;
 ---
 <form
@@ -130,7 +130,7 @@ const fid = (f: string) => `${name}-${f}`;
 
   <p class="lead-status" data-status hidden role="status" aria-live="polite"></p>
   <p class="lead-fallback small muted" data-fallback hidden>
-    Couldn’t send just now, so please <a href={waHref} target="_blank" rel="noopener">message us on WhatsApp</a>.
+    Couldn’t send just now, so please <a href="/consult" data-wa={waData} rel="nofollow noopener">message us on WhatsApp</a>.
   </p>
 </form>
 

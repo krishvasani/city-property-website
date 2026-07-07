@@ -40,6 +40,17 @@ export function whatsappUrl(message: string, number = contact.whatsapp): string 
   return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 }
 
+/**
+ * Base64 payload for a WhatsApp link, so the raw number never appears in the
+ * static HTML (anti-scrape). Rendered as `data-wa` on an anchor; the shared
+ * script (src/scripts/site.js) decodes it and opens WhatsApp on real clicks.
+ * Spam bots that harvest `wa.me/<number>` from page source get nothing.
+ */
+export function waPayload(message: string, number = contact.whatsapp): string {
+  const raw = `${number}?text=${encodeURIComponent(message)}`;
+  return Buffer.from(raw, 'utf8').toString('base64');
+}
+
 /** Build a tel: URL (strips spaces/dashes). */
 export function telUrl(number = contact.phone): string {
   return `tel:${number.replace(/[^\d+]/g, '')}`;

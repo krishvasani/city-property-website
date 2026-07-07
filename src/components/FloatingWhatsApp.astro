@@ -1,10 +1,10 @@
 ---
-import { whatsappUrl } from '../lib/config';
+import { waPayload } from '../lib/config';
 interface Props { message?: string; }
 const { message = 'Hi City Property Services, I’d like to know more about a property.' } = Astro.props;
-const href = whatsappUrl(message);
+const wa = waPayload(message);
 ---
-<a class="fab-wa" href={href} target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<a class="fab-wa" href="/consult" data-wa={wa} rel="nofollow noopener" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4A8 8 0 1 1 9 19.2L4 20z"/><path d="M9 9c0 4 2 6 6 6"/></svg>
   <span>Chat with us</span>
 </a>

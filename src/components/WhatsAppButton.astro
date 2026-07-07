@@ -1,6 +1,6 @@
 ---
 import Icon from './Icon.astro';
-import { whatsappUrl, contact } from '../lib/config';
+import { waPayload, contact } from '../lib/config';
 
 interface Props {
   message: string;
@@ -21,13 +21,13 @@ const {
   class: className,
 } = Astro.props;
 
-const href = whatsappUrl(message, number);
+const wa = waPayload(message, number);
 ---
 <a
   class:list={['btn', `btn-${variant}`, size && `btn-${size}`, { 'btn-block': block }, className]}
-  href={href}
-  target="_blank"
-  rel="noopener"
+  href="/consult"
+  data-wa={wa}
+  rel="nofollow noopener"
 >
   <Icon name="whatsapp" sw={1.7} style="width:16px;height:16px;" />
   {label}

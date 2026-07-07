@@ -2,9 +2,9 @@
 import Base from '../layouts/Base.astro';
 import LeadForm from '../components/LeadForm.astro';
 import Icon from '../components/Icon.astro';
-import { contact, whatsappUrl, telUrl } from '../lib/config';
+import { contact, waPayload, telUrl } from '../lib/config';
 
-const guideWa = whatsappUrl('Hi, I just read your buyer/seller guide and have a question.');
+const guideWa = waPayload('Hi, I just read your buyer/seller guide and have a question.');
 
 const buyerSteps = [
   ['Understand your budget & loan eligibility', 'Work out what you can comfortably spend, including a buffer. Get a loan pre-approval so you know your real range before you fall in love with a place.'],
@@ -120,7 +120,7 @@ const sellerSteps = [
             <a class="btn btn-secondary btn-block" href="/sell">Get a free estimate</a>
             <div class="aside-contact">
               <a href={telUrl()}><Icon name="phone" sw={1.7} />{contact.phone}</a>
-              <a href={guideWa} target="_blank" rel="noopener"><Icon name="whatsapp" sw={1.7} />Message us on WhatsApp</a>
+              <a href="/consult" data-wa={guideWa} rel="nofollow noopener"><Icon name="whatsapp" sw={1.7} />Message us on WhatsApp</a>
             </div>
           </div>
 

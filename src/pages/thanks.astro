@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
-import { whatsappUrl } from '../lib/config';
-const wa = whatsappUrl('Hi, I just sent an enquiry through your website.');
+import { waPayload } from '../lib/config';
+const wa = waPayload('Hi, I just sent an enquiry through your website.');
 ---
 <Base title="Thank you" description="Your enquiry has been received." noindex>
   <main class="wrap">
@@ -11,7 +11,7 @@ const wa = whatsappUrl('Hi, I just sent an enquiry through your website.');
       <p class="body-lg muted" style="max-width:48ch;margin:14px auto 0;">Your enquiry is in. Our team at City Property Services will reach out shortly, usually the same day.</p>
       <div class="row" style="justify-content:center;gap:12px;margin-top:28px;">
         <a class="btn btn-primary" href="/buy">Browse more properties</a>
-        <a class="btn btn-secondary" href={wa} target="_blank" rel="noopener">Message us on WhatsApp</a>
+        <a class="btn btn-secondary" href="/consult" data-wa={wa} rel="nofollow noopener">Message us on WhatsApp</a>
       </div>
     </section>
   </main>

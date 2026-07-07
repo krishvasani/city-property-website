@@ -1,5 +1,21 @@
 /* City Property Services — shared interactions */
 (function () {
+  // WhatsApp links are stored base64-encoded in data-wa (so the raw number is
+  // never in the page source for spam bots to scrape). Decode + open on a real
+  // click; fall back to the anchor's href (/consult) if anything goes wrong.
+  document.addEventListener('click', function (e) {
+    var wa = e.target.closest ? e.target.closest('[data-wa]') : null;
+    if (!wa) return;
+    e.preventDefault();
+    try {
+      var url = 'https://wa.me/' + atob(wa.getAttribute('data-wa'));
+      if (window.gtag) gtag('event', 'whatsapp_click');
+      window.open(url, '_blank', 'noopener');
+    } catch (err) {
+      window.location.href = wa.getAttribute('href') || '/consult';
+    }
+  });
+
   // Favorite toggles
   document.addEventListener('click', function (e) {
     const fav = e.target.closest('.prop-fav');
