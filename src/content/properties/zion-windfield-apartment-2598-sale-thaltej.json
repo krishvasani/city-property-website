@@ -1,0 +1,38 @@
+{
+  "title": "3 BHK 2,598 sq.ft Flat for Sale · Zion windfield, Thaltej",
+  "slug": "zion-windfield-apartment-2598-sale-thaltej",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.41 Cr",
+  "priceValue": 24100000,
+  "localityName": "Thaltej",
+  "localitySlug": "thaltej",
+  "city": "Ahmedabad",
+  "address": "Zion windfield, Thaltej, Ahmedabad",
+  "area": "2,598 sq.ft",
+  "areaSqft": 2598,
+  "beds": 3,
+  "furnishing": "Fully furnished",
+  "totalFloors": "11",
+  "amenities": [],
+  "description": [
+    "Fully furnished 3 BHK flat of 2,598 sq.ft for sale in Zion windfield, Thaltej, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/zion-windfield-apartment-2598-sale-thaltej/photo-1.jpg",
+      "alt": "Zion windfield, Thaltej — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/zion-windfield-apartment-2598-sale-thaltej/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "3 BHK Flat for Sale in Thaltej",
+  "seoDescription": "3 BHK 2,598 sq.ft Flat for Sale · Zion windfield, Thaltej",
+  "geo": {
+    "lat": 23.05598557500134,
+    "lng": 72.48321298416867
+  }
+}

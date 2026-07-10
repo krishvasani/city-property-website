@@ -1,0 +1,41 @@
+{
+  "title": "4 BHK 3,170 sq.ft Flat for Sale · Shivanta by Indraprastha Group, Bopal",
+  "slug": "shivanta-by-indraprastha-group-apartment-3170-sale-bopal",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2 Cr",
+  "priceValue": 19971000,
+  "localityName": "Bopal",
+  "localitySlug": "bopal",
+  "city": "Ahmedabad",
+  "address": "Shivanta by Indraprastha Group, Bopal, Ahmedabad",
+  "area": "3,170 sq.ft",
+  "areaSqft": 3170,
+  "beds": 4,
+  "perSqftDisplay": "₹6,300 per sq.ft",
+  "furnishing": "Unfurnished",
+  "totalFloors": "22",
+  "amenities": [
+    "4 lifts"
+  ],
+  "description": [
+    "Unfurnished 4 BHK flat of 3,170 sq.ft for sale in Shivanta by Indraprastha Group, Bopal, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shivanta-by-indraprastha-group-apartment-3170-sale-bopal/photo-1.jpg",
+      "alt": "Shivanta by Indraprastha Group, Bopal — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/shivanta-by-indraprastha-group-apartment-3170-sale-bopal/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Bopal",
+  "seoDescription": "4 BHK 3,170 sq.ft Flat for Sale · Shivanta by Indraprastha Group, Bopal",
+  "geo": {
+    "lat": 23.029723444044333,
+    "lng": 72.47934394824387
+  }
+}

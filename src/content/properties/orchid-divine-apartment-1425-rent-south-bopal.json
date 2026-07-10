@@ -1,0 +1,39 @@
+{
+  "title": "3 BHK 1,425 sq.ft Flat for Rent · Orchid Divine, South Bopal",
+  "slug": "orchid-divine-apartment-1425-rent-south-bopal",
+  "status": "rent",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹37,000",
+  "priceValue": 37000,
+  "localityName": "South Bopal",
+  "localitySlug": "south-bopal",
+  "city": "Ahmedabad",
+  "address": "Orchid Divine, South Bopal, Ahmedabad",
+  "area": "1,425 sq.ft",
+  "areaSqft": 1425,
+  "beds": 3,
+  "pricePer": "per month",
+  "furnishing": "Fully furnished",
+  "totalFloors": "12",
+  "amenities": [],
+  "description": [
+    "Fully furnished 3 BHK flat of 1,425 sq.ft for rent in Orchid Divine, South Bopal, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/orchid-divine-apartment-1425-rent-south-bopal/photo-1.jpg",
+      "alt": "Orchid Divine, South Bopal — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/orchid-divine-apartment-1425-rent-south-bopal/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "3 BHK Flat for Rent in South Bopal",
+  "seoDescription": "3 BHK 1,425 sq.ft Flat for Rent · Orchid Divine, South Bopal",
+  "geo": {
+    "lat": 23.015570563431822,
+    "lng": 72.47332003467102
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "title": "1 BHK 865 sq.ft Flat for Sale · Siban, GIFT City",
+  "slug": "siban-apartment-865-sale-gift-city",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹78 L",
+  "priceValue": 7790000,
+  "localityName": "GIFT City",
+  "localitySlug": "gift-city",
+  "city": "Ahmedabad",
+  "address": "Siban, GIFT City, Ahmedabad",
+  "area": "865 sq.ft",
+  "areaSqft": 865,
+  "beds": 1,
+  "amenities": [],
+  "description": [
+    "1 BHK flat of 865 sq.ft for sale in Siban, GIFT City, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/siban-apartment-865-sale-gift-city/photo-1.jpg",
+      "alt": "Siban, GIFT City — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/siban-apartment-865-sale-gift-city/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "1 BHK Flat for Sale in GIFT City",
+  "seoDescription": "1 BHK 865 sq.ft Flat for Sale · Siban, GIFT City",
+  "geo": {
+    "lat": 23.161242740832147,
+    "lng": 72.69837173694768
+  }
+}

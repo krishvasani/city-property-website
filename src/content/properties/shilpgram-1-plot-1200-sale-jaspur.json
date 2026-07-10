@@ -1,0 +1,36 @@
+{
+  "title": "1,200 sq.yd Plot for Sale · Shilpgram-1, Jaspur",
+  "slug": "shilpgram-1-plot-1200-sale-jaspur",
+  "status": "sale",
+  "propertyType": "plot",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹4.2 Cr",
+  "priceValue": 42000000,
+  "localityName": "Jaspur",
+  "localitySlug": "jaspur",
+  "city": "Ahmedabad",
+  "address": "Shilpgram-1, Jaspur, Ahmedabad",
+  "area": "1,200 sq.yd",
+  "areaSqft": 10800,
+  "plotSize": "1,200 sq.yd",
+  "amenities": [],
+  "description": [
+    "plot of 1,200 sq.yd for sale in Shilpgram-1, Jaspur, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shilpgram-1-plot-1200-sale-jaspur/photo-1.jpg",
+      "alt": "Shilpgram-1, Jaspur — plot photo",
+      "label": "Plot photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/shilpgram-1-plot-1200-sale-jaspur/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "Plot for Sale in Jaspur",
+  "seoDescription": "1,200 sq.yd Plot for Sale · Shilpgram-1, Jaspur",
+  "geo": {
+    "lat": 23.151558840453433,
+    "lng": 72.52499897081172
+  }
+}

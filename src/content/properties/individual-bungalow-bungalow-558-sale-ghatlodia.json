@@ -1,0 +1,41 @@
+{
+  "title": "5 BHK 558 sq.yd Bungalow for Sale · Individual bungalow, Ghatlodia",
+  "slug": "individual-bungalow-bungalow-558-sale-ghatlodia",
+  "status": "sale",
+  "propertyType": "bungalow",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹5.8 Cr",
+  "priceValue": 58000000,
+  "localityName": "Ghatlodia",
+  "localitySlug": "ghatlodia",
+  "city": "Ahmedabad",
+  "address": "Individual bungalow, Ghatlodia, Ahmedabad",
+  "area": "558 sq.yd",
+  "areaSqft": 5022,
+  "plotSize": "558 sq.yd",
+  "beds": 5,
+  "furnishing": "Fully furnished",
+  "totalFloors": "2",
+  "amenities": [
+    "4 car parking"
+  ],
+  "description": [
+    "Fully furnished 5 BHK bungalow of 558 sq.yd for sale in Individual bungalow, Ghatlodia, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/individual-bungalow-bungalow-558-sale-ghatlodia/photo-1.jpg",
+      "alt": "Individual bungalow, Ghatlodia — bungalow photo",
+      "label": "Bungalow photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/individual-bungalow-bungalow-558-sale-ghatlodia/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "5 BHK Bungalow for Sale in Ghatlodia",
+  "seoDescription": "5 BHK 558 sq.yd Bungalow for Sale · Individual bungalow, Ghatlodia",
+  "geo": {
+    "lat": 23.068386820730986,
+    "lng": 72.53933909330033
+  }
+}

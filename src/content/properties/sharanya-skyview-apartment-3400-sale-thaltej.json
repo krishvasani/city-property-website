@@ -1,0 +1,40 @@
+{
+  "title": "4 BHK 3,400 sq.ft Flat for Sale · Sharanya skyview, Thaltej",
+  "slug": "sharanya-skyview-apartment-3400-sale-thaltej",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹3.2 Cr",
+  "priceValue": 32000000,
+  "localityName": "Thaltej",
+  "localitySlug": "thaltej",
+  "city": "Ahmedabad",
+  "address": "Sharanya skyview, Thaltej, Ahmedabad",
+  "area": "3,400 sq.ft",
+  "areaSqft": 3400,
+  "beds": 4,
+  "furnishing": "Unfurnished",
+  "totalFloors": "20",
+  "amenities": [
+    "4 lifts"
+  ],
+  "description": [
+    "Unfurnished 4 BHK flat of 3,400 sq.ft for sale in Sharanya skyview, Thaltej, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/sharanya-skyview-apartment-3400-sale-thaltej/photo-1.jpg",
+      "alt": "Sharanya skyview, Thaltej — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/sharanya-skyview-apartment-3400-sale-thaltej/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Thaltej",
+  "seoDescription": "4 BHK 3,400 sq.ft Flat for Sale · Sharanya skyview, Thaltej",
+  "geo": {
+    "lat": 23.050483424744087,
+    "lng": 72.50100177418373
+  }
+}

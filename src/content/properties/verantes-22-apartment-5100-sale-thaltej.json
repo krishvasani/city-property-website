@@ -1,0 +1,42 @@
+{
+  "title": "4 BHK 5,100 sq.ft Flat for Sale · Verantes-22, Thaltej",
+  "slug": "verantes-22-apartment-5100-sale-thaltej",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹6.12 Cr",
+  "priceValue": 61200000,
+  "localityName": "Thaltej",
+  "localitySlug": "thaltej",
+  "city": "Ahmedabad",
+  "address": "Verantes-22, Thaltej, Ahmedabad",
+  "area": "5,100 sq.ft",
+  "areaSqft": 5100,
+  "beds": 4,
+  "perSqftDisplay": "₹12,000 per sq.ft",
+  "furnishing": "Fully furnished",
+  "totalFloors": "12",
+  "amenities": [
+    "2 lifts",
+    "3 car parking"
+  ],
+  "description": [
+    "Fully furnished 4 BHK flat of 5,100 sq.ft for sale in Verantes-22, Thaltej, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/verantes-22-apartment-5100-sale-thaltej/photo-1.jpg",
+      "alt": "Verantes-22, Thaltej — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/verantes-22-apartment-5100-sale-thaltej/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Thaltej",
+  "seoDescription": "4 BHK 5,100 sq.ft Flat for Sale · Verantes-22, Thaltej",
+  "geo": {
+    "lat": 23.05528345557108,
+    "lng": 72.50408936689966
+  }
+}

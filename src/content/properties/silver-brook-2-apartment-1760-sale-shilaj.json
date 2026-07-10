@@ -1,0 +1,39 @@
+{
+  "title": "3 BHK 1,760 sq.ft Flat for Sale · Silver Brook 2, Shilaj",
+  "slug": "silver-brook-2-apartment-1760-sale-shilaj",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹65 L",
+  "priceValue": 6500000,
+  "localityName": "Shilaj",
+  "localitySlug": "shilaj",
+  "city": "Ahmedabad",
+  "address": "Silver Brook 2, Shilaj, Ahmedabad",
+  "area": "1,760 sq.ft",
+  "areaSqft": 1760,
+  "beds": 3,
+  "totalFloors": "12",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "3 BHK flat of 1,760 sq.ft for sale in Silver Brook 2, Shilaj, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/silver-brook-2-apartment-1760-sale-shilaj/photo-1.jpg",
+      "alt": "Silver Brook 2, Shilaj — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/silver-brook-2-apartment-1760-sale-shilaj/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "3 BHK Flat for Sale in Shilaj",
+  "seoDescription": "3 BHK 1,760 sq.ft Flat for Sale · Silver Brook 2, Shilaj",
+  "geo": {
+    "lat": 23.059913147015354,
+    "lng": 72.48034289125195
+  }
+}

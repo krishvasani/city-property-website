@@ -1,0 +1,42 @@
+{
+  "title": "4 BHK 4,230 sq.ft Flat for Sale · Satyamev Laxor, Bopal",
+  "slug": "satyamev-laxor-apartment-4230-sale-bopal",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.88 Cr",
+  "priceValue": 28764000,
+  "localityName": "Bopal",
+  "localitySlug": "bopal",
+  "city": "Ahmedabad",
+  "address": "Satyamev Laxor, Bopal, Ahmedabad",
+  "area": "4,230 sq.ft",
+  "areaSqft": 4230,
+  "beds": 4,
+  "perSqftDisplay": "₹6,800 per sq.ft",
+  "furnishing": "Unfurnished",
+  "totalFloors": "22",
+  "amenities": [
+    "5 lifts",
+    "3 car parking"
+  ],
+  "description": [
+    "Unfurnished 4 BHK flat of 4,230 sq.ft for sale in Satyamev Laxor, Bopal, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/satyamev-laxor-apartment-4230-sale-bopal/photo-1.jpg",
+      "alt": "Satyamev Laxor, Bopal — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/satyamev-laxor-apartment-4230-sale-bopal/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Bopal",
+  "seoDescription": "4 BHK 4,230 sq.ft Flat for Sale · Satyamev Laxor, Bopal",
+  "geo": {
+    "lat": 23.02747460097595,
+    "lng": 72.47725943515104
+  }
+}

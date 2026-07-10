@@ -1,0 +1,40 @@
+{
+  "title": "4 BHK 6,800 sq.ft Flat for Sale · Times 104, Bodakdev",
+  "slug": "times-104-apartment-6800-sale-bodakdev",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹9.5 Cr",
+  "priceValue": 95000000,
+  "localityName": "Bodakdev",
+  "localitySlug": "bodakdev",
+  "city": "Ahmedabad",
+  "address": "Times 104, Bodakdev, Ahmedabad",
+  "area": "6,800 sq.ft",
+  "areaSqft": 6800,
+  "beds": 4,
+  "furnishing": "Unfurnished",
+  "totalFloors": "33",
+  "amenities": [
+    "4 lifts"
+  ],
+  "description": [
+    "Unfurnished 4 BHK flat of 6,800 sq.ft for sale in Times 104, Bodakdev, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/times-104-apartment-6800-sale-bodakdev/photo-1.jpg",
+      "alt": "Times 104, Bodakdev — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/times-104-apartment-6800-sale-bodakdev/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Bodakdev",
+  "seoDescription": "4 BHK 6,800 sq.ft Flat for Sale · Times 104, Bodakdev",
+  "geo": {
+    "lat": 23.03475091035614,
+    "lng": 72.50126910261588
+  }
+}

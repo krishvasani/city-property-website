@@ -1,0 +1,42 @@
+{
+  "title": "4 BHK 5,925 sq.ft Flat for Sale · Shangri-La, Satellite",
+  "slug": "shangri-la-apartment-5925-sale-satellite",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹5.33 Cr",
+  "priceValue": 53325000,
+  "localityName": "Satellite",
+  "localitySlug": "satellite",
+  "city": "Ahmedabad",
+  "address": "Shangri-La, Satellite, Ahmedabad",
+  "area": "5,925 sq.ft",
+  "areaSqft": 5925,
+  "beds": 4,
+  "perSqftDisplay": "₹9,000 per sq.ft",
+  "furnishing": "Unfurnished",
+  "totalFloors": "20",
+  "amenities": [
+    "3 lifts",
+    "3 car parking"
+  ],
+  "description": [
+    "Unfurnished 4 BHK flat of 5,925 sq.ft for sale in Shangri-La, Satellite, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shangri-la-apartment-5925-sale-satellite/photo-1.jpg",
+      "alt": "Shangri-La, Satellite — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/shangri-la-apartment-5925-sale-satellite/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Satellite",
+  "seoDescription": "4 BHK 5,925 sq.ft Flat for Sale · Shangri-La, Satellite",
+  "geo": {
+    "lat": 23.026497184079105,
+    "lng": 72.5227918085667
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "title": "4 BHK 235 sq.yd Bungalow for Rent · Sarthi duplex, Satellite",
+  "slug": "sarthi-duplex-bungalow-235-rent-satellite",
+  "status": "rent",
+  "propertyType": "bungalow",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹55,000",
+  "priceValue": 55000,
+  "localityName": "Satellite",
+  "localitySlug": "satellite",
+  "city": "Ahmedabad",
+  "address": "Sarthi duplex, Satellite, Ahmedabad",
+  "area": "235 sq.yd",
+  "areaSqft": 2115,
+  "plotSize": "235 sq.yd",
+  "beds": 4,
+  "pricePer": "per month",
+  "totalFloors": "3",
+  "amenities": [],
+  "description": [
+    "4 BHK bungalow of 235 sq.yd for rent in Sarthi duplex, Satellite, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/sarthi-duplex-bungalow-235-rent-satellite/photo-1.jpg",
+      "alt": "Sarthi duplex, Satellite — bungalow photo",
+      "label": "Bungalow photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/sarthi-duplex-bungalow-235-rent-satellite/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Bungalow for Rent in Satellite",
+  "seoDescription": "4 BHK 235 sq.yd Bungalow for Rent · Sarthi duplex, Satellite",
+  "geo": {
+    "lat": 23.020365699386176,
+    "lng": 72.51670444079096
+  }
+}

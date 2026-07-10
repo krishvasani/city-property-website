@@ -1,0 +1,41 @@
+{
+  "title": "4 BHK 2,450 sq.ft Flat for Rent · Sheetal Westpark, Vastrapur",
+  "slug": "sheetal-westpark-apartment-2450-rent-vastrapur",
+  "status": "rent",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹54,000",
+  "priceValue": 54000,
+  "localityName": "Vastrapur",
+  "localitySlug": "vastrapur",
+  "city": "Ahmedabad",
+  "address": "Sheetal Westpark, Vastrapur, Ahmedabad",
+  "area": "2,450 sq.ft",
+  "areaSqft": 2450,
+  "beds": 4,
+  "pricePer": "per month",
+  "furnishing": "Unfurnished",
+  "totalFloors": "13",
+  "amenities": [
+    "4 lifts"
+  ],
+  "description": [
+    "Unfurnished 4 BHK flat of 2,450 sq.ft for rent in Sheetal Westpark, Vastrapur, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/sheetal-westpark-apartment-2450-rent-vastrapur/photo-1.jpg",
+      "alt": "Sheetal Westpark, Vastrapur — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/sheetal-westpark-apartment-2450-rent-vastrapur/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Rent in Vastrapur",
+  "seoDescription": "4 BHK 2,450 sq.ft Flat for Rent · Sheetal Westpark, Vastrapur",
+  "geo": {
+    "lat": 23.04187409191056,
+    "lng": 72.53053555475147
+  }
+}

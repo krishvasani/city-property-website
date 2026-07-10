@@ -1,0 +1,41 @@
+{
+  "title": "4 BHK 5,151 sq.ft Flat for Sale · Skyros, Sindhu Bhavan Road",
+  "slug": "skyros-apartment-5151-sale-sindhu-bhavan-road",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹3.97 Cr",
+  "priceValue": 39662700,
+  "localityName": "Sindhu Bhavan Road",
+  "localitySlug": "sindhu-bhavan-road",
+  "city": "Ahmedabad",
+  "address": "Skyros, Sindhu Bhavan Road, Ahmedabad",
+  "area": "5,151 sq.ft",
+  "areaSqft": 5151,
+  "beds": 4,
+  "perSqftDisplay": "₹7,700 per sq.ft",
+  "furnishing": "Unfurnished",
+  "totalFloors": "20",
+  "amenities": [
+    "4 lifts"
+  ],
+  "description": [
+    "Unfurnished 4 BHK flat of 5,151 sq.ft for sale in Skyros, Sindhu Bhavan Road, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/skyros-apartment-5151-sale-sindhu-bhavan-road/photo-1.jpg",
+      "alt": "Skyros, Sindhu Bhavan Road — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/skyros-apartment-5151-sale-sindhu-bhavan-road/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Sindhu Bhavan Road",
+  "seoDescription": "4 BHK 5,151 sq.ft Flat for Sale · Skyros, Sindhu Bhavan Road",
+  "geo": {
+    "lat": 23.039582872360114,
+    "lng": 72.50279484150961
+  }
+}

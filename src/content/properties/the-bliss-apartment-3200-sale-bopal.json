@@ -1,0 +1,38 @@
+{
+  "title": "4 BHK 3,200 sq.ft Flat for Sale · The bliss, Bopal",
+  "slug": "the-bliss-apartment-3200-sale-bopal",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.2 Cr",
+  "priceValue": 22000000,
+  "localityName": "Bopal",
+  "localitySlug": "bopal",
+  "city": "Ahmedabad",
+  "address": "The bliss, Bopal, Ahmedabad",
+  "area": "3,200 sq.ft",
+  "areaSqft": 3200,
+  "beds": 4,
+  "furnishing": "Unfurnished",
+  "totalFloors": "13",
+  "amenities": [],
+  "description": [
+    "Unfurnished 4 BHK flat of 3,200 sq.ft for sale in The bliss, Bopal, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/the-bliss-apartment-3200-sale-bopal/photo-1.jpg",
+      "alt": "The bliss, Bopal — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/the-bliss-apartment-3200-sale-bopal/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Bopal",
+  "seoDescription": "4 BHK 3,200 sq.ft Flat for Sale · The bliss, Bopal",
+  "geo": {
+    "lat": 23.033410507455848,
+    "lng": 72.46601842562377
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "title": "4 BHK 5,859 sq.ft Flat for Sale · Binori Belmont, Ambli",
+  "slug": "binori-belmont-apartment-5859-sale-ambli",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹5.57 Cr",
+  "priceValue": 55660500,
+  "localityName": "Ambli",
+  "localitySlug": "ambli",
+  "city": "Ahmedabad",
+  "address": "Binori Belmont, Ambli, Ahmedabad",
+  "area": "5,859 sq.ft",
+  "areaSqft": 5859,
+  "beds": 4,
+  "perSqftDisplay": "₹9,500 per sq.ft",
+  "furnishing": "Unfurnished",
+  "totalFloors": "22",
+  "amenities": [
+    "23 lifts",
+    "4 car parking"
+  ],
+  "description": [
+    "Unfurnished 4 BHK flat of 5,859 sq.ft for sale in Binori Belmont, Ambli, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/binori-belmont-apartment-5859-sale-ambli/photo-1.jpg",
+      "alt": "Binori Belmont, Ambli — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/binori-belmont-apartment-5859-sale-ambli/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Ambli",
+  "seoDescription": "4 BHK 5,859 sq.ft Flat for Sale · Binori Belmont, Ambli",
+  "geo": {
+    "lat": 23.026255187006598,
+    "lng": 72.49705106266529
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "title": "4 BHK 2,780 sq.ft Flat for Sale · Rivera Blues, Prahladnagar",
+  "slug": "rivera-blues-apartment-2780-sale-prahlad-nagar",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹3.5 Cr",
+  "priceValue": 35000000,
+  "localityName": "Prahladnagar",
+  "localitySlug": "prahlad-nagar",
+  "city": "Ahmedabad",
+  "address": "Rivera Blues, Prahladnagar, Ahmedabad",
+  "area": "2,780 sq.ft",
+  "areaSqft": 2780,
+  "beds": 4,
+  "furnishing": "Fully furnished",
+  "totalFloors": "12",
+  "amenities": [
+    "23 lifts"
+  ],
+  "description": [
+    "Fully furnished 4 BHK flat of 2,780 sq.ft for sale in Rivera Blues, Prahladnagar, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/rivera-blues-apartment-2780-sale-prahlad-nagar/photo-1.jpg",
+      "alt": "Rivera Blues, Prahladnagar — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/rivera-blues-apartment-2780-sale-prahlad-nagar/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Prahladnagar",
+  "seoDescription": "4 BHK 2,780 sq.ft Flat for Sale · Rivera Blues, Prahladnagar",
+  "geo": {
+    "lat": 23.0010497829455,
+    "lng": 72.503070414034
+  }
+}

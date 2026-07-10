@@ -1,0 +1,40 @@
+{
+  "title": "4 BHK 4,920 sq.ft Flat for Sale · Sankalp Race 3, Hebatpur",
+  "slug": "sankalp-race-3-apartment-4920-sale-hebatpur",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹4 Cr",
+  "priceValue": 40000000,
+  "localityName": "Hebatpur",
+  "localitySlug": "hebatpur",
+  "city": "Ahmedabad",
+  "address": "Sankalp Race 3, Hebatpur, Ahmedabad",
+  "area": "4,920 sq.ft",
+  "areaSqft": 4920,
+  "beds": 4,
+  "furnishing": "Fully furnished",
+  "totalFloors": "12",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "Fully furnished 4 BHK flat of 4,920 sq.ft for sale in Sankalp Race 3, Hebatpur, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/sankalp-race-3-apartment-4920-sale-hebatpur/photo-1.jpg",
+      "alt": "Sankalp Race 3, Hebatpur — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/sankalp-race-3-apartment-4920-sale-hebatpur/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Hebatpur",
+  "seoDescription": "4 BHK 4,920 sq.ft Flat for Sale · Sankalp Race 3, Hebatpur",
+  "geo": {
+    "lat": 23.05501368430689,
+    "lng": 72.48346456888657
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "title": "3 BHK 1,764 sq.ft Flat for Sale · Takshashila elegna, Ellisbridge",
+  "slug": "takshashila-elegna-apartment-1764-sale-ellisbridge",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹1.35 Cr",
+  "priceValue": 13500000,
+  "localityName": "Ellisbridge",
+  "localitySlug": "ellisbridge",
+  "city": "Ahmedabad",
+  "address": "Takshashila elegna, Ellisbridge, Ahmedabad",
+  "area": "1,764 sq.ft",
+  "areaSqft": 1764,
+  "beds": 3,
+  "furnishing": "Unfurnished",
+  "totalFloors": "10",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "Unfurnished 3 BHK flat of 1,764 sq.ft for sale in Takshashila elegna, Ellisbridge, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/takshashila-elegna-apartment-1764-sale-ellisbridge/photo-1.jpg",
+      "alt": "Takshashila elegna, Ellisbridge — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/takshashila-elegna-apartment-1764-sale-ellisbridge/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "3 BHK Flat for Sale in Ellisbridge",
+  "seoDescription": "3 BHK 1,764 sq.ft Flat for Sale · Takshashila elegna, Ellisbridge",
+  "geo": {
+    "lat": 23.02556957473804,
+    "lng": 72.5656879106234
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "title": "4 BHK 3,600 sq.ft Flat for Sale · Casa emplio, Thaltej",
+  "slug": "casa-emplio-apartment-3600-sale-thaltej",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.45 Cr",
+  "priceValue": 24480000,
+  "localityName": "Thaltej",
+  "localitySlug": "thaltej",
+  "city": "Ahmedabad",
+  "address": "Casa emplio, Thaltej, Ahmedabad",
+  "area": "3,600 sq.ft",
+  "areaSqft": 3600,
+  "beds": 4,
+  "perSqftDisplay": "₹6,800 per sq.ft",
+  "furnishing": "Unfurnished",
+  "totalFloors": "10",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "Unfurnished 4 BHK flat of 3,600 sq.ft for sale in Casa emplio, Thaltej, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/casa-emplio-apartment-3600-sale-thaltej/photo-1.jpg",
+      "alt": "Casa emplio, Thaltej — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/casa-emplio-apartment-3600-sale-thaltej/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Thaltej",
+  "seoDescription": "4 BHK 3,600 sq.ft Flat for Sale · Casa emplio, Thaltej",
+  "geo": {
+    "lat": 23.050471573209165,
+    "lng": 72.48908441107933
+  }
+}

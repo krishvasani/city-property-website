@@ -1,0 +1,39 @@
+{
+  "title": "4 BHK 580 sq.yd Bungalow for Sale · shrinath park Society, Manekbag",
+  "slug": "shrinath-park-society-bungalow-580-sale-manekbag",
+  "status": "sale",
+  "propertyType": "bungalow",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹5.25 Cr",
+  "priceValue": 52500000,
+  "localityName": "Manekbag",
+  "localitySlug": "manekbag",
+  "city": "Ahmedabad",
+  "address": "shrinath park Society, Manekbag, Ahmedabad",
+  "area": "580 sq.yd",
+  "areaSqft": 5220,
+  "plotSize": "580 sq.yd",
+  "beds": 4,
+  "furnishing": "Fully furnished",
+  "totalFloors": "2",
+  "amenities": [],
+  "description": [
+    "Fully furnished 4 BHK bungalow of 580 sq.yd for sale in shrinath park Society, Manekbag, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shrinath-park-society-bungalow-580-sale-manekbag/photo-1.jpg",
+      "alt": "shrinath park Society, Manekbag — bungalow photo",
+      "label": "Bungalow photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/shrinath-park-society-bungalow-580-sale-manekbag/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Bungalow for Sale in Manekbag",
+  "seoDescription": "4 BHK 580 sq.yd Bungalow for Sale · shrinath park Society, Manekbag",
+  "geo": {
+    "lat": 23.01752192800974,
+    "lng": 72.54060531240081
+  }
+}

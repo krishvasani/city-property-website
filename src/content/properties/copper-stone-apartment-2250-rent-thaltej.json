@@ -1,0 +1,41 @@
+{
+  "title": "3 BHK 2,250 sq.ft Flat for Rent · Copper stone, Thaltej",
+  "slug": "copper-stone-apartment-2250-rent-thaltej",
+  "status": "rent",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹58,000",
+  "priceValue": 58000,
+  "localityName": "Thaltej",
+  "localitySlug": "thaltej",
+  "city": "Ahmedabad",
+  "address": "Copper stone, Thaltej, Ahmedabad",
+  "area": "2,250 sq.ft",
+  "areaSqft": 2250,
+  "beds": 3,
+  "pricePer": "per month",
+  "furnishing": "Fully furnished",
+  "totalFloors": "3",
+  "amenities": [
+    "1 lifts"
+  ],
+  "description": [
+    "Fully furnished 3 BHK flat of 2,250 sq.ft for rent in Copper stone, Thaltej, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/copper-stone-apartment-2250-rent-thaltej/photo-1.jpg",
+      "alt": "Copper stone, Thaltej — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/copper-stone-apartment-2250-rent-thaltej/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "3 BHK Flat for Rent in Thaltej",
+  "seoDescription": "3 BHK 2,250 sq.ft Flat for Rent · Copper stone, Thaltej",
+  "geo": {
+    "lat": 23.05016722435904,
+    "lng": 72.49450401700524
+  }
+}

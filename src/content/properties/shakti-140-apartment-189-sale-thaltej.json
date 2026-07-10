@@ -1,0 +1,41 @@
+{
+  "title": "3 BHK 189 sq.yd Flat for Sale · Shakti 140, Thaltej",
+  "slug": "shakti-140-apartment-189-sale-thaltej",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹1.15 Cr",
+  "priceValue": 11500000,
+  "localityName": "Thaltej",
+  "localitySlug": "thaltej",
+  "city": "Ahmedabad",
+  "address": "Shakti 140, Thaltej, Ahmedabad",
+  "area": "189 sq.yd",
+  "areaSqft": 1701,
+  "beds": 3,
+  "furnishing": "Fully furnished",
+  "totalFloors": "5",
+  "amenities": [
+    "2 lifts",
+    "1 car parking"
+  ],
+  "description": [
+    "Fully furnished 3 BHK flat of 189 sq.yd for sale in Shakti 140, Thaltej, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shakti-140-apartment-189-sale-thaltej/photo-1.jpg",
+      "alt": "Shakti 140, Thaltej — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/shakti-140-apartment-189-sale-thaltej/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "3 BHK Flat for Sale in Thaltej",
+  "seoDescription": "3 BHK 189 sq.yd Flat for Sale · Shakti 140, Thaltej",
+  "geo": {
+    "lat": 23.051248511333437,
+    "lng": 72.51447199831743
+  }
+}

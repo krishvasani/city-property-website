@@ -1,0 +1,39 @@
+{
+  "title": "4 BHK 3,000 sq.ft Flat for Rent · Iscon Platinum, Bopal",
+  "slug": "iscon-platinum-apartment-3000-rent-bopal",
+  "status": "rent",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹90,000",
+  "priceValue": 90000,
+  "localityName": "Bopal",
+  "localitySlug": "bopal",
+  "city": "Ahmedabad",
+  "address": "Iscon Platinum, Bopal, Ahmedabad",
+  "area": "3,000 sq.ft",
+  "areaSqft": 3000,
+  "beds": 4,
+  "pricePer": "per month",
+  "furnishing": "Unfurnished",
+  "totalFloors": "22",
+  "amenities": [],
+  "description": [
+    "Unfurnished 4 BHK flat of 3,000 sq.ft for rent in Iscon Platinum, Bopal, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/iscon-platinum-apartment-3000-rent-bopal/photo-1.jpg",
+      "alt": "Iscon Platinum, Bopal — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/iscon-platinum-apartment-3000-rent-bopal/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Rent in Bopal",
+  "seoDescription": "4 BHK 3,000 sq.ft Flat for Rent · Iscon Platinum, Bopal",
+  "geo": {
+    "lat": 23.03164523140364,
+    "lng": 72.47638695307066
+  }
+}

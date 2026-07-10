@@ -1,0 +1,40 @@
+{
+  "title": "3 BHK 1,754 sq.ft Flat for Sale · Arvind Citadel, Navrangpura",
+  "slug": "arvind-citadel-apartment-1754-sale-navrangpura",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹1.6 Cr",
+  "priceValue": 16000000,
+  "localityName": "Navrangpura",
+  "localitySlug": "navrangpura",
+  "city": "Ahmedabad",
+  "address": "Arvind Citadel, Navrangpura, Ahmedabad",
+  "area": "1,754 sq.ft",
+  "areaSqft": 1754,
+  "beds": 3,
+  "furnishing": "Fully furnished",
+  "totalFloors": "12",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "Fully furnished 3 BHK flat of 1,754 sq.ft for sale in Arvind Citadel, Navrangpura, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/arvind-citadel-apartment-1754-sale-navrangpura/photo-1.jpg",
+      "alt": "Arvind Citadel, Navrangpura — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/arvind-citadel-apartment-1754-sale-navrangpura/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "3 BHK Flat for Sale in Navrangpura",
+  "seoDescription": "3 BHK 1,754 sq.ft Flat for Sale · Arvind Citadel, Navrangpura",
+  "geo": {
+    "lat": 23.03140809680199,
+    "lng": 72.55725875098756
+  }
+}

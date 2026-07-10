@@ -1,0 +1,40 @@
+{
+  "title": "3 BHK 2,592 sq.ft Flat for Sale · Anishree paratistha, Gulbai Tekra",
+  "slug": "anishree-paratistha-apartment-2592-sale-gulbai-tekra",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹1.95 Cr",
+  "priceValue": 19500000,
+  "localityName": "Gulbai Tekra",
+  "localitySlug": "gulbai-tekra",
+  "city": "Ahmedabad",
+  "address": "Anishree paratistha, Gulbai Tekra, Ahmedabad",
+  "area": "2,592 sq.ft",
+  "areaSqft": 2592,
+  "beds": 3,
+  "furnishing": "Unfurnished",
+  "totalFloors": "12",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "Unfurnished 3 BHK flat of 2,592 sq.ft for sale in Anishree paratistha, Gulbai Tekra, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/anishree-paratistha-apartment-2592-sale-gulbai-tekra/photo-1.jpg",
+      "alt": "Anishree paratistha, Gulbai Tekra — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/anishree-paratistha-apartment-2592-sale-gulbai-tekra/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "3 BHK Flat for Sale in Gulbai Tekra",
+  "seoDescription": "3 BHK 2,592 sq.ft Flat for Sale · Anishree paratistha, Gulbai Tekra",
+  "geo": {
+    "lat": 23.026316475010045,
+    "lng": 72.55197332887691
+  }
+}

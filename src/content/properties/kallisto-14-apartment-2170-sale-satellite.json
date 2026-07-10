@@ -1,0 +1,44 @@
+{
+  "title": "2,170 sq.ft Flat for Sale · Kallisto 14, Satellite",
+  "slug": "kallisto-14-apartment-2170-sale-satellite",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹1.78 Cr",
+  "priceValue": 17800000,
+  "localityName": "Satellite",
+  "localitySlug": "satellite",
+  "city": "Ahmedabad",
+  "address": "Kallisto 14, Satellite, Ahmedabad",
+  "area": "2,170 sq.ft",
+  "areaSqft": 2170,
+  "furnishing": "Unfurnished",
+  "totalFloors": "7",
+  "amenities": [
+    "2 car parking"
+  ],
+  "description": [
+    "Unfurnished flat of 2,170 sq.ft for sale in Kallisto 14, Satellite, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/kallisto-14-apartment-2170-sale-satellite/photo-1.jpg",
+      "alt": "Kallisto 14, Satellite — flat photo",
+      "label": "Flat photo"
+    },
+    {
+      "url": "/uploads/properties/kallisto-14-apartment-2170-sale-satellite/photo-2.jpg",
+      "alt": "Kallisto 14, Satellite — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/kallisto-14-apartment-2170-sale-satellite/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "Flat for Sale in Satellite",
+  "seoDescription": "2,170 sq.ft Flat for Sale · Kallisto 14, Satellite",
+  "geo": {
+    "lat": 23.015444348411627,
+    "lng": 72.5177243788364
+  }
+}

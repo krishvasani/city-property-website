@@ -1,0 +1,38 @@
+{
+  "title": "4 BHK 235 sq.yd Bungalow for Sale · Sarthi duplex, Satellite",
+  "slug": "sarthi-duplex-bungalow-235-sale-satellite",
+  "status": "sale",
+  "propertyType": "bungalow",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹4 Cr",
+  "priceValue": 40000000,
+  "localityName": "Satellite",
+  "localitySlug": "satellite",
+  "city": "Ahmedabad",
+  "address": "Sarthi duplex, Satellite, Ahmedabad",
+  "area": "235 sq.yd",
+  "areaSqft": 2115,
+  "plotSize": "235 sq.yd",
+  "beds": 4,
+  "totalFloors": "3",
+  "amenities": [],
+  "description": [
+    "4 BHK bungalow of 235 sq.yd for sale in Sarthi duplex, Satellite, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/sarthi-duplex-bungalow-235-sale-satellite/photo-1.jpg",
+      "alt": "Sarthi duplex, Satellite — bungalow photo",
+      "label": "Bungalow photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/sarthi-duplex-bungalow-235-sale-satellite/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Bungalow for Sale in Satellite",
+  "seoDescription": "4 BHK 235 sq.yd Bungalow for Sale · Sarthi duplex, Satellite",
+  "geo": {
+    "lat": 23.019318662432553,
+    "lng": 72.51704090207913
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "title": "6 BHK 480 sq.yd Flat for Rent · Drive in road, Thaltej",
+  "slug": "drive-in-road-apartment-480-rent-thaltej",
+  "status": "rent",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹175,000",
+  "priceValue": 175000,
+  "localityName": "Thaltej",
+  "localitySlug": "thaltej",
+  "city": "Ahmedabad",
+  "address": "Drive in road, Thaltej, Ahmedabad",
+  "area": "480 sq.yd",
+  "areaSqft": 4320,
+  "beds": 6,
+  "pricePer": "per month",
+  "furnishing": "Fully furnished",
+  "totalFloors": "3",
+  "amenities": [],
+  "description": [
+    "Fully furnished 6 BHK flat of 480 sq.yd for rent in Drive in road, Thaltej, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/drive-in-road-apartment-480-rent-thaltej/photo-1.jpg",
+      "alt": "Drive in road, Thaltej — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/drive-in-road-apartment-480-rent-thaltej/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "6 BHK Flat for Rent in Thaltej",
+  "seoDescription": "6 BHK 480 sq.yd Flat for Rent · Drive in road, Thaltej",
+  "geo": {
+    "lat": 23.045840065667864,
+    "lng": 72.53606006002968
+  }
+}

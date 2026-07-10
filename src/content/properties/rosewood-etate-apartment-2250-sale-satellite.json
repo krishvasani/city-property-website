@@ -1,0 +1,40 @@
+{
+  "title": "3 BHK 2,250 sq.ft Flat for Sale · Rosewood Etate, Satellite",
+  "slug": "rosewood-etate-apartment-2250-sale-satellite",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2 Cr",
+  "priceValue": 20000000,
+  "localityName": "Satellite",
+  "localitySlug": "satellite",
+  "city": "Ahmedabad",
+  "address": "Rosewood Etate, Satellite, Ahmedabad",
+  "area": "2,250 sq.ft",
+  "areaSqft": 2250,
+  "beds": 3,
+  "furnishing": "Fully furnished",
+  "totalFloors": "10",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "Fully furnished 3 BHK flat of 2,250 sq.ft for sale in Rosewood Etate, Satellite, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/rosewood-etate-apartment-2250-sale-satellite/photo-1.jpg",
+      "alt": "Rosewood Etate, Satellite — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/rosewood-etate-apartment-2250-sale-satellite/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "3 BHK Flat for Sale in Satellite",
+  "seoDescription": "3 BHK 2,250 sq.ft Flat for Sale · Rosewood Etate, Satellite",
+  "geo": {
+    "lat": 23.021400923002613,
+    "lng": 72.52139127190219
+  }
+}

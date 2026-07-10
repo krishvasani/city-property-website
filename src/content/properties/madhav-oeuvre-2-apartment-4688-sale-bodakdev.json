@@ -1,0 +1,41 @@
+{
+  "title": "4 BHK 4,688 sq.ft Flat for Sale · Madhav oeuvre 2, Bodakdev",
+  "slug": "madhav-oeuvre-2-apartment-4688-sale-bodakdev",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹4.45 Cr",
+  "priceValue": 44536000,
+  "localityName": "Bodakdev",
+  "localitySlug": "bodakdev",
+  "city": "Ahmedabad",
+  "address": "Madhav oeuvre 2, Bodakdev, Ahmedabad",
+  "area": "4,688 sq.ft",
+  "areaSqft": 4688,
+  "beds": 4,
+  "perSqftDisplay": "₹9,500 per sq.ft",
+  "furnishing": "Unfurnished",
+  "totalFloors": "22",
+  "amenities": [
+    "3 lifts"
+  ],
+  "description": [
+    "Unfurnished 4 BHK flat of 4,688 sq.ft for sale in Madhav oeuvre 2, Bodakdev, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/madhav-oeuvre-2-apartment-4688-sale-bodakdev/photo-1.jpg",
+      "alt": "Madhav oeuvre 2, Bodakdev — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/madhav-oeuvre-2-apartment-4688-sale-bodakdev/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Bodakdev",
+  "seoDescription": "4 BHK 4,688 sq.ft Flat for Sale · Madhav oeuvre 2, Bodakdev",
+  "geo": {
+    "lat": 23.03640686745253,
+    "lng": 72.50870555476186
+  }
+}

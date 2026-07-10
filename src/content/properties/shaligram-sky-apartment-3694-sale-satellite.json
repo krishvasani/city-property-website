@@ -1,0 +1,41 @@
+{
+  "title": "4 BHK 3,694 sq.ft Flat for Sale · Shaligram Sky, Satellite",
+  "slug": "shaligram-sky-apartment-3694-sale-satellite",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹3.03 Cr",
+  "priceValue": 30290800,
+  "localityName": "Satellite",
+  "localitySlug": "satellite",
+  "city": "Ahmedabad",
+  "address": "Shaligram Sky, Satellite, Ahmedabad",
+  "area": "3,694 sq.ft",
+  "areaSqft": 3694,
+  "beds": 4,
+  "perSqftDisplay": "₹8,200 per sq.ft",
+  "furnishing": "Unfurnished",
+  "totalFloors": "21",
+  "amenities": [
+    "3 car parking"
+  ],
+  "description": [
+    "Unfurnished 4 BHK flat of 3,694 sq.ft for sale in Shaligram Sky, Satellite, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shaligram-sky-apartment-3694-sale-satellite/photo-1.jpg",
+      "alt": "Shaligram Sky, Satellite — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/shaligram-sky-apartment-3694-sale-satellite/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Satellite",
+  "seoDescription": "4 BHK 3,694 sq.ft Flat for Sale · Shaligram Sky, Satellite",
+  "geo": {
+    "lat": 23.023848267497083,
+    "lng": 72.50471170300415
+  }
+}

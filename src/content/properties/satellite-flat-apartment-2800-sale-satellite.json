@@ -1,0 +1,40 @@
+{
+  "title": "4 BHK 2,800 sq.ft Flat for Sale · Satellite Flat, Satellite",
+  "slug": "satellite-flat-apartment-2800-sale-satellite",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.52 Cr",
+  "priceValue": 25200000,
+  "localityName": "Satellite",
+  "localitySlug": "satellite",
+  "city": "Ahmedabad",
+  "address": "Satellite Flat, Satellite, Ahmedabad",
+  "area": "2,800 sq.ft",
+  "areaSqft": 2800,
+  "beds": 4,
+  "perSqftDisplay": "₹9,000 per sq.ft",
+  "totalFloors": "20",
+  "amenities": [
+    "5 lifts"
+  ],
+  "description": [
+    "4 BHK flat of 2,800 sq.ft for sale in Satellite Flat, Satellite, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/satellite-flat-apartment-2800-sale-satellite/photo-1.jpg",
+      "alt": "Satellite Flat, Satellite — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/satellite-flat-apartment-2800-sale-satellite/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Satellite",
+  "seoDescription": "4 BHK 2,800 sq.ft Flat for Sale · Satellite Flat, Satellite",
+  "geo": {
+    "lat": 23.022308236401784,
+    "lng": 72.51772846255744
+  }
+}

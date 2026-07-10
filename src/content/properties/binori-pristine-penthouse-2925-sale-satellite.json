@@ -1,0 +1,41 @@
+{
+  "title": "4 BHK 2,925 sq.ft Penthouse for Sale · Binori Pristine, Satellite",
+  "slug": "binori-pristine-penthouse-2925-sale-satellite",
+  "status": "sale",
+  "propertyType": "penthouse",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2 Cr",
+  "priceValue": 20000000,
+  "localityName": "Satellite",
+  "localitySlug": "satellite",
+  "city": "Ahmedabad",
+  "address": "Binori Pristine, Satellite, Ahmedabad",
+  "area": "2,925 sq.ft",
+  "areaSqft": 2925,
+  "beds": 4,
+  "furnishing": "Unfurnished",
+  "totalFloors": "7",
+  "amenities": [
+    "2 lifts",
+    "1 car parking"
+  ],
+  "description": [
+    "Unfurnished 4 BHK penthouse of 2,925 sq.ft for sale in Binori Pristine, Satellite, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/binori-pristine-penthouse-2925-sale-satellite/photo-1.jpg",
+      "alt": "Binori Pristine, Satellite — penthouse photo",
+      "label": "Penthouse photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/binori-pristine-penthouse-2925-sale-satellite/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Penthouse for Sale in Satellite",
+  "seoDescription": "4 BHK 2,925 sq.ft Penthouse for Sale · Binori Pristine, Satellite",
+  "geo": {
+    "lat": 23.014721140325,
+    "lng": 72.523253245953
+  }
+}

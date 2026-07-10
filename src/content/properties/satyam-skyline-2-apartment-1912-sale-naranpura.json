@@ -1,0 +1,40 @@
+{
+  "title": "3 BHK 1,912 sq.ft Flat for Sale · Satyam skyline 2, Naranpura",
+  "slug": "satyam-skyline-2-apartment-1912-sale-naranpura",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹1.4 Cr",
+  "priceValue": 14000000,
+  "localityName": "Naranpura",
+  "localitySlug": "naranpura",
+  "city": "Ahmedabad",
+  "address": "Satyam skyline 2, Naranpura, Ahmedabad",
+  "area": "1,912 sq.ft",
+  "areaSqft": 1912,
+  "beds": 3,
+  "furnishing": "Fully furnished",
+  "totalFloors": "13",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "Fully furnished 3 BHK flat of 1,912 sq.ft for sale in Satyam skyline 2, Naranpura, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/satyam-skyline-2-apartment-1912-sale-naranpura/photo-1.jpg",
+      "alt": "Satyam skyline 2, Naranpura — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/satyam-skyline-2-apartment-1912-sale-naranpura/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "3 BHK Flat for Sale in Naranpura",
+  "seoDescription": "3 BHK 1,912 sq.ft Flat for Sale · Satyam skyline 2, Naranpura",
+  "geo": {
+    "lat": 23.055178929162416,
+    "lng": 72.54838836114256
+  }
+}

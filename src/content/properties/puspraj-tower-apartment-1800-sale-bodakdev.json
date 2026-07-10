@@ -1,0 +1,40 @@
+{
+  "title": "3 BHK 1,800 sq.ft Flat for Sale · Puspraj tower, Bodakdev",
+  "slug": "puspraj-tower-apartment-1800-sale-bodakdev",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹1.55 Cr",
+  "priceValue": 15500000,
+  "localityName": "Bodakdev",
+  "localitySlug": "bodakdev",
+  "city": "Ahmedabad",
+  "address": "Puspraj tower, Bodakdev, Ahmedabad",
+  "area": "1,800 sq.ft",
+  "areaSqft": 1800,
+  "beds": 3,
+  "furnishing": "Fully furnished",
+  "totalFloors": "10",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "Fully furnished 3 BHK flat of 1,800 sq.ft for sale in Puspraj tower, Bodakdev, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/puspraj-tower-apartment-1800-sale-bodakdev/photo-1.jpg",
+      "alt": "Puspraj tower, Bodakdev — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/puspraj-tower-apartment-1800-sale-bodakdev/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "3 BHK Flat for Sale in Bodakdev",
+  "seoDescription": "3 BHK 1,800 sq.ft Flat for Sale · Puspraj tower, Bodakdev",
+  "geo": {
+    "lat": 23.041491596735096,
+    "lng": 72.51883391330597
+  }
+}

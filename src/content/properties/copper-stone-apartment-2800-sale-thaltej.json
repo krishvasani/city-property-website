@@ -1,0 +1,38 @@
+{
+  "title": "4 BHK 2,800 sq.ft Flat for Sale · Copper Stone, Thaltej",
+  "slug": "copper-stone-apartment-2800-sale-thaltej",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.5 Cr",
+  "priceValue": 25000000,
+  "localityName": "Thaltej",
+  "localitySlug": "thaltej",
+  "city": "Ahmedabad",
+  "address": "Copper Stone, Thaltej, Ahmedabad",
+  "area": "2,800 sq.ft",
+  "areaSqft": 2800,
+  "beds": 4,
+  "furnishing": "Fully furnished",
+  "totalFloors": "4",
+  "amenities": [],
+  "description": [
+    "Fully furnished 4 BHK flat of 2,800 sq.ft for sale in Copper Stone, Thaltej, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/copper-stone-apartment-2800-sale-thaltej/photo-1.jpg",
+      "alt": "Copper Stone, Thaltej — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/copper-stone-apartment-2800-sale-thaltej/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Thaltej",
+  "seoDescription": "4 BHK 2,800 sq.ft Flat for Sale · Copper Stone, Thaltej",
+  "geo": {
+    "lat": 23.050627717661072,
+    "lng": 72.49468252585311
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "3 BHK 245 sq.yd Bungalow for Sale · anusthan Bungalow, Sola",
+  "slug": "anusthan-bungalow-bungalow-245-sale-sola",
+  "status": "sale",
+  "propertyType": "bungalow",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹5.35 Cr",
+  "priceValue": 53500000,
+  "localityName": "Sola",
+  "localitySlug": "sola",
+  "city": "Ahmedabad",
+  "address": "anusthan Bungalow, Sola, Ahmedabad",
+  "area": "245 sq.yd",
+  "areaSqft": 2205,
+  "plotSize": "245 sq.yd",
+  "beds": 3,
+  "totalFloors": "1",
+  "amenities": [],
+  "description": [
+    "3 BHK bungalow of 245 sq.yd for sale in anusthan Bungalow, Sola, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/anusthan-bungalow-bungalow-245-sale-sola/photo-1.jpg",
+      "alt": "anusthan Bungalow, Sola — bungalow photo",
+      "label": "Bungalow photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/anusthan-bungalow-bungalow-245-sale-sola/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "3 BHK Bungalow for Sale in Sola",
+  "seoDescription": "3 BHK 245 sq.yd Bungalow for Sale · anusthan Bungalow, Sola",
+  "geo": {
+    "lat": 23.065977172325518,
+    "lng": 72.51769262197304
+  }
+}

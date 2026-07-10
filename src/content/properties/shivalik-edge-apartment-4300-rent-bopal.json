@@ -1,0 +1,41 @@
+{
+  "title": "4 BHK 4,300 sq.ft Flat for Rent · Shivalik edge, Bopal",
+  "slug": "shivalik-edge-apartment-4300-rent-bopal",
+  "status": "rent",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹140,000",
+  "priceValue": 140000,
+  "localityName": "Bopal",
+  "localitySlug": "bopal",
+  "city": "Ahmedabad",
+  "address": "Shivalik edge, Bopal, Ahmedabad",
+  "area": "4,300 sq.ft",
+  "areaSqft": 4300,
+  "beds": 4,
+  "pricePer": "per month",
+  "furnishing": "Semi furnished",
+  "totalFloors": "13",
+  "amenities": [
+    "2 lifts"
+  ],
+  "description": [
+    "Semi furnished 4 BHK flat of 4,300 sq.ft for rent in Shivalik edge, Bopal, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shivalik-edge-apartment-4300-rent-bopal/photo-1.jpg",
+      "alt": "Shivalik edge, Bopal — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/shivalik-edge-apartment-4300-rent-bopal/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Rent in Bopal",
+  "seoDescription": "4 BHK 4,300 sq.ft Flat for Rent · Shivalik edge, Bopal",
+  "geo": {
+    "lat": 23.023995562061693,
+    "lng": 72.47884135664236
+  }
+}

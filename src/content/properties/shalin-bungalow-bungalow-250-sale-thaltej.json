@@ -1,0 +1,39 @@
+{
+  "title": "4 BHK 250 sq.yd Bungalow for Sale · Shalin Bungalow, Thaltej",
+  "slug": "shalin-bungalow-bungalow-250-sale-thaltej",
+  "status": "sale",
+  "propertyType": "bungalow",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹3.25 Cr",
+  "priceValue": 32500000,
+  "localityName": "Thaltej",
+  "localitySlug": "thaltej",
+  "city": "Ahmedabad",
+  "address": "Shalin Bungalow, Thaltej, Ahmedabad",
+  "area": "250 sq.yd",
+  "areaSqft": 2250,
+  "plotSize": "250 sq.yd",
+  "beds": 4,
+  "furnishing": "Fully furnished",
+  "totalFloors": "2",
+  "amenities": [],
+  "description": [
+    "Fully furnished 4 BHK bungalow of 250 sq.yd for sale in Shalin Bungalow, Thaltej, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shalin-bungalow-bungalow-250-sale-thaltej/photo-1.jpg",
+      "alt": "Shalin Bungalow, Thaltej — bungalow photo",
+      "label": "Bungalow photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/shalin-bungalow-bungalow-250-sale-thaltej/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Bungalow for Sale in Thaltej",
+  "seoDescription": "4 BHK 250 sq.yd Bungalow for Sale · Shalin Bungalow, Thaltej",
+  "geo": {
+    "lat": 23.06231330229853,
+    "lng": 72.52413909901433
+  }
+}

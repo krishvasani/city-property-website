@@ -1,0 +1,41 @@
+{
+  "title": "4 BHK 5,250 sq.ft Flat for Sale · The Beaumonde, Thaltej",
+  "slug": "the-beaumonde-apartment-5250-sale-thaltej",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹3.78 Cr",
+  "priceValue": 37800000,
+  "localityName": "Thaltej",
+  "localitySlug": "thaltej",
+  "city": "Ahmedabad",
+  "address": "The Beaumonde, Thaltej, Ahmedabad",
+  "area": "5,250 sq.ft",
+  "areaSqft": 5250,
+  "beds": 4,
+  "perSqftDisplay": "₹7,200 per sq.ft",
+  "furnishing": "Unfurnished",
+  "totalFloors": "20",
+  "amenities": [
+    "3 car parking"
+  ],
+  "description": [
+    "Unfurnished 4 BHK flat of 5,250 sq.ft for sale in The Beaumonde, Thaltej, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/the-beaumonde-apartment-5250-sale-thaltej/photo-1.jpg",
+      "alt": "The Beaumonde, Thaltej — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/the-beaumonde-apartment-5250-sale-thaltej/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Thaltej",
+  "seoDescription": "4 BHK 5,250 sq.ft Flat for Sale · The Beaumonde, Thaltej",
+  "geo": {
+    "lat": 23.053643522969036,
+    "lng": 72.4827877952055
+  }
+}

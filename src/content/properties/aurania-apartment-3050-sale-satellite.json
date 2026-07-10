@@ -1,0 +1,42 @@
+{
+  "title": "3 BHK 3,050 sq.ft Flat for Sale · Aurania, Satellite",
+  "slug": "aurania-apartment-3050-sale-satellite",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.44 Cr",
+  "priceValue": 24400000,
+  "localityName": "Satellite",
+  "localitySlug": "satellite",
+  "city": "Ahmedabad",
+  "address": "Aurania, Satellite, Ahmedabad",
+  "area": "3,050 sq.ft",
+  "areaSqft": 3050,
+  "beds": 3,
+  "perSqftDisplay": "₹8,000 per sq.ft",
+  "furnishing": "Unfurnished",
+  "totalFloors": "12",
+  "amenities": [
+    "4 lifts",
+    "2 car parking"
+  ],
+  "description": [
+    "Unfurnished 3 BHK flat of 3,050 sq.ft for sale in Aurania, Satellite, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/aurania-apartment-3050-sale-satellite/photo-1.jpg",
+      "alt": "Aurania, Satellite — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/aurania-apartment-3050-sale-satellite/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "3 BHK Flat for Sale in Satellite",
+  "seoDescription": "3 BHK 3,050 sq.ft Flat for Sale · Aurania, Satellite",
+  "geo": {
+    "lat": 23.025007262370043,
+    "lng": 72.52293135922982
+  }
+}

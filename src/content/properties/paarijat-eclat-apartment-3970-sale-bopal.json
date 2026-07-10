@@ -1,0 +1,38 @@
+{
+  "title": "4 BHK 3,970 sq.ft Flat for Sale · Paarijat eclat, Bopal",
+  "slug": "paarijat-eclat-apartment-3970-sale-bopal",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹3.5 Cr",
+  "priceValue": 35000000,
+  "localityName": "Bopal",
+  "localitySlug": "bopal",
+  "city": "Ahmedabad",
+  "address": "Paarijat eclat, Bopal, Ahmedabad",
+  "area": "3,970 sq.ft",
+  "areaSqft": 3970,
+  "beds": 4,
+  "furnishing": "Unfurnished",
+  "totalFloors": "22",
+  "amenities": [],
+  "description": [
+    "Unfurnished 4 BHK flat of 3,970 sq.ft for sale in Paarijat eclat, Bopal, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/paarijat-eclat-apartment-3970-sale-bopal/photo-1.jpg",
+      "alt": "Paarijat eclat, Bopal — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/paarijat-eclat-apartment-3970-sale-bopal/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Bopal",
+  "seoDescription": "4 BHK 3,970 sq.ft Flat for Sale · Paarijat eclat, Bopal",
+  "geo": {
+    "lat": 23.028518400421248,
+    "lng": 72.5055919282907
+  }
+}

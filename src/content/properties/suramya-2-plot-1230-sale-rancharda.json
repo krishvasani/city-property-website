@@ -1,0 +1,36 @@
+{
+  "title": "1,230 sq.yd Plot for Sale · Suramya - 2, Rancharda",
+  "slug": "suramya-2-plot-1230-sale-rancharda",
+  "status": "sale",
+  "propertyType": "plot",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹4.92 Cr",
+  "priceValue": 49200000,
+  "localityName": "Rancharda",
+  "localitySlug": "rancharda",
+  "city": "Ahmedabad",
+  "address": "Suramya - 2, Rancharda, Ahmedabad",
+  "area": "1,230 sq.yd",
+  "areaSqft": 11070,
+  "plotSize": "1,230 sq.yd",
+  "amenities": [],
+  "description": [
+    "plot of 1,230 sq.yd for sale in Suramya - 2, Rancharda, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/suramya-2-plot-1230-sale-rancharda/photo-1.jpg",
+      "alt": "Suramya - 2, Rancharda — plot photo",
+      "label": "Plot photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/suramya-2-plot-1230-sale-rancharda/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "Plot for Sale in Rancharda",
+  "seoDescription": "1,230 sq.yd Plot for Sale · Suramya - 2, Rancharda",
+  "geo": {
+    "lat": 23.081072388672208,
+    "lng": 72.44398577648786
+  }
+}

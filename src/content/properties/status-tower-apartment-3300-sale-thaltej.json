@@ -1,0 +1,38 @@
+{
+  "title": "4 BHK 3,300 sq.ft Flat for Sale · Status Tower, Thaltej",
+  "slug": "status-tower-apartment-3300-sale-thaltej",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.1 Cr",
+  "priceValue": 21000000,
+  "localityName": "Thaltej",
+  "localitySlug": "thaltej",
+  "city": "Ahmedabad",
+  "address": "Status Tower, Thaltej, Ahmedabad",
+  "area": "3,300 sq.ft",
+  "areaSqft": 3300,
+  "beds": 4,
+  "furnishing": "Fully furnished",
+  "totalFloors": "10",
+  "amenities": [],
+  "description": [
+    "Fully furnished 4 BHK flat of 3,300 sq.ft for sale in Status Tower, Thaltej, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/status-tower-apartment-3300-sale-thaltej/photo-1.jpg",
+      "alt": "Status Tower, Thaltej — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/status-tower-apartment-3300-sale-thaltej/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Thaltej",
+  "seoDescription": "4 BHK 3,300 sq.ft Flat for Sale · Status Tower, Thaltej",
+  "geo": {
+    "lat": 23.048565741899736,
+    "lng": 72.5240169626422
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "title": "4 BHK 5,900 sq.ft Flat for Sale · Sky Deck Season, Thaltej",
+  "slug": "sky-deck-season-apartment-5900-sale-thaltej",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹5.01 Cr",
+  "priceValue": 50150000,
+  "localityName": "Thaltej",
+  "localitySlug": "thaltej",
+  "city": "Ahmedabad",
+  "address": "Sky Deck Season, Thaltej, Ahmedabad",
+  "area": "5,900 sq.ft",
+  "areaSqft": 5900,
+  "beds": 4,
+  "perSqftDisplay": "₹8,500 per sq.ft",
+  "furnishing": "Unfurnished",
+  "totalFloors": "7",
+  "amenities": [
+    "3 lifts",
+    "4 car parking"
+  ],
+  "description": [
+    "Unfurnished 4 BHK flat of 5,900 sq.ft for sale in Sky Deck Season, Thaltej, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/sky-deck-season-apartment-5900-sale-thaltej/photo-1.jpg",
+      "alt": "Sky Deck Season, Thaltej — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/sky-deck-season-apartment-5900-sale-thaltej/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Thaltej",
+  "seoDescription": "4 BHK 5,900 sq.ft Flat for Sale · Sky Deck Season, Thaltej",
+  "geo": {
+    "lat": 23.056391848274593,
+    "lng": 72.50638301240107
+  }
+}

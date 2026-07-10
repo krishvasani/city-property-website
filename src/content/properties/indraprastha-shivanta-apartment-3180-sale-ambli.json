@@ -1,0 +1,42 @@
+{
+  "title": "4 BHK 3,180 sq.ft Flat for Sale · Indraprastha Shivanta, Ambli",
+  "slug": "indraprastha-shivanta-apartment-3180-sale-ambli",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.16 Cr",
+  "priceValue": 21624000,
+  "localityName": "Ambli",
+  "localitySlug": "ambli",
+  "city": "Ahmedabad",
+  "address": "Indraprastha Shivanta, Ambli, Ahmedabad",
+  "area": "3,180 sq.ft",
+  "areaSqft": 3180,
+  "beds": 4,
+  "perSqftDisplay": "₹6,800 per sq.ft",
+  "furnishing": "Unfurnished",
+  "totalFloors": "20",
+  "amenities": [
+    "5 lifts",
+    "2 car parking"
+  ],
+  "description": [
+    "Unfurnished 4 BHK flat of 3,180 sq.ft for sale in Indraprastha Shivanta, Ambli, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/indraprastha-shivanta-apartment-3180-sale-ambli/photo-1.jpg",
+      "alt": "Indraprastha Shivanta, Ambli — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/indraprastha-shivanta-apartment-3180-sale-ambli/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Ambli",
+  "seoDescription": "4 BHK 3,180 sq.ft Flat for Sale · Indraprastha Shivanta, Ambli",
+  "geo": {
+    "lat": 23.030539024566757,
+    "lng": 72.47861373695929
+  }
+}

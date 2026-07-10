@@ -1,0 +1,36 @@
+{
+  "title": "534 sq.yd Plot for Sale · Shilpgram-3, Lapkaman",
+  "slug": "shilpgram-3-plot-534-sale-lapkaman",
+  "status": "sale",
+  "propertyType": "plot",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.14 Cr",
+  "priceValue": 21360000,
+  "localityName": "Lapkaman",
+  "localitySlug": "lapkaman",
+  "city": "Ahmedabad",
+  "address": "Shilpgram-3, Lapkaman, Ahmedabad",
+  "area": "534 sq.yd",
+  "areaSqft": 4806,
+  "plotSize": "534 sq.yd",
+  "amenities": [],
+  "description": [
+    "plot of 534 sq.yd for sale in Shilpgram-3, Lapkaman, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shilpgram-3-plot-534-sale-lapkaman/photo-1.jpg",
+      "alt": "Shilpgram-3, Lapkaman — plot photo",
+      "label": "Plot photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/shilpgram-3-plot-534-sale-lapkaman/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "Plot for Sale in Lapkaman",
+  "seoDescription": "534 sq.yd Plot for Sale · Shilpgram-3, Lapkaman",
+  "geo": {
+    "lat": 23.129642769778613,
+    "lng": 72.48798688914461
+  }
+}

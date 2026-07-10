@@ -1,0 +1,41 @@
+{
+  "title": "4 BHK 4,077 sq.ft Flat for Sale · Madhav Iconic, Bodakdev",
+  "slug": "madhav-iconic-apartment-4077-sale-bodakdev",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹3.55 Cr",
+  "priceValue": 35469900,
+  "localityName": "Bodakdev",
+  "localitySlug": "bodakdev",
+  "city": "Ahmedabad",
+  "address": "Madhav Iconic, Bodakdev, Ahmedabad",
+  "area": "4,077 sq.ft",
+  "areaSqft": 4077,
+  "beds": 4,
+  "perSqftDisplay": "₹8,700 per sq.ft",
+  "furnishing": "Unfurnished",
+  "totalFloors": "31",
+  "amenities": [
+    "3 car parking"
+  ],
+  "description": [
+    "Unfurnished 4 BHK flat of 4,077 sq.ft for sale in Madhav Iconic, Bodakdev, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/madhav-iconic-apartment-4077-sale-bodakdev/photo-1.jpg",
+      "alt": "Madhav Iconic, Bodakdev — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/madhav-iconic-apartment-4077-sale-bodakdev/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "4 BHK Flat for Sale in Bodakdev",
+  "seoDescription": "4 BHK 4,077 sq.ft Flat for Sale · Madhav Iconic, Bodakdev",
+  "geo": {
+    "lat": 23.05759849852706,
+    "lng": 72.50587203264382
+  }
+}

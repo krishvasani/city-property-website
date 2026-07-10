@@ -1,0 +1,41 @@
+{
+  "title": "3 BHK 2,740 sq.ft Flat for Sale · Riviera Aspire, Shela",
+  "slug": "riviera-aspire-apartment-2740-sale-shela",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹1.48 Cr",
+  "priceValue": 14796000,
+  "localityName": "Shela",
+  "localitySlug": "shela",
+  "city": "Ahmedabad",
+  "address": "Riviera Aspire, Shela, Ahmedabad",
+  "area": "2,740 sq.ft",
+  "areaSqft": 2740,
+  "beds": 3,
+  "perSqftDisplay": "₹5,400 per sq.ft",
+  "furnishing": "Unfurnished",
+  "totalFloors": "22",
+  "amenities": [
+    "4 lifts"
+  ],
+  "description": [
+    "Unfurnished 3 BHK flat of 2,740 sq.ft for sale in Riviera Aspire, Shela, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/riviera-aspire-apartment-2740-sale-shela/photo-1.jpg",
+      "alt": "Riviera Aspire, Shela — flat photo",
+      "label": "Flat photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/riviera-aspire-apartment-2740-sale-shela/photo-1.jpg",
+  "newAt": "2026-07-01",
+  "seoTitle": "3 BHK Flat for Sale in Shela",
+  "seoDescription": "3 BHK 2,740 sq.ft Flat for Sale · Riviera Aspire, Shela",
+  "geo": {
+    "lat": 23.005352856258664,
+    "lng": 72.45948399335366
+  }
+}
