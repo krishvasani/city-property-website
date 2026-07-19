@@ -57,11 +57,21 @@ const {
 const otherServices = serviceLinks.map((s) => s.label).filter((l) => l !== formIntent);
 const intentOptions = [formIntent, ...otherServices];
 
-// Optional related listings from the property data.
+// Optional related listings from the property data, plus a "Browse all" link
+// that lands on this vertical's filtered results (Buy if any are for sale,
+// else Rent — e.g. warehouses are lease-only), not the unfiltered Buy page.
 let related: Awaited<ReturnType<typeof getProperties>> = [];
+let browseHref = '/buy';
 if (relatedCategory) {
   const all = await getProperties();
-  related = all.filter((p) => categoryFor(p.propertyType) === relatedCategory).slice(0, 3);
+  const inCat = all.filter((p) => categoryFor(p.propertyType) === relatedCategory);
+  related = inCat.slice(0, 3);
+  const page = inCat.some((p) => p.status === 'sale')
+    ? 'buy'
+    : inCat.some((p) => p.status === 'rent' || p.status === 'lease')
+      ? 'rent'
+      : 'buy';
+  browseHref = `/${page}?type=${relatedCategory}`;
 }
 
 const otherLinks = serviceLinks.filter((s) => s.key !== serviceKey);
@@ -148,7 +158,7 @@ const serviceSchema = {
       <section class="svc-block">
         <div class="svc-rel-head">
           <h2 class="h2">A few current listings</h2>
-          <a class="link-arrow" href="/buy">Browse all <Icon name="arrowRight" sw={2} /></a>
+          <a class="link-arrow" href={browseHref}>Browse all <Icon name="arrowRight" sw={2} /></a>
         </div>
         <div class="svc-rel-grid">
           {related.map((p) => <PropertyCard property={p} />)}
