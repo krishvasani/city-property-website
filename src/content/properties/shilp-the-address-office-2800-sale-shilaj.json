@@ -1,0 +1,46 @@
+{
+  "title": "2,800 sq.ft Office for Sale · Shilp The Address, Shilaj",
+  "slug": "shilp-the-address-office-2800-sale-shilaj",
+  "status": "sale",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹3.64 Cr",
+  "priceValue": 36400000,
+  "perSqftDisplay": "₹13,000 per sq.ft",
+  "localityName": "Shilaj",
+  "localitySlug": "shilaj",
+  "city": "Ahmedabad",
+  "address": "Shilaj, Ahmedabad",
+  "area": "2,800 sq.ft",
+  "areaSqft": 2800,
+  "floor": "First Floor",
+  "amenities": [],
+  "suitableFor": [
+    "Office",
+    "Corporate"
+  ],
+  "description": [
+    "office of 2,800 sq.ft for sale in Shilp The Address, Shilaj, Ahmedabad, first floor."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shilp-the-address-office-2800-sale-shilaj/photo-1.jpg",
+      "alt": "Shilp The Address, Shilaj — office photo",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/shilp-the-address-office-2800-sale-shilaj/photo-2.jpg",
+      "alt": "Shilp The Address, Shilaj — office photo",
+      "label": "Office photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/shilp-the-address-office-2800-sale-shilaj/photo-1.jpg",
+  "newAt": "2026-07-23",
+  "seoTitle": "Office for Sale in Shilaj, Ahmedabad",
+  "seoDescription": "2,800 sq.ft Office for Sale · Shilp The Address, Shilaj",
+  "geo": {
+    "lat": 23.0524791252939,
+    "lng": 72.48074726540452
+  }
+}

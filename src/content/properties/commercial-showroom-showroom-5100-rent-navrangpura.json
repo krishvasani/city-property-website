@@ -1,0 +1,37 @@
+{
+  "title": "5,100 sq.ft Showroom for Rent · Commercial Showroom, Navrangpura",
+  "slug": "commercial-showroom-showroom-5100-rent-navrangpura",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹510,000",
+  "priceValue": 510000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹100 per sq.ft per month",
+  "localityName": "Navrangpura",
+  "localitySlug": "navrangpura",
+  "city": "Ahmedabad",
+  "address": "Panchavati Cross, Cg Road, Ahmedabad",
+  "area": "5,100 sq.ft",
+  "areaSqft": 5100,
+  "furnishing": "Unfurnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Unfurnished showroom of 5,100 sq.ft for rent in Commercial Showroom, Navrangpura, Ahmedabad, gf."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in Navrangpura, Ahmedabad",
+  "seoDescription": "5,100 sq.ft Showroom for Rent · Commercial Showroom, Navrangpura",
+  "geo": {
+    "lat": 23.022560967369664,
+    "lng": 72.55625692854551
+  }
+}

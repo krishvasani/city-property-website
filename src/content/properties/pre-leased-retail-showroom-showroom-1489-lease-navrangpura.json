@@ -1,0 +1,35 @@
+{
+  "title": "Pre-leased Showroom · Navrangpura, Ahmedabad",
+  "slug": "pre-leased-retail-showroom-showroom-1489-lease-navrangpura",
+  "status": "lease",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹158,852",
+  "priceValue": 158852,
+  "pricePer": "per month",
+  "localityName": "Navrangpura",
+  "localitySlug": "navrangpura",
+  "city": "Ahmedabad",
+  "address": "Vijay Char Rasta, Ahmedabad",
+  "area": "1,489 sq.ft",
+  "areaSqft": 1489,
+  "furnishing": "Fully furnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Investment",
+    "Rental income"
+  ],
+  "description": [
+    "Pre-leased retail showroom of 1,489 sq.ft in Navrangpura, Ahmedabad, currently tenanted and let at ₹158,852 per month."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Lease in Navrangpura, Ahmedabad",
+  "seoDescription": "Pre-leased Showroom · Navrangpura, Ahmedabad",
+  "geo": {
+    "lat": 23.043524100745795,
+    "lng": 72.54458284041696
+  }
+}

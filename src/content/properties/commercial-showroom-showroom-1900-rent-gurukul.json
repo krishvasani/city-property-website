@@ -1,0 +1,37 @@
+{
+  "title": "1,900 sq.ft Showroom for Rent · Commercial Showroom, Gurukul",
+  "slug": "commercial-showroom-showroom-1900-rent-gurukul",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹228,000",
+  "priceValue": 228000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹120 per sq.ft per month",
+  "localityName": "Gurukul",
+  "localitySlug": "gurukul",
+  "city": "Ahmedabad",
+  "address": "Gurukul, Ahmedabad",
+  "area": "1,900 sq.ft",
+  "areaSqft": 1900,
+  "furnishing": "Unfurnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Unfurnished showroom of 1,900 sq.ft for rent in Commercial Showroom, Gurukul, Ahmedabad, gf."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in Gurukul, Ahmedabad",
+  "seoDescription": "1,900 sq.ft Showroom for Rent · Commercial Showroom, Gurukul",
+  "geo": {
+    "lat": 23.049034123797252,
+    "lng": 72.53408982995747
+  }
+}

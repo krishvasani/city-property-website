@@ -1,0 +1,36 @@
+{
+  "title": "750 sq.ft Showroom for Rent · Commercial Showroom, Navrangpura",
+  "slug": "commercial-showroom-showroom-750-rent-navrangpura",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹80,000",
+  "priceValue": 80000,
+  "pricePer": "per month",
+  "localityName": "Navrangpura",
+  "localitySlug": "navrangpura",
+  "city": "Ahmedabad",
+  "address": "University Road, Ahmedabad",
+  "area": "750 sq.ft",
+  "areaSqft": 750,
+  "furnishing": "Unfurnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Unfurnished showroom of 750 sq.ft for rent in Commercial Showroom, Navrangpura, Ahmedabad, gf."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in Navrangpura, Ahmedabad",
+  "seoDescription": "750 sq.ft Showroom for Rent · Commercial Showroom, Navrangpura",
+  "geo": {
+    "lat": 23.028052756048496,
+    "lng": 72.54518005442607
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "title": "2,300 sq.ft Showroom for Sale · Shivalik Shilp, SG Highway",
+  "slug": "shivalik-shilp-showroom-2300-sale-sg-highway",
+  "status": "sale",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹4.6 Cr",
+  "priceValue": 46000000,
+  "perSqftDisplay": "₹20,000 per sq.ft",
+  "localityName": "SG Highway",
+  "localitySlug": "sg-highway",
+  "city": "Ahmedabad",
+  "address": "Iscon Circle, Ahmedabad",
+  "area": "2,300 sq.ft",
+  "areaSqft": 2300,
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "showroom of 2,300 sq.ft for sale in Shivalik Shilp, SG Highway, Ahmedabad, gf."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shivalik-shilp-showroom-2300-sale-sg-highway/photo-1.jpg",
+      "alt": "Shivalik Shilp, SG Highway — showroom photo",
+      "label": "Showroom photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/shivalik-shilp-showroom-2300-sale-sg-highway/photo-1.jpg",
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Sale in SG Highway, Ahmedabad",
+  "seoDescription": "2,300 sq.ft Showroom for Sale · Shivalik Shilp, SG Highway",
+  "geo": {
+    "lat": 23.027035532736686,
+    "lng": 72.5060222256931
+  }
+}

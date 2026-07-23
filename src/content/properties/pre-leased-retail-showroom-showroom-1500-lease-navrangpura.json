@@ -1,0 +1,42 @@
+{
+  "title": "Pre-leased Showroom · Navrangpura, Ahmedabad",
+  "slug": "pre-leased-retail-showroom-showroom-1500-lease-navrangpura",
+  "status": "lease",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹111,000",
+  "priceValue": 111000,
+  "pricePer": "per month",
+  "localityName": "Navrangpura",
+  "localitySlug": "navrangpura",
+  "city": "Ahmedabad",
+  "address": "H L Collage, Navrangpura, Ahmedabad",
+  "area": "1,500 sq.ft",
+  "areaSqft": 1500,
+  "furnishing": "Fully furnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Investment",
+    "Rental income"
+  ],
+  "description": [
+    "Pre-leased retail showroom of 1,500 sq.ft in Navrangpura, Ahmedabad, currently tenanted and let at ₹111,000 per month."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/pre-leased-retail-showroom-showroom-1500-lease-navrangpura/photo-1.jpg",
+      "alt": "Pre-leased retail showroom, Navrangpura — showroom photo",
+      "label": "Showroom photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/pre-leased-retail-showroom-showroom-1500-lease-navrangpura/photo-1.jpg",
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Lease in Navrangpura, Ahmedabad",
+  "seoDescription": "Pre-leased Showroom · Navrangpura, Ahmedabad",
+  "geo": {
+    "lat": 23.035595784487683,
+    "lng": 72.55510875945566
+  }
+}

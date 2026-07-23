@@ -1,0 +1,47 @@
+{
+  "title": "3,200 sq.ft Showroom for Rent · Shyamal Iconic, Satellite",
+  "slug": "shyamal-iconic-showroom-3200-rent-satellite",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹400,000",
+  "priceValue": 400000,
+  "pricePer": "per month",
+  "localityName": "Satellite",
+  "localitySlug": "satellite",
+  "city": "Ahmedabad",
+  "address": "Satellite, Ahmedabad",
+  "area": "3,200 sq.ft",
+  "areaSqft": 3200,
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "showroom of 3,200 sq.ft for rent in Shyamal Iconic, Satellite, Ahmedabad, gf."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shyamal-iconic-showroom-3200-rent-satellite/photo-1.jpg",
+      "alt": "Shyamal Iconic, Satellite — showroom photo",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/shyamal-iconic-showroom-3200-rent-satellite/photo-2.jpg",
+      "alt": "Shyamal Iconic, Satellite — showroom photo",
+      "label": "Showroom photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/shyamal-iconic-showroom-3200-rent-satellite/photo-1.jpg",
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in Satellite, Ahmedabad",
+  "seoDescription": "3,200 sq.ft Showroom for Rent · Shyamal Iconic, Satellite",
+  "geo": {
+    "lat": 23.01495101648262,
+    "lng": 72.53101487541787
+  }
+}

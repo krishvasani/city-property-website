@@ -1,0 +1,35 @@
+{
+  "title": "2,000 sq.ft Showroom for Rent · Commercial Showroom, Prahladnagar",
+  "slug": "commercial-showroom-showroom-2000-rent-prahlad-nagar",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹225,000",
+  "priceValue": 225000,
+  "pricePer": "per month",
+  "localityName": "Prahladnagar",
+  "localitySlug": "prahlad-nagar",
+  "city": "Ahmedabad",
+  "address": "Prahladnagar, Ahmedabad",
+  "area": "2,000 sq.ft",
+  "areaSqft": 2000,
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "showroom of 2,000 sq.ft for rent in Commercial Showroom, Prahladnagar, Ahmedabad, gf."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in Prahladnagar, Ahmedabad",
+  "seoDescription": "2,000 sq.ft Showroom for Rent · Commercial Showroom, Prahladnagar",
+  "geo": {
+    "lat": 23.011538141099297,
+    "lng": 72.50709475519423
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "title": "1,300 sq.ft Showroom for Rent · Commercial Showroom, Satellite",
+  "slug": "commercial-showroom-showroom-1300-rent-satellite",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹1,100,000",
+  "priceValue": 1100000,
+  "pricePer": "per month",
+  "localityName": "Satellite",
+  "localitySlug": "satellite",
+  "city": "Ahmedabad",
+  "address": "Shyamal Cross Road, Satellite, Ahmedabad",
+  "area": "1,300 sq.ft",
+  "areaSqft": 1300,
+  "furnishing": "Unfurnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Unfurnished showroom of 1,300 sq.ft for rent in Commercial Showroom, Satellite, Ahmedabad, gf."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in Satellite, Ahmedabad",
+  "seoDescription": "1,300 sq.ft Showroom for Rent · Commercial Showroom, Satellite",
+  "geo": {
+    "lat": 23.03644018919991,
+    "lng": 72.55475324429821
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "title": "2,500 sq.ft Showroom for Sale · Commercial Showroom, SG Highway",
+  "slug": "commercial-showroom-showroom-2500-sale-ff-sg-highway",
+  "status": "sale",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹15 Cr",
+  "priceValue": 150000000,
+  "localityName": "SG Highway",
+  "localitySlug": "sg-highway",
+  "city": "Ahmedabad",
+  "address": "Iscon Circle, Ahmedabad",
+  "area": "2,500 sq.ft",
+  "areaSqft": 2500,
+  "furnishing": "Fully furnished",
+  "floor": "First Floor",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Fully furnished showroom of 2,500 sq.ft for sale in Commercial Showroom, SG Highway, Ahmedabad, first floor."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Sale in SG Highway, Ahmedabad",
+  "seoDescription": "2,500 sq.ft Showroom for Sale · Commercial Showroom, SG Highway",
+  "geo": {
+    "lat": 23.027046698909977,
+    "lng": 72.50807493179376
+  }
+}

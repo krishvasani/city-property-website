@@ -1,0 +1,35 @@
+{
+  "title": "2,200 sq.ft Showroom for Rent · Commercial Showroom, Navrangpura",
+  "slug": "commercial-showroom-showroom-2200-rent-navrangpura",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹220,000",
+  "priceValue": 220000,
+  "pricePer": "per month",
+  "localityName": "Navrangpura",
+  "localitySlug": "navrangpura",
+  "city": "Ahmedabad",
+  "address": "Vijay Cross Road, Ahmedabad",
+  "area": "2,200 sq.ft",
+  "areaSqft": 2200,
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "showroom of 2,200 sq.ft for rent in Commercial Showroom, Navrangpura, Ahmedabad, gf."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in Navrangpura, Ahmedabad",
+  "seoDescription": "2,200 sq.ft Showroom for Rent · Commercial Showroom, Navrangpura",
+  "geo": {
+    "lat": 23.04441791705852,
+    "lng": 72.54882218617192
+  }
+}

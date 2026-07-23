@@ -1,0 +1,42 @@
+{
+  "title": "2,300 sq.ft Showroom for Sale · Shreya Amalga, Sindhu Bhavan Road",
+  "slug": "shreya-amalga-showroom-2300-sale-sindhu-bhavan-road",
+  "status": "sale",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹4.6 Cr",
+  "priceValue": 46000000,
+  "perSqftDisplay": "₹20,000 per sq.ft",
+  "localityName": "Sindhu Bhavan Road",
+  "localitySlug": "sindhu-bhavan-road",
+  "city": "Ahmedabad",
+  "address": "Off Sbr, Ahmedabad",
+  "area": "2,300 sq.ft",
+  "areaSqft": 2300,
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "showroom of 2,300 sq.ft for sale in Shreya Amalga, Sindhu Bhavan Road, Ahmedabad, gf."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shreya-amalga-showroom-2300-sale-sindhu-bhavan-road/photo-1.jpg",
+      "alt": "Shreya Amalga, Sindhu Bhavan Road — showroom photo",
+      "label": "Showroom photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/shreya-amalga-showroom-2300-sale-sindhu-bhavan-road/photo-1.jpg",
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Sale in Sindhu Bhavan Road, Ahmedabad",
+  "seoDescription": "2,300 sq.ft Showroom for Sale · Shreya Amalga, Sindhu Bhavan Road",
+  "geo": {
+    "lat": 23.046891928929366,
+    "lng": 72.50795483689427
+  }
+}

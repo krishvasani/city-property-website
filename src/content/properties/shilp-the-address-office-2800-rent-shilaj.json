@@ -1,0 +1,47 @@
+{
+  "title": "2,800 sq.ft Office for Rent · Shilp The Address, Shilaj",
+  "slug": "shilp-the-address-office-2800-rent-shilaj",
+  "status": "rent",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹168,000",
+  "priceValue": 168000,
+  "pricePer": "per month",
+  "perSqftDisplay": "₹60 per sq.ft per month",
+  "localityName": "Shilaj",
+  "localitySlug": "shilaj",
+  "city": "Ahmedabad",
+  "address": "Shilaj, Ahmedabad",
+  "area": "2,800 sq.ft",
+  "areaSqft": 2800,
+  "floor": "First Floor",
+  "amenities": [],
+  "suitableFor": [
+    "Office",
+    "Corporate"
+  ],
+  "description": [
+    "office of 2,800 sq.ft for rent in Shilp The Address, Shilaj, Ahmedabad, first floor."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shilp-the-address-office-2800-rent-shilaj/photo-1.jpg",
+      "alt": "Shilp The Address, Shilaj — office photo",
+      "label": "Office photo"
+    },
+    {
+      "url": "/uploads/properties/shilp-the-address-office-2800-rent-shilaj/photo-2.jpg",
+      "alt": "Shilp The Address, Shilaj — office photo",
+      "label": "Office photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/shilp-the-address-office-2800-rent-shilaj/photo-1.jpg",
+  "newAt": "2026-07-23",
+  "seoTitle": "Office for Rent in Shilaj, Ahmedabad",
+  "seoDescription": "2,800 sq.ft Office for Rent · Shilp The Address, Shilaj",
+  "geo": {
+    "lat": 23.052478613206254,
+    "lng": 72.48073338225709
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "title": "1,100 sq.ft Showroom for Sale · Commercial Showroom, Satellite",
+  "slug": "commercial-showroom-showroom-1100-sale-satellite",
+  "status": "sale",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Satellite",
+  "localitySlug": "satellite",
+  "city": "Ahmedabad",
+  "address": "Shivrangani Road, Ahmedabad",
+  "area": "1,100 sq.ft",
+  "areaSqft": 1100,
+  "furnishing": "Unfurnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Unfurnished showroom of 1,100 sq.ft for sale in Commercial Showroom, Satellite, Ahmedabad, gf."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Sale in Satellite, Ahmedabad",
+  "seoDescription": "1,100 sq.ft Showroom for Sale · Commercial Showroom, Satellite",
+  "geo": {
+    "lat": 23.025222429706314,
+    "lng": 72.53027411606404
+  }
+}

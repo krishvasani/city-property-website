@@ -1,0 +1,36 @@
+{
+  "title": "2,200 sq.ft Showroom for Rent · Commercial Showroom, SG Highway",
+  "slug": "commercial-showroom-showroom-2200-rent-sg-highway",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹180,000",
+  "priceValue": 180000,
+  "pricePer": "per month",
+  "localityName": "SG Highway",
+  "localitySlug": "sg-highway",
+  "city": "Ahmedabad",
+  "address": "Iscon Circle, Ahmedabad",
+  "area": "2,200 sq.ft",
+  "areaSqft": 2200,
+  "furnishing": "Unfurnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Unfurnished showroom of 2,200 sq.ft for rent in Commercial Showroom, SG Highway, Ahmedabad, gf."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in SG Highway, Ahmedabad",
+  "seoDescription": "2,200 sq.ft Showroom for Rent · Commercial Showroom, SG Highway",
+  "geo": {
+    "lat": 23.02721497691514,
+    "lng": 72.5063484539343
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "title": "1,700 sq.ft Showroom for Rent · Commercial Showroom, Satellite",
+  "slug": "commercial-showroom-showroom-1700-rent-satellite",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹225,000",
+  "priceValue": 225000,
+  "pricePer": "per month",
+  "localityName": "Satellite",
+  "localitySlug": "satellite",
+  "city": "Ahmedabad",
+  "address": "Shivranjani Cross Road, Ahmedabad",
+  "area": "1,700 sq.ft",
+  "areaSqft": 1700,
+  "furnishing": "Unfurnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Unfurnished showroom of 1,700 sq.ft for rent in Commercial Showroom, Satellite, Ahmedabad, gf."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in Satellite, Ahmedabad",
+  "seoDescription": "1,700 sq.ft Showroom for Rent · Commercial Showroom, Satellite",
+  "geo": {
+    "lat": 23.025130759580676,
+    "lng": 72.53027841367195
+  }
+}

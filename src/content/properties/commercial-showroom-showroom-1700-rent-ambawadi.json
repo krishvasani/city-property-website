@@ -1,0 +1,36 @@
+{
+  "title": "1,700 sq.ft Showroom for Rent · Commercial Showroom, Ambawadi",
+  "slug": "commercial-showroom-showroom-1700-rent-ambawadi",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹170,000",
+  "priceValue": 170000,
+  "pricePer": "per month",
+  "localityName": "Ambawadi",
+  "localitySlug": "ambawadi",
+  "city": "Ahmedabad",
+  "address": "Ambawadi, Nehrunagar, Ahmedabad",
+  "area": "1,700 sq.ft",
+  "areaSqft": 1700,
+  "furnishing": "Unfurnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Unfurnished showroom of 1,700 sq.ft for rent in Commercial Showroom, Ambawadi, Ahmedabad, gf."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in Ambawadi, Ahmedabad",
+  "seoDescription": "1,700 sq.ft Showroom for Rent · Commercial Showroom, Ambawadi",
+  "geo": {
+    "lat": 23.02432122723907,
+    "lng": 72.54860960611971
+  }
+}

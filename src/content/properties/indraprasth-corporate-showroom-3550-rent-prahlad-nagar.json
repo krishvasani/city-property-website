@@ -1,0 +1,42 @@
+{
+  "title": "3,550 sq.ft Showroom for Rent · Indraprasth Corporate, Prahladnagar",
+  "slug": "indraprasth-corporate-showroom-3550-rent-prahlad-nagar",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹595,000",
+  "priceValue": 595000,
+  "pricePer": "per month",
+  "localityName": "Prahladnagar",
+  "localitySlug": "prahlad-nagar",
+  "city": "Ahmedabad",
+  "address": "Prahladnagar, Ahmedabad",
+  "area": "3,550 sq.ft",
+  "areaSqft": 3550,
+  "furnishing": "Unfurnished",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Unfurnished showroom of 3,550 sq.ft for rent in Indraprasth Corporate, Prahladnagar, Ahmedabad."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/indraprasth-corporate-showroom-3550-rent-prahlad-nagar/photo-1.jpg",
+      "alt": "Indraprasth Corporate, Prahladnagar — showroom photo",
+      "label": "Showroom photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/indraprasth-corporate-showroom-3550-rent-prahlad-nagar/photo-1.jpg",
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in Prahladnagar, Ahmedabad",
+  "seoDescription": "3,550 sq.ft Showroom for Rent · Indraprasth Corporate, Prahladnagar",
+  "geo": {
+    "lat": 23.012764202483673,
+    "lng": 72.51197662931185
+  }
+}

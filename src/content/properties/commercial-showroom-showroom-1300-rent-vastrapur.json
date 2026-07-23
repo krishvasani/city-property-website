@@ -1,0 +1,36 @@
+{
+  "title": "1,300 sq.ft Showroom for Rent · Commercial Showroom, Vastrapur",
+  "slug": "commercial-showroom-showroom-1300-rent-vastrapur",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹160,000",
+  "priceValue": 160000,
+  "pricePer": "per month",
+  "localityName": "Vastrapur",
+  "localitySlug": "vastrapur",
+  "city": "Ahmedabad",
+  "address": "Vastrapur, Ahmedabad",
+  "area": "1,300 sq.ft",
+  "areaSqft": 1300,
+  "furnishing": "Unfurnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Unfurnished showroom of 1,300 sq.ft for rent in Commercial Showroom, Vastrapur, Ahmedabad, gf."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in Vastrapur, Ahmedabad",
+  "seoDescription": "1,300 sq.ft Showroom for Rent · Commercial Showroom, Vastrapur",
+  "geo": {
+    "lat": 23.042275389273854,
+    "lng": 72.52891854912242
+  }
+}

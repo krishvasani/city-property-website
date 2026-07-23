@@ -1,0 +1,36 @@
+{
+  "title": "2,750 sq.ft Showroom for Rent · Commercial Showroom, Navrangpura",
+  "slug": "commercial-showroom-showroom-2750-rent-navrangpura",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹250,000",
+  "priceValue": 250000,
+  "pricePer": "per month",
+  "localityName": "Navrangpura",
+  "localitySlug": "navrangpura",
+  "city": "Ahmedabad",
+  "address": "Hl Collage Road, Navrangpura, Ahmedabad",
+  "area": "2,750 sq.ft",
+  "areaSqft": 2750,
+  "furnishing": "Unfurnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Unfurnished showroom of 2,750 sq.ft for rent in Commercial Showroom, Navrangpura, Ahmedabad, gf."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in Navrangpura, Ahmedabad",
+  "seoDescription": "2,750 sq.ft Showroom for Rent · Commercial Showroom, Navrangpura",
+  "geo": {
+    "lat": 23.03642325464696,
+    "lng": 72.55471852123881
+  }
+}

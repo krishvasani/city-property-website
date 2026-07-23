@@ -1,0 +1,52 @@
+{
+  "title": "1,919 sq.ft Showroom for Sale · One World West, Bopal",
+  "slug": "one-world-west-showroom-1919-sale-bopal",
+  "status": "sale",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹5.18 Cr",
+  "priceValue": 51813000,
+  "perSqftDisplay": "₹27,000 per sq.ft",
+  "localityName": "Bopal",
+  "localitySlug": "bopal",
+  "city": "Ahmedabad",
+  "address": "Bopalt Juncton, Ahmedabad",
+  "area": "1,919 sq.ft",
+  "areaSqft": 1919,
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "showroom of 1,919 sq.ft for sale in One World West, Bopal, Ahmedabad, gf."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/one-world-west-showroom-1919-sale-bopal/photo-1.jpg",
+      "alt": "One World West, Bopal — showroom photo",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/one-world-west-showroom-1919-sale-bopal/photo-2.jpg",
+      "alt": "One World West, Bopal — showroom photo",
+      "label": "Showroom photo"
+    },
+    {
+      "url": "/uploads/properties/one-world-west-showroom-1919-sale-bopal/photo-3.jpg",
+      "alt": "One World West, Bopal — showroom photo",
+      "label": "Showroom photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/one-world-west-showroom-1919-sale-bopal/photo-1.jpg",
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Sale in Bopal, Ahmedabad",
+  "seoDescription": "1,919 sq.ft Showroom for Sale · One World West, Bopal",
+  "geo": {
+    "lat": 23.025486589860336,
+    "lng": 72.47747747302694
+  }
+}

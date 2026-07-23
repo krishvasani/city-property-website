@@ -1,0 +1,42 @@
+{
+  "title": "Pre-leased Showroom · Odhav, Ahmedabad",
+  "slug": "pre-leased-bank-branch-showroom-1380-lease-odhav",
+  "status": "lease",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹97,500",
+  "priceValue": 97500,
+  "pricePer": "per month",
+  "localityName": "Odhav",
+  "localitySlug": "odhav",
+  "city": "Ahmedabad",
+  "address": "Odhav, Ahmedabad",
+  "area": "1,380 sq.ft",
+  "areaSqft": 1380,
+  "furnishing": "Fully furnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Investment",
+    "Rental income"
+  ],
+  "description": [
+    "Pre-leased bank branch of 1,380 sq.ft in Odhav, Ahmedabad, currently tenanted and let at ₹97,500 per month."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/pre-leased-bank-branch-showroom-1380-lease-odhav/photo-1.jpg",
+      "alt": "Pre-leased bank branch, Odhav — showroom photo",
+      "label": "Showroom photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/pre-leased-bank-branch-showroom-1380-lease-odhav/photo-1.jpg",
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Lease in Odhav, Ahmedabad",
+  "seoDescription": "Pre-leased Showroom · Odhav, Ahmedabad",
+  "geo": {
+    "lat": 23.024111506741978,
+    "lng": 72.66506992862972
+  }
+}

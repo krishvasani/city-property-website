@@ -1,0 +1,42 @@
+{
+  "title": "1,800 sq.ft Showroom for Sale · Shivalik Satymev, Bopal",
+  "slug": "shivalik-satymev-showroom-1800-sale-bopal",
+  "status": "sale",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹5.4 Cr",
+  "priceValue": 54000000,
+  "localityName": "Bopal",
+  "localitySlug": "bopal",
+  "city": "Ahmedabad",
+  "address": "Bopal Junction, Ahmedabad",
+  "area": "1,800 sq.ft",
+  "areaSqft": 1800,
+  "furnishing": "Unfurnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Unfurnished showroom of 1,800 sq.ft for sale in Shivalik Satymev, Bopal, Ahmedabad, gf."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/shivalik-satymev-showroom-1800-sale-bopal/photo-1.jpg",
+      "alt": "Shivalik Satymev, Bopal — showroom photo",
+      "label": "Showroom photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/shivalik-satymev-showroom-1800-sale-bopal/photo-1.jpg",
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Sale in Bopal, Ahmedabad",
+  "seoDescription": "1,800 sq.ft Showroom for Sale · Shivalik Satymev, Bopal",
+  "geo": {
+    "lat": 23.02625373233864,
+    "lng": 72.47608517638908
+  }
+}

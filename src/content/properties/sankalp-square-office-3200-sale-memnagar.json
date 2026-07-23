@@ -1,0 +1,41 @@
+{
+  "title": "3,200 sq.ft Office for Sale · Sankalp Square, Memnagar",
+  "slug": "sankalp-square-office-3200-sale-memnagar",
+  "status": "sale",
+  "propertyType": "office",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹4.8 Cr",
+  "priceValue": 48000000,
+  "perSqftDisplay": "₹15,000 per sq.ft",
+  "localityName": "Memnagar",
+  "localitySlug": "memnagar",
+  "city": "Ahmedabad",
+  "address": "Driving Road, Ahmedabad",
+  "area": "3,200 sq.ft",
+  "areaSqft": 3200,
+  "floor": "First Floor",
+  "amenities": [],
+  "suitableFor": [
+    "Office",
+    "Corporate"
+  ],
+  "description": [
+    "office of 3,200 sq.ft for sale in Sankalp Square, Memnagar, Ahmedabad, first floor."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/sankalp-square-office-3200-sale-memnagar/photo-1.jpg",
+      "alt": "Sankalp Square, Memnagar — office photo",
+      "label": "Office photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/sankalp-square-office-3200-sale-memnagar/photo-1.jpg",
+  "newAt": "2026-07-23",
+  "seoTitle": "Office for Sale in Memnagar, Ahmedabad",
+  "seoDescription": "3,200 sq.ft Office for Sale · Sankalp Square, Memnagar",
+  "geo": {
+    "lat": 23.046318696518153,
+    "lng": 72.53635263554773
+  }
+}

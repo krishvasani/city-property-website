@@ -1,0 +1,42 @@
+{
+  "title": "3,000 sq.ft Showroom for Sale · West Port, Sindhu Bhavan Road",
+  "slug": "west-port-showroom-3000-sale-sindhu-bhavan-road",
+  "status": "sale",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹10.5 Cr",
+  "priceValue": 105000000,
+  "perSqftDisplay": "₹35,000 per sq.ft",
+  "localityName": "Sindhu Bhavan Road",
+  "localitySlug": "sindhu-bhavan-road",
+  "city": "Ahmedabad",
+  "address": "Sbr Road, Ahmedabad",
+  "area": "3,000 sq.ft",
+  "areaSqft": 3000,
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "showroom of 3,000 sq.ft for sale in West Port, Sindhu Bhavan Road, Ahmedabad, gf."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/west-port-showroom-3000-sale-sindhu-bhavan-road/photo-1.jpg",
+      "alt": "West Port, Sindhu Bhavan Road — showroom photo",
+      "label": "Showroom photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/west-port-showroom-3000-sale-sindhu-bhavan-road/photo-1.jpg",
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Sale in Sindhu Bhavan Road, Ahmedabad",
+  "seoDescription": "3,000 sq.ft Showroom for Sale · West Port, Sindhu Bhavan Road",
+  "geo": {
+    "lat": 23.03882533292628,
+    "lng": 72.50969729726887
+  }
+}

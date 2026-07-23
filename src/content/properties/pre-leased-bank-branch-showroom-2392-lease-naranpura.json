@@ -1,0 +1,42 @@
+{
+  "title": "Pre-leased Showroom · Naranpura, Ahmedabad",
+  "slug": "pre-leased-bank-branch-showroom-2392-lease-naranpura",
+  "status": "lease",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹220,000",
+  "priceValue": 220000,
+  "pricePer": "per month",
+  "localityName": "Naranpura",
+  "localitySlug": "naranpura",
+  "city": "Ahmedabad",
+  "address": "Naranpura, Ahmedabad",
+  "area": "2,392 sq.ft",
+  "areaSqft": 2392,
+  "furnishing": "Fully furnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Investment",
+    "Rental income"
+  ],
+  "description": [
+    "Pre-leased bank branch of 2,392 sq.ft in Naranpura, Ahmedabad, currently tenanted and let at ₹220,000 per month."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/pre-leased-bank-branch-showroom-2392-lease-naranpura/photo-1.jpg",
+      "alt": "Pre-leased bank branch, Naranpura — showroom photo",
+      "label": "Showroom photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/pre-leased-bank-branch-showroom-2392-lease-naranpura/photo-1.jpg",
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Lease in Naranpura, Ahmedabad",
+  "seoDescription": "Pre-leased Showroom · Naranpura, Ahmedabad",
+  "geo": {
+    "lat": 23.05163558089075,
+    "lng": 72.54736768569137
+  }
+}

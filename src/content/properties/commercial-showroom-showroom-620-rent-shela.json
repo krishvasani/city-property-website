@@ -1,0 +1,36 @@
+{
+  "title": "620 sq.ft Showroom for Rent · Commercial Showroom, Shela",
+  "slug": "commercial-showroom-showroom-620-rent-shela",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹50,000",
+  "priceValue": 50000,
+  "pricePer": "per month",
+  "localityName": "Shela",
+  "localitySlug": "shela",
+  "city": "Ahmedabad",
+  "address": "Shela, Ahmedabad",
+  "area": "620 sq.ft",
+  "areaSqft": 620,
+  "furnishing": "Unfurnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Unfurnished showroom of 620 sq.ft for rent in Commercial Showroom, Shela, Ahmedabad, gf."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in Shela, Ahmedabad",
+  "seoDescription": "620 sq.ft Showroom for Rent · Commercial Showroom, Shela",
+  "geo": {
+    "lat": 23.00613944513142,
+    "lng": 72.46761168348081
+  }
+}

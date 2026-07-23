@@ -1,0 +1,36 @@
+{
+  "title": "600 sq.ft Showroom for Rent · Commercial Showroom, Bodakdev",
+  "slug": "commercial-showroom-showroom-600-rent-bodakdev",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹65,000",
+  "priceValue": 65000,
+  "pricePer": "per month",
+  "localityName": "Bodakdev",
+  "localitySlug": "bodakdev",
+  "city": "Ahmedabad",
+  "address": "Bodakdev, Jages Bunglow, Ahmedabad",
+  "area": "600 sq.ft",
+  "areaSqft": 600,
+  "furnishing": "Unfurnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Unfurnished showroom of 600 sq.ft for rent in Commercial Showroom, Bodakdev, Ahmedabad, gf."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in Bodakdev, Ahmedabad",
+  "seoDescription": "600 sq.ft Showroom for Rent · Commercial Showroom, Bodakdev",
+  "geo": {
+    "lat": 23.034002048071223,
+    "lng": 72.52258006885174
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "title": "2,000 sq.ft Showroom for Rent · Commercial Showroom, Sindhu Bhavan Road",
+  "slug": "commercial-showroom-showroom-2000-rent-sindhu-bhavan-road",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹220,000",
+  "priceValue": 220000,
+  "pricePer": "per month",
+  "localityName": "Sindhu Bhavan Road",
+  "localitySlug": "sindhu-bhavan-road",
+  "city": "Ahmedabad",
+  "address": "Sindhubhavan Road, Ahmedabad",
+  "area": "2,000 sq.ft",
+  "areaSqft": 2000,
+  "furnishing": "Unfurnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Unfurnished showroom of 2,000 sq.ft for rent in Commercial Showroom, Sindhu Bhavan Road, Ahmedabad, gf."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in Sindhu Bhavan Road, Ahmedabad",
+  "seoDescription": "2,000 sq.ft Showroom for Rent · Commercial Showroom, Sindhu Bhavan Road",
+  "geo": {
+    "lat": 23.04103263575395,
+    "lng": 72.49865444246937
+  }
+}

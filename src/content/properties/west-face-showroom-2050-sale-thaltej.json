@@ -1,0 +1,42 @@
+{
+  "title": "2,050 sq.ft Showroom for Sale · West Face, Thaltej",
+  "slug": "west-face-showroom-2050-sale-thaltej",
+  "status": "sale",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹5.12 Cr",
+  "priceValue": 51250000,
+  "perSqftDisplay": "₹25,000 per sq.ft",
+  "localityName": "Thaltej",
+  "localitySlug": "thaltej",
+  "city": "Ahmedabad",
+  "address": "Zydus Road, Ahmedabad",
+  "area": "2,050 sq.ft",
+  "areaSqft": 2050,
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "showroom of 2,050 sq.ft for sale in West Face, Thaltej, Ahmedabad, gf."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/west-face-showroom-2050-sale-thaltej/photo-1.jpg",
+      "alt": "West Face, Thaltej — showroom photo",
+      "label": "Showroom photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/west-face-showroom-2050-sale-thaltej/photo-1.jpg",
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Sale in Thaltej, Ahmedabad",
+  "seoDescription": "2,050 sq.ft Showroom for Sale · West Face, Thaltej",
+  "geo": {
+    "lat": 23.052483009161485,
+    "lng": 72.50078078690466
+  }
+}

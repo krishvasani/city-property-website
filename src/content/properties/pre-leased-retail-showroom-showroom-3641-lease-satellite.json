@@ -1,0 +1,42 @@
+{
+  "title": "Pre-leased Showroom · Satellite, Ahmedabad",
+  "slug": "pre-leased-retail-showroom-showroom-3641-lease-satellite",
+  "status": "lease",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹408,365",
+  "priceValue": 408365,
+  "pricePer": "per month",
+  "localityName": "Satellite",
+  "localitySlug": "satellite",
+  "city": "Ahmedabad",
+  "address": "Satellite, Ahmedabad",
+  "area": "3,641 sq.ft",
+  "areaSqft": 3641,
+  "furnishing": "Fully furnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Investment",
+    "Rental income"
+  ],
+  "description": [
+    "Pre-leased retail showroom of 3,641 sq.ft in Satellite, Ahmedabad, currently tenanted and let at ₹408,365 per month."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/pre-leased-retail-showroom-showroom-3641-lease-satellite/photo-1.jpg",
+      "alt": "Pre-leased retail showroom, Satellite — showroom photo",
+      "label": "Showroom photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/pre-leased-retail-showroom-showroom-3641-lease-satellite/photo-1.jpg",
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Lease in Satellite, Ahmedabad",
+  "seoDescription": "Pre-leased Showroom · Satellite, Ahmedabad",
+  "geo": {
+    "lat": 23.025705008699713,
+    "lng": 72.4781536741237
+  }
+}

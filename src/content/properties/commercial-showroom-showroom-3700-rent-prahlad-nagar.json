@@ -1,0 +1,36 @@
+{
+  "title": "3,700 sq.ft Showroom for Rent · Commercial Showroom, Prahladnagar",
+  "slug": "commercial-showroom-showroom-3700-rent-prahlad-nagar",
+  "status": "rent",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹350,000",
+  "priceValue": 350000,
+  "pricePer": "per month",
+  "localityName": "Prahladnagar",
+  "localitySlug": "prahlad-nagar",
+  "city": "Ahmedabad",
+  "address": "Anand Nagar Cross Road, Sattlite, Ahmedabad",
+  "area": "3,700 sq.ft",
+  "areaSqft": 3700,
+  "furnishing": "Unfurnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Retail",
+    "Showroom",
+    "Brand store"
+  ],
+  "description": [
+    "Unfurnished showroom of 3,700 sq.ft for rent in Commercial Showroom, Prahladnagar, Ahmedabad, gf."
+  ],
+  "photos": [],
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Rent in Prahladnagar, Ahmedabad",
+  "seoDescription": "3,700 sq.ft Showroom for Rent · Commercial Showroom, Prahladnagar",
+  "geo": {
+    "lat": 23.01125094532768,
+    "lng": 72.51574882532091
+  }
+}

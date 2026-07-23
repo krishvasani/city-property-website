@@ -1,0 +1,42 @@
+{
+  "title": "Pre-leased Showroom · Vastrapur, Ahmedabad",
+  "slug": "pre-leased-bank-branch-showroom-1747-lease-vastrapur",
+  "status": "lease",
+  "propertyType": "showroom",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹160,000",
+  "priceValue": 160000,
+  "pricePer": "per month",
+  "localityName": "Vastrapur",
+  "localitySlug": "vastrapur",
+  "city": "Ahmedabad",
+  "address": "Ahmedabad West ( Vastrapur ), Ahmedabad",
+  "area": "1,747 sq.ft",
+  "areaSqft": 1747,
+  "furnishing": "Fully furnished",
+  "floor": "Gf",
+  "amenities": [],
+  "suitableFor": [
+    "Investment",
+    "Rental income"
+  ],
+  "description": [
+    "Pre-leased bank branch of 1,747 sq.ft in Vastrapur, Ahmedabad, currently tenanted and let at ₹160,000 per month."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/pre-leased-bank-branch-showroom-1747-lease-vastrapur/photo-1.jpg",
+      "alt": "Pre-leased bank branch, Vastrapur — showroom photo",
+      "label": "Showroom photo"
+    }
+  ],
+  "mainImage": "/uploads/properties/pre-leased-bank-branch-showroom-1747-lease-vastrapur/photo-1.jpg",
+  "newAt": "2026-07-23",
+  "seoTitle": "Showroom for Lease in Vastrapur, Ahmedabad",
+  "seoDescription": "Pre-leased Showroom · Vastrapur, Ahmedabad",
+  "geo": {
+    "lat": 23.041770041256036,
+    "lng": 72.5284364041737
+  }
+}
