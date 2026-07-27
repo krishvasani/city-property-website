@@ -33,6 +33,25 @@
   status = 301
   force = true
 
+# Secondary domain: citypropertyservices.in is a redirecting mirror. Every
+# request (apex + www) 301s to the matching path on cityprop.co.in, so the two
+# names consolidate on one canonical site for SEO and branding.
+# Prerequisite (dashboard + DNS, done once): add citypropertyservices.in and
+# www.citypropertyservices.in as domain aliases on this Netlify site, and point
+# their GoDaddy DNS at Netlify (apex A → 75.2.60.5; www CNAME →
+# city-property-ahmedabad.netlify.app). Keep cityprop.co.in as the primary.
+[[redirects]]
+  from = "https://citypropertyservices.in/*"
+  to = "https://cityprop.co.in/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.citypropertyservices.in/*"
+  to = "https://cityprop.co.in/:splat"
+  status = 301
+  force = true
+
 # NOTE on lead capture:
 # Forms are plain HTML with data-netlify="true", so Netlify auto-detects them
 # at build (forms: viewing, valuation, contact). After the first deploy, open

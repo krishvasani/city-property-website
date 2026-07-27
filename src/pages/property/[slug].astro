@@ -157,14 +157,14 @@ if (!onRequest) {
       <div>
         <FactsGrid property={property} />
 
-        {property.description?.length && (
+        {(property.description?.length ?? 0) > 0 && (
           <div class="block desc reveal">
             <h3>About this home</h3>
             {property.description.map((para) => <p>{para}</p>)}
           </div>
         )}
 
-        {property.amenities?.length && (
+        {(property.amenities?.length ?? 0) > 0 && (
           <div class="block reveal">
             <h3>Amenities</h3>
             <div class="amen" data-stagger>
@@ -186,7 +186,7 @@ if (!onRequest) {
           </div>
         )}
 
-        {property.suitableFor?.length && (
+        {(property.suitableFor?.length ?? 0) > 0 && (
           <div class="block reveal">
             <h3>Suitable for</h3>
             <div class="row" style="flex-wrap:wrap;gap:8px;">
