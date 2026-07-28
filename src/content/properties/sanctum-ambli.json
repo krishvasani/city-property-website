@@ -1,0 +1,34 @@
+{
+  "title": "4 BHK Flats for Sale · Sanctum, Ambli",
+  "slug": "sanctum-ambli",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.3 to 2.7 Cr",
+  "priceValue": 23000000,
+  "localityName": "Ambli",
+  "localitySlug": "ambli",
+  "city": "Ahmedabad",
+  "address": "Sanctum, Ambli, Ahmedabad",
+  "beds": 4,
+  "amenities": [],
+  "suitableFor": [
+    "New project",
+    "End use",
+    "Investment"
+  ],
+  "description": [
+    "Sanctum is an under construction residential project by Dev Shrushti / Ratilal Group in Ambli, Ahmedabad, offering 4 BHK homes. Possession: Dec 2025.",
+    "Priced from approximately ₹2.3 to 2.7 Cr. Located behind Shell Petrol Pump."
+  ],
+  "photos": [],
+  "newAt": "2026-07-28",
+  "possession": "Dec 2025",
+  "seoTitle": "Sanctum, Ambli: 4 BHK Flats",
+  "seoDescription": "Sanctum is an under construction residential project by Dev Shrushti / Ratilal Group in Ambli, Ahmedabad, offering 4 BHK homes.",
+  "geo": {
+    "lat": 23.02913,
+    "lng": 72.4857
+  }
+}

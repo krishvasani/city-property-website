@@ -1,0 +1,34 @@
+{
+  "title": "4 BHK Flats for Sale · Saiyamm Apricus, Ambli",
+  "slug": "saiyamm-apricus-ambli",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹4.4 to 4.5 Cr",
+  "priceValue": 44000000,
+  "localityName": "Ambli",
+  "localitySlug": "ambli",
+  "city": "Ahmedabad",
+  "address": "Saiyamm Apricus, Ambli, Ahmedabad",
+  "beds": 4,
+  "amenities": [],
+  "suitableFor": [
+    "New project",
+    "End use",
+    "Investment"
+  ],
+  "description": [
+    "Saiyamm Apricus is an under construction residential project by Saiyamm Realty in Ambli, Ahmedabad, offering 4 BHK homes. Possession: Dec 2026 / research Dec 2027.",
+    "Priced from approximately ₹4.4 to 4.5 Cr. Located near The Waterfall."
+  ],
+  "photos": [],
+  "newAt": "2026-07-28",
+  "possession": "CPS Dec 2026 / research Dec 2027",
+  "seoTitle": "Saiyamm Apricus, Ambli: 4 BHK Flats",
+  "seoDescription": "Saiyamm Apricus is an under construction residential project by Saiyamm Realty in Ambli, Ahmedabad, offering 4 BHK homes.",
+  "geo": {
+    "lat": 23.02877,
+    "lng": 72.47377
+  }
+}

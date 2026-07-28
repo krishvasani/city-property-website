@@ -1,0 +1,32 @@
+{
+  "title": "5 BHK Flats for Sale · PV Antares, Ambli",
+  "slug": "pv-antares-ambli",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Ambli",
+  "localitySlug": "ambli",
+  "city": "Ahmedabad",
+  "address": "PV Antares, Ambli, Ahmedabad",
+  "beds": 5,
+  "amenities": [],
+  "suitableFor": [
+    "New project",
+    "End use",
+    "Investment"
+  ],
+  "description": [
+    "PV Antares is a ready to move residential project by Parshwa Infra Ventures in Ambli, Ahmedabad, offering 5 BHK homes. Ready to move in."
+  ],
+  "photos": [],
+  "newAt": "2026-07-28",
+  "seoTitle": "PV Antares, Ambli: 5 BHK Flats",
+  "seoDescription": "PV Antares is a ready to move residential project by Parshwa Infra Ventures in Ambli, Ahmedabad, offering 5 BHK homes.",
+  "geo": {
+    "lat": 23.0334,
+    "lng": 72.46821
+  }
+}

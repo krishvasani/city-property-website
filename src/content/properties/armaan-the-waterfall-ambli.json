@@ -1,0 +1,33 @@
+{
+  "title": "4 BHK Flats for Sale · Armaan The Waterfall, Ambli",
+  "slug": "armaan-the-waterfall-ambli",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Ambli",
+  "localitySlug": "ambli",
+  "city": "Ahmedabad",
+  "address": "Armaan The Waterfall, Ambli, Ahmedabad",
+  "beds": 4,
+  "amenities": [],
+  "suitableFor": [
+    "New project",
+    "End use",
+    "Investment"
+  ],
+  "description": [
+    "Armaan The Waterfall is a ready to move residential project by Armaan Infrastructure in Ambli, Ahmedabad, offering 4 BHK homes. Ready to move in.",
+    "Located near Altius Vibe."
+  ],
+  "photos": [],
+  "newAt": "2026-07-28",
+  "seoTitle": "Armaan The Waterfall, Ambli: 4 BHK Flats",
+  "seoDescription": "Armaan The Waterfall is a ready to move residential project by Armaan Infrastructure in Ambli, Ahmedabad, offering 4 BHK homes.",
+  "geo": {
+    "lat": 23.02471,
+    "lng": 72.47604
+  }
+}

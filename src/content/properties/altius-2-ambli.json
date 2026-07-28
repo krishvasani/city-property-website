@@ -1,0 +1,32 @@
+{
+  "title": "4 BHK Flats for Sale · Altius 2, Ambli",
+  "slug": "altius-2-ambli",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Ambli",
+  "localitySlug": "ambli",
+  "city": "Ahmedabad",
+  "address": "Altius 2, Ambli, Ahmedabad",
+  "beds": 4,
+  "amenities": [],
+  "suitableFor": [
+    "New project",
+    "End use",
+    "Investment"
+  ],
+  "description": [
+    "Altius 2 is a ready to move residential project by Synthesis Spacelinks in Ambli, Ahmedabad, offering 4 BHK homes. Ready to move in."
+  ],
+  "photos": [],
+  "newAt": "2026-07-28",
+  "seoTitle": "Altius 2, Ambli: 4 BHK Flats",
+  "seoDescription": "Altius 2 is a ready to move residential project by Synthesis Spacelinks in Ambli, Ahmedabad, offering 4 BHK homes.",
+  "geo": {
+    "lat": 23.03964,
+    "lng": 72.48113
+  }
+}

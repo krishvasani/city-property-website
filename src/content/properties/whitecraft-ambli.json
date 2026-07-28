@@ -1,0 +1,34 @@
+{
+  "title": "4 BHK Flats for Sale · Whitecraft, Ambli",
+  "slug": "whitecraft-ambli",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹5.2 to 5.4 Cr",
+  "priceValue": 52000000,
+  "localityName": "Ambli",
+  "localitySlug": "ambli",
+  "city": "Ahmedabad",
+  "address": "Whitecraft, Ambli, Ahmedabad",
+  "beds": 4,
+  "amenities": [],
+  "suitableFor": [
+    "New project",
+    "End use",
+    "Investment"
+  ],
+  "description": [
+    "Whitecraft is an under construction residential project in Ambli, Ahmedabad, offering 4 BHK homes. Possession: approx 2025.",
+    "Priced from approximately ₹5.2 to 5.4 Cr. Located beside Tranquil."
+  ],
+  "photos": [],
+  "newAt": "2026-07-28",
+  "possession": "approx 2025",
+  "seoTitle": "Whitecraft, Ambli: 4 BHK Flats",
+  "seoDescription": "Whitecraft is an under construction residential project in Ambli, Ahmedabad, offering 4 BHK homes.",
+  "geo": {
+    "lat": 23.02859,
+    "lng": 72.48661
+  }
+}

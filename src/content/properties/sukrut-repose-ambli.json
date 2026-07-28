@@ -1,0 +1,32 @@
+{
+  "title": "3 BHK Flats for Sale · Sukrut Repose, Ambli",
+  "slug": "sukrut-repose-ambli",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Ambli",
+  "localitySlug": "ambli",
+  "city": "Ahmedabad",
+  "address": "Sukrut Repose, Ambli, Ahmedabad",
+  "beds": 3,
+  "amenities": [],
+  "suitableFor": [
+    "New project",
+    "End use",
+    "Investment"
+  ],
+  "description": [
+    "Sukrut Repose is a ready to move residential project by Ess Gee Sukrut in Ambli, Ahmedabad, offering 3 BHK homes. Ready to move in."
+  ],
+  "photos": [],
+  "newAt": "2026-07-28",
+  "seoTitle": "Sukrut Repose, Ambli: 3 BHK Flats",
+  "seoDescription": "Sukrut Repose is a ready to move residential project by Ess Gee Sukrut in Ambli, Ahmedabad, offering 3 BHK homes.",
+  "geo": {
+    "lat": 23.03489,
+    "lng": 72.48897
+  }
+}

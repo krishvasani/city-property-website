@@ -1,0 +1,33 @@
+{
+  "title": "4 BHK Flats for Sale · Sankalp Grace II, Ambli",
+  "slug": "sankalp-grace-ii-ambli",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Ambli",
+  "localitySlug": "ambli",
+  "city": "Ahmedabad",
+  "address": "Sankalp Grace II, Ambli, Ahmedabad",
+  "beds": 4,
+  "amenities": [],
+  "suitableFor": [
+    "New project",
+    "End use",
+    "Investment"
+  ],
+  "description": [
+    "Sankalp Grace II is a ready to move residential project by Sankalp Realty in Ambli, Ahmedabad, offering 4 BHK homes. Ready to move in.",
+    "Located near Sentosa Park."
+  ],
+  "photos": [],
+  "newAt": "2026-07-28",
+  "seoTitle": "Sankalp Grace II, Ambli: 4 BHK Flats",
+  "seoDescription": "Sankalp Grace II is a ready to move residential project by Sankalp Realty in Ambli, Ahmedabad, offering 4 BHK homes.",
+  "geo": {
+    "lat": 23.03515,
+    "lng": 72.48156
+  }
+}

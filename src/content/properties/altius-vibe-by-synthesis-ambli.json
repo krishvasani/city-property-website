@@ -1,0 +1,33 @@
+{
+  "title": "4 BHK Flats for Sale · Altius Vibe by Synthesis, Ambli",
+  "slug": "altius-vibe-by-synthesis-ambli",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Ambli",
+  "localitySlug": "ambli",
+  "city": "Ahmedabad",
+  "address": "Altius Vibe by Synthesis, Ambli, Ahmedabad",
+  "beds": 4,
+  "amenities": [],
+  "suitableFor": [
+    "New project",
+    "End use",
+    "Investment"
+  ],
+  "description": [
+    "Altius Vibe by Synthesis is a ready to move residential project by Synthesis Spacelinks in Ambli, Ahmedabad, offering 4 BHK homes. Ready to move in.",
+    "Located behind Wipro SEZ."
+  ],
+  "photos": [],
+  "newAt": "2026-07-28",
+  "seoTitle": "Altius Vibe by Synthesis, Ambli: 4 BHK Flats",
+  "seoDescription": "Altius Vibe by Synthesis is a ready to move residential project by Synthesis Spacelinks in Ambli, Ahmedabad, offering 4 BHK homes.",
+  "geo": {
+    "lat": 23.02861,
+    "lng": 72.46805
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "title": "4 BHK Flats for Sale · Maruti Aatman, Ambli",
+  "slug": "maruti-aatman-ambli",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹4.5 to 4.7 Cr",
+  "priceValue": 45000000,
+  "localityName": "Ambli",
+  "localitySlug": "ambli",
+  "city": "Ahmedabad",
+  "address": "Maruti Aatman, Ambli, Ahmedabad",
+  "beds": 4,
+  "amenities": [],
+  "suitableFor": [
+    "New project",
+    "End use",
+    "Investment"
+  ],
+  "description": [
+    "Maruti Aatman is an under construction residential project by Maruti Buildcon in Ambli, Ahmedabad, offering 4 BHK homes. Possession: approx 2025 / research Jun 2028 (verify).",
+    "Priced from approximately ₹4.5 to 4.7 Cr. Located near Altius 2."
+  ],
+  "photos": [],
+  "newAt": "2026-07-28",
+  "possession": "CPS approx 2025 / research Jun 2028 (verify)",
+  "seoTitle": "Maruti Aatman, Ambli: 4 BHK Flats",
+  "seoDescription": "Maruti Aatman is an under construction residential project by Maruti Buildcon in Ambli, Ahmedabad, offering 4 BHK homes.",
+  "geo": {
+    "lat": 23.04099,
+    "lng": 72.48471
+  }
+}

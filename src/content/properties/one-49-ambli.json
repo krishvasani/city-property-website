@@ -1,0 +1,32 @@
+{
+  "title": "3 & 4 BHK + Penthouse Flats for Sale · One 49, Ambli",
+  "slug": "one-49-ambli",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Ambli",
+  "localitySlug": "ambli",
+  "city": "Ahmedabad",
+  "address": "One 49, Ambli, Ahmedabad",
+  "beds": 3,
+  "amenities": [],
+  "suitableFor": [
+    "New project",
+    "End use",
+    "Investment"
+  ],
+  "description": [
+    "One 49 is a ready to move residential project by Amaya Properties in Ambli, Ahmedabad, offering 3 & 4 BHK + Penthouse homes. Ready to move in."
+  ],
+  "photos": [],
+  "newAt": "2026-07-28",
+  "seoTitle": "One 49, Ambli: 3 & 4 BHK + Penthouse Flats",
+  "seoDescription": "One 49 is a ready to move residential project by Amaya Properties in Ambli, Ahmedabad, offering 3 & 4 BHK + Penthouse homes.",
+  "geo": {
+    "lat": 23.04001,
+    "lng": 72.46955
+  }
+}

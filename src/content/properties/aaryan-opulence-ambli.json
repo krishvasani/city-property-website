@@ -1,0 +1,33 @@
+{
+  "title": "3 & 4 BHK Flats for Sale · Aaryan Opulence, Ambli",
+  "slug": "aaryan-opulence-ambli",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Ambli",
+  "localitySlug": "ambli",
+  "city": "Ahmedabad",
+  "address": "Aaryan Opulence, Ambli, Ahmedabad",
+  "beds": 3,
+  "amenities": [],
+  "suitableFor": [
+    "New project",
+    "End use",
+    "Investment"
+  ],
+  "description": [
+    "Aaryan Opulence is a ready to move residential project by Aaryan Developers in Ambli, Ahmedabad, offering 3 & 4 BHK homes. Ready to move in.",
+    "Located near Jayantilal Park."
+  ],
+  "photos": [],
+  "newAt": "2026-07-28",
+  "seoTitle": "Aaryan Opulence, Ambli: 3 & 4 BHK Flats",
+  "seoDescription": "Aaryan Opulence is a ready to move residential project by Aaryan Developers in Ambli, Ahmedabad, offering 3 & 4 BHK homes.",
+  "geo": {
+    "lat": 23.04627,
+    "lng": 72.47612
+  }
+}

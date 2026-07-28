@@ -1,0 +1,33 @@
+{
+  "title": "5 BHK Flats for Sale · Swati Senor, Ambli",
+  "slug": "swati-senor-ambli",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Ambli",
+  "localitySlug": "ambli",
+  "city": "Ahmedabad",
+  "address": "Swati Senor, Ambli, Ahmedabad",
+  "beds": 5,
+  "amenities": [],
+  "suitableFor": [
+    "New project",
+    "End use",
+    "Investment"
+  ],
+  "description": [
+    "Swati Senor is a ready to move residential project by Swati Procon in Ambli, Ahmedabad, offering 5 BHK homes. Ready to move in.",
+    "Located near Shell Petrol Pump."
+  ],
+  "photos": [],
+  "newAt": "2026-07-28",
+  "seoTitle": "Swati Senor, Ambli: 5 BHK Flats",
+  "seoDescription": "Swati Senor is a ready to move residential project by Swati Procon in Ambli, Ahmedabad, offering 5 BHK homes.",
+  "geo": {
+    "lat": 23.04278,
+    "lng": 72.47531
+  }
+}
