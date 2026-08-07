@@ -17,7 +17,18 @@
     "Fully furnished 4 BHK bungalow in Gulmohar Greens, Science City, on a 416 sq.yd plot with 667 sq.yd of construction.",
     "A spacious family bungalow in a gated scheme, about 15 years old. Priced at ₹8 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/gulmohar-greens-bungalow-science-city/photo-1.jpg",
+      "alt": "Gulmohar Greens, Science City — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/gulmohar-greens-bungalow-science-city/photo-2.jpg",
+      "alt": "Gulmohar Greens, Science City — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-06-11",
   "seoTitle": "Gulmohar Greens Science City | City Property Services",
   "seoDescription": "Fully furnished 4 BHK bungalow in Gulmohar Greens, Science City, on a 416 sq.yd plot with 667 sq.yd of construction.",
@@ -30,5 +41,6 @@
     "lat": 23.072070460990656,
     "lng": 72.5163582099336
   },
-  "localitySlug": "science-city"
+  "localitySlug": "science-city",
+  "mainImage": "/uploads/properties/gulmohar-greens-bungalow-science-city/photo-1.jpg"
 }

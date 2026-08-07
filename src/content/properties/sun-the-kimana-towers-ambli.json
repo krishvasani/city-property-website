@@ -22,7 +22,18 @@
     "Sun The Kimana Towers is an under construction residential project by Sun Builders in Ambli, Ahmedabad, offering 4 & 5 BHK + Penthouse homes. Possession: Dec 2026.",
     "Priced from approximately ₹5.7 to 7.7 Cr. Located opposite Skydeck Select."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/sun-the-kimana-towers-ambli/photo-1.jpg",
+      "alt": "Sun The Kimana Towers, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/sun-the-kimana-towers-ambli/photo-2.jpg",
+      "alt": "Sun The Kimana Towers, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "Dec 2026",
   "seoTitle": "Sun The Kimana Towers, Ambli: 4 & 5 BHK + Penthouse Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.03587,
     "lng": 72.47356
-  }
+  },
+  "mainImage": "/uploads/properties/sun-the-kimana-towers-ambli/photo-1.jpg"
 }

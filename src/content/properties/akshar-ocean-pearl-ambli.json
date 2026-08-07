@@ -22,7 +22,18 @@
     "Akshar Ocean Pearl is an under construction residential project by Keshav Narayan Buildcon in Ambli, Ahmedabad, offering 4 BHK homes. Possession: Dec 2024 / research Mar 2027 (verify, may be ready).",
     "Priced from approximately ₹2.1 to 2.6 Cr. Located behind Maruti Service Centre."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/akshar-ocean-pearl-ambli/photo-1.jpg",
+      "alt": "Akshar Ocean Pearl, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/akshar-ocean-pearl-ambli/photo-2.jpg",
+      "alt": "Akshar Ocean Pearl, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "CPS Dec 2024 / research Mar 2027 (verify, may be ready)",
   "seoTitle": "Akshar Ocean Pearl, Ambli: 4 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.03532,
     "lng": 72.47251
-  }
+  },
+  "mainImage": "/uploads/properties/akshar-ocean-pearl-ambli/photo-1.jpg"
 }

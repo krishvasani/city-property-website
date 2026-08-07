@@ -22,7 +22,18 @@
     "Lilamani La Marque is an under construction residential project by Lilamani Group in Ambli, Ahmedabad, offering 4 & 5 BHK Duplex homes. Possession: Under construction.",
     "Located near Altius 2."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/lilamani-la-marque-ambli/photo-1.jpg",
+      "alt": "Lilamani La Marque, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/lilamani-la-marque-ambli/photo-2.jpg",
+      "alt": "Lilamani La Marque, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "Under construction",
   "seoTitle": "Lilamani La Marque, Ambli: 4 & 5 BHK Duplex Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.04372,
     "lng": 72.47659
-  }
+  },
+  "mainImage": "/uploads/properties/lilamani-la-marque-ambli/photo-1.jpg"
 }

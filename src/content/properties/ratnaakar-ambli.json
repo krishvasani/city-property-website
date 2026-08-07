@@ -22,7 +22,18 @@
     "Ratnaakar is an under construction residential project by Ratnaakar Group in Ambli, Ahmedabad, offering 4 & 5 BHK homes. Possession: Verify.",
     "Priced from approximately ₹5.6 to 7.3 Cr. Located near Tranquil."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/ratnaakar-ambli/photo-1.jpg",
+      "alt": "Ratnaakar, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/ratnaakar-ambli/photo-2.jpg",
+      "alt": "Ratnaakar, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "Verify",
   "seoTitle": "Ratnaakar, Ambli: 4 & 5 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.041,
     "lng": 72.47824
-  }
+  },
+  "mainImage": "/uploads/properties/ratnaakar-ambli/photo-1.jpg"
 }

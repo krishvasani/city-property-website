@@ -25,8 +25,23 @@
   "photos": [
     {
       "url": "/uploads/properties/sankalp-grace-3-apartment-3920-sale-thaltej/photo-1.jpg",
-      "alt": "Sankalp Grace 3, Thaltej — flat photo",
-      "label": "Flat photo"
+      "alt": "Sankalp Grace 3, Thaltej — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-grace-3-apartment-3920-sale-thaltej/photo-2.jpg",
+      "alt": "Sankalp Grace 3, Thaltej — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-grace-3-apartment-3920-sale-thaltej/photo-3.jpg",
+      "alt": "Sankalp Grace 3, Thaltej — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-grace-3-apartment-3920-sale-thaltej/photo-4.jpg",
+      "alt": "Sankalp Grace 3, Thaltej — project photo",
+      "label": "Project photo"
     }
   ],
   "mainImage": "/uploads/properties/sankalp-grace-3-apartment-3920-sale-thaltej/photo-1.jpg",

@@ -24,8 +24,28 @@
   "photos": [
     {
       "url": "/uploads/properties/iscon-platinum-apartment-3000-rent-bopal/photo-1.jpg",
-      "alt": "Iscon Platinum, Bopal — flat photo",
-      "label": "Flat photo"
+      "alt": "Iscon Platinum, Bopal — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/iscon-platinum-apartment-3000-rent-bopal/photo-2.jpg",
+      "alt": "Iscon Platinum, Bopal — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/iscon-platinum-apartment-3000-rent-bopal/photo-3.jpg",
+      "alt": "Iscon Platinum, Bopal — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/iscon-platinum-apartment-3000-rent-bopal/photo-4.jpg",
+      "alt": "Iscon Platinum, Bopal — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/iscon-platinum-apartment-3000-rent-bopal/photo-5.jpg",
+      "alt": "Iscon Platinum, Bopal — project photo",
+      "label": "Project photo"
     }
   ],
   "mainImage": "/uploads/properties/iscon-platinum-apartment-3000-rent-bopal/photo-1.jpg",

@@ -22,12 +22,24 @@
     "Parshwa Luxuria is a ready to move residential project by Parshwa Infra Ventures in Ambli, Ahmedabad, offering 4 & 5 BHK homes. Ready to move in.",
     "Located behind Altius 2."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/parshwa-luxuria-ambli/photo-1.jpg",
+      "alt": "Parshwa Luxuria, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/parshwa-luxuria-ambli/photo-2.jpg",
+      "alt": "Parshwa Luxuria, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "seoTitle": "Parshwa Luxuria, Ambli: 4 & 5 BHK Flats",
   "seoDescription": "Parshwa Luxuria is a ready to move residential project by Parshwa Infra Ventures in Ambli, Ahmedabad, offering 4 & 5 BHK homes.",
   "geo": {
     "lat": 23.04058,
     "lng": 72.47348
-  }
+  },
+  "mainImage": "/uploads/properties/parshwa-luxuria-ambli/photo-1.jpg"
 }

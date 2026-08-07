@@ -21,12 +21,29 @@
   "description": [
     "AYAAN by Parshwa is a ready to move residential project by Parshwa Infra Ventures in Ambli, Ahmedabad, offering 4 BHK homes. Ready to move in."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/ayaan-by-parshwa-ambli/photo-1.jpg",
+      "alt": "AYAAN by Parshwa, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/ayaan-by-parshwa-ambli/photo-2.jpg",
+      "alt": "AYAAN by Parshwa, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/ayaan-by-parshwa-ambli/photo-3.jpg",
+      "alt": "AYAAN by Parshwa, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "seoTitle": "AYAAN by Parshwa, Ambli: 4 BHK Flats",
   "seoDescription": "AYAAN by Parshwa is a ready to move residential project by Parshwa Infra Ventures in Ambli, Ahmedabad, offering 4 BHK homes.",
   "geo": {
     "lat": 23.03009,
     "lng": 72.48563
-  }
+  },
+  "mainImage": "/uploads/properties/ayaan-by-parshwa-ambli/photo-1.jpg"
 }

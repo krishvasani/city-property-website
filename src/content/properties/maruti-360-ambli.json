@@ -22,7 +22,18 @@
     "Maruti 360 is an under construction residential project by Maruti Buildcon in Ambli, Ahmedabad, offering 4 & 5 BHK Duplex + Penthouse homes. Possession: Dec 2028.",
     "Priced from approximately ₹6 to 8.1 Cr. Located opposite Novotel."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/maruti-360-ambli/photo-1.jpg",
+      "alt": "Maruti 360, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/maruti-360-ambli/photo-2.jpg",
+      "alt": "Maruti 360, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "Dec 2028",
   "seoTitle": "Maruti 360, Ambli: 4 & 5 BHK Duplex + Penthouse Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.02895,
     "lng": 72.48123
-  }
+  },
+  "mainImage": "/uploads/properties/maruti-360-ambli/photo-1.jpg"
 }

@@ -21,12 +21,24 @@
   "description": [
     "PV Antares is a ready to move residential project by Parshwa Infra Ventures in Ambli, Ahmedabad, offering 5 BHK homes. Ready to move in."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/pv-antares-ambli/photo-1.jpg",
+      "alt": "PV Antares, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/pv-antares-ambli/photo-2.jpg",
+      "alt": "PV Antares, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "seoTitle": "PV Antares, Ambli: 5 BHK Flats",
   "seoDescription": "PV Antares is a ready to move residential project by Parshwa Infra Ventures in Ambli, Ahmedabad, offering 5 BHK homes.",
   "geo": {
     "lat": 23.0334,
     "lng": 72.46821
-  }
+  },
+  "mainImage": "/uploads/properties/pv-antares-ambli/photo-1.jpg"
 }

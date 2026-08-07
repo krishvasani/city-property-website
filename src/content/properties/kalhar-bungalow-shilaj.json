@@ -17,7 +17,18 @@
     "4 BHK bungalow in the Kalhar scheme, Shilaj, on a large 800 sq.yd plot with 250 sq.yd of construction.",
     "Priced at ₹1,15,000 per sq.yd, which works out to about ₹9.2 Cr. Around 15 years old."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/kalhar-bungalow-shilaj/photo-1.jpg",
+      "alt": "Kalhar Bungalow, Shilaj — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/kalhar-bungalow-shilaj/photo-2.jpg",
+      "alt": "Kalhar Bungalow, Shilaj — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-06-11",
   "seoTitle": "Kalhar Bungalow Shilaj | City Property Services",
   "seoDescription": "4 BHK bungalow in the Kalhar scheme, Shilaj, on a large 800 sq.yd plot with 250 sq.yd of construction.",
@@ -30,5 +41,6 @@
     "lat": 23.054871382865112,
     "lng": 72.46870429173967
   },
-  "localitySlug": "shilaj"
+  "localitySlug": "shilaj",
+  "mainImage": "/uploads/properties/kalhar-bungalow-shilaj/photo-1.jpg"
 }

@@ -18,7 +18,23 @@
     "4 BHK flat of 2,700 sq.ft in Pushpraj Tower, Bodakdev, on the 10th floor.",
     "Two lifts, over 10 years old. Priced at ₹2.35 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/pushpraj-tower-4bhk-bodakdev/photo-1.jpg",
+      "alt": "Pushpraj Tower, Bodakdev — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/pushpraj-tower-4bhk-bodakdev/photo-2.jpg",
+      "alt": "Pushpraj Tower, Bodakdev — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/pushpraj-tower-4bhk-bodakdev/photo-3.jpg",
+      "alt": "Pushpraj Tower, Bodakdev — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-06-11",
   "seoTitle": "Pushpraj Tower Bodakdev | City Property Services",
   "seoDescription": "4 BHK flat of 2,700 sq.ft in Pushpraj Tower, Bodakdev, on the 10th floor.",
@@ -30,5 +46,6 @@
     "lat": 23.038292125045512,
     "lng": 72.51017393036462
   },
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "mainImage": "/uploads/properties/pushpraj-tower-4bhk-bodakdev/photo-1.jpg"
 }

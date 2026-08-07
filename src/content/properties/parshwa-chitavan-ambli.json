@@ -22,7 +22,18 @@
     "Parshwa Chitavan is an under construction residential project by Parshwa in Ambli, Ahmedabad, offering 5 BHK homes. Possession: 2030.",
     "Priced from approximately ₹9.9 to 10 Cr. Located beside Rajyash Rise."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/parshwa-chitavan-ambli/photo-1.jpg",
+      "alt": "Parshwa Chitavan, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/parshwa-chitavan-ambli/photo-2.jpg",
+      "alt": "Parshwa Chitavan, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "2030",
   "seoTitle": "Parshwa Chitavan, Ambli: 5 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.03612,
     "lng": 72.47479
-  }
+  },
+  "mainImage": "/uploads/properties/parshwa-chitavan-ambli/photo-1.jpg"
 }

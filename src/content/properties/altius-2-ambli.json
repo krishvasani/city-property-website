@@ -21,12 +21,34 @@
   "description": [
     "Altius 2 is a ready to move residential project by Synthesis Spacelinks in Ambli, Ahmedabad, offering 4 BHK homes. Ready to move in."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/altius-2-ambli/photo-1.jpg",
+      "alt": "Altius 2, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/altius-2-ambli/photo-2.jpg",
+      "alt": "Altius 2, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/altius-2-ambli/photo-3.jpg",
+      "alt": "Altius 2, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/altius-2-ambli/photo-4.jpg",
+      "alt": "Altius 2, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "seoTitle": "Altius 2, Ambli: 4 BHK Flats",
   "seoDescription": "Altius 2 is a ready to move residential project by Synthesis Spacelinks in Ambli, Ahmedabad, offering 4 BHK homes.",
   "geo": {
     "lat": 23.03964,
     "lng": 72.48113
-  }
+  },
+  "mainImage": "/uploads/properties/altius-2-ambli/photo-1.jpg"
 }

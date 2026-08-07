@@ -21,12 +21,24 @@
   "description": [
     "Surya Emerald is a ready to move residential project by Surya Buildcon in Ambli, Ahmedabad, offering 3 & 4 BHK homes. Ready to move in."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/surya-emerald-ambli/photo-1.jpg",
+      "alt": "Surya Emerald, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/surya-emerald-ambli/photo-2.jpg",
+      "alt": "Surya Emerald, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "seoTitle": "Surya Emerald, Ambli: 3 & 4 BHK Flats",
   "seoDescription": "Surya Emerald is a ready to move residential project by Surya Buildcon in Ambli, Ahmedabad, offering 3 & 4 BHK homes.",
   "geo": {
     "lat": 23.03817,
     "lng": 72.48446
-  }
+  },
+  "mainImage": "/uploads/properties/surya-emerald-ambli/photo-1.jpg"
 }

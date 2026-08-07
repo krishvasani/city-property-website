@@ -22,7 +22,18 @@
     "Rajyash Royce One is an under construction residential project by Rajyash Group in Ambli, Ahmedabad, offering 5 & 6 BHK Duplex homes. Possession: Mar 2027.",
     "Priced from approximately ₹8.6 to 19.6 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/rajyash-royce-one-ambli/photo-1.jpg",
+      "alt": "Rajyash Royce One, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/rajyash-royce-one-ambli/photo-2.jpg",
+      "alt": "Rajyash Royce One, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "Mar 2027",
   "seoTitle": "Rajyash Royce One, Ambli: 5 & 6 BHK Duplex Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.02725,
     "lng": 72.4753
-  }
+  },
+  "mainImage": "/uploads/properties/rajyash-royce-one-ambli/photo-1.jpg"
 }

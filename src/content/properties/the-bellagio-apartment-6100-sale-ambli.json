@@ -27,8 +27,13 @@
   "photos": [
     {
       "url": "/uploads/properties/the-bellagio-apartment-6100-sale-ambli/photo-1.jpg",
-      "alt": "The Bellagio, Ambli — flat photo",
-      "label": "Flat photo"
+      "alt": "The Bellagio, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/the-bellagio-apartment-6100-sale-ambli/photo-2.jpg",
+      "alt": "The Bellagio, Ambli — project photo",
+      "label": "Project photo"
     }
   ],
   "mainImage": "/uploads/properties/the-bellagio-apartment-6100-sale-ambli/photo-1.jpg",

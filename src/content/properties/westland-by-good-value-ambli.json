@@ -22,7 +22,18 @@
     "Westland by Good Value is an under construction residential project by Good Value Properties in Ambli, Ahmedabad, offering 4 & 5 BHK + Penthouse homes. Possession: approx 2026 / research Sep 2027.",
     "Priced from approximately ₹10.6 to 12.2 Cr. Located opposite Sukrut Repose."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/westland-by-good-value-ambli/photo-1.jpg",
+      "alt": "Westland by Good Value, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/westland-by-good-value-ambli/photo-2.jpg",
+      "alt": "Westland by Good Value, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "CPS approx 2026 / research Sep 2027",
   "seoTitle": "Westland by Good Value, Ambli: 4 & 5 BHK + Penthouse Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.03403,
     "lng": 72.48973
-  }
+  },
+  "mainImage": "/uploads/properties/westland-by-good-value-ambli/photo-1.jpg"
 }

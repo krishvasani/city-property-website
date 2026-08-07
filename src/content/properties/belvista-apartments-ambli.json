@@ -22,12 +22,34 @@
     "Belvista Apartments is a ready to move residential project by Arista Life Spaces in Ambli, Ahmedabad, offering 3 BHK homes. Ready to move in.",
     "Located behind Shell Petrol Pump."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/belvista-apartments-ambli/photo-1.jpg",
+      "alt": "Belvista Apartments, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/belvista-apartments-ambli/photo-2.jpg",
+      "alt": "Belvista Apartments, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/belvista-apartments-ambli/photo-3.jpg",
+      "alt": "Belvista Apartments, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/belvista-apartments-ambli/photo-4.jpg",
+      "alt": "Belvista Apartments, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "seoTitle": "Belvista Apartments, Ambli: 3 BHK Flats",
   "seoDescription": "Belvista Apartments is a ready to move residential project by Arista Life Spaces in Ambli, Ahmedabad, offering 3 BHK homes.",
   "geo": {
     "lat": 23.02991,
     "lng": 72.47738
-  }
+  },
+  "mainImage": "/uploads/properties/belvista-apartments-ambli/photo-1.jpg"
 }

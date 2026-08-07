@@ -21,12 +21,24 @@
   "description": [
     "Jaldeep Vertex is a ready to move residential project by Shree Radha Krishna Group in Ambli, Ahmedabad, offering 3 & 4 BHK homes. Ready to move in."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/jaldeep-vertex-ambli/photo-1.jpg",
+      "alt": "Jaldeep Vertex, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/jaldeep-vertex-ambli/photo-2.jpg",
+      "alt": "Jaldeep Vertex, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "seoTitle": "Jaldeep Vertex, Ambli: 3 & 4 BHK Flats",
   "seoDescription": "Jaldeep Vertex is a ready to move residential project by Shree Radha Krishna Group in Ambli, Ahmedabad, offering 3 & 4 BHK homes.",
   "geo": {
     "lat": 23.03757,
     "lng": 72.4759
-  }
+  },
+  "mainImage": "/uploads/properties/jaldeep-vertex-ambli/photo-1.jpg"
 }

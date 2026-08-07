@@ -22,7 +22,18 @@
     "The Bellagio is an under construction residential project by Palak in Ambli, Ahmedabad, offering 4 & 5 BHK homes. Possession: Dec 2026.",
     "Priced from approximately ₹5.7 to 8.2 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/the-bellagio-ambli/photo-1.jpg",
+      "alt": "The Bellagio, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/the-bellagio-ambli/photo-2.jpg",
+      "alt": "The Bellagio, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "Dec 2026",
   "seoTitle": "The Bellagio, Ambli: 4 & 5 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.03415,
     "lng": 72.48086
-  }
+  },
+  "mainImage": "/uploads/properties/the-bellagio-ambli/photo-1.jpg"
 }

@@ -21,12 +21,24 @@
   "description": [
     "North One True Value is a ready to move residential project by True Value in Ambli, Ahmedabad, offering 4 & 6 BHK + Penthouse homes. Ready to move in."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/north-one-true-value-ambli/photo-1.jpg",
+      "alt": "North One True Value, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/north-one-true-value-ambli/photo-2.jpg",
+      "alt": "North One True Value, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "seoTitle": "North One True Value, Ambli: 4 & 6 BHK + Penthouse Flats",
   "seoDescription": "North One True Value is a ready to move residential project by True Value in Ambli, Ahmedabad, offering 4 & 6 BHK + Penthouse homes.",
   "geo": {
     "lat": 23.0376,
     "lng": 72.47535
-  }
+  },
+  "mainImage": "/uploads/properties/north-one-true-value-ambli/photo-1.jpg"
 }

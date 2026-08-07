@@ -22,7 +22,18 @@
     "True Value upcoming is an under construction residential project by True Value in Ambli, Ahmedabad, offering 4 BHK homes. Possession: Jul 2028.",
     "Priced from approximately ₹3.5 to 5 Cr. Located near Surya Emerald."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/true-value-upcoming-ambli/photo-1.jpg",
+      "alt": "True Value upcoming, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/true-value-upcoming-ambli/photo-2.jpg",
+      "alt": "True Value upcoming, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "Jul 2028",
   "seoTitle": "True Value upcoming, Ambli: 4 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.03384,
     "lng": 72.47185
-  }
+  },
+  "mainImage": "/uploads/properties/true-value-upcoming-ambli/photo-1.jpg"
 }

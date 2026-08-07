@@ -22,7 +22,18 @@
     "Sheetal Gharana is an under construction residential project in Ambli, Ahmedabad, offering 5 & 6 BHK homes. Possession: Verify.",
     "Priced from approximately ₹5.7 to 11.4 Cr. Located opposite Sankalp Iconic Tower."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/sheetal-gharana-ambli/photo-1.jpg",
+      "alt": "Sheetal Gharana, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/sheetal-gharana-ambli/photo-2.jpg",
+      "alt": "Sheetal Gharana, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "Verify",
   "seoTitle": "Sheetal Gharana, Ambli: 5 & 6 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.03072,
     "lng": 72.47521
-  }
+  },
+  "mainImage": "/uploads/properties/sheetal-gharana-ambli/photo-1.jpg"
 }

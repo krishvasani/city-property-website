@@ -22,7 +22,18 @@
     "JP Vaikunth is an under construction residential project by JP Initiatives LLP in Ambli, Ahmedabad, offering 4 & 5 BHK homes. Possession: Dec 2025 / research Dec 2026.",
     "Priced from approximately ₹14.3 to 15 Cr. Located near Earth 12."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/jp-vaikunth-ambli/photo-1.jpg",
+      "alt": "JP Vaikunth, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/jp-vaikunth-ambli/photo-2.jpg",
+      "alt": "JP Vaikunth, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "CPS Dec 2025 / research Dec 2026",
   "seoTitle": "JP Vaikunth, Ambli: 4 & 5 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.03799,
     "lng": 72.48115
-  }
+  },
+  "mainImage": "/uploads/properties/jp-vaikunth-ambli/photo-1.jpg"
 }

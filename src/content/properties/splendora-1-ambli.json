@@ -22,7 +22,18 @@
     "Splendora 1 is an under construction residential project in Ambli, Ahmedabad, offering 3 BHK homes. Possession: Dec 2026.",
     "Priced from approximately ₹2.15 Cr. Located near D Mart Bopal."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/splendora-1-ambli/photo-1.jpg",
+      "alt": "Splendora 1, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/splendora-1-ambli/photo-2.jpg",
+      "alt": "Splendora 1, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "Dec 2026",
   "seoTitle": "Splendora 1, Ambli: 3 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.04451,
     "lng": 72.47585
-  }
+  },
+  "mainImage": "/uploads/properties/splendora-1-ambli/photo-1.jpg"
 }

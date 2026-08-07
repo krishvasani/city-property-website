@@ -22,7 +22,18 @@
     "The Emberlynn is an under construction residential project by Sanskrut Group in Ambli, Ahmedabad, offering 4 BHK homes. Possession: approx 2025 / master Jun 2026.",
     "Priced from approximately ₹6.5 to 7.4 Cr. Located near Shell Petrol Pump."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/the-emberlynn-ambli/photo-1.jpg",
+      "alt": "The Emberlynn, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/the-emberlynn-ambli/photo-2.jpg",
+      "alt": "The Emberlynn, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "CPS approx 2025 / master Jun 2026",
   "seoTitle": "The Emberlynn, Ambli: 4 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.03464,
     "lng": 72.47229
-  }
+  },
+  "mainImage": "/uploads/properties/the-emberlynn-ambli/photo-1.jpg"
 }

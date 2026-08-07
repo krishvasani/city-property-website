@@ -22,7 +22,18 @@
     "Swati new project is an under construction residential project by Swati Procon in Ambli, Ahmedabad, offering 4 BHK homes. Possession: Diwali 2029.",
     "Priced from approximately ₹4.3 to 4.7 Cr. Located opposite Royce One."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/swati-new-project-ambli/photo-1.jpg",
+      "alt": "Swati new project, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/swati-new-project-ambli/photo-2.jpg",
+      "alt": "Swati new project, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "Diwali 2029",
   "seoTitle": "Swati new project, Ambli: 4 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.02464,
     "lng": 72.48133
-  }
+  },
+  "mainImage": "/uploads/properties/swati-new-project-ambli/photo-1.jpg"
 }

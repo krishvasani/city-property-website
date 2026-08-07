@@ -22,7 +22,18 @@
     "Maruti Aatman is an under construction residential project by Maruti Buildcon in Ambli, Ahmedabad, offering 4 BHK homes. Possession: approx 2025 / research Jun 2028 (verify).",
     "Priced from approximately ₹4.5 to 4.7 Cr. Located near Altius 2."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/maruti-aatman-ambli/photo-1.jpg",
+      "alt": "Maruti Aatman, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/maruti-aatman-ambli/photo-2.jpg",
+      "alt": "Maruti Aatman, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "CPS approx 2025 / research Jun 2028 (verify)",
   "seoTitle": "Maruti Aatman, Ambli: 4 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.04099,
     "lng": 72.48471
-  }
+  },
+  "mainImage": "/uploads/properties/maruti-aatman-ambli/photo-1.jpg"
 }

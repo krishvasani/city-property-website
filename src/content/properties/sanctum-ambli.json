@@ -22,7 +22,18 @@
     "Sanctum is an under construction residential project by Dev Shrushti / Ratilal Group in Ambli, Ahmedabad, offering 4 BHK homes. Possession: Dec 2025.",
     "Priced from approximately ₹2.3 to 2.7 Cr. Located behind Shell Petrol Pump."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/sanctum-ambli/photo-1.jpg",
+      "alt": "Sanctum, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/sanctum-ambli/photo-2.jpg",
+      "alt": "Sanctum, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "Dec 2025",
   "seoTitle": "Sanctum, Ambli: 4 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.02913,
     "lng": 72.4857
-  }
+  },
+  "mainImage": "/uploads/properties/sanctum-ambli/photo-1.jpg"
 }

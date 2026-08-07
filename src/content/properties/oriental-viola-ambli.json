@@ -22,7 +22,18 @@
     "Oriental Viola is an under construction residential project by Oriental Buildcon in Ambli, Ahmedabad, offering 4 BHK homes. Possession: ready to move / research Dec 2025 phase (verify).",
     "Priced from approximately ₹4.9 to 5 Cr. Located near Meghmani Farm."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/oriental-viola-ambli/photo-1.jpg",
+      "alt": "Oriental Viola, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/oriental-viola-ambli/photo-2.jpg",
+      "alt": "Oriental Viola, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "CPS ready to move / research Dec 2025 phase (verify)",
   "seoTitle": "Oriental Viola, Ambli: 4 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.03563,
     "lng": 72.46934
-  }
+  },
+  "mainImage": "/uploads/properties/oriental-viola-ambli/photo-1.jpg"
 }

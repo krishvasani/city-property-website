@@ -22,7 +22,18 @@
     "Madhav Oeuvre 3 is an under construction residential project by Madhav Group in Ambli, Ahmedabad, offering 4 & 5 BHK homes. Possession: Dec 2024 / RERA Dec 2027 (verify).",
     "Priced from approximately ₹4.4 to 5.6 Cr. Located opposite Belvista."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/madhav-oeuvre-3-ambli/photo-1.jpg",
+      "alt": "Madhav Oeuvre 3, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/madhav-oeuvre-3-ambli/photo-2.jpg",
+      "alt": "Madhav Oeuvre 3, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "CPS Dec 2024 / RERA Dec 2027 (verify)",
   "seoTitle": "Madhav Oeuvre 3, Ambli: 4 & 5 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.0453,
     "lng": 72.4785
-  }
+  },
+  "mainImage": "/uploads/properties/madhav-oeuvre-3-ambli/photo-1.jpg"
 }

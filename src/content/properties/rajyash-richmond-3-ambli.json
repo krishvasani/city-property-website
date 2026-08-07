@@ -22,7 +22,18 @@
     "Rajyash Richmond 3 is an under construction residential project by Rajyash Group in Ambli, Ahmedabad, offering 4 BHK homes. Possession: Dec 2026.",
     "Priced from approximately ₹2.8 to 3.1 Cr. Located opposite Richmond Grand."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/rajyash-richmond-3-ambli/photo-1.jpg",
+      "alt": "Rajyash Richmond 3, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/rajyash-richmond-3-ambli/photo-2.jpg",
+      "alt": "Rajyash Richmond 3, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "Dec 2026",
   "seoTitle": "Rajyash Richmond 3, Ambli: 4 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.0328,
     "lng": 72.46648
-  }
+  },
+  "mainImage": "/uploads/properties/rajyash-richmond-3-ambli/photo-1.jpg"
 }

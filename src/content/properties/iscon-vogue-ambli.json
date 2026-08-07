@@ -22,7 +22,18 @@
     "ISCON Vogue is an under construction residential project by JP Iscon Group in Ambli, Ahmedabad, offering 4 & 5 BHK + Penthouse homes. Possession: Dec 2025 / research Mar 2028 (verify).",
     "Priced from approximately ₹4.8 to 5.5 Cr. Located near DoubleTree Hilton."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/iscon-vogue-ambli/photo-1.jpg",
+      "alt": "ISCON Vogue, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/iscon-vogue-ambli/photo-2.jpg",
+      "alt": "ISCON Vogue, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "CPS Dec 2025 / research Mar 2028 (verify)",
   "seoTitle": "ISCON Vogue, Ambli: 4 & 5 BHK + Penthouse Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.036,
     "lng": 72.4872
-  }
+  },
+  "mainImage": "/uploads/properties/iscon-vogue-ambli/photo-1.jpg"
 }

@@ -22,7 +22,18 @@
     "Aayam by Aaryan Aristo is an under construction residential project by Aaryan / Aristo in Ambli, Ahmedabad, offering 4 BHK Duplex homes. Possession: 2026.",
     "Priced from approximately ₹5.1 to 6.8 Cr. Located near Adi House."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/aayam-by-aaryan-aristo-ambli/photo-1.jpg",
+      "alt": "Aayam by Aaryan Aristo, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/aayam-by-aaryan-aristo-ambli/photo-2.jpg",
+      "alt": "Aayam by Aaryan Aristo, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "2026",
   "seoTitle": "Aayam by Aaryan Aristo, Ambli: 4 BHK Duplex Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.03205,
     "lng": 72.47019
-  }
+  },
+  "mainImage": "/uploads/properties/aayam-by-aaryan-aristo-ambli/photo-1.jpg"
 }

@@ -22,12 +22,24 @@
     "Seventy is a ready to move residential project by Safal Constructions in Ambli, Ahmedabad, offering 4 BHK homes. Ready to move in.",
     "Located behind Wipro SEZ."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/seventy-ambli/photo-1.jpg",
+      "alt": "Seventy, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/seventy-ambli/photo-2.jpg",
+      "alt": "Seventy, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "seoTitle": "Seventy, Ambli: 4 BHK Flats",
   "seoDescription": "Seventy is a ready to move residential project by Safal Constructions in Ambli, Ahmedabad, offering 4 BHK homes.",
   "geo": {
     "lat": 23.02843,
     "lng": 72.47476
-  }
+  },
+  "mainImage": "/uploads/properties/seventy-ambli/photo-1.jpg"
 }

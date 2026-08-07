@@ -22,12 +22,39 @@
     "Altius Viitor by Synthesis is a ready to move residential project by Synthesis Framework LLP in Ambli, Ahmedabad, offering 4 BHK homes. Ready to move in.",
     "Located behind Sankalp Grace 2."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/altius-viitor-by-synthesis-ambli/photo-1.jpg",
+      "alt": "Altius Viitor by Synthesis, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/altius-viitor-by-synthesis-ambli/photo-2.jpg",
+      "alt": "Altius Viitor by Synthesis, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/altius-viitor-by-synthesis-ambli/photo-3.jpg",
+      "alt": "Altius Viitor by Synthesis, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/altius-viitor-by-synthesis-ambli/photo-4.jpg",
+      "alt": "Altius Viitor by Synthesis, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/altius-viitor-by-synthesis-ambli/photo-5.jpg",
+      "alt": "Altius Viitor by Synthesis, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "seoTitle": "Altius Viitor by Synthesis, Ambli: 4 BHK Flats",
   "seoDescription": "Altius Viitor by Synthesis is a ready to move residential project by Synthesis Framework LLP in Ambli, Ahmedabad, offering 4 BHK homes.",
   "geo": {
     "lat": 23.04271,
     "lng": 72.4753
-  }
+  },
+  "mainImage": "/uploads/properties/altius-viitor-by-synthesis-ambli/photo-1.jpg"
 }

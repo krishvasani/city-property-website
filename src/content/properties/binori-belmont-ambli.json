@@ -22,7 +22,18 @@
     "Binori Belmont is an under construction residential project by Binori Group in Ambli, Ahmedabad, offering 4 & 6 BHK + Penthouse homes. Possession: Dec 2027 / research Mar 2029.",
     "Priced from approximately ₹5.8 to 9.3 Cr. Located opposite Landmark Hotel."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/binori-belmont-ambli/photo-1.jpg",
+      "alt": "Binori Belmont, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/binori-belmont-ambli/photo-2.jpg",
+      "alt": "Binori Belmont, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "CPS Dec 2027 / research Mar 2029",
   "seoTitle": "Binori Belmont, Ambli: 4 & 6 BHK + Penthouse Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.03466,
     "lng": 72.47177
-  }
+  },
+  "mainImage": "/uploads/properties/binori-belmont-ambli/photo-1.jpg"
 }

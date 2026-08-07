@@ -22,12 +22,24 @@
     "Swati Senor is a ready to move residential project by Swati Procon in Ambli, Ahmedabad, offering 5 BHK homes. Ready to move in.",
     "Located near Shell Petrol Pump."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/swati-senor-ambli/photo-1.jpg",
+      "alt": "Swati Senor, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/swati-senor-ambli/photo-2.jpg",
+      "alt": "Swati Senor, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "seoTitle": "Swati Senor, Ambli: 5 BHK Flats",
   "seoDescription": "Swati Senor is a ready to move residential project by Swati Procon in Ambli, Ahmedabad, offering 5 BHK homes.",
   "geo": {
     "lat": 23.04278,
     "lng": 72.47531
-  }
+  },
+  "mainImage": "/uploads/properties/swati-senor-ambli/photo-1.jpg"
 }

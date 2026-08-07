@@ -22,12 +22,39 @@
   "description": [
     "Fully furnished 3 BHK flat of 1,652 sq.ft for sale in Casa vyoma, Vastrapur, Ahmedabad."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/casa-vyoma-apartment-1652-sale-vastrapur/photo-1.jpg",
+      "alt": "Casa vyoma, Vastrapur — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/casa-vyoma-apartment-1652-sale-vastrapur/photo-2.jpg",
+      "alt": "Casa vyoma, Vastrapur — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/casa-vyoma-apartment-1652-sale-vastrapur/photo-3.jpg",
+      "alt": "Casa vyoma, Vastrapur — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/casa-vyoma-apartment-1652-sale-vastrapur/photo-4.jpg",
+      "alt": "Casa vyoma, Vastrapur — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/casa-vyoma-apartment-1652-sale-vastrapur/photo-5.jpg",
+      "alt": "Casa vyoma, Vastrapur — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-01",
   "seoTitle": "3 BHK Flat for Sale in Vastrapur",
   "seoDescription": "3 BHK 1,652 sq.ft Flat for Sale · Casa vyoma, Vastrapur",
   "geo": {
     "lat": 23.042840484613382,
     "lng": 72.53483367841775
-  }
+  },
+  "mainImage": "/uploads/properties/casa-vyoma-apartment-1652-sale-vastrapur/photo-1.jpg"
 }

@@ -25,8 +25,18 @@
   "photos": [
     {
       "url": "/uploads/properties/puspraj-tower-apartment-1800-sale-bodakdev/photo-1.jpg",
-      "alt": "Puspraj tower, Bodakdev — flat photo",
-      "label": "Flat photo"
+      "alt": "Puspraj tower, Bodakdev — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/puspraj-tower-apartment-1800-sale-bodakdev/photo-2.jpg",
+      "alt": "Puspraj tower, Bodakdev — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/puspraj-tower-apartment-1800-sale-bodakdev/photo-3.jpg",
+      "alt": "Puspraj tower, Bodakdev — project photo",
+      "label": "Project photo"
     }
   ],
   "mainImage": "/uploads/properties/puspraj-tower-apartment-1800-sale-bodakdev/photo-1.jpg",

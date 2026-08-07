@@ -22,7 +22,18 @@
     "Satyamev Luxor is an under construction residential project by Satyamev Developers in Ambli, Ahmedabad, offering 4 & 5 BHK + Penthouse homes. Possession: Jun 2026 / research Mar 2029 (verify).",
     "Priced from approximately ₹2.8 to 2.9 Cr. Located near Vakil Bridge."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/satyamev-luxor-ambli/photo-1.jpg",
+      "alt": "Satyamev Luxor, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/satyamev-luxor-ambli/photo-2.jpg",
+      "alt": "Satyamev Luxor, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "CPS Jun 2026 / research Mar 2029 (verify)",
   "seoTitle": "Satyamev Luxor, Ambli: 4 & 5 BHK + Penthouse Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.02999,
     "lng": 72.48212
-  }
+  },
+  "mainImage": "/uploads/properties/satyamev-luxor-ambli/photo-1.jpg"
 }

@@ -22,7 +22,18 @@
     "Whitecraft is an under construction residential project in Ambli, Ahmedabad, offering 4 BHK homes. Possession: approx 2025.",
     "Priced from approximately ₹5.2 to 5.4 Cr. Located beside Tranquil."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/whitecraft-ambli/photo-1.jpg",
+      "alt": "Whitecraft, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/whitecraft-ambli/photo-2.jpg",
+      "alt": "Whitecraft, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "approx 2025",
   "seoTitle": "Whitecraft, Ambli: 4 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.02859,
     "lng": 72.48661
-  }
+  },
+  "mainImage": "/uploads/properties/whitecraft-ambli/photo-1.jpg"
 }

@@ -22,7 +22,18 @@
     "Rajyash Richmond 2 is an under construction residential project by Rajyash Group in Ambli, Ahmedabad, offering 4 & 5 BHK Duplex homes. Possession: Mar 2026 / RERA Dec 2030 (verify).",
     "Priced from approximately ₹4.5 to 5.1 Cr. Located opposite Richmond Grand."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/rajyash-richmond-2-ambli/photo-1.jpg",
+      "alt": "Rajyash Richmond 2, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/rajyash-richmond-2-ambli/photo-2.jpg",
+      "alt": "Rajyash Richmond 2, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "CPS Mar 2026 / RERA Dec 2030 (verify)",
   "seoTitle": "Rajyash Richmond 2, Ambli: 4 & 5 BHK Duplex Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.0298,
     "lng": 72.47031
-  }
+  },
+  "mainImage": "/uploads/properties/rajyash-richmond-2-ambli/photo-1.jpg"
 }

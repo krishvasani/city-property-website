@@ -22,7 +22,18 @@
     "Ratnakar Artesia is an under construction residential project by Ratnaakar Group in Ambli, Ahmedabad, offering 4 & 5 BHK homes. Possession: Mar 2029.",
     "Located near Meghmani Farm."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/ratnakar-artesia-ambli/photo-1.jpg",
+      "alt": "Ratnakar Artesia, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/ratnakar-artesia-ambli/photo-2.jpg",
+      "alt": "Ratnakar Artesia, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "Mar 2029",
   "seoTitle": "Ratnakar Artesia, Ambli: 4 & 5 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.0374,
     "lng": 72.46669
-  }
+  },
+  "mainImage": "/uploads/properties/ratnakar-artesia-ambli/photo-1.jpg"
 }

@@ -21,12 +21,19 @@
   "description": [
     "One 49 is a ready to move residential project by Amaya Properties in Ambli, Ahmedabad, offering 3 & 4 BHK + Penthouse homes. Ready to move in."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/one-49-ambli/photo-1.jpg",
+      "alt": "One 49, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "seoTitle": "One 49, Ambli: 3 & 4 BHK + Penthouse Flats",
   "seoDescription": "One 49 is a ready to move residential project by Amaya Properties in Ambli, Ahmedabad, offering 3 & 4 BHK + Penthouse homes.",
   "geo": {
     "lat": 23.04001,
     "lng": 72.46955
-  }
+  },
+  "mainImage": "/uploads/properties/one-49-ambli/photo-1.jpg"
 }

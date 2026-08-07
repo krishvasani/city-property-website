@@ -22,7 +22,18 @@
     "Saiyamm Apricus is an under construction residential project by Saiyamm Realty in Ambli, Ahmedabad, offering 4 BHK homes. Possession: Dec 2026 / research Dec 2027.",
     "Priced from approximately ₹4.4 to 4.5 Cr. Located near The Waterfall."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/saiyamm-apricus-ambli/photo-1.jpg",
+      "alt": "Saiyamm Apricus, Ambli — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/saiyamm-apricus-ambli/photo-2.jpg",
+      "alt": "Saiyamm Apricus, Ambli — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-07-28",
   "possession": "CPS Dec 2026 / research Dec 2027",
   "seoTitle": "Saiyamm Apricus, Ambli: 4 BHK Flats",
@@ -30,5 +41,6 @@
   "geo": {
     "lat": 23.02877,
     "lng": 72.47377
-  }
+  },
+  "mainImage": "/uploads/properties/saiyamm-apricus-ambli/photo-1.jpg"
 }

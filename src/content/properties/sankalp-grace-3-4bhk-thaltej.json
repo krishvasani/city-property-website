@@ -19,7 +19,28 @@
     "Spacious 4 BHK flat of 5,100 sq.ft in Sankalp Grace 3, Thaltej, on the 12th floor.",
     "Set in a well maintained high rise with two lifts, about 8 years old. Priced at ₹4.5 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/sankalp-grace-3-4bhk-thaltej/photo-1.jpg",
+      "alt": "Sankalp Grace 3, Thaltej — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-grace-3-4bhk-thaltej/photo-2.jpg",
+      "alt": "Sankalp Grace 3, Thaltej — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-grace-3-4bhk-thaltej/photo-3.jpg",
+      "alt": "Sankalp Grace 3, Thaltej — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-grace-3-4bhk-thaltej/photo-4.jpg",
+      "alt": "Sankalp Grace 3, Thaltej — project photo",
+      "label": "Project photo"
+    }
+  ],
   "newAt": "2026-06-11",
   "seoTitle": "Sankalp Grace 3 Thaltej | City Property Services",
   "seoDescription": "Spacious 4 BHK flat of 5,100 sq.ft in Sankalp Grace 3, Thaltej, on the 12th floor.",
@@ -31,5 +52,6 @@
     "lat": 23.055034269952248,
     "lng": 72.48438686554186
   },
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "mainImage": "/uploads/properties/sankalp-grace-3-4bhk-thaltej/photo-1.jpg"
 }
