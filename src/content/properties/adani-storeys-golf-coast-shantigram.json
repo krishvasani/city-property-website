@@ -1,0 +1,53 @@
+{
+  "title": "4 & 5 BHK Flats for Sale · The Storeys Golf Coast, Shantigram",
+  "slug": "adani-storeys-golf-coast-shantigram",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Shantigram",
+  "localitySlug": "shantigram",
+  "city": "Ahmedabad",
+  "address": "The Storeys Golf Coast, Adani Shantigram, Vaishnodevi Circle, Ahmedabad",
+  "beds": 4,
+  "rera": "RAA14971",
+  "possession": "On request",
+  "amenities": [
+    "Unobstructed Narmada canal and golf-course views",
+    "Private elevator access and spacious foyer",
+    "3 high-speed elevators per tower, 3-tier security",
+    "White-glove service and Vastu-compliant homes"
+  ],
+  "suitableFor": [
+    "Adani Shantigram",
+    "New project",
+    "Township living"
+  ],
+  "description": [
+    "The Storeys Golf Coast is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 4 & 5 BHK homes.",
+    "The project comprises exclusive community of 35 families, single-floor single homes. In partnership with UB Heritage. Possession on request.",
+    "GujRERA RAA14971."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/adani-storeys-golf-coast-shantigram/photo-1.jpg",
+      "alt": "The Storeys Golf Coast, Adani Shantigram — project render",
+      "label": "Project render"
+    },
+    {
+      "url": "/uploads/properties/adani-storeys-golf-coast-shantigram/photo-2.jpg",
+      "alt": "The Storeys Golf Coast, Adani Shantigram — project render",
+      "label": "Project render"
+    }
+  ],
+  "mainImage": "/uploads/properties/adani-storeys-golf-coast-shantigram/photo-1.jpg",
+  "newAt": "2026-08-13",
+  "seoTitle": "The Storeys Golf Coast, Adani Shantigram: 4 & 5 BHK",
+  "seoDescription": "The Storeys Golf Coast is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offeri",
+  "geo": {
+    "lat": 23.15488,
+    "lng": 72.53995
+  }
+}

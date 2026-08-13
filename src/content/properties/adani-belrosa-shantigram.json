@@ -1,0 +1,53 @@
+{
+  "title": "4, 5 & 6 BHK Flats for Sale · Adani Belrosa, Shantigram",
+  "slug": "adani-belrosa-shantigram",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹5.38 to 18.04 Cr",
+  "priceValue": 53800000,
+  "localityName": "Shantigram",
+  "localitySlug": "shantigram",
+  "city": "Ahmedabad",
+  "address": "Adani Belrosa, Adani Shantigram, Vaishnodevi Circle, Ahmedabad",
+  "beds": 4,
+  "rera": "RAA15538",
+  "possession": "Approximately 4 years",
+  "amenities": [
+    "Infinity, kids and temperature-controlled pools",
+    "Sky café, sky lounge, spa, sauna and steam room",
+    "Home theatre, poker, billiards and karaoke rooms",
+    "Golf-course and township views"
+  ],
+  "suitableFor": [
+    "Adani Shantigram",
+    "New project",
+    "Township living"
+  ],
+  "description": [
+    "Adani Belrosa is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 4, 5 & 6 BHK homes.",
+    "The project comprises single tower, 32 storeys, 125 metres, the tallest in Shantigram, 108 units. Possession approximately 4 years. Priced at ₹5.38 to 18.04 Cr.",
+    "Simplex 4 and 5 BHK homes plus 5 and 6 BHK duplexes, the most exclusive address in the township. GujRERA RAA15538."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/adani-belrosa-shantigram/photo-1.jpg",
+      "alt": "Adani Belrosa, Adani Shantigram — project render",
+      "label": "Project render"
+    },
+    {
+      "url": "/uploads/properties/adani-belrosa-shantigram/photo-2.jpg",
+      "alt": "Adani Belrosa, Adani Shantigram — project render",
+      "label": "Project render"
+    }
+  ],
+  "mainImage": "/uploads/properties/adani-belrosa-shantigram/photo-1.jpg",
+  "newAt": "2026-08-13",
+  "seoTitle": "Adani Belrosa, Adani Shantigram: 4, 5 & 6 BHK",
+  "seoDescription": "Adani Belrosa is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 4, 5 &",
+  "geo": {
+    "lat": 23.15559,
+    "lng": 72.54018
+  }
+}

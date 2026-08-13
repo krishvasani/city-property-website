@@ -1,0 +1,53 @@
+{
+  "title": "2 & 3 BHK Flats for Sale · Adani Elysium Novus, Shantigram",
+  "slug": "adani-elysium-novus-shantigram",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹1.23 to 1.61 Cr",
+  "priceValue": 12300000,
+  "localityName": "Shantigram",
+  "localitySlug": "shantigram",
+  "city": "Ahmedabad",
+  "address": "Adani Elysium Novus, Adani Shantigram, Vaishnodevi Circle, Ahmedabad",
+  "beds": 2,
+  "rera": "RAA14729",
+  "possession": "Approximately 2.5 years",
+  "amenities": [
+    "Club house and swimming pool",
+    "Badminton and half basketball court",
+    "Box cricket, skating rink and amphitheatre",
+    "Pet park, kids play area and central lawn"
+  ],
+  "suitableFor": [
+    "Adani Shantigram",
+    "New project",
+    "Township living"
+  ],
+  "description": [
+    "Adani Elysium Novus is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 2 & 3 BHK homes.",
+    "The project comprises 6 towers, 14 floors, 336 units. Possession approximately 2.5 years. Priced at ₹1.23 to 1.61 Cr.",
+    "GujRERA RAA14729."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/adani-elysium-novus-shantigram/photo-1.jpg",
+      "alt": "Adani Elysium Novus, Adani Shantigram — project render",
+      "label": "Project render"
+    },
+    {
+      "url": "/uploads/properties/adani-elysium-novus-shantigram/photo-2.jpg",
+      "alt": "Adani Elysium Novus, Adani Shantigram — project render",
+      "label": "Project render"
+    }
+  ],
+  "mainImage": "/uploads/properties/adani-elysium-novus-shantigram/photo-1.jpg",
+  "newAt": "2026-08-13",
+  "seoTitle": "Adani Elysium Novus, Adani Shantigram: 2 & 3 BHK",
+  "seoDescription": "Adani Elysium Novus is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering ",
+  "geo": {
+    "lat": 23.1709,
+    "lng": 72.53749
+  }
+}

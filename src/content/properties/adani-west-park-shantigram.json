@@ -1,0 +1,51 @@
+{
+  "title": "Residential Plots Plots for Sale · The West Park, Shantigram",
+  "slug": "adani-west-park-shantigram",
+  "status": "sale",
+  "propertyType": "plot",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "From ₹9.25 Cr",
+  "priceValue": 92500000,
+  "localityName": "Shantigram",
+  "localitySlug": "shantigram",
+  "city": "Ahmedabad",
+  "address": "The West Park, Adani Shantigram, Vaishnodevi Circle, Ahmedabad",
+  "rera": "RAA11300",
+  "amenities": [
+    "Curate and design your own villa",
+    "Ultra-low-density, low-rise living",
+    "Design and construction concierge on demand",
+    "No two homes alike covenant"
+  ],
+  "suitableFor": [
+    "Adani Shantigram",
+    "New project",
+    "Township living"
+  ],
+  "description": [
+    "The West Park is a ready to move residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering Residential Plots homes.",
+    "The project comprises 61 plots, roughly 700 sq.yd and above. Ready to move in, within 60 days. Priced from ₹9.25 Cr.",
+    "GujRERA RAA11300."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/adani-west-park-shantigram/photo-1.jpg",
+      "alt": "The West Park, Adani Shantigram — project render",
+      "label": "Project render"
+    },
+    {
+      "url": "/uploads/properties/adani-west-park-shantigram/photo-2.jpg",
+      "alt": "The West Park, Adani Shantigram — project render",
+      "label": "Project render"
+    }
+  ],
+  "mainImage": "/uploads/properties/adani-west-park-shantigram/photo-1.jpg",
+  "newAt": "2026-08-13",
+  "seoTitle": "The West Park, Adani Shantigram: Residential Plots",
+  "seoDescription": "The West Park is a ready to move residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering Residential ",
+  "geo": {
+    "lat": 23.17368,
+    "lng": 72.54086
+  }
+}

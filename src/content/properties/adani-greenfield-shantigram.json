@@ -1,0 +1,53 @@
+{
+  "title": "3 & 4 BHK + Penthouse Flats for Sale · Adani Greenfield, Shantigram",
+  "slug": "adani-greenfield-shantigram",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹1.83 to 3.73 Cr",
+  "priceValue": 18300000,
+  "localityName": "Shantigram",
+  "localitySlug": "shantigram",
+  "city": "Ahmedabad",
+  "address": "Adani Greenfield, Adani Shantigram, Vaishnodevi Circle, Ahmedabad",
+  "beds": 3,
+  "rera": "RAA14879",
+  "possession": "Approximately 2.5 years",
+  "amenities": [
+    "70% open space with 100 ft between towers",
+    "Two car parks per home",
+    "Overlooks a football ground",
+    "Dedicated service lift, green-certified community"
+  ],
+  "suitableFor": [
+    "Adani Shantigram",
+    "New project",
+    "Township living"
+  ],
+  "description": [
+    "Adani Greenfield is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 3 & 4 BHK + Penthouse homes.",
+    "The project comprises 3 towers, 21 floors. Developed as Adani Realty with Shivalik and Adesh. Possession approximately 2.5 years. Priced at ₹1.83 to 3.73 Cr.",
+    "Includes 12 limited-edition top-floor penthouses. GujRERA RAA14879."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/adani-greenfield-shantigram/photo-1.jpg",
+      "alt": "Adani Greenfield, Adani Shantigram — project render",
+      "label": "Project render"
+    },
+    {
+      "url": "/uploads/properties/adani-greenfield-shantigram/photo-2.jpg",
+      "alt": "Adani Greenfield, Adani Shantigram — project render",
+      "label": "Project render"
+    }
+  ],
+  "mainImage": "/uploads/properties/adani-greenfield-shantigram/photo-1.jpg",
+  "newAt": "2026-08-13",
+  "seoTitle": "Adani Greenfield, Adani Shantigram: 3 & 4 BHK + Penthouse",
+  "seoDescription": "Adani Greenfield is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 3 &",
+  "geo": {
+    "lat": 23.16425,
+    "lng": 72.54563
+  }
+}

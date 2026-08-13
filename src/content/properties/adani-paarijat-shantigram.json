@@ -1,0 +1,52 @@
+{
+  "title": "3 & 4 BHK Flats for Sale · Adani Paarijat, Shantigram",
+  "slug": "adani-paarijat-shantigram",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "From ₹2.42 Cr",
+  "priceValue": 24200000,
+  "localityName": "Shantigram",
+  "localitySlug": "shantigram",
+  "city": "Ahmedabad",
+  "address": "Adani Paarijat, Adani Shantigram, Vaishnodevi Circle, Ahmedabad",
+  "beds": 3,
+  "rera": "RAA10759",
+  "amenities": [
+    "Double-height entrance foyer",
+    "Landscaped and event gardens",
+    "Indoor games and outdoor yoga",
+    "Senior citizen sit-out and kids play area"
+  ],
+  "suitableFor": [
+    "Adani Shantigram",
+    "New project",
+    "Township living"
+  ],
+  "description": [
+    "Adani Paarijat is a ready to move residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 3 & 4 BHK homes.",
+    "The project comprises 2 towers, 14 floors, 112 units. In partnership with B Safal. Ready to move in, few units left. Priced from ₹2.42 Cr.",
+    "GujRERA RAA10759."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/adani-paarijat-shantigram/photo-1.jpg",
+      "alt": "Adani Paarijat, Adani Shantigram — project render",
+      "label": "Project render"
+    },
+    {
+      "url": "/uploads/properties/adani-paarijat-shantigram/photo-2.jpg",
+      "alt": "Adani Paarijat, Adani Shantigram — project render",
+      "label": "Project render"
+    }
+  ],
+  "mainImage": "/uploads/properties/adani-paarijat-shantigram/photo-1.jpg",
+  "newAt": "2026-08-13",
+  "seoTitle": "Adani Paarijat, Adani Shantigram: 3 & 4 BHK",
+  "seoDescription": "Adani Paarijat is a ready to move residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 3 & 4 BHK h",
+  "geo": {
+    "lat": 23.16264,
+    "lng": 72.53609
+  }
+}

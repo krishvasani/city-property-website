@@ -1,0 +1,47 @@
+{
+  "title": "1 & 2 BHK Flats for Sale · Adani Ikaria, Shantigram",
+  "slug": "adani-ikaria-shantigram",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹86 L to 1.05 Cr",
+  "priceValue": 8600000,
+  "localityName": "Shantigram",
+  "localitySlug": "shantigram",
+  "city": "Ahmedabad",
+  "address": "Adani Ikaria, Adani Shantigram, Vaishnodevi Circle, Ahmedabad",
+  "beds": 1,
+  "rera": "RAA10359",
+  "amenities": [
+    "Wheelchair-friendly elevators and step-free flooring",
+    "Medical suite and fitness centre",
+    "Community dining and multipurpose lounge",
+    "Landscaped no-car-zone garden"
+  ],
+  "suitableFor": [
+    "Adani Shantigram",
+    "New project",
+    "Township living"
+  ],
+  "description": [
+    "Adani Ikaria is a ready to move residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 1 & 2 BHK homes.",
+    "The project comprises senior-friendly homes. Ready to move in. Priced at ₹86 L to 1.05 Cr.",
+    "Purpose-designed for residents over 55, with a service-led operating model. GujRERA RAA10359."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/adani-ikaria-shantigram/photo-1.jpg",
+      "alt": "Adani Ikaria, Adani Shantigram — project render",
+      "label": "Project render"
+    }
+  ],
+  "mainImage": "/uploads/properties/adani-ikaria-shantigram/photo-1.jpg",
+  "newAt": "2026-08-13",
+  "seoTitle": "Adani Ikaria, Adani Shantigram: 1 & 2 BHK",
+  "seoDescription": "Adani Ikaria is a ready to move residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 1 & 2 BHK hom",
+  "geo": {
+    "lat": 23.17374,
+    "lng": 72.53098
+  }
+}

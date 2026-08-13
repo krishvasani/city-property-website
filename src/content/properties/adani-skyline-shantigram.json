@@ -1,0 +1,53 @@
+{
+  "title": "4 BHK Flats for Sale · Adani Skyline, Shantigram",
+  "slug": "adani-skyline-shantigram",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.28 to 2.43 Cr",
+  "priceValue": 22800000,
+  "localityName": "Shantigram",
+  "localitySlug": "shantigram",
+  "city": "Ahmedabad",
+  "address": "Adani Skyline, Adani Shantigram, Vaishnodevi Circle, Ahmedabad",
+  "beds": 4,
+  "rera": "RAA14084",
+  "possession": "Approximately 2 years",
+  "amenities": [
+    "Club house with pool and meditation deck",
+    "Banquet hall and indoor gaming zone",
+    "Jogging track and event lawn",
+    "Multipurpose turf for badminton, volleyball and basketball"
+  ],
+  "suitableFor": [
+    "Adani Shantigram",
+    "New project",
+    "Township living"
+  ],
+  "description": [
+    "Adani Skyline is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 4 BHK homes.",
+    "The project comprises 3 towers, 23 floors, 256 units. In partnership with Shilp. Possession approximately 2 years. Priced at ₹2.28 to 2.43 Cr.",
+    "Golf-facing 4 BHK living, tallest in the mid band. GujRERA RAA14084."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/adani-skyline-shantigram/photo-1.jpg",
+      "alt": "Adani Skyline, Adani Shantigram — project render",
+      "label": "Project render"
+    },
+    {
+      "url": "/uploads/properties/adani-skyline-shantigram/photo-2.jpg",
+      "alt": "Adani Skyline, Adani Shantigram — project render",
+      "label": "Project render"
+    }
+  ],
+  "mainImage": "/uploads/properties/adani-skyline-shantigram/photo-1.jpg",
+  "newAt": "2026-08-13",
+  "seoTitle": "Adani Skyline, Adani Shantigram: 4 BHK",
+  "seoDescription": "Adani Skyline is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 4 BHK ",
+  "geo": {
+    "lat": 23.17166,
+    "lng": 72.54055
+  }
+}

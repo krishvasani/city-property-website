@@ -1,0 +1,53 @@
+{
+  "title": "3 BHK Flats for Sale · Adani Amora, Shantigram",
+  "slug": "adani-amora-shantigram",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹1.40 to 2.35 Cr",
+  "priceValue": 14000000,
+  "localityName": "Shantigram",
+  "localitySlug": "shantigram",
+  "city": "Ahmedabad",
+  "address": "Adani Amora, Adani Shantigram, Vaishnodevi Circle, Ahmedabad",
+  "beds": 3,
+  "rera": "MAA16481",
+  "possession": "Approximately 3.5 years",
+  "amenities": [
+    "Homes above a high-street retail plaza",
+    "Yoga and dance studio, gym and indoor game zone",
+    "Party lawn, terrace plaza and water feature",
+    "DG and solar backup for common areas"
+  ],
+  "suitableFor": [
+    "Adani Shantigram",
+    "New project",
+    "Township living"
+  ],
+  "description": [
+    "Adani Amora is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 3 BHK homes.",
+    "The project comprises 2 towers, 13 floors, 90 homes with high-street retail below. Possession approximately 3.5 years. Priced at ₹1.40 to 2.35 Cr.",
+    "GujRERA MAA16481."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/adani-amora-shantigram/photo-1.jpg",
+      "alt": "Adani Amora, Adani Shantigram — project render",
+      "label": "Project render"
+    },
+    {
+      "url": "/uploads/properties/adani-amora-shantigram/photo-2.jpg",
+      "alt": "Adani Amora, Adani Shantigram — project render",
+      "label": "Project render"
+    }
+  ],
+  "mainImage": "/uploads/properties/adani-amora-shantigram/photo-1.jpg",
+  "newAt": "2026-08-13",
+  "seoTitle": "Adani Amora, Adani Shantigram: 3 BHK",
+  "seoDescription": "Adani Amora is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 3 BHK ho",
+  "geo": {
+    "lat": 23.15845,
+    "lng": 72.54522
+  }
+}

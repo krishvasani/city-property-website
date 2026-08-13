@@ -1,0 +1,53 @@
+{
+  "title": "4 BHK Villas Villas for Sale · The North Park, Shantigram",
+  "slug": "adani-north-park-shantigram",
+  "status": "sale",
+  "propertyType": "bungalow",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹8.40 to 9.30 Cr",
+  "priceValue": 84000000,
+  "localityName": "Shantigram",
+  "localitySlug": "shantigram",
+  "city": "Ahmedabad",
+  "address": "The North Park, Adani Shantigram, Vaishnodevi Circle, Ahmedabad",
+  "beds": 4,
+  "rera": "RAA06343",
+  "possession": "Approximately 12 months",
+  "amenities": [
+    "Private elevator and presidential dual-master suites",
+    "Sky decks and golf-course viewing deck",
+    "Dedicated staff quarters and service access",
+    "Private car parks with EV charging, curated gardens"
+  ],
+  "suitableFor": [
+    "Adani Shantigram",
+    "New project",
+    "Township living"
+  ],
+  "description": [
+    "The North Park is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 4 BHK Villas homes.",
+    "The project comprises 28 villas, ground plus 2 levels with private elevator. Possession approximately 12 months. Priced at ₹8.40 to 9.30 Cr.",
+    "Land and construction of roughly 500 to 550 sq.yd. GujRERA RAA06343."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/adani-north-park-shantigram/photo-1.jpg",
+      "alt": "The North Park, Adani Shantigram — project render",
+      "label": "Project render"
+    },
+    {
+      "url": "/uploads/properties/adani-north-park-shantigram/photo-2.jpg",
+      "alt": "The North Park, Adani Shantigram — project render",
+      "label": "Project render"
+    }
+  ],
+  "mainImage": "/uploads/properties/adani-north-park-shantigram/photo-1.jpg",
+  "newAt": "2026-08-13",
+  "seoTitle": "The North Park, Adani Shantigram: 4 BHK Villas",
+  "seoDescription": "The North Park is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 4 BHK",
+  "geo": {
+    "lat": 23.1572,
+    "lng": 72.5398
+  }
+}

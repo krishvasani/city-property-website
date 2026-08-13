@@ -1,0 +1,48 @@
+{
+  "title": "4 BHK Flats for Sale · Adani Ambrosia, Shantigram",
+  "slug": "adani-ambrosia-shantigram",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹2.45 to 2.94 Cr",
+  "priceValue": 24500000,
+  "localityName": "Shantigram",
+  "localitySlug": "shantigram",
+  "city": "Ahmedabad",
+  "address": "Adani Ambrosia, Adani Shantigram, Vaishnodevi Circle, Ahmedabad",
+  "beds": 4,
+  "rera": "RAA10833",
+  "possession": "September 2026",
+  "amenities": [
+    "Club house, swimming pool and kids pool",
+    "Amphitheatre, reflexology park and multipurpose court",
+    "Skating rink and box cricket",
+    "Butterfly and aromatic gardens"
+  ],
+  "suitableFor": [
+    "Adani Shantigram",
+    "New project",
+    "Township living"
+  ],
+  "description": [
+    "Adani Ambrosia is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 4 BHK homes.",
+    "The project comprises Classic and Deluxe towers, 13 floors. Possession september 2026. Priced at ₹2.45 to 2.94 Cr.",
+    "Ultra-luxury 4 BHK in Classic and Deluxe sizes; few units left. GujRERA RAA10833."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/adani-ambrosia-shantigram/photo-1.jpg",
+      "alt": "Adani Ambrosia, Adani Shantigram — project render",
+      "label": "Project render"
+    }
+  ],
+  "mainImage": "/uploads/properties/adani-ambrosia-shantigram/photo-1.jpg",
+  "newAt": "2026-08-13",
+  "seoTitle": "Adani Ambrosia, Adani Shantigram: 4 BHK",
+  "seoDescription": "Adani Ambrosia is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 4 BHK",
+  "geo": {
+    "lat": 23.16812,
+    "lng": 72.53567
+  }
+}

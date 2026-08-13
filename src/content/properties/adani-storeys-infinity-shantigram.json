@@ -1,0 +1,53 @@
+{
+  "title": "4 BHK & 5 BHK Penthouse Flats for Sale · The Storeys Infinity, Shantigram",
+  "slug": "adani-storeys-infinity-shantigram",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "Price on request",
+  "priceOnRequest": true,
+  "localityName": "Shantigram",
+  "localitySlug": "shantigram",
+  "city": "Ahmedabad",
+  "address": "The Storeys Infinity, Adani Shantigram, Vaishnodevi Circle, Ahmedabad",
+  "beds": 4,
+  "rera": "RAA16989",
+  "possession": "December 2031 (per RERA)",
+  "amenities": [
+    "Designed by Apurva Amin Architects",
+    "Column-less living with 11 ft slab height",
+    "Canal and golf-course views",
+    "25,000 sq.ft landscaped podium and 20,000 sq.ft of amenities"
+  ],
+  "suitableFor": [
+    "Adani Shantigram",
+    "New project",
+    "Township living"
+  ],
+  "description": [
+    "The Storeys Infinity is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 4 BHK & 5 BHK Penthouse homes.",
+    "The project comprises 2 towers, 21 floors, 154 units. Possession december 2031 (per rera).",
+    "Newest launch in Shantigram, with 4 BHK apartments, courtyard homes and 5 BHK penthouses. GujRERA RAA16989."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/adani-storeys-infinity-shantigram/photo-1.jpg",
+      "alt": "The Storeys Infinity, Adani Shantigram — project render",
+      "label": "Project render"
+    },
+    {
+      "url": "/uploads/properties/adani-storeys-infinity-shantigram/photo-2.jpg",
+      "alt": "The Storeys Infinity, Adani Shantigram — project render",
+      "label": "Project render"
+    }
+  ],
+  "mainImage": "/uploads/properties/adani-storeys-infinity-shantigram/photo-1.jpg",
+  "newAt": "2026-08-13",
+  "seoTitle": "The Storeys Infinity, Adani Shantigram: 4 BHK & 5 BHK Pentho",
+  "seoDescription": "The Storeys Infinity is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering",
+  "geo": {
+    "lat": 23.1688,
+    "lng": 72.54151
+  }
+}

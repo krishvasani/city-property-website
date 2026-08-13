@@ -1,0 +1,48 @@
+{
+  "title": "3 BHK Flats for Sale · Adani Embrace, Shantigram",
+  "slug": "adani-embrace-shantigram",
+  "status": "sale",
+  "propertyType": "apartment",
+  "featured": false,
+  "draft": false,
+  "priceDisplay": "₹1.42 to 1.70 Cr",
+  "priceValue": 14200000,
+  "localityName": "Shantigram",
+  "localitySlug": "shantigram",
+  "city": "Ahmedabad",
+  "address": "Adani Embrace, Adani Shantigram, Vaishnodevi Circle, Ahmedabad",
+  "beds": 3,
+  "rera": "RAA12526",
+  "possession": "Approximately 12 to 15 months",
+  "amenities": [
+    "Swimming pool and mini theatre",
+    "Gym, indoor games and multipurpose hall",
+    "Creche and senior citizen sit-out",
+    "Lush landscaped garden"
+  ],
+  "suitableFor": [
+    "Adani Shantigram",
+    "New project",
+    "Township living"
+  ],
+  "description": [
+    "Adani Embrace is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 3 BHK homes.",
+    "The project comprises 5 towers, 14 floors, 248 units. Possession approximately 12 to 15 months. Priced at ₹1.42 to 1.70 Cr.",
+    "Nearing completion. GujRERA RAA12526."
+  ],
+  "photos": [
+    {
+      "url": "/uploads/properties/adani-embrace-shantigram/photo-1.jpg",
+      "alt": "Adani Embrace, Adani Shantigram — project render",
+      "label": "Project render"
+    }
+  ],
+  "mainImage": "/uploads/properties/adani-embrace-shantigram/photo-1.jpg",
+  "newAt": "2026-08-13",
+  "seoTitle": "Adani Embrace, Adani Shantigram: 3 BHK",
+  "seoDescription": "Adani Embrace is an under construction residential project by Adani Realty at Adani Shantigram, Vaishnodevi Circle (SG Highway), Ahmedabad, offering 3 BHK ",
+  "geo": {
+    "lat": 23.15675,
+    "lng": 72.52969
+  }
+}
