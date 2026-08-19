@@ -18,7 +18,18 @@
     "Fully furnished office of 2,477 sq.ft for sale in Iscon Elegance, SG Highway, Ahmedabad.",
     "Fitted with 3 cabins, 30 work stations, 2 washrooms and 6 lifts. Set in a 9 floors building, 12 years. Priced at ₹9,000 per sq.ft, about ₹2.23 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/iscon-elegance-office-sale-sg-highway/photo-1.jpg",
+      "alt": "Iscon Elegance, SG Highway — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/iscon-elegance-office-sale-sg-highway/photo-2.jpg",
+      "alt": "Iscon Elegance, SG Highway — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Iscon Elegance office SG Highway | City Property Services",
   "seoDescription": "Fully furnished office of 2,477 sq.ft for sale in Iscon Elegance, SG Highway, Ahmedabad.",
@@ -29,5 +40,6 @@
   "priceValue": 22293000,
   "perSqftDisplay": "₹9,000 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "sg-highway"
+  "localitySlug": "sg-highway",
+  "mainImage": "/uploads/properties/iscon-elegance-office-sale-sg-highway/photo-1.jpg"
 }

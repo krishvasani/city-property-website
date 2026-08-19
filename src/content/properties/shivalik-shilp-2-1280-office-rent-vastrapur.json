@@ -18,7 +18,33 @@
     "Unfurnished office of 1,280 sq.ft for rent in Shivalik Shilp 2, Vastrapur, Ahmedabad.",
     "A unit with 10 lifts. Set in a 13 floors building, 5 years. Rent is available on request."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/shivalik-shilp-2-1280-office-rent-vastrapur/photo-1.jpg",
+      "alt": "Shivalik Shilp 2, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shivalik-shilp-2-1280-office-rent-vastrapur/photo-2.jpg",
+      "alt": "Shivalik Shilp 2, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shivalik-shilp-2-1280-office-rent-vastrapur/photo-3.jpg",
+      "alt": "Shivalik Shilp 2, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shivalik-shilp-2-1280-office-rent-vastrapur/photo-4.jpg",
+      "alt": "Shivalik Shilp 2, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shivalik-shilp-2-1280-office-rent-vastrapur/photo-5.jpg",
+      "alt": "Shivalik Shilp 2, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Shivalik Shilp 2 office Vastrapur | City Property Services",
   "seoDescription": "Unfurnished office of 1,280 sq.ft for rent in Shivalik Shilp 2, Vastrapur, Ahmedabad.",
@@ -28,5 +54,6 @@
   },
   "priceOnRequest": true,
   "furnishing": "Unfurnished",
-  "localitySlug": "vastrapur"
+  "localitySlug": "vastrapur",
+  "mainImage": "/uploads/properties/shivalik-shilp-2-1280-office-rent-vastrapur/photo-1.jpg"
 }

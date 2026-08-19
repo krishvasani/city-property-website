@@ -18,7 +18,23 @@
     "Fully furnished office of 2,980 sq.ft for sale in Westgate Business Bay, Sarkhej, Ahmedabad.",
     "Fitted with 2 cabins, 20 seats, 2 washrooms and 2 lifts. Set in a 14 floors building. Priced at ₹1.9 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/westgate-business-bay-2980-office-sale-sarkhej/photo-1.jpg",
+      "alt": "Westgate Business Bay, Sarkhej — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/westgate-business-bay-2980-office-sale-sarkhej/photo-2.jpg",
+      "alt": "Westgate Business Bay, Sarkhej — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/westgate-business-bay-2980-office-sale-sarkhej/photo-3.jpg",
+      "alt": "Westgate Business Bay, Sarkhej — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Westgate Business Bay office Sarkhej | City Property Services",
   "seoDescription": "Fully furnished office of 2,980 sq.ft for sale in Westgate Business Bay, Sarkhej, Ahmedabad.",
@@ -29,5 +45,6 @@
   "priceValue": 19000000,
   "perSqftDisplay": "₹6,376 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "sarkhej"
+  "localitySlug": "sarkhej",
+  "mainImage": "/uploads/properties/westgate-business-bay-2980-office-sale-sarkhej/photo-1.jpg"
 }

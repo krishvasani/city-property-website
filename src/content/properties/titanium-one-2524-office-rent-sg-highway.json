@@ -18,7 +18,23 @@
     "Fully furnished office of 2,524 sq.ft for rent in Titanium One, SG Highway, Ahmedabad.",
     "Fitted with 3 cabins, a manager cabin, a conference room, 40 work stations and 5 lifts. Set in a 13 floors building, 7 years. Rent is ₹65 per sq.ft."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/titanium-one-2524-office-rent-sg-highway/photo-1.jpg",
+      "alt": "Titanium One, SG Highway — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/titanium-one-2524-office-rent-sg-highway/photo-2.jpg",
+      "alt": "Titanium One, SG Highway — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/titanium-one-2524-office-rent-sg-highway/photo-3.jpg",
+      "alt": "Titanium One, SG Highway — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Titanium One office SG Highway | City Property Services",
   "seoDescription": "Fully furnished office of 2,524 sq.ft for rent in Titanium One, SG Highway, Ahmedabad.",
@@ -30,5 +46,6 @@
   "pricePer": "per month",
   "perSqftDisplay": "₹65 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "sg-highway"
+  "localitySlug": "sg-highway",
+  "mainImage": "/uploads/properties/titanium-one-2524-office-rent-sg-highway/photo-1.jpg"
 }

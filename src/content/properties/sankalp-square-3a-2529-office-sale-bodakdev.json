@@ -18,7 +18,33 @@
     "Unfurnished office of 2,529 sq.ft for sale in Sankalp Square 3A, Bodakdev, Ahmedabad.",
     "Fitted with 4 lifts. Set in a 18 floors building. Priced at ₹9,000 per sq.ft, about ₹2.28 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/sankalp-square-3a-2529-office-sale-bodakdev/photo-1.jpg",
+      "alt": "Sankalp Square 3A, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-square-3a-2529-office-sale-bodakdev/photo-2.jpg",
+      "alt": "Sankalp Square 3A, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-square-3a-2529-office-sale-bodakdev/photo-3.jpg",
+      "alt": "Sankalp Square 3A, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-square-3a-2529-office-sale-bodakdev/photo-4.jpg",
+      "alt": "Sankalp Square 3A, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-square-3a-2529-office-sale-bodakdev/photo-5.jpg",
+      "alt": "Sankalp Square 3A, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Sankalp Square 3A office Bodakdev | City Property Services",
   "seoDescription": "Unfurnished office of 2,529 sq.ft for sale in Sankalp Square 3A, Bodakdev, Ahmedabad.",
@@ -29,5 +55,6 @@
   "priceValue": 22761000,
   "perSqftDisplay": "₹9,000 per sq.ft",
   "furnishing": "Unfurnished",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "mainImage": "/uploads/properties/sankalp-square-3a-2529-office-sale-bodakdev/photo-1.jpg"
 }

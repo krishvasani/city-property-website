@@ -22,7 +22,23 @@
     "Unfurnished office of 5,000 sq.ft for rent in Binori B Square 3, Bodakdev, Ahmedabad.",
     "A bare shell floor with 8 lifts and 8 car parks. Set in a 13 floors building, 1 to 5 years. Rent is ₹45 per sq.ft."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/binori-b-square-3-office-rent-bodakdev/photo-1.jpg",
+      "alt": "Binori B Square 3, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/binori-b-square-3-office-rent-bodakdev/photo-2.jpg",
+      "alt": "Binori B Square 3, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/binori-b-square-3-office-rent-bodakdev/photo-3.jpg",
+      "alt": "Binori B Square 3, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Binori B Square 3 office Bodakdev | City Property Services",
   "seoDescription": "Unfurnished office of 5,000 sq.ft for rent in Binori B Square 3, Bodakdev, Ahmedabad.",
@@ -34,5 +50,6 @@
   "perSqftDisplay": "₹45 per sq.ft",
   "furnishing": "Unfurnished",
   "parking": "8 car parks",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "mainImage": "/uploads/properties/binori-b-square-3-office-rent-bodakdev/photo-1.jpg"
 }

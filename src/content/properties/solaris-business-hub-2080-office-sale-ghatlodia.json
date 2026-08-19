@@ -18,7 +18,23 @@
     "Unfurnished office of 2,080 sq.ft for sale in Solaris Business Hub, Ghatlodia, Ahmedabad.",
     "A bare shell unit with 10 lifts. Set in a 13 floors building, newly constructed. Priced at ₹7,000 per sq.ft, about ₹1.46 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/solaris-business-hub-2080-office-sale-ghatlodia/photo-1.jpg",
+      "alt": "Solaris Business Hub, Ghatlodia — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/solaris-business-hub-2080-office-sale-ghatlodia/photo-2.jpg",
+      "alt": "Solaris Business Hub, Ghatlodia — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/solaris-business-hub-2080-office-sale-ghatlodia/photo-3.jpg",
+      "alt": "Solaris Business Hub, Ghatlodia — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Solaris Business Hub office Ghatlodia | City Property Services",
   "seoDescription": "Unfurnished office of 2,080 sq.ft for sale in Solaris Business Hub, Ghatlodia, Ahmedabad.",
@@ -29,5 +45,6 @@
   "priceValue": 14560000,
   "perSqftDisplay": "₹7,000 per sq.ft",
   "furnishing": "Unfurnished",
-  "localitySlug": "ghatlodia"
+  "localitySlug": "ghatlodia",
+  "mainImage": "/uploads/properties/solaris-business-hub-2080-office-sale-ghatlodia/photo-1.jpg"
 }

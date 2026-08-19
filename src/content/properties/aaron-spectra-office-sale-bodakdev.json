@@ -18,7 +18,28 @@
     "Fully furnished office of 1,450 sq.ft for sale in Aaron Spectra, Bodakdev, Ahmedabad.",
     "Fitted with 5 lifts. Set in a 13 floors building. Priced at ₹11,000 per sq.ft, about ₹1.59 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/aaron-spectra-office-sale-bodakdev/photo-1.jpg",
+      "alt": "Aaron Spectra, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/aaron-spectra-office-sale-bodakdev/photo-2.jpg",
+      "alt": "Aaron Spectra, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/aaron-spectra-office-sale-bodakdev/photo-3.jpg",
+      "alt": "Aaron Spectra, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/aaron-spectra-office-sale-bodakdev/photo-4.jpg",
+      "alt": "Aaron Spectra, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Aaron Spectra office Bodakdev | City Property Services",
   "seoDescription": "Fully furnished office of 1,450 sq.ft for sale in Aaron Spectra, Bodakdev, Ahmedabad.",
@@ -29,5 +50,6 @@
   "priceValue": 15950000,
   "perSqftDisplay": "₹11,000 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "mainImage": "/uploads/properties/aaron-spectra-office-sale-bodakdev/photo-1.jpg"
 }

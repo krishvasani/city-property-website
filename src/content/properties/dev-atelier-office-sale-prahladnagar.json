@@ -21,7 +21,28 @@
     "Unfurnished office of 787 sq.ft for sale in Dev Atelier, Prahlad Nagar, Ahmedabad.",
     "Fitted with 4 lifts. Set in a 12 floors building, 9 years. Priced at ₹5,600 per sq.ft, about ₹44 L."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/dev-atelier-office-sale-prahladnagar/photo-1.jpg",
+      "alt": "Dev Atelier, Prahlad Nagar — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/dev-atelier-office-sale-prahladnagar/photo-2.jpg",
+      "alt": "Dev Atelier, Prahlad Nagar — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/dev-atelier-office-sale-prahladnagar/photo-3.jpg",
+      "alt": "Dev Atelier, Prahlad Nagar — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/dev-atelier-office-sale-prahladnagar/photo-4.jpg",
+      "alt": "Dev Atelier, Prahlad Nagar — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Dev Atelier office Prahlad Nagar | City Property Services",
   "seoDescription": "Unfurnished office of 787 sq.ft for sale in Dev Atelier, Prahlad Nagar, Ahmedabad.",
@@ -31,5 +52,6 @@
   },
   "perSqftDisplay": "₹5,600 per sq.ft",
   "furnishing": "Unfurnished",
-  "localitySlug": "prahlad-nagar"
+  "localitySlug": "prahlad-nagar",
+  "mainImage": "/uploads/properties/dev-atelier-office-sale-prahladnagar/photo-1.jpg"
 }

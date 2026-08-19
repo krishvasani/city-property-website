@@ -21,7 +21,28 @@
     "Unfurnished office of 925 sq.ft for sale in BVR EK, Paldi, Ahmedabad.",
     "A bare shell office with 3 lifts. Set in a 13 floors building, 7 years. Priced at ₹8,500 per sq.ft, about ₹79 L."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/bvr-ek-925-office-sale-paldi/photo-1.jpg",
+      "alt": "BVR EK, Paldi — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/bvr-ek-925-office-sale-paldi/photo-2.jpg",
+      "alt": "BVR EK, Paldi — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/bvr-ek-925-office-sale-paldi/photo-3.jpg",
+      "alt": "BVR EK, Paldi — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/bvr-ek-925-office-sale-paldi/photo-4.jpg",
+      "alt": "BVR EK, Paldi — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "BVR EK office Paldi | City Property Services",
   "seoDescription": "Unfurnished office of 925 sq.ft for sale in BVR EK, Paldi, Ahmedabad.",
@@ -31,5 +52,6 @@
   },
   "perSqftDisplay": "₹8,500 per sq.ft",
   "furnishing": "Unfurnished",
-  "localitySlug": "paldi"
+  "localitySlug": "paldi",
+  "mainImage": "/uploads/properties/bvr-ek-925-office-sale-paldi/photo-1.jpg"
 }

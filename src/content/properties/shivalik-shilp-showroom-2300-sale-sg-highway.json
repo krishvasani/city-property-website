@@ -27,8 +27,18 @@
   "photos": [
     {
       "url": "/uploads/properties/shivalik-shilp-showroom-2300-sale-sg-highway/photo-1.jpg",
-      "alt": "Shivalik Shilp, SG Highway — showroom photo",
-      "label": "Showroom photo"
+      "alt": "Shivalik Shilp, SG Highway — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shivalik-shilp-showroom-2300-sale-sg-highway/photo-2.jpg",
+      "alt": "Shivalik Shilp, SG Highway — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shivalik-shilp-showroom-2300-sale-sg-highway/photo-3.jpg",
+      "alt": "Shivalik Shilp, SG Highway — commercial property photo",
+      "label": "Property photo"
     }
   ],
   "mainImage": "/uploads/properties/shivalik-shilp-showroom-2300-sale-sg-highway/photo-1.jpg",

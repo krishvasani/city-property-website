@@ -24,13 +24,18 @@
   "photos": [
     {
       "url": "/uploads/properties/solitaire-corporate-park-office-rent-makarba/photo-1.jpg",
-      "alt": "Solitaire Corporate Park office in Makarba, Ahmedabad",
-      "label": "Office photo"
+      "alt": "Solitaire Corporate Park, Makarba — commercial property photo",
+      "label": "Property photo"
     },
     {
       "url": "/uploads/properties/solitaire-corporate-park-office-rent-makarba/photo-2.jpg",
-      "alt": "Solitaire Corporate Park office in Makarba, Ahmedabad",
-      "label": "Office photo"
+      "alt": "Solitaire Corporate Park, Makarba — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/solitaire-corporate-park-office-rent-makarba/photo-3.jpg",
+      "alt": "Solitaire Corporate Park, Makarba — commercial property photo",
+      "label": "Property photo"
     }
   ],
   "newAt": "2026-06-13",

@@ -21,7 +21,23 @@
     "Fully furnished office of 1,473 sq.ft for sale in Aarya Epoch, Navrangpura, Ahmedabad.",
     "Fitted with 4 lifts and 20 work stations. Set in a 7 floors building, 6 years. Priced at ₹7,000 per sq.ft, about ₹1.03 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/aarya-epoch-office-sale-navrangpura/photo-1.jpg",
+      "alt": "Aarya Epoch, Navrangpura — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/aarya-epoch-office-sale-navrangpura/photo-2.jpg",
+      "alt": "Aarya Epoch, Navrangpura — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/aarya-epoch-office-sale-navrangpura/photo-3.jpg",
+      "alt": "Aarya Epoch, Navrangpura — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Aarya Epoch office Navrangpura | City Property Services",
   "seoDescription": "Fully furnished office of 1,473 sq.ft for sale in Aarya Epoch, Navrangpura, Ahmedabad.",
@@ -31,5 +47,6 @@
   },
   "perSqftDisplay": "₹7,000 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "navrangpura"
+  "localitySlug": "navrangpura",
+  "mainImage": "/uploads/properties/aarya-epoch-office-sale-navrangpura/photo-1.jpg"
 }

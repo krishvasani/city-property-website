@@ -18,7 +18,33 @@
     "Fully furnished office of 3,540 sq.ft super built up for rent in Sapath 4, SG Highway, Ahmedabad.",
     "Fitted with 6 cabins, 45 work stations, a pantry, a servant room, 12 air conditioners, 1 car park and 34 lifts. Set in a 10 floors building, 12 years. Rent is ₹50 per sq.ft."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/sapath-4-office-rent-sg-highway/photo-1.jpg",
+      "alt": "Sapath 4, SG Highway — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sapath-4-office-rent-sg-highway/photo-2.jpg",
+      "alt": "Sapath 4, SG Highway — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sapath-4-office-rent-sg-highway/photo-3.jpg",
+      "alt": "Sapath 4, SG Highway — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sapath-4-office-rent-sg-highway/photo-4.jpg",
+      "alt": "Sapath 4, SG Highway — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sapath-4-office-rent-sg-highway/photo-5.jpg",
+      "alt": "Sapath 4, SG Highway — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Sapath 4 office SG Highway | City Property Services",
   "seoDescription": "Fully furnished office of 3,540 sq.ft super built up for rent in Sapath 4, SG Highway, Ahmedabad.",
@@ -31,5 +57,6 @@
   "perSqftDisplay": "₹50 per sq.ft",
   "furnishing": "Fully furnished",
   "builtUpArea": "3,540 sq.ft",
-  "localitySlug": "sg-highway"
+  "localitySlug": "sg-highway",
+  "mainImage": "/uploads/properties/sapath-4-office-rent-sg-highway/photo-1.jpg"
 }

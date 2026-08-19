@@ -19,7 +19,28 @@
     "Unfurnished office of 1,055 sq.ft super built up for rent in Colonnade, Ambli, Ahmedabad.",
     "A super built up unit with 1 car park per office. Set in a 13 floors building, 5 to 10 years. Rent is ₹35 per sq.ft."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/colonnade-1055-office-rent-ambli/photo-1.jpg",
+      "alt": "Colonnade, Ambli — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/colonnade-1055-office-rent-ambli/photo-2.jpg",
+      "alt": "Colonnade, Ambli — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/colonnade-1055-office-rent-ambli/photo-3.jpg",
+      "alt": "Colonnade, Ambli — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/colonnade-1055-office-rent-ambli/photo-4.jpg",
+      "alt": "Colonnade, Ambli — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Colonnade office Ambli | City Property Services",
   "seoDescription": "Unfurnished office of 1,055 sq.ft super built up for rent in Colonnade, Ambli, Ahmedabad.",
@@ -31,5 +52,6 @@
   "perSqftDisplay": "₹35 per sq.ft",
   "furnishing": "Unfurnished",
   "builtUpArea": "1,055 sq.ft",
-  "localitySlug": "ambli"
+  "localitySlug": "ambli",
+  "mainImage": "/uploads/properties/colonnade-1055-office-rent-ambli/photo-1.jpg"
 }

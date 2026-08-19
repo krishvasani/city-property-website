@@ -21,7 +21,13 @@
     "Fully furnished office of 1,875 sq.ft for sale in Iscon Mall, Jodhpur, Ahmedabad.",
     "Fitted with 35 work stations and 2 lifts. Set in a 5 floors building, 10 years. Priced at ₹6,500 per sq.ft, about ₹1.22 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/iscon-mall-office-sale-jodhpur/photo-1.jpg",
+      "alt": "Iscon Mall, Jodhpur — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Iscon Mall office Jodhpur | City Property Services",
   "seoDescription": "Fully furnished office of 1,875 sq.ft for sale in Iscon Mall, Jodhpur, Ahmedabad.",
@@ -31,5 +37,6 @@
   },
   "perSqftDisplay": "₹6,500 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "jodhpur"
+  "localitySlug": "jodhpur",
+  "mainImage": "/uploads/properties/iscon-mall-office-sale-jodhpur/photo-1.jpg"
 }

@@ -21,7 +21,33 @@
     "Fully furnished office of 4,907 sq.ft for rent in Sankalp Square 3A, Bodakdev, Ahmedabad.",
     "Fitted with 4 cabins, a conference room, 40 work stations and 5 lifts. Set in a 17 floors building, newly constructed. Rent is ₹70 per sq.ft."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/sankalp-square-3a-office-rent-bodakdev/photo-1.jpg",
+      "alt": "Sankalp Square 3A, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-square-3a-office-rent-bodakdev/photo-2.jpg",
+      "alt": "Sankalp Square 3A, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-square-3a-office-rent-bodakdev/photo-3.jpg",
+      "alt": "Sankalp Square 3A, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-square-3a-office-rent-bodakdev/photo-4.jpg",
+      "alt": "Sankalp Square 3A, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-square-3a-office-rent-bodakdev/photo-5.jpg",
+      "alt": "Sankalp Square 3A, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Sankalp Square 3A office Bodakdev | City Property Services",
   "seoDescription": "Fully furnished office of 4,907 sq.ft for rent in Sankalp Square 3A, Bodakdev, Ahmedabad.",
@@ -32,5 +58,6 @@
   "pricePer": "per month",
   "perSqftDisplay": "₹70 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "mainImage": "/uploads/properties/sankalp-square-3a-office-rent-bodakdev/photo-1.jpg"
 }

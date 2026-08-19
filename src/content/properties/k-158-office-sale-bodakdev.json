@@ -19,7 +19,23 @@
     "Office of 1,650 sq.ft for sale in K 158, Bodakdev, Ahmedabad.",
     "An office unit on Sindhu Bhavan Road, one of Ahmedabad's prime commercial corridors. Priced at ₹1.9 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/k-158-office-sale-bodakdev/photo-1.jpg",
+      "alt": "K 158, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/k-158-office-sale-bodakdev/photo-2.jpg",
+      "alt": "K 158, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/k-158-office-sale-bodakdev/photo-3.jpg",
+      "alt": "K 158, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "K 158 office Bodakdev | City Property Services",
   "seoDescription": "Office of 1,650 sq.ft for sale in K 158, Bodakdev, Ahmedabad.",
@@ -28,5 +44,6 @@
     "lng": 72.50445796606252
   },
   "perSqftDisplay": "₹11,515 per sq.ft",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "mainImage": "/uploads/properties/k-158-office-sale-bodakdev/photo-1.jpg"
 }

@@ -20,7 +20,13 @@
     "Unfurnished office of 11,331 sq.ft for sale in Westport, Thaltej, Ahmedabad.",
     "Fitted with 13 lifts and 8 car parks. Set in a 19 floors building, newly constructed. Priced at ₹8,500 per sq.ft, about ₹9.63 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/westport-11331-office-sale-thaltej/photo-1.jpg",
+      "alt": "Westport, Thaltej — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Westport office Thaltej | City Property Services",
   "seoDescription": "Unfurnished office of 11,331 sq.ft for sale in Westport, Thaltej, Ahmedabad.",
@@ -32,5 +38,6 @@
   "perSqftDisplay": "₹8,500 per sq.ft",
   "furnishing": "Unfurnished",
   "parking": "8 car parks",
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "mainImage": "/uploads/properties/westport-11331-office-sale-thaltej/photo-1.jpg"
 }

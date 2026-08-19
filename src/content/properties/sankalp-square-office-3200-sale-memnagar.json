@@ -26,8 +26,23 @@
   "photos": [
     {
       "url": "/uploads/properties/sankalp-square-office-3200-sale-memnagar/photo-1.jpg",
-      "alt": "Sankalp Square, Memnagar — office photo",
-      "label": "Office photo"
+      "alt": "Sankalp Square, Memnagar — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-square-office-3200-sale-memnagar/photo-2.jpg",
+      "alt": "Sankalp Square, Memnagar — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-square-office-3200-sale-memnagar/photo-3.jpg",
+      "alt": "Sankalp Square, Memnagar — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-square-office-3200-sale-memnagar/photo-4.jpg",
+      "alt": "Sankalp Square, Memnagar — commercial property photo",
+      "label": "Property photo"
     }
   ],
   "mainImage": "/uploads/properties/sankalp-square-office-3200-sale-memnagar/photo-1.jpg",

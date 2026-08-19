@@ -20,7 +20,13 @@
     "Unfurnished office of 11,331 sq.ft for rent in Westport, Thaltej, Ahmedabad.",
     "Fitted with 13 lifts and 8 car parks. Set in a 19 floors building, newly constructed. Rent is ₹55 per sq.ft."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/westport-11331-office-rent-thaltej/photo-1.jpg",
+      "alt": "Westport, Thaltej — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Westport office Thaltej | City Property Services",
   "seoDescription": "Unfurnished office of 11,331 sq.ft for rent in Westport, Thaltej, Ahmedabad.",
@@ -33,5 +39,6 @@
   "perSqftDisplay": "₹55 per sq.ft",
   "furnishing": "Unfurnished",
   "parking": "8 car parks",
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "mainImage": "/uploads/properties/westport-11331-office-rent-thaltej/photo-1.jpg"
 }

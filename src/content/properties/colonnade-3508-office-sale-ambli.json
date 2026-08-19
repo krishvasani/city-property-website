@@ -19,7 +19,28 @@
     "Unfurnished office of 3,508 sq.ft for sale in Colonnade, Ambli, Ahmedabad.",
     "Fitted with 3 lifts and 2 car parks. Set in a 13 floors building, 5 to 10 years. Priced at ₹7,600 per sq.ft, about ₹2.67 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/colonnade-3508-office-sale-ambli/photo-1.jpg",
+      "alt": "Colonnade, Ambli — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/colonnade-3508-office-sale-ambli/photo-2.jpg",
+      "alt": "Colonnade, Ambli — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/colonnade-3508-office-sale-ambli/photo-3.jpg",
+      "alt": "Colonnade, Ambli — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/colonnade-3508-office-sale-ambli/photo-4.jpg",
+      "alt": "Colonnade, Ambli — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Colonnade office Ambli | City Property Services",
   "seoDescription": "Unfurnished office of 3,508 sq.ft for sale in Colonnade, Ambli, Ahmedabad.",
@@ -29,5 +50,6 @@
   },
   "perSqftDisplay": "₹7,600 per sq.ft",
   "furnishing": "Unfurnished",
-  "localitySlug": "ambli"
+  "localitySlug": "ambli",
+  "mainImage": "/uploads/properties/colonnade-3508-office-sale-ambli/photo-1.jpg"
 }

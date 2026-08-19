@@ -22,13 +22,18 @@
   "photos": [
     {
       "url": "/uploads/properties/navratna-corporate-park-10000-office-rent-ambli/photo-1.jpg",
-      "alt": "Navratna Corporate Park office in Ambli, Ahmedabad",
-      "label": "Office photo"
+      "alt": "Navratna Corporate Park, Ambli — commercial property photo",
+      "label": "Property photo"
     },
     {
       "url": "/uploads/properties/navratna-corporate-park-10000-office-rent-ambli/photo-2.jpg",
-      "alt": "Navratna Corporate Park office in Ambli, Ahmedabad",
-      "label": "Office photo"
+      "alt": "Navratna Corporate Park, Ambli — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/navratna-corporate-park-10000-office-rent-ambli/photo-3.jpg",
+      "alt": "Navratna Corporate Park, Ambli — commercial property photo",
+      "label": "Property photo"
     }
   ],
   "newAt": "2026-06-13",

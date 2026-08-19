@@ -18,7 +18,23 @@
     "Fully furnished office of 2,524 sq.ft for sale in Titanium One, SG Highway, Ahmedabad.",
     "Fitted with 3 cabins, a manager cabin, a conference room, 40 work stations and 5 lifts. Set in a 13 floors building, 7 years. Priced at ₹10,000 per sq.ft, about ₹2.52 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/titanium-one-2524-office-sale-sg-highway/photo-1.jpg",
+      "alt": "Titanium One, SG Highway — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/titanium-one-2524-office-sale-sg-highway/photo-2.jpg",
+      "alt": "Titanium One, SG Highway — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/titanium-one-2524-office-sale-sg-highway/photo-3.jpg",
+      "alt": "Titanium One, SG Highway — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Titanium One office SG Highway | City Property Services",
   "seoDescription": "Fully furnished office of 2,524 sq.ft for sale in Titanium One, SG Highway, Ahmedabad.",
@@ -29,5 +45,6 @@
   "priceValue": 25240000,
   "perSqftDisplay": "₹10,000 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "sg-highway"
+  "localitySlug": "sg-highway",
+  "mainImage": "/uploads/properties/titanium-one-2524-office-sale-sg-highway/photo-1.jpg"
 }

@@ -18,7 +18,28 @@
     "Unfurnished office of 5,085 sq.ft super built up for sale in Shilp Business Gateway, Charodi, Ahmedabad.",
     "Fitted with 8 lifts and 2 car parks. Set in a 13 floors building, newly constructed. Priced at ₹6,500 per sq.ft, about ₹3.31 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/shilp-business-gateway-5085-office-sale-charodi/photo-1.jpg",
+      "alt": "Shilp Business Gateway, Charodi — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shilp-business-gateway-5085-office-sale-charodi/photo-2.jpg",
+      "alt": "Shilp Business Gateway, Charodi — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shilp-business-gateway-5085-office-sale-charodi/photo-3.jpg",
+      "alt": "Shilp Business Gateway, Charodi — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shilp-business-gateway-5085-office-sale-charodi/photo-4.jpg",
+      "alt": "Shilp Business Gateway, Charodi — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Shilp Business Gateway office Charodi | City Property Services",
   "seoDescription": "Unfurnished office of 5,085 sq.ft super built up for sale in Shilp Business Gateway, Charodi, Ahmedabad.",
@@ -30,5 +51,6 @@
   "perSqftDisplay": "₹6,500 per sq.ft",
   "furnishing": "Unfurnished",
   "builtUpArea": "5,085 sq.ft",
-  "localitySlug": "charodi"
+  "localitySlug": "charodi",
+  "mainImage": "/uploads/properties/shilp-business-gateway-5085-office-sale-charodi/photo-1.jpg"
 }

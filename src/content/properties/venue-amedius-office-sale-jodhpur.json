@@ -18,7 +18,18 @@
     "Fully furnished office of 1,107 sq.ft for sale in Venue Amedius, Jodhpur, Ahmedabad.",
     "Fitted with 3 lifts. Set in a 12 floors building, 8 years. Priced at ₹9,000 per sq.ft, about ₹1 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/venue-amedius-office-sale-jodhpur/photo-1.jpg",
+      "alt": "Venue Amedius, Jodhpur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/venue-amedius-office-sale-jodhpur/photo-2.jpg",
+      "alt": "Venue Amedius, Jodhpur — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Venue Amedius office Jodhpur | City Property Services",
   "seoDescription": "Fully furnished office of 1,107 sq.ft for sale in Venue Amedius, Jodhpur, Ahmedabad.",
@@ -29,5 +40,6 @@
   "priceValue": 9963000,
   "perSqftDisplay": "₹9,000 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "jodhpur"
+  "localitySlug": "jodhpur",
+  "mainImage": "/uploads/properties/venue-amedius-office-sale-jodhpur/photo-1.jpg"
 }

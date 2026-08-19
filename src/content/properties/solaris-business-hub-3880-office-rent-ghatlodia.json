@@ -18,7 +18,23 @@
     "Unfurnished office of 3,880 sq.ft for rent in Solaris Business Hub, Ghatlodia, Ahmedabad.",
     "A bare shell unit with 10 lifts. Set in a 13 floors building, newly constructed. Rent is ₹35 per sq.ft."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/solaris-business-hub-3880-office-rent-ghatlodia/photo-1.jpg",
+      "alt": "Solaris Business Hub, Ghatlodia — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/solaris-business-hub-3880-office-rent-ghatlodia/photo-2.jpg",
+      "alt": "Solaris Business Hub, Ghatlodia — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/solaris-business-hub-3880-office-rent-ghatlodia/photo-3.jpg",
+      "alt": "Solaris Business Hub, Ghatlodia — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Solaris Business Hub office Ghatlodia | City Property Services",
   "seoDescription": "Unfurnished office of 3,880 sq.ft for rent in Solaris Business Hub, Ghatlodia, Ahmedabad.",
@@ -30,5 +46,6 @@
   "pricePer": "per month",
   "perSqftDisplay": "₹35 per sq.ft",
   "furnishing": "Unfurnished",
-  "localitySlug": "ghatlodia"
+  "localitySlug": "ghatlodia",
+  "mainImage": "/uploads/properties/solaris-business-hub-3880-office-rent-ghatlodia/photo-1.jpg"
 }

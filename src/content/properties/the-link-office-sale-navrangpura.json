@@ -19,7 +19,23 @@
     "Fully furnished office of 1,435 sq.ft for sale in The Link, Navrangpura, Ahmedabad.",
     "Fitted with 2 cabins, 1 conference room, 15 work stations and a pantry. Set in a 5 floors building, 6 years. Priced at ₹1.35 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/the-link-office-sale-navrangpura/photo-1.jpg",
+      "alt": "The Link, Navrangpura — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/the-link-office-sale-navrangpura/photo-2.jpg",
+      "alt": "The Link, Navrangpura — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/the-link-office-sale-navrangpura/photo-3.jpg",
+      "alt": "The Link, Navrangpura — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "The Link office Navrangpura | City Property Services",
   "seoDescription": "Fully furnished office of 1,435 sq.ft for sale in The Link, Navrangpura, Ahmedabad.",
@@ -29,5 +45,6 @@
   },
   "perSqftDisplay": "₹9,408 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "navrangpura"
+  "localitySlug": "navrangpura",
+  "mainImage": "/uploads/properties/the-link-office-sale-navrangpura/photo-1.jpg"
 }

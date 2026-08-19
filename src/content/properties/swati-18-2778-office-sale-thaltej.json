@@ -18,7 +18,23 @@
     "Unfurnished office of 2,778 sq.ft for sale in Swati 18, Thaltej, Ahmedabad.",
     "Fitted with 4 lifts. Newly constructed. Priced at ₹2.22 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/swati-18-2778-office-sale-thaltej/photo-1.jpg",
+      "alt": "Swati 18, Thaltej — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/swati-18-2778-office-sale-thaltej/photo-2.jpg",
+      "alt": "Swati 18, Thaltej — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/swati-18-2778-office-sale-thaltej/photo-3.jpg",
+      "alt": "Swati 18, Thaltej — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Swati 18 office Thaltej | City Property Services",
   "seoDescription": "Unfurnished office of 2,778 sq.ft for sale in Swati 18, Thaltej, Ahmedabad.",
@@ -29,5 +45,6 @@
   "priceValue": 22200000,
   "perSqftDisplay": "₹7,991 per sq.ft",
   "furnishing": "Unfurnished",
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "mainImage": "/uploads/properties/swati-18-2778-office-sale-thaltej/photo-1.jpg"
 }

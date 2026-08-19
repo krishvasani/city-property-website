@@ -18,7 +18,33 @@
     "Fully furnished office of 1,296 sq.ft for rent in Sankalp Iconic Tower, Ambli, Ahmedabad.",
     "Fitted with 1 boss cabin, 1 small cabin, 6 work stations, reception, pantry and a waiting area. Set in a 12 floors building, 5 to 10 years. Rent is ₹75 per sq.ft."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/sankalp-iconic-tower-office-rent-ambli/photo-1.jpg",
+      "alt": "Sankalp Iconic Tower, Ambli — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-iconic-tower-office-rent-ambli/photo-2.jpg",
+      "alt": "Sankalp Iconic Tower, Ambli — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-iconic-tower-office-rent-ambli/photo-3.jpg",
+      "alt": "Sankalp Iconic Tower, Ambli — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-iconic-tower-office-rent-ambli/photo-4.jpg",
+      "alt": "Sankalp Iconic Tower, Ambli — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-iconic-tower-office-rent-ambli/photo-5.jpg",
+      "alt": "Sankalp Iconic Tower, Ambli — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Sankalp Iconic Tower office Ambli | City Property Services",
   "seoDescription": "Fully furnished office of 1,296 sq.ft for rent in Sankalp Iconic Tower, Ambli, Ahmedabad.",
@@ -30,5 +56,6 @@
   "pricePer": "per month",
   "perSqftDisplay": "₹75 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "ambli"
+  "localitySlug": "ambli",
+  "mainImage": "/uploads/properties/sankalp-iconic-tower-office-rent-ambli/photo-1.jpg"
 }

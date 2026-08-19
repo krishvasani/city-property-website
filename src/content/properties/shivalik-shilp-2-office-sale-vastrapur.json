@@ -21,7 +21,33 @@
     "Fully furnished office of 2,678 sq.ft super built up for sale in Shivalik Shilp 2, Vastrapur, Ahmedabad.",
     "Fitted with 2 cabins, 8 work stations, 1 conference room, 2 washrooms and 8 lifts. About 1 to 5 years old. Priced at ₹9,500 per sq.ft plus taxes, about ₹2.54 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/shivalik-shilp-2-office-sale-vastrapur/photo-1.jpg",
+      "alt": "Shivalik Shilp 2, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shivalik-shilp-2-office-sale-vastrapur/photo-2.jpg",
+      "alt": "Shivalik Shilp 2, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shivalik-shilp-2-office-sale-vastrapur/photo-3.jpg",
+      "alt": "Shivalik Shilp 2, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shivalik-shilp-2-office-sale-vastrapur/photo-4.jpg",
+      "alt": "Shivalik Shilp 2, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shivalik-shilp-2-office-sale-vastrapur/photo-5.jpg",
+      "alt": "Shivalik Shilp 2, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Shivalik Shilp 2 office Vastrapur | City Property Services",
   "seoDescription": "Fully furnished office of 2,678 sq.ft super built up for sale in Shivalik Shilp 2, Vastrapur, Ahmedabad.",
@@ -32,5 +58,6 @@
   "perSqftDisplay": "₹9,500 per sq.ft",
   "furnishing": "Fully furnished",
   "builtUpArea": "2,678 sq.ft",
-  "localitySlug": "vastrapur"
+  "localitySlug": "vastrapur",
+  "mainImage": "/uploads/properties/shivalik-shilp-2-office-sale-vastrapur/photo-1.jpg"
 }

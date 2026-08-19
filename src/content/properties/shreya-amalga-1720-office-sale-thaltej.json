@@ -18,7 +18,23 @@
     "Unfurnished office of 1,720 sq.ft for sale in Shreeya Amalga, Thaltej, Ahmedabad.",
     "A unit off Sindhu Bhavan Road. Priced at ₹8,500 per sq.ft, about ₹1.46 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/shreya-amalga-1720-office-sale-thaltej/photo-1.jpg",
+      "alt": "Shreeya Amalga, Thaltej — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shreya-amalga-1720-office-sale-thaltej/photo-2.jpg",
+      "alt": "Shreeya Amalga, Thaltej — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shreya-amalga-1720-office-sale-thaltej/photo-3.jpg",
+      "alt": "Shreeya Amalga, Thaltej — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Shreeya Amalga office Thaltej | City Property Services",
   "seoDescription": "Unfurnished office of 1,720 sq.ft for sale in Shreeya Amalga, Thaltej, Ahmedabad.",
@@ -29,5 +45,6 @@
   "priceValue": 14620000,
   "perSqftDisplay": "₹8,500 per sq.ft",
   "furnishing": "Unfurnished",
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "mainImage": "/uploads/properties/shreya-amalga-1720-office-sale-thaltej/photo-1.jpg"
 }

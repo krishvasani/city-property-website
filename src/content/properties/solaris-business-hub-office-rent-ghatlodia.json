@@ -24,13 +24,18 @@
   "photos": [
     {
       "url": "/uploads/properties/solaris-business-hub-office-rent-ghatlodia/photo-1.jpg",
-      "alt": "Solaris Business Hub office in Ghatlodia, Ahmedabad",
-      "label": "Office photo"
+      "alt": "Solaris Business Hub, Ghatlodia — commercial property photo",
+      "label": "Property photo"
     },
     {
       "url": "/uploads/properties/solaris-business-hub-office-rent-ghatlodia/photo-2.jpg",
-      "alt": "Solaris Business Hub office in Ghatlodia, Ahmedabad",
-      "label": "Office photo"
+      "alt": "Solaris Business Hub, Ghatlodia — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/solaris-business-hub-office-rent-ghatlodia/photo-3.jpg",
+      "alt": "Solaris Business Hub, Ghatlodia — commercial property photo",
+      "label": "Property photo"
     }
   ],
   "newAt": "2026-06-13",

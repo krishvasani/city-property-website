@@ -19,7 +19,18 @@
     "Fully furnished office of 1,169 sq.ft for rent in The First, Vastrapur, Ahmedabad.",
     "Fitted with 20 work stations, 2 cabins and a conference room. Set in a 14 floors building, 5 years. Rent is ₹64,295 per month."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/the-first-1169-office-rent-vastrapur/photo-1.jpg",
+      "alt": "The First, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/the-first-1169-office-rent-vastrapur/photo-2.jpg",
+      "alt": "The First, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "The First office Vastrapur | City Property Services",
   "seoDescription": "Fully furnished office of 1,169 sq.ft for rent in The First, Vastrapur, Ahmedabad.",
@@ -29,5 +40,6 @@
   },
   "pricePer": "per month",
   "furnishing": "Fully furnished",
-  "localitySlug": "vastrapur"
+  "localitySlug": "vastrapur",
+  "mainImage": "/uploads/properties/the-first-1169-office-rent-vastrapur/photo-1.jpg"
 }

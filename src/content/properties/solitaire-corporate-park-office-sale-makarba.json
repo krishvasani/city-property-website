@@ -18,7 +18,23 @@
     "Fully furnished office of 1,037 sq.ft for sale in Solitaire Corporate Park, Makarba, Ahmedabad.",
     "Fitted with 1 cabin, 12 work stations and 3 lifts. Set in a 12 floors building, 18 years. Priced at ₹7,000 per sq.ft, about ₹73 L."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/solitaire-corporate-park-office-sale-makarba/photo-1.jpg",
+      "alt": "Solitaire Corporate Park, Makarba — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/solitaire-corporate-park-office-sale-makarba/photo-2.jpg",
+      "alt": "Solitaire Corporate Park, Makarba — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/solitaire-corporate-park-office-sale-makarba/photo-3.jpg",
+      "alt": "Solitaire Corporate Park, Makarba — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Solitaire Corporate Park office Makarba | City Property Services",
   "seoDescription": "Fully furnished office of 1,037 sq.ft for sale in Solitaire Corporate Park, Makarba, Ahmedabad.",
@@ -29,5 +45,6 @@
   "priceValue": 7259000,
   "perSqftDisplay": "₹7,000 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "makarba"
+  "localitySlug": "makarba",
+  "mainImage": "/uploads/properties/solitaire-corporate-park-office-sale-makarba/photo-1.jpg"
 }

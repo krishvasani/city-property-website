@@ -20,7 +20,18 @@
     "Unfurnished office of 4,545 sq.ft for sale in Venus Stratum, Ambawadi, Ahmedabad.",
     "Fitted with 4 lifts and 4 car parks. Set in a 16 floors building, 0 to 5 years. Priced at ₹8,500 per sq.ft, about ₹3.86 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/venus-stratum-office-sale-ambawadi/photo-1.jpg",
+      "alt": "Venus Stratum, Ambawadi — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/venus-stratum-office-sale-ambawadi/photo-2.jpg",
+      "alt": "Venus Stratum, Ambawadi — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Venus Stratum office Ambawadi | City Property Services",
   "seoDescription": "Unfurnished office of 4,545 sq.ft for sale in Venus Stratum, Ambawadi, Ahmedabad.",
@@ -32,5 +43,6 @@
   "perSqftDisplay": "₹8,500 per sq.ft",
   "furnishing": "Unfurnished",
   "parking": "4 car parks",
-  "localitySlug": "ambawadi"
+  "localitySlug": "ambawadi",
+  "mainImage": "/uploads/properties/venus-stratum-office-sale-ambawadi/photo-1.jpg"
 }

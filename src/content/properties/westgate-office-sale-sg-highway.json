@@ -19,7 +19,23 @@
     "Unfurnished office of 1,635 sq.ft super built up for sale in Westgate, SG Highway, Ahmedabad.",
     "An office unit in a landmark SG Highway tower. Set in a 16 floors building, 5 years. Priced at ₹8,500 per sq.ft, about ₹1.39 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/westgate-office-sale-sg-highway/photo-1.jpg",
+      "alt": "Westgate, SG Highway — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/westgate-office-sale-sg-highway/photo-2.jpg",
+      "alt": "Westgate, SG Highway — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/westgate-office-sale-sg-highway/photo-3.jpg",
+      "alt": "Westgate, SG Highway — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Westgate office SG Highway | City Property Services",
   "seoDescription": "Unfurnished office of 1,635 sq.ft super built up for sale in Westgate, SG Highway, Ahmedabad.",
@@ -30,5 +46,6 @@
   "perSqftDisplay": "₹8,500 per sq.ft",
   "furnishing": "Unfurnished",
   "builtUpArea": "1,635 sq.ft",
-  "localitySlug": "sg-highway"
+  "localitySlug": "sg-highway",
+  "mainImage": "/uploads/properties/westgate-office-sale-sg-highway/photo-1.jpg"
 }

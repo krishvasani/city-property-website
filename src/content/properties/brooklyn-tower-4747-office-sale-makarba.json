@@ -18,7 +18,23 @@
     "Fully furnished office of 4,747 sq.ft for sale in Brooklyn Tower, Makarba, Ahmedabad.",
     "Fitted with 4 cabins, 1 conference room, reception, pantry, washroom and 4 lifts. Set in a 12 floors building. Priced at ₹10,000 per sq.ft, about ₹4.75 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/brooklyn-tower-4747-office-sale-makarba/photo-1.jpg",
+      "alt": "Brooklyn Tower, Makarba — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/brooklyn-tower-4747-office-sale-makarba/photo-2.jpg",
+      "alt": "Brooklyn Tower, Makarba — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/brooklyn-tower-4747-office-sale-makarba/photo-3.jpg",
+      "alt": "Brooklyn Tower, Makarba — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Brooklyn Tower office Makarba | City Property Services",
   "seoDescription": "Fully furnished office of 4,747 sq.ft for sale in Brooklyn Tower, Makarba, Ahmedabad.",
@@ -29,5 +45,6 @@
   "priceValue": 47470000,
   "perSqftDisplay": "₹10,000 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "makarba"
+  "localitySlug": "makarba",
+  "mainImage": "/uploads/properties/brooklyn-tower-4747-office-sale-makarba/photo-1.jpg"
 }

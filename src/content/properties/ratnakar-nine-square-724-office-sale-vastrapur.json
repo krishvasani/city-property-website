@@ -21,7 +21,33 @@
     "Fully furnished office of 724 sq.ft for sale in Ratnakar Nine Square, Vastrapur, Ahmedabad.",
     "Fitted with 1 cabin, 5 work stations and 4 lifts. Set in a 13 floors building, 5 years. Priced at ₹11,000 per sq.ft, about ₹80 L."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/ratnakar-nine-square-724-office-sale-vastrapur/photo-1.jpg",
+      "alt": "Ratnakar Nine Square, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/ratnakar-nine-square-724-office-sale-vastrapur/photo-2.jpg",
+      "alt": "Ratnakar Nine Square, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/ratnakar-nine-square-724-office-sale-vastrapur/photo-3.jpg",
+      "alt": "Ratnakar Nine Square, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/ratnakar-nine-square-724-office-sale-vastrapur/photo-4.jpg",
+      "alt": "Ratnakar Nine Square, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/ratnakar-nine-square-724-office-sale-vastrapur/photo-5.jpg",
+      "alt": "Ratnakar Nine Square, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Ratnakar Nine Square office Vastrapur | City Property Services",
   "seoDescription": "Fully furnished office of 724 sq.ft for sale in Ratnakar Nine Square, Vastrapur, Ahmedabad.",
@@ -31,5 +57,6 @@
   },
   "perSqftDisplay": "₹11,000 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "vastrapur"
+  "localitySlug": "vastrapur",
+  "mainImage": "/uploads/properties/ratnakar-nine-square-724-office-sale-vastrapur/photo-1.jpg"
 }

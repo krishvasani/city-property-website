@@ -20,7 +20,23 @@
     "Fully furnished office of 4,500 sq.ft for rent in Westgate, SG Highway, Ahmedabad.",
     "Fitted with 23 work stations, 2 meeting and conference rooms, a reception area, server room, pantry, 2 washrooms, 10 lifts and 3 car parks. Set in a 23 floors building, 5 to 10 years. Rent is ₹70 per sq.ft plus taxes."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/westgate-4500-office-rent-sg-highway/photo-1.jpg",
+      "alt": "Westgate, SG Highway — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/westgate-4500-office-rent-sg-highway/photo-2.jpg",
+      "alt": "Westgate, SG Highway — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/westgate-4500-office-rent-sg-highway/photo-3.jpg",
+      "alt": "Westgate, SG Highway — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Westgate office SG Highway | City Property Services",
   "seoDescription": "Fully furnished office of 4,500 sq.ft for rent in Westgate, SG Highway, Ahmedabad.",
@@ -33,5 +49,6 @@
   "perSqftDisplay": "₹70 per sq.ft plus taxes",
   "furnishing": "Fully furnished",
   "parking": "3 car parks",
-  "localitySlug": "sg-highway"
+  "localitySlug": "sg-highway",
+  "mainImage": "/uploads/properties/westgate-4500-office-rent-sg-highway/photo-1.jpg"
 }

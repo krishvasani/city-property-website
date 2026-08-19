@@ -18,7 +18,18 @@
     "Fully furnished office of 4,400 sq.ft for rent in Iscon Arcade, Navrangpura, Ahmedabad.",
     "Fitted with 3 cabins, a conference room, 20 work stations and 4 lifts. Set in a 5 floors building, 10 years. Rent is ₹50 per sq.ft."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/iscon-arcade-office-rent-navrangpura/photo-1.jpg",
+      "alt": "Iscon Arcade, Navrangpura — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/iscon-arcade-office-rent-navrangpura/photo-2.jpg",
+      "alt": "Iscon Arcade, Navrangpura — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Iscon Arcade office Navrangpura | City Property Services",
   "seoDescription": "Fully furnished office of 4,400 sq.ft for rent in Iscon Arcade, Navrangpura, Ahmedabad.",
@@ -30,5 +41,6 @@
   "pricePer": "per month",
   "perSqftDisplay": "₹50 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "navrangpura"
+  "localitySlug": "navrangpura",
+  "mainImage": "/uploads/properties/iscon-arcade-office-rent-navrangpura/photo-1.jpg"
 }

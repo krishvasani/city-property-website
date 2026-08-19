@@ -18,7 +18,23 @@
     "Fully furnished office of 905 sq.ft for sale in Ashwamegh Elegance 2, Ambawadi, Ahmedabad.",
     "Fitted with 3 cabins, 4 work stations and 2 lifts. Set in a 5 floors building, 12 years. Priced at ₹73 L."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/ashwamegh-elegance-2-office-sale-ambawadi/photo-1.jpg",
+      "alt": "Ashwamegh Elegance 2, Ambawadi — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/ashwamegh-elegance-2-office-sale-ambawadi/photo-2.jpg",
+      "alt": "Ashwamegh Elegance 2, Ambawadi — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/ashwamegh-elegance-2-office-sale-ambawadi/photo-3.jpg",
+      "alt": "Ashwamegh Elegance 2, Ambawadi — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Ashwamegh Elegance 2 office Ambawadi | City Property Services",
   "seoDescription": "Fully furnished office of 905 sq.ft for sale in Ashwamegh Elegance 2, Ambawadi, Ahmedabad.",
@@ -29,5 +45,6 @@
   "priceValue": 7300000,
   "perSqftDisplay": "₹8,066 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "ambawadi"
+  "localitySlug": "ambawadi",
+  "mainImage": "/uploads/properties/ashwamegh-elegance-2-office-sale-ambawadi/photo-1.jpg"
 }

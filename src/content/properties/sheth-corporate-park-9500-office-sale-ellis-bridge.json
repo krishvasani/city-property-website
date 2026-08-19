@@ -19,7 +19,33 @@
     "Fully furnished office of 9,500 sq.ft for sale in Sheth Corporate Park, Ellis Bridge, Ahmedabad.",
     "Fitted with 7 cabins, 120 work stations and 3 lifts. Set in a 12 floors building, 7 years. Priced at ₹10,000 per sq.ft, about ₹9.5 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/sheth-corporate-park-9500-office-sale-ellis-bridge/photo-1.jpg",
+      "alt": "Sheth Corporate Park, Ellis Bridge — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sheth-corporate-park-9500-office-sale-ellis-bridge/photo-2.jpg",
+      "alt": "Sheth Corporate Park, Ellis Bridge — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sheth-corporate-park-9500-office-sale-ellis-bridge/photo-3.jpg",
+      "alt": "Sheth Corporate Park, Ellis Bridge — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sheth-corporate-park-9500-office-sale-ellis-bridge/photo-4.jpg",
+      "alt": "Sheth Corporate Park, Ellis Bridge — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sheth-corporate-park-9500-office-sale-ellis-bridge/photo-5.jpg",
+      "alt": "Sheth Corporate Park, Ellis Bridge — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Sheth Corporate Park office Ellis Bridge | City Property Services",
   "seoDescription": "Fully furnished office of 9,500 sq.ft for sale in Sheth Corporate Park, Ellis Bridge, Ahmedabad.",
@@ -29,5 +55,6 @@
   },
   "perSqftDisplay": "₹10,000 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "ellisbridge"
+  "localitySlug": "ellisbridge",
+  "mainImage": "/uploads/properties/sheth-corporate-park-9500-office-sale-ellis-bridge/photo-1.jpg"
 }

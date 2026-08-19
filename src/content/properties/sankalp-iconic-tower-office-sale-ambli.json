@@ -18,7 +18,33 @@
     "Fully furnished office of 1,296 sq.ft for sale in Sankalp Iconic Tower, Ambli, Ahmedabad.",
     "Fitted with 1 boss cabin, 1 small cabin, 6 work stations, reception, pantry and a waiting area. Set in a 12 floors building, 5 to 10 years. Priced at ₹1.35 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/sankalp-iconic-tower-office-sale-ambli/photo-1.jpg",
+      "alt": "Sankalp Iconic Tower, Ambli — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-iconic-tower-office-sale-ambli/photo-2.jpg",
+      "alt": "Sankalp Iconic Tower, Ambli — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-iconic-tower-office-sale-ambli/photo-3.jpg",
+      "alt": "Sankalp Iconic Tower, Ambli — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-iconic-tower-office-sale-ambli/photo-4.jpg",
+      "alt": "Sankalp Iconic Tower, Ambli — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-iconic-tower-office-sale-ambli/photo-5.jpg",
+      "alt": "Sankalp Iconic Tower, Ambli — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Sankalp Iconic Tower office Ambli | City Property Services",
   "seoDescription": "Fully furnished office of 1,296 sq.ft for sale in Sankalp Iconic Tower, Ambli, Ahmedabad.",
@@ -29,5 +55,6 @@
   "priceValue": 13500000,
   "perSqftDisplay": "₹10,417 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "ambli"
+  "localitySlug": "ambli",
+  "mainImage": "/uploads/properties/sankalp-iconic-tower-office-sale-ambli/photo-1.jpg"
 }

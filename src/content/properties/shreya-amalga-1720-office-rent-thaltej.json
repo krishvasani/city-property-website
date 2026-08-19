@@ -18,7 +18,23 @@
     "Unfurnished office of 1,720 sq.ft for rent in Shreeya Amalga, Thaltej, Ahmedabad.",
     "A unit off Sindhu Bhavan Road (rent reckoned on 1,552 sq.ft, plus AMC and maintenance, 2 months deposit, minimum 11 month contract, 8 percent yearly increment). Rent is ₹59,000 per month."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/shreya-amalga-1720-office-rent-thaltej/photo-1.jpg",
+      "alt": "Shreeya Amalga, Thaltej — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shreya-amalga-1720-office-rent-thaltej/photo-2.jpg",
+      "alt": "Shreeya Amalga, Thaltej — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shreya-amalga-1720-office-rent-thaltej/photo-3.jpg",
+      "alt": "Shreeya Amalga, Thaltej — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Shreeya Amalga office Thaltej | City Property Services",
   "seoDescription": "Unfurnished office of 1,720 sq.ft for rent in Shreeya Amalga, Thaltej, Ahmedabad.",
@@ -29,5 +45,6 @@
   "priceValue": 59000,
   "pricePer": "per month",
   "furnishing": "Unfurnished",
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "mainImage": "/uploads/properties/shreya-amalga-1720-office-rent-thaltej/photo-1.jpg"
 }

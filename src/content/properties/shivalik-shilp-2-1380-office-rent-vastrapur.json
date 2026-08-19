@@ -18,7 +18,33 @@
     "Fully furnished office of 1,380 sq.ft for rent in Shivalik Shilp 2, Vastrapur, Ahmedabad.",
     "Fitted with 1 cabin, 1 conference room, 21 seats and 8 lifts. Set in a 13 floors building, 2 years. Rent is ₹75,000 per month plus taxes."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/shivalik-shilp-2-1380-office-rent-vastrapur/photo-1.jpg",
+      "alt": "Shivalik Shilp 2, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shivalik-shilp-2-1380-office-rent-vastrapur/photo-2.jpg",
+      "alt": "Shivalik Shilp 2, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shivalik-shilp-2-1380-office-rent-vastrapur/photo-3.jpg",
+      "alt": "Shivalik Shilp 2, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shivalik-shilp-2-1380-office-rent-vastrapur/photo-4.jpg",
+      "alt": "Shivalik Shilp 2, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/shivalik-shilp-2-1380-office-rent-vastrapur/photo-5.jpg",
+      "alt": "Shivalik Shilp 2, Vastrapur — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Shivalik Shilp 2 office Vastrapur | City Property Services",
   "seoDescription": "Fully furnished office of 1,380 sq.ft for rent in Shivalik Shilp 2, Vastrapur, Ahmedabad.",
@@ -29,5 +55,6 @@
   "priceValue": 75000,
   "pricePer": "per month",
   "furnishing": "Fully furnished",
-  "localitySlug": "vastrapur"
+  "localitySlug": "vastrapur",
+  "mainImage": "/uploads/properties/shivalik-shilp-2-1380-office-rent-vastrapur/photo-1.jpg"
 }

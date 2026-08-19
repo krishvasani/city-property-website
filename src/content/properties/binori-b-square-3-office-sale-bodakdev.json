@@ -21,7 +21,23 @@
     "Unfurnished office of 1,350 sq.ft super built up for sale in Binori B Square 3, Bodakdev, Ahmedabad.",
     "A bare shell unit with 8 lifts, 2 service lifts and 1 car park. Set in a 13 floors building, 1 to 5 years. Priced at ₹7,900 per sq.ft plus taxes, about ₹1.07 Cr."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/binori-b-square-3-office-sale-bodakdev/photo-1.jpg",
+      "alt": "Binori B Square 3, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/binori-b-square-3-office-sale-bodakdev/photo-2.jpg",
+      "alt": "Binori B Square 3, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/binori-b-square-3-office-sale-bodakdev/photo-3.jpg",
+      "alt": "Binori B Square 3, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Binori B Square 3 office Bodakdev | City Property Services",
   "seoDescription": "Unfurnished office of 1,350 sq.ft super built up for sale in Binori B Square 3, Bodakdev, Ahmedabad.",
@@ -32,5 +48,6 @@
   "perSqftDisplay": "₹7,900 per sq.ft",
   "furnishing": "Unfurnished",
   "builtUpArea": "1,350 sq.ft",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "mainImage": "/uploads/properties/binori-b-square-3-office-sale-bodakdev/photo-1.jpg"
 }

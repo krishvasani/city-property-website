@@ -19,7 +19,18 @@
     "Unfurnished office of 6,250 sq.ft for rent in Sankalp Square 3B, Bodakdev, Ahmedabad.",
     "A new bare shell floor. Set in a 18 floors building, newly constructed. Rent is ₹281,250 per month."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/sankalp-square-3b-6250-office-rent-bodakdev/photo-1.jpg",
+      "alt": "Sankalp Square 3B, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sankalp-square-3b-6250-office-rent-bodakdev/photo-2.jpg",
+      "alt": "Sankalp Square 3B, Bodakdev — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-18",
   "seoTitle": "Sankalp Square 3B office Bodakdev | City Property Services",
   "seoDescription": "Unfurnished office of 6,250 sq.ft for rent in Sankalp Square 3B, Bodakdev, Ahmedabad.",
@@ -29,5 +40,6 @@
   },
   "pricePer": "per month",
   "furnishing": "Unfurnished",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "mainImage": "/uploads/properties/sankalp-square-3b-6250-office-rent-bodakdev/photo-1.jpg"
 }

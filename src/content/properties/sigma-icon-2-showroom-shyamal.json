@@ -25,7 +25,23 @@
     "Ground floor showroom in Sigma Icon 2, Shyamal, with 1,712 sq.ft super built up and 1,100 sq.ft carpet and a 15 ft frontage.",
     "Set in a G+4 building with 1 lifts and 3 units per floor, around 5 to 10 years old. Priced at ₹24,000 per sq.ft on super built up, which works out to about ₹4.11 Cr. Well suited to Jewellery, Clothing, Garments, Designer and Salon."
   ],
-  "photos": [],
+  "photos": [
+    {
+      "url": "/uploads/properties/sigma-icon-2-showroom-shyamal/photo-1.jpg",
+      "alt": "Sigma Icon 2, Shyamal — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sigma-icon-2-showroom-shyamal/photo-2.jpg",
+      "alt": "Sigma Icon 2, Shyamal — commercial property photo",
+      "label": "Property photo"
+    },
+    {
+      "url": "/uploads/properties/sigma-icon-2-showroom-shyamal/photo-3.jpg",
+      "alt": "Sigma Icon 2, Shyamal — commercial property photo",
+      "label": "Property photo"
+    }
+  ],
   "newAt": "2026-06-11",
   "seoTitle": "Sigma Icon 2 showroom Shyamal | City Property Services",
   "seoDescription": "Ground floor showroom in Sigma Icon 2, Shyamal, with 1,712 sq.ft super built up and 1,100 sq.ft carpet and a 15 ft frontage.",
@@ -41,5 +57,6 @@
     "Designer",
     "Salon"
   ],
-  "localitySlug": "shyamal"
+  "localitySlug": "shyamal",
+  "mainImage": "/uploads/properties/sigma-icon-2-showroom-shyamal/photo-1.jpg"
 }
