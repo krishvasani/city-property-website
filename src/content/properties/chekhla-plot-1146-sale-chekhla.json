@@ -1,34 +1,27 @@
 {
-  "title": "1,146 sq.yd Plot for Sale · Chekhla, Chekhla",
+  "title": "1,146 sq.yd Residential Plot for Sale · Chekhla",
   "slug": "chekhla-plot-1146-sale-chekhla",
   "status": "sale",
   "propertyType": "plot",
   "featured": false,
   "draft": false,
-  "priceDisplay": "₹0 L",
-  "priceValue": 5512,
+  "priceDisplay": "₹4.81 Cr",
+  "priceValue": 48100000,
   "localityName": "Chekhla",
   "localitySlug": "chekhla",
   "city": "Ahmedabad",
-  "address": "Chekhla, Chekhla, Ahmedabad",
+  "address": "Chekhla, Ahmedabad",
   "area": "1,146 sq.yd",
   "areaSqft": 10314,
   "plotSize": "1,146 sq.yd",
   "amenities": [],
   "description": [
-    "plot of 1,146 sq.yd for sale in Chekhla, Chekhla, Ahmedabad."
+    "Residential plot of 1,146 sq.yd for sale in Chekhla, Ahmedabad."
   ],
-  "photos": [
-    {
-      "url": "/uploads/properties/chekhla-plot-1146-sale-chekhla/photo-1.jpg",
-      "alt": "Chekhla, Chekhla — plot photo",
-      "label": "Plot photo"
-    }
-  ],
-  "mainImage": "/uploads/properties/chekhla-plot-1146-sale-chekhla/photo-1.jpg",
+  "photos": [],
   "newAt": "2026-07-01",
-  "seoTitle": "Plot for Sale in Chekhla",
-  "seoDescription": "1,146 sq.yd Plot for Sale · Chekhla, Chekhla",
+  "seoTitle": "1,146 sq.yd Plot for Sale in Chekhla",
+  "seoDescription": "Residential plot of 1,146 sq.yd for sale in Chekhla, Ahmedabad.",
   "geo": {
     "lat": 23.072905146594795,
     "lng": 72.5099223510318
