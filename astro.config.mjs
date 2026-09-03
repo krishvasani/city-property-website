@@ -18,7 +18,11 @@ export default defineConfig({
     '/list-property': '/sell',
     '/contact': '/consult',
   },
-  integrations: [sitemap()],
+  // The privacy policy page exists only to satisfy the mandatory privacy policy
+  // link in Meta and LinkedIn lead ad forms. Keep it out of the sitemap so it is
+  // not surfaced to search engines or ordinary visitors. It stays crawlable in
+  // robots.txt so the ad platforms can still fetch and review it.
+  integrations: [sitemap({ filter: (page) => !page.includes('/privacy-policy') })],
   // Keep the build output clean; assets already hashed by Astro.
   build: { inlineStylesheets: 'never' },
   vite: {
