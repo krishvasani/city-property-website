@@ -15,7 +15,7 @@ export const serviceLinks: ServiceLink[] = [
   {
     key: 'corporate',
     label: 'Corporate',
-    href: '/services/corporate',
+    href: '/services/corporate/',
     icon: 'commercial',
     blurb: 'Offices and corporate spaces to lease or buy, from compact startup floors to full buildings.',
     category: 'commercial',
@@ -23,7 +23,7 @@ export const serviceLinks: ServiceLink[] = [
   {
     key: 'retail',
     label: 'Retail',
-    href: '/services/retail',
+    href: '/services/retail/',
     icon: 'retail',
     blurb: 'High visibility shops, showrooms and food and beverage spaces where customers can find you.',
     category: 'commercial',
@@ -31,7 +31,7 @@ export const serviceLinks: ServiceLink[] = [
   {
     key: 'industrial-warehouse',
     label: 'Industrial & Warehouse',
-    href: '/services/industrial-warehouse',
+    href: '/services/industrial-warehouse/',
     icon: 'warehousing',
     blurb: 'Warehouses, sheds, cold storage and industrial land across Ahmedabad’s logistics belts.',
     category: 'industrial',
@@ -39,7 +39,7 @@ export const serviceLinks: ServiceLink[] = [
   {
     key: 'investment',
     label: 'Investment',
-    href: '/services/investment',
+    href: '/services/investment/',
     icon: 'investment',
     blurb: 'Preleased assets and prelaunch opportunities chosen for steady income and long term growth.',
     category: 'investment',
@@ -47,7 +47,7 @@ export const serviceLinks: ServiceLink[] = [
   {
     key: 'residential',
     label: 'Residential',
-    href: '/services/residential',
+    href: '/services/residential/',
     icon: 'residential',
     blurb: 'Homes to buy, sell, rent or lease, matched to your locality, budget and lifestyle.',
     category: 'residential',
@@ -55,7 +55,7 @@ export const serviceLinks: ServiceLink[] = [
   {
     key: 'land',
     label: 'Land',
-    href: '/services/land',
+    href: '/services/land/',
     icon: 'land',
     blurb: 'Plots and land parcels for homes, business, industry and investment, with the checks done right.',
     category: 'land',

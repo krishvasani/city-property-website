@@ -32,4 +32,4 @@ A property that pays a strong income today may grow more slowly, and a high grow
 
 Use careful words in your own head too. Think in terms of stable rental potential and long term appreciation potential, not guaranteed returns. Realistic expectations lead to better decisions.
 
-The right balance depends on your goals, your timeline and your comfort with risk. If you would like help weighing income against growth for a specific property, our <a href="/services/investment">investment advisory</a> will keep it simple and honest.
+The right balance depends on your goals, your timeline and your comfort with risk. If you would like help weighing income against growth for a specific property, our <a href="/services/investment/">investment advisory</a> will keep it simple and honest.

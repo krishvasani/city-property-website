@@ -12,7 +12,7 @@
       if (window.gtag) gtag('event', 'whatsapp_click');
       window.open(url, '_blank', 'noopener');
     } catch (err) {
-      window.location.href = wa.getAttribute('href') || '/consult';
+      window.location.href = wa.getAttribute('href') || '/consult/';
     }
   });
 

@@ -32,4 +32,4 @@ If your aim is a home or a calmer long term hold, a residential plot is often th
 
 Whatever you choose, the basics stay the same. Clear title, correct zoning, legal access and an understanding of development potential matter for both. Always verify the legal side with a qualified professional.
 
-The right plot depends on what you want it to become. If you would like help comparing options near Ahmedabad, our <a href="/services/land">land team</a> can lay out the trade offs clearly.
+The right plot depends on what you want it to become. If you would like help comparing options near Ahmedabad, our <a href="/services/land/">land team</a> can lay out the trade offs clearly.

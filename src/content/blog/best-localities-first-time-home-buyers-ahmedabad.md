@@ -36,4 +36,4 @@ These are more established and therefore pricier, but if being close to the busi
 
 Visit your shortlist at peak hour, not just on a quiet Sunday afternoon. The real commute, the parking situation and the noise tell you far more than a brochure ever will. Also check the RERA status of any under construction project, and keep a small buffer in your budget for registration and stamp duty.
 
-Picking a first home is as much about lifestyle as it is about price. If you are weighing two or three areas and cannot decide, <a href="/consult">request a consultation</a> and we will help you compare them calmly, with no pressure to rush.
+Picking a first home is as much about lifestyle as it is about price. If you are weighing two or three areas and cannot decide, <a href="/consult/">request a consultation</a> and we will help you compare them calmly, with no pressure to rush.

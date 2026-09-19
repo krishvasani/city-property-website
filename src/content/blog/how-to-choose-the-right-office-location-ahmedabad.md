@@ -36,4 +36,4 @@ Parking, power backup, lift quality, common area upkeep and the fit out timeline
 
 Check the lock in, the escalation, the maintenance charges and the fit out period. Small clauses can matter a lot over a few years, so it is worth slowing down here.
 
-Picking an office is easier with someone who knows the local pockets. If you are weighing a few areas, see our <a href="/services/corporate">corporate services</a> or <a href="/consult">talk to our team</a> and we will help you find a space that fits how you actually work.
+Picking an office is easier with someone who knows the local pockets. If you are weighing a few areas, see our <a href="/services/corporate/">corporate services</a> or <a href="/consult/">talk to our team</a> and we will help you find a space that fits how you actually work.

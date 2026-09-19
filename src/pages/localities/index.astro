@@ -19,7 +19,7 @@ const regions = [...byRegion.entries()].sort((a, b) => a[0].localeCompare(b[0]))
 
 const breadcrumbs = [
   { name: 'Home', url: '/' },
-  { name: 'Localities', url: '/localities' },
+  { name: 'Localities', url: '/localities/' },
 ];
 ---
 <Base
@@ -45,7 +45,7 @@ const breadcrumbs = [
         <h2>{region}</h2>
         <div class="loc-grid">
           {items.sort((a, b) => a.name.localeCompare(b.name)).map((l) => (
-            <a class="loc-tile" href={`/localities/${l.slug}`}>
+            <a class="loc-tile" href={`/localities/${l.slug}/`}>
               <span class="loc-name">{l.name}</span>
               {counts.get(l.id) ? <span class="loc-count">{counts.get(l.id)} live</span> : <span class="loc-count muted">Market info</span>}
             </a>

@@ -3,13 +3,14 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "description": "City Property Services — Ahmedabad real-estate lead-gen website",
+  "description": "City Property Services \u2014 Ahmedabad real-estate lead-gen website",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/postbuild.mjs && node scripts/check-trailing-slash.mjs",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check:links": "node scripts/check-trailing-slash.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.2.1",

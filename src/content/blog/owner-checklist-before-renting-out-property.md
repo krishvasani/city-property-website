@@ -36,4 +36,4 @@ A clear agreement covering rent, deposit, notice period, maintenance and house r
 
 An empty home earns nothing. A slightly sensible rent that keeps the property occupied usually beats an ambitious rent that leaves it vacant for months.
 
-If you would like help finding a reliable tenant and setting the right rent, our team can manage the process for you from listing to handover. Reach out through our <a href="/consult">consult page</a> whenever you are ready.
+If you would like help finding a reliable tenant and setting the right rent, our team can manage the process for you from listing to handover. Reach out through our <a href="/consult/">consult page</a> whenever you are ready.

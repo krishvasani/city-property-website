@@ -42,8 +42,8 @@ const description =
   `${loc.name}, ${loc.city} real estate. Buy, rent, lease and invest in property in ${loc.name} with City Property Services, Ahmedabad's full spectrum property consultants.`;
 const breadcrumbs = [
   { name: 'Home', url: '/' },
-  { name: 'Localities', url: '/localities' },
-  { name: loc.name, url: `/localities/${loc.slug}` },
+  { name: 'Localities', url: '/localities/' },
+  { name: loc.name, url: `/localities/${loc.slug}/` },
 ];
 const placeSchema = {
   '@context': 'https://schema.org',
@@ -73,7 +73,7 @@ const relBits = [
 <Base title={title} description={description} breadcrumbs={breadcrumbs} jsonLd={placeSchema} active="buy">
   <main class="wrap-wide loc-page">
     <nav class="crumb">
-      <a href="/">Home</a> <span>/</span> <a href="/localities">Localities</a> <span>/</span>
+      <a href="/">Home</a> <span>/</span> <a href="/localities/">Localities</a> <span>/</span>
       <span style="color:var(--ink);">{loc.name}</span>
     </nav>
 
@@ -82,10 +82,10 @@ const relBits = [
       <h1 class="display" style="max-width:18ch;margin-top:12px;">Property in {loc.name}, Ahmedabad</h1>
       <p class="body-lg muted" style="max-width:64ch;margin-top:16px;">{loc.description}</p>
       <div class="loc-actions">
-        {rel.buy && <a class="btn btn-primary" href={`/buy?locality=${loc.id}`}>Buy in {loc.name}</a>}
-        {rel.rent && <a class="btn btn-secondary" href={`/rent?locality=${loc.id}`}>Rent in {loc.name}</a>}
-        <a class="btn btn-secondary" href="/map">View on map</a>
-        <a class="btn btn-secondary" href="/consult">Talk to an advisor</a>
+        {rel.buy && <a class="btn btn-primary" href={`/buy/?locality=${loc.id}`}>Buy in {loc.name}</a>}
+        {rel.rent && <a class="btn btn-secondary" href={`/rent/?locality=${loc.id}`}>Rent in {loc.name}</a>}
+        <a class="btn btn-secondary" href="/map/">View on map</a>
+        <a class="btn btn-secondary" href="/consult/">Talk to an advisor</a>
       </div>
     </section>
 
@@ -118,7 +118,7 @@ const relBits = [
             <h2 style="color:#fff;">Looking for property in {loc.name}?</h2>
             <p style="color:#c4d0d8;max-width:52ch;margin-top:8px;">We have off‑market and upcoming options in {loc.name} that are not always listed online. Tell us what you need and we will share matches.</p>
           </div>
-          <a class="btn btn-light" href="/consult">Request options</a>
+          <a class="btn btn-light" href="/consult/">Request options</a>
         </div>
       </section>
     )}
@@ -138,8 +138,8 @@ const relBits = [
         <div class="chips">
           {nearby.map((n) => (
             pageSlugs.has(n.id)
-              ? <a class="chip chip-link" href={`/localities/${n.slug}`}>{n.name}</a>
-              : <a class="chip chip-link" href={`/buy?locality=${n.id}`}>{n.name}</a>
+              ? <a class="chip chip-link" href={`/localities/${n.slug}/`}>{n.name}</a>
+              : <a class="chip chip-link" href={`/buy/?locality=${n.id}`}>{n.name}</a>
           ))}
         </div>
       </section>
@@ -151,7 +151,7 @@ const relBits = [
           <h2 style="color:#fff;">Buy, sell, rent or invest in {loc.name}</h2>
           <p style="color:#c4d0d8;max-width:54ch;margin-top:8px;">Talk to a local advisor who knows {loc.name} street by street, for honest guidance on price, locality and timing.</p>
         </div>
-        <a class="btn btn-light" href="/consult">Request a consultation</a>
+        <a class="btn btn-light" href="/consult/">Request a consultation</a>
       </div>
     </section>
   </main>

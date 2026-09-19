@@ -9,7 +9,7 @@ const { property: p } = Astro.props;
 
 const meta = cardMetaFor(p);
 const variant = tagVariantFor(p);
-const href = `/property/${p.slug}`;
+const href = `/property/${p.slug}/`;
 const photo = p.photos?.[0];
 const bedsNum = typeof p.beds === 'number' ? p.beds : '';
 const searchText = [p.title, p.localityName, p.address].filter(Boolean).join(' ').toLowerCase();

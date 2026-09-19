@@ -25,7 +25,7 @@ const waData = waPayload('Hi City Property Services, I have a question.');
           <a href={social.linkedin} target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M6.94 8.5v8.04H4.27V8.5h2.67zM5.6 4.2a1.55 1.55 0 1 1 0 3.1 1.55 1.55 0 0 1 0-3.1zM9 8.5h2.56v1.1h.04c.36-.66 1.23-1.36 2.54-1.36 2.71 0 3.21 1.78 3.21 4.09v4.21h-2.67v-3.73c0-.89-.02-2.03-1.24-2.03-1.24 0-1.43.97-1.43 1.97v3.79H9V8.5z"/></svg>
           </a>
-          <a href="/consult" data-wa={waData} rel="nofollow noopener" aria-label="WhatsApp">
+          <a href="/consult/" data-wa={waData} rel="noopener" aria-label="WhatsApp">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20l1.4-4A8 8 0 1 1 9 19.2L4 20z"/><path d="M9 9c0 4 2 6 6 6"/></svg>
           </a>
         </div>
@@ -33,10 +33,10 @@ const waData = waPayload('Hi City Property Services, I have a question.');
       <div>
         <h5>Explore</h5>
         <ul>
-          <li><a href="/buy">Buy</a></li>
-          <li><a href="/rent">Rent</a></li>
-          <li><a href="/map">Map view</a></li>
-          <li><a href="/saved">Saved properties</a></li>
+          <li><a href="/buy/">Buy</a></li>
+          <li><a href="/rent/">Rent</a></li>
+          <li><a href="/map/">Map view</a></li>
+          <li><a href="/saved/">Saved properties</a></li>
         </ul>
       </div>
       <div>
@@ -48,27 +48,29 @@ const waData = waPayload('Hi City Property Services, I have a question.');
       <div>
         <h5>Company</h5>
         <ul>
-          <li><a href="/about-us">About us</a></li>
-          <li><a href="/services">Our services</a></li>
-          <li><a href="/sell">Sell your property</a></li>
-          <li><a href="/guide">Buyer &amp; seller guide</a></li>
-          <li><a href="/blog">Market blog</a></li>
-          <li><a href="/consult">Talk to an expert</a></li>
+          <li><a href="/about-us/">About us</a></li>
+          <li><a href="/services/">Our services</a></li>
+          <li><a href="/sell/">Sell your property</a></li>
+          <li><a href="/guide/">Buyer &amp; seller guide</a></li>
+          <li><a href="/blog/">Market blog</a></li>
+          <li><a href="/consult/">Talk to an expert</a></li>
         </ul>
       </div>
       <div>
         <h5>Localities</h5>
         <ul>
-          <li><a href="/localities/bodakdev">Bodakdev property</a></li>
-          <li><a href="/localities/satellite">Satellite property</a></li>
-          <li><a href="/localities/sg-highway">SG Highway property</a></li>
-          <li><a href="/localities/thaltej">Thaltej property</a></li>
-          <li><a href="/localities">All localities</a></li>
+          <li><a href="/localities/bodakdev/">Bodakdev property</a></li>
+          <li><a href="/localities/satellite/">Satellite property</a></li>
+          <li><a href="/localities/sg-highway/">SG Highway property</a></li>
+          <li><a href="/localities/thaltej/">Thaltej property</a></li>
+          <li><a href="/localities/">All localities</a></li>
         </ul>
       </div>
     </div>
     <div class="legal">
-      <span>© {year} {site.name} · RERA: {site.rera} · <a class="emp-link" href="/cps-admin/">Employee login</a></span>
+      <!-- Employee login (/cps-admin/) is reachable by direct URL only: it is
+           robots-disallowed, so the site must not link crawlers to it. -->
+      <span>© {year} {site.name} · RERA: {site.rera}</span>
     </div>
   </div>
 </footer>
@@ -82,8 +84,6 @@ const waData = waPayload('Hi City Property Services, I have a question.');
      button in the bottom-right corner never covers them. */
   .brand .social { margin-top: 18px; }
   /* Discreet employee link, blends into the legal line */
-  .emp-link { color: inherit; opacity: .8; }
-  .emp-link:hover { color: #fff; opacity: 1; }
   /* Let the long RERA id wrap instead of being clipped on small screens */
   .footer .legal span { overflow-wrap: anywhere; }
   /* Keep the bottom legal line clear of the floating WhatsApp button on phones */

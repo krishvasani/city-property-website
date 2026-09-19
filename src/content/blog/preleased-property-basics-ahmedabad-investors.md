@@ -36,4 +36,4 @@ Be cautious about anyone promising guaranteed returns. Sensible language is stab
 
 Preleased assets suit investors who want steady income and lower drama. If you are chasing maximum appreciation and are comfortable with more risk, a different strategy may fit you better.
 
-Preleased deals reward careful checking. If you are exploring this route, our <a href="/services/investment">investment advisory</a> can help you read the tenant, the lease and the numbers without the hype.
+Preleased deals reward careful checking. If you are exploring this route, our <a href="/services/investment/">investment advisory</a> can help you read the tenant, the lease and the numbers without the hype.

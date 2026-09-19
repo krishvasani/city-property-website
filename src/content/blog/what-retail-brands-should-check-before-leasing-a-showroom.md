@@ -36,4 +36,4 @@ The brands around you shape who walks past. Complementary stores can lift everyo
 
 Check the rent, the escalation, the lock in, signage rights and the fit out window. Make sure you have enough time to set up before the rent clock really hurts.
 
-The right address depends on what you sell and who you sell to. If you are comparing high street spots, malls or a developing retail pocket, our <a href="/services/retail">retail services</a> can help you find a space that suits your brand.
+The right address depends on what you sell and who you sell to. If you are comparing high street spots, malls or a developing retail pocket, our <a href="/services/retail/">retail services</a> can help you find a space that suits your brand.

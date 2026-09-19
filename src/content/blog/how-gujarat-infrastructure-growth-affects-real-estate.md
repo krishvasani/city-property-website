@@ -32,4 +32,4 @@ Metro lines, planned business districts and civic upgrades make certain pockets 
 
 Infrastructure is a useful clue, not a magic signal. Use it to understand why an area might grow, then still check the fundamentals of the specific property. Direction matters, but so do title, access and price.
 
-Reading these shifts is part of what local knowledge is really about. If you want to understand how nearby growth could affect an area you are considering, <a href="/consult">talk to our team</a> for a grounded view.
+Reading these shifts is part of what local knowledge is really about. If you want to understand how nearby growth could affect an area you are considering, <a href="/consult/">talk to our team</a> for a grounded view.

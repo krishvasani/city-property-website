@@ -36,4 +36,4 @@ Good photos and a clear, honest description bring more enquiries, and more serio
 
 Start with a realistic number based on recent deals in your exact locality, not an aspirational figure. A fair price with clean documents tends to sell faster and smoother than a high price that lingers.
 
-A well prepared home almost sells itself. If you would like a grounded valuation and a simple plan to get your property market ready, our <a href="/sell">sell page</a> is a good place to begin.
+A well prepared home almost sells itself. If you would like a grounded valuation and a simple plan to get your property market ready, our <a href="/sell/">sell page</a> is a good place to begin.

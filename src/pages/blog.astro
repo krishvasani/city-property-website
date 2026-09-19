@@ -31,7 +31,7 @@ const categories = [...new Set(entries.map((e) => e.data.category))];
     </div>
 
     {lead && (
-      <a class="lead-post" href={`/blog/${lead.slug}`} data-post data-category={lead.data.category}>
+      <a class="lead-post" href={`/blog/${lead.slug}/`} data-post data-category={lead.data.category}>
         <div class="ph thumb" data-label={lead.data.category}>
           <img class="cover-img" src={lead.data.coverImage ?? COVER_FALLBACK} alt={lead.data.coverAlt ?? lead.data.title} width="1200" height="750" onerror={`this.onerror=null;this.src='${COVER_FALLBACK}'`} />
         </div>
@@ -49,7 +49,7 @@ const categories = [...new Set(entries.map((e) => e.data.category))];
 
     <div class="blog-grid">
       {rest.map((p) => (
-        <a class="post-card" href={`/blog/${p.slug}`} data-post data-category={p.data.category}>
+        <a class="post-card" href={`/blog/${p.slug}/`} data-post data-category={p.data.category}>
           <div class="ph thumb" data-label={p.data.category}>
             <img class="cover-img" src={p.data.coverImage ?? COVER_FALLBACK} alt={p.data.coverAlt ?? p.data.title} loading="lazy" width="1200" height="750" onerror={`this.onerror=null;this.src='${COVER_FALLBACK}'`} />
           </div>
@@ -73,7 +73,7 @@ const categories = [...new Set(entries.map((e) => e.data.category))];
         <h3>Get market updates in your inbox</h3>
         <p class="muted" style="margin:6px 0 0;">We publish locality reports and tips every couple of weeks.</p>
       </div>
-      <a class="btn btn-primary" href="/consult">Talk to an expert</a>
+      <a class="btn btn-primary" href="/consult/">Talk to an expert</a>
     </div>
   </main>
 </Base>

@@ -32,4 +32,4 @@ A growth story is not a guarantee. New districts take time to fill in, and timel
 
 Even in a much discussed area, the fundamentals still apply. Check the developer, the approvals, the exact location within the district, and how easily you could rent or exit if your plans change.
 
-GIFT City and Gandhinagar can be interesting for the right investor with the right time frame. If you want a balanced view for your own situation, our <a href="/services/investment">investment team</a> will give you a straight, practical read.
+GIFT City and Gandhinagar can be interesting for the right investor with the right time frame. If you want a balanced view for your own situation, our <a href="/services/investment/">investment team</a> will give you a straight, practical read.

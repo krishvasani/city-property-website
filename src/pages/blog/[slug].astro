@@ -32,8 +32,8 @@ const published = post.date.toISOString();
 const updated = (post as { updated?: Date }).updated?.toISOString() ?? published;
 const breadcrumbs = [
   { name: 'Home', url: '/' },
-  { name: 'Blog', url: '/blog' },
-  { name: post.title, url: `/blog/${entry.slug}` },
+  { name: 'Blog', url: '/blog/' },
+  { name: post.title, url: `/blog/${entry.slug}/` },
 ];
 const articleSchema = {
   '@context': 'https://schema.org',
@@ -45,7 +45,7 @@ const articleSchema = {
   dateModified: updated,
   author: { '@type': 'Organization', name: post.author ?? site.name, url: site.url },
   publisher: { '@id': `${site.url}/#organization` },
-  mainEntityOfPage: new URL(`/blog/${entry.slug}`, site.url).href,
+  mainEntityOfPage: new URL(`/blog/${entry.slug}/`, site.url).href,
   articleSection: post.category,
 };
 ---
@@ -64,7 +64,7 @@ const articleSchema = {
     <article class="article">
       <nav class="crumb">
         <a href="/">Home</a><span class="sep">›</span>
-        <a href="/blog">Blog</a><span class="sep">›</span>
+        <a href="/blog/">Blog</a><span class="sep">›</span>
         <span style="color:var(--ink);">{post.category}</span>
       </nav>
 
@@ -99,8 +99,8 @@ const articleSchema = {
           <p class="muted" style="margin:6px 0 0;">Get tailored advice for your budget and locality.</p>
         </div>
         <div class="row" style="gap:10px;">
-          <a class="btn btn-primary" href="/consult">Talk to an expert</a>
-          <a class="btn btn-secondary" href="/buy">Browse properties</a>
+          <a class="btn btn-primary" href="/consult/">Talk to an expert</a>
+          <a class="btn btn-secondary" href="/buy/">Browse properties</a>
         </div>
       </div>
     </article>
@@ -109,7 +109,7 @@ const articleSchema = {
       <h2 style="margin-bottom:18px;">More from the blog</h2>
       <div class="rel-grid">
         {related.map((p) => (
-          <a class="post-card" href={`/blog/${p.slug}`}>
+          <a class="post-card" href={`/blog/${p.slug}/`}>
             <div class="ph thumb" data-label={p.data.category}>
               <img class="cover-img" src={p.data.coverImage ?? COVER_FALLBACK} alt={p.data.coverAlt ?? p.data.title} loading="lazy" width="1200" height="750" onerror={`this.onerror=null;this.src='${COVER_FALLBACK}'`} />
             </div>

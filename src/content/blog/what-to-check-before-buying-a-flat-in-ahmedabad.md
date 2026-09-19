@@ -40,4 +40,4 @@ Budget for registration, stamp duty, maintenance deposits and any loan processin
 
 Read the agreement carefully. It should clearly state the price, the payment plan, the possession date and what happens if timelines slip. Get every promise in writing rather than relying on a friendly verbal assurance.
 
-None of this is meant to scare you. Most deals in Ahmedabad go smoothly when buyers do their homework. If you would like a second pair of eyes on a flat you are considering, <a href="/consult">talk to our team</a> and we will help you check it sensibly.
+None of this is meant to scare you. Most deals in Ahmedabad go smoothly when buyers do their homework. If you would like a second pair of eyes on a flat you are considering, <a href="/consult/">talk to our team</a> and we will help you check it sensibly.
