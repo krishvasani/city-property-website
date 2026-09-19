@@ -10,7 +10,9 @@ import WhatsAppButton from '../../components/WhatsAppButton.astro';
 import CallButton from '../../components/CallButton.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import Map from '../../components/Map.astro';
-import { getProperties, getProperty, getSimilar } from '../../lib/data';
+import { getProperties, getProperty, getPropertySeo, getSimilar } from '../../lib/data';
+import { propertyGraph } from '../../lib/seo';
+import { categoryFor } from '../../lib/format';
 import { getLocalityById } from '../../data/localities';
 import { contact, site } from '../../lib/config';
 
@@ -68,52 +70,29 @@ const specs: [string, string][] = ([
 ] as [string, string | undefined][]).filter((x): x is [string, string] => Boolean(x[1]));
 const photoCount = property.photos?.length ? Math.max(property.photos.length, 18) : 18;
 
-// ── SEO: keyword-aligned title/description, breadcrumbs, structured data ──
-const TYPE_LABELS: Record<string, string> = {
-  apartment: 'Flat', residential: 'Home', villa: 'Villa', bungalow: 'Bungalow', 'row house': 'Row House',
-  office: 'Office Space', commercial: 'Commercial Space', shop: 'Shop', showroom: 'Showroom', retail: 'Retail Space',
-  warehouse: 'Warehouse', warehousing: 'Warehouse', 'industrial shed': 'Industrial Shed', industrial: 'Industrial Space',
-  'industrial land': 'Industrial Land', land: 'Land', plot: 'Plot', 'residential land': 'Residential Plot',
-  'commercial land': 'Commercial Plot', investment: 'Investment Property',
-};
-const typeLabel = TYPE_LABELS[property.propertyType] ?? 'Property';
-const listingWord = property.status === 'sale' ? 'for Sale' : property.status === 'lease' ? 'for Lease' : 'for Rent';
-const seoTitle = `${typeLabel} ${listingWord} in ${property.localityName}, Ahmedabad`;
-const onRequest = !property.priceValue || property.priceDisplay === 'Price on request';
-const priceBit = onRequest ? '' : ` at ${property.priceDisplay}`;
-const seoDescription = `${typeLabel} ${listingWord.toLowerCase()} in ${property.localityName}, Ahmedabad${priceBit}. ${property.area ? property.area + '. ' : ''}Contact City Property Services for photos, details and a viewing.`.slice(0, 158);
-const ogImg = property.photos?.find((p) => p.url)?.url;
+// ── SEO: H1 / title / description resolved site-wide (unique), JSON-LD graph ──
+const seo = await getPropertySeo(property.slug);
 const propUrl = new URL(Astro.url.pathname, site.url).href;
 const breadcrumbs = [
   { name: 'Home', url: '/' },
   { name: isRental ? 'Rent' : 'Buy', url: listPath },
   ...(selfLoc ? [{ name: property.localityName, url: `/localities/${property.localitySlug}/` }] : []),
-  { name: `${typeLabel} ${listingWord}`, url: Astro.url.pathname },
+  { name: seo.h1, url: Astro.url.pathname },
 ];
-const schemaImages = (property.photos ?? []).filter((p) => p.url).slice(0, 6).map((p) => new URL(p.url!, site.url).href);
-const productSchema: Record<string, any> = {
-  '@context': 'https://schema.org',
-  '@type': 'Product',
-  name: property.title,
-  description: seoDescription,
-  category: typeLabel,
-  ...(schemaImages.length ? { image: schemaImages } : {}),
-  brand: { '@type': 'Organization', name: site.name },
-};
-if (!onRequest) {
-  productSchema.offers = property.status === 'sale'
-    ? { '@type': 'Offer', price: property.priceValue, priceCurrency: 'INR', availability: 'https://schema.org/InStock', url: propUrl }
-    : { '@type': 'Offer', priceCurrency: 'INR', availability: 'https://schema.org/InStock', url: propUrl,
-        priceSpecification: { '@type': 'UnitPriceSpecification', price: property.priceValue, priceCurrency: 'INR', unitText: 'MONTH' } };
-}
+// Social preview: first photo, else a branded fallback for the property category.
+const firstPhoto = property.photos?.find((p) => p.url);
+const ogImg = firstPhoto?.url ?? `/images/og/${categoryFor(property.propertyType)}.png`;
+const ogAlt = firstPhoto ? (firstPhoto.alt || seo.h1) : `${seo.h1} — ${site.name}`;
+const graph = propertyGraph(property, { url: propUrl, seo, breadcrumbs });
 ---
 <Base
-  title={seoTitle}
-  description={seoDescription}
+  title={seo.title}
+  description={seo.description}
+  brandSuffix={false}
   active={isRental ? 'rent' : 'buy'}
   ogImage={ogImg}
-  breadcrumbs={breadcrumbs}
-  jsonLd={productSchema}
+  ogImageAlt={ogAlt}
+  jsonLd={graph}
 >
   <main class="wrap-wide">
     <nav class="crumb">
@@ -136,7 +115,7 @@ if (!onRequest) {
           <span class="tag tag-glass" style="box-shadow:none;border:1px solid var(--border);">Ready to move</span>
         </div>
         <div class="price">{property.priceDisplay}{property.pricePer && <span style="font-size:16px;font-weight:500;color:var(--text-muted);">{property.pricePer}</span>}</div>
-        <div class="ttl">{property.title}</div>
+        <h1 class="ttl">{seo.h1}</h1>
         <div class="loc">
           <Icon name="pin" sw={1.8} />{property.address ?? `${property.localityName}, Ahmedabad`}{property.perSqftDisplay && ` · ${property.perSqftDisplay}`}
         </div>
@@ -266,7 +245,8 @@ if (!onRequest) {
 
   .det-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; margin: 28px 0 8px; flex-wrap: wrap; }
   .det-head .price { font-size: clamp(28px,3.4vw,40px); font-weight: 700; letter-spacing: -.026em; color: var(--ink); }
-  .det-head .ttl { font-size: 19px; font-weight: 600; color: var(--ink); margin-top: 4px; }
+  /* h1 for SEO, but styled as the listing sub-title (overrides the global h1 rule) */
+  .det-head .ttl { font-size: 19px; line-height: 1.35; letter-spacing: normal; font-weight: 600; color: var(--ink); margin: 4px 0 0; }
   .det-head .loc { display: flex; align-items: center; gap: 7px; color: var(--text-muted); margin-top: 8px; font-size: 14.5px; }
   .det-head .loc svg { width: 16px; height: 16px; color: var(--sky); }
   .det-actions { display: flex; gap: 10px; }

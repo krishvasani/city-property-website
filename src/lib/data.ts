@@ -5,6 +5,7 @@ import { getCollection } from 'astro:content';
 import type { Locality, Photo, Property, Status } from './types';
 import { localities as sampleLocalities } from '../data/sample';
 import { getAllLocalities, getLocalityById } from '../data/localities';
+import { resolvePropertySeo, type PropertySeo } from './seo';
 
 const defaultStatusLabel = (s: Status) =>
   s === 'rent' ? 'For rent' : s === 'lease' ? 'For lease' : 'For sale';
@@ -96,6 +97,8 @@ function toProperty(d: any): Property {
     frontage: d.frontage,
     dockAccess: d.dockAccess,
     suitableFor: d.suitableFor,
+    seoTitle: d.seoTitle,
+    seoDescription: d.seoDescription,
   };
 }
 
@@ -111,6 +114,13 @@ export function getProperties(): Promise<Property[]> {
       .sort((a, b) => String(b.newAt || '').localeCompare(String(a.newAt || '')));
   })();
   return _properties;
+}
+
+/** H1 / title / description for every listing, resolved once so they are unique site-wide. */
+let _seo: Promise<Map<string, PropertySeo>> | null = null;
+export function getPropertySeo(slug: string): Promise<PropertySeo> {
+  if (!_seo) _seo = getProperties().then(resolvePropertySeo);
+  return _seo.then((m) => m.get(slug)!);
 }
 
 export async function getProperty(slug: string): Promise<Property | undefined> {
