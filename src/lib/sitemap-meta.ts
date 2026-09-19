@@ -15,6 +15,7 @@ import { execSync } from 'node:child_process';
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { getAllLocalities, propertyTextMatchesLocality } from '../data/localities';
+import { pageCombos } from './landing-core';
 
 export interface SitemapImage { url: string; title?: string; caption?: string }
 export interface SitemapMeta { lastmod?: string; img?: SitemapImage[] }
@@ -44,8 +45,9 @@ const later = (...dates: (string | undefined)[]) =>
 
 // ── content readers ─────────────────────────────────────────────────────
 interface Prop {
-  slug: string; title: string; draft?: boolean; newAt?: string;
-  localityName?: string; localitySlug?: string; address?: string;
+  slug: string; title: string; draft?: boolean; newAt?: string; status: string; propertyType: string;
+  localityName: string; localitySlug?: string; address?: string;
+  priceValue?: number; priceDisplay: string; pricePer?: string; areaSqft?: number; area?: string; beds?: number | string;
   mainImage?: string; photos?: { url?: string; alt?: string; label?: string }[];
 }
 function readProperties(): Prop[] {
@@ -116,6 +118,15 @@ export function buildSitemapMeta(site: string): (url: string) => SitemapMeta {
     const img = shown.slice(0, 9).map((p) => propMeta.get(p.slug)?.first).filter(Boolean) as SitemapImage[];
     const lastmod = later(localityBase, ...shown.map((p) => propMeta.get(p.slug)?.lastmod));
     meta.set(`/localities/${loc.slug}/`, { lastmod, ...(img.length ? { img } : {}) });
+  }
+
+  // Locality × type landing pages (/buy|rent/{type}-in-{locality}/):
+  // lastmod = newest listing in the set, images = first photo of each listing.
+  const resolved = props.map((p) => ({ ...p, localitySlug: resolveLocality(p) }));
+  for (const c of pageCombos(resolved)) {
+    const img = c.listings.map((p) => propMeta.get(p.slug)?.first).filter(Boolean) as SitemapImage[];
+    const lastmod = later(...c.listings.map((p) => propMeta.get(p.slug)?.lastmod));
+    meta.set(c.path, { lastmod, ...(img.length ? { img } : {}) });
   }
 
   // Blog posts.

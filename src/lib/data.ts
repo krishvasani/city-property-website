@@ -134,14 +134,32 @@ export async function getFeatured(limit = 3): Promise<Property[]> {
   return (featured.length ? featured : all).slice(0, limit);
 }
 
-/** Similar homes: same locality first, then fill from the rest. */
-export async function getSimilar(slug: string, limit = 3): Promise<Property[]> {
+/**
+ * Similar listings: a deterministic rotation through the same locality, seeded
+ * by the listing's own position in the slug-sorted set, so that every listing
+ * in a locality receives (as near as possible) the same number of inbound
+ * "similar" links. Fills from the rest of the site, rotated the same way,
+ * when the locality has fewer than `limit` other listings.
+ */
+export async function getSimilar(slug: string, limit = 6): Promise<Property[]> {
   const all = await getProperties();
   const self = all.find((p) => p.slug === slug);
   if (!self) return all.slice(0, limit);
-  const sameLoc = all.filter((p) => p.slug !== slug && p.localityName === self.localityName);
-  const rest = all.filter((p) => p.slug !== slug && p.localityName !== self.localityName);
-  return [...sameLoc, ...rest].slice(0, limit);
+  const rotate = <T extends { slug: string }>(pool: T[], seed: number, n: number) => {
+    const sorted = [...pool].sort((a, b) => a.slug.localeCompare(b.slug));
+    const out: T[] = [];
+    for (let i = 1; i <= sorted.length && out.length < n; i++) out.push(sorted[(seed + i) % sorted.length]);
+    return out;
+  };
+  const sameLoc = all.filter((p) => p.localityName === self.localityName).sort((a, b) => a.slug.localeCompare(b.slug));
+  const idx = sameLoc.findIndex((p) => p.slug === slug);
+  const picks = rotate(sameLoc, idx, limit + 1).filter((p) => p.slug !== slug).slice(0, limit);
+  if (picks.length < limit) {
+    const rest = all.filter((p) => p.localityName !== self.localityName);
+    const seed = all.slice().sort((a, b) => a.slug.localeCompare(b.slug)).findIndex((p) => p.slug === slug);
+    picks.push(...rotate(rest, seed, limit - picks.length));
+  }
+  return picks;
 }
 
 export function getLocalities(): Promise<Locality[]> {

@@ -48,6 +48,8 @@ function validatePage(file) {
   const graph = doc['@graph'];
   if (!Array.isArray(graph)) errors.push('top level is not a single @graph');
   const nodes = graph ?? [];
+  const canon = html.match(/<link rel="canonical" href="([^"]+)"/)?.[1] ?? '';
+  const pageUrl = canon; const siteUrl = canon.replace(/^(https?:\/\/[^/]+).*$/, '$1');
   const ids = new Map();
   for (const n of nodes) {
     if (!n['@type']) errors.push(`node without @type: ${JSON.stringify(n).slice(0, 80)}`);
@@ -61,8 +63,13 @@ function validatePage(file) {
     if (!obj || typeof obj !== 'object') return;
     const keys = Object.keys(obj);
     if (keys.length === 1 && keys[0] === '@id') {
-      if (!ids.has(obj['@id']) && !/^https?:\/\/(www\.)?(ciril\.in|wikidata\.org)/.test(obj['@id']))
-        errors.push(`${path}: unresolved reference ${obj['@id']}`);
+      const ref = obj['@id'];
+      // A reference must resolve in this graph, unless it points at a node
+      // published on ANOTHER page of this site (e.g. an ItemList referencing
+      // /property/x/#listing) or at a known external entity.
+      const external = /^https?:\/\/(www\.)?(ciril\.in|wikidata\.org)/.test(ref);
+      const otherPage = ref.startsWith(siteUrl) && ref.split('#')[0] !== pageUrl && ref.split('#')[0] !== siteUrl + '/';
+      if (!ids.has(ref) && !external && !otherPage) errors.push(`${path}: unresolved reference ${ref}`);
       return;
     }
     const types = arr(obj['@type']);

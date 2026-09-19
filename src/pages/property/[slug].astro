@@ -25,7 +25,7 @@ const { slug } = Astro.params;
 const property = await getProperty(slug!);
 if (!property) return Astro.redirect('/buy/');
 
-const similar = await getSimilar(property.slug, 3);
+const similar = await getSimilar(property.slug, 6);
 
 // Listing context (Buy vs Rent) and locality, from the full locality dataset.
 const isRental = property.status === 'rent' || property.status === 'lease';

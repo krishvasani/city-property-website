@@ -14,10 +14,10 @@ const TITLE_MAX = 65, DESC_MAX = 160;
 const countOnly = process.argv.includes('--count');
 
 // Known length debt on templates not yet reworked (see the JSON's _comment).
-// Exact path "/" matches only the homepage; other entries match as prefixes.
+// Entries match the exact path; a trailing "*" makes them a prefix match.
 const allowlistFile = join(process.cwd(), 'scripts/seo-meta-allowlist.json');
 const lengthExempt = existsSync(allowlistFile) ? JSON.parse(readFileSync(allowlistFile, 'utf8')).lengthExempt ?? [] : [];
-const isLengthExempt = (path) => lengthExempt.some((p) => (p === '/' ? path === '/' : path.startsWith(p)));
+const isLengthExempt = (path) => lengthExempt.some((p) => (p.endsWith('*') ? path.startsWith(p.slice(0, -1)) : path === p));
 
 function* htmlFiles(dir) {
   for (const name of readdirSync(dir)) {

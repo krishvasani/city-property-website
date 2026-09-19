@@ -1,0 +1,19 @@
+---
+// /rent/{type-slug}-in-{locality-slug}/ — locality × type landing pages.
+// Combinations with fewer than MIN_LISTINGS live listings get no page.
+import LandingPage from '../../components/LandingPage.astro';
+import { getProperties } from '../../lib/data';
+import { landingCombos } from '../../lib/landing';
+
+export async function getStaticPaths() {
+  const combos = landingCombos(await getProperties()).filter((c) => c.side === 'rent');
+  return combos.map((combo) => ({
+    params: { combo: `${combo.typeSlug}-in-${combo.locality.slug}` },
+    props: { combo },
+  }));
+}
+
+const { combo } = Astro.props;
+const combos = landingCombos(await getProperties());
+---
+<LandingPage combo={combo} combos={combos} />

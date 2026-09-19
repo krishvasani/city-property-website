@@ -224,26 +224,10 @@ const jsonLdText = JSON.stringify({ '@context': 'https://schema.org', '@graph': 
     })();
   </script>
 
-  <!-- Page-transition failsafe: mark html early, always reveal (verbatim from bundle) -->
-  <script is:inline>
-    (function () {
-      document.documentElement.classList.add('pt-js');
-      function show() {
-        if (document.body) {
-          requestAnimationFrame(function () {
-            requestAnimationFrame(function () {
-              document.body.classList.add('pt-ready');
-            });
-          });
-        }
-      }
-      if (document.readyState !== 'loading') show();
-      else document.addEventListener('DOMContentLoaded', show);
-      setTimeout(function () {
-        document.body && document.body.classList.add('pt-ready');
-      }, 1500);
-    })();
-  </script>
+  <!-- Page transitions: opt in only when JS runs. The entry fade is a CSS
+       animation that always ends visible (see system.css), so no reveal
+       failsafe is needed — without JS, nothing is ever hidden. -->
+  <script is:inline>document.documentElement.classList.add('pt-js');</script>
 </head>
 <body>
   <Nav variant={navVariant} active={active} />

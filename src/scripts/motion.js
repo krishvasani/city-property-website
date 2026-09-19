@@ -5,6 +5,14 @@
 (function () {
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   window.__motionReady = true;
+  // Content is visible by default (see .motion-ready rules in system.css).
+  // Before switching animations on, mark everything already in the viewport
+  // as revealed so nothing that is on screen ever flashes to invisible.
+  const vh = window.innerHeight || document.documentElement.clientHeight;
+  document.querySelectorAll('.reveal').forEach(function (el) {
+    const r = el.getBoundingClientRect();
+    if (r.top < vh && r.bottom > 0) el.classList.add('in');
+  });
   document.documentElement.classList.add('motion-ready');
   const inr = (n) => Math.round(n).toLocaleString('en-IN');
 

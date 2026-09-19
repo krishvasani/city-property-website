@@ -49,49 +49,16 @@ const sellerSteps = [
       <p class="body-lg muted" style="max-width:60ch;margin-top:18px;">Buying or selling a property can feel confusing, with RERA, title checks, stamp duty and possession to navigate. We’ve broken the whole process down into clear, friendly steps for both buyers and sellers in Ahmedabad.</p>
     </section>
 
-    <!-- CONTACT WALL -->
-    <section class="wall" id="wall">
-      <div class="wall-card">
-        <h3 style="margin-bottom:4px;">Unlock the full guide</h3>
-        <p class="small muted" style="margin:0 0 18px;">Tell us a little about you and we’ll open the complete buyer’s and seller’s guide, and tailor a tip or two to your plans.</p>
-        <LeadForm
-          name="guide"
-          submitLabel="Unlock the Guide"
-          twoCol
-          intentOptions={['Buying', 'Selling', 'Both', 'Just researching']}
-          intentLabel="Are you buying or selling?"
-          extraFields={[
-            { name: 'locality', label: 'Preferred locality', type: 'locality', optional: true, placeholder: 'Type a locality, e.g. Bopal, Shela, Kudasan…', full: true },
-          ]}
-          showMessage={false}
-          context={{ source: 'guide' }}
-          successMessage="You’re in, your guide is unlocked below. Enjoy!"
-          whatsappFallback="Hi, I’d like the Ahmedabad buyer/seller guide."
-        />
-      </div>
-      <div class="wall-teaser" aria-hidden="true">
-        <div class="teaser-inner">
-          <h3>Inside the guide</h3>
-          <ul>
-            <li><Icon name="check" sw={2.4} /> The full 13-step buying process</li>
-            <li><Icon name="check" sw={2.4} /> The 12-step selling process</li>
-            <li><Icon name="check" sw={2.4} /> RERA, title checks &amp; registration explained</li>
-            <li><Icon name="check" sw={2.4} /> Negotiation &amp; possession tips</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- GUIDE CONTENT (revealed after the wall) -->
-    <section class="guide-content" id="guide-content" hidden>
+    <!-- GUIDE CONTENT — always rendered, no gate, no interaction needed -->
+    <section class="guide-content" id="guide-content">
       <div class="guide-grid">
         <div class="guide-main">
-          <div class="guide-toggle" role="tablist">
-            <button class="is-active" data-guide="buyer">Buyer’s guide</button>
-            <button data-guide="seller">Seller’s guide</button>
-          </div>
+          <nav class="guide-toggle" aria-label="Jump to">
+            <a class="is-active" href="#buyer">Buyer’s guide</a>
+            <a href="#seller">Seller’s guide</a>
+          </nav>
 
-          <div class="guide-section" data-panel="buyer">
+          <div class="guide-section" id="buyer">
             <h2>Buyer’s Guide for Ahmedabad</h2>
             <p class="muted" style="max-width:60ch;margin:8px 0 24px;">Your step by step path from “maybe” to keys in hand, without nasty surprises.</p>
             <ol class="steps">
@@ -101,7 +68,7 @@ const sellerSteps = [
             </ol>
           </div>
 
-          <div class="guide-section" data-panel="seller" hidden>
+          <div class="guide-section" id="seller" style="margin-top:56px;">
             <h2>Seller’s Guide for Ahmedabad</h2>
             <p class="muted" style="max-width:60ch;margin:8px 0 24px;">How to sell at a fair price, to the right buyer, with the paperwork done properly.</p>
             <ol class="steps">
@@ -135,26 +102,42 @@ const sellerSteps = [
           </div>
         </aside>
       </div>
+
+      <!-- Lead capture: a normal inline block, nothing is gated behind it -->
+      <div class="guide-cta" id="guide-cta">
+        <div class="guide-cta-copy">
+          <h2>Want this tailored to your plans?</h2>
+          <p class="muted" style="max-width:52ch;margin-top:10px;">Tell us whether you are buying or selling and where, and a local advisor will send a short, specific plan with the steps that matter for you.</p>
+        </div>
+        <div class="guide-cta-form">
+          <LeadForm
+            name="guide"
+            submitLabel="Send me a tailored plan"
+            twoCol
+            intentOptions={['Buying', 'Selling', 'Both', 'Just researching']}
+            intentLabel="Are you buying or selling?"
+            extraFields={[
+              { name: 'locality', label: 'Preferred locality', type: 'locality', optional: true, placeholder: 'Type a locality, e.g. Bopal, Shela, Kudasan…', full: true },
+            ]}
+            showMessage={false}
+            context={{ source: 'guide' }}
+            successMessage="Thanks, an advisor will be in touch shortly."
+            whatsappFallback="Hi, I’d like help with the Ahmedabad buyer/seller guide."
+          />
+        </div>
+      </div>
     </section>
   </main>
 </Base>
 
 <style is:global>
   .page-hero { padding: 64px 0 8px; }
-  .wall { display: grid; grid-template-columns: 1.1fr 1fr; gap: 0; margin: 24px 0 96px; border: 1px solid var(--hairline); border-radius: var(--r-xl); overflow: hidden; box-shadow: var(--shadow-sm); }
-  .wall-card { background: var(--surface); padding: 32px; }
-  .wall-teaser { background: var(--navy); color: #fff; padding: 32px; display: grid; align-items: center; position: relative; overflow: hidden; }
-  .wall-teaser::after { content: ""; position: absolute; right: -70px; top: -70px; width: 240px; height: 240px; border-radius: 999px; background: rgba(72,152,208,.25); filter: blur(8px); }
-  .wall-teaser h3 { color: #fff; position: relative; }
-  .wall-teaser ul { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; position: relative; }
-  .wall-teaser li { display: flex; align-items: center; gap: 10px; color: #dbe8f0; font-size: 15px; }
-  .wall-teaser li svg { width: 16px; height: 16px; color: var(--sky); flex: none; }
 
   .guide-content { padding: 8px 0 96px; }
   .guide-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 40px; align-items: start; }
   .guide-toggle { display: inline-flex; background: var(--surface-2); border: 1px solid var(--border); border-radius: var(--r-pill); padding: 4px; gap: 2px; margin-bottom: 28px; }
-  .guide-toggle button { border: none; background: transparent; padding: 9px 20px; border-radius: var(--r-pill); font-size: 14px; font-weight: 600; color: var(--text-muted); cursor: pointer; transition: all var(--t) var(--ease); }
-  .guide-toggle button.is-active { background: var(--surface); color: var(--ink); box-shadow: var(--shadow-xs); }
+  .guide-toggle a { border: none; background: transparent; padding: 9px 20px; border-radius: var(--r-pill); font-size: 14px; font-weight: 600; color: var(--text-muted); cursor: pointer; transition: all var(--t) var(--ease); }
+  .guide-toggle a.is-active { background: var(--surface); color: var(--ink); box-shadow: var(--shadow-xs); }
   .steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; counter-reset: step; }
   .steps li { display: flex; gap: 16px; padding: 18px 20px; border: 1px solid var(--hairline); border-radius: var(--r); background: var(--surface); box-shadow: var(--shadow-xs); }
   .steps .n { width: 30px; height: 30px; border-radius: 999px; background: var(--navy); color: #fff; font-weight: 700; font-size: 14px; display: grid; place-items: center; flex: none; }
@@ -179,35 +162,20 @@ const sellerSteps = [
   .aside-tips li svg { width: 16px; height: 16px; color: #2f9e6f; flex: none; margin-top: 2px; }
 
   @media (max-width: 980px) { .guide-grid { grid-template-columns: 1fr; gap: 28px; } .guide-aside { position: static; } }
-  @media (max-width: 860px) { .wall { grid-template-columns: 1fr; } .wall-teaser { display: none; } }
+  .guide-cta { display: grid; grid-template-columns: 1fr 1.1fr; gap: 40px; align-items: start; margin-top: 64px; padding: 32px; border: 1px solid var(--hairline); border-radius: var(--r-xl); background: var(--surface); box-shadow: var(--shadow-sm); scroll-margin-top: 90px; }
+  .guide-section { scroll-margin-top: 90px; }
+  @media (max-width: 860px) { .guide-cta { grid-template-columns: 1fr; padding: 22px; } }
 </style>
 
 <script>
-  const wall = document.getElementById('wall')!;
-  const content = document.getElementById('guide-content')!;
-  const KEY = 'cps:guideUnlocked';
-
-  function unlock(scroll = false) {
-    wall.style.display = 'none';
-    content.hidden = false;
-    if (scroll) content.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-  if (localStorage.getItem(KEY) === '1') unlock(false);
-
-  // LeadForm dispatches lead:success on submit
-  wall.addEventListener('lead:success', () => {
-    localStorage.setItem(KEY, '1');
-    setTimeout(() => unlock(true), 700);
-  });
-
-  // Buyer / seller toggle
-  const panels = document.querySelectorAll<HTMLElement>('[data-panel]');
-  document.querySelectorAll<HTMLButtonElement>('.guide-toggle button').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.guide-toggle button').forEach((b) => b.classList.remove('is-active'));
-      btn.classList.add('is-active');
-      const key = btn.dataset.guide;
-      panels.forEach((p) => (p.hidden = p.dataset.panel !== key));
+  // Highlight the jump link for the section in view (progressive enhancement only).
+  const links = document.querySelectorAll<HTMLAnchorElement>('.guide-toggle a');
+  const sections = [...document.querySelectorAll<HTMLElement>('.guide-section')];
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((en) => {
+      if (!en.isIntersecting) return;
+      links.forEach((l) => l.classList.toggle('is-active', l.getAttribute('href') === `#${en.target.id}`));
     });
-  });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach((s) => io.observe(s));
 </script>

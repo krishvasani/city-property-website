@@ -134,7 +134,33 @@ export interface PropertySeo {
   title: string;
   description: string;
   titleSource: 'stored' | 'generated' | 'generated+disambiguated';
-  descriptionSource: 'stored' | 'generated' | 'generated+disambiguated';
+  descriptionSource: 'stored' | 'stored+extended' | 'generated' | 'generated+disambiguated';
+}
+
+// Stored (CMS) values are used only inside these bands; see resolvePropertySeo.
+const STORED_TITLE_MIN = 45, STORED_TITLE_MAX = 60;
+const STORED_DESC_MIN = 110, DESC_TARGET_MIN = 140;
+
+/**
+ * A unique-but-short stored description is extended with generated clauses
+ * (price → area → CTA) until it lands in the 140–155 band. Returns undefined
+ * when no combination of clauses reaches the band.
+ */
+function extendDescription(p: Property, stored: string): string | undefined {
+  let out = stored.replace(/\s+$/, '');
+  if (!/[.!?]$/.test(out)) out += '.';
+  const priceClause = !isPriceOnRequest(p)
+    ? `Priced at ${p.priceDisplay}${p.pricePer ? ' ' + p.pricePer.replace(/\s*\(.*\)$/, '') : ''}.`
+    : undefined;
+  const size = sizeLabel(p);
+  const areaClause = size && !out.includes(size) ? `${size} ${typeLabel(p).toLowerCase()} ${listingWord(p).toLowerCase()} in ${p.localityName}.` : undefined;
+  for (const clause of [priceClause, areaClause, CTA]) {
+    if (!clause || out.length >= DESC_TARGET_MIN) continue;
+    if (out.includes(clause)) continue;
+    const next = clean(`${out} ${clause}`);
+    if (next.length <= DESC_MAX) out = next;
+  }
+  return out.length >= DESC_TARGET_MIN && out.length <= DESC_MAX ? out : undefined;
 }
 
 const BRAND_SUFFIX = /\s*\|\s*City Property Services\s*$/i;
@@ -165,12 +191,19 @@ export function resolvePropertySeo(all: Property[]): Map<string, PropertySeo> {
     gen: (p: Property) => string,
     max: number,
   ) => {
-    const out = new Map<string, { value: string; source: PropertySeo['titleSource'] }>();
-    // pass 1: stored where eligible, else generated
+    const out = new Map<string, { value: string; source: PropertySeo['descriptionSource'] }>();
+    // pass 1: stored where eligible (unique + inside the length band), else
+    // generated. Unique-but-short descriptions are extended into the band.
     for (const p of all) {
       const s = stored(p);
-      if (s && storedCount.get(s) === 1 && storedOk(s)) out.set(p.slug, { value: s, source: 'stored' });
-      else out.set(p.slug, { value: gen(p), source: 'generated' });
+      if (s && storedCount.get(s) === 1) {
+        if (storedOk(s)) { out.set(p.slug, { value: s, source: 'stored' }); continue; }
+        if (field === 'description' && s.length < STORED_DESC_MIN) {
+          const ext = extendDescription(p, s);
+          if (ext) { out.set(p.slug, { value: ext, source: 'stored+extended' }); continue; }
+        }
+      }
+      out.set(p.slug, { value: gen(p), source: 'generated' });
     }
     // pass 2..n: resolve collisions
     for (let round = 0; round < 4; round++) {
@@ -180,7 +213,7 @@ export function resolvePropertySeo(all: Property[]): Map<string, PropertySeo> {
         const cur = out.get(p.slug)!;
         if (used.get(cur.value)! <= 1) continue;
         collisions++;
-        if (cur.source === 'stored') { out.set(p.slug, { value: gen(p), source: 'generated' }); continue; }
+        if (cur.source === 'stored' || cur.source === 'stored+extended') { out.set(p.slug, { value: gen(p), source: 'generated' }); continue; }
         // Disambiguate with the most human-meaningful tag not already in the
         // text: floor → price → area → slug number. The base is regenerated
         // with a tighter length budget so segments are dropped, not words cut.
@@ -211,8 +244,8 @@ export function resolvePropertySeo(all: Property[]): Map<string, PropertySeo> {
     return out;
   };
 
-  const titles = assign('title', storedTitle, stCount, (v) => v.length < TITLE_MAX, generatedTitle, 65);
-  const descs = assign('description', storedDesc, sdCount, (v) => v.length <= DESC_MAX, generatedDescription, 160);
+  const titles = assign('title', storedTitle, stCount, (v) => v.length >= STORED_TITLE_MIN && v.length <= STORED_TITLE_MAX, generatedTitle, 65);
+  const descs = assign('description', storedDesc, sdCount, (v) => v.length >= STORED_DESC_MIN && v.length <= DESC_MAX, generatedDescription, 160);
 
   const res = new Map<string, PropertySeo>();
   for (const p of all) {
@@ -220,7 +253,7 @@ export function resolvePropertySeo(all: Property[]): Map<string, PropertySeo> {
       h1: propertyH1(p),
       title: titles.get(p.slug)!.value,
       description: descs.get(p.slug)!.value,
-      titleSource: titles.get(p.slug)!.source,
+      titleSource: titles.get(p.slug)!.source as PropertySeo['titleSource'],
       descriptionSource: descs.get(p.slug)!.source,
     });
   }

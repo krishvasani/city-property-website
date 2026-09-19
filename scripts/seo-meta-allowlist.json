@@ -1,4 +1,4 @@
 {
-  "_comment": "Temporary exemptions for scripts/check-seo-meta.mjs. Only the LENGTH rules are relaxed for these path prefixes; h1 and uniqueness rules always apply. Added 2026-09-19 (SEO batch 2) because these templates are out of scope for that batch — remove entries as each template is fixed.",
-  "lengthExempt": ["/", "/about-us/", "/rent/", "/blog/", "/localities/", "/services/"]
+  "_comment": "Temporary exemptions for scripts/check-seo-meta.mjs. Only the LENGTH rules are relaxed for these paths; h1 and uniqueness rules always apply. Entries match the exact path unless they end in '*' (prefix). Added 2026-09-19 (SEO batch 2) because these templates were out of scope — remove entries as each template is fixed.",
+  "lengthExempt": ["/", "/about-us/", "/rent/", "/blog/*", "/localities/*", "/services/*"]
 }
