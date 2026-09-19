@@ -2,52 +2,31 @@
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import { serviceLinks } from '../lib/services';
+import { site } from '../lib/config';
 import { existsSync } from 'node:fs';
+import { aboutIntro, story, vision, helpWith, why } from '../data/about';
 
 const founderPhoto = existsSync(new URL('../../public/team/mukesh-vasani.jpg', import.meta.url))
   ? '/team/mukesh-vasani.jpg'
   : null;
-
-const helpWith = [
-  'Corporate offices',
-  'Retail spaces',
-  'Warehouses',
-  'Industrial land',
-  'Residential properties',
-  'Plots',
-  'Investment properties',
-  'Preleased properties',
-  'Prelaunched projects',
-];
-
-const why = [
-  { icon: 'pin', title: 'Local Ahmedabad knowledge', text: 'We know the city pocket by pocket, so our advice is grounded in how each area really lives and trades.' },
-  { icon: 'residential', title: 'Access to quality properties', text: 'Years of relationships mean we often hear about the right property before it is widely listed.' },
-  { icon: 'check', title: 'Transparent guidance', text: 'You get honest pros and cons, fair pricing and clear next steps, never pressure.' },
-  { icon: 'compass', title: 'Support from search to closing', text: 'We stay with you through visits, negotiation, paperwork and final handover.' },
-  { icon: 'commercial', title: 'Residential and commercial expertise', text: 'Homes, offices, retail, industrial and land, all under one roof.' },
-  { icon: 'heart', title: 'Long term relationships', text: 'We would rather earn a client for life than push a single deal.' },
-];
 ---
 <Base
   title="About City Property Services | Ahmedabad Real Estate Consultants"
-  description="City Property Services is a trusted Ahmedabad real estate consultancy helping clients buy, sell, lease, rent and invest, led by the experience of Mr. Mukesh Vasani."
+  description={`City Property Services is a trusted Ahmedabad real estate consultancy helping clients buy, sell, lease, rent and invest, led by Mukesh Vasani since ${site.foundedYear}.`}
   active="about"
 >
   <main class="wrap">
     <section class="page-hero">
       <div class="eyebrow">About us</div>
       <h1 class="display" style="max-width:18ch;margin-top:12px;">About City Property Services</h1>
-      <p class="body-lg muted" style="max-width:64ch;margin-top:18px;">City Property Services is a trusted Ahmedabad real estate consultancy. We help people and businesses buy, sell, lease, rent and invest in the right properties, with honest advice and steady support from the first conversation to the final handover.</p>
+      <p class="body-lg muted" style="max-width:64ch;margin-top:18px;">{aboutIntro}</p>
     </section>
 
     <!-- STORY -->
     <section class="ab-story">
       <div class="ab-story-text">
         <h2 class="h2">Our story</h2>
-        <p>We have spent many years helping clients across Ahmedabad and Gujarat make sound property decisions. In that time the city has grown a lot, and so has the kind of help people need, from a first family home to a corporate office, a warehouse or a long term investment.</p>
-        <p>Our work is led by Mr. Mukesh Vasani, whose experience and steady judgement shape how we treat every client. He is also one of the founders of CIRIL, a commercial real estate network that works in more than thirty cities across India. That wider reach sits quietly behind the local, personal service you get from our team here in Ahmedabad.</p>
-        <p>We are proud of the relationships we have built over the years. A lot of our work comes from clients who return to us, and from the people they refer, which is the kind of trust we try to earn every single day.</p>
+        {story.map((p) => <p>{p}</p>)}
       </div>
       <aside class="ab-founder">
         <div class="ab-founder-photo">
@@ -92,8 +71,7 @@ const why = [
     <!-- VISION -->
     <section class="ab-vision">
       <h2 class="h2" style="color:#fff;">Our vision</h2>
-      <p>We want City Property Services to be the name people in Ahmedabad trust first when it comes to property. Not because we are the loudest, but because we are dependable, professional and genuinely useful.</p>
-      <p>Our aim is simple. Give clear, practical guidance, treat every client with respect, and help people build long term value through the right property decisions. When you do well, we do well, and that is exactly how we like it.</p>
+      {vision.map((p) => <p>{p}</p>)}
     </section>
 
     <!-- CTA -->

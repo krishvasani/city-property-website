@@ -4,7 +4,7 @@ import ServicePage from '../../components/ServicePage.astro';
 <ServicePage
   serviceKey="land"
   seoTitle="Land and Plot Advisory in Ahmedabad"
-  seoDescription="City Property Services helps you buy and sell land and plots across Ahmedabad, Gandhinagar and nearby growth corridors, with careful checks on title, zoning, access and development potential."
+  seoDescription="Buy or sell land and plots across Ahmedabad, Gandhinagar and nearby growth corridors with City Property Services, with checks on title, zoning and access."
   eyebrow="Land and plots"
   heading="Land and Plot Advisory"
   intro="Land is one of the most rewarding things to own and one of the easiest to get wrong. We help you buy and sell plots and parcels across Ahmedabad and its growth corridors, with the right checks done before you commit."
@@ -76,4 +76,12 @@ import ServicePage from '../../components/ServicePage.astro';
   formIntent="Land"
   sizeHint="e.g. plot size, FSI need, or budget"
   relatedCategory="land"
+  landingTypes={["plot", "land"]}
+  faq={[
+    { q: 'What plots and land do you have available now?', a: 'We currently list {count} plots and land parcels across {localityCount} localities including {topLocalities}, from {saleRange}. Sizes range from {sizeRange}. Each locality page below lists every parcel with size and price.' },
+    { q: 'What should I check before buying a plot near Ahmedabad?', a: 'Clear title with a 30-year search, N.A. (non-agricultural) permission or the route to it, zoning under the AUDA or GUDA development plan, TP scheme status and final plot number, approach road width, and whether any part is reserved for roads or public purposes.' },
+    { q: 'What is the difference between a residential and an industrial plot?', a: 'Zoning. A residential-zone plot can only be built for homes and limited commercial use; an industrial-zone plot allows factories and warehouses and usually sits in GIDC or highway belts. Our blog compares residential versus commercial plots in detail.' },
+    { q: 'Do you handle agricultural land?', a: 'We advise on agricultural land only where a clear path to N.A. conversion exists and the buyer is eligible under Gujarat’s tenancy rules. We will tell you honestly when a parcel does not meet that test.' },
+    { q: 'Can you help me sell a plot?', a: 'Yes. We prepare the title chain, 7/12 and property card extracts, N.A. order and TP documents upfront, price the parcel from recent deals in the same belt, and bring genuine buyers rather than casual enquiries.' },
+  ]}
 />

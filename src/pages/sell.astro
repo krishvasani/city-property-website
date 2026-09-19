@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import LeadForm from '../components/LeadForm.astro';
 import Icon from '../components/Icon.astro';
 import Stat from '../components/Stat.astro';
+import { site } from '../lib/config';
 
 const sellFields = [
   { name: 'locality', label: 'Property location / locality', type: 'locality' as const, required: true, placeholder: 'Type a locality, e.g. Prahlad Nagar, Sanand, Vatva GIDC…', full: true },
@@ -34,7 +35,7 @@ const trust = [
       <p class="body-lg muted" style="max-width:60ch;margin-top:18px;">Share a few details about your property and we’ll come back with a free, grounded estimate. We help with pricing, finding genuine buyers, and managing the entire selling process, so you don’t have to chase anyone.</p>
       <div class="vstats">
         <Stat display="8,000+" count={8000} suffix="+" label="Transactions made" />
-        <Stat display="27+ yrs" count={27} suffix="+ yrs" label="In Ahmedabad" />
+        <Stat display={`${site.yearsLabel} yrs`} count={site.yearsInBusiness} suffix="+ yrs" label="In Ahmedabad" />
         <Stat display="10+ yrs" count={10} suffix="+ yrs" label="Pan India" />
       </div>
     </section>

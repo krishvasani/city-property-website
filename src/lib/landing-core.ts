@@ -53,7 +53,7 @@ export const TYPE_SLUG_CATEGORY: Record<string, string> = {
   plot: 'land', land: 'land',
 };
 
-export const MIN_LISTINGS = 3;
+export const MIN_LISTINGS = 2;
 
 export const sideOf = (status: string): Side => (status === 'sale' ? 'buy' : 'rent');
 export const sideWord = (side: Side) => (side === 'buy' ? 'Sale' : 'Rent');
@@ -177,7 +177,14 @@ export function comboStats(c: Combo, buildingName: (p: LandingListing) => string
     const rates = priced.filter((p) => p.areaSqft && p.priceValue).map((p) => p.priceValue! / p.areaSqft!);
     if (rates.length) typicalUnitPrice = `${inr(median(rates)!)} per sq.ft${c.side === 'rent' ? ' per month' : ''} (median of ${rates.length})`;
   }
-  const buildings = [...new Set(L.map(buildingName).filter((b): b is string => !!b))];
+  // De-duplicate case-insensitively ("Copper stone" / "Copper Stone").
+  const seen = new Set<string>();
+  const buildings = L.map(buildingName).filter((b): b is string => {
+    if (!b) return false;
+    const k = b.toLowerCase().replace(/\s+/g, ' ').trim();
+    if (seen.has(k)) return false;
+    seen.add(k); return true;
+  });
   return {
     count: L.length, priced: priced.length, priceRange, priceMin, priceMax, sizeRange,
     sizeMinSqft: sq.length ? Math.min(...sq) : undefined, sizeMaxSqft: sq.length ? Math.max(...sq) : undefined,

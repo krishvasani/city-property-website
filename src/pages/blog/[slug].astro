@@ -52,6 +52,7 @@ const articleSchema = {
 <Base
   title={post.seoTitle ?? post.title}
   description={post.seoDescription ?? post.excerpt}
+  brandSuffix={false}
   active="blog"
   ogType="article"
   ogImage={post.coverImage ?? COVER_FALLBACK}

@@ -9,6 +9,17 @@ export const site = {
   tagline: 'Property in Ahmedabad',
   rera: 'AG/GJ/AHMEDABAD/AHMADABADCITY/AUDA/AA00003/220329R2',
   url: env.SITE_URL || 'https://cityprop.co.in',
+  /** Year the firm was founded (owner-confirmed). Single source of truth for
+   *  every "N years" claim — use `yearsInBusiness`, never a literal. */
+  foundedYear: 1998,
+  /** Completed years since founding, at build time (2026 → 28). */
+  get yearsInBusiness() {
+    return new Date().getFullYear() - this.foundedYear;
+  },
+  /** "28+" — the display form used in stats and copy. */
+  get yearsLabel() {
+    return `${this.yearsInBusiness}+`;
+  },
 };
 
 export const contact = {
@@ -22,15 +33,20 @@ export const contact = {
   },
   email: env.PUBLIC_LEAD_EMAIL || 'coordinator@cityprop.co.in',
   /** Office address. */
-  address: '703 & 704 Zion Prime, Near Copper Stone, Thaltej Shilaj Road, Ahmedabad, Gujarat 380052',
+  address: '703 & 704 Zion Prime, Near Copper Stone, Thaltej Shilaj Road, Ahmedabad, Gujarat 380059',
+  postalCode: '380059',
   /** Office location details for LocalBusiness structured data. */
   office: {
     // Zion Prime, Thaltej-Shilaj Road (Mappls listing for the building).
     lat: 23.051225,
     lng: 72.492735,
-    mapUrl: 'https://www.google.com/maps/search/?api=1&query=Zion+Prime%2C+Thaltej+Shilaj+Road%2C+Ahmedabad+380052',
-    // TODO(owner): confirm — not published anywhere on the site yet.
-    openingHours: 'Mo-Sa 10:00-19:00',
+    mapUrl: 'https://www.google.com/maps/search/?api=1&query=Zion+Prime%2C+Thaltej+Shilaj+Road%2C+Ahmedabad+380059',
+    /** Owner-confirmed. Monday–Saturday 09:30–19:00, Sunday closed. */
+    hours: [
+      { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '09:30', closes: '19:00' },
+      { days: ['Sunday'], opens: '00:00', closes: '00:00' }, // closed
+    ],
+    hoursText: 'Monday to Saturday, 9:30 am to 7 pm. Closed on Sunday.',
   },
 };
 

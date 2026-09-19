@@ -4,7 +4,7 @@ import ServicePage from '../../components/ServicePage.astro';
 <ServicePage
   serviceKey="investment"
   seoTitle="Real Estate Investment Advisory in Ahmedabad"
-  seoDescription="City Property Services advises on real estate investment in Ahmedabad, including preleased assets and prelaunch projects, with careful guidance on income visibility and long term growth."
+  seoDescription="Real estate investment advice in Ahmedabad from City Property Services: preleased assets and prelaunch projects, assessed for income visibility and growth."
   eyebrow="Investment advisory"
   heading="Real Estate Investment Advisory"
   intro="Property can be a steady, sensible part of your portfolio when you pick the right asset. We help you invest in preleased properties and prelaunch opportunities chosen for income visibility and long term growth."
@@ -32,4 +32,14 @@ import ServicePage from '../../components/ServicePage.astro';
   formIntent="Investment"
   sizeHint="e.g. investment budget, or the rental income you want"
   relatedCategory="investment"
+  landingTypes={["showroom", "office-space", "shop"]}
+  extraTypes={["investment"]}
+  sides={["buy"]}
+  faq={[
+    { q: 'What kinds of investment property do you offer?', a: 'Pre-leased commercial assets (showrooms and offices with an operating tenant on a signed lease), prelaunch residential allocations, and land in growth corridors. We currently hold {count} commercial assets for sale that suit investors, across {localityCount} localities including {topLocalities}.' },
+    { q: 'What yield can a pre-leased asset in Ahmedabad give?', a: 'Pre-leased retail and office assets in established West Ahmedabad locations typically trade at gross rental yields in the mid single digits, with rent escalations built into the lease. We show you the actual lease terms, tenant profile and remaining lock-in for every asset so you can judge the number yourself.' },
+    { q: 'How do you assess a prelaunch project?', a: 'By the developer’s delivery record, RERA registration and disclosures, the payment schedule against construction stages, the location’s absorption and the exit options. We only bring you projects we would put our own clients into.' },
+    { q: 'Is land a good investment near Ahmedabad?', a: 'Land in the Sanand, Changodar, Bavla and Dholera corridors has appreciated with industrial and infrastructure growth, but it needs patience and clean paperwork. We check title, N.A. status, zoning and access before anything is shortlisted.' },
+    { q: 'How do you charge for investment advice?', a: 'Brokerage on a completed transaction, on the standard market basis; no fee for research, shortlisting or site visits. Where a developer pays our fee on a prelaunch allocation, we say so upfront.' },
+  ]}
 />

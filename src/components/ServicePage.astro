@@ -7,6 +7,9 @@ import { serviceLinks } from '../lib/services';
 import { getProperties } from '../lib/data';
 import { categoryFor } from '../lib/format';
 import { site } from '../lib/config';
+import { landingCombos, comboLabel } from '../lib/landing';
+import { comboStats, sideOf, typeSlugOf, inrShort, TYPE_SLUG_LABEL } from '../lib/landing-core';
+import { buildingName } from '../lib/seo';
 
 interface HelpItem { title: string; text: string }
 interface ExtraSection { heading: string; intro?: string; items?: string[] }
@@ -30,6 +33,18 @@ interface Props {
   formIntent: string;
   sizeHint?: string;
   relatedCategory?: string | null;
+  /** Landing-page type slugs this service covers (office-space, shop, …). */
+  landingTypes?: string[];
+  /** Extra propertyType values counted for the live stats (e.g. 'investment'). */
+  extraTypes?: string[];
+  /** Restrict live stats and landing links to one side (e.g. investors buy). */
+  sides?: ('buy' | 'rent')[];
+  /**
+   * FAQ authored per service. Answers may use placeholders filled from live
+   * data: {count}, {saleCount}, {rentCount}, {saleRange}, {rentRange},
+   * {localityCount}, {topLocalities}, {sizeRange}, {buildings}.
+   */
+  faq?: { q: string; a: string }[];
 }
 
 const {
@@ -51,6 +66,10 @@ const {
   formIntent,
   sizeHint = 'e.g. budget or size you have in mind (optional)',
   relatedCategory = null,
+  landingTypes = [],
+  extraTypes = [],
+  sides = ['buy', 'rent'],
+  faq = [],
 } = Astro.props;
 
 // Service interest options, with this page's service preselected (first).
@@ -76,6 +95,41 @@ if (relatedCategory) {
 
 const otherLinks = serviceLinks.filter((s) => s.key !== serviceKey);
 
+// ── Live data for this service: counts, ranges, landing pages by locality ──
+const allProps = await getProperties();
+const mine = allProps.filter((p) => (landingTypes.includes(typeSlugOf(p.propertyType) ?? '') || extraTypes.includes(p.propertyType)) && sides.includes(sideOf(p.status)));
+const combos = landingCombos(allProps).filter((c) => landingTypes.includes(c.typeSlug) && sides.includes(c.side));
+const byLocality = new Map<string, typeof combos>();
+for (const c of combos) byLocality.set(c.locality.name, [...(byLocality.get(c.locality.name) ?? []), c]);
+const landingGroups = [...byLocality.entries()]
+  .map(([name, cs]) => ({ name, slug: cs[0].locality.slug, combos: cs.sort((a, b) => b.listings.length - a.listings.length), total: cs.reduce((n, c) => n + c.listings.length, 0) }))
+  .sort((a, b) => b.total - a.total || a.name.localeCompare(b.name));
+const statsFor = (side: 'buy' | 'rent') => {
+  const L = mine.filter((p) => sideOf(p.status) === side);
+  return L.length ? comboStats({ key: '', side, typeSlug: landingTypes[0] ?? 'office-space', locality: {} as any, listings: L, path: '' }, buildingName) : undefined;
+};
+const saleStats = statsFor('buy'), rentStats = statsFor('rent');
+const allStats = mine.length ? comboStats({ key: '', side: 'buy', typeSlug: landingTypes[0] ?? 'office-space', locality: {} as any, listings: mine, path: '' }, buildingName) : undefined;
+const localityNames = [...new Set(mine.map((p) => p.localityName))];
+const fill = (t: string) => t
+  .replace(/\{count\}/g, String(mine.length))
+  .replace(/\{saleCount\}/g, String(saleStats?.count ?? 0))
+  .replace(/\{rentCount\}/g, String(rentStats?.count ?? 0))
+  .replace(/\{saleRange\}/g, saleStats?.priceRange ?? 'on request')
+  .replace(/\{rentRange\}/g, rentStats?.priceRange ?? 'on request')
+  .replace(/\{localityCount\}/g, String(localityNames.length))
+  .replace(/\{topLocalities\}/g, landingGroups.slice(0, 5).map((g) => g.name).join(', ') || localityNames.slice(0, 5).join(', '))
+  .replace(/\{sizeRange\}/g, allStats?.sizeRange ?? 'a range of sizes')
+  .replace(/\{buildings\}/g, (allStats?.buildings ?? []).slice(0, 6).join(', '));
+const faqFilled = faq.map((f) => ({ q: fill(f.q), a: fill(f.a) }));
+const liveLine = mine.length
+  ? [
+      `${mine.length} live listing${mine.length === 1 ? '' : 's'} across ${localityNames.length} localit${localityNames.length === 1 ? 'y' : 'ies'}`,
+      saleStats?.priceRange ? `for sale from ${saleStats.priceRange}` : '',
+      rentStats?.priceRange ? `for rent from ${rentStats.priceRange}` : '',
+    ].filter(Boolean).join(' · ')
+  : '';
+
 // ── SEO: Service schema + breadcrumbs ──
 const serviceUrl = new URL(Astro.url.pathname, site.url).href;
 const breadcrumbs = [
@@ -84,8 +138,8 @@ const breadcrumbs = [
   { name: heading, url: Astro.url.pathname },
 ];
 const serviceSchema = {
-  '@context': 'https://schema.org',
   '@type': 'Service',
+  '@id': `${serviceUrl}#service`,
   name: heading,
   description: seoDescription,
   serviceType: heading,
@@ -96,13 +150,22 @@ const serviceSchema = {
     { '@type': 'City', name: 'Gandhinagar' },
   ],
 };
+const faqSchema = faqFilled.length
+  ? {
+      '@type': 'FAQPage',
+      '@id': `${serviceUrl}#faq`,
+      mainEntity: faqFilled.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+    }
+  : undefined;
+const graph = [serviceSchema, ...(faqSchema ? [faqSchema] : [])];
 ---
-<Base title={seoTitle} description={seoDescription} active="services" breadcrumbs={breadcrumbs} jsonLd={serviceSchema}>
+<Base title={seoTitle} description={seoDescription} brandSuffix={false} active="services" breadcrumbs={breadcrumbs} jsonLd={graph}>
   <main class="wrap">
     <section class="page-hero svc-hero">
       <div class="eyebrow">{eyebrow}</div>
       <h1 class="display" style="max-width:18ch;margin-top:12px;">{heading}</h1>
       <p class="body-lg muted" style="max-width:62ch;margin-top:18px;">{intro}</p>
+      {liveLine && <p class="svc-live"><span class="svc-live-dot"></span>{liveLine}</p>}
       <div class="svc-hero-cta">
         <a class="btn btn-primary" href="#inquiry">{ctaLabel}</a>
         <a class="btn btn-secondary" href="/consult/">Talk to our team</a>
@@ -166,6 +229,34 @@ const serviceSchema = {
       </section>
     )}
 
+    {landingGroups.length > 0 && (
+      <section class="svc-block svc-landings">
+        <h2 class="h2">Browse by locality</h2>
+        <p class="muted" style="margin:-8px 0 18px;max-width:64ch;">Every {landingTypes.map((t) => TYPE_SLUG_LABEL[t][1]).join(', ')} listing we hold, grouped by area. Each page shows all current options, prices and sizes.</p>
+        <ul class="svc-landing-list">
+          {landingGroups.map((g) => (
+            <li>
+              <a class="svc-landing-loc" href={`/localities/${g.slug}/`}>{g.name}</a>
+              <span class="svc-landing-links">
+                {g.combos.map((c) => <a href={c.path}>{comboLabel(c)} <span class="muted">({c.listings.length})</span></a>)}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {faqFilled.length > 0 && (
+      <section class="svc-block svc-faq">
+        <h2 class="h2">Frequently asked questions</h2>
+        <dl class="faq-list">
+          {faqFilled.map((f) => (
+            <div class="faq-item"><dt>{f.q}</dt><dd>{f.a}</dd></div>
+          ))}
+        </dl>
+      </section>
+    )}
+
     <!-- INQUIRY -->
     <section class="svc-inquiry" id="inquiry">
       <div class="svc-form-panel">
@@ -208,6 +299,20 @@ const serviceSchema = {
   .svc-lead { max-width: 70ch; padding: 18px 0 8px; display: flex; flex-direction: column; gap: 14px; }
   .svc-lead p { font-size: 16px; color: var(--text); line-height: 1.7; margin: 0; }
   .svc-block { padding: 34px 0 0; }
+  .svc-live { display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; padding: 8px 14px; border-radius: var(--r-pill); background: var(--surface); border: 1px solid var(--hairline); font-size: 13.5px; font-weight: 600; color: var(--ink); }
+  .svc-live-dot { width: 8px; height: 8px; border-radius: 999px; background: var(--good); flex: none; }
+  .svc-landing-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .svc-landing-list li { display: grid; grid-template-columns: 180px 1fr; gap: 12px; padding: 12px 0; border-top: 1px solid var(--hairline); align-items: baseline; }
+  .svc-landing-loc { font-weight: 700; color: var(--ink); }
+  .svc-landing-links { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+  .svc-landing-links a { color: var(--navy); font-weight: 600; font-size: 14.5px; }
+  .svc-landing-links a:hover { text-decoration: underline; }
+  .svc-faq { max-width: 820px; }
+  .faq-list { margin: 0; }
+  .faq-item { padding: 16px 0; border-top: 1px solid var(--hairline); }
+  .faq-item dt { font-weight: 650; color: var(--ink); font-size: 16px; }
+  .faq-item dd { margin: 8px 0 0; color: var(--text); line-height: 1.6; }
+  @media (max-width: 640px) { .svc-landing-list li { grid-template-columns: 1fr; gap: 6px; } }
   .svc-block .h2 { font-size: 24px; margin-bottom: 18px; }
   .svc-sec-intro { max-width: 66ch; margin: 0 0 18px; }
   .svc-help { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 28px; }
