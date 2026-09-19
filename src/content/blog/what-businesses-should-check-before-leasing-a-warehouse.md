@@ -36,4 +36,4 @@ If your business is growing, a warehouse that fits today but chokes next year is
 
 Read the lease for the lock in, the escalation, maintenance and who handles repairs. Clarity here prevents disputes later.
 
-Storage needs vary a lot from one business to another, so there is no single best warehouse, only the right one for you. If you would like help finding it, our <a href="/services/industrial-warehouse">industrial and warehouse team</a> is happy to walk the options with you.
+Storage needs vary a lot from one business to another, so there is no single best warehouse, only the right one for you. If you would like help finding it, our <a href="/services/industrial-warehouse/">industrial and warehouse team</a> is happy to walk the options with you.

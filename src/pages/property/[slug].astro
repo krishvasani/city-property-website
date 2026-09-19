@@ -21,13 +21,13 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 const property = await getProperty(slug!);
-if (!property) return Astro.redirect('/buy');
+if (!property) return Astro.redirect('/buy/');
 
 const similar = await getSimilar(property.slug, 3);
 
 // Listing context (Buy vs Rent) and locality, from the full locality dataset.
 const isRental = property.status === 'rent' || property.status === 'lease';
-const listPath = isRental ? '/rent' : '/buy';
+const listPath = isRental ? '/rent/' : '/buy/';
 const listLabel = isRental ? 'Rent in Ahmedabad' : 'Buy in Ahmedabad';
 const selfLoc = property.localitySlug ? getLocalityById(property.localitySlug) : undefined;
 const sg = getLocalityById('sg-highway');
@@ -87,7 +87,7 @@ const propUrl = new URL(Astro.url.pathname, site.url).href;
 const breadcrumbs = [
   { name: 'Home', url: '/' },
   { name: isRental ? 'Rent' : 'Buy', url: listPath },
-  ...(selfLoc ? [{ name: property.localityName, url: `/localities/${property.localitySlug}` }] : []),
+  ...(selfLoc ? [{ name: property.localityName, url: `/localities/${property.localitySlug}/` }] : []),
   { name: `${typeLabel} ${listingWord}`, url: Astro.url.pathname },
 ];
 const schemaImages = (property.photos ?? []).filter((p) => p.url).slice(0, 6).map((p) => new URL(p.url!, site.url).href);
@@ -209,7 +209,7 @@ if (!onRequest) {
             ? <Map pins={mapPins} id="prop-map" height="300px" />
             : <p class="muted small">Map preview not available for this listing yet.</p>}
           {property.localitySlug && (
-            <a class="btn btn-secondary btn-sm" href={`/map?locality=${property.localitySlug}`} style="margin-top:14px;">View {property.localityName} on the map →</a>
+            <a class="btn btn-secondary btn-sm" href={`/map/?locality=${property.localitySlug}`} style="margin-top:14px;">View {property.localityName} on the map →</a>
           )}
         </div>
       </div>
@@ -242,7 +242,7 @@ if (!onRequest) {
       <section class="block reveal" style="margin-top:64px;">
         <div class="between" style="margin-bottom:22px;">
           <h2>Similar homes nearby</h2>
-          <a class="btn btn-secondary btn-sm" href="/buy">View all →</a>
+          <a class="btn btn-secondary btn-sm" href="/buy/">View all →</a>
         </div>
         <div class="similar-grid" data-stagger>
           {similar.map((p) => <PropertyCard property={p} />)}

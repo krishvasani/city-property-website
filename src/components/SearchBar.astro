@@ -2,10 +2,10 @@
 import Icon from './Icon.astro';
 import LocalityAutocomplete from './LocalityAutocomplete.astro';
 ---
-<form class="hero-search" action="/buy" method="get" data-hero-search>
+<form class="hero-search" action="/buy/" method="get" data-hero-search>
   <div class="segment" role="tablist" aria-label="Search mode">
-    <button type="button" class="is-active" data-target="/buy">Buy</button>
-    <button type="button" data-target="/rent">Rent</button>
+    <button type="button" class="is-active" data-target="/buy/">Buy</button>
+    <button type="button" data-target="/rent/">Rent</button>
   </div>
 
   <div class="searchbar">
@@ -47,15 +47,15 @@ import LocalityAutocomplete from './LocalityAutocomplete.astro';
     const seg = form.querySelector('.segment');
     const budgetSeg = form.querySelector('#hero-budget')?.closest('.seg') as HTMLElement | null;
     if (!seg) return;
-    let target = '/buy';
+    let target = '/buy/';
 
     seg.querySelectorAll('button').forEach((btn) =>
       btn.addEventListener('click', () => {
         seg.querySelectorAll('button').forEach((b) => b.classList.remove('is-active'));
         btn.classList.add('is-active');
-        target = btn.getAttribute('data-target') || '/buy';
+        target = btn.getAttribute('data-target') || '/buy/';
         // The sale-oriented budget ranges don't apply to rentals — hide for Rent.
-        if (budgetSeg) budgetSeg.style.display = target === '/rent' ? 'none' : '';
+        if (budgetSeg) budgetSeg.style.display = target === '/rent/' ? 'none' : '';
       }),
     );
 
@@ -64,7 +64,7 @@ import LocalityAutocomplete from './LocalityAutocomplete.astro';
       // Drop an empty locality so the URL stays clean.
       const loc = form.querySelector('.loc-ac-hidden') as HTMLInputElement | null;
       if (loc && !loc.value) loc.removeAttribute('name');
-      if (target === '/rent') {
+      if (target === '/rent/') {
         const b = form.querySelector('#hero-budget') as HTMLSelectElement | null;
         if (b) b.removeAttribute('name'); // drop sale budget from the rent query
       }

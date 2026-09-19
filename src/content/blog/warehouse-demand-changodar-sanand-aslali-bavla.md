@@ -36,4 +36,4 @@ Bavla has grown as an industrial and warehousing pocket further out, where large
 
 Wherever you look, the fundamentals are the same. Check the approach road and truck movement, the floor strength and ceiling height, the power load, water and safety, and whether there is room to expand later. The cheapest shed is not a bargain if trucks cannot turn into it.
 
-Choosing the right belt depends on what you store and how goods move. If you want help matching your operations to the right location, see our <a href="/services/industrial-warehouse">industrial and warehouse services</a> and we will guide you through it.
+Choosing the right belt depends on what you store and how goods move. If you want help matching your operations to the right location, see our <a href="/services/industrial-warehouse/">industrial and warehouse services</a> and we will guide you through it.

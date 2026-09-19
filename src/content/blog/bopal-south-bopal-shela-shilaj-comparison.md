@@ -36,4 +36,4 @@ Shilaj leans a little more premium and low density, with several bungalow and vi
 
 Think about what stage of life you are in. A first time buyer on a budget might lean toward Shela or parts of South Bopal. A family wanting everything settled may prefer Bopal. Someone after a calmer, premium home might love Shilaj. Visit each at different times of day and notice the commute, the water situation and the build quality.
 
-These areas change quickly as new projects launch, so current information matters. If you tell us your budget and what you value most, our team can point you to the right pocket and a few honest options to compare. You can also explore the wider area on our <a href="/map">map view</a>.
+These areas change quickly as new projects launch, so current information matters. If you tell us your budget and what you value most, our team can point you to the right pocket and a few honest options to compare. You can also explore the wider area on our <a href="/map/">map view</a>.

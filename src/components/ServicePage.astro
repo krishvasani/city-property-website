@@ -61,7 +61,7 @@ const intentOptions = [formIntent, ...otherServices];
 // that lands on this vertical's filtered results (Buy if any are for sale,
 // else Rent — e.g. warehouses are lease-only), not the unfiltered Buy page.
 let related: Awaited<ReturnType<typeof getProperties>> = [];
-let browseHref = '/buy';
+let browseHref = '/buy/';
 if (relatedCategory) {
   const all = await getProperties();
   const inCat = all.filter((p) => categoryFor(p.propertyType) === relatedCategory);
@@ -71,7 +71,7 @@ if (relatedCategory) {
     : inCat.some((p) => p.status === 'rent' || p.status === 'lease')
       ? 'rent'
       : 'buy';
-  browseHref = `/${page}?type=${relatedCategory}`;
+  browseHref = `/${page}/?type=${relatedCategory}`;
 }
 
 const otherLinks = serviceLinks.filter((s) => s.key !== serviceKey);
@@ -80,7 +80,7 @@ const otherLinks = serviceLinks.filter((s) => s.key !== serviceKey);
 const serviceUrl = new URL(Astro.url.pathname, site.url).href;
 const breadcrumbs = [
   { name: 'Home', url: '/' },
-  { name: 'Services', url: '/services' },
+  { name: 'Services', url: '/services/' },
   { name: heading, url: Astro.url.pathname },
 ];
 const serviceSchema = {
@@ -105,7 +105,7 @@ const serviceSchema = {
       <p class="body-lg muted" style="max-width:62ch;margin-top:18px;">{intro}</p>
       <div class="svc-hero-cta">
         <a class="btn btn-primary" href="#inquiry">{ctaLabel}</a>
-        <a class="btn btn-secondary" href="/consult">Talk to our team</a>
+        <a class="btn btn-secondary" href="/consult/">Talk to our team</a>
       </div>
     </section>
 
@@ -195,7 +195,7 @@ const serviceSchema = {
               <a href={s.href}><Icon name={s.icon as any} sw={1.7} />{s.label}</a>
             ))}
           </div>
-          <a class="btn btn-secondary btn-block" href="/services" style="margin-top:14px;">See all services</a>
+          <a class="btn btn-secondary btn-block" href="/services/" style="margin-top:14px;">See all services</a>
         </div>
       </aside>
     </section>

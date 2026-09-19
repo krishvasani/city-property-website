@@ -36,4 +36,4 @@ Notice the commute at peak hour, the nearest shops and the general feel of the a
 
 Note any existing damage and ideally take photos at handover. It makes the deposit return at the end much smoother.
 
-Renting should be simple and low stress. If you are comparing a few options or want help finding a home that fits your budget and commute, browse our <a href="/rent">rent listings</a> or ask our team for a hand.
+Renting should be simple and low stress. If you are comparing a few options or want help finding a home that fits your budget and commute, browse our <a href="/rent/">rent listings</a> or ask our team for a hand.

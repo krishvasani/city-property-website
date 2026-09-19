@@ -32,4 +32,4 @@ Buyers compare. If three similar flats are available and yours is priced noticea
 
 Set your asking price and quietly decide the lowest number you will accept. That way you can negotiate calmly instead of reacting emotionally to the first offer.
 
-Pricing well is part data and part judgement. If you want help reading recent activity in your area and setting a number that moves, <a href="/consult">talk to our team</a> and we will be straight with you.
+Pricing well is part data and part judgement. If you want help reading recent activity in your area and setting a number that moves, <a href="/consult/">talk to our team</a> and we will be straight with you.

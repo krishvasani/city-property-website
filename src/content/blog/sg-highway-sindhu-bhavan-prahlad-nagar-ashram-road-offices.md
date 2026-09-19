@@ -36,4 +36,4 @@ Ashram Road is one of the older, central business stretches along the river. It 
 
 Think about your client perception, your budget and where your team lives. A modern startup might love Sindhu Bhavan Road, while a firm that needs central access may prefer Ashram Road. Visit a few buildings, not just areas, because the building itself makes a big difference.
 
-If you want help shortlisting actual offices rather than just areas, see our <a href="/services/corporate">corporate leasing service</a> and we will match you to spaces that fit your size, budget and image.
+If you want help shortlisting actual offices rather than just areas, see our <a href="/services/corporate/">corporate leasing service</a> and we will match you to spaces that fit your size, budget and image.

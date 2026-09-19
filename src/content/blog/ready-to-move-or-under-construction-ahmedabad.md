@@ -28,4 +28,4 @@ Early stage pricing can be gentler, payment is usually staggered over time, and 
 
 If you need a home now, or you want zero construction risk, ready to move is the calmer path. If you can wait, want to spread payments, and you choose a credible RERA registered project, under construction can give you more home for your budget.
 
-Whatever you lean toward, check the documents, the developer track record and the possession terms. If you are torn between a ready flat and a promising new launch, <a href="/consult">request a consultation</a> and we will lay out the real differences for your situation.
+Whatever you lean toward, check the documents, the developer track record and the possession terms. If you are torn between a ready flat and a promising new launch, <a href="/consult/">request a consultation</a> and we will lay out the real differences for your situation.

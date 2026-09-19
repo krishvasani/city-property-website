@@ -36,4 +36,4 @@ Look at water, power and drainage availability, and notice what is happening aro
 
 If you plan to build, understand the development potential and any floor space rules that apply. If you are simply holding for the future, focus on location and clear title above all.
 
-Land rewards patience and careful checking more than almost any other purchase. If you are looking at a parcel near Ahmedabad, our <a href="/services/land">land advisory</a> can help you understand the process and coordinate the right verification.
+Land rewards patience and careful checking more than almost any other purchase. If you are looking at a parcel near Ahmedabad, our <a href="/services/land/">land advisory</a> can help you understand the process and coordinate the right verification.

@@ -1,0 +1,9 @@
+# Netlify redirects (processed at the edge, before any HTML is served).
+# Legacy routes from the pre-2026 site structure → their current pages.
+# Targets use the canonical trailing-slash form so this is a single 301 hop.
+/listings        /buy/       301
+/listings/       /buy/       301
+/list-property   /sell/      301
+/list-property/  /sell/      301
+/contact         /consult/   301
+/contact/        /consult/   301

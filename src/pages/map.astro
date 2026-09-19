@@ -129,7 +129,7 @@ const imgFallback =
                 <div class="mcard-price">{p.priceDisplay}{p.pricePer ? ' ' : ''}{p.pricePer && <span class="per">{p.pricePer}</span>}</div>
                 <div class="mcard-title">{p.title}</div>
                 <div class="mcard-loc"><Icon name="pin" sw={1.8} />{p.localityName}</div>
-                <a class="mcard-link" href={`/property/${p.slug}`}>View details →</a>
+                <a class="mcard-link" href={`/property/${p.slug}/`}>View details →</a>
               </div>
             </article>
           ))}

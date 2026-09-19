@@ -10,13 +10,13 @@ const { variant = 'site', active } = Astro.props;
 
 // Primary navigation. Consult is the standout CTA (rendered as the button).
 const siteLinks = [
-  { key: 'buy', label: 'Buy', href: '/buy' },
-  { key: 'rent', label: 'Rent', href: '/rent' },
-  { key: 'sell', label: 'Sell', href: '/sell' },
-  { key: 'map', label: 'Map', href: '/map' },
-  { key: 'guide', label: 'Guide', href: '/guide' },
-  { key: 'blog', label: 'Blog', href: '/blog' },
-  { key: 'about', label: 'About Us', href: '/about-us' },
+  { key: 'buy', label: 'Buy', href: '/buy/' },
+  { key: 'rent', label: 'Rent', href: '/rent/' },
+  { key: 'sell', label: 'Sell', href: '/sell/' },
+  { key: 'map', label: 'Map', href: '/map/' },
+  { key: 'guide', label: 'Guide', href: '/guide/' },
+  { key: 'blog', label: 'Blog', href: '/blog/' },
+  { key: 'about', label: 'About Us', href: '/about-us/' },
 ];
 const guideLinks = [
   { key: 'foundations', label: 'Foundations', href: '#foundations' },
@@ -40,7 +40,7 @@ const links = variant === 'guide' ? guideLinks : siteLinks;
       {variant === 'site' && (
         <div class="nav-services" data-services>
           <a
-            href="/services"
+            href="/services/"
             class:list={['nav-services-toggle', { active: active === 'services' }]}
             aria-haspopup="true"
             aria-expanded="false"
@@ -60,7 +60,7 @@ const links = variant === 'guide' ? guideLinks : siteLinks;
 
     <div class="actions">
       {variant === 'site' && (
-        <a class="nav-wish" href="/saved" aria-label="Saved properties">
+        <a class="nav-wish" href="/saved/" aria-label="Saved properties">
           <Icon name="heart" sw={1.8} />
           <span class="wish-count" data-wish-count hidden>0</span>
         </a>
@@ -68,7 +68,7 @@ const links = variant === 'guide' ? guideLinks : siteLinks;
       {variant === 'guide' ? (
         <a class="btn btn-secondary btn-sm" href="/">View site</a>
       ) : (
-        <a class:list={['btn', 'btn-primary', 'btn-sm', 'hide-sm', { active: active === 'consult' }]} href="/consult">Consult</a>
+        <a class:list={['btn', 'btn-primary', 'btn-sm', 'hide-sm', { active: active === 'consult' }]} href="/consult/">Consult</a>
       )}
       <button class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
         <Icon name="menu" sw={1.8} />
@@ -81,20 +81,20 @@ const links = variant === 'guide' ? guideLinks : siteLinks;
     <div class="nav-drawer-panel">
       <nav class="nav-drawer-links" aria-label="Mobile">
         {links.map((l) => <a href={l.href} class={active === l.key ? 'active' : undefined}>{l.label}</a>)}
-        {variant === 'site' && <a href="/consult" class={active === 'consult' ? 'active' : undefined}>Consult</a>}
+        {variant === 'site' && <a href="/consult/" class={active === 'consult' ? 'active' : undefined}>Consult</a>}
         {variant === 'site' && (
           <div class="drawer-services">
-            <a href="/services" class:list={['drawer-services-h', { active: active === 'services' }]}>Our Services</a>
+            <a href="/services/" class:list={['drawer-services-h', { active: active === 'services' }]}>Our Services</a>
             <div class="drawer-services-list">
               {serviceLinks.map((s) => <a href={s.href}><Icon name={s.icon as any} sw={1.7} />{s.label}</a>)}
             </div>
           </div>
         )}
-        {variant === 'site' && <a href="/saved">Saved properties</a>}
+        {variant === 'site' && <a href="/saved/">Saved properties</a>}
       </nav>
       {variant === 'site' && (
         <div class="nav-drawer-actions">
-          <a class="btn btn-primary btn-block" href="/consult">Talk to an expert</a>
+          <a class="btn btn-primary btn-block" href="/consult/">Talk to an expert</a>
         </div>
       )}
     </div>

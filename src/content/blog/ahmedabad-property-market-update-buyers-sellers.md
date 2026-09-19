@@ -33,10 +33,10 @@ Along the Ring Road and the Shela and Shantipura belt, a lot of new projects are
 
 ## What it means if you are buying
 
-When you find the right home in an established locality, try not to wait endlessly for a correction that may never arrive. In newer areas you can afford to slow down, see at least three options, and always check the RERA registration before you pay any token amount. You can compare current listings on our <a href="/buy">buy page</a> to get a feel for ranges.
+When you find the right home in an established locality, try not to wait endlessly for a correction that may never arrive. In newer areas you can afford to slow down, see at least three options, and always check the RERA registration before you pay any token amount. You can compare current listings on our <a href="/buy/">buy page</a> to get a feel for ranges.
 
 ## What it means if you are selling
 
-Price to the market, not to the highest number a broker quotes to win your listing. Buyers today are informed and they compare. A fair price with clean documents will almost always sell faster than an ambitious price that sits for months. If you want a grounded valuation, our <a href="/sell">sell page</a> is a good starting point.
+Price to the market, not to the highest number a broker quotes to win your listing. Buyers today are informed and they compare. A fair price with clean documents will almost always sell faster than an ambitious price that sits for months. If you want a grounded valuation, our <a href="/sell/">sell page</a> is a good starting point.
 
-Markets move in cycles, and Ahmedabad has always rewarded people who buy and sell with a clear head rather than fear or greed. If you are trying to make sense of where things stand for your own situation, <a href="/consult">talk to our team</a> and we will walk through it calmly with you.
+Markets move in cycles, and Ahmedabad has always rewarded people who buy and sell with a clear head rather than fear or greed. If you are trying to make sense of where things stand for your own situation, <a href="/consult/">talk to our team</a> and we will walk through it calmly with you.
