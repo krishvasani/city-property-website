@@ -5,6 +5,8 @@ import Icon from '../../components/Icon.astro';
 import { getProperties } from '../../lib/data';
 import { getAllLocalities, getLocalityById, propertyTextMatchesLocality } from '../../data/localities';
 import { site } from '../../lib/config';
+import { landingCombos, comboLabel } from '../../lib/landing';
+import { typeSlugOf, sideOf, TYPE_SLUG_LABEL } from '../../lib/landing-core';
 
 // Generate pages for prime localities (priority 1–2) and any locality that has
 // live listings, so pages are useful (never thin) and property breadcrumbs resolve.
@@ -60,6 +62,19 @@ const placeSchema = {
     ? { geo: { '@type': 'GeoCoordinates', latitude: loc.latitude, longitude: loc.longitude } }
     : {}),
 };
+// Every listing, grouped by property type (landing-page slug order), with a
+// link to the matching /buy|rent/{type}-in-{locality}/ page where one exists.
+const combos = landingCombos(all);
+const groupOrder = ['office-space', 'showroom', 'shop', 'warehouse', 'industrial-shed', 'flat', 'bungalow', 'plot', 'land', 'other'];
+const groups = groupOrder
+  .map((slug) => {
+    const items = listings.filter((p) => (typeSlugOf(p.propertyType) ?? 'other') === slug);
+    const label = slug === 'other' ? 'Other property' : TYPE_SLUG_LABEL[slug][1].replace(/^./, (c) => c.toUpperCase());
+    const pages = combos.filter((c) => c.locality.id === loc.id && c.typeSlug === slug && items.some((p) => sideOf(p.status) === c.side));
+    return { slug, label, items, pages };
+  })
+  .filter((g) => g.items.length);
+
 const relBits = [
   rel.buy && 'buying',
   rel.rent && 'renting',
@@ -106,10 +121,27 @@ const relBits = [
     {listings.length > 0 ? (
       <section class="section reveal">
         <h2>Properties in {loc.name}</h2>
-        <p class="muted" style="margin-bottom:20px;">{listings.length} live {listings.length === 1 ? 'listing' : 'listings'} in {loc.name}.</p>
-        <div class="cards">
-          {listings.slice(0, 9).map((p) => <PropertyCard property={p} />)}
-        </div>
+        <p class="muted" style="margin-bottom:8px;">{listings.length} live {listings.length === 1 ? 'listing' : 'listings'} in {loc.name}, grouped by type.</p>
+        {groups.length > 1 && (
+          <p class="loc-groups-nav muted">
+            {groups.map((g, i) => <>{i > 0 && ' · '}<a href={`#${g.slug}`}>{g.label} ({g.items.length})</a></>)}
+          </p>
+        )}
+        {groups.map((g) => (
+          <div class="loc-group" id={g.slug}>
+            <div class="between loc-group-head">
+              <h3>{g.label} in {loc.name} <span class="muted">({g.items.length})</span></h3>
+              {g.pages.length > 0 && (
+                <div class="loc-group-links">
+                  {g.pages.map((c) => <a class="btn btn-secondary btn-sm" href={c.path}>{comboLabel(c)} →</a>)}
+                </div>
+              )}
+            </div>
+            <div class="cards">
+              {g.items.map((p) => <PropertyCard property={p} />)}
+            </div>
+          </div>
+        ))}
       </section>
     ) : (
       <section class="section reveal">
@@ -161,6 +193,12 @@ const relBits = [
   .loc-page .crumb { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--text-muted); padding: 20px 0 0; }
   .loc-page .crumb a:hover { color: var(--navy); }
   .loc-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .loc-groups-nav { font-size: 14px; margin-bottom: 8px; }
+  .loc-groups-nav a { color: var(--navy); font-weight: 600; }
+  .loc-group { margin-top: 28px; scroll-margin-top: 90px; }
+  .loc-group-head { align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+  .loc-group-head h3 { font-size: 20px; }
+  .loc-group-links { display: flex; flex-wrap: wrap; gap: 8px; }
   .loc-page .chips { display: flex; flex-wrap: wrap; gap: 10px; }
   .loc-page .chip { display: inline-flex; align-items: center; padding: 8px 14px; border: 1px solid var(--hairline); border-radius: var(--r-pill); font-size: 13.5px; font-weight: 600; color: var(--text); background: var(--surface); }
   .loc-page a.chip-link:hover { border-color: var(--navy); color: var(--navy); }

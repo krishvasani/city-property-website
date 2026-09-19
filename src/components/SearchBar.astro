@@ -1,7 +1,25 @@
 ---
 import Icon from './Icon.astro';
 import LocalityAutocomplete from './LocalityAutocomplete.astro';
+import { getProperties } from '../lib/data';
+import { landingCombos } from '../lib/landing';
+import { TYPE_SLUG_CATEGORY } from '../lib/landing-core';
+
+// Route a (buy|rent, locality, category) search straight to its landing page
+// when exactly one landing page of that category exists for the locality —
+// e.g. Rent + Thaltej + Commercial → /rent/office-space-in-thaltej/ when
+// offices are the only commercial type with a page there. Ambiguous or
+// unmatched combinations keep the /buy/?locality=… query URL.
+const combos = landingCombos(await getProperties());
+const byKey = new Map<string, string[]>();
+for (const c of combos) {
+  const key = `${c.side}|${c.locality.id}|${TYPE_SLUG_CATEGORY[c.typeSlug]}`;
+  byKey.set(key, [...(byKey.get(key) ?? []), c.path]);
+}
+const landings: Record<string, string> = {};
+for (const [key, paths] of byKey) if (paths.length === 1) landings[key] = paths[0];
 ---
+<script type="application/json" id="hero-landings" set:html={JSON.stringify(landings)}></script>
 <form class="hero-search" action="/buy/" method="get" data-hero-search>
   <div class="segment" role="tablist" aria-label="Search mode">
     <button type="button" class="is-active" data-target="/buy/">Buy</button>
@@ -59,10 +77,20 @@ import LocalityAutocomplete from './LocalityAutocomplete.astro';
       }),
     );
 
-    form.addEventListener('submit', () => {
+    let LANDINGS: Record<string, string> = {};
+    try { LANDINGS = JSON.parse(document.getElementById('hero-landings')?.textContent || '{}'); } catch {}
+
+    form.addEventListener('submit', (e) => {
       form.setAttribute('action', target);
-      // Drop an empty locality so the URL stays clean.
       const loc = form.querySelector('.loc-ac-hidden') as HTMLInputElement | null;
+      // Locality + type chosen, no budget filter → go straight to the
+      // crawlable landing page for that combination when one exists.
+      const type = (form.querySelector('#hero-type') as HTMLSelectElement | null)?.value || '';
+      const budget = target === '/buy/' ? ((form.querySelector('#hero-budget') as HTMLSelectElement | null)?.value || '') : '';
+      const side = target === '/rent/' ? 'rent' : 'buy';
+      const landing = loc?.value && type && !budget ? LANDINGS[`${side}|${loc.value}|${type}`] : undefined;
+      if (landing) { e.preventDefault(); window.location.href = landing; return; }
+      // Drop an empty locality so the URL stays clean.
       if (loc && !loc.value) loc.removeAttribute('name');
       if (target === '/rent/') {
         const b = form.querySelector('#hero-budget') as HTMLSelectElement | null;

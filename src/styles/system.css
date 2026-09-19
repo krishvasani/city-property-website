@@ -339,8 +339,11 @@ h4, .h4 { font-size: 17px; line-height: 1.35; letter-spacing: -.008em; font-weig
 /* ---------- DIVIDERS / MISC ---------- */
 .hr { height: 1px; background: var(--hairline); border: 0; margin: 0; }
 .dot-sep { width: 3px; height: 3px; border-radius: 999px; background: var(--text-faint); display: inline-block; }
-.reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s var(--ease-out), transform .7s var(--ease-out); }
-.reveal.in { opacity: 1; transform: none; }
+/* Scroll reveals are ADDITIVE: content is visible by default (no JS, crawlers,
+   reduced motion). motion.js marks in-viewport elements .in first, then adds
+   .motion-ready to <html>, so only off-screen sections animate as they enter. */
+.motion-ready .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s var(--ease-out), transform .7s var(--ease-out); }
+.motion-ready .reveal.in { opacity: 1; transform: none; }
 
 /* ============================================================
    MOTION & 3D
@@ -425,7 +428,7 @@ img, svg, video, canvas, iframe { max-width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; }
-  .reveal { transition: none; opacity: 1; transform: none; }
+  .motion-ready .reveal { transition: none; opacity: 1; transform: none; }
   .hero-anim > * { opacity: 1; animation: none; }
   .motion-ready [data-stagger] > * { opacity: 1; }
   .tilt { transform: none !important; transition: box-shadow .3s var(--ease); }
@@ -433,17 +436,18 @@ img, svg, video, canvas, iframe { max-width: 100%; }
 
 /* ============================================================
    PAGE TRANSITIONS — effortless crossfade + content rise.
-   Hide state is gated on .pt-js (added by an inline head script)
-   AND prefers-reduced-motion, and a failsafe always reveals — so a
-   page can never get stuck invisible.
+   The ENTRY fade is a pure CSS animation (no class needed to finish), gated
+   on .pt-js (inline head script) AND prefers-reduced-motion, so the page can
+   never be stuck invisible: without JS nothing is hidden, and with JS the
+   animation always ends at opacity 1. Only the EXIT fade uses a class.
    ============================================================ */
+@keyframes ptIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes ptRise { from { transform: translateY(14px); } to { transform: none; } }
 @media (prefers-reduced-motion: no-preference) {
-  .pt-js body { opacity: 0; }
-  .pt-js body.pt-ready { opacity: 1; transition: opacity .5s var(--ease-out); }
-  .pt-js body.pt-leaving { opacity: 0; transition: opacity .26s ease-in; pointer-events: none; }
+  .pt-js body { animation: ptIn .5s var(--ease-out) both; }
+  .pt-js body.pt-leaving { opacity: 0; transition: opacity .26s ease-in; pointer-events: none; animation: none; }
   /* the content gently rises; nav (a sibling of <main>) stays put */
-  .pt-js main { transform: translateY(14px); }
-  .pt-js body.pt-ready main { transform: none; transition: transform .6s var(--ease-out); }
+  .pt-js main { animation: ptRise .6s var(--ease-out) both; }
 }
 
 /* ── Shared layout primitives (also defined per-page; promoted to global so
