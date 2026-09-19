@@ -4,7 +4,7 @@ import ServicePage from '../../components/ServicePage.astro';
 <ServicePage
   serviceKey="corporate"
   seoTitle="Corporate Leasing and Selling in Ahmedabad"
-  seoDescription="City Property Services helps businesses lease and buy offices in Ahmedabad, from compact startup floors to full corporate buildings, with support from search to handover."
+  seoDescription="Lease or buy office space in Ahmedabad with City Property Services, from compact startup floors to full corporate buildings, with support to handover."
   eyebrow="Corporate spaces"
   heading="Corporate Leasing and Selling"
   intro="We help businesses find office space that fits how they actually work. From a first cabin for a young startup to a full corporate building, we match you with the right space, in the right location, on terms that make sense."
@@ -32,4 +32,13 @@ import ServicePage from '../../components/ServicePage.astro';
   formIntent="Corporate"
   sizeHint="e.g. 8 seats, 2,500 sqft, or a full floor"
   relatedCategory="commercial"
+  landingTypes={["office-space"]}
+  faq={[
+    { q: 'How much does office space cost to rent in Ahmedabad?', a: 'Across our {rentCount} current office listings, asking rents run from {rentRange}. Rates depend on the building grade, floor, furnishing and lock-in. Furnished and fitted floors in SG Highway, Prahlad Nagar and Thaltej sit at the top of the range; Navrangpura and Ashram Road offer older stock at lower rates.' },
+    { q: 'Which areas of Ahmedabad have office space available right now?', a: 'We currently hold {count} office listings across {localityCount} localities, with the most choice in {topLocalities}. Each locality page below lists every current option with size and price.' },
+    { q: 'What office sizes do you handle?', a: 'Current listings range from {sizeRange}, from compact cabins and managed seats for small teams to full floors and standalone corporate buildings. Tell us your headcount and growth plan and we shortlist only what fits.' },
+    { q: 'What is a typical lock-in and deposit for an office lease in Ahmedabad?', a: 'Most commercial leases in Ahmedabad run 3 to 5 years with a lock-in of 1 to 3 years and a security deposit of 3 to 6 months’ rent, with an annual escalation clause. We negotiate the lock-in, fit-out period, escalation and exit terms alongside the rent, not just the headline rate.' },
+    { q: 'Can you help us buy an office rather than lease?', a: 'Yes. {saleCount} of our office listings are for sale, from {saleRange}. We advise on the building, title and society documents, the fit-out condition and the achievable rental yield if you may lease it out later.' },
+    { q: 'How do you charge for corporate leasing?', a: 'Brokerage is payable on a completed transaction only, on the standard Ahmedabad market basis. There is no fee for shortlisting, site visits or advice, and we tell you our terms before the first visit.' },
+  ]}
 />

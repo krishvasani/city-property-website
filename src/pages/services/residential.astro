@@ -4,7 +4,7 @@ import ServicePage from '../../components/ServicePage.astro';
 <ServicePage
   serviceKey="residential"
   seoTitle="Residential Property Services in Ahmedabad"
-  seoDescription="City Property Services helps you buy, sell, rent and lease homes in Ahmedabad, from apartments to villas and plots, with locality guidance and full transaction support."
+  seoDescription="Buy, sell, rent or lease homes in Ahmedabad with City Property Services, from apartments to villas, with locality guidance and full transaction support."
   eyebrow="Residential"
   heading="Residential Property Services"
   intro="Whether you are buying your first home, upgrading for a growing family, or renting while you settle in, we help you find a place that fits your life, your budget and the locality you want to be in."
@@ -32,4 +32,13 @@ import ServicePage from '../../components/ServicePage.astro';
   formIntent="Residential"
   sizeHint="e.g. 3 BHK up to ₹1.2 Cr, or a 2 BHK on rent"
   relatedCategory="residential"
+  landingTypes={["flat", "bungalow"]}
+  faq={[
+    { q: 'What do flats cost to buy in Ahmedabad right now?', a: 'Our {saleCount} current homes for sale carry asking prices from {saleRange}. New 3 and 4 BHK projects in Ambli, Shantigram, Thaltej and Bopal make up much of the supply; resale flats in Satellite, Bodakdev and Vastrapur sit in the middle of the range.' },
+    { q: 'Which areas have homes available now?', a: 'We hold {count} residential listings across {localityCount} localities, with the most choice in {topLocalities}. Each locality page below lists every current flat and bungalow with size and price.' },
+    { q: 'What should I check before buying a flat?', a: 'RERA registration for new projects, clear title and approved plans, society NOC and dues, carpet versus super built-up area, possession date and the builder’s track record. Our buyer’s guide walks through all thirteen steps.' },
+    { q: 'Do you help with renting a home, not just buying?', a: 'Yes. {rentCount} of our current homes are for rent, from {rentRange}. We handle the agreement, deposit and police verification paperwork so the move-in is straightforward.' },
+    { q: 'How do you value a home I want to sell?', a: 'From recent registered transactions in your society and the immediate area, current competing listings, and the condition and floor of your home, not from an aspirational number. You get a realistic range and a plan to reach the top of it.' },
+    { q: 'What are the costs on top of the price?', a: 'Budget roughly 6 to 7% for stamp duty and registration in Gujarat, plus society transfer charges and, for a loan, processing fees. We list every cost before you make an offer.' },
+  ]}
 />

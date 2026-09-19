@@ -23,7 +23,7 @@ in Google/3rd‑party dashboards** that only the owner can do.
 2. Set the **website link to `https://cityprop.co.in`**.
 3. Make **Name, Address, Phone (NAP) identical** to the website footer:
    - City Property Services
-   - 703 & 704 Zion Prime, Near Copper Stone, Thaltej Shilaj Road, Ahmedabad, Gujarat 380052
+   - 703 & 704 Zion Prime, Near Copper Stone, Thaltej Shilaj Road, Ahmedabad, Gujarat 380059
    - +91 98249 00778
    - coordinator@cityprop.co.in
 4. Add categories (Real Estate Agency / Commercial Real Estate Agency),

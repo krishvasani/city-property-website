@@ -6,8 +6,11 @@ import TypeTile from '../components/TypeTile.astro';
 import PropertyCard from '../components/PropertyCard.astro';
 import Icon from '../components/Icon.astro';
 import { getFeatured, getProperties } from '../lib/data';
+import { landingCombos } from '../lib/landing';
+import { sideWord, TYPE_SLUG_LABEL, TYPE_SLUG_CATEGORY } from '../lib/landing-core';
 import { categoryFor } from '../lib/format';
 import { existsSync } from 'node:fs';
+import { site } from '../lib/config';
 
 // Drop a real photo at public/team/mukesh-vasani.jpg and the build uses it
 // automatically; until then a clean portrait placeholder is shown.
@@ -50,12 +53,25 @@ const types = [
   { icon: 'investment' as const, title: 'Investments', count: countLabel('investment'), type: 'investment', page: catPage('investment') },
 ];
 
+// Browse module: the four busiest markets (side × type, by total listings),
+// six most-stocked localities in each — 24 links laid out as a directory.
+const combos = landingCombos(allProperties);
+const groupKeys = [...new Set(combos.map((c) => `${c.side}|${c.typeSlug}`))];
+const browseGroups = groupKeys
+  .map((key) => {
+    const [side, typeSlug] = key.split('|') as ['buy' | 'rent', string];
+    const all = combos.filter((c) => c.side === side && c.typeSlug === typeSlug).sort((a, b) => b.listings.length - a.listings.length || a.locality.name.localeCompare(b.locality.name));
+    return { key, side, typeSlug, title: `${TYPE_SLUG_LABEL[typeSlug][0]} for ${sideWord(side)}`, items: all.slice(0, 6), total: all.reduce((n, c) => n + c.listings.length, 0), all: all.length };
+  })
+  .sort((a, b) => b.total - a.total)
+  .slice(0, 4);
+
 // The five services the CIRIL name stands for
 const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industrial & Logistics', 'Land'];
 ---
 <Base
-  title="City Property Services Ahmedabad | Buy, Rent, Sell & Invest in Property"
-  description="Trusted Ahmedabad real estate consultants for buying, renting, selling and investing — homes, offices, retail, warehouses and land across Ahmedabad and Gandhinagar."
+  title="Property Consultants in Ahmedabad | City Property Services"
+  description="Ahmedabad real estate consultants for buying, renting, selling and investing: homes, offices, retail, warehouses and land across Ahmedabad and Gandhinagar."
 >
   <main>
     <!-- HERO -->
@@ -68,7 +84,7 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
 
       <div class="hero-stats">
         <Stat display="8,000+" count={8000} suffix="+" label="Transactions made" />
-        <Stat display="27+ yrs" count={27} suffix="+ yrs" label="In Ahmedabad" />
+        <Stat display={`${site.yearsLabel} yrs`} count={site.yearsInBusiness} suffix="+ yrs" label="In Ahmedabad" />
         <Stat display="10+ yrs" count={10} suffix="+ yrs" label="Pan India" />
       </div>
 
@@ -108,6 +124,33 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
       </div>
     </section>
 
+    <!-- BROWSE BY AREA & TYPE -->
+    <section class="section wrap-wide reveal" id="browse">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Browse by area</div>
+          <h2 style="margin-top:10px;">Find property by locality and type</h2>
+          <p>Our most active markets right now, with every current listing, price range and size on one page each.</p>
+        </div>
+        <a class="btn btn-secondary" href="/localities/">All localities →</a>
+      </div>
+      <div class="browse-grid">
+        {browseGroups.map((g) => (
+          <div class="browse-card">
+            <h3 class="browse-title">{g.title}</h3>
+            <ul class="browse-list">
+              {g.items.map((c) => (
+                <li><a href={c.path}>{c.locality.name}<span class="browse-count">{c.listings.length}</span></a></li>
+              ))}
+            </ul>
+            {g.all > g.items.length && (
+              <a class="browse-more" href={`/${g.side}/?type=${TYPE_SLUG_CATEGORY[g.typeSlug]}`}>{g.all - g.items.length} more {g.side === 'buy' ? 'areas for sale' : 'areas for rent'} →</a>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+
     <!-- ABOUT US -->
     <section class="section wrap-wide reveal" id="about">
       <div class="about-split">
@@ -125,9 +168,9 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
 
         <div class="about-text">
           <div class="eyebrow">About us</div>
-          <h2 style="margin-top:10px;">27 years of trusted property advice in Ahmedabad</h2>
+          <h2 style="margin-top:10px;">{site.yearsInBusiness} years of trusted property advice in Ahmedabad</h2>
           <p>Founded and led by <strong>Mukesh Vasani</strong>, City Property Services has spent over
-            <strong>27 years</strong> helping families, investors and businesses across Ahmedabad find the
+            <strong>{site.yearsInBusiness} years</strong> helping families, investors and businesses across Ahmedabad find the
             right space at the right price. We advise across residential, commercial, retail, office,
             industrial, warehousing and land.</p>
           <p>What sets us apart is a genuine feel for every part of the city paired with a national reach.
@@ -349,4 +392,15 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
     .band-cta { flex-direction: column; align-items: stretch; gap: 10px; }
     .band-cta .btn { width: 100%; }
   }
+  .browse-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .browse-card { background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); padding: 20px 20px 16px; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; }
+  .browse-title { font-size: 16px; font-weight: 700; color: var(--ink); margin: 0 0 10px; padding-bottom: 10px; border-bottom: 1px solid var(--hairline); }
+  .browse-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+  .browse-list a { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 7px 0; font-size: 14.5px; font-weight: 600; color: var(--text); border-radius: 6px; transition: color var(--t) var(--ease); }
+  .browse-list a:hover { color: var(--navy); }
+  .browse-count { font-size: 12px; font-weight: 700; color: var(--navy); background: var(--navy-tint); border-radius: 999px; padding: 2px 8px; min-width: 26px; text-align: center; }
+  .browse-more { margin-top: auto; padding-top: 12px; font-size: 13.5px; font-weight: 600; color: var(--navy); }
+  .browse-more:hover { text-decoration: underline; }
+  @media (max-width: 1000px) { .browse-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .browse-grid { grid-template-columns: 1fr; } }
 </style>

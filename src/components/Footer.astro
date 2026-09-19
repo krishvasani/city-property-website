@@ -17,6 +17,7 @@ const waData = waPayload('Hi City Property Services, I have a question.');
           <a href={telUrl()}>{contact.phone}</a>
           <a href={`mailto:${contact.email}`}>{contact.email}</a>
           <address class="foot-address">{contact.address}</address>
+          <p class="foot-hours">{contact.office.hoursText}</p>
         </div>
         <div class="social">
           <a href={social.instagram} target="_blank" rel="noopener" aria-label="Instagram">
@@ -80,6 +81,7 @@ const waData = waPayload('Hi City Property Services, I have a question.');
   .foot-contact a { color: #c4d0d8; font-weight: 600; width: max-content; }
   .foot-contact a:hover { color: #fff; }
   .foot-address { font-style: normal; color: #9aa9b2; font-weight: 500; line-height: 1.5; max-width: 30ch; margin-top: 2px; }
+  .foot-hours { color: #9aa9b2; font-size: 13px; margin: 6px 0 0; }
   /* Social icons live in the brand block (top-left) so the floating WhatsApp
      button in the bottom-right corner never covers them. */
   .brand .social { margin-top: 18px; }

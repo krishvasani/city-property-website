@@ -6,18 +6,13 @@
 //   - a meta description shared with another indexable page
 //   - a <title> over 65 chars or a description over 160 chars
 // Prints counts on every build. Usage: node scripts/check-seo-meta.mjs [--count]
-import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
+import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
 const DIST = join(process.cwd(), 'dist');
 const TITLE_MAX = 65, DESC_MAX = 160;
 const countOnly = process.argv.includes('--count');
 
-// Known length debt on templates not yet reworked (see the JSON's _comment).
-// Entries match the exact path; a trailing "*" makes them a prefix match.
-const allowlistFile = join(process.cwd(), 'scripts/seo-meta-allowlist.json');
-const lengthExempt = existsSync(allowlistFile) ? JSON.parse(readFileSync(allowlistFile, 'utf8')).lengthExempt ?? [] : [];
-const isLengthExempt = (path) => lengthExempt.some((p) => (p.endsWith('*') ? path.startsWith(p.slice(0, -1)) : path === p));
 
 function* htmlFiles(dir) {
   for (const name of readdirSync(dir)) {
@@ -26,7 +21,10 @@ function* htmlFiles(dir) {
     else if (name.endsWith('.html')) yield p;
   }
 }
-const decode = (s) => s.replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+const decode = (s) => s
+  .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+  .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+  .replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 const attr = (tag, name) => tag.match(new RegExp(`\\b${name}="([^"]*)"`))?.[1];
 
 const pages = [];
@@ -44,8 +42,6 @@ for (const file of htmlFiles(DIST)) {
 
 const indexable = pages.filter((p) => !p.noindex);
 const problems = [];
-const exempted = [];
-const lengthIssue = (p, msg) => (isLengthExempt(p.path) ? exempted : problems).push(msg);
 const groupBy = (key) => {
   const m = new Map();
   for (const p of indexable) { const k = p[key]; if (!m.has(k)) m.set(k, []); m.get(k).push(p.path); }
@@ -54,9 +50,9 @@ const groupBy = (key) => {
 for (const p of indexable) {
   if (p.h1s !== 1) problems.push(`${p.path}  h1 count = ${p.h1s}`);
   if (!p.title) problems.push(`${p.path}  missing <title>`);
-  if (p.title.length > TITLE_MAX) lengthIssue(p, `${p.path}  title ${p.title.length} chars > ${TITLE_MAX}: "${p.title}"`);
+  if (p.title.length > TITLE_MAX) problems.push(`${p.path}  title ${p.title.length} chars > ${TITLE_MAX}: "${p.title}"`);
   if (!p.description) problems.push(`${p.path}  missing meta description`);
-  if (p.description.length > DESC_MAX) lengthIssue(p, `${p.path}  description ${p.description.length} chars > ${DESC_MAX}`);
+  if (p.description.length > DESC_MAX) problems.push(`${p.path}  description ${p.description.length} chars > ${DESC_MAX}`);
 }
 const dupTitles = [...groupBy('title')].filter(([k, v]) => k && v.length > 1);
 const dupDescs = [...groupBy('description')].filter(([k, v]) => k && v.length > 1);
@@ -71,8 +67,7 @@ console.log(
   `${new Set(indexable.map((p) => p.description)).size} distinct descriptions, ` +
   `${indexable.filter((p) => p.h1s === 1).length} with exactly one h1; ` +
   `longest title ${lt.title.length} chars, longest description ${ld.description.length} chars; ` +
-  `${problems.length} problem(s)` +
-  (exempted.length ? `; ${exempted.length} length issue(s) on allowlisted pages (scripts/seo-meta-allowlist.json — tech debt)` : ''),
+  `${problems.length} problem(s)`,
 );
 if (problems.length && !countOnly) {
   console.error('\nSEO metadata problems on indexable pages:');

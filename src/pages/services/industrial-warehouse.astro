@@ -4,7 +4,7 @@ import ServicePage from '../../components/ServicePage.astro';
 <ServicePage
   serviceKey="industrial-warehouse"
   seoTitle="Industrial and Warehouse Properties in Ahmedabad"
-  seoDescription="City Property Services helps you lease and buy warehouses, sheds, cold storage and industrial land across Ahmedabad’s logistics belts, chosen for movement, storage and growth."
+  seoDescription="Lease or buy warehouses, sheds, cold storage and industrial land across Ahmedabad’s logistics belts with City Property Services, from search to handover."
   eyebrow="Industrial and warehouse"
   heading="Industrial and Warehouse Properties"
   intro="Your warehouse or factory should make daily operations easier, not harder. We help you find industrial and storage space that supports smooth movement, safe storage, dependable utilities and room to grow."
@@ -32,4 +32,14 @@ import ServicePage from '../../components/ServicePage.astro';
   formIntent="Industrial & Warehouse"
   sizeHint="e.g. 10,000 sqft shed, or 2 acres of industrial land"
   relatedCategory="industrial"
+  landingTypes={["warehouse", "industrial-shed", "land"]}
+  extraTypes={["industrial land"]}
+  faq={[
+    { q: 'What does warehouse space cost to lease around Ahmedabad?', a: 'Our {rentCount} current warehouse and industrial listings carry asking rents from {rentRange}, quoted per sq.ft per month. Rates vary with the belt (Aslali, Changodar, Sanand, Bavla, Kheda), the road frontage, floor quality, height and dock access.' },
+    { q: 'Which industrial belts do you cover?', a: 'Listings are currently spread across {localityCount} localities including {topLocalities}, along the Ahmedabad–Rajkot, Ahmedabad–Mumbai and Kheda highways and the SP Ring Road. Each belt page below lists every current warehouse with size and rent.' },
+    { q: 'What warehouse sizes are available?', a: 'Current listings range from {sizeRange}. We handle single sheds for small operators through to 2 to 3 lakh sq.ft built-to-suit and multi-tenant parks for logistics companies.' },
+    { q: 'What should I check before leasing a warehouse?', a: 'Clear height, floor load capacity, dock and ramp access, road width for container movement, power sanction, fire NOC, N.A. and zoning status, and whether the plot has clean title. We verify these before you visit, not after.' },
+    { q: 'Can you find industrial land for a factory?', a: 'Yes. We source N.A. industrial and GIDC-adjacent land across the Sanand, Changodar, Bavla and Kheda belts, and check title, zoning, access and utilities before you commit.' },
+    { q: 'Do you handle warehouse sale as well as lease?', a: 'Mostly lease, because that is what the market prefers, but {saleCount} of our industrial listings are for sale. We also advise investors on pre-leased warehouses with operating tenants.' },
+  ]}
 />

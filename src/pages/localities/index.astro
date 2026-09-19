@@ -1,30 +1,43 @@
 ---
+// /localities/ — directory of every locality in the dataset (153), grouped by
+// region. Localities with their own page link to it; the rest link to the
+// filtered buy page. Each locality also lists its landing pages.
 import Base from '../../layouts/Base.astro';
 import { getProperties } from '../../lib/data';
 import { getAllLocalities } from '../../data/localities';
+import { landingCombos } from '../../lib/landing';
+import { sideWord, TYPE_SLUG_LABEL } from '../../lib/landing-core';
 
 const all = await getProperties();
 const counts = new Map<string, number>();
 for (const p of all) if (p.localitySlug) counts.set(p.localitySlug, (counts.get(p.localitySlug) ?? 0) + 1);
+const combos = landingCombos(all);
+const landingsFor = (id: string) => combos.filter((c) => c.locality.id === id).sort((a, b) => b.listings.length - a.listings.length);
 
-const localities = getAllLocalities().filter((l) => l.priority <= 2 || counts.has(l.id));
-// Group by region for a scannable directory.
+const localities = getAllLocalities();
+const hasPage = (l: (typeof localities)[number]) => l.priority <= 2 || counts.has(l.id);
+// Group by region; within a region, localities with listings first, then A–Z.
 const byRegion = new Map<string, typeof localities>();
-for (const l of localities) {
-  const arr = byRegion.get(l.region) ?? [];
-  arr.push(l);
-  byRegion.set(l.region, arr);
-}
-const regions = [...byRegion.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+for (const l of localities) byRegion.set(l.region, [...(byRegion.get(l.region) ?? []), l]);
+const regions = [...byRegion.entries()]
+  .map(([region, items]) => ({
+    region,
+    items: items.sort((a, b) => (counts.get(b.id) ?? 0) - (counts.get(a.id) ?? 0) || a.name.localeCompare(b.name)),
+    listings: items.reduce((n, l) => n + (counts.get(l.id) ?? 0), 0),
+  }))
+  .sort((a, b) => b.listings - a.listings || a.region.localeCompare(b.region));
 
+const withPages = localities.filter(hasPage).length;
+const totalLandings = combos.length;
 const breadcrumbs = [
   { name: 'Home', url: '/' },
   { name: 'Localities', url: '/localities/' },
 ];
 ---
 <Base
-  title="Ahmedabad Localities | Property by Area"
-  description="Explore property by locality across Ahmedabad and Gandhinagar — Bodakdev, Satellite, SG Highway, Thaltej, Bopal, GIFT City and more. Local market insight from City Property Services."
+  title="Ahmedabad Localities: Property by Area"
+  description="Property by locality across Ahmedabad and Gandhinagar: Bodakdev, Satellite, SG Highway, Thaltej, Bopal, GIFT City and more, with local market insight."
+  brandSuffix={false}
   breadcrumbs={breadcrumbs}
   active="buy"
 >
@@ -33,23 +46,43 @@ const breadcrumbs = [
       <a href="/">Home</a> <span>/</span> <span style="color:var(--ink);">Localities</span>
     </nav>
     <section class="page-hero">
-      <div class="eyebrow">Ahmedabad & Gandhinagar</div>
+      <div class="eyebrow">Ahmedabad &amp; Gandhinagar</div>
       <h1 class="display" style="max-width:20ch;margin-top:12px;">Property by locality</h1>
       <p class="body-lg muted" style="max-width:64ch;margin-top:16px;">
-        Pick an area to see its market overview, what it is known for, connectivity and live listings. We cover residential, commercial, industrial, land and investment across every corner of the city.
+        {localities.length} localities across {regions.length} regions, with {all.length} live listings and {totalLandings} type-by-area pages. Pick an area to see its market summary, what it is known for, connectivity and every current listing.
+      </p>
+      <p class="loc-index-jump muted">
+        {regions.map((r, i) => <>{i > 0 && ' · '}<a href={`#${r.region.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>{r.region} ({r.items.length})</a></>)}
       </p>
     </section>
 
-    {regions.map(([region, items]) => (
-      <section class="section reveal">
-        <h2>{region}</h2>
+    {regions.map((r) => (
+      <section class="section loc-region" id={r.region.toLowerCase().replace(/[^a-z0-9]+/g, '-')}>
+        <div class="between" style="align-items:baseline;margin-bottom:16px;">
+          <h2>{r.region}</h2>
+          <span class="muted small">{r.items.length} localities · {r.listings} live listings</span>
+        </div>
         <div class="loc-grid">
-          {items.sort((a, b) => a.name.localeCompare(b.name)).map((l) => (
-            <a class="loc-tile" href={`/localities/${l.slug}/`}>
-              <span class="loc-name">{l.name}</span>
-              {counts.get(l.id) ? <span class="loc-count">{counts.get(l.id)} live</span> : <span class="loc-count muted">Market info</span>}
-            </a>
-          ))}
+          {r.items.map((l) => {
+            const n = counts.get(l.id) ?? 0;
+            const landings = landingsFor(l.id);
+            const href = hasPage(l) ? `/localities/${l.slug}/` : `/buy/?locality=${l.id}`;
+            return (
+              <div class:list={['loc-tile', { 'has-landings': landings.length > 0 }]}>
+                <a class="loc-tile-main" href={href}>
+                  <span class="loc-name">{l.name}</span>
+                  {n ? <span class="loc-count">{n} live</span> : <span class="loc-count muted">{hasPage(l) ? 'Area guide' : 'Enquire'}</span>}
+                </a>
+                {landings.length > 0 && (
+                  <ul class="loc-tile-landings">
+                    {landings.map((c) => (
+                      <li><a href={c.path}>{TYPE_SLUG_LABEL[c.typeSlug][0]} for {sideWord(c.side)} <span class="muted">({c.listings.length})</span></a></li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            );
+          })}
         </div>
       </section>
     ))}
@@ -58,10 +91,17 @@ const breadcrumbs = [
 
 <style is:global>
   .loc-index .crumb { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--text-muted); padding: 20px 0 0; }
-  .loc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; }
-  .loc-tile { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px; border: 1px solid var(--hairline); border-radius: var(--r); background: var(--surface); box-shadow: var(--shadow-xs); transition: border-color var(--t) var(--ease), transform var(--t) var(--ease), box-shadow var(--t) var(--ease); }
-  .loc-tile:hover { border-color: var(--navy); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+  .loc-index-jump { font-size: 14px; margin-top: 18px; }
+  .loc-index-jump a { color: var(--navy); font-weight: 600; }
+  .loc-region { padding-block: 40px; scroll-margin-top: 90px; }
+  .loc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; align-items: start; }
+  .loc-tile { border: 1px solid var(--hairline); border-radius: var(--r); background: var(--surface); box-shadow: var(--shadow-xs); transition: border-color var(--t) var(--ease), box-shadow var(--t) var(--ease); }
+  .loc-tile:hover { border-color: var(--navy); box-shadow: var(--shadow-sm); }
+  .loc-tile-main { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px; }
   .loc-tile .loc-name { font-weight: 600; color: var(--ink); font-size: 15px; }
-  .loc-tile .loc-count { font-size: 12px; font-weight: 600; color: var(--good); }
+  .loc-tile .loc-count { font-size: 12px; font-weight: 600; color: var(--good); white-space: nowrap; }
   .loc-tile .loc-count.muted { color: var(--text-faint); font-weight: 500; }
+  .loc-tile-landings { list-style: none; margin: 0; padding: 4px 16px 12px; border-top: 1px solid var(--hairline); display: flex; flex-direction: column; gap: 4px; }
+  .loc-tile-landings a { font-size: 13.5px; font-weight: 600; color: var(--navy); }
+  .loc-tile-landings a:hover { text-decoration: underline; }
 </style>

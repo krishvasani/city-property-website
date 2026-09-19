@@ -4,7 +4,7 @@ import ServicePage from '../../components/ServicePage.astro';
 <ServicePage
   serviceKey="retail"
   seoTitle="Retail Spaces Leasing and Selling in Ahmedabad"
-  seoDescription="City Property Services helps brands and businesses lease and buy retail spaces in Ahmedabad, from high street shops to showrooms and food spaces, chosen for visibility and footfall."
+  seoDescription="Lease or buy retail space in Ahmedabad with City Property Services: high street shops, showrooms and food spaces chosen for visibility and footfall."
   eyebrow="Retail spaces"
   heading="Retail Spaces Leasing and Selling"
   intro="Retail works when customers can find you, reach you and remember you. We help brands and businesses secure shops, showrooms and food spaces in the right spots, where footfall and visibility actually support your sales."
@@ -32,4 +32,12 @@ import ServicePage from '../../components/ServicePage.astro';
   formIntent="Retail"
   sizeHint="e.g. 600 sqft on a high street, or a mall unit"
   relatedCategory="commercial"
+  landingTypes={["shop", "showroom"]}
+  faq={[
+    { q: 'What does a showroom or shop cost to rent in Ahmedabad?', a: 'Our {rentCount} current retail listings carry asking rents from {rentRange}. Ground-floor frontage on SG Highway, CG Road and Sindhu Bhavan Road commands the highest rates; upper floors and side roads cost considerably less.' },
+    { q: 'Which localities have retail space available now?', a: 'We hold {count} shop and showroom listings across {localityCount} localities, with the most options in {topLocalities}. The locality pages below show every current space with size and price.' },
+    { q: 'What should a brand check before leasing a showroom?', a: 'Frontage width and visibility from the road, signage rights, parking, power load, floor-to-ceiling height, fire NOC and whether the building allows your category of use. We check these on every visit and flag anything that would block your fit-out.' },
+    { q: 'Do you handle pre-leased retail for investors?', a: 'Yes. Some of our showroom listings are already leased to operating tenants and are sold as income assets. We share the lease term, lock-in, escalation and tenant profile so you can judge the yield before visiting.' },
+    { q: 'How long does it take to find a retail space?', a: 'For standard requirements we usually shortlist within a week and close within four to eight weeks, depending on negotiation and fit-out. High-street frontage in the most sought-after stretches can take longer because supply is limited.' },
+  ]}
 />
