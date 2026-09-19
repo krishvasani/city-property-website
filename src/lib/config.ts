@@ -16,9 +16,22 @@ export const contact = {
   whatsapp: env.PUBLIC_WHATSAPP || '919824900778',
   /** Human-readable number for tel: links. */
   phone: env.PUBLIC_PHONE || '+91 98249 00778',
+  /** Same number in E.164 (structured data). */
+  get phoneE164() {
+    return '+' + this.phone.replace(/[^\d]/g, '');
+  },
   email: env.PUBLIC_LEAD_EMAIL || 'coordinator@cityprop.co.in',
   /** Office address. */
   address: '703 & 704 Zion Prime, Near Copper Stone, Thaltej Shilaj Road, Ahmedabad, Gujarat 380052',
+  /** Office location details for LocalBusiness structured data. */
+  office: {
+    // Zion Prime, Thaltej-Shilaj Road (Mappls listing for the building).
+    lat: 23.051225,
+    lng: 72.492735,
+    mapUrl: 'https://www.google.com/maps/search/?api=1&query=Zion+Prime%2C+Thaltej+Shilaj+Road%2C+Ahmedabad+380052',
+    // TODO(owner): confirm — not published anywhere on the site yet.
+    openingHours: 'Mo-Sa 10:00-19:00',
+  },
 };
 
 /** Social profiles. */

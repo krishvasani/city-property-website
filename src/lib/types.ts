@@ -98,4 +98,7 @@ export interface Property {
   /** Optional override for the card meta row; otherwise derived from fields. */
   cardMeta?: CardMeta[];
   newAt?: string; // ISO date for "Newest first" sort
+  /** Editor-supplied SEO overrides (used when unique site-wide, see lib/seo.ts). */
+  seoTitle?: string;
+  seoDescription?: string;
 }

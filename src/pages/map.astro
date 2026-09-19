@@ -58,6 +58,7 @@ const imgFallback =
     <!-- FILTERS -->
     <div class="mapx-filters">
       <div class="mapx-filters-inner">
+        <h1 class="mapx-h1">Property map of Ahmedabad</h1>
         <div class="segment" id="purpose-seg" role="tablist" aria-label="Purpose">
           <button class="is-active" data-status="">All</button>
           <button data-status="sale">Buy</button>
@@ -148,6 +149,7 @@ const imgFallback =
   .mapx { display: flex; flex-direction: column; height: calc(100vh - var(--nav-h)); }
   .mapx-filters { border-bottom: 1px solid var(--hairline); background: var(--surface); flex: none; }
   .mapx-filters-inner { display: flex; align-items: center; gap: 10px; padding: 12px 24px; flex-wrap: wrap; }
+  .mapx-h1 { font-size: 17px; line-height: 1.2; letter-spacing: -.01em; font-weight: 700; color: var(--ink); margin: 0 8px 0 0; flex: none; }
   .mapx-filters .grow { flex: 1; }
   .filter-select { border: 1px solid var(--border); border-radius: var(--r-pill); padding: 9px 14px; font: inherit; font-size: 14px; font-weight: 600; color: var(--ink); background: var(--surface); cursor: pointer; }
   .mapx-split { flex: 1; display: grid; grid-template-columns: 1fr 420px; min-height: 0; }
