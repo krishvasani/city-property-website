@@ -20,7 +20,7 @@ const galleryPhotos = p.photos.map((u, i) => ({ url: u, alt: `${p.name} — deve
 const cell = (cfg: any, key: string) => {
   const v = cfg[key];
   if (v === undefined || v === null) return '—';
-  if (key === 'priceDisplay') return cfg.soldOut ? 'Sold out' : v;
+  if (key === 'priceDisplay') return cfg.soldOut ? 'Sold out' : /^(on request|not published)$/i.test(v) ? `${p.priceRange.display} (project band)` : v;
   return typeof v === 'number' ? v.toLocaleString('en-IN') : v;
 };
 ---
@@ -68,9 +68,10 @@ const cell = (cfg: any, key: string) => {
       {p.factSheetAreas && (
         <p class="small muted" style="margin-top:10px;max-width:72ch;">Fact-sheet areas, recorded separately because they do not reconcile with the brochure: {Object.entries(p.factSheetAreas).map(([k, v]) => `${k} ${v}`).join('; ')}.</p>
       )}
-      {p.unpublishedPricing && (
-        <p class="small muted" style="margin-top:10px;max-width:72ch;">Pricing for this project is on request. We hold the developer's current rate sheet and will walk you through the all-inclusive figure for the configuration you want.</p>
+      {p.priceNote && (
+        <p class="small muted" style="margin-top:10px;max-width:72ch;">{p.priceNote}</p>
       )}
+      <p class="small muted" style="margin-top:6px;max-width:72ch;">Price source: {p.priceSource}.</p>
     </section>
 
     <section class="proj-specs">

@@ -29,9 +29,6 @@
     }
   ],
   "carpetRange": "2,422 to 5,019 sq ft (not broken out by configuration)",
-  "unpublishedPricing": {
-    "note": "The CPS series master lists a reel price band of ₹3.26 Cr to ₹6.82 Cr; the project fact sheet says \"On request\" and the cost sheet PDF is image-only. Not shown publicly until the owner confirms."
-  },
   "amenities": [
     "Column-less living spaces with 11 ft slab height",
     "Direct lift entry into the foyer",
@@ -44,7 +41,7 @@
   "architect": "Apurva Amin Architects",
   "locationInTownship": "Overlooks the Narmada canal and the golf course.",
   "dataGaps": [
-    "Prices not published.",
+    "Per-configuration prices are not published by the developer; only the project band from the CPS Series Master is available.",
     "Carpet areas are given only as an overall range (2,422 to 5,019 sq ft).",
     "RERA number needs verification on the portal (fact sheet says so).",
     "Brochure PDF is image-only; no additional facts could be extracted from it."
@@ -71,5 +68,14 @@
   "sources": [
     "CPS July 2026 fact sheet (Project_Details.docx)",
     "Adani Realty configuration sheet, June 2026 accordion (Configuration.pdf)"
-  ]
+  ],
+  "priceRange": {
+    "display": "₹3.26 Cr to ₹6.82 Cr",
+    "min": 32600000,
+    "max": 68200000,
+    "source": "CPS Series Master, July 2026",
+    "asOf": "July 2026"
+  },
+  "priceSource": "CPS Series Master, July 2026",
+  "priceNote": "Project-level band from the CPS Series Master; the developer has not published per-configuration prices. The project fact sheet records pricing as on request; the band is the Series Master’s figure."
 }
