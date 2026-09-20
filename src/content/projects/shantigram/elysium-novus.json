@@ -77,5 +77,13 @@
   "sources": [
     "CPS July 2026 fact sheet (Project_Details.docx)",
     "Adani Realty configuration sheet, June 2026 accordion (Configuration.pdf)"
-  ]
+  ],
+  "priceRange": {
+    "display": "₹1.23 Cr to ₹1.61 Cr",
+    "min": 12300000,
+    "max": 16100000,
+    "source": "CPS Series Master, July 2026",
+    "asOf": "July 2026"
+  },
+  "priceSource": "CPS Series Master, July 2026"
 }

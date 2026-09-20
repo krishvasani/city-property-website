@@ -45,9 +45,12 @@ export interface Project {
   carpetRange?: string;
   factSheetAreas?: Record<string, string>;
   priceAsOf: string;
+  /** Project-level band from the CPS Series Master (July 2026) — the pricing authority. */
+  priceRange: { display: string; min: number; max?: number; source: string; asOf: string };
+  priceSource: string;
+  priceNote?: string;
   paymentTerms?: string;
   bookingAmount?: string;
-  unpublishedPricing?: { note: string };
   amenities: string[];
   proposedServices?: string[];
   locationInTownship?: string;
@@ -83,16 +86,20 @@ export const projects: Project[] = Object.entries(files)
 export const HUB_PATH = '/projects/adani-shantigram/';
 export const projectPath = (p: Project) => `${HUB_PATH}${p.slug}/`;
 
-/** Lowest stated price across configurations, in rupees. */
+/** Lowest price in rupees: the Series Master band, falling back to configuration prices. */
 export function priceFloor(p: Project): number | undefined {
+  if (p.priceRange?.min) return p.priceRange.min;
   const v = p.configurations.map((c) => c.priceMin).filter((n): n is number => !!n);
   return v.length ? Math.min(...v) : undefined;
 }
 export function priceCeiling(p: Project): number | undefined {
+  if (p.priceRange?.min) return p.priceRange.max;
   const v = p.configurations.map((c) => c.priceMax).filter((n): n is number => !!n);
   return v.length ? Math.max(...v) : undefined;
 }
 export const hasPublishedPrice = (p: Project) => priceFloor(p) !== undefined;
+/** True when the developer publishes a price for at least one configuration (vs. band only). */
+export const hasConfigPrices = (p: Project) => p.configurations.some((c) => c.priceMin);
 
 export function inrShort(n: number): string {
   if (n >= 1e7) return `₹${+(n / 1e7).toFixed(2)} Cr`;
@@ -101,6 +108,7 @@ export function inrShort(n: number): string {
 }
 /** "₹86 L to ₹1.05 Cr" | "₹9.25 Cr onwards" | "On request" */
 export function priceBand(p: Project): string {
+  if (p.priceRange?.display) return p.priceRange.display.replace(/₹(\d+)\.(\d)0 Cr/g, '₹$1.$2 Cr');
   const lo = priceFloor(p), hi = priceCeiling(p);
   if (lo === undefined) return 'On request';
   if (hi === undefined || hi === lo) return p.configurations.some((c) => /onwards/i.test(c.priceDisplay)) ? `${inrShort(lo)} onwards` : inrShort(lo);
@@ -125,7 +133,7 @@ export function sizeRange(p: Project): string | undefined {
     }
   }
   const v = vals.filter((n) => n > 100);
-  if (!v.length) return p.carpetRange;
+  if (!v.length) return p.carpetRange?.replace(/\s*\(.*\)$/, '');
   const lo = Math.min(...v), hi = Math.max(...v);
   const unit = p.projectType === 'plotted' || p.projectType === 'villa' ? 'sq ft (plot area)' : 'sq ft (RERA carpet)';
   return lo === hi ? `${Math.round(lo).toLocaleString('en-IN')} ${unit}` : `${Math.round(lo).toLocaleString('en-IN')} to ${Math.round(hi).toLocaleString('en-IN')} ${unit}`;
