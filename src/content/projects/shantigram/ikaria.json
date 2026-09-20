@@ -1,0 +1,88 @@
+{
+  "slug": "ikaria",
+  "name": "Ikaria",
+  "projectType": "apartment",
+  "partner": "Collated",
+  "positioning": "Senior-friendly 1 and 2 bedroom homes designed for residents over 55, with a service-led operating model.",
+  "rera": "RAA10359",
+  "status": "Ready to move in",
+  "possession": "Ready to move in",
+  "configurations": [
+    {
+      "label": "1 BDR (A)",
+      "carpetSqft": 675.51,
+      "balconySqft": 47.77,
+      "totalSqft": 723.28,
+      "totalSqYd": 80.36,
+      "priceDisplay": "₹86 L to ₹94 L",
+      "priceMin": 8600000,
+      "priceMax": 9400000
+    },
+    {
+      "label": "1 BDR (B)",
+      "carpetSqft": 580.39,
+      "balconySqft": 64.02,
+      "totalSqft": 644.41,
+      "totalSqYd": 71.6,
+      "priceDisplay": "₹96 L to ₹1.05 Cr",
+      "priceMin": 9600000,
+      "priceMax": 10500000
+    },
+    {
+      "label": "2 BDR",
+      "carpetSqft": 854.13,
+      "balconySqft": 47.13,
+      "totalSqft": 901.26,
+      "totalSqYd": 100.14,
+      "priceDisplay": "Sold out",
+      "soldOut": true
+    }
+  ],
+  "paymentTerms": "3 months",
+  "amenities": [
+    "Wheelchair-friendly elevators",
+    "Step-free flooring",
+    "Skid-resistant flooring",
+    "Shower seat and grab bars",
+    "Panic alarm emergency system",
+    "Medical suite",
+    "Fitness centre",
+    "Community dining area",
+    "Multi-purpose lounge",
+    "Landscaped garden (no-car zone)"
+  ],
+  "proposedServices": [
+    "Healthcare and medical services",
+    "Private housekeeping and laundry",
+    "Food and dining",
+    "Valet and concierge",
+    "Activity co-ordinator"
+  ],
+  "dataGaps": [
+    "Super built-up (salable) area not stated; only RERA carpet + balcony.",
+    "Towers, floors and total units not stated.",
+    "Adani published \"Rs. 87 lacs onwards\"; the configuration table starts at Rs. 86 lakhs."
+  ],
+  "photos": [
+    "/uploads/projects/shantigram/ikaria/photos/photo-01.jpg",
+    "/uploads/projects/shantigram/ikaria/photos/photo-02.jpg",
+    "/uploads/projects/shantigram/ikaria/photos/photo-03.jpg",
+    "/uploads/projects/shantigram/ikaria/photos/photo-04.jpg",
+    "/uploads/projects/shantigram/ikaria/photos/photo-05.jpg",
+    "/uploads/projects/shantigram/ikaria/photos/photo-06.jpg",
+    "/uploads/projects/shantigram/ikaria/photos/photo-07.jpg",
+    "/uploads/projects/shantigram/ikaria/photos/photo-08.jpg",
+    "/uploads/projects/shantigram/ikaria/photos/photo-09.jpg"
+  ],
+  "floorPlans": [
+    "/uploads/projects/shantigram/ikaria/floor-plans/plan-01.jpg"
+  ],
+  "developer": "Adani Realty",
+  "township": "Adani Shantigram",
+  "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
+  "priceAsOf": "July 2026",
+  "sources": [
+    "CPS July 2026 fact sheet (Project_Details.docx)",
+    "Adani Realty configuration sheet, June 2026 accordion (Configuration.pdf)"
+  ]
+}

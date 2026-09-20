@@ -1,0 +1,74 @@
+{
+  "slug": "greenfield",
+  "name": "Greenfield",
+  "projectType": "apartment",
+  "partner": "Shivalik and Adesh (joint development)",
+  "positioning": "3 BHK apartments plus 12 top-floor 4 BHK penthouses in a green-certified community overlooking a football ground.",
+  "rera": "RAA14879",
+  "status": "Under construction",
+  "possession": "Approximately 2.5 years (from July 2026)",
+  "towers": 3,
+  "floors": 21,
+  "totalUnits": 240,
+  "unitsNote": "228 3 BHK apartments and 12 penthouses",
+  "carParking": "2 per 3 BHK; 3 per penthouse",
+  "configurations": [
+    {
+      "label": "3 BHK",
+      "superBuiltUpSqft": 2653,
+      "carpetSqft": 1379,
+      "priceDisplay": "₹1.83 Cr to ₹2.21 Cr",
+      "priceMin": 18300000,
+      "priceMax": 22100000
+    },
+    {
+      "label": "4 BHK penthouse",
+      "superBuiltUpSqft": 4548,
+      "carpetSqft": 2365,
+      "priceDisplay": "₹3.63 Cr to ₹3.73 Cr",
+      "priceMin": 36300000,
+      "priceMax": 37300000
+    }
+  ],
+  "paymentTerms": "5% on booking, remaining in 30 days, then construction-linked plan",
+  "amenities": [
+    "70% open space",
+    "100 ft distance between towers",
+    "21-storey towers",
+    "Two-side staircase",
+    "Dedicated service lift",
+    "Ample parking",
+    "Green-certified community",
+    "Overlooks a football ground"
+  ],
+  "dataGaps": [
+    "Adani publishes \"Rs. 1.73 Cr onwards\" for the 3 BHK; the fact sheet says Rs. 1.83 Cr. Confirm before publishing.",
+    "Booking amount recorded as 45% in the fact sheet — flagged there as a probable error.",
+    "Which entity is the RERA promoter (Adani or Shivalik) is not stated.",
+    "Penthouse terrace area is not separated from the 2,365 sq ft carpet figure."
+  ],
+  "photos": [
+    "/uploads/projects/shantigram/greenfield/photos/photo-01.jpg",
+    "/uploads/projects/shantigram/greenfield/photos/photo-02.jpg",
+    "/uploads/projects/shantigram/greenfield/photos/photo-03.jpg",
+    "/uploads/projects/shantigram/greenfield/photos/photo-04.jpg",
+    "/uploads/projects/shantigram/greenfield/photos/photo-05.jpg",
+    "/uploads/projects/shantigram/greenfield/photos/photo-06.jpg",
+    "/uploads/projects/shantigram/greenfield/photos/photo-07.jpg",
+    "/uploads/projects/shantigram/greenfield/photos/photo-08.jpg",
+    "/uploads/projects/shantigram/greenfield/photos/photo-09.jpg"
+  ],
+  "floorPlans": [
+    "/uploads/projects/shantigram/greenfield/floor-plans/plan-01.jpg",
+    "/uploads/projects/shantigram/greenfield/floor-plans/plan-02.jpg",
+    "/uploads/projects/shantigram/greenfield/floor-plans/plan-03.jpg"
+  ],
+  "developer": "Adani Realty",
+  "township": "Adani Shantigram",
+  "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
+  "priceAsOf": "July 2026",
+  "sources": [
+    "CPS July 2026 fact sheet (Project_Details.docx)",
+    "Adani Realty configuration sheet, June 2026 accordion (Configuration.pdf)"
+  ]
+}

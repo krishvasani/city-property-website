@@ -1,0 +1,75 @@
+{
+  "slug": "the-storeys-infinity",
+  "name": "The Storeys Infinity",
+  "projectType": "apartment",
+  "positioning": "The newest launch in the township: 4 BHK apartments, 4 BHK courtyard homes and 5 BHK penthouses on a 2.42-acre parcel.",
+  "rera": "RAA16989/170626/311231",
+  "reraNote": "As recorded in the fact sheet; verify on the GujRERA portal",
+  "status": "New launch, under construction",
+  "possession": "December 2031 per the RERA declaration",
+  "landArea": "Approximately 2.42 acres",
+  "towers": 2,
+  "floors": 21,
+  "totalUnits": 154,
+  "configurations": [
+    {
+      "label": "4 BHK apartment",
+      "superBuiltUpSqft": "4,656 / 4,868",
+      "priceDisplay": "On request"
+    },
+    {
+      "label": "4 BHK courtyard home",
+      "superBuiltUpSqft": "6,984 / 7,090",
+      "priceDisplay": "On request"
+    },
+    {
+      "label": "5 BHK penthouse (private terrace)",
+      "superBuiltUpSqft": 9105,
+      "priceDisplay": "On request"
+    }
+  ],
+  "carpetRange": "2,422 to 5,019 sq ft (not broken out by configuration)",
+  "unpublishedPricing": {
+    "note": "The CPS series master lists a reel price band of ₹3.26 Cr to ₹6.82 Cr; the project fact sheet says \"On request\" and the cost sheet PDF is image-only. Not shown publicly until the owner confirms."
+  },
+  "amenities": [
+    "Column-less living spaces with 11 ft slab height",
+    "Direct lift entry into the foyer",
+    "Attached staff quarters for every home",
+    "25,000 sq ft landscaped green podium",
+    "20,000 sq ft of lifestyle amenities",
+    "15,500 sq ft developed terrace",
+    "Unobstructed view of the Narmada canal and golf course"
+  ],
+  "architect": "Apurva Amin Architects",
+  "locationInTownship": "Overlooks the Narmada canal and the golf course.",
+  "dataGaps": [
+    "Prices not published.",
+    "Carpet areas are given only as an overall range (2,422 to 5,019 sq ft).",
+    "RERA number needs verification on the portal (fact sheet says so).",
+    "Brochure PDF is image-only; no additional facts could be extracted from it."
+  ],
+  "photos": [
+    "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-01.jpg",
+    "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-02.jpg",
+    "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-03.jpg",
+    "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-04.jpg",
+    "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-05.jpg",
+    "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-06.jpg",
+    "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-07.jpg",
+    "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-08.jpg",
+    "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-09.jpg",
+    "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-10.jpg",
+    "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-11.jpg",
+    "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-12.jpg"
+  ],
+  "floorPlans": [],
+  "developer": "Adani Realty",
+  "township": "Adani Shantigram",
+  "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
+  "priceAsOf": "July 2026",
+  "sources": [
+    "CPS July 2026 fact sheet (Project_Details.docx)",
+    "Adani Realty configuration sheet, June 2026 accordion (Configuration.pdf)"
+  ]
+}

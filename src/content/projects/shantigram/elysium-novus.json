@@ -1,0 +1,81 @@
+{
+  "slug": "elysium-novus",
+  "name": "Elysium Novus",
+  "projectType": "apartment",
+  "positioning": "3 and 2 BHK homes; the lowest-priced under-construction entry in the township.",
+  "rera": "RAA14729",
+  "status": "Under construction",
+  "possession": "Approximately 2.5 years (from July 2026)",
+  "towers": 6,
+  "floors": 14,
+  "totalUnits": 336,
+  "carParking": "1 per home",
+  "configurations": [
+    {
+      "label": "3 BHK",
+      "superBuiltUpSqft": "1,796 to 2,070",
+      "carpetSqft": "973.93 to 1,103.63",
+      "priceDisplay": "₹1.23 Cr to ₹1.61 Cr",
+      "priceMin": 12300000,
+      "priceMax": 16100000
+    },
+    {
+      "label": "2 BHK",
+      "carpetSqft": 717.42,
+      "priceDisplay": "Not published"
+    }
+  ],
+  "paymentTerms": "9% + 11% = 20% in 30 + 30 days, then construction-linked plan",
+  "bookingAmount": "₹5.25 L",
+  "amenities": [
+    "Club house",
+    "Swimming pool",
+    "Badminton court",
+    "Half basketball court",
+    "Box cricket",
+    "Skating rink",
+    "Amphitheatre",
+    "Outdoor fitness",
+    "Seating plaza",
+    "Pet park",
+    "Central court lawn",
+    "Seating area with pergola",
+    "Kids’ play area",
+    "Reflexology park",
+    "Senior citizen sit-out",
+    "Meditation area",
+    "Drop-off zone",
+    "Entrance court"
+  ],
+  "dataGaps": [
+    "2 BHK salable area and price not published."
+  ],
+  "photos": [
+    "/uploads/projects/shantigram/elysium-novus/photos/photo-01.jpg",
+    "/uploads/projects/shantigram/elysium-novus/photos/photo-02.jpg",
+    "/uploads/projects/shantigram/elysium-novus/photos/photo-03.jpg",
+    "/uploads/projects/shantigram/elysium-novus/photos/photo-04.jpg",
+    "/uploads/projects/shantigram/elysium-novus/photos/photo-05.jpg",
+    "/uploads/projects/shantigram/elysium-novus/photos/photo-06.jpg",
+    "/uploads/projects/shantigram/elysium-novus/photos/photo-07.jpg",
+    "/uploads/projects/shantigram/elysium-novus/photos/photo-08.jpg"
+  ],
+  "floorPlans": [
+    "/uploads/projects/shantigram/elysium-novus/floor-plans/plan-01.jpg",
+    "/uploads/projects/shantigram/elysium-novus/floor-plans/plan-02.jpg",
+    "/uploads/projects/shantigram/elysium-novus/floor-plans/plan-03.jpg",
+    "/uploads/projects/shantigram/elysium-novus/floor-plans/plan-04.jpg",
+    "/uploads/projects/shantigram/elysium-novus/floor-plans/plan-05.jpg",
+    "/uploads/projects/shantigram/elysium-novus/floor-plans/plan-06.jpg",
+    "/uploads/projects/shantigram/elysium-novus/floor-plans/plan-07.jpg",
+    "/uploads/projects/shantigram/elysium-novus/floor-plans/plan-08.jpg"
+  ],
+  "developer": "Adani Realty",
+  "township": "Adani Shantigram",
+  "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
+  "priceAsOf": "July 2026",
+  "sources": [
+    "CPS July 2026 fact sheet (Project_Details.docx)",
+    "Adani Realty configuration sheet, June 2026 accordion (Configuration.pdf)"
+  ]
+}

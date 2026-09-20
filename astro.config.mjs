@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { buildSitemapMeta, isShallowCheckout } from './src/lib/sitemap-meta';
+import { SHANTIGRAM_LIVE } from './src/lib/flags';
 
 // Public site URL — override with SITE_URL in the deploy environment.
 const site = process.env.SITE_URL || 'https://cityprop.co.in';
@@ -31,7 +32,8 @@ export default defineConfig({
   // here — Astro's static `redirects` only emit meta-refresh stub pages.
   integrations: [
     sitemap({
-      filter: (page) => !NOINDEX.some((p) => page.endsWith(p)),
+      // Draft page groups stay out until their flag is flipped (see src/lib/flags.ts).
+      filter: (page) => !NOINDEX.some((p) => page.endsWith(p)) && (SHANTIGRAM_LIVE || !page.includes('/projects/adani-shantigram/')),
       // lastmod + <image:image> per URL (see src/lib/sitemap-meta.ts). The
       // `img` field passes through to the `sitemap` package's SitemapStream.
       // scripts/postbuild.mjs prints a summary of the generated sitemap.

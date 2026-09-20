@@ -1,0 +1,180 @@
+---
+// /projects/adani-shantigram/ — township hub. Draft until SHANTIGRAM_LIVE is
+// true (noindex + out of the sitemap + unlinked). Content: src/lib/shantigram-content.ts.
+import Base from '../../../layouts/Base.astro';
+import ProjectEnquiry from '../../../components/ProjectEnquiry.astro';
+import { SHANTIGRAM_LIVE } from '../../../lib/flags';
+import { hubContent, priceDisclaimer } from '../../../lib/shantigram-content';
+import { projects, projectPath, township, typeLabel, priceBand, isReady } from '../../../lib/projects';
+import { site } from '../../../lib/config';
+
+const c = hubContent();
+const hero = township.photos[0];
+const groups = [
+  { title: 'Apartment projects', items: projects.filter((p) => p.projectType === 'apartment') },
+  { title: 'Villas', items: projects.filter((p) => p.projectType === 'villa') },
+  { title: 'Plots', items: projects.filter((p) => p.projectType === 'plotted') },
+].filter((g) => g.items.length);
+---
+<Base
+  title={c.title}
+  description={c.description}
+  brandSuffix={false}
+  noindex={!SHANTIGRAM_LIVE}
+  breadcrumbs={c.breadcrumbs}
+  jsonLd={c.graph}
+  ogImage={hero}
+  ogImageAlt={`${c.h1} — township overview`}
+  active="buy"
+>
+  <main class="wrap-wide shg">
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="/">Home</a><span class="sep">›</span>
+      <a href="/localities/shantigram/">Shantigram</a><span class="sep">›</span>
+      <span style="color:var(--ink);">Adani Shantigram</span>
+    </nav>
+
+    {!SHANTIGRAM_LIVE && <p class="draft-banner">Draft — not indexed. Prices, RERA numbers and possession dates await verification.</p>}
+
+    <section class="page-hero">
+      <div class="eyebrow">Township guide · Vaishnodevi Circle, SG Highway, Ahmedabad</div>
+      <h1 class="display" style="max-width:16ch;margin-top:12px;">{c.h1}</h1>
+      {c.intro.map((p) => <p class="body-lg muted" style="max-width:72ch;margin-top:16px;">{p}</p>)}
+      <p class="small muted" style="margin-top:14px;max-width:72ch;">{priceDisclaimer('July 2026')}</p>
+    </section>
+
+    {hero && (
+      <section class="shg-hero-img">
+        <img src={hero} alt="Adani Shantigram township — developer render" loading="eager" />
+      </section>
+    )}
+
+    <section class="shg-table">
+      <h2>All {projects.length} projects at a glance</h2>
+      <p class="muted" style="margin:6px 0 16px;max-width:72ch;">Sorted by entry price. Size is the RERA carpet range for apartments and the plot range for villas and plots. Prices are all-inclusive developer quotes as of July 2026; “On request” means the developer has not published a figure.</p>
+      <div class="table-wrap">
+        <table class="cmp-table">
+          <thead>
+            <tr><th scope="col">Project</th><th scope="col">Type</th><th scope="col">Configurations</th><th scope="col">Size range</th><th scope="col">Price (Jul 2026)</th><th scope="col">Possession</th><th scope="col">Status</th></tr>
+          </thead>
+          <tbody>
+            {c.rows.map((r) => (
+              <tr>
+                <th scope="row"><a href={projectPath(r.p)}>{r.p.name}</a>{r.p.partner && <span class="muted small"> · with {r.p.partner.replace(/ \(.*\)/, '')}</span>}</th>
+                <td>{r.type}</td>
+                <td>{r.configs}</td>
+                <td>{r.size}</td>
+                <td>{r.price}</td>
+                <td>{r.possession}</td>
+                <td><span class:list={['status', { ready: isReady(r.p) }]}>{r.status}</span></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="shg-projects">
+      <h2>The projects</h2>
+      {groups.map((g) => (
+        <div class="shg-group">
+          <h3>{g.title}</h3>
+          <ul class="proj-grid">
+            {g.items.map((p) => (
+              <li>
+                <a class="proj-card" href={projectPath(p)}>
+                  {p.photos[0] ? <img src={p.photos[0]} alt={`${p.name} — developer render`} loading="lazy" /> : <div class="ph" data-label="Render pending"></div>}
+                  <span class="proj-card-body">
+                    <span class="proj-card-name">{p.name}</span>
+                    <span class="proj-card-meta">{typeLabel(p)} · {priceBand(p)}</span>
+                    <span class="proj-card-meta muted">{p.status}</span>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+
+    <section class="shg-amenities">
+      <h2>What is inside the township</h2>
+      <p class="muted" style="margin:6px 0 18px;max-width:72ch;">As listed in the developer's township overview and project brochures. Facilities are shared by all residents; project-level amenities are on each project page.</p>
+      <div class="amen-grid">
+        {c.amenityGroups.map((g) => (
+          <div class="amen-card">
+            <h3>{g.title}</h3>
+            <ul>{g.items.map((i) => <li>{i}</li>)}</ul>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="shg-distances">
+      <h2>Connectivity and distances</h2>
+      <p class="muted" style="margin:6px 0 14px;max-width:72ch;">Developer-stated road distances measured from the township's Zero Circle ({township.distancesSource.replace('The Storeys Golf Coast brochure location map (', '').replace(')', '')}). The township is on the SG Highway at Vaishnodevi Circle, between Ahmedabad and Gandhinagar, with an internal e-bus service and cycle hire.</p>
+      <ul class="dist-list">
+        {c.distances.map((d) => <li><span>{d.to}</span><b>{d.km} km</b></li>)}
+      </ul>
+    </section>
+
+    <section class="shg-faq">
+      <h2>Questions buyers ask about Adani Shantigram</h2>
+      <dl class="faq-list">
+        {c.faq.map((f) => <div class="faq-item"><dt>{f.q}</dt><dd>{f.a}</dd></div>)}
+      </dl>
+    </section>
+
+    <section class="shg-cross">
+      <p class="muted">Looking for current resale and rental listings in the area rather than new bookings? See <a href="/localities/shantigram/">property in Shantigram</a> — City Property Services' live listings and market summary for the locality.</p>
+    </section>
+
+    <ProjectEnquiry subject="Adani Shantigram" url={`${site.url}/projects/adani-shantigram/`} />
+  </main>
+</Base>
+
+<style is:global>
+  .shg .crumb { display: flex; align-items: center; gap: 8px; padding: 22px 0 6px; font-size: 13.5px; color: var(--text-muted); flex-wrap: wrap; }
+  .shg .crumb .sep { color: var(--text-faint); }
+  .draft-banner { margin: 12px 0 0; padding: 10px 14px; border-radius: var(--r); background: #fff4d6; border: 1px solid #f0d48a; color: #6b4d00; font-size: 13.5px; font-weight: 600; }
+  .shg-hero-img { margin-top: 28px; border-radius: var(--r-xl); overflow: hidden; max-height: 460px; }
+  .shg-hero-img img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 80%; display: block; }
+  .shg h2 { font-size: clamp(22px, 2.4vw, 28px); }
+  .shg-table { margin-top: 56px; }
+  .table-wrap { overflow-x: auto; }
+  .cmp-table { border-collapse: collapse; width: 100%; background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--shadow-sm); font-size: 14px; }
+  .cmp-table th, .cmp-table td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--hairline); vertical-align: top; }
+  .cmp-table thead th { background: var(--surface-2); color: var(--text-muted); font-size: 12.5px; text-transform: uppercase; letter-spacing: .04em; font-weight: 600; white-space: nowrap; }
+  .cmp-table tbody th { font-weight: 700; color: var(--ink); white-space: nowrap; }
+  .cmp-table tbody th a { color: var(--navy); }
+  .cmp-table tbody tr:last-child th, .cmp-table tbody tr:last-child td { border-bottom: 0; }
+  .status { display: inline-block; padding: 3px 9px; border-radius: 999px; background: var(--surface-2); font-size: 12.5px; font-weight: 600; color: var(--text); }
+  .status.ready { background: var(--good-tint); color: var(--good); }
+  .shg-projects { margin-top: 56px; }
+  .shg-group { margin-top: 24px; }
+  .shg-group h3 { font-size: 18px; margin-bottom: 12px; }
+  .proj-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .proj-card { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--shadow-xs); transition: transform var(--t) var(--ease), box-shadow var(--t) var(--ease); }
+  .proj-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+  .proj-card img, .proj-card .ph { aspect-ratio: 16 / 10; width: 100%; object-fit: cover; display: block; }
+  .proj-card-body { display: flex; flex-direction: column; gap: 3px; padding: 12px 14px 14px; }
+  .proj-card-name { font-weight: 700; color: var(--ink); font-size: 16px; }
+  .proj-card-meta { font-size: 13.5px; color: var(--text); }
+  .shg-amenities { margin-top: 56px; }
+  .amen-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .amen-card { background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); padding: 18px 20px; box-shadow: var(--shadow-xs); }
+  .amen-card h3 { font-size: 15.5px; margin-bottom: 8px; }
+  .amen-card ul { margin: 0; padding-left: 18px; color: var(--text); font-size: 14px; line-height: 1.6; }
+  .shg-distances { margin-top: 56px; }
+  .dist-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; max-width: 900px; }
+  .dist-list li { display: flex; justify-content: space-between; gap: 10px; padding: 10px 14px; background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r); font-size: 14px; }
+  .shg-faq { margin-top: 56px; max-width: 860px; }
+  .shg-faq h2 { margin-bottom: 16px; }
+  .faq-list { margin: 0; }
+  .faq-item { padding: 16px 0; border-top: 1px solid var(--hairline); }
+  .faq-item dt { font-weight: 650; color: var(--ink); font-size: 16px; }
+  .faq-item dd { margin: 8px 0 0; color: var(--text); line-height: 1.6; }
+  .shg-cross { margin-top: 40px; padding: 16px 20px; background: var(--surface-2); border-radius: var(--r-lg); }
+  @media (max-width: 1000px) { .proj-grid { grid-template-columns: repeat(2, 1fr); } .amen-grid { grid-template-columns: 1fr 1fr; } .dist-list { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .proj-grid, .amen-grid, .dist-list { grid-template-columns: 1fr; } }
+</style>

@@ -1,0 +1,67 @@
+{
+  "slug": "skyline",
+  "name": "Skyline",
+  "projectType": "apartment",
+  "partner": "Shilp",
+  "positioning": "4 BHK homes with golf-course views; at 23 floors, the tallest in the mid band.",
+  "rera": "RAA14084",
+  "status": "Under construction",
+  "possession": "Approximately 2 years (from July 2026)",
+  "towers": 3,
+  "floors": 23,
+  "totalUnits": 256,
+  "carParking": "2 per home",
+  "configurations": [
+    {
+      "label": "4 BHK, Block B",
+      "superBuiltUpSqft": 3071,
+      "carpetSqft": 1596,
+      "priceDisplay": "₹2.28 Cr to ₹2.43 Cr",
+      "priceMin": 22800000,
+      "priceMax": 24300000
+    },
+    {
+      "label": "4 BHK, Blocks A and C",
+      "carpetSqft": 1689,
+      "priceDisplay": "Not published"
+    }
+  ],
+  "paymentTerms": "50% within 30 days, 50% by 31 March 2027",
+  "bookingAmount": "5% of consideration",
+  "amenities": [
+    "Club house with swimming pool and meditation deck",
+    "Banquet hall",
+    "Indoor gaming zone",
+    "Kids’ play area",
+    "Jogging track",
+    "Event lawn",
+    "Deck sit-outs",
+    "Multi-purpose turf (badminton, volleyball, basketball)"
+  ],
+  "locationInTownship": "Golf-course facing; the brochure key plan places it beside the Belvedere Golf & Country Club and the Narmada canal.",
+  "dataGaps": [
+    "Blocks A and C salable area and price not published."
+  ],
+  "photos": [
+    "/uploads/projects/shantigram/skyline/photos/photo-01.jpg",
+    "/uploads/projects/shantigram/skyline/photos/photo-02.jpg",
+    "/uploads/projects/shantigram/skyline/photos/photo-03.jpg",
+    "/uploads/projects/shantigram/skyline/photos/photo-04.jpg",
+    "/uploads/projects/shantigram/skyline/photos/photo-05.jpg",
+    "/uploads/projects/shantigram/skyline/photos/photo-06.jpg",
+    "/uploads/projects/shantigram/skyline/photos/photo-07.jpg",
+    "/uploads/projects/shantigram/skyline/photos/photo-08.jpg",
+    "/uploads/projects/shantigram/skyline/photos/photo-09.jpg"
+  ],
+  "floorPlans": [
+    "/uploads/projects/shantigram/skyline/floor-plans/plan-01.jpg"
+  ],
+  "developer": "Adani Realty",
+  "township": "Adani Shantigram",
+  "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
+  "priceAsOf": "July 2026",
+  "sources": [
+    "CPS July 2026 fact sheet (Project_Details.docx)",
+    "Adani Realty configuration sheet, June 2026 accordion (Configuration.pdf)"
+  ]
+}

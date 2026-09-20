@@ -24,3 +24,8 @@ sanity/dist/
 seed.ndjson
 localities.ndjson
 .cache/
+
+# Source documents for the Adani Shantigram project pages (Word/PDF brochures,
+# cost sheets, reels). Read locally by the extraction scripts only — never
+# shipped. The extracted facts live in src/content/projects/shantigram/.
+**/Adani_Shantigram_Reel_Series/

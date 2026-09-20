@@ -1,0 +1,66 @@
+{
+  "slug": "paarijat",
+  "name": "Paarijat",
+  "projectType": "apartment",
+  "partner": "B Safal",
+  "positioning": "Ready-to-move 3 and 4 BHK apartments with a few units left.",
+  "rera": "RAA10759",
+  "status": "Ready to move in, few units left",
+  "possession": "Ready to move in",
+  "towers": 2,
+  "floors": 14,
+  "totalUnits": 112,
+  "carParking": "2 per home",
+  "configurations": [
+    {
+      "label": "4 BHK",
+      "superBuiltUpSqft": 3230,
+      "carpetSqft": 1713.72,
+      "priceDisplay": "₹2.42 Cr",
+      "priceMin": 24200000,
+      "priceMax": 24200000
+    },
+    {
+      "label": "3 BHK",
+      "carpetSqft": 1509.1,
+      "priceDisplay": "Not published"
+    }
+  ],
+  "paymentTerms": "Full payment within 45 days",
+  "bookingAmount": "₹5 L",
+  "amenities": [
+    "Double-height entrance foyer",
+    "Landscaped garden",
+    "Event garden",
+    "Kids’ play area",
+    "Indoor games",
+    "Outdoor yoga and gym",
+    "Senior citizen sit-out"
+  ],
+  "dataGaps": [
+    "3 BHK salable area and price not published.",
+    "Brochure PDF is image-only; no additional facts could be extracted from it."
+  ],
+  "photos": [
+    "/uploads/projects/shantigram/paarijat/photos/photo-01.jpg",
+    "/uploads/projects/shantigram/paarijat/photos/photo-02.jpg",
+    "/uploads/projects/shantigram/paarijat/photos/photo-03.jpg",
+    "/uploads/projects/shantigram/paarijat/photos/photo-04.jpg",
+    "/uploads/projects/shantigram/paarijat/photos/photo-05.jpg",
+    "/uploads/projects/shantigram/paarijat/photos/photo-06.jpg",
+    "/uploads/projects/shantigram/paarijat/photos/photo-07.jpg",
+    "/uploads/projects/shantigram/paarijat/photos/photo-08.jpg",
+    "/uploads/projects/shantigram/paarijat/photos/photo-09.jpg",
+    "/uploads/projects/shantigram/paarijat/photos/photo-10.jpg",
+    "/uploads/projects/shantigram/paarijat/photos/photo-11.jpg"
+  ],
+  "floorPlans": [],
+  "developer": "Adani Realty",
+  "township": "Adani Shantigram",
+  "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
+  "priceAsOf": "July 2026",
+  "sources": [
+    "CPS July 2026 fact sheet (Project_Details.docx)",
+    "Adani Realty configuration sheet, June 2026 accordion (Configuration.pdf)"
+  ]
+}
