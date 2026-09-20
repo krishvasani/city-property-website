@@ -1,0 +1,83 @@
+{
+  "slug": "ambrosia",
+  "name": "Ambrosia",
+  "projectType": "apartment",
+  "positioning": "4 BHK apartments in Classic and Deluxe sizes, due for possession in September 2026.",
+  "rera": "RAA10833",
+  "status": "Under construction",
+  "possession": "September 2026",
+  "towers": 3,
+  "floors": 13,
+  "totalUnits": 156,
+  "unitsNote": "Classic: 1 tower, 52 units; Deluxe: 2 towers, 104 units",
+  "carParking": "2 per Classic; 3 per Deluxe",
+  "configurations": [
+    {
+      "label": "4 BHK Classic",
+      "superBuiltUpSqft": 3211,
+      "carpetSqft": "1,784.87 to 1,787.89",
+      "priceDisplay": "₹2.45 Cr to ₹2.60 Cr",
+      "priceMin": 24500000,
+      "priceMax": 26000000
+    },
+    {
+      "label": "4 BHK Deluxe",
+      "superBuiltUpSqft": 3707,
+      "carpetSqft": "2,062.80 to 2,065.81",
+      "priceDisplay": "₹2.86 Cr to ₹2.94 Cr",
+      "priceMin": 28600000,
+      "priceMax": 29400000
+    }
+  ],
+  "paymentTerms": "10% + 80% = 90% in 30 + 30 days, remaining on construction-linked plan; few units left in both sizes",
+  "bookingAmount": "₹5.25 L",
+  "amenities": [
+    "Club house",
+    "Swimming pool",
+    "Kids’ pool with feature wall",
+    "Surprise fountain",
+    "Water cascade",
+    "Amphitheatre",
+    "Open fitness area",
+    "Reflexology park",
+    "Multipurpose court",
+    "Skating rink",
+    "Box cricket",
+    "Butterfly garden",
+    "Aromatic garden",
+    "Bamboo garden",
+    "Gazebo",
+    "Seating plaza",
+    "Pet park",
+    "Tot lot",
+    "Kids’ play area",
+    "Indoor play area",
+    "Reading lounge",
+    "Senior citizen sit-out",
+    "Drop-off with feature wall"
+  ],
+  "dataGaps": [
+    "Two balconies are available only in Deluxe units (brochure); balcony areas are not stated."
+  ],
+  "photos": [
+    "/uploads/projects/shantigram/ambrosia/photos/photo-01.jpg",
+    "/uploads/projects/shantigram/ambrosia/photos/photo-02.jpg",
+    "/uploads/projects/shantigram/ambrosia/photos/photo-03.jpg",
+    "/uploads/projects/shantigram/ambrosia/photos/photo-04.jpg",
+    "/uploads/projects/shantigram/ambrosia/photos/photo-05.jpg",
+    "/uploads/projects/shantigram/ambrosia/photos/photo-06.jpg",
+    "/uploads/projects/shantigram/ambrosia/photos/photo-07.jpg",
+    "/uploads/projects/shantigram/ambrosia/photos/photo-08.jpg",
+    "/uploads/projects/shantigram/ambrosia/photos/photo-09.jpg",
+    "/uploads/projects/shantigram/ambrosia/photos/photo-10.jpg"
+  ],
+  "floorPlans": [],
+  "developer": "Adani Realty",
+  "township": "Adani Shantigram",
+  "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
+  "priceAsOf": "July 2026",
+  "sources": [
+    "CPS July 2026 fact sheet (Project_Details.docx)",
+    "Adani Realty configuration sheet, June 2026 accordion (Configuration.pdf)"
+  ]
+}

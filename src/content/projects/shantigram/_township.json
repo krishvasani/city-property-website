@@ -1,0 +1,150 @@
+{
+  "slug": "adani-shantigram",
+  "name": "Adani Shantigram",
+  "developer": "Adani Realty",
+  "city": "Ahmedabad",
+  "location": "Vaishnodevi Circle, SG Highway, between Ahmedabad and Gandhinagar",
+  "landArea": "580+ acres",
+  "landAreaNote": "Adani’s township overview says \"nearly 580+ acres\"; the Ambrosia, West Park and Belrosa brochures say \"approximately 600 acres\".",
+  "certification": "IGBC Certified Gold-rated township",
+  "families": "4,000+ families (Ambrosia and West Park brochures); 4,800 families (Belrosa brochure)",
+  "developerCredentials": {
+    "years": "15+",
+    "developedMnSqft": "33+",
+    "underDevelopmentMnSqft": "144+",
+    "families": "10,000+",
+    "awards": "50+",
+    "cities": [
+      "Ahmedabad",
+      "Gurugram",
+      "Mumbai",
+      "Pune"
+    ]
+  },
+  "zones": [
+    "Residential zone",
+    "Commercial and business zone",
+    "Urbanscape zone"
+  ],
+  "golf": {
+    "club": "The Belvedere Golf & Country Club",
+    "clubArea": "100 acres",
+    "holes": 9,
+    "promenade": "15 m wide, 1.5 km long golf promenade with seating"
+  },
+  "lake": "Waterlily Lake, a 7-acre lake with a musical aqua show and lake promenade",
+  "education": [
+    "Preschool",
+    "Adani International School",
+    "Adani University"
+  ],
+  "healthcare": [
+    "Medico House (healthcare hub)",
+    "Ambulance service",
+    "Pharmacies"
+  ],
+  "retail": [
+    "Shoppers’ Plaza",
+    "Center Point (about 90,000 sq ft of shopping, dining and entertainment)",
+    "Restaurants and cafes",
+    "Major bank branches",
+    "Sub post office with its own PIN code"
+  ],
+  "commercial": [
+    "Inspire Business Park",
+    "Inspire Corporate Capital",
+    "Inspire Edge",
+    "Adani Corporate House",
+    "Adani Realty Experience Centre"
+  ],
+  "sport": [
+    "International-standard cricket and football grounds (Adani Sportsline)",
+    "Pickleball courts",
+    "Box cricket",
+    "Jogging and walking tracks"
+  ],
+  "worship": [
+    "Shiv Temple",
+    "Jain Derasar",
+    "Swaminarayan Temple"
+  ],
+  "nature": [
+    "50,000+ trees",
+    "Over 50 bird species",
+    "Narmada Canal Park",
+    "Multiple parks and gardens"
+  ],
+  "infrastructure": [
+    "Narmada water supply",
+    "Dedicated 66 KV power substation",
+    "Underground power, PNG and water lines",
+    "Pre-installed FTTH network",
+    "Sewage and water treatment plants",
+    "Solid waste management",
+    "Rainwater harvesting",
+    "Solar-powered street lights",
+    "E-vehicle charging stations",
+    "4-lane internal roads with signage and traffic control"
+  ],
+  "transport": [
+    "E-bus service for city commute",
+    "MYBYK cycles",
+    "Cycling tracks and pedestrian-friendly zones"
+  ],
+  "safety": [
+    "24x7 AI-driven surveillance",
+    "24x7 quick response team",
+    "Dedicated on-site police beat",
+    "25 km/h speed limit"
+  ],
+  "distancesFromZeroCircle": [
+    {
+      "to": "Vaishnodevi Circle",
+      "km": 1.5
+    },
+    {
+      "to": "Gandhinagar (GH-0)",
+      "km": 13.4
+    },
+    {
+      "to": "Zydus Hospital",
+      "km": 10.7
+    },
+    {
+      "to": "Iscon Circle",
+      "km": 15
+    },
+    {
+      "to": "Bopal Junction",
+      "km": 16.4
+    },
+    {
+      "to": "Airport",
+      "km": 17
+    },
+    {
+      "to": "GIFT City",
+      "km": 21.3
+    }
+  ],
+  "distancesSource": "The Storeys Golf Coast brochure location map (measured from Zero Circle, Adani Shantigram)",
+  "completedClusters": "11 completed residential clusters available for resale (CPS buyer guide)",
+  "photos": [
+    "/uploads/projects/shantigram/township/photos/photo-01.jpg",
+    "/uploads/projects/shantigram/township/photos/photo-02.jpg",
+    "/uploads/projects/shantigram/township/photos/photo-03.jpg",
+    "/uploads/projects/shantigram/township/photos/photo-04.jpg",
+    "/uploads/projects/shantigram/township/photos/photo-05.jpg",
+    "/uploads/projects/shantigram/township/photos/photo-06.jpg",
+    "/uploads/projects/shantigram/township/photos/photo-07.jpg",
+    "/uploads/projects/shantigram/township/photos/photo-08.jpg",
+    "/uploads/projects/shantigram/township/photos/photo-09.jpg"
+  ],
+  "floorPlans": [],
+  "sources": [
+    "Adani Realty township overview (Township_Overview.pdf)",
+    "Adani Realty credentials sheet",
+    "CPS Shantigram buyer guide fact sheet, July 2026",
+    "Belrosa, Ambrosia, Skyline, West Park and Golf Coast brochures"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "slug": "the-west-park",
+  "name": "The West Park",
+  "projectType": "plotted",
+  "positioning": "61 residential plots on 9+ acres where buyers design and build their own villa, with a no-two-homes-alike covenant.",
+  "rera": "RAA11300",
+  "status": "Ready to move in (within 60 days)",
+  "possession": "Ready to move in",
+  "totalUnits": 61,
+  "landArea": "9+ acres",
+  "configurations": [
+    {
+      "label": "Residential plot (Type A)",
+      "plotSqft": "3,933 to 6,210 (approx.)",
+      "plotSqYd": "437 to 690 (approx.)",
+      "plotSqm": "358 to 626",
+      "unitReraSqft": 405,
+      "unitReraSqYd": 45,
+      "priceDisplay": "₹9.25 Cr onwards",
+      "priceMin": 92500000,
+      "priceNote": "As of July 2026; the earlier July sheet said ₹8.90 Cr onwards"
+    }
+  ],
+  "factSheetAreas": {
+    "salable": "700 sq yd plus",
+    "usable": "476 sq yd plus"
+  },
+  "paymentTerms": "Ready to move in, within 60 days",
+  "bookingAmount": "₹32 L",
+  "architect": "Apurva Amin",
+  "amenities": [
+    "Ultra low-density, low-rise villas",
+    "No-two-homes-alike covenant",
+    "Design and construction concierge on demand",
+    "Large plot consolidation option",
+    "Club house with multipurpose hall",
+    "Party lawn spread over 27,000 sq ft",
+    "Walking track",
+    "Senior citizens’ sit-outs",
+    "Yoga and meditation area",
+    "Box cricket",
+    "Multipurpose court",
+    "Sitting plaza",
+    "Society office",
+    "Secure children’s play zone",
+    "18 m wide entry road (master plan)"
+  ],
+  "locationInTownship": "Shown on the Golf Coast key plan beside The North Park and the Narmada canal.",
+  "dataGaps": [
+    "Brochure plot range (437–690 sq yd; \"starting from 428 sq yd\" elsewhere in the same brochure) and fact-sheet salable/usable areas (700+/476+ sq yd) do not reconcile; all are recorded.",
+    "Only \"onwards\" pricing is stated; no upper figure."
+  ],
+  "photos": [
+    "/uploads/projects/shantigram/the-west-park/photos/photo-01.jpg",
+    "/uploads/projects/shantigram/the-west-park/photos/photo-02.jpg",
+    "/uploads/projects/shantigram/the-west-park/photos/photo-03.jpg",
+    "/uploads/projects/shantigram/the-west-park/photos/photo-04.jpg",
+    "/uploads/projects/shantigram/the-west-park/photos/photo-05.jpg",
+    "/uploads/projects/shantigram/the-west-park/photos/photo-06.jpg",
+    "/uploads/projects/shantigram/the-west-park/photos/photo-07.jpg",
+    "/uploads/projects/shantigram/the-west-park/photos/photo-08.jpg",
+    "/uploads/projects/shantigram/the-west-park/photos/photo-09.jpg",
+    "/uploads/projects/shantigram/the-west-park/photos/photo-10.jpg"
+  ],
+  "floorPlans": [
+    "/uploads/projects/shantigram/the-west-park/floor-plans/plan-01.jpg",
+    "/uploads/projects/shantigram/the-west-park/floor-plans/plan-02.jpg"
+  ],
+  "developer": "Adani Realty",
+  "township": "Adani Shantigram",
+  "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
+  "priceAsOf": "July 2026",
+  "sources": [
+    "CPS July 2026 fact sheet (Project_Details.docx)",
+    "Adani Realty configuration sheet, June 2026 accordion (Configuration.pdf)"
+  ]
+}

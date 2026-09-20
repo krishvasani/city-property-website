@@ -1,0 +1,84 @@
+{
+  "slug": "embrace",
+  "name": "Embrace",
+  "projectType": "apartment",
+  "positioning": "3 BHK homes in two sizes, nearing completion.",
+  "rera": "RAA12526",
+  "status": "Under construction, nearing completion",
+  "possession": "Approximately 12 to 15 months (from July 2026)",
+  "towers": 5,
+  "floors": 14,
+  "totalUnits": 248,
+  "carParking": "1 per home",
+  "configurations": [
+    {
+      "label": "3 BHK (small)",
+      "superBuiltUpSqft": 1966,
+      "carpetSqft": 1082.31,
+      "priceDisplay": "₹1.42 Cr to ₹1.63 Cr",
+      "priceMin": 14200000,
+      "priceMax": 16300000
+    },
+    {
+      "label": "3 BHK (big)",
+      "superBuiltUpSqft": 2164,
+      "carpetSqft": 1195,
+      "priceDisplay": "₹1.57 Cr to ₹1.70 Cr",
+      "priceMin": 15700000,
+      "priceMax": 17000000
+    },
+    {
+      "label": "Larger unit",
+      "carpetSqft": "up to 2,817.56",
+      "priceDisplay": "Not published"
+    }
+  ],
+  "paymentTerms": "9% + 11% = 20% in 30 + 30 days, then construction-linked plan; about 85% currently due",
+  "bookingAmount": "₹5.25 L",
+  "amenities": [
+    "Swimming pool",
+    "Mini theatre",
+    "Gym",
+    "Indoor games",
+    "Multipurpose hall",
+    "Creche",
+    "Senior citizen sit-out",
+    "Kids’ play area",
+    "Seating alcove",
+    "Garden"
+  ],
+  "dataGaps": [
+    "Largest unit (up to 2,817.56 sq ft carpet) has no published salable area or price."
+  ],
+  "photos": [
+    "/uploads/projects/shantigram/embrace/photos/photo-01.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-02.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-03.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-04.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-05.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-06.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-07.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-08.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-09.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-10.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-11.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-12.jpg"
+  ],
+  "floorPlans": [
+    "/uploads/projects/shantigram/embrace/floor-plans/plan-01.jpg",
+    "/uploads/projects/shantigram/embrace/floor-plans/plan-02.jpg",
+    "/uploads/projects/shantigram/embrace/floor-plans/plan-03.jpg",
+    "/uploads/projects/shantigram/embrace/floor-plans/plan-04.jpg",
+    "/uploads/projects/shantigram/embrace/floor-plans/plan-05.jpg",
+    "/uploads/projects/shantigram/embrace/floor-plans/plan-06.jpg",
+    "/uploads/projects/shantigram/embrace/floor-plans/plan-07.jpg"
+  ],
+  "developer": "Adani Realty",
+  "township": "Adani Shantigram",
+  "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
+  "priceAsOf": "July 2026",
+  "sources": [
+    "CPS July 2026 fact sheet (Project_Details.docx)",
+    "Adani Realty configuration sheet, June 2026 accordion (Configuration.pdf)"
+  ]
+}

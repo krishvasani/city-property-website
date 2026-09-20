@@ -8,6 +8,8 @@ import { sideWord, TYPE_SLUG_LABEL } from '../lib/landing-core';
 import { serviceLinks } from '../lib/services';
 import { getAllLocalities, getLocalityById } from '../data/localities';
 import { site, contact } from '../lib/config';
+import { SHANTIGRAM_LIVE } from '../lib/flags';
+import { projects as shantigramProjects, projectPath, priceBand, HUB_PATH } from '../lib/projects';
 
 export const GET: APIRoute = async () => {
   const all = await getProperties();
@@ -60,6 +62,13 @@ export const GET: APIRoute = async () => {
     for (const c of byType.get(t)!.sort((a, b) => a.side.localeCompare(b.side) || b.listings.length - a.listings.length)) {
       lines.push(`- [${single} for ${sideWord(c.side)} in ${c.locality.name}](${U(c.path)}): ${c.listings.length} listing${c.listings.length === 1 ? '' : 's'}`);
     }
+    lines.push('');
+  }
+
+  if (SHANTIGRAM_LIVE) {
+    lines.push('## Adani Shantigram township', '');
+    lines.push(`- [Adani Shantigram, Ahmedabad](${U(HUB_PATH)}): Township guide — all ${shantigramProjects.length} current projects compared by configuration, size, developer price (as of July 2026), possession and RERA number; township amenities and road distances. City Property Services is an independent consultant, not the developer.`);
+    for (const p of shantigramProjects) lines.push(`- [${p.name}, Adani Shantigram](${U(projectPath(p))}): ${p.projectType === 'plotted' ? 'plots' : p.projectType === 'villa' ? 'villas' : 'apartments'}, ${priceBand(p)}, ${p.status.toLowerCase()}, RERA ${p.rera}`);
     lines.push('');
   }
 

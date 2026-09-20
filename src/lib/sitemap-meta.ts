@@ -129,6 +129,24 @@ export function buildSitemapMeta(site: string): (url: string) => SitemapMeta {
     meta.set(c.path, { lastmod, ...(img.length ? { img } : {}) });
   }
 
+  // Adani Shantigram hub + project pages (only listed when SHANTIGRAM_LIVE):
+  // lastmod = last commit to the project's JSON or the template; images = photos.
+  const projDir = join(ROOT, 'src/content/projects/shantigram');
+  const projTemplate = later(gitDate('src/pages/projects/adani-shantigram/[project].astro'), gitDate('src/lib/shantigram-content.ts'));
+  let newestProject: string | undefined;
+  for (const f of readdirSync(projDir).filter((f) => f.endsWith('.json') && !f.startsWith('_'))) {
+    const d = JSON.parse(readFileSync(join(projDir, f), 'utf8'));
+    const lastmod = later(gitDate(`src/content/projects/shantigram/${f}`), projTemplate);
+    newestProject = later(newestProject, lastmod);
+    const img = (d.photos ?? []).slice(0, 6).map((u: string) => ({ url: new URL(u, site).href, title: `${d.name}, Adani Shantigram — developer render` }));
+    meta.set(`/projects/adani-shantigram/${d.slug}/`, { lastmod, ...(img.length ? { img } : {}) });
+  }
+  {
+    const t = JSON.parse(readFileSync(join(projDir, '_township.json'), 'utf8'));
+    const img = (t.photos ?? []).slice(0, 6).map((u: string) => ({ url: new URL(u, site).href, title: 'Adani Shantigram township — developer render' }));
+    meta.set('/projects/adani-shantigram/', { lastmod: later(newestProject, gitDate('src/pages/projects/adani-shantigram/index.astro'), gitDate('src/content/projects/shantigram/_township.json')), ...(img.length ? { img } : {}) });
+  }
+
   // Blog posts.
   for (const [slug, d] of blog) meta.set(`/blog/${slug}/`, { lastmod: d });
   const newestPost = later(...blog.values());

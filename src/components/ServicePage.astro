@@ -45,6 +45,8 @@ interface Props {
    * {localityCount}, {topLocalities}, {sizeRange}, {buildings}.
    */
   faq?: { q: string; a: string }[];
+  /** Optional feature link block (e.g. the Adani Shantigram township guide). */
+  featureLink?: { href: string; eyebrow: string; title: string; text: string };
 }
 
 const {
@@ -70,6 +72,7 @@ const {
   extraTypes = [],
   sides = ['buy', 'rent'],
   faq = [],
+  featureLink,
 } = Astro.props;
 
 // Service interest options, with this page's service preselected (first).
@@ -229,6 +232,16 @@ const graph = [serviceSchema, ...(faqSchema ? [faqSchema] : [])];
       </section>
     )}
 
+    {featureLink && (
+      <section class="svc-block">
+        <a class="svc-feature" href={featureLink.href}>
+          <span class="svc-feature-eyebrow">{featureLink.eyebrow}</span>
+          <span class="svc-feature-title">{featureLink.title}</span>
+          <span class="svc-feature-text">{featureLink.text} →</span>
+        </a>
+      </section>
+    )}
+
     {landingGroups.length > 0 && (
       <section class="svc-block svc-landings">
         <h2 class="h2">Browse by locality</h2>
@@ -307,6 +320,10 @@ const graph = [serviceSchema, ...(faqSchema ? [faqSchema] : [])];
   .svc-landing-links { display: flex; flex-wrap: wrap; gap: 8px 18px; }
   .svc-landing-links a { color: var(--navy); font-weight: 600; font-size: 14.5px; }
   .svc-landing-links a:hover { text-decoration: underline; }
+  .svc-feature { display: flex; flex-direction: column; gap: 4px; padding: 18px 22px; background: var(--navy); color: #fff; border-radius: var(--r-lg); box-shadow: var(--shadow-sm); }
+  .svc-feature-eyebrow { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--sky); font-weight: 700; }
+  .svc-feature-title { font-size: 19px; font-weight: 700; }
+  .svc-feature-text { font-size: 14px; color: #c4d0d8; }
   .svc-faq { max-width: 820px; }
   .faq-list { margin: 0; }
   .faq-item { padding: 16px 0; border-top: 1px solid var(--hairline); }

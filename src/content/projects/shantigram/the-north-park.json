@@ -1,0 +1,74 @@
+{
+  "slug": "the-north-park",
+  "name": "The North Park",
+  "projectType": "villa",
+  "positioning": "28 ground-plus-two 4 BHK villas with a private elevator in each.",
+  "rera": "RAA06343",
+  "status": "Under construction",
+  "possession": "Approximately 12 months (from July 2026)",
+  "totalUnits": 28,
+  "structure": "Ground + 2 levels with private elevator",
+  "configurations": [
+    {
+      "label": "4 BHK villa",
+      "plotSqft": "2,961 to 3,375 (approx.)",
+      "plotSqYd": "329 to 375 (approx.)",
+      "builtUpSqft": "3,402 to 3,789 (approx.)",
+      "builtUpSqYd": "378 to 421 (approx.)",
+      "priceDisplay": "₹8.40 Cr to ₹9.30 Cr",
+      "priceMin": 84000000,
+      "priceMax": 93000000,
+      "priceNote": "All-inclusive land plus construction figure per the fact sheet"
+    }
+  ],
+  "factSheetAreas": {
+    "land": "500 to 550 sq yd salable; 350 to 370 sq yd usable",
+    "construction": "550 sq yd salable; approx. 450 sq yd usable"
+  },
+  "paymentTerms": "Within 6 months",
+  "bookingAmount": "₹32 L",
+  "amenities": [
+    "Private elevator",
+    "Presidential-suite concept with dual master bedrooms",
+    "Sky decks and entertainment terraces",
+    "Golf-course viewing deck",
+    "Dedicated staff quarters with service access",
+    "Dual living and dining zones",
+    "Private car parks with EV charging provision",
+    "Cobblestone driveways",
+    "Curated gardens",
+    "Celebration lawn",
+    "Clubhouse",
+    "Wellness centre",
+    "Secure children’s play zone",
+    "Multipurpose court"
+  ],
+  "locationInTownship": "Shown on the Golf Coast key plan beside The West Park and the Narmada canal.",
+  "dataGaps": [
+    "Brochure plot/built-up areas (329–375 / 378–421 sq yd) and fact-sheet land/construction areas (500–550 / 550 sq yd salable) do not reconcile; both are recorded, neither is inferred.",
+    "Brochure PDF is image-only beyond the configuration page."
+  ],
+  "photos": [
+    "/uploads/projects/shantigram/the-north-park/photos/photo-01.jpg",
+    "/uploads/projects/shantigram/the-north-park/photos/photo-02.jpg",
+    "/uploads/projects/shantigram/the-north-park/photos/photo-03.jpg",
+    "/uploads/projects/shantigram/the-north-park/photos/photo-04.jpg",
+    "/uploads/projects/shantigram/the-north-park/photos/photo-05.jpg",
+    "/uploads/projects/shantigram/the-north-park/photos/photo-06.jpg",
+    "/uploads/projects/shantigram/the-north-park/photos/photo-07.jpg",
+    "/uploads/projects/shantigram/the-north-park/photos/photo-08.jpg",
+    "/uploads/projects/shantigram/the-north-park/photos/photo-09.jpg",
+    "/uploads/projects/shantigram/the-north-park/photos/photo-10.jpg",
+    "/uploads/projects/shantigram/the-north-park/photos/photo-11.jpg",
+    "/uploads/projects/shantigram/the-north-park/photos/photo-12.jpg"
+  ],
+  "floorPlans": [],
+  "developer": "Adani Realty",
+  "township": "Adani Shantigram",
+  "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
+  "priceAsOf": "July 2026",
+  "sources": [
+    "CPS July 2026 fact sheet (Project_Details.docx)",
+    "Adani Realty configuration sheet, June 2026 accordion (Configuration.pdf)"
+  ]
+}

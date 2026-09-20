@@ -1,0 +1,111 @@
+{
+  "slug": "belrosa",
+  "name": "Belrosa",
+  "projectType": "apartment",
+  "positioning": "A single 32-storey, 125 m tower — the tallest in the township — with 4 and 5 BHK simplex apartments and 5 and 6 BHK duplexes.",
+  "rera": "RAA15538",
+  "status": "Under construction",
+  "possession": "Approximately 4 years (from July 2026)",
+  "towers": 1,
+  "floors": 32,
+  "totalUnits": 108,
+  "unitsNote": "100 apartments and 8 duplexes across 4 blocks; 3-level basement",
+  "landArea": "1.83 acres",
+  "towerHeight": "125 m (410 ft)",
+  "carParking": "4 per 4 BHK; 5 per 5 BHK and duplexes",
+  "configurations": [
+    {
+      "label": "4 BHK simplex",
+      "superBuiltUpSqft": 5450,
+      "carpetSqft": 2942,
+      "carpetSqYd": 327,
+      "priceDisplay": "₹5.38 Cr to ₹6.87 Cr",
+      "priceMin": 53800000,
+      "priceMax": 68700000
+    },
+    {
+      "label": "5 BHK simplex",
+      "superBuiltUpSqft": 6800,
+      "carpetSqft": "3,665 to 3,670",
+      "carpetSqYd": "407 to 408",
+      "priceDisplay": "₹6.70 Cr to ₹8.95 Cr",
+      "priceMin": 67000000,
+      "priceMax": 89500000
+    },
+    {
+      "label": "5 BHK duplex",
+      "superBuiltUpSqft": 9450,
+      "carpetSqft": 5093,
+      "carpetSqYd": 566,
+      "priceDisplay": "₹12.31 Cr to ₹12.83 Cr",
+      "priceMin": 123100000,
+      "priceMax": 128300000
+    },
+    {
+      "label": "6 BHK duplex",
+      "superBuiltUpSqft": 12800,
+      "carpetSqft": 6911,
+      "carpetSqYd": 768,
+      "priceDisplay": "₹16.62 Cr to ₹18.04 Cr",
+      "priceMin": 166200000,
+      "priceMax": 180400000
+    }
+  ],
+  "paymentTerms": "Construction-linked plan; about 40% currently due",
+  "bookingAmount": "₹21 L (simplex); ₹51 L (duplex)",
+  "amenities": [
+    "Infinity pool",
+    "Kids’ pool",
+    "Temperature-controlled pool",
+    "Sky café",
+    "Sky lounge",
+    "Gym",
+    "Spa",
+    "Sauna",
+    "Steam room",
+    "Poker room",
+    "Billiards room",
+    "Karaoke room",
+    "Home theatre",
+    "Library",
+    "Indoor games zone",
+    "Business lounge",
+    "Banquet hall",
+    "Sunken seating",
+    "Event lawn",
+    "Kids’ play area",
+    "Private foyer to every residence",
+    "Vastu-compliant layouts"
+  ],
+  "locationInTownship": "Golf-course and landscape views from the tower; described in the brochure as standing at the heart of the township.",
+  "dataGaps": [],
+  "photos": [
+    "/uploads/projects/shantigram/belrosa/photos/photo-01.jpg",
+    "/uploads/projects/shantigram/belrosa/photos/photo-02.jpg",
+    "/uploads/projects/shantigram/belrosa/photos/photo-03.jpg",
+    "/uploads/projects/shantigram/belrosa/photos/photo-04.jpg",
+    "/uploads/projects/shantigram/belrosa/photos/photo-05.jpg",
+    "/uploads/projects/shantigram/belrosa/photos/photo-06.jpg",
+    "/uploads/projects/shantigram/belrosa/photos/photo-07.jpg",
+    "/uploads/projects/shantigram/belrosa/photos/photo-08.jpg",
+    "/uploads/projects/shantigram/belrosa/photos/photo-09.jpg",
+    "/uploads/projects/shantigram/belrosa/photos/photo-10.jpg"
+  ],
+  "floorPlans": [
+    "/uploads/projects/shantigram/belrosa/floor-plans/plan-01.jpg",
+    "/uploads/projects/shantigram/belrosa/floor-plans/plan-02.jpg",
+    "/uploads/projects/shantigram/belrosa/floor-plans/plan-03.jpg",
+    "/uploads/projects/shantigram/belrosa/floor-plans/plan-04.jpg",
+    "/uploads/projects/shantigram/belrosa/floor-plans/plan-05.jpg",
+    "/uploads/projects/shantigram/belrosa/floor-plans/plan-06.jpg",
+    "/uploads/projects/shantigram/belrosa/floor-plans/plan-07.jpg"
+  ],
+  "developer": "Adani Realty",
+  "township": "Adani Shantigram",
+  "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
+  "priceAsOf": "July 2026",
+  "sources": [
+    "CPS July 2026 fact sheet (Project_Details.docx)",
+    "Adani Realty configuration sheet, June 2026 accordion (Configuration.pdf)"
+  ]
+}

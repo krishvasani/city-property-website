@@ -1,0 +1,107 @@
+{
+  "slug": "the-storeys-golf-coast",
+  "name": "The Storeys Golf Coast",
+  "projectType": "apartment",
+  "partner": "UB Heritage",
+  "positioning": "35 single-floor 4 and 5 BHK homes with private elevator access, overlooking the Narmada canal and the golf course.",
+  "rera": "RAA14971",
+  "status": "Under construction",
+  "possession": "Not published",
+  "totalUnits": 35,
+  "unitsNote": "Exclusive community of 35 families; two towers (South and North)",
+  "configurations": [
+    {
+      "label": "South Tower 4 BHK",
+      "carpetSqft": 3501,
+      "carpetSqYd": 389,
+      "priceDisplay": "On request"
+    },
+    {
+      "label": "North Tower 5 BHK (A)",
+      "carpetSqft": 4664,
+      "carpetSqYd": 518.22,
+      "priceDisplay": "On request"
+    },
+    {
+      "label": "North Tower 5 BHK (B)",
+      "carpetSqft": 4509,
+      "carpetSqYd": 501,
+      "priceDisplay": "On request"
+    }
+  ],
+  "unpublishedPricing": {
+    "note": "A proposed rate sheet marked \"for internal circulation and study purpose only\", effective 17 July 2026, quotes a basic sales price of ₹8,000 per sq ft on indicative super built-up areas of 7,025 / 9,045 / 8,780 sq ft, plus PLC of ₹40 per sq ft per floor and other charges of ₹980 per sq ft. The CPS series master derives a band of ₹5.62 Cr to ₹7.02 Cr from it. Not shown publicly until the owner confirms."
+  },
+  "amenities": [
+    "Unobstructed view of the Narmada canal and golf course",
+    "Single floor, single home",
+    "Private elevator access",
+    "Spacious private foyer",
+    "3 high-speed elevators per tower",
+    "3-tier security",
+    "White-glove service",
+    "Landscaped podium",
+    "Amenities on ground and podium level",
+    "Vastu-compliant homes"
+  ],
+  "locationInTownship": "Overlooks the Narmada canal and the Belvedere golf course; the brochure key plan shows it beside Canal Road near The North Park and The West Park.",
+  "distancesFromZeroCircle": [
+    {
+      "to": "Vaishnodevi Circle",
+      "km": 1.5
+    },
+    {
+      "to": "Gandhinagar (GH-0)",
+      "km": 13.4
+    },
+    {
+      "to": "GIFT City",
+      "km": 21.3
+    },
+    {
+      "to": "Zydus Hospital",
+      "km": 10.7
+    },
+    {
+      "to": "Iscon Circle",
+      "km": 15
+    },
+    {
+      "to": "Bopal Junction",
+      "km": 16.4
+    },
+    {
+      "to": "Airport",
+      "km": 17
+    }
+  ],
+  "dataGaps": [
+    "Price not published by the developer; only an internal proposed rate sheet exists (see unpublishedPricing).",
+    "Possession, payment terms and booking amount not published.",
+    "Number of floors not stated."
+  ],
+  "photos": [
+    "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-01.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-02.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-03.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-04.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-05.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-06.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-07.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-08.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-09.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-10.jpg"
+  ],
+  "floorPlans": [
+    "/uploads/projects/shantigram/the-storeys-golf-coast/floor-plans/plan-01.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/floor-plans/plan-02.jpg"
+  ],
+  "developer": "Adani Realty",
+  "township": "Adani Shantigram",
+  "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
+  "priceAsOf": "July 2026",
+  "sources": [
+    "CPS July 2026 fact sheet (Project_Details.docx)",
+    "Adani Realty configuration sheet, June 2026 accordion (Configuration.pdf)"
+  ]
+}

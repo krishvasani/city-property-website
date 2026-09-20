@@ -14,6 +14,8 @@ import { contact } from '../../lib/config';
 import { landingCombos, comboLabel } from '../../lib/landing';
 import { localityContent } from '../../lib/locality-content';
 import { typeSlugOf, sideOf, TYPE_SLUG_LABEL } from '../../lib/landing-core';
+import { SHANTIGRAM_LIVE } from '../../lib/flags';
+import { projects as shantigramProjects } from '../../lib/projects';
 
 // Generate pages for prime localities (priority 1–2) and any locality that has
 // live listings, so pages are useful (never thin) and property breadcrumbs resolve.
@@ -87,6 +89,16 @@ const waMessage = `Hi City Property Services, I’m looking for property in ${lo
         <a class="btn btn-secondary" href="/consult/">Talk to an advisor</a>
       </div>
     </section>
+
+    {SHANTIGRAM_LIVE && loc.id === 'shantigram' && (
+      <section class="loc-township">
+        <a class="loc-township-card" href="/projects/adani-shantigram/">
+          <span class="lt-eyebrow">Township guide</span>
+          <span class="lt-title">Adani Shantigram: all {shantigramProjects.length} current projects compared</span>
+          <span class="lt-text">Configurations, sizes, developer prices as of July 2026, possession and RERA numbers for every project in the township, plus township amenities and distances. This page covers City Property Services' live listings and the resale market in the locality. →</span>
+        </a>
+      </section>
+    )}
 
     {c.landings.length > 0 && (
       <section class="loc-landings">
@@ -241,6 +253,11 @@ const waMessage = `Hi City Property Services, I’m looking for property in ${lo
   .loc-page .crumb { display: flex; gap: 8px; align-items: center; font-size: 13px; color: var(--text-muted); padding: 20px 0 0; }
   .loc-page .crumb a:hover { color: var(--navy); }
   .loc-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+  .loc-township { margin-top: 32px; }
+  .loc-township-card { display: flex; flex-direction: column; gap: 4px; padding: 18px 22px; background: var(--navy); color: #fff; border-radius: var(--r-lg); box-shadow: var(--shadow-sm); }
+  .lt-eyebrow { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--sky); font-weight: 700; }
+  .lt-title { font-size: 19px; font-weight: 700; }
+  .lt-text { font-size: 14px; color: #c4d0d8; }
   .loc-landings { margin-top: 40px; }
   .loc-landings h2 { font-size: 22px; margin-bottom: 14px; }
   .landing-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }

@@ -1,5 +1,7 @@
 ---
 import ServicePage from '../../components/ServicePage.astro';
+import { SHANTIGRAM_LIVE } from '../../lib/flags';
+import { projects as shantigramProjects } from '../../lib/projects';
 ---
 <ServicePage
   serviceKey="residential"
@@ -32,6 +34,7 @@ import ServicePage from '../../components/ServicePage.astro';
   formIntent="Residential"
   sizeHint="e.g. 3 BHK up to ₹1.2 Cr, or a 2 BHK on rent"
   relatedCategory="residential"
+  featureLink={SHANTIGRAM_LIVE ? { href: '/projects/adani-shantigram/', eyebrow: 'Township guide', title: 'Adani Shantigram, Ahmedabad', text: `${shantigramProjects.length} current projects compared by configuration, size, price and possession` } : undefined}
   landingTypes={["flat", "bungalow"]}
   faq={[
     { q: 'What do flats cost to buy in Ahmedabad right now?', a: 'Our {saleCount} current homes for sale carry asking prices from {saleRange}. New 3 and 4 BHK projects in Ambli, Shantigram, Thaltej and Bopal make up much of the supply; resale flats in Satellite, Bodakdev and Vastrapur sit in the middle of the range.' },

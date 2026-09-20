@@ -1,0 +1,41 @@
+---
+// Enquiry block for the Adani Shantigram pages. Makes the CPS role explicit:
+// independent RERA-registered consultant, not the developer.
+import LeadForm from './LeadForm.astro';
+import CallButton from './CallButton.astro';
+import WhatsAppButton from './WhatsAppButton.astro';
+import { contact, site } from '../lib/config';
+
+interface Props { subject: string; url: string }
+const { subject, url } = Astro.props;
+const wa = `Hi City Property Services, I’d like to discuss ${subject} at Adani Shantigram.`;
+---
+<section class="proj-enquiry" id="enquire">
+  <div class="proj-enquiry-copy">
+    <div class="eyebrow">Independent advice</div>
+    <h2>Talk to us about {subject}</h2>
+    <p class="muted">City Property Services is an independent property consultant registered with Gujarat RERA (<strong>{site.rera}</strong>). We are not the developer of Adani Shantigram or any project in it; the developer is Adani Realty. We advise buyers on new bookings, on resale in the completed clusters, and on the paperwork, and we confirm every price and RERA certificate with the developer before you commit.</p>
+    <div class="row" style="gap:10px;margin-top:18px;flex-wrap:wrap;">
+      <CallButton label="Call Now" number={contact.phone} />
+      <WhatsAppButton label="WhatsApp Us" message={wa} />
+    </div>
+  </div>
+  <div class="panel">
+    <LeadForm
+      name="viewing"
+      submitLabel="Ask about this project"
+      messageLabel="What would you like to know?"
+      messagePlaceholder={`e.g. current price and availability at ${subject}, site visit, resale options…`}
+      context={{ project: subject, projectUrl: url }}
+      whatsappFallback={wa}
+    />
+  </div>
+</section>
+
+<style is:global>
+  .proj-enquiry { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; margin: 64px 0 72px; }
+  .proj-enquiry h2 { margin-top: 10px; }
+  .proj-enquiry p { margin-top: 12px; max-width: 56ch; line-height: 1.6; }
+  .proj-enquiry .panel { background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); box-shadow: var(--shadow); padding: 22px; }
+  @media (max-width: 900px) { .proj-enquiry { grid-template-columns: 1fr; } }
+</style>
