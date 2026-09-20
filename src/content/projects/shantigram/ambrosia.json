@@ -69,9 +69,24 @@
     "/uploads/projects/shantigram/ambrosia/photos/photo-07.jpg",
     "/uploads/projects/shantigram/ambrosia/photos/photo-08.jpg",
     "/uploads/projects/shantigram/ambrosia/photos/photo-09.jpg",
-    "/uploads/projects/shantigram/ambrosia/photos/photo-10.jpg"
+    "/uploads/projects/shantigram/ambrosia/photos/photo-10.jpg",
+    "/uploads/projects/shantigram/ambrosia/photos/photo-11.jpg",
+    "/uploads/projects/shantigram/ambrosia/photos/photo-12.jpg",
+    "/uploads/projects/shantigram/ambrosia/photos/photo-13.jpg",
+    "/uploads/projects/shantigram/ambrosia/photos/photo-14.jpg"
   ],
-  "floorPlans": [],
+  "floorPlans": [
+    "/uploads/projects/shantigram/ambrosia/floor-plans/plan-01.jpg",
+    "/uploads/projects/shantigram/ambrosia/floor-plans/plan-02.jpg",
+    "/uploads/projects/shantigram/ambrosia/floor-plans/plan-03.jpg",
+    "/uploads/projects/shantigram/ambrosia/floor-plans/plan-04.jpg",
+    "/uploads/projects/shantigram/ambrosia/floor-plans/plan-05.jpg",
+    "/uploads/projects/shantigram/ambrosia/floor-plans/plan-06.jpg",
+    "/uploads/projects/shantigram/ambrosia/floor-plans/plan-07.jpg",
+    "/uploads/projects/shantigram/ambrosia/floor-plans/plan-08.jpg",
+    "/uploads/projects/shantigram/ambrosia/floor-plans/plan-09.jpg",
+    "/uploads/projects/shantigram/ambrosia/floor-plans/plan-10.jpg"
+  ],
   "developer": "Adani Realty",
   "township": "Adani Shantigram",
   "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
@@ -87,5 +102,45 @@
     "source": "CPS Series Master, July 2026",
     "asOf": "July 2026"
   },
-  "priceSource": "CPS Series Master, July 2026"
+  "priceSource": "CPS Series Master, July 2026",
+  "photoLabels": [
+    "tour360",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image"
+  ],
+  "floorPlanLabels": [
+    "Wing A",
+    "Wing A 1st Floor Plan",
+    "Wing B",
+    "Wing B 1st Floor Plan",
+    "Wing C",
+    "Wing C 1st Floor Plan",
+    "4 BHK Large Deluxe  Unit 1",
+    "4 BHK Small Classic  Unit 1",
+    "4 BHK Large Deluxe  Unit 3",
+    "4 BHK Small Classic  Unit 3"
+  ],
+  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "developerSite": {
+    "url": "https://www.adanirealty.com/residential-projects/ahmedabad/ambrosia",
+    "fetched": "2026-09-20",
+    "configuration": "4 BHK Ultra-Luxury Apartments",
+    "possessionDate": "30/01/2027",
+    "reraCarpetRange": "1671.6-1902.19 Sq. Ft.",
+    "projectArea": "9952 Sq. Mtrs.",
+    "reraFull": "PR/GJ/GANDHINAGAR/GANDHINAGAR/AUDA/RAA10833/201022",
+    "startingPrice": "₹ 2.49 Cr (all incl.)",
+    "faqCount": 10
+  }
 }

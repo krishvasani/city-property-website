@@ -60,9 +60,18 @@
     "/uploads/projects/shantigram/the-north-park/photos/photo-09.jpg",
     "/uploads/projects/shantigram/the-north-park/photos/photo-10.jpg",
     "/uploads/projects/shantigram/the-north-park/photos/photo-11.jpg",
-    "/uploads/projects/shantigram/the-north-park/photos/photo-12.jpg"
+    "/uploads/projects/shantigram/the-north-park/photos/photo-12.jpg",
+    "/uploads/projects/shantigram/the-north-park/photos/photo-13.jpg",
+    "/uploads/projects/shantigram/the-north-park/photos/photo-14.jpg"
   ],
-  "floorPlans": [],
+  "floorPlans": [
+    "/uploads/projects/shantigram/the-north-park/floor-plans/plan-01.jpg",
+    "/uploads/projects/shantigram/the-north-park/floor-plans/plan-02.jpg",
+    "/uploads/projects/shantigram/the-north-park/floor-plans/plan-03.jpg",
+    "/uploads/projects/shantigram/the-north-park/floor-plans/plan-04.jpg",
+    "/uploads/projects/shantigram/the-north-park/floor-plans/plan-05.jpg",
+    "/uploads/projects/shantigram/the-north-park/floor-plans/plan-06.jpg"
+  ],
   "developer": "Adani Realty",
   "township": "Adani Shantigram",
   "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
@@ -78,5 +87,41 @@
     "source": "CPS Series Master, July 2026",
     "asOf": "July 2026"
   },
-  "priceSource": "CPS Series Master, July 2026"
+  "priceSource": "CPS Series Master, July 2026",
+  "photoLabels": [
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image"
+  ],
+  "floorPlanLabels": [
+    "Type B 4 BHK Unit Plan",
+    "Type C 4 BHK Unit Plan",
+    "Type C1 4 BHK Unit Plan",
+    "Type D 4 BHK Unit Plan",
+    "Type E 4 BHK Unit Plan",
+    "Master layout"
+  ],
+  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "developerSite": {
+    "url": "https://www.adanirealty.com/residential-projects/ahmedabad/the-north-park",
+    "fetched": "2026-09-20",
+    "configuration": "4 BHK Villas",
+    "possessionDate": "30/10/2027",
+    "reraCarpetRange": "3374.81 - 3791.26 Sq. Ft.",
+    "projectArea": "16862.8 Sq. Mtrs.",
+    "reraFull": "PR/GJ/AHMEDABAD/GANDHINAGAR/Ahmedabad Urban Development Authority/RAA06343/A1R/EX1/100726/300627",
+    "startingPrice": "Available on Request",
+    "faqCount": 12
+  }
 }

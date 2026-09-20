@@ -58,7 +58,13 @@
     "/uploads/projects/shantigram/elysium-novus/photos/photo-05.jpg",
     "/uploads/projects/shantigram/elysium-novus/photos/photo-06.jpg",
     "/uploads/projects/shantigram/elysium-novus/photos/photo-07.jpg",
-    "/uploads/projects/shantigram/elysium-novus/photos/photo-08.jpg"
+    "/uploads/projects/shantigram/elysium-novus/photos/photo-08.jpg",
+    "/uploads/projects/shantigram/elysium-novus/photos/photo-09.jpg",
+    "/uploads/projects/shantigram/elysium-novus/photos/photo-10.jpg",
+    "/uploads/projects/shantigram/elysium-novus/photos/photo-11.jpg",
+    "/uploads/projects/shantigram/elysium-novus/photos/photo-12.jpg",
+    "/uploads/projects/shantigram/elysium-novus/photos/photo-13.jpg",
+    "/uploads/projects/shantigram/elysium-novus/photos/photo-14.jpg"
   ],
   "floorPlans": [
     "/uploads/projects/shantigram/elysium-novus/floor-plans/plan-01.jpg",
@@ -68,7 +74,8 @@
     "/uploads/projects/shantigram/elysium-novus/floor-plans/plan-05.jpg",
     "/uploads/projects/shantigram/elysium-novus/floor-plans/plan-06.jpg",
     "/uploads/projects/shantigram/elysium-novus/floor-plans/plan-07.jpg",
-    "/uploads/projects/shantigram/elysium-novus/floor-plans/plan-08.jpg"
+    "/uploads/projects/shantigram/elysium-novus/floor-plans/plan-08.jpg",
+    "/uploads/projects/shantigram/elysium-novus/floor-plans/plan-09.jpg"
   ],
   "developer": "Adani Realty",
   "township": "Adani Shantigram",
@@ -85,5 +92,44 @@
     "source": "CPS Series Master, July 2026",
     "asOf": "July 2026"
   },
-  "priceSource": "CPS Series Master, July 2026"
+  "priceSource": "CPS Series Master, July 2026",
+  "photoLabels": [
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image"
+  ],
+  "floorPlanLabels": [
+    "Block C, D, E,  F",
+    "Block G",
+    "Block -J",
+    "Type -1 Block - C, D, E & F",
+    "Type -2 Block - C, D, E & F",
+    "Type - 3 Block G",
+    "Type - 4 Block G",
+    "Type - 5 Block J",
+    "Master layout"
+  ],
+  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "developerSite": {
+    "url": "https://www.adanirealty.com/residential-projects/ahmedabad/elysium-novus",
+    "fetched": "2026-09-20",
+    "configuration": "3 & 2 BHK Homes",
+    "possessionDate": "30/04/2029",
+    "reraCarpetRange": "668.44 Sq. Ft. - 1016.00 Sq Ft.",
+    "projectArea": "16108.63 Sq. Mtrs.",
+    "reraFull": "RERA No. RAA14729/270125/311228",
+    "startingPrice": "₹1.23 Cr (all incl.)",
+    "faqCount": 8
+  }
 }

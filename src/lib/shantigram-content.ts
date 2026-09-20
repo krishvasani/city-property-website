@@ -5,7 +5,7 @@
 import { site } from './config';
 import {
   HUB_PATH, configSummary, hasConfigPrices, hasPublishedPrice, inrShort, isReady, priceBand, priceCeiling, priceFloor,
-  projectPath, projects, sizeRange, township, typeLabel, type Configuration, type Project,
+  projectPath, projects, sizeRange, township, typeLabel, possessionLabel, fmtSiteDate, type Configuration, type Project,
 } from './projects';
 import { getLocalityById } from '../data/localities';
 
@@ -72,7 +72,7 @@ export function hubContent(): HubContent {
     configs: configSummary(p),
     size: sizeRange(p) ?? '—',
     price: priceBand(p),
-    possession: p.possession.replace(' (from July 2026)', ''),
+    possession: possessionLabel(p),
     status: p.status,
   }));
 
@@ -228,6 +228,16 @@ export function projectContent(p: Project): ProjectContent {
   if (p.paymentTerms || p.bookingAmount || p.carParking) {
     o.push(clean(`${p.bookingAmount ? `The booking amount is ${p.bookingAmount}` : ''}${p.bookingAmount && p.paymentTerms ? ', and ' : p.paymentTerms ? 'P' : ''}${p.paymentTerms ? `${p.bookingAmount ? 'p' : ''}ayment terms are stated as “${p.paymentTerms.charAt(0).toLowerCase()}${p.paymentTerms.slice(1)}”` : ''}${p.bookingAmount || p.paymentTerms ? '. ' : ''}${p.carParking ? `Car parking is ${p.carParking}.` : ''}`));
   }
+  if (p.developerSite) {
+    const ds = p.developerSite; const dd = fmtSiteDate(ds.possessionDate);
+    const bits = [
+      dd && /\d{4}/.test(dd) ? `a declared possession date of ${dd}` : '',
+      ds.reraCarpetRange ? `RERA carpet areas of ${ds.reraCarpetRange.replace(/\s+/g, ' ')}` : '',
+      ds.projectArea ? `a project area of ${ds.projectArea.replace(/\s+/g, ' ')}` : '',
+      ds.startingPrice && !/request/i.test(ds.startingPrice) ? `a starting price of ${ds.startingPrice.replace(/\*|\(.*?\)/g, '').trim()} (all-inclusive)` : '',
+    ].filter(Boolean);
+    if (bits.length) o.push(clean(`The developer's own project page, checked on ${new Date(ds.fetched).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}, lists ${list(bits)}${ds.reraFull && !/^\?$/.test(ds.reraFull) ? `, under registration ${ds.reraFull.replace(/^RERA No\. /, '')}` : ''}. Where these differ from the July 2026 fact sheet, both are shown so you can see what has moved.`));
+  }
   if (p.locationInTownship) o.push(clean(`Within the township: ${p.locationInTownship}`));
   if (p.dataGaps.length) o.push(clean(`What the documents do not state: ${p.dataGaps.filter((g) => !/image-only|not shown publicly/i.test(g)).map((g) => g.replace(/\.$/, '')).join('; ')}. We flag these so you can ask the right questions at the sales office.`));
 
@@ -237,8 +247,12 @@ export function projectContent(p: Project): ProjectContent {
     ...(p.architect ? [{ k: 'Architect', v: p.architect }] : []),
     { k: 'Project type', v: typeLabel(p) },
     { k: 'Gujarat RERA', v: `${p.rera}${p.reraNote ? ` — ${p.reraNote}` : ''}` },
+    ...(p.developerSite?.reraFull && !/^\?$/.test(p.developerSite.reraFull) ? [{ k: 'RERA (full, developer site)', v: p.developerSite.reraFull.replace(/^RERA No\. /, '') + (p.developerSite.reraFullNote ? ` — ${p.developerSite.reraFullNote}` : '') }] : []),
     { k: 'Status', v: p.status },
-    { k: 'Possession', v: p.possession },
+    { k: 'Possession (fact sheet, Jul 2026)', v: p.possession },
+    ...(p.developerSite?.possessionDate ? [{ k: `Possession (developer site, ${fmtSiteDate(p.developerSite.fetched) ?? p.developerSite.fetched})`, v: fmtSiteDate(p.developerSite.possessionDate) ?? p.developerSite.possessionDate }] : []),
+    ...(p.developerSite?.projectArea ? [{ k: 'Project area (developer site)', v: p.developerSite.projectArea.replace(/\s+/g, ' ') }] : []),
+    ...(p.developerSite?.reraCarpetRange ? [{ k: 'RERA carpet range (developer site)', v: p.developerSite.reraCarpetRange.replace(/\s+/g, ' ') }] : []),
     ...(p.towers ? [{ k: 'Towers', v: String(p.towers) }] : []),
     ...(p.floors ? [{ k: 'Floors', v: String(p.floors) }] : []),
     ...(p.towerHeight ? [{ k: 'Tower height', v: p.towerHeight }] : []),
@@ -249,7 +263,8 @@ export function projectContent(p: Project): ProjectContent {
     ...(p.carParking ? [{ k: 'Car parking', v: p.carParking }] : []),
     ...(p.bookingAmount ? [{ k: 'Booking amount', v: p.bookingAmount }] : []),
     ...(p.paymentTerms ? [{ k: 'Payment terms', v: p.paymentTerms }] : []),
-    { k: 'Prices as of', v: p.priceAsOf },
+    { k: 'Prices as of', v: `${p.priceAsOf} (${p.priceSource})` },
+    ...(p.developerSite?.startingPrice ? [{ k: `Developer site price (${fmtSiteDate(p.developerSite.fetched) ?? p.developerSite.fetched})`, v: p.developerSite.startingPrice.replace(/\s+/g, ' ') }] : []),
   ];
 
   // configuration table columns depend on what this project states
@@ -279,7 +294,7 @@ export function projectContent(p: Project): ProjectContent {
     : p.priceRange
       ? { q: `How much does a home at ${p.name} cost?`, a: clean(`${band} all-inclusive as of ${p.priceRange.asOf} for the project as a whole. The developer does not publish a price per configuration; we will obtain the current quote for the unit you want and set out the all-inclusive figure, statutory charges and payment schedule before you visit.`) }
       : { q: `How much does a home at ${p.name} cost?`, a: clean(`The developer quotes ${p.name} on request rather than publishing a price list. We will obtain the current rate sheet for the configuration you want and set out the all-inclusive figure, statutory charges and payment schedule before you visit.`) });
-  faq.push({ q: `When will ${p.name} be ready for possession?`, a: clean(ready ? `${p.name} is ${p.status.toLowerCase()}. ${p.possession.includes('60 days') ? 'The developer states handover within 60 days of purchase.' : 'Possession follows completion of the sale and registration.'}` : `The developer states possession as ${p.possession.replace(' (from July 2026)', '').toLowerCase()} (as of July 2026) and the status as ${p.status.toLowerCase()}. The RERA certificate carries the legally declared completion date; check it at gujrera.gujarat.gov.in under ${p.rera}.`) });
+  faq.push({ q: `When will ${p.name} be ready for possession?`, a: clean(ready ? `${p.name} is ${p.status.toLowerCase()}. ${p.possession.includes('60 days') ? 'The developer states handover within 60 days of purchase.' : 'Possession follows completion of the sale and registration.'}` : `The July 2026 fact sheet gives possession as ${p.possession.replace(' (from July 2026)', '').toLowerCase()} and the status as ${p.status.toLowerCase()}${fmtSiteDate(p.developerSite?.possessionDate) && /\d{4}/.test(fmtSiteDate(p.developerSite?.possessionDate)!) ? `; the developer's project page shows a declared possession date of ${fmtSiteDate(p.developerSite?.possessionDate)}` : ''}. The RERA certificate carries the legally binding completion date; check it at gujrera.gujarat.gov.in under ${p.rera}.`) });
   faq.push({ q: `Is ${p.name} RERA registered, and who is the promoter?`, a: clean(`Yes — the developer's documents give Gujarat RERA number ${p.rera}${p.reraNote ? ` (${p.reraNote.toLowerCase()})` : ''}. The developer is ${who}. ${p.dataGaps.some((g) => /promoter/i.test(g)) ? 'The documents do not say which entity is the registered promoter; confirm this on the RERA certificate, because it determines who you contract with. ' : ''}City Property Services is an independent consultant and not the promoter of this project.`) });
   if (p.towers || p.totalUnits || p.floors) faq.push({ q: `How big is ${p.name}?`, a: clean(`${scale.length ? `${list(scale.map((s) => s.charAt(0).toUpperCase() + s.slice(1)))}${onLand}.` : ''} ${p.landArea && !scale.length ? `The land parcel is ${p.landArea}.` : ''} ${p.towerHeight ? `The tower rises ${p.towerHeight}.` : ''} ${p.carParking ? `Parking allocation is ${p.carParking}.` : ''}`) });
   faq.push({ q: `What amenities does ${p.name} have?`, a: clean(`${p.amenities.length > 10 ? `${p.amenities.slice(0, 10).join(', ')} and ${p.amenities.length - 10} more listed on this page` : list(p.amenities)}. Residents also use the township-level facilities — ${township.golf.club}, the lake and promenade, schools and retail — which are shared across Adani Shantigram.`) });

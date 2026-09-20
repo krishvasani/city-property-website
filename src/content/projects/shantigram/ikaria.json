@@ -72,10 +72,17 @@
     "/uploads/projects/shantigram/ikaria/photos/photo-06.jpg",
     "/uploads/projects/shantigram/ikaria/photos/photo-07.jpg",
     "/uploads/projects/shantigram/ikaria/photos/photo-08.jpg",
-    "/uploads/projects/shantigram/ikaria/photos/photo-09.jpg"
+    "/uploads/projects/shantigram/ikaria/photos/photo-09.jpg",
+    "/uploads/projects/shantigram/ikaria/photos/photo-10.jpg",
+    "/uploads/projects/shantigram/ikaria/photos/photo-11.jpg",
+    "/uploads/projects/shantigram/ikaria/photos/photo-12.jpg",
+    "/uploads/projects/shantigram/ikaria/photos/photo-13.jpg",
+    "/uploads/projects/shantigram/ikaria/photos/photo-14.jpg"
   ],
   "floorPlans": [
-    "/uploads/projects/shantigram/ikaria/floor-plans/plan-01.jpg"
+    "/uploads/projects/shantigram/ikaria/floor-plans/plan-01.jpg",
+    "/uploads/projects/shantigram/ikaria/floor-plans/plan-02.jpg",
+    "/uploads/projects/shantigram/ikaria/floor-plans/plan-03.jpg"
   ],
   "developer": "Adani Realty",
   "township": "Adani Shantigram",
@@ -92,5 +99,38 @@
     "source": "CPS Series Master, July 2026",
     "asOf": "July 2026"
   },
-  "priceSource": "CPS Series Master, July 2026"
+  "priceSource": "CPS Series Master, July 2026",
+  "photoLabels": [
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Wheelchair and Stretcher-Friendly Elevators",
+    "Skid-Resistant Flooring in Bathrooms and Common Passages",
+    "Shower Seat and Grab Bars in the Primary Washroom"
+  ],
+  "floorPlanLabels": [
+    "1st Floor Layout",
+    "2nd - 13th Floor Layout",
+    "Master layout"
+  ],
+  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "developerSite": {
+    "url": "https://www.adanirealty.com/residential-projects/ahmedabad/ikaria",
+    "fetched": "2026-09-20",
+    "configuration": "1 and 2 BHK Senior Living Apartments",
+    "possessionDate": "Ready to Move-In",
+    "reraCarpetRange": "580.60 - 858.52 Sq. Ft.",
+    "projectArea": "222084 (built up area in sq. ft.)",
+    "reraFull": "PR/GJ/AHMEDABAD/DASKROI/AUDA/RAA10359/240622",
+    "startingPrice": "₹ 87 Lacs (exclusive of all taxes)",
+    "faqCount": 8
+  }
 }

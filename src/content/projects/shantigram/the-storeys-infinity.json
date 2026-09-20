@@ -60,7 +60,14 @@
     "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-11.jpg",
     "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-12.jpg"
   ],
-  "floorPlans": [],
+  "floorPlans": [
+    "/uploads/projects/shantigram/the-storeys-infinity/floor-plans/plan-01.jpg",
+    "/uploads/projects/shantigram/the-storeys-infinity/floor-plans/plan-02.jpg",
+    "/uploads/projects/shantigram/the-storeys-infinity/floor-plans/plan-03.jpg",
+    "/uploads/projects/shantigram/the-storeys-infinity/floor-plans/plan-04.jpg",
+    "/uploads/projects/shantigram/the-storeys-infinity/floor-plans/plan-05.jpg",
+    "/uploads/projects/shantigram/the-storeys-infinity/floor-plans/plan-06.jpg"
+  ],
   "developer": "Adani Realty",
   "township": "Adani Shantigram",
   "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
@@ -77,5 +84,40 @@
     "asOf": "July 2026"
   },
   "priceSource": "CPS Series Master, July 2026",
-  "priceNote": "Project-level band from the CPS Series Master; the developer has not published per-configuration prices. The project fact sheet records pricing as on request; the band is the Series Master’s figure."
+  "priceNote": "Project-level band from the CPS Series Master; the developer has not published per-configuration prices. The project fact sheet records pricing as on request; the band is the Series Master’s figure.",
+  "photoLabels": [
+    "Artistic Impression",
+    "",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Indoor Swimming Pool"
+  ],
+  "floorPlanLabels": [
+    "Block plan 3rd to 10th floor",
+    "Block plan 11th to 19th floor",
+    "Unit plan 3rd to 10th floor",
+    "Unit plan 11th to 19th floor",
+    "Master layout",
+    "Master layout"
+  ],
+  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "developerSite": {
+    "url": "https://www.adanirealty.com/residential-projects/ahmedabad/the-storeys-infinity",
+    "fetched": "2026-09-20",
+    "configuration": "4 BHK Apartments & 5 BHK Penthouses",
+    "possessionDate": "31-12-2031",
+    "reraCarpetRange": null,
+    "projectArea": "11, 756 Sq. Yd",
+    "reraFull": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/Ahmedabad Urban Development Authority/MAA16481/190226/301129",
+    "startingPrice": "3.5 Cr. (all incl.)",
+    "faqCount": 9,
+    "reraFullNote": "The developer site shows Amora’s registration (MAA16481…) on this page — a site error; the fact sheet number is used."
+  }
 }

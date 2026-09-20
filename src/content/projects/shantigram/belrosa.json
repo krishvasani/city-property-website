@@ -89,7 +89,11 @@
     "/uploads/projects/shantigram/belrosa/photos/photo-07.jpg",
     "/uploads/projects/shantigram/belrosa/photos/photo-08.jpg",
     "/uploads/projects/shantigram/belrosa/photos/photo-09.jpg",
-    "/uploads/projects/shantigram/belrosa/photos/photo-10.jpg"
+    "/uploads/projects/shantigram/belrosa/photos/photo-10.jpg",
+    "/uploads/projects/shantigram/belrosa/photos/photo-11.jpg",
+    "/uploads/projects/shantigram/belrosa/photos/photo-12.jpg",
+    "/uploads/projects/shantigram/belrosa/photos/photo-13.jpg",
+    "/uploads/projects/shantigram/belrosa/photos/photo-14.jpg"
   ],
   "floorPlans": [
     "/uploads/projects/shantigram/belrosa/floor-plans/plan-01.jpg",
@@ -98,7 +102,10 @@
     "/uploads/projects/shantigram/belrosa/floor-plans/plan-04.jpg",
     "/uploads/projects/shantigram/belrosa/floor-plans/plan-05.jpg",
     "/uploads/projects/shantigram/belrosa/floor-plans/plan-06.jpg",
-    "/uploads/projects/shantigram/belrosa/floor-plans/plan-07.jpg"
+    "/uploads/projects/shantigram/belrosa/floor-plans/plan-07.jpg",
+    "/uploads/projects/shantigram/belrosa/floor-plans/plan-08.jpg",
+    "/uploads/projects/shantigram/belrosa/floor-plans/plan-09.jpg",
+    "/uploads/projects/shantigram/belrosa/floor-plans/plan-10.jpg"
   ],
   "developer": "Adani Realty",
   "township": "Adani Shantigram",
@@ -115,5 +122,45 @@
     "source": "CPS Series Master, July 2026",
     "asOf": "July 2026"
   },
-  "priceSource": "CPS Series Master, July 2026"
+  "priceSource": "CPS Series Master, July 2026",
+  "photoLabels": [
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression"
+  ],
+  "floorPlanLabels": [
+    "Duplex Lower Level : 27th & 29th Floor",
+    "Duplex Upper Level : 28th & 30th Floor",
+    "Floor Plan with Refuge Area : 6th, 10th, 14th, 18th 22nd & 26th Floor",
+    "BLOCK - A & B TYPICAL 4 BHK",
+    "BLOCK - C TYPICAL 5 BHK",
+    "BLOCK - D TYPICAL 5 BHK",
+    "BLOCK - A DUPLEX LOWER 5 BHK",
+    "BLOCK - A DUPLEX UPPER 5 BHK",
+    "BLOCK - C DUPLEX LOWER 5 BHK",
+    "BLOCK - C DUPLEX UPPER 5 BHK"
+  ],
+  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "developerSite": {
+    "url": "https://www.adanirealty.com/residential-projects/ahmedabad/belrosa",
+    "fetched": "2026-09-20",
+    "configuration": "4 & 5 BHK Apartment | 5 & 6 BHK Duplex",
+    "possessionDate": "30/09/2030",
+    "reraCarpetRange": null,
+    "projectArea": "7395.30 Sq. Mtrs.",
+    "reraFull": "PR/GJ/GANDHINAGAR/GANDHINAGAR/Ahmedabad Urban Development Authority/RAA15538/180725/310530",
+    "startingPrice": "Available on Request",
+    "faqCount": 6
+  }
 }

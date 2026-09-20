@@ -56,7 +56,16 @@ export interface Project {
   locationInTownship?: string;
   distancesFromZeroCircle?: { to: string; km: number }[];
   photos: string[];
+  /** Per-photo label from the developer site: "Actual Image" | "Artistic Impression" | amenity name. */
+  photoLabels?: string[];
   floorPlans: string[];
+  floorPlanLabels?: string[];
+  imageSource?: string;
+  /** Facts as shown on the developer's project page, with the fetch date. */
+  developerSite?: {
+    url: string; fetched: string; configuration?: string; possessionDate?: string; reraCarpetRange?: string;
+    projectArea?: string; reraFull?: string; reraFullNote?: string; startingPrice?: string | null; faqCount?: number;
+  };
   dataGaps: string[];
   sources: string[];
 }
@@ -139,5 +148,18 @@ export function sizeRange(p: Project): string | undefined {
   return lo === hi ? `${Math.round(lo).toLocaleString('en-IN')} ${unit}` : `${Math.round(lo).toLocaleString('en-IN')} to ${Math.round(hi).toLocaleString('en-IN')} ${unit}`;
 }
 export const isReady = (p: Project) => /ready/i.test(p.status);
+/** "31/12/2028" | "30-03-2030" → "Dec 2028"; anything else passes through. */
+export function fmtSiteDate(d?: string | null): string | undefined {
+  if (!d) return undefined;
+  const m = d.match(/^(\d{1,2})[\/-](\d{1,2})[\/-](\d{4})$/);
+  if (!m) return d;
+  return new Date(Number(m[3]), Number(m[2]) - 1, 1).toLocaleDateString('en-IN', { month: 'short', year: 'numeric' });
+}
+/** Possession for tables: the developer site's declared date when it is a date, else the fact-sheet estimate. */
+export function possessionLabel(p: Project): string {
+  const d = fmtSiteDate(p.developerSite?.possessionDate);
+  if (isReady(p)) return p.possession.replace(/ \(.*\)$/, '');
+  return d && /\d{4}/.test(d) ? `${d} (RERA declared)` : p.possession.replace(' (from July 2026)', '');
+}
 export const typeLabel = (p: Project) => ({ apartment: 'Apartments', villa: 'Villas', plotted: 'Plots', 'row house': 'Row houses' }[p.projectType]);
 export { num };

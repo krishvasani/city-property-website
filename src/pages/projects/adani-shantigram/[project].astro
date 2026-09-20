@@ -16,7 +16,8 @@ interface Props { p: Project }
 const { p } = Astro.props;
 const c = projectContent(p);
 const url = `${site.url}${projectPath(p)}`;
-const galleryPhotos = p.photos.map((u, i) => ({ url: u, alt: `${p.name} — developer render ${i + 1}`, label: 'Developer render' }));
+const kind = (i: number) => { const l = (p.photoLabels?.[i] ?? '').toLowerCase(); return l.includes('actual') ? 'actual photo' : l.includes('artistic') || l === 'tour360' || !l ? 'developer render' : `${p.photoLabels![i]} (developer image)`; };
+const galleryPhotos = p.photos.map((u, i) => ({ url: u, alt: `${p.name}, Adani Shantigram — ${kind(i)}`, label: kind(i) === 'actual photo' ? 'Actual image' : 'Artistic impression' }));
 const cell = (cfg: any, key: string) => {
   const v = cfg[key];
   if (v === undefined || v === null) return '—';
@@ -71,7 +72,7 @@ const cell = (cfg: any, key: string) => {
       {p.priceNote && (
         <p class="small muted" style="margin-top:10px;max-width:72ch;">{p.priceNote}</p>
       )}
-      <p class="small muted" style="margin-top:6px;max-width:72ch;">Price source: {p.priceSource}.</p>
+      <p class="small muted" style="margin-top:6px;max-width:72ch;">Price source: {p.priceSource}.{p.developerSite?.startingPrice && !/request/i.test(p.developerSite.startingPrice) ? ` The developer's project page listed a starting price of ${p.developerSite.startingPrice.replace(/\s+/g, ' ')} when checked on ${new Date(p.developerSite.fetched).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}.` : ''}</p>
     </section>
 
     <section class="proj-specs">
@@ -95,9 +96,9 @@ const cell = (cfg: any, key: string) => {
     {p.floorPlans.length > 0 && (
       <section class="proj-plans">
         <h2>Floor plans and layouts</h2>
-        <p class="muted" style="margin:6px 0 14px;">Developer drawings from the project brochure. Areas on the drawings are indicative; the RERA carpet figures in the table above govern.</p>
+        <p class="muted" style="margin:6px 0 14px;">Developer drawings from the project page. Areas on the drawings are indicative; the RERA carpet figures in the table above govern.</p>
         <div class="plan-grid">
-          {p.floorPlans.map((u, i) => <a href={u} target="_blank" rel="noopener"><img src={u} alt={`${p.name} floor plan ${i + 1}`} loading="lazy" /></a>)}
+          {p.floorPlans.map((u, i) => <a href={u} target="_blank" rel="noopener"><img src={u} alt={`${p.name} — ${p.floorPlanLabels?.[i] || `floor plan ${i + 1}`}`} loading="lazy" />{p.floorPlanLabels?.[i] && <span class="plan-label">{p.floorPlanLabels[i]}</span>}</a>)}
         </div>
       </section>
     )}
@@ -168,6 +169,7 @@ const cell = (cfg: any, key: string) => {
   .amen-list li { padding: 8px 12px; background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r); font-size: 14px; }
   .plan-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
   .plan-grid img { width: 100%; border: 1px solid var(--hairline); border-radius: var(--r); background: #fff; display: block; }
+  .plan-label { display: block; font-size: 12.5px; color: var(--text-muted); margin-top: 4px; }
   .sib-group { margin-top: 14px; }
   .sib-group h3 { font-size: 16px; margin-bottom: 6px; }
   .sib-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-size: 14.5px; }

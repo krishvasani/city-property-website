@@ -91,7 +91,15 @@
   ],
   "floorPlans": [
     "/uploads/projects/shantigram/the-storeys-golf-coast/floor-plans/plan-01.jpg",
-    "/uploads/projects/shantigram/the-storeys-golf-coast/floor-plans/plan-02.jpg"
+    "/uploads/projects/shantigram/the-storeys-golf-coast/floor-plans/plan-02.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/floor-plans/plan-03.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/floor-plans/plan-04.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/floor-plans/plan-05.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/floor-plans/plan-06.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/floor-plans/plan-07.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/floor-plans/plan-08.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/floor-plans/plan-09.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/floor-plans/plan-10.jpg"
   ],
   "developer": "Adani Realty",
   "township": "Adani Shantigram",
@@ -109,5 +117,41 @@
     "asOf": "July 2026"
   },
   "priceSource": "CPS Series Master, July 2026",
-  "priceNote": "Project-level band from the CPS Series Master; the developer has not published per-configuration prices. Consistent with the developer’s proposed rate sheet effective 17 July 2026 (₹8,000 per sq ft on indicative super built-up area)."
+  "priceNote": "Project-level band from the CPS Series Master; the developer has not published per-configuration prices. Consistent with the developer’s proposed rate sheet effective 17 July 2026 (₹8,000 per sq ft on indicative super built-up area).",
+  "photoLabels": [
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression"
+  ],
+  "floorPlanLabels": [
+    "Amenities Plan 1",
+    "Amenities Plan 2",
+    "Amenities Plan 3",
+    "South Tower 4 BHK Plan",
+    "North Tower Type A 5 BHK Duplex Plan Lower Level",
+    "North Tower Type A 5 BHK Duplex  Plan Upper Level",
+    "North Tower Type B 5 BHK Duplex  Plan Lower Level",
+    "North Tower Type B 5 BHK Duplex Plan Upper Level",
+    "Master layout",
+    "Master layout"
+  ],
+  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "developerSite": {
+    "url": "https://www.adanirealty.com/residential-projects/ahmedabad/the-storeys-golf-coast",
+    "fetched": "2026-09-20",
+    "configuration": "4 BHK - Simplex /            / 5 BHK - Duplex",
+    "possessionDate": "31/12/2028",
+    "reraCarpetRange": "3500.74 - 6466.41 Sq. Ft.",
+    "projectArea": "4950.22 Sq. Mtrs.",
+    "reraFull": "RERA No. RAA14971/170325/311228",
+    "startingPrice": "Available on Request",
+    "faqCount": 12
+  }
 }

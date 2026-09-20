@@ -52,9 +52,15 @@
     "/uploads/projects/shantigram/paarijat/photos/photo-08.jpg",
     "/uploads/projects/shantigram/paarijat/photos/photo-09.jpg",
     "/uploads/projects/shantigram/paarijat/photos/photo-10.jpg",
-    "/uploads/projects/shantigram/paarijat/photos/photo-11.jpg"
+    "/uploads/projects/shantigram/paarijat/photos/photo-11.jpg",
+    "/uploads/projects/shantigram/paarijat/photos/photo-12.jpg",
+    "/uploads/projects/shantigram/paarijat/photos/photo-13.jpg",
+    "/uploads/projects/shantigram/paarijat/photos/photo-14.jpg"
   ],
-  "floorPlans": [],
+  "floorPlans": [
+    "/uploads/projects/shantigram/paarijat/floor-plans/plan-01.jpg",
+    "/uploads/projects/shantigram/paarijat/floor-plans/plan-02.jpg"
+  ],
   "developer": "Adani Realty",
   "township": "Adani Shantigram",
   "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
@@ -70,5 +76,37 @@
     "source": "CPS Series Master, July 2026",
     "asOf": "July 2026"
   },
-  "priceSource": "CPS Series Master, July 2026"
+  "priceSource": "CPS Series Master, July 2026",
+  "photoLabels": [
+    "Artistic Impression",
+    "Video",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image"
+  ],
+  "floorPlanLabels": [
+    "1st Floor Plan",
+    "2nd Floor Plan"
+  ],
+  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "developerSite": {
+    "url": "https://www.adanirealty.com/residential-projects/ahmedabad/paarijat",
+    "fetched": "2026-09-20",
+    "configuration": "4 BHK Premium Homes",
+    "possessionDate": "BU Received",
+    "reraCarpetRange": "1,405 - 1,608 Sq. Ft.",
+    "projectArea": "6202.98 Sq. Mtrs.",
+    "reraFull": "PR/GJ/GANDHINAGAR/GANDHINAGAR/AUDA/RAA10759/121022",
+    "startingPrice": "₹ 2.49 Cr (all incl.)",
+    "faqCount": 8
+  }
 }

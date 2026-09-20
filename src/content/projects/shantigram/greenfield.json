@@ -56,12 +56,22 @@
     "/uploads/projects/shantigram/greenfield/photos/photo-06.jpg",
     "/uploads/projects/shantigram/greenfield/photos/photo-07.jpg",
     "/uploads/projects/shantigram/greenfield/photos/photo-08.jpg",
-    "/uploads/projects/shantigram/greenfield/photos/photo-09.jpg"
+    "/uploads/projects/shantigram/greenfield/photos/photo-09.jpg",
+    "/uploads/projects/shantigram/greenfield/photos/photo-10.jpg",
+    "/uploads/projects/shantigram/greenfield/photos/photo-11.jpg",
+    "/uploads/projects/shantigram/greenfield/photos/photo-12.jpg"
   ],
   "floorPlans": [
     "/uploads/projects/shantigram/greenfield/floor-plans/plan-01.jpg",
     "/uploads/projects/shantigram/greenfield/floor-plans/plan-02.jpg",
-    "/uploads/projects/shantigram/greenfield/floor-plans/plan-03.jpg"
+    "/uploads/projects/shantigram/greenfield/floor-plans/plan-03.jpg",
+    "/uploads/projects/shantigram/greenfield/floor-plans/plan-04.jpg",
+    "/uploads/projects/shantigram/greenfield/floor-plans/plan-05.jpg",
+    "/uploads/projects/shantigram/greenfield/floor-plans/plan-06.jpg",
+    "/uploads/projects/shantigram/greenfield/floor-plans/plan-07.jpg",
+    "/uploads/projects/shantigram/greenfield/floor-plans/plan-08.jpg",
+    "/uploads/projects/shantigram/greenfield/floor-plans/plan-09.jpg",
+    "/uploads/projects/shantigram/greenfield/floor-plans/plan-10.jpg"
   ],
   "developer": "Adani Realty",
   "township": "Adani Shantigram",
@@ -78,5 +88,43 @@
     "source": "CPS Series Master, July 2026",
     "asOf": "July 2026"
   },
-  "priceSource": "CPS Series Master, July 2026"
+  "priceSource": "CPS Series Master, July 2026",
+  "photoLabels": [
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Grocery Store",
+    "Medicare Centre",
+    "Swimming Pool",
+    "Children’s Play Area",
+    "Mini Theatre"
+  ],
+  "floorPlanLabels": [
+    "1st Floor  Plan",
+    "2nd to 19th Floor Plan",
+    "20th Floor Plan",
+    "21st Floor Plan",
+    "Unit 101 Plan",
+    "Unit 102 Plan",
+    "Unit 103 Plan",
+    "Unit 104 Plan",
+    "2nd to 19th Floor Unit 201 Plan",
+    "2nd to 19th Floor Unit 202 Typical Unit Plan"
+  ],
+  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "developerSite": {
+    "url": "https://www.adanirealty.com/residential-projects/ahmedabad/greenfield",
+    "fetched": "2026-09-20",
+    "configuration": "3 BHK Apartment & 4 BHK Penthouse",
+    "possessionDate": "31/12/2029",
+    "reraCarpetRange": "1277.89 Sq. Ft. - 2163.33 Sq. Ft.",
+    "projectArea": "9164.00 Sq. Mtrs.",
+    "reraFull": "RERA No. RAA14879/250225/311229",
+    "startingPrice": "₹ 1.73 Cr. Onwards*",
+    "faqCount": 12
+  }
 }

@@ -50,11 +50,15 @@
     "/uploads/projects/shantigram/skyline/photos/photo-05.jpg",
     "/uploads/projects/shantigram/skyline/photos/photo-06.jpg",
     "/uploads/projects/shantigram/skyline/photos/photo-07.jpg",
-    "/uploads/projects/shantigram/skyline/photos/photo-08.jpg",
-    "/uploads/projects/shantigram/skyline/photos/photo-09.jpg"
+    "/uploads/projects/shantigram/skyline/photos/photo-08.jpg"
   ],
   "floorPlans": [
-    "/uploads/projects/shantigram/skyline/floor-plans/plan-01.jpg"
+    "/uploads/projects/shantigram/skyline/floor-plans/plan-01.jpg",
+    "/uploads/projects/shantigram/skyline/floor-plans/plan-02.jpg",
+    "/uploads/projects/shantigram/skyline/floor-plans/plan-03.jpg",
+    "/uploads/projects/shantigram/skyline/floor-plans/plan-04.jpg",
+    "/uploads/projects/shantigram/skyline/floor-plans/plan-05.jpg",
+    "/uploads/projects/shantigram/skyline/floor-plans/plan-06.jpg"
   ],
   "developer": "Adani Realty",
   "township": "Adani Shantigram",
@@ -71,5 +75,35 @@
     "source": "CPS Series Master, July 2026",
     "asOf": "July 2026"
   },
-  "priceSource": "CPS Series Master, July 2026"
+  "priceSource": "CPS Series Master, July 2026",
+  "photoLabels": [
+    "Artistic Impression",
+    "Indoor",
+    "Indoor",
+    "Golf Living",
+    "Swimming Pool with Deck",
+    "Yoga Deck",
+    "Children's Play Area",
+    "Event Lawn"
+  ],
+  "floorPlanLabels": [
+    "Skyline Ground floor Plan",
+    "Skyline Typical Floor Plan",
+    "Skyline Typical Unit Plan",
+    "Skyline Penthouse Lower Level",
+    "Skyline Penthouse Upper Level",
+    "Master layout"
+  ],
+  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "developerSite": {
+    "url": "https://www.adanirealty.com/residential-projects/ahmedabad/skyline",
+    "fetched": "2026-09-20",
+    "configuration": "4 BHK",
+    "possessionDate": "30/09/2029",
+    "reraCarpetRange": null,
+    "projectArea": "8300.24 Sq. Mtrs.",
+    "reraFull": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/Ahmedabad Urban Development Authority/RAA14084/020924/300929",
+    "startingPrice": "Rs. 1.95 Cr. (all-incl.)",
+    "faqCount": 10
+  }
 }

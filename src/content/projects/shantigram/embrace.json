@@ -62,7 +62,9 @@
     "/uploads/projects/shantigram/embrace/photos/photo-09.jpg",
     "/uploads/projects/shantigram/embrace/photos/photo-10.jpg",
     "/uploads/projects/shantigram/embrace/photos/photo-11.jpg",
-    "/uploads/projects/shantigram/embrace/photos/photo-12.jpg"
+    "/uploads/projects/shantigram/embrace/photos/photo-12.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-13.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-14.jpg"
   ],
   "floorPlans": [
     "/uploads/projects/shantigram/embrace/floor-plans/plan-01.jpg",
@@ -71,7 +73,10 @@
     "/uploads/projects/shantigram/embrace/floor-plans/plan-04.jpg",
     "/uploads/projects/shantigram/embrace/floor-plans/plan-05.jpg",
     "/uploads/projects/shantigram/embrace/floor-plans/plan-06.jpg",
-    "/uploads/projects/shantigram/embrace/floor-plans/plan-07.jpg"
+    "/uploads/projects/shantigram/embrace/floor-plans/plan-07.jpg",
+    "/uploads/projects/shantigram/embrace/floor-plans/plan-08.jpg",
+    "/uploads/projects/shantigram/embrace/floor-plans/plan-09.jpg",
+    "/uploads/projects/shantigram/embrace/floor-plans/plan-10.jpg"
   ],
   "developer": "Adani Realty",
   "township": "Adani Shantigram",
@@ -88,5 +93,45 @@
     "source": "CPS Series Master, July 2026",
     "asOf": "July 2026"
   },
-  "priceSource": "CPS Series Master, July 2026"
+  "priceSource": "CPS Series Master, July 2026",
+  "photoLabels": [
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression"
+  ],
+  "floorPlanLabels": [
+    "3 BHK - Block A, B, D & E",
+    "3 BHK  Block A, B ,D & E  First Floor",
+    "3 BHK  Block C  Floors 1, 2, 4, 6, 8, 10 & 11",
+    "3 BHK - Block C  Floors 3, 5, 7 &  9",
+    "3 BHK - Block C - Penthouse - Lower Level - 12th Floor",
+    "3 BHK - Block C - Penthouse - Lower Lever - 12th Floor",
+    "3 BHK - Block C - Penthouse - Upper Level - 13th Floor",
+    "3 BHK  Block C  Unit Plan 1  Floors 1 2 4 6 8 10  11",
+    "3 BHK  Block C  Unit Plan 2  Typical Floor  3 5 7  9",
+    "3 BHK - Block C Penthouse - Upper Level - 13th Floor"
+  ],
+  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "developerSite": {
+    "url": "https://www.adanirealty.com/residential-projects/ahmedabad/embrace",
+    "fetched": "2026-09-20",
+    "configuration": "3 BHK Lifestyle Homes",
+    "possessionDate": "30/11/2027",
+    "reraCarpetRange": "987.91 - 2238.139 Sq. Ft.",
+    "projectArea": "9164 Sq. Mtrs.",
+    "reraFull": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA12526/251023",
+    "startingPrice": "₹ 1.42 Cr. (all-incl.)",
+    "faqCount": 8
+  }
 }

@@ -51,7 +51,7 @@ const groups = [
 
     <section class="shg-table">
       <h2>All {projects.length} projects at a glance</h2>
-      <p class="muted" style="margin:6px 0 16px;max-width:72ch;">Sorted by entry price. Size is the RERA carpet range for apartments and the plot range for villas and plots. Prices are all-inclusive developer quotes as of July 2026; “On request” means the developer has not published a figure.</p>
+      <p class="muted" style="margin:6px 0 16px;max-width:72ch;">Sorted by entry price. Size is the RERA carpet range for apartments and the plot range for villas and plots. Prices are all-inclusive bands from City Property Services' July 2026 price master. Possession shows the RERA-declared date from the developer's project page where one is published (checked 20 September 2026), otherwise the fact-sheet estimate.</p>
       <div class="table-wrap">
         <table class="cmp-table">
           <thead>
@@ -156,7 +156,7 @@ const groups = [
   .proj-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
   .proj-card { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--shadow-xs); transition: transform var(--t) var(--ease), box-shadow var(--t) var(--ease); }
   .proj-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
-  .proj-card img, .proj-card .ph { aspect-ratio: 16 / 10; width: 100%; object-fit: cover; display: block; }
+  .proj-card img, .proj-card .ph { aspect-ratio: 16 / 10; width: 100%; object-fit: cover; object-position: center 25%; display: block; }
   .proj-card-body { display: flex; flex-direction: column; gap: 3px; padding: 12px 14px 14px; }
   .proj-card-name { font-weight: 700; color: var(--ink); font-size: 16px; }
   .proj-card-meta { font-size: 13.5px; color: var(--text); }

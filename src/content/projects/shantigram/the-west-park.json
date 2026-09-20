@@ -60,11 +60,14 @@
     "/uploads/projects/shantigram/the-west-park/photos/photo-07.jpg",
     "/uploads/projects/shantigram/the-west-park/photos/photo-08.jpg",
     "/uploads/projects/shantigram/the-west-park/photos/photo-09.jpg",
-    "/uploads/projects/shantigram/the-west-park/photos/photo-10.jpg"
+    "/uploads/projects/shantigram/the-west-park/photos/photo-10.jpg",
+    "/uploads/projects/shantigram/the-west-park/photos/photo-11.jpg",
+    "/uploads/projects/shantigram/the-west-park/photos/photo-12.jpg",
+    "/uploads/projects/shantigram/the-west-park/photos/photo-13.jpg",
+    "/uploads/projects/shantigram/the-west-park/photos/photo-14.jpg"
   ],
   "floorPlans": [
-    "/uploads/projects/shantigram/the-west-park/floor-plans/plan-01.jpg",
-    "/uploads/projects/shantigram/the-west-park/floor-plans/plan-02.jpg"
+    "/uploads/projects/shantigram/the-west-park/floor-plans/plan-01.jpg"
   ],
   "developer": "Adani Realty",
   "township": "Adani Shantigram",
@@ -80,5 +83,36 @@
     "source": "CPS Series Master, July 2026",
     "asOf": "July 2026"
   },
-  "priceSource": "CPS Series Master, July 2026"
+  "priceSource": "CPS Series Master, July 2026",
+  "photoLabels": [
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image"
+  ],
+  "floorPlanLabels": [
+    "Master layout"
+  ],
+  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "developerSite": {
+    "url": "https://www.adanirealty.com/residential-projects/ahmedabad/the-west-park",
+    "fetched": "2026-09-20",
+    "configuration": "Villas",
+    "possessionDate": null,
+    "reraCarpetRange": "Starting  3,853.48 Sq. Ft.",
+    "projectArea": "38,827.5 Sq. Mtrs.",
+    "reraFull": "PR/GJ/GANDHINAGAR/GANDHINAGAR/AUDA/RAA11300/020323",
+    "startingPrice": "Available on Request",
+    "faqCount": 8
+  }
 }

@@ -56,9 +56,25 @@
     "/uploads/projects/shantigram/amora/photos/photo-06.jpg",
     "/uploads/projects/shantigram/amora/photos/photo-07.jpg",
     "/uploads/projects/shantigram/amora/photos/photo-08.jpg",
-    "/uploads/projects/shantigram/amora/photos/photo-09.jpg"
+    "/uploads/projects/shantigram/amora/photos/photo-09.jpg",
+    "/uploads/projects/shantigram/amora/photos/photo-10.jpg",
+    "/uploads/projects/shantigram/amora/photos/photo-11.jpg",
+    "/uploads/projects/shantigram/amora/photos/photo-12.jpg",
+    "/uploads/projects/shantigram/amora/photos/photo-13.jpg",
+    "/uploads/projects/shantigram/amora/photos/photo-14.jpg"
   ],
-  "floorPlans": [],
+  "floorPlans": [
+    "/uploads/projects/shantigram/amora/floor-plans/plan-01.jpg",
+    "/uploads/projects/shantigram/amora/floor-plans/plan-02.jpg",
+    "/uploads/projects/shantigram/amora/floor-plans/plan-03.jpg",
+    "/uploads/projects/shantigram/amora/floor-plans/plan-04.jpg",
+    "/uploads/projects/shantigram/amora/floor-plans/plan-05.jpg",
+    "/uploads/projects/shantigram/amora/floor-plans/plan-06.jpg",
+    "/uploads/projects/shantigram/amora/floor-plans/plan-07.jpg",
+    "/uploads/projects/shantigram/amora/floor-plans/plan-08.jpg",
+    "/uploads/projects/shantigram/amora/floor-plans/plan-09.jpg",
+    "/uploads/projects/shantigram/amora/floor-plans/plan-10.jpg"
+  ],
   "developer": "Adani Realty",
   "township": "Adani Shantigram",
   "address": "Adani Shantigram, Vaishnodevi Circle, SG Highway, Ahmedabad",
@@ -74,5 +90,45 @@
     "source": "CPS Series Master, July 2026",
     "asOf": "July 2026"
   },
-  "priceSource": "CPS Series Master, July 2026"
+  "priceSource": "CPS Series Master, July 2026",
+  "photoLabels": [
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image",
+    "Actual Image"
+  ],
+  "floorPlanLabels": [
+    "Ground Floor Plan",
+    "First Floor Plan",
+    "Second Floor Plan",
+    "Third Floor Plan",
+    "Typical Floor Plan - 4th-8th-12th",
+    "Floor Plan - 5th -7th - 9th -11th -13th",
+    "Floor Plan - 6th-10th",
+    "Block A - 101 Unit Plan",
+    "Block A - 302 Unit Plan",
+    "Block A - 303 Unit Plan"
+  ],
+  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "developerSite": {
+    "url": "https://www.adanirealty.com/residential-projects/ahmedabad/amora",
+    "fetched": "2026-09-20",
+    "configuration": "3 BHK Apartments & Retail Spaces",
+    "possessionDate": "30-03-2030",
+    "reraCarpetRange": null,
+    "projectArea": "4006.388 Sq. Mtrs.",
+    "reraFull": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/Ahmedabad Urban Development Authority/MAA16481/190226/301129",
+    "startingPrice": "1.45 Cr. (all incl.)",
+    "faqCount": 9
+  }
 }
