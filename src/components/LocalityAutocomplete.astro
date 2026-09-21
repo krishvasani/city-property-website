@@ -127,12 +127,26 @@ const blob = (s: string[]) => s.filter(Boolean).join(' ').toLowerCase();
       const selName = (opts.find((o) => o.dataset.id === ac.dataset.selectedId)?.dataset.name || '').toLowerCase();
       // typing query: if it equals the current selection name, show everything
       const eff = q === selName ? '' : q;
+      // Dynamic matching: every typed word must appear somewhere in the
+      // option's name, aliases, region or keywords, in any order
+      // ("adani shantigram", "shantigram adani", "gift gandhinagar").
+      const words = eff.split(/\s+/).filter(Boolean);
       let shown = 0;
       opts.forEach((o) => {
-        const match = !eff || (o.dataset.search || '').includes(eff);
+        const hay = o.dataset.search || '';
+        const match = !words.length || words.every((w) => hay.includes(w));
         o.style.display = match ? '' : 'none';
         if (match) shown++;
       });
+      // Best match first: options whose name starts with the query float up.
+      if (words.length) {
+        const q = words.join(' ');
+        const rank = (o: HTMLElement) => { const n = (o.dataset.name || '').toLowerCase(); return n === q ? 0 : n.startsWith(q) ? 1 : n.includes(q) ? 2 : 3; };
+        groups.forEach((g) => {
+          const list = g.querySelector('.loc-list') || g;
+          Array.from(list.querySelectorAll<HTMLElement>('.loc-opt')).sort((a, b) => rank(a) - rank(b)).forEach((o) => list.appendChild(o));
+        });
+      }
       groups.forEach((g) => {
         const any = Array.from(g.querySelectorAll<HTMLElement>('.loc-opt')).some((o) => o.style.display !== 'none');
         g.style.display = any ? '' : 'none';
@@ -159,8 +173,19 @@ const blob = (s: string[]) => s.filter(Boolean).join(' ').toLowerCase();
         vis[active]?.classList.add('is-active');
         vis[active]?.scrollIntoView({ block: 'nearest' });
       } else if (e.key === 'Enter') {
-        if (active >= 0 && vis[active]) { e.preventDefault(); select(vis[active].dataset.id!, vis[active].dataset.name!); close(); }
+        // Enter takes the highlighted option, or the best match for what was
+        // typed ("adani shantigram" → Shantigram) when nothing is highlighted.
+        const pick = active >= 0 ? vis[active] : (input.value.trim() && !ac.dataset.selectedId ? vis[0] : undefined);
+        if (pick) { e.preventDefault(); select(pick.dataset.id!, pick.dataset.name!); close(); }
       } else if (e.key === 'Escape') { close(); }
+    });
+    // Submitting the surrounding form with text typed but no option chosen:
+    // resolve it to the best match so the search never silently drops it.
+    input.closest('form')?.addEventListener('submit', () => {
+      if (ac.dataset.selectedId || !input.value.trim()) return;
+      filter();
+      const first = visible()[0];
+      if (first) select(first.dataset.id!, first.dataset.name!, false);
     });
     opts.forEach((o) =>
       o.addEventListener('mousedown', (e) => {

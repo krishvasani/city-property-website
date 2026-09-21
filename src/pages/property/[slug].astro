@@ -177,7 +177,7 @@ const graph = propertyGraph(property, { url: propUrl, seo, breadcrumbs });
         {property.status === 'sale' && (
           <div class="block reveal">
             <h3>Estimate your monthly EMI</h3>
-            <EmiCard priceValue={property.priceValue} />
+            <EmiCard priceValue={property.priceValue} priceDisplay={property.priceDisplay} />
           </div>
         )}
 

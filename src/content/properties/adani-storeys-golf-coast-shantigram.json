@@ -5,8 +5,8 @@
   "propertyType": "apartment",
   "featured": false,
   "draft": false,
-  "priceDisplay": "Price on request",
-  "priceOnRequest": true,
+  "priceDisplay": "₹5.62 to 7.02 Cr",
+  "priceOnRequest": false,
   "localityName": "Shantigram",
   "localitySlug": "shantigram",
   "city": "Ahmedabad",
@@ -104,5 +104,6 @@
   "geo": {
     "lat": 23.15488,
     "lng": 72.53995
-  }
+  },
+  "priceValue": 56200000
 }

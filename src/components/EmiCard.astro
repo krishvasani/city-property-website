@@ -3,11 +3,14 @@ import { emiMonthly, formatINRShort } from '../lib/format';
 
 interface Props {
   priceValue?: number;
+  /** The price as shown on the page, e.g. "₹5.38 to 18.04 Cr" — shown as a hint when it is a range. */
+  priceDisplay?: string;
   rate?: number;
   years?: number;
   ltv?: number; // loan-to-value %
 }
-const { priceValue = 14_500_000, rate = 8.5, years = 20, ltv = 80 } = Astro.props;
+const { priceValue = 14_500_000, priceDisplay, rate = 8.5, years = 20, ltv = 80 } = Astro.props;
+const isRange = !!priceDisplay && /\bto\b|onwards|from/i.test(priceDisplay);
 
 const loan = (priceValue * ltv) / 100;
 const emi = Math.round(emiMonthly(loan, rate, years));
@@ -26,6 +29,11 @@ const loanDisplay = formatINRShort(loan);
     </div>
 
     <div class="emi-calc">
+      <label class="emi-ctl emi-price">
+        <span>Property price <b data-out="price">{formatINRShort(priceValue)}</b></span>
+        <input type="text" name="price" inputmode="decimal" value={formatINRShort(priceValue).replace('₹', '')} aria-label="Property price" autocomplete="off" />
+        <small class="muted">{isRange ? `Listed at ${priceDisplay} — enter the quote for your unit (e.g. 6.5 Cr or 65000000).` : 'Edit to try a different price (e.g. 1.2 Cr, 85 L or 8500000).'}</small>
+      </label>
       <label class="emi-ctl">
         <span>Interest rate <b data-out="rate">{rate}%</b></span>
         <input type="range" name="rate" min="6" max="12" step="0.1" value={rate} />
@@ -55,6 +63,9 @@ const loanDisplay = formatINRShort(loan);
   .emi-ctl > span { display: flex; justify-content: space-between; gap: 10px; }
   .emi-ctl b { color: var(--ink); font-weight: 600; }
   .emi-ctl input[type="range"] { width: 100%; accent-color: var(--navy); }
+  .emi-price input[type="text"] { width: 100%; padding: 9px 12px; border: 1px solid var(--border); border-radius: var(--r-sm); font: inherit; font-size: 15px; font-weight: 600; color: var(--ink); background: var(--surface); }
+  .emi-price input[type="text"]:focus { outline: 2px solid var(--navy); outline-offset: 1px; }
+  .emi-price small { font-size: 12px; line-height: 1.4; }
   /* stack on narrow columns / mobile */
   @media (max-width: 620px) { .emi-grid { grid-template-columns: 1fr; gap: 20px; } }
 </style>
@@ -70,8 +81,18 @@ const loanDisplay = formatINRShort(loan);
     const pow = Math.pow(1 + r, n);
     return (p * r * pow) / (pow - 1);
   }
+  // "6.5 Cr", "85 L", "85 lakh", "₹65,00,000", "6500000" → rupees
+  function parsePrice(raw: string): number {
+    const t = raw.toLowerCase().replace(/[₹,\s]/g, '');
+    const m = t.match(/^([\d.]+)(cr|crore|crores|l|lac|lacs|lakh|lakhs)?$/);
+    if (!m) return NaN;
+    const n = parseFloat(m[1]); const u = m[2] || '';
+    return u.startsWith('cr') ? n * 1e7 : u ? n * 1e5 : n;
+  }
   document.querySelectorAll<HTMLElement>('[data-emi]').forEach((card) => {
-    const price = parseFloat(card.getAttribute('data-price') || '0');
+    let price = parseFloat(card.getAttribute('data-price') || '0');
+    const priceInput = card.querySelector<HTMLInputElement>('input[name="price"]');
+    const priceOut = card.querySelector('[data-out="price"]');
     const valueEl = card.querySelector('[data-emi-value]');
     const termsEl = card.querySelector('[data-emi-terms]');
     const loanEl = card.querySelector('[data-emi-loan]');
@@ -93,5 +114,12 @@ const loanDisplay = formatINRShort(loan);
       card.querySelector('[data-out="ltv"]')!.textContent = `${ltv}%`;
     };
     inputs.forEach((i) => i.addEventListener('input', recompute));
+    priceInput?.addEventListener('input', () => {
+      const v = parsePrice(priceInput.value);
+      if (!isFinite(v) || v <= 0) { priceInput.setAttribute('aria-invalid', 'true'); return; }
+      priceInput.removeAttribute('aria-invalid');
+      price = v; priceOut && (priceOut.textContent = fmtShort(v)); recompute();
+    });
+    priceInput?.addEventListener('blur', () => { if (isFinite(price) && price > 0) priceInput.value = fmtShort(price).replace('₹', ''); });
   });
 </script>

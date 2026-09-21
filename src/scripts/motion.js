@@ -32,10 +32,13 @@
   }
 
   // Prepare staggered children: hide + assign incremental transition delays
+  // Delay grows with position but is capped, so a long grid (a locality's
+  // 80 listings, a filtered results page) never makes late items wait seconds.
+  const STEP = 60, MAX_DELAY = 420;
   document.querySelectorAll('[data-stagger]').forEach(function (group) {
     Array.from(group.children).forEach(function (child, i) {
       child.classList.add('stagger-item');
-      child.style.transitionDelay = (i * 70) + 'ms';
+      child.style.transitionDelay = Math.min(i * STEP, MAX_DELAY) + 'ms';
     });
   });
 
@@ -49,7 +52,7 @@
         kids.forEach(c => c.classList.add('in'));
         // After the entrance settles, release the stagger styling so the CSS
         // 3D tilt rule can govern transform cleanly (no leftover override).
-        const maxDelay = (kids.length - 1) * 70 + 750;
+        const maxDelay = MAX_DELAY + 750;
         setTimeout(function () {
           kids.forEach(c => { c.classList.remove('stagger-item', 'in'); c.style.transitionDelay = ''; });
         }, maxDelay + 60);

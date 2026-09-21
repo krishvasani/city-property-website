@@ -367,7 +367,7 @@ export const localities: Locality[] = [
   ...build('North Ahmedabad', [
     ['shahibaug', 'Shahibaug', ['residential', 'commercial'], 23.057505, 72.592453, { aliases: ['Shahibag'], priority: 2, popularFor: ['premium residential', 'established neighbourhood'], nearbyAreas: ['naranpura', 'sabarmati', 'dudheshwar'] }],
     ['charodi', 'Charodi', ['residential', 'commercial', 'plots'], 23.124715, 72.538710, { priority: 3, popularFor: ['new offices', 'plots', 'growth corridor'], nearbyAreas: ['vaishnodevi-circle', 'zundal', 'thaltej', 'shilaj'] }],
-    ['shantigram', 'Shantigram', ['residential', 'commercial', 'investment'], 23.16507, 72.53830, { priority: 2, popularFor: ['township living', 'premium apartments', 'lake-facing homes'], nearbyAreas: ['adalaj', 'vaishnodevi-circle', 'zundal'] }],
+    ['shantigram', 'Shantigram', ['residential', 'commercial', 'investment'], 23.16507, 72.53830, { priority: 2, aliases: ['Adani Shantigram', 'Shantigram Township', 'Adani Shantigram Township', 'Adani'], searchKeywords: ['adani shantigram', 'belvedere golf', 'vaishnodevi circle township'], popularFor: ['township living', 'premium apartments', 'lake-facing homes'], nearbyAreas: ['adalaj', 'vaishnodevi-circle', 'zundal'] }],
   ]),
   ...build('Ahmedabad Outskirts', [
     ['jaspur', 'Jaspur', ['residential', 'plots', 'investment'], 23.15156, 72.52500, { priority: 3, popularFor: ['plots', 'new schemes'], nearbyAreas: ['shantigram', 'lapkaman', 'chekhla'] }],

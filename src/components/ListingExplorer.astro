@@ -108,10 +108,29 @@ for (const l of getAllLocalities()) {
         </div>
       </div>
 
-      <div class="results-grid" id="grid" data-stagger>
+      <div class="results-grid" id="grid">
         {properties.map((p) => <PropertyCard property={p} />)}
       </div>
       <script type="application/json" id="locality-tokens" set:html={JSON.stringify(localityTokens)}></script>
+      <!-- First-paint filter: runs as soon as the grid is parsed, before the
+           module script below, so a ?locality=/?type= page never flashes all
+           300+ cards. The module script re-renders with full matching after. -->
+      <script is:inline>
+        (function () {
+          var q = new URLSearchParams(location.search);
+          var loc = q.get('locality') || '', type = q.get('type') || '';
+          var cards = document.querySelectorAll('#grid .prop');
+          var shown = 0;
+          for (var i = 0; i < cards.length; i++) {
+            var c = cards[i];
+            var ok = (!loc || c.getAttribute('data-locality') === loc || (c.getAttribute('data-search') || '').indexOf(loc.replace(/-/g, ' ')) > -1)
+                  && (!type || c.getAttribute('data-category') === type);
+            if (ok && shown < 6) { shown++; } else { c.style.display = 'none'; }
+          }
+          var count = document.getElementById('results-count');
+          if (count && (loc || type)) count.textContent = '…';
+        })();
+      </script>
 
       <p class="no-results" id="no-results" hidden>{emptyText} <button class="btn btn-ghost btn-sm" id="clear-filters">Clear filters</button></p>
 
