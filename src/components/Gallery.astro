@@ -127,6 +127,10 @@ const count = real.length;
       imgs.forEach((im, k) => im.classList.toggle('is-active', k === idx));
       if (curEl) curEl.textContent = String(idx + 1);
     };
+    // The lightbox is position:fixed. Any transformed/animated ancestor
+    // (e.g. <main>'s page-entry rise) would become its containing block and
+    // push the overlay down the page, so it is re-parented to <body> once.
+    if (lb.parentElement !== document.body) document.body.appendChild(lb);
     const open = (i: number) => {
       if (!imgs.length) return;
       show(i);

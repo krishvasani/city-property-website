@@ -444,10 +444,13 @@ img, svg, video, canvas, iframe { max-width: 100%; }
 @keyframes ptIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes ptRise { from { transform: translateY(14px); } to { transform: none; } }
 @media (prefers-reduced-motion: no-preference) {
-  .pt-js body { animation: ptIn .5s var(--ease-out) both; }
+  /* `backwards` fill: the start state applies before the animation runs, and
+     NOTHING is left applied afterwards — a lingering transform on <main>
+     would turn it into the containing block for position:fixed overlays. */
+  .pt-js body { animation: ptIn .5s var(--ease-out) backwards; }
   .pt-js body.pt-leaving { opacity: 0; transition: opacity .26s ease-in; pointer-events: none; animation: none; }
   /* the content gently rises; nav (a sibling of <main>) stays put */
-  .pt-js main { animation: ptRise .6s var(--ease-out) both; }
+  .pt-js main { animation: ptRise .6s var(--ease-out) backwards; }
 }
 
 /* ── Shared layout primitives (also defined per-page; promoted to global so
