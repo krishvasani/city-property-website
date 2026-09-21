@@ -31,13 +31,23 @@
   "photos": [
     {
       "url": "/uploads/properties/adani-west-park-shantigram/photo-1.jpg",
-      "alt": "The West Park, Adani Shantigram — project render",
-      "label": "Project render"
+      "alt": "The West Park, Shantigram — exterior photo",
+      "label": "Project photo"
     },
     {
       "url": "/uploads/properties/adani-west-park-shantigram/photo-2.jpg",
-      "alt": "The West Park, Adani Shantigram — project render",
-      "label": "Project render"
+      "alt": "The West Park, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-west-park-shantigram/photo-3.jpg",
+      "alt": "The West Park, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-west-park-shantigram/photo-4.jpg",
+      "alt": "The West Park, Shantigram — project photo",
+      "label": "Project photo"
     }
   ],
   "mainImage": "/uploads/properties/adani-west-park-shantigram/photo-1.jpg",

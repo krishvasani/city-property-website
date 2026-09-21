@@ -33,13 +33,53 @@
   "photos": [
     {
       "url": "/uploads/properties/adani-storeys-infinity-shantigram/photo-1.jpg",
-      "alt": "The Storeys Infinity, Adani Shantigram — project render",
-      "label": "Project render"
+      "alt": "The Storeys Infinity, Shantigram — exterior photo",
+      "label": "Project photo"
     },
     {
       "url": "/uploads/properties/adani-storeys-infinity-shantigram/photo-2.jpg",
-      "alt": "The Storeys Infinity, Adani Shantigram — project render",
-      "label": "Project render"
+      "alt": "The Storeys Infinity, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-storeys-infinity-shantigram/photo-3.jpg",
+      "alt": "The Storeys Infinity, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-storeys-infinity-shantigram/photo-4.jpg",
+      "alt": "The Storeys Infinity, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-storeys-infinity-shantigram/photo-5.jpg",
+      "alt": "The Storeys Infinity, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-storeys-infinity-shantigram/photo-6.jpg",
+      "alt": "The Storeys Infinity, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-storeys-infinity-shantigram/photo-7.jpg",
+      "alt": "The Storeys Infinity, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-storeys-infinity-shantigram/photo-8.jpg",
+      "alt": "The Storeys Infinity, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-storeys-infinity-shantigram/photo-9.jpg",
+      "alt": "The Storeys Infinity, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-storeys-infinity-shantigram/photo-10.jpg",
+      "alt": "The Storeys Infinity, Shantigram — project photo",
+      "label": "Project photo"
     }
   ],
   "mainImage": "/uploads/properties/adani-storeys-infinity-shantigram/photo-1.jpg",

@@ -33,13 +33,58 @@
   "photos": [
     {
       "url": "/uploads/properties/adani-north-park-shantigram/photo-1.jpg",
-      "alt": "The North Park, Adani Shantigram — project render",
-      "label": "Project render"
+      "alt": "The North Park, Shantigram — exterior photo",
+      "label": "Project photo"
     },
     {
       "url": "/uploads/properties/adani-north-park-shantigram/photo-2.jpg",
-      "alt": "The North Park, Adani Shantigram — project render",
-      "label": "Project render"
+      "alt": "The North Park, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-north-park-shantigram/photo-3.jpg",
+      "alt": "The North Park, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-north-park-shantigram/photo-4.jpg",
+      "alt": "The North Park, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-north-park-shantigram/photo-5.jpg",
+      "alt": "The North Park, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-north-park-shantigram/photo-6.jpg",
+      "alt": "The North Park, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-north-park-shantigram/photo-7.jpg",
+      "alt": "The North Park, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-north-park-shantigram/photo-8.jpg",
+      "alt": "The North Park, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-north-park-shantigram/photo-9.jpg",
+      "alt": "The North Park, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-north-park-shantigram/photo-10.jpg",
+      "alt": "The North Park, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-north-park-shantigram/photo-11.jpg",
+      "alt": "The North Park, Shantigram — project photo",
+      "label": "Project photo"
     }
   ],
   "mainImage": "/uploads/properties/adani-north-park-shantigram/photo-1.jpg",

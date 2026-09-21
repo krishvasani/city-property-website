@@ -33,13 +33,28 @@
   "photos": [
     {
       "url": "/uploads/properties/adani-elysium-novus-shantigram/photo-1.jpg",
-      "alt": "Adani Elysium Novus, Adani Shantigram — project render",
-      "label": "Project render"
+      "alt": "Adani Elysium Novus, Shantigram — exterior photo",
+      "label": "Project photo"
     },
     {
       "url": "/uploads/properties/adani-elysium-novus-shantigram/photo-2.jpg",
-      "alt": "Adani Elysium Novus, Adani Shantigram — project render",
-      "label": "Project render"
+      "alt": "Adani Elysium Novus, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-elysium-novus-shantigram/photo-3.jpg",
+      "alt": "Adani Elysium Novus, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-elysium-novus-shantigram/photo-4.jpg",
+      "alt": "Adani Elysium Novus, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-elysium-novus-shantigram/photo-5.jpg",
+      "alt": "Adani Elysium Novus, Shantigram — project photo",
+      "label": "Project photo"
     }
   ],
   "mainImage": "/uploads/properties/adani-elysium-novus-shantigram/photo-1.jpg",

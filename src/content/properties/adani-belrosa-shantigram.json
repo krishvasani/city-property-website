@@ -33,13 +33,68 @@
   "photos": [
     {
       "url": "/uploads/properties/adani-belrosa-shantigram/photo-1.jpg",
-      "alt": "Adani Belrosa, Adani Shantigram — project render",
-      "label": "Project render"
+      "alt": "Adani Belrosa, Shantigram — exterior photo",
+      "label": "Project photo"
     },
     {
       "url": "/uploads/properties/adani-belrosa-shantigram/photo-2.jpg",
-      "alt": "Adani Belrosa, Adani Shantigram — project render",
-      "label": "Project render"
+      "alt": "Adani Belrosa, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-belrosa-shantigram/photo-3.jpg",
+      "alt": "Adani Belrosa, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-belrosa-shantigram/photo-4.jpg",
+      "alt": "Adani Belrosa, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-belrosa-shantigram/photo-5.jpg",
+      "alt": "Adani Belrosa, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-belrosa-shantigram/photo-6.jpg",
+      "alt": "Adani Belrosa, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-belrosa-shantigram/photo-7.jpg",
+      "alt": "Adani Belrosa, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-belrosa-shantigram/photo-8.jpg",
+      "alt": "Adani Belrosa, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-belrosa-shantigram/photo-9.jpg",
+      "alt": "Adani Belrosa, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-belrosa-shantigram/photo-10.jpg",
+      "alt": "Adani Belrosa, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-belrosa-shantigram/photo-11.jpg",
+      "alt": "Adani Belrosa, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-belrosa-shantigram/photo-12.jpg",
+      "alt": "Adani Belrosa, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-belrosa-shantigram/photo-13.jpg",
+      "alt": "Adani Belrosa, Shantigram — project photo",
+      "label": "Project photo"
     }
   ],
   "mainImage": "/uploads/properties/adani-belrosa-shantigram/photo-1.jpg",

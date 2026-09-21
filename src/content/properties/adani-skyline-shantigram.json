@@ -33,13 +33,18 @@
   "photos": [
     {
       "url": "/uploads/properties/adani-skyline-shantigram/photo-1.jpg",
-      "alt": "Adani Skyline, Adani Shantigram — project render",
-      "label": "Project render"
+      "alt": "Adani Skyline, Shantigram — exterior photo",
+      "label": "Project photo"
     },
     {
       "url": "/uploads/properties/adani-skyline-shantigram/photo-2.jpg",
-      "alt": "Adani Skyline, Adani Shantigram — project render",
-      "label": "Project render"
+      "alt": "Adani Skyline, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-skyline-shantigram/photo-3.jpg",
+      "alt": "Adani Skyline, Shantigram — project photo",
+      "label": "Project photo"
     }
   ],
   "mainImage": "/uploads/properties/adani-skyline-shantigram/photo-1.jpg",

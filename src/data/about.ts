@@ -4,7 +4,7 @@ import { site } from '../lib/config';
 export const aboutIntro = `City Property Services is a trusted Ahmedabad real estate consultancy. We help people and businesses buy, sell, lease, rent and invest in the right properties, with honest advice and steady support from the first conversation to the final handover.`;
 
 export const story = [
-  `Founded in ${site.foundedYear}, we have spent over ${site.yearsInBusiness} years helping clients across Ahmedabad and Gujarat make sound property decisions. In that time the city has grown a lot, and so has the kind of help people need, from a first family home to a corporate office, a warehouse or a long term investment.`,
+  `Founded in ${site.foundedYear}, we have spent ${site.yearsLabel} years helping clients across Ahmedabad and Gujarat make sound property decisions. In that time the city has grown a lot, and so has the kind of help people need, from a first family home to a corporate office, a warehouse or a long term investment.`,
   `Our work is led by Mr. Mukesh Vasani, whose experience and steady judgement shape how we treat every client. He is also one of the founders of CIRIL, a commercial real estate network that works in more than thirty cities across India. That wider reach sits quietly behind the local, personal service you get from our team here in Ahmedabad.`,
   `We are proud of the relationships we have built over the years. A lot of our work comes from clients who return to us, and from the people they refer, which is the kind of trust we try to earn every single day.`,
 ];

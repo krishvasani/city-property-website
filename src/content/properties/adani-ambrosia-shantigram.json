@@ -33,8 +33,48 @@
   "photos": [
     {
       "url": "/uploads/properties/adani-ambrosia-shantigram/photo-1.jpg",
-      "alt": "Adani Ambrosia, Adani Shantigram — project render",
-      "label": "Project render"
+      "alt": "Adani Ambrosia, Shantigram — exterior photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-ambrosia-shantigram/photo-2.jpg",
+      "alt": "Adani Ambrosia, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-ambrosia-shantigram/photo-3.jpg",
+      "alt": "Adani Ambrosia, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-ambrosia-shantigram/photo-4.jpg",
+      "alt": "Adani Ambrosia, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-ambrosia-shantigram/photo-5.jpg",
+      "alt": "Adani Ambrosia, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-ambrosia-shantigram/photo-6.jpg",
+      "alt": "Adani Ambrosia, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-ambrosia-shantigram/photo-7.jpg",
+      "alt": "Adani Ambrosia, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-ambrosia-shantigram/photo-8.jpg",
+      "alt": "Adani Ambrosia, Shantigram — project photo",
+      "label": "Project photo"
+    },
+    {
+      "url": "/uploads/properties/adani-ambrosia-shantigram/photo-9.jpg",
+      "alt": "Adani Ambrosia, Shantigram — project photo",
+      "label": "Project photo"
     }
   ],
   "mainImage": "/uploads/properties/adani-ambrosia-shantigram/photo-1.jpg",
