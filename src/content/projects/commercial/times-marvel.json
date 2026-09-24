@@ -1,0 +1,174 @@
+{
+  "slug": "times-marvel",
+  "name": "Times Marvel",
+  "developer": "Times Square Arcade Group",
+  "address": "Zydus Hospital Road, opposite Narayan Palace, Thaltej, Ahmedabad, Gujarat 380059",
+  "localitySlug": "thaltej",
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.058016,
+    "lng": 72.509282
+  },
+  "rera": null,
+  "reraNote": "The registration number submitted for Times Marvel is identical to the one submitted for Adleap Crest, so it has not been published. Awaiting the correct number from the developer.",
+  "projectType": "office",
+  "projectTypeLabel": "Office",
+  "status": "Under Construction",
+  "possession": "2027-12-31",
+  "floors": "G+35",
+  "totalUnits": "191",
+  "lifts": 6,
+  "basements": 5,
+  "landArea": "4,050 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "Basements 1 to 5",
+      "use": "Floor basement",
+      "unitsPerFloor": null,
+      "carpet": null,
+      "sbu": null,
+      "ceiling": "14'9\" and 12'6\""
+    },
+    {
+      "floor": "Ground",
+      "use": null,
+      "unitsPerFloor": "9",
+      "carpet": null,
+      "sbu": null,
+      "ceiling": "21'4\""
+    },
+    {
+      "floor": "1st",
+      "use": "Office",
+      "unitsPerFloor": "6",
+      "carpet": "950 – 1,050 sq ft",
+      "sbu": "1,875 – 2,095 sq ft",
+      "ceiling": "11'6\""
+    },
+    {
+      "floor": "2nd to 18th",
+      "use": "Office",
+      "unitsPerFloor": "6",
+      "carpet": "950 – 1,050 sq ft",
+      "sbu": "1,875 – 2,095 sq ft",
+      "ceiling": "11'6\""
+    },
+    {
+      "floor": "19th (skip floor)",
+      "use": null,
+      "unitsPerFloor": null,
+      "carpet": null,
+      "sbu": null,
+      "ceiling": "11'6\""
+    },
+    {
+      "floor": "20th",
+      "use": "Office",
+      "unitsPerFloor": "5",
+      "carpet": "950 – 1,010 sq ft",
+      "sbu": "1,875 – 2,050 sq ft",
+      "ceiling": "11'6\""
+    },
+    {
+      "floor": "21st to 26th",
+      "use": "Office",
+      "unitsPerFloor": "6",
+      "carpet": "950 – 2,300 sq ft",
+      "sbu": "1,875 – 2,621 sq ft",
+      "ceiling": "11'6\""
+    },
+    {
+      "floor": "27th",
+      "use": "Office",
+      "unitsPerFloor": "5",
+      "carpet": "951 – 1,350 sq ft",
+      "sbu": "1,877 – 2,704 sq ft",
+      "ceiling": "11'6\""
+    },
+    {
+      "floor": "28th to 32nd",
+      "use": "Office",
+      "unitsPerFloor": "5",
+      "carpet": "951 – 1,350 sq ft",
+      "sbu": "1,877 – 2,704 sq ft",
+      "ceiling": "11'6\""
+    },
+    {
+      "floor": "33rd",
+      "use": "Office",
+      "unitsPerFloor": "4",
+      "carpet": "951 – 1,350 sq ft",
+      "sbu": "1,877 – 2,704 sq ft",
+      "ceiling": "11'6\""
+    },
+    {
+      "floor": "34th and 35th",
+      "use": "Office",
+      "unitsPerFloor": "4",
+      "carpet": "951 – 1,350 sq ft",
+      "sbu": "1,877 – 2,704 sq ft",
+      "ceiling": "11'6\""
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices",
+        "regular": 9000
+      }
+    ],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": "₹800 per sq ft package; ₹100 maintenance deposit; ₹100 running maintenance; parking ₹3–6 lakh; legal, GST and stamp duty extra",
+    "floorRise": "₹50 per sq ft from the 5th floor"
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "mihirwork112@gmail.com",
+    "developerSalesContact": "Mehul patel",
+    "developerSalesPhone": "9712954000",
+    "notes": "Extra Notes – Times Marvel (internal)\n\nShowroom pricing: No regular rate card for showrooms. The builder shares rates only in on-table discussions, with a ₹4,000 surcharge. Don't quote showroom prices to clients up front; set up a meeting instead.\nOffice pricing: [Rate per sq ft / whether it's negotiable / last rate quoted]\nUnits still available: [Floors or units left, and which sizes move fastest]\nPayment plan: [Construction-linked, down payment, any subvention or special scheme]\nOur brokerage: [Brokerage %, when it's paid, who at the builder's side confirms it]\nBuilder contact: [Name and number of the sales person or manager you deal with]\nSite visits: [Timings, whether to book in advance, sample office ready or not]\nClient handling: Some property portals list Times Marvel as a residential 4–5 BHK project. Correct clients early that it's a commercial project.\nOther: [Parking allotment, maintenance deposit, GST, fit-out rules for showrooms, etc.]\n\nFor the public details section, here's what the listings say, so you can check it against your brochure. It's on Zydus Thaltej Road, Thaltej, by Times Square Group. Office sizes are 1,875 and 2,704 sq ft. It launched on 15 May 2025, possession is December 2031, and there are 191 units in one block. It is listed as offering offices, shops and showrooms across 35 floors. One portal lists 36 floors instead, so confirm the correct figure from the brochure.",
+    "uploads": [
+      "https://drive.google.com/open?id=1XQbODXH5uGNDyhNPyWEpIyOxDHZRzxNy",
+      "https://drive.google.com/open?id=1a7EJBsmRC_K44V7UxFGsvgA8GQoCdSV-",
+      "https://drive.google.com/open?id=15xqGm3uYQFbrjUpJg3629bwQKiPlDvAK",
+      "https://drive.google.com/open?id=1YmL3PjLSPrRyb35rXotiVDZDnIrftakt",
+      "https://drive.google.com/open?id=1uNj3Ih2yNbdt-WPYqi-Z0R4crKhAq8OC",
+      "https://drive.google.com/open?id=1Dglh7llQIIAaM2rxabHYRlCs9aFioQS_",
+      "https://drive.google.com/open?id=1J8rcwU9XX2hCvq3ollv_dHYoZ2EbiRQZ",
+      "https://drive.google.com/open?id=15xUcJ2zHio_IpVdi7SVJyagGoQdJjt5z",
+      "https://drive.google.com/open?id=15CqJh3UywcolkLU22uIIiBC6v0Vv0OHv",
+      "https://drive.google.com/open?id=1Ivw2woLa4k_Nyd0ZojhZR9I6lvPmUm2N"
+    ],
+    "submittedAt": "2026-09-24T15:16:13"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder."
+  ]
+}

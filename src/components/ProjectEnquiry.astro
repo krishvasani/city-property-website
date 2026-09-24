@@ -1,20 +1,34 @@
 ---
-// Enquiry block for the Adani Shantigram pages. Makes the CPS role explicit:
-// independent RERA-registered consultant, not the developer.
+// Enquiry block for the project pages. Makes the CPS role explicit: independent
+// RERA-registered consultant, not the developer. Defaults to the Adani Shantigram
+// wording; commercial project pages pass their own developer and place.
 import LeadForm from './LeadForm.astro';
 import CallButton from './CallButton.astro';
 import WhatsAppButton from './WhatsAppButton.astro';
 import { contact, site } from '../lib/config';
 
-interface Props { subject: string; url: string }
-const { subject, url } = Astro.props;
-const wa = `Hi City Property Services, I’d like to discuss ${subject} at Adani Shantigram.`;
+interface Props {
+  subject: string;
+  url: string;
+  /** Who actually builds it. Omit for the Adani Shantigram pages. */
+  developer?: string;
+  /** Where it is, for the WhatsApp opener: "Adani Shantigram", "Thaltej, Ahmedabad". */
+  place?: string;
+}
+const { subject, url, developer, place = 'Adani Shantigram' } = Astro.props;
+const wa = `Hi City Property Services, I’d like to discuss ${subject} at ${place}.`;
+const notOurs = developer
+  ? `We are not the developer of ${subject}; the developer is ${developer}.`
+  : 'We are not the developer of Adani Shantigram or any project in it; the developer is Adani Realty.';
+const whatWeDo = developer
+  ? 'We advise on which floor and which unit suits your requirement, negotiate on your behalf, and handle the paperwork. We confirm every rate, the area basis it applies to and the RERA certificate with the developer before you commit.'
+  : 'We advise buyers on new bookings, on resale in the completed clusters, and on the paperwork, and we confirm every price and RERA certificate with the developer before you commit.';
 ---
 <section class="proj-enquiry" id="enquire">
   <div class="proj-enquiry-copy">
     <div class="eyebrow">Independent advice</div>
     <h2>Talk to us about {subject}</h2>
-    <p class="muted">City Property Services is an independent property consultant registered with Gujarat RERA (<strong>{site.rera}</strong>). We are not the developer of Adani Shantigram or any project in it; the developer is Adani Realty. We advise buyers on new bookings, on resale in the completed clusters, and on the paperwork, and we confirm every price and RERA certificate with the developer before you commit.</p>
+    <p class="muted">City Property Services is an independent property consultant registered with Gujarat RERA (<strong>{site.rera}</strong>). {notOurs} {whatWeDo}</p>
     <div class="row" style="gap:10px;margin-top:18px;flex-wrap:wrap;">
       <CallButton label="Call Now" number={contact.phone} />
       <WhatsAppButton label="WhatsApp Us" message={wa} />
@@ -25,7 +39,7 @@ const wa = `Hi City Property Services, I’d like to discuss ${subject} at Adani
       name="viewing"
       submitLabel="Ask about this project"
       messageLabel="What would you like to know?"
-      messagePlaceholder={`e.g. current price and availability at ${subject}, site visit, resale options…`}
+      messagePlaceholder={developer ? `e.g. available floors and current rate at ${subject}, site visit, floor plan…` : `e.g. current price and availability at ${subject}, site visit, resale options…`}
       context={{ project: subject, projectUrl: url }}
       whatsappFallback={wa}
     />

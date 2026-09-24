@@ -1,0 +1,102 @@
+{
+  "slug": "z2",
+  "name": "Z2",
+  "developer": "Zade Group",
+  "address": "Near Baghban Party Plot, Thaltej–Hebatpur Road, Ahmedabad",
+  "localitySlug": "thaltej",
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.051863,
+    "lng": 72.500699
+  },
+  "rera": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/CAA12096/060723",
+  "reraNote": null,
+  "projectType": "office",
+  "projectTypeLabel": "Office",
+  "status": "Ready to move in",
+  "possession": null,
+  "floors": "G+32",
+  "totalUnits": "210",
+  "lifts": 5,
+  "basements": 5,
+  "landArea": "3,600 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "BU Permission",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "Basements 1 to 5",
+      "use": null,
+      "unitsPerFloor": null,
+      "carpet": null,
+      "sbu": null,
+      "ceiling": "14 ft"
+    },
+    {
+      "floor": "1st to 32nd",
+      "use": "Office",
+      "unitsPerFloor": "7",
+      "carpet": "640 – 5,478 sq ft",
+      "sbu": "1,230 – 10,535 sq ft",
+      "ceiling": "11 ft"
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices",
+        "dp": 10500
+      }
+    ],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": "₹800 per sq ft; parking ₹3.5 lakh",
+    "floorRise": "₹50 per sq ft above the 9th floor"
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "mihirwork112@gmail.com",
+    "developerSalesContact": "Kuntal patel",
+    "developerSalesPhone": "7573030026",
+    "notes": null,
+    "uploads": [
+      "https://drive.google.com/open?id=1msbfTTZNFiWAv6O_L863IQc8AVBFqEOS",
+      "https://drive.google.com/open?id=1WKyonkKLESFwd4NPnm-Cqf1aGdid1EoH",
+      "https://drive.google.com/open?id=1I_hob2LrhLWuWHB4XtXgPaOCxpTnOLR2",
+      "https://drive.google.com/open?id=1PaCXyQNBFK0WZGML2NiugNxfX5i64zBr",
+      "https://drive.google.com/open?id=1khBGBm7qlU5ZmjPsscfzJhlsQbXX-Ls2",
+      "https://drive.google.com/open?id=1UEInSotnG6rLF2PZwImlikSsy7T5lYzq",
+      "https://drive.google.com/open?id=11jPPKJlyMjRShpguoNJX3Q6b8GX4eiiX",
+      "https://drive.google.com/open?id=1BP-QB7GdBypcLvnGZpY_IjYlfvMnmzxj",
+      "https://drive.google.com/open?id=116WkIOB7T-QQvm60y6HuNrj6_CKyla0A"
+    ],
+    "submittedAt": "2026-09-24T16:04:21"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder."
+  ]
+}
