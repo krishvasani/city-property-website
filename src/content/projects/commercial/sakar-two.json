@@ -1,0 +1,123 @@
+{
+  "slug": "sakar-two",
+  "name": "Sakar Two",
+  "developer": "Bakeri & Sanidhya Group",
+  "address": "Ambli T-Junction, Iscon–Ambli Road, Ahmedabad",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.027626,
+    "lng": 72.476447
+  },
+  "rera": "PR/GJ/AHMEDABAD/DASKROI/Ahmedabad Municipal Corporation/CAA16499/200226/311229",
+  "reraNote": null,
+  "projectType": "mixed-use",
+  "projectTypeLabel": "Mixed use",
+  "status": "Under Construction",
+  "possession": "2030-04-30",
+  "floors": "G+11",
+  "totalUnits": "SHOWROOM - 9, CORPORATE HOUSE - 2, OFFICES - 99",
+  "lifts": 4,
+  "basements": 3,
+  "landArea": "3,234 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "Ground",
+      "use": "Retail",
+      "unitsPerFloor": "3",
+      "carpet": "1,850 – 2,680 sq ft",
+      "sbu": "3,400 – 4,880 sq ft",
+      "ceiling": "14 ft"
+    },
+    {
+      "floor": "1",
+      "use": "Retail",
+      "unitsPerFloor": "3",
+      "carpet": "From 1,850 sq ft",
+      "sbu": "From 3,400 sq ft",
+      "ceiling": "14 ft"
+    },
+    {
+      "floor": "1",
+      "use": "Office",
+      "unitsPerFloor": "2",
+      "carpet": "675 & 1,450 sq ft",
+      "sbu": "1,250 & 2,650 sq ft",
+      "ceiling": "14 ft"
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices",
+        "regular": 4250,
+        "dp": 4000
+      }
+    ],
+    "retailByFloor": [
+      {
+        "floor": "G",
+        "regular": 12000
+      },
+      {
+        "floor": "1",
+        "regular": 10500
+      },
+      {
+        "floor": "2",
+        "regular": 8700
+      }
+    ],
+    "retailDpNote": "Down-payment rates for retail are quoted on the table by the developer.",
+    "extraCharges": "₹1,100 per sq ft AMC, AUDA and AEC; ₹100 maintenance deposit for offices and ₹200 for retail; ₹3.50 per sq ft running maintenance for 2 years; parking ₹3 lakh; legal ₹30,000",
+    "floorRise": null
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "cityproperties09@gmail.com",
+    "developerSalesContact": "Gunjan Patel",
+    "developerSalesPhone": "7043651561",
+    "notes": "Dp 3 months clear",
+    "uploads": [
+      "https://drive.google.com/open?id=1t2Q2QNFuTgwwiCVPDLntAtBP_bqG3AgT",
+      "https://drive.google.com/open?id=1SPnF1GJT73dt2ISGngJCt58DeItDBlDh",
+      "https://drive.google.com/open?id=1D4hbvRX4Vj8DVmuuyn-cNPE17GNjJVPX",
+      "https://drive.google.com/open?id=1PMvLvOZg57NEIc0wwoMX_zGf9L6ZsnpU",
+      "https://drive.google.com/open?id=1rU2CnDjS5Zf1smbtc6yD68qRtAi7Nl-R",
+      "https://drive.google.com/open?id=1rtJDpP8UyMnAtmer1Qjxp53wlH6m-iEr",
+      "https://drive.google.com/open?id=15efeSgB0HGiszLeZsOXJGfy9Uk_ZFA6a",
+      "https://drive.google.com/open?id=15jxA7grzE7eXz9SODElzP-PEsPv4jm7_"
+    ],
+    "submittedAt": "2026-09-24T18:04:00"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder.",
+    "The floor-by-floor submission covers only the ground and first floors of a G+11 building with 110 units. The rest of the stack is missing."
+  ]
+}

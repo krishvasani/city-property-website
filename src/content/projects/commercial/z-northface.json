@@ -1,0 +1,121 @@
+{
+  "slug": "z-northface",
+  "name": "Z Northface",
+  "developer": "Zade Group",
+  "address": "Near Time Square 1, opposite Zion Connect, Thaltej, Ahmedabad",
+  "localitySlug": "thaltej",
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.049925,
+    "lng": 72.503575
+  },
+  "rera": "PR/GJ/AHMEDABAD/DASKROI/Ahmedabad Municipal Corporation/CAA17059/040726/311230",
+  "reraNote": null,
+  "projectType": "mixed-use",
+  "projectTypeLabel": "Mixed use",
+  "status": "Under Construction",
+  "possession": "2030-12-31",
+  "floors": "G+12",
+  "totalUnits": "SHOWROOMS - 8; OFFICES - 167",
+  "lifts": 6,
+  "basements": 4,
+  "landArea": "3,200 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "BU Permission",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "Ground",
+      "use": "Retail",
+      "unitsPerFloor": "7",
+      "carpet": "773 – 1,122 sq ft",
+      "sbu": "1,405 – 2,040 sq ft",
+      "ceiling": "15 ft"
+    },
+    {
+      "floor": "1",
+      "use": "Retail",
+      "unitsPerFloor": "1",
+      "carpet": "1,939 sq ft",
+      "sbu": "3,550 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "1",
+      "use": "Office",
+      "unitsPerFloor": "12",
+      "carpet": "315 – 1,132 sq ft",
+      "sbu": "680 – 2,475 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "2 to 12",
+      "use": "Office",
+      "unitsPerFloor": "14",
+      "carpet": "315 – 1,132 sq ft",
+      "sbu": "680 – 2,475 sq ft",
+      "ceiling": "11 ft"
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices",
+        "dp": 3900
+      }
+    ],
+    "retailByFloor": [
+      {
+        "floor": "G",
+        "dp": 11000
+      }
+    ],
+    "retailDpNote": null,
+    "extraCharges": "₹1,150 per sq ft package; parking ₹3–5 lakh",
+    "floorRise": "₹100 per sq ft from the 8th floor"
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "cityproperties09@gmail.com",
+    "developerSalesContact": "SHALINI",
+    "developerSalesPhone": "9925055077",
+    "notes": "builder will provide other payment terms on table",
+    "uploads": [
+      "https://drive.google.com/open?id=1uHJtPPMsBROqGfYhAWPB6O2vl-B4vrkY",
+      "https://drive.google.com/open?id=1wGBI_E4tH-7tIwYBeUGQEWcItl_v1KEX",
+      "https://drive.google.com/open?id=1Q_zPx7dsTjOc-BS4M5bJ2_iEqeT8h5Rh",
+      "https://drive.google.com/open?id=1Z_UyxQkmEDLOF7kReVPJwZ1x0TVvv2_J",
+      "https://drive.google.com/open?id=1cq9EhjN7QCm12O2qZsJX6y1gQn56gBPS",
+      "https://drive.google.com/open?id=1BzQpTT1eGlMu6xIr-b9B_u8uKC8Zsw9u",
+      "https://drive.google.com/open?id=1ShlmGaDguwq6vOcjmbMYs7PBsMhEFlJj"
+    ],
+    "submittedAt": "2026-09-24T13:29:15"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder."
+  ]
+}

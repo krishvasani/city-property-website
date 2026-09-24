@@ -1,0 +1,148 @@
+{
+  "slug": "adleap-crest",
+  "name": "Adleap Crest",
+  "developer": "Adleap Developers",
+  "address": "SG Highway, near Vaishnodevi Circle, Ahmedabad, Gujarat 382501",
+  "localitySlug": "vaishnodevi-circle",
+  "localityName": "Vaishnodevi Circle",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.14259,
+    "lng": 72.544284
+  },
+  "rera": "PR/GJ/AHMEDABAD/DASKROI/Ahmedabad Municipal Corporation/CAA15461/050725/311231",
+  "reraNote": null,
+  "projectType": "mixed-use",
+  "projectTypeLabel": "Mixed use",
+  "status": "Under Construction",
+  "possession": "2027-12-01",
+  "floors": "G+12",
+  "totalUnits": "160",
+  "lifts": 7,
+  "basements": 3,
+  "landArea": "3,800 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "Pantry Provision",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking"
+  ],
+  "floorMix": [
+    {
+      "floor": "Ground",
+      "use": "Retail",
+      "unitsPerFloor": "11",
+      "carpet": "670 – 1,880 sq ft",
+      "sbu": "1,260 – 3,547 sq ft",
+      "ceiling": "14 ft"
+    },
+    {
+      "floor": "1",
+      "use": "Retail",
+      "unitsPerFloor": "10",
+      "carpet": "500 – 4,200 sq ft",
+      "sbu": "1,380 – 8,696 sq ft",
+      "ceiling": "13 ft"
+    },
+    {
+      "floor": "2",
+      "use": "Retail",
+      "unitsPerFloor": "11",
+      "carpet": "700 – 3,160 sq ft",
+      "sbu": "1,380 – 6,305 sq ft",
+      "ceiling": "12 ft"
+    },
+    {
+      "floor": "3",
+      "use": "Retail floor plate",
+      "unitsPerFloor": "2",
+      "carpet": "7,600 – 5,870 sq ft",
+      "sbu": "15,204 – 11,734 sq ft",
+      "ceiling": "12 ft"
+    },
+    {
+      "floor": "4",
+      "use": "Office + terrace area",
+      "unitsPerFloor": "14",
+      "carpet": "446 – 1,626 sq ft",
+      "sbu": "892 – 3,252 sq ft",
+      "ceiling": "10.5 ft"
+    },
+    {
+      "floor": "5 to 12",
+      "use": "Office",
+      "unitsPerFloor": "14",
+      "carpet": "446 – 1,626 sq ft",
+      "sbu": "892 – 3,252 sq ft",
+      "ceiling": "10.5 ft"
+    },
+    {
+      "floor": "13 (terrace)",
+      "use": "Amenities only",
+      "unitsPerFloor": null,
+      "carpet": null,
+      "sbu": null,
+      "ceiling": null
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices",
+        "regular": 6500
+      }
+    ],
+    "retailByFloor": [
+      {
+        "floor": "G",
+        "dp": 22000
+      },
+      {
+        "floor": "1",
+        "dp": 14000
+      },
+      {
+        "floor": "2",
+        "dp": 11200
+      }
+    ],
+    "retailDpNote": null,
+    "extraCharges": "Retail ₹1,000 per sq ft package; office ₹900 per sq ft all inclusive",
+    "floorRise": "₹200 per sq ft on floors 10 to 12"
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "chetanm080@gmail.com",
+    "developerSalesContact": "Nikita",
+    "developerSalesPhone": "6359565000",
+    "notes": "all amenities are at top tarrace floor",
+    "uploads": [
+      "https://drive.google.com/open?id=1FQR8wiCEgu4ATxApNIrHSk8eTc9f41N3",
+      "https://drive.google.com/open?id=17Ig5jyX9AIRsTWWOn_LXHovODk0N49PB",
+      "https://drive.google.com/open?id=11ESg_tzIVT78Rzu7hKz_8UPvuu4faHv1",
+      "https://drive.google.com/open?id=1ZBW4wo2qCpmy_USnpo3ajnr14uQA4VB0",
+      "https://drive.google.com/open?id=1IKM9I-baM_Sksu40jin2gpG5E-LyhBCP",
+      "https://drive.google.com/open?id=1Vqg9oD6gKoMpU-QbXuqLcBSJwJVSMTqk"
+    ],
+    "submittedAt": "2026-09-24T13:46:11"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder."
+  ]
+}

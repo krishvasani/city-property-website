@@ -1,0 +1,140 @@
+{
+  "slug": "zion-connect",
+  "name": "Zion Connect",
+  "developer": "Zion Group",
+  "address": "Near Thaltej Gaam Metro Station, Thaltej–Shilaj Road, Thaltej, Ahmedabad",
+  "localitySlug": "thaltej",
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.050271,
+    "lng": 72.504174
+  },
+  "rera": "PR/GJ/AHMEDABAD/DASKROI/Ahmedabad Municipal Corporation/CAA15199/120525/300628",
+  "reraNote": null,
+  "projectType": "mixed-use",
+  "projectTypeLabel": "Mixed use",
+  "status": "Under Construction",
+  "possession": "2028-12-30",
+  "floors": "G+12 and G+1 for retail",
+  "totalUnits": "162",
+  "lifts": 6,
+  "basements": 4,
+  "landArea": "3,000 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "Ground",
+      "use": "Retail",
+      "unitsPerFloor": "10",
+      "carpet": "500 – 1,100 sq ft",
+      "sbu": "1,000 – 2,200 sq ft",
+      "ceiling": "13 ft"
+    },
+    {
+      "floor": "1st",
+      "use": "Retail",
+      "unitsPerFloor": "8",
+      "carpet": "450 – 3,040 sq ft",
+      "sbu": "900 – 6,000 sq ft",
+      "ceiling": "13 ft"
+    },
+    {
+      "floor": "2nd",
+      "use": "Office",
+      "unitsPerFloor": "12",
+      "carpet": "450 – 950 sq ft",
+      "sbu": "915 – 1,869 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "3rd to 6th",
+      "use": "Office",
+      "unitsPerFloor": "12",
+      "carpet": "450 – 950 sq ft",
+      "sbu": "915 – 1,860 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "7th",
+      "use": "Office",
+      "unitsPerFloor": "12",
+      "carpet": "450 – 950 sq ft",
+      "sbu": "915 – 1,860 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "8th to 12th",
+      "use": "Office",
+      "unitsPerFloor": "12",
+      "carpet": "450 – 950 sq ft",
+      "sbu": "915 – 1,860 sq ft",
+      "ceiling": "11 ft"
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices",
+        "regular": 8500
+      }
+    ],
+    "retailByFloor": [
+      {
+        "floor": "G",
+        "regular": 25000
+      },
+      {
+        "floor": "1",
+        "regular": 17000
+      }
+    ],
+    "retailDpNote": null,
+    "extraCharges": "₹950 per sq ft package; parking ₹3–7 lakh",
+    "floorRise": "₹100 per sq ft on the 8th floor, ₹200 on the 9th, ₹300 on the 10th, ₹400 on the 11th and 12th"
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "mihirwork112@gmail.com",
+    "developerSalesContact": "Pankaj jain",
+    "developerSalesPhone": "9974101516",
+    "notes": null,
+    "uploads": [
+      "https://drive.google.com/open?id=1dOKgV8HshivfOGDW4FX-B_6pYSVTq69v",
+      "https://drive.google.com/open?id=1UOW78e8rFsaBr6MVxMJLsuuRMEzyocf4",
+      "https://drive.google.com/open?id=1OuGzLa_xVVPeefqQnv59lqI8FEzzLe2l",
+      "https://drive.google.com/open?id=1OoNxmPp5XYiWVkvAb_0d6dWeCZlrqnI2",
+      "https://drive.google.com/open?id=1YI_koV9m1puFHja_FGWleMWqOB5erLum",
+      "https://drive.google.com/open?id=1HmTexjMNb1Y6h3PlSiuptYfZsR2GX3K_",
+      "https://drive.google.com/open?id=1HfsU9uB-olbOjvpgOBIpptetQgKYsHbv"
+    ],
+    "submittedAt": "2026-09-24T17:50:57"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder."
+  ]
+}

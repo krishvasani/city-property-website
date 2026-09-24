@@ -1,0 +1,160 @@
+{
+  "slug": "sankalp-480",
+  "name": "Sankalp 480",
+  "developer": "Sankalp Realty",
+  "address": "Off Sindhu Bhavan Road, behind Rajpath Club, next to Earth Elegance, Ahmedabad",
+  "localitySlug": "sindhu-bhavan-road",
+  "localityName": "Sindhu Bhavan Road",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.018391,
+    "lng": 72.483038
+  },
+  "rera": "PR/GJ/AHMEDABAD/AHMADABAD CITY/AUDA/CAA00037/31081",
+  "reraNote": null,
+  "projectType": "office",
+  "projectTypeLabel": "Office",
+  "status": "Under Construction",
+  "possession": "2032-03-30",
+  "floors": "G+23",
+  "totalUnits": "CORPORATE HOUSE 7; OFFICES 95",
+  "lifts": 14,
+  "basements": 3,
+  "landArea": "9,000 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "Ground",
+      "use": "Corporate house",
+      "unitsPerFloor": "7",
+      "carpet": "1,186 – 1,586 sq ft",
+      "sbu": "2,248 – 2,952 sq ft",
+      "ceiling": "13'1\""
+    },
+    {
+      "floor": "1",
+      "use": "Corporate house (continued)",
+      "unitsPerFloor": "7",
+      "carpet": "1,186 – 2,178 sq ft",
+      "sbu": "2,248 – 5,242 sq ft",
+      "ceiling": "11'2\""
+    },
+    {
+      "floor": "2",
+      "use": "Corporate house (continued)",
+      "unitsPerFloor": "7",
+      "carpet": "1,186 – 3,393 sq ft",
+      "sbu": "2,248 – 6,169 sq ft",
+      "ceiling": "11'2\""
+    },
+    {
+      "floor": "3",
+      "use": "Corporate house (continued)",
+      "unitsPerFloor": "7",
+      "carpet": "1,186 – 3,393 sq ft",
+      "sbu": "2,248 – 6,169 sq ft",
+      "ceiling": "11'2\""
+    },
+    {
+      "floor": "4",
+      "use": "Offices transfer / service",
+      "unitsPerFloor": null,
+      "carpet": null,
+      "sbu": null,
+      "ceiling": null
+    },
+    {
+      "floor": "5 & 6",
+      "use": "Offices",
+      "unitsPerFloor": "9",
+      "carpet": "956 – 2,593 sq ft",
+      "sbu": "1,839 – 4,715 sq ft",
+      "ceiling": "11'6\""
+    },
+    {
+      "floor": "7 to 11",
+      "use": "Offices",
+      "unitsPerFloor": "10",
+      "carpet": "955 – 2,088 sq ft",
+      "sbu": "1,810 – 3,797 sq ft",
+      "ceiling": "11'6\""
+    },
+    {
+      "floor": "12 to 20",
+      "use": "Offices",
+      "unitsPerFloor": "3",
+      "carpet": "955 – 2,088 sq ft",
+      "sbu": "3,797 – 12,992 sq ft",
+      "ceiling": "11'6\""
+    },
+    {
+      "floor": "21 to 23",
+      "use": "Offices",
+      "unitsPerFloor": "1",
+      "carpet": "13,405 sq ft",
+      "sbu": "24,369 sq ft",
+      "ceiling": "11'6\""
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Corporate houses",
+        "regular": 6250
+      },
+      {
+        "label": "Offices",
+        "regular": 4100,
+        "dp": 3600
+      }
+    ],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": "₹1,000 per sq ft AMC, AUDA and AEC; ₹100 maintenance deposit; parking ₹3.5 lakh",
+    "floorRise": null
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "cityproperties09@gmail.com",
+    "developerSalesContact": "RONAK BHAI",
+    "developerSalesPhone": "9925767000",
+    "notes": "dp clear in 3 months & RG - 3 months 30%  & 6 month EMI slab to slab",
+    "uploads": [
+      "https://drive.google.com/open?id=1hMr6cKChi5DczPSkNAFZ8wkA9tLo5BrS",
+      "https://drive.google.com/open?id=1XQrByQu6jHmmBiu0ntMMpLNeR6G_IncZ",
+      "https://drive.google.com/open?id=179z3ng_LI5FCvDKBfjZ6JlWdvIShzKtU",
+      "https://drive.google.com/open?id=1M9I_W7i2lU4TC9oQOuZCFN2OorYcGdds",
+      "https://drive.google.com/open?id=1AfzARxGdm6bNFH1FCiFhV0pd4_URJaSa",
+      "https://drive.google.com/open?id=1WAB52uu0EJsu95L_FSlZpIbyPmNxtyo-",
+      "https://drive.google.com/open?id=1Z5mobTvr4ppY1XMpw84hXfT_SABO7xCo"
+    ],
+    "submittedAt": "2026-09-24T17:07:26"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder."
+  ]
+}
