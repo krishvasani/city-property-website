@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹6.5 to 7.4 Cr",
   "priceValue": 65000000,
   "localityName": "Ambli",
@@ -41,5 +41,6 @@
     "lat": 23.03464,
     "lng": 72.47229
   },
-  "mainImage": "/uploads/properties/the-emberlynn-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/the-emberlynn-ambli/photo-1.jpg",
+  "retiredTo": "/projects/the-emberlynn/"
 }

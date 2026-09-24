@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.1 to 6.8 Cr",
   "priceValue": 51000000,
   "localityName": "Ambli",
@@ -42,5 +42,6 @@
     "lat": 23.03205,
     "lng": 72.47019
   },
-  "mainImage": "/uploads/properties/aayam-by-aaryan-aristo-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/aayam-by-aaryan-aristo-ambli/photo-1.jpg",
+  "retiredTo": "/projects/aayam-by-aaryan-aristo/"
 }

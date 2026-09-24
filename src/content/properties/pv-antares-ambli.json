@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "priceOnRequest": true,
   "localityName": "Ambli",
@@ -40,5 +40,6 @@
     "lat": 23.0334,
     "lng": 72.46821
   },
-  "mainImage": "/uploads/properties/pv-antares-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/pv-antares-ambli/photo-1.jpg",
+  "retiredTo": "/projects/pv-antares/"
 }

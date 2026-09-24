@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.8 to 5.5 Cr",
   "priceValue": 48000000,
   "localityName": "Ambli",
@@ -41,5 +41,6 @@
     "lat": 23.036,
     "lng": 72.4872
   },
-  "mainImage": "/uploads/properties/iscon-vogue-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/iscon-vogue-ambli/photo-1.jpg",
+  "retiredTo": "/projects/iscon-vogue/"
 }

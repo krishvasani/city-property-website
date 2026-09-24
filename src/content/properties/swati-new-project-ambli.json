@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.3 to 4.7 Cr",
   "priceValue": 43000000,
   "localityName": "Ambli",
@@ -42,5 +42,6 @@
     "lat": 23.02464,
     "lng": 72.48133
   },
-  "mainImage": "/uploads/properties/swati-new-project-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/swati-new-project-ambli/photo-1.jpg",
+  "retiredTo": "/projects/swati-new-project/"
 }

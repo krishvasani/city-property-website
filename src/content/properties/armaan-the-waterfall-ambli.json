@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "priceOnRequest": true,
   "localityName": "Ambli",
@@ -29,5 +29,6 @@
   "geo": {
     "lat": 23.02471,
     "lng": 72.47604
-  }
+  },
+  "retiredTo": "/projects/armaan-the-waterfall/"
 }

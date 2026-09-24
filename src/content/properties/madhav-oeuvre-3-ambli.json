@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.4 to 5.6 Cr",
   "priceValue": 44000000,
   "localityName": "Ambli",
@@ -41,5 +41,6 @@
     "lat": 23.0453,
     "lng": 72.4785
   },
-  "mainImage": "/uploads/properties/madhav-oeuvre-3-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/madhav-oeuvre-3-ambli/photo-1.jpg",
+  "retiredTo": "/projects/madhav-oeuvre-3/"
 }

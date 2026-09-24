@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "priceOnRequest": true,
   "localityName": "Ambli",
@@ -41,5 +41,6 @@
     "lat": 23.03825,
     "lng": 72.47477
   },
-  "mainImage": "/uploads/properties/the-north-by-true-value-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/the-north-by-true-value-ambli/photo-1.jpg",
+  "retiredTo": "/projects/the-north-by-true-value/"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.5 to 4.7 Cr",
   "priceValue": 45000000,
   "localityName": "Ambli",
@@ -41,5 +41,6 @@
     "lat": 23.04099,
     "lng": 72.48471
   },
-  "mainImage": "/uploads/properties/maruti-aatman-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/maruti-aatman-ambli/photo-1.jpg",
+  "retiredTo": "/projects/maruti-aatman/"
 }

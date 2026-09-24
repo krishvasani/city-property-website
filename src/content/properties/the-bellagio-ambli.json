@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.7 to 8.2 Cr",
   "priceValue": 57000000,
   "localityName": "Ambli",
@@ -42,5 +42,6 @@
     "lat": 23.03415,
     "lng": 72.48086
   },
-  "mainImage": "/uploads/properties/the-bellagio-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/the-bellagio-ambli/photo-1.jpg",
+  "retiredTo": "/projects/the-bellagio/"
 }

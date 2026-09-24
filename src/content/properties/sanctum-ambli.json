@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.3 to 2.7 Cr",
   "priceValue": 23000000,
   "localityName": "Ambli",
@@ -42,5 +42,6 @@
     "lat": 23.02913,
     "lng": 72.4857
   },
-  "mainImage": "/uploads/properties/sanctum-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/sanctum-ambli/photo-1.jpg",
+  "retiredTo": "/projects/sanctum/"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.8 to 3.1 Cr",
   "priceValue": 28000000,
   "localityName": "Ambli",
@@ -42,5 +42,6 @@
     "lat": 23.0328,
     "lng": 72.46648
   },
-  "mainImage": "/uploads/properties/rajyash-richmond-3-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/rajyash-richmond-3-ambli/photo-1.jpg",
+  "retiredTo": "/projects/rajyash-richmond-3/"
 }

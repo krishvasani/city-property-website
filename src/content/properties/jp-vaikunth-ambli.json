@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹14.3 to 15 Cr",
   "priceValue": 143000000,
   "localityName": "Ambli",
@@ -41,5 +41,6 @@
     "lat": 23.03799,
     "lng": 72.48115
   },
-  "mainImage": "/uploads/properties/jp-vaikunth-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/jp-vaikunth-ambli/photo-1.jpg",
+  "retiredTo": "/projects/jp-vaikunth/"
 }

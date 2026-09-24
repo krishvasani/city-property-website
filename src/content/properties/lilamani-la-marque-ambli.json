@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "priceOnRequest": true,
   "localityName": "Ambli",
@@ -42,5 +42,6 @@
     "lat": 23.04372,
     "lng": 72.47659
   },
-  "mainImage": "/uploads/properties/lilamani-la-marque-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/lilamani-la-marque-ambli/photo-1.jpg",
+  "retiredTo": "/projects/lilamani-la-marque/"
 }

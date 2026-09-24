@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.7 to 7.7 Cr",
   "priceValue": 57000000,
   "localityName": "Ambli",
@@ -42,5 +42,6 @@
     "lat": 23.03587,
     "lng": 72.47356
   },
-  "mainImage": "/uploads/properties/sun-the-kimana-towers-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/sun-the-kimana-towers-ambli/photo-1.jpg",
+  "retiredTo": "/projects/sun-the-kimana-towers/"
 }

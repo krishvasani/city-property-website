@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.4 to 4.5 Cr",
   "priceValue": 44000000,
   "localityName": "Ambli",
@@ -42,5 +42,6 @@
     "lat": 23.02877,
     "lng": 72.47377
   },
-  "mainImage": "/uploads/properties/saiyamm-apricus-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/saiyamm-apricus-ambli/photo-1.jpg",
+  "retiredTo": "/projects/saiyamm-apricus/"
 }

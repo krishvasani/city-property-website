@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "priceOnRequest": true,
   "localityName": "Ambli",
@@ -40,5 +40,6 @@
     "lat": 23.03489,
     "lng": 72.48897
   },
-  "mainImage": "/uploads/properties/sukrut-repose-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/sukrut-repose-ambli/photo-1.jpg",
+  "retiredTo": "/projects/sukrut-repose/"
 }

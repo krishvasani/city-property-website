@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "priceOnRequest": true,
   "localityName": "Ambli",
@@ -40,5 +40,6 @@
     "lat": 23.03817,
     "lng": 72.48446
   },
-  "mainImage": "/uploads/properties/surya-emerald-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/surya-emerald-ambli/photo-1.jpg",
+  "retiredTo": "/projects/surya-emerald/"
 }

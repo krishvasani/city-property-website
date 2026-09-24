@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.8 to 9.3 Cr",
   "priceValue": 58000000,
   "localityName": "Ambli",
@@ -42,5 +42,6 @@
     "lat": 23.03466,
     "lng": 72.47177
   },
-  "mainImage": "/uploads/properties/binori-belmont-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/binori-belmont-ambli/photo-1.jpg",
+  "retiredTo": "/projects/binori-belmont/"
 }

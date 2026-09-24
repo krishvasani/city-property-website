@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹6.7 to 8.9 Cr",
   "priceValue": 67000000,
   "localityName": "Ambli",
@@ -41,5 +41,6 @@
     "lat": 23.03035,
     "lng": 72.47783
   },
-  "mainImage": "/uploads/properties/ratnaakar-eternity-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/ratnaakar-eternity-ambli/photo-1.jpg",
+  "retiredTo": "/projects/ratnaakar-eternity/"
 }

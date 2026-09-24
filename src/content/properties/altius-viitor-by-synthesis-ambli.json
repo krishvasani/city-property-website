@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "priceOnRequest": true,
   "localityName": "Ambli",
@@ -56,5 +56,6 @@
     "lat": 23.04271,
     "lng": 72.4753
   },
-  "mainImage": "/uploads/properties/altius-viitor-by-synthesis-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/altius-viitor-by-synthesis-ambli/photo-1.jpg",
+  "retiredTo": "/projects/altius-viitor-by-synthesis/"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹7.4 to 7.5 Cr",
   "priceValue": 74000000,
   "localityName": "Ambli",
@@ -52,5 +52,6 @@
     "lat": 23.03615,
     "lng": 72.47489
   },
-  "mainImage": "/uploads/properties/hn-safal-the-park-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/hn-safal-the-park-ambli/photo-1.jpg",
+  "retiredTo": "/projects/hn-safal-the-park/"
 }

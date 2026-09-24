@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹3.5 to 5 Cr",
   "priceValue": 35000000,
   "localityName": "Ambli",
@@ -42,5 +42,6 @@
     "lat": 23.03384,
     "lng": 72.47185
   },
-  "mainImage": "/uploads/properties/true-value-upcoming-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/true-value-upcoming-ambli/photo-1.jpg",
+  "retiredTo": "/projects/true-value-upcoming/"
 }

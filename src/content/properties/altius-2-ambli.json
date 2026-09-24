@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "priceOnRequest": true,
   "localityName": "Ambli",
@@ -50,5 +50,6 @@
     "lat": 23.03964,
     "lng": 72.48113
   },
-  "mainImage": "/uploads/properties/altius-2-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/altius-2-ambli/photo-1.jpg",
+  "retiredTo": "/projects/altius-2/"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "priceOnRequest": true,
   "localityName": "Ambli",
@@ -35,5 +35,6 @@
     "lat": 23.04001,
     "lng": 72.46955
   },
-  "mainImage": "/uploads/properties/one-49-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/one-49-ambli/photo-1.jpg",
+  "retiredTo": "/projects/one-49/"
 }

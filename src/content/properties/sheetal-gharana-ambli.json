@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.7 to 11.4 Cr",
   "priceValue": 57000000,
   "localityName": "Ambli",
@@ -41,5 +41,6 @@
     "lat": 23.03072,
     "lng": 72.47521
   },
-  "mainImage": "/uploads/properties/sheetal-gharana-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/sheetal-gharana-ambli/photo-1.jpg",
+  "retiredTo": "/projects/sheetal-gharana/"
 }

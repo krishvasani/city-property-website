@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.4 to 3.2 Cr",
   "priceValue": 24000000,
   "localityName": "Ambli",
@@ -30,5 +30,6 @@
   "geo": {
     "lat": 23.0312,
     "lng": 72.47374
-  }
+  },
+  "retiredTo": "/projects/shaligram-sky/"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹8.6 to 19.6 Cr",
   "priceValue": 86000000,
   "localityName": "Ambli",
@@ -42,5 +42,6 @@
     "lat": 23.02725,
     "lng": 72.4753
   },
-  "mainImage": "/uploads/properties/rajyash-royce-one-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/rajyash-royce-one-ambli/photo-1.jpg",
+  "retiredTo": "/projects/rajyash-royce-one/"
 }

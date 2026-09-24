@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.2 to 5.4 Cr",
   "priceValue": 52000000,
   "localityName": "Ambli",
@@ -42,5 +42,6 @@
     "lat": 23.02859,
     "lng": 72.48661
   },
-  "mainImage": "/uploads/properties/whitecraft-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/whitecraft-ambli/photo-1.jpg",
+  "retiredTo": "/projects/whitecraft/"
 }

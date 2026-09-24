@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "priceOnRequest": true,
   "localityName": "Ambli",
@@ -40,5 +40,6 @@
     "lat": 23.03757,
     "lng": 72.4759
   },
-  "mainImage": "/uploads/properties/jaldeep-vertex-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/jaldeep-vertex-ambli/photo-1.jpg",
+  "retiredTo": "/projects/jaldeep-vertex/"
 }

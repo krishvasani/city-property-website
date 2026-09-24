@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.9 to 5 Cr",
   "priceValue": 49000000,
   "localityName": "Ambli",
@@ -41,5 +41,6 @@
     "lat": 23.03563,
     "lng": 72.46934
   },
-  "mainImage": "/uploads/properties/oriental-viola-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/oriental-viola-ambli/photo-1.jpg",
+  "retiredTo": "/projects/oriental-viola/"
 }

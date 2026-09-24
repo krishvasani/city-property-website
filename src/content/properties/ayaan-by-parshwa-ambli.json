@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "priceOnRequest": true,
   "localityName": "Ambli",
@@ -45,5 +45,6 @@
     "lat": 23.03009,
     "lng": 72.48563
   },
-  "mainImage": "/uploads/properties/ayaan-by-parshwa-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/ayaan-by-parshwa-ambli/photo-1.jpg",
+  "retiredTo": "/projects/ayaan-by-parshwa/"
 }

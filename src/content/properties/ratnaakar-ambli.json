@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.6 to 7.3 Cr",
   "priceValue": 56000000,
   "localityName": "Ambli",
@@ -41,5 +41,6 @@
     "lat": 23.041,
     "lng": 72.47824
   },
-  "mainImage": "/uploads/properties/ratnaakar-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/ratnaakar-ambli/photo-1.jpg",
+  "retiredTo": "/projects/ratnaakar/"
 }

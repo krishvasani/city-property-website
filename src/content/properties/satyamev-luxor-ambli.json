@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.8 to 2.9 Cr",
   "priceValue": 28000000,
   "localityName": "Ambli",
@@ -41,5 +41,6 @@
     "lat": 23.02999,
     "lng": 72.48212
   },
-  "mainImage": "/uploads/properties/satyamev-luxor-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/satyamev-luxor-ambli/photo-1.jpg",
+  "retiredTo": "/projects/satyamev-luxor/"
 }

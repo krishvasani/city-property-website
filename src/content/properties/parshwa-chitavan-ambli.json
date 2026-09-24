@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹9.9 to 10 Cr",
   "priceValue": 99000000,
   "localityName": "Ambli",
@@ -42,5 +42,6 @@
     "lat": 23.03612,
     "lng": 72.47479
   },
-  "mainImage": "/uploads/properties/parshwa-chitavan-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/parshwa-chitavan-ambli/photo-1.jpg",
+  "retiredTo": "/projects/parshwa-chitavan/"
 }

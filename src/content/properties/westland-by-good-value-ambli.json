@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹10.6 to 12.2 Cr",
   "priceValue": 106000000,
   "localityName": "Ambli",
@@ -41,5 +41,6 @@
     "lat": 23.03403,
     "lng": 72.48973
   },
-  "mainImage": "/uploads/properties/westland-by-good-value-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/westland-by-good-value-ambli/photo-1.jpg",
+  "retiredTo": "/projects/westland-by-good-value/"
 }

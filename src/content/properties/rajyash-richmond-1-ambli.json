@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "priceOnRequest": true,
   "localityName": "Ambli",
@@ -40,5 +40,6 @@
     "lat": 23.02421,
     "lng": 72.47406
   },
-  "mainImage": "/uploads/properties/rajyash-richmond-1-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/rajyash-richmond-1-ambli/photo-1.jpg",
+  "retiredTo": "/projects/rajyash-richmond-1/"
 }

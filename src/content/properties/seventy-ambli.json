@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "priceOnRequest": true,
   "localityName": "Ambli",
@@ -41,5 +41,6 @@
     "lat": 23.02843,
     "lng": 72.47476
   },
-  "mainImage": "/uploads/properties/seventy-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/seventy-ambli/photo-1.jpg",
+  "retiredTo": "/projects/seventy/"
 }
