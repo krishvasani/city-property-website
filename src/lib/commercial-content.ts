@@ -70,7 +70,13 @@ export function projectContent(p: CommercialProject): ProjectContent {
     clean(`${p.name}, ${p.localityName}: ${uses.toLowerCase()} by ${p.developer}, ${p.floors}${size ? `, carpet ${size}` : ''}. ${rateLine(p)}. ${ready ? 'Ready to move in.' : `Possession ${poss}.`}`),
     clean(`${p.name} by ${p.developer} at ${p.localityName}, Ahmedabad — ${p.floors} ${uses.toLowerCase()}, ${rateLine(p).toLowerCase()}, ${ready ? 'ready to move in' : `possession ${poss}`}.`),
   ];
-  const description = descs.find((d) => d.length >= 130 && d.length <= 158) ?? descs.reduce((a, b) => (Math.abs(b.length - 150) < Math.abs(a.length - 150) ? b : a));
+  // Where the rate line is long (two uses, five-digit retail rates) every variant
+  // above blows the 160-char meta limit, so drop the rates and keep the facts.
+  descs.push(clean(`${p.name}, ${p.localityName}: ${uses.toLowerCase()} by ${p.developer}. ${floorsShort}${size ? `, carpet ${size}` : ''}. ${ready ? 'Ready to move in.' : `Possession ${poss}.`}`));
+  const fits = descs.filter((d) => d.length <= 158);
+  const description = fits.length
+    ? fits.reduce((a, b) => (b.length > a.length ? b : a))
+    : descs.reduce((a, b) => (b.length < a.length ? b : a)).slice(0, 157).replace(/[\s,;·—-]+\S*$/, '') + '…';
 
   // --- overview prose ----------------------------------------------------
   // "SHOWROOM - 9, CORPORATE HOUSE - 2, OFFICES - 99" → "9 showrooms, 2 corporate

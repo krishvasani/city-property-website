@@ -7,7 +7,7 @@
  * links to them. Flip to `true` ONLY after every price, RERA number and
  * possession date on the pages has been verified against the developer.
  */
-export const SHANTIGRAM_LIVE = false;
+export const SHANTIGRAM_LIVE = true;
 
 /**
  * Commercial project index + one page per building (/projects/, /projects/{slug}/).
@@ -15,4 +15,4 @@ export const SHANTIGRAM_LIVE = false;
  * links to them. Flip to `true` ONLY once photographs are in place and every
  * rate, RERA number and possession date has been verified with the developer.
  */
-export const COMMERCIAL_PROJECTS_LIVE = false;
+export const COMMERCIAL_PROJECTS_LIVE = true;
