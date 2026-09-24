@@ -119,7 +119,7 @@
     "Block A - 302 Unit Plan",
     "Block A - 303 Unit Plan"
   ],
-  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "imageSource": "Photo sets supplied by City Property Services (cover and order as curated), plus additional renders from the Adani Realty project page (fetched 2026-09-20)",
   "developerSite": {
     "url": "https://www.adanirealty.com/residential-projects/ahmedabad/amora",
     "fetched": "2026-09-20",
@@ -130,5 +130,14 @@
     "reraFull": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/Ahmedabad Urban Development Authority/MAA16481/190226/301129",
     "startingPrice": "1.45 Cr. (all incl.)",
     "faqCount": 9
+  },
+  "geo": {
+    "lat": 23.15845,
+    "lng": 72.54522
+  },
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/adani-amora-shantigram/",
+    "slug": "adani-amora-shantigram",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
   }
 }

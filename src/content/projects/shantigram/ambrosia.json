@@ -104,16 +104,16 @@
   },
   "priceSource": "CPS Series Master, July 2026",
   "photoLabels": [
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Swimming Pool & Kids Pool",
     "tour360",
-    "Artistic Impression",
-    "Artistic Impression",
-    "Artistic Impression",
-    "Artistic Impression",
-    "Artistic Impression",
-    "Artistic Impression",
-    "Artistic Impression",
-    "Artistic Impression",
-    "Artistic Impression",
     "Actual Image",
     "Actual Image",
     "Actual Image",
@@ -131,7 +131,7 @@
     "4 BHK Large Deluxe  Unit 3",
     "4 BHK Small Classic  Unit 3"
   ],
-  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "imageSource": "Photo sets supplied by City Property Services (cover and order as curated), plus additional renders from the Adani Realty project page (fetched 2026-09-20)",
   "developerSite": {
     "url": "https://www.adanirealty.com/residential-projects/ahmedabad/ambrosia",
     "fetched": "2026-09-20",
@@ -142,5 +142,14 @@
     "reraFull": "PR/GJ/GANDHINAGAR/GANDHINAGAR/AUDA/RAA10833/201022",
     "startingPrice": "₹ 2.49 Cr (all incl.)",
     "faqCount": 10
+  },
+  "geo": {
+    "lat": 23.16812,
+    "lng": 72.53567
+  },
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/adani-ambrosia-shantigram/",
+    "slug": "adani-ambrosia-shantigram",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
   }
 }

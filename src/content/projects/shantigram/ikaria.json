@@ -121,7 +121,7 @@
     "2nd - 13th Floor Layout",
     "Master layout"
   ],
-  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "imageSource": "Photo sets supplied by City Property Services (cover and order as curated), plus additional renders from the Adani Realty project page (fetched 2026-09-20)",
   "developerSite": {
     "url": "https://www.adanirealty.com/residential-projects/ahmedabad/ikaria",
     "fetched": "2026-09-20",
@@ -132,5 +132,14 @@
     "reraFull": "PR/GJ/AHMEDABAD/DASKROI/AUDA/RAA10359/240622",
     "startingPrice": "₹ 87 Lacs (exclusive of all taxes)",
     "faqCount": 8
+  },
+  "geo": {
+    "lat": 23.17374,
+    "lng": 72.53098
+  },
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/adani-ikaria-shantigram/",
+    "slug": "adani-ikaria-shantigram",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
   }
 }

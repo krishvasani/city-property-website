@@ -112,7 +112,7 @@
     "Type E 4 BHK Unit Plan",
     "Master layout"
   ],
-  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "imageSource": "Photo sets supplied by City Property Services (cover and order as curated), plus additional renders from the Adani Realty project page (fetched 2026-09-20)",
   "developerSite": {
     "url": "https://www.adanirealty.com/residential-projects/ahmedabad/the-north-park",
     "fetched": "2026-09-20",
@@ -123,5 +123,14 @@
     "reraFull": "PR/GJ/AHMEDABAD/GANDHINAGAR/Ahmedabad Urban Development Authority/RAA06343/A1R/EX1/100726/300627",
     "startingPrice": "Available on Request",
     "faqCount": 12
+  },
+  "geo": {
+    "lat": 23.1572,
+    "lng": 72.5398
+  },
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/adani-north-park-shantigram/",
+    "slug": "adani-north-park-shantigram",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
   }
 }

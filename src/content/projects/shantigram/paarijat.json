@@ -79,15 +79,15 @@
   "priceSource": "CPS Series Master, July 2026",
   "photoLabels": [
     "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
     "Video",
-    "Artistic Impression",
-    "Artistic Impression",
-    "Artistic Impression",
-    "Artistic Impression",
-    "Artistic Impression",
-    "Artistic Impression",
-    "Artistic Impression",
-    "Artistic Impression",
     "Actual Image",
     "Actual Image",
     "Actual Image",
@@ -97,7 +97,7 @@
     "1st Floor Plan",
     "2nd Floor Plan"
   ],
-  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "imageSource": "Photo sets supplied by City Property Services (cover and order as curated), plus additional renders from the Adani Realty project page (fetched 2026-09-20)",
   "developerSite": {
     "url": "https://www.adanirealty.com/residential-projects/ahmedabad/paarijat",
     "fetched": "2026-09-20",
@@ -108,5 +108,14 @@
     "reraFull": "PR/GJ/GANDHINAGAR/GANDHINAGAR/AUDA/RAA10759/121022",
     "startingPrice": "₹ 2.49 Cr (all incl.)",
     "faqCount": 8
+  },
+  "geo": {
+    "lat": 23.16264,
+    "lng": 72.53609
+  },
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/adani-paarijat-shantigram/",
+    "slug": "adani-paarijat-shantigram",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
   }
 }
