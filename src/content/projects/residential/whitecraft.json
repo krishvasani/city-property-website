@@ -1,0 +1,62 @@
+{
+  "slug": "whitecraft",
+  "name": "Whitecraft",
+  "category": "residential",
+  "developer": null,
+  "address": "Whitecraft, Ambli, Ahmedabad",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.02859,
+    "lng": 72.48661
+  },
+  "rera": null,
+  "reraNote": "No RERA registration number is on file for this project. Ask us for the certificate before you book, and verify it on the Gujarat RERA portal.",
+  "projectType": "residential",
+  "projectTypeLabel": "Residential",
+  "status": "Under construction",
+  "possession": "approx 2025",
+  "configurations": "4 BHK",
+  "priceDisplay": "₹5.2 to 5.4 Cr",
+  "priceValue": 52000000,
+  "description": [
+    "Whitecraft is an under construction residential project in Ambli, Ahmedabad, offering 4 BHK homes. Possession: approx 2025.",
+    "Priced from approximately ₹5.2 to 5.4 Cr. Located beside Tranquil."
+  ],
+  "amenities": [],
+  "photos": [
+    "/uploads/projects/residential/whitecraft/photos/photo-01.jpg",
+    "/uploads/projects/residential/whitecraft/photos/photo-02.jpg"
+  ],
+  "photoLabels": [
+    "Project photo",
+    "Project photo"
+  ],
+  "priceAsOf": "2026-09-24",
+  "priceSource": "City Property Services project master",
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/whitecraft-ambli/",
+    "slug": "whitecraft-ambli",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
+  },
+  "dataGaps": [
+    "No RERA registration number on file.",
+    "No carpet or super built-up areas on file.",
+    "Developer not stated in the source listing."
+  ],
+  "floors": "",
+  "totalUnits": null,
+  "lifts": null,
+  "basements": null,
+  "landArea": null,
+  "floorMix": [],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": null,
+    "floorRise": null
+  },
+  "brochure": null
+}

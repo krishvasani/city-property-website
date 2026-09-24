@@ -1,0 +1,61 @@
+{
+  "slug": "rajyash-royce-one",
+  "name": "Rajyash Royce One",
+  "category": "residential",
+  "developer": "Rajyash Group",
+  "address": "Rajyash Royce One, Ambli, Ahmedabad",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.02725,
+    "lng": 72.4753
+  },
+  "rera": null,
+  "reraNote": "No RERA registration number is on file for this project. Ask us for the certificate before you book, and verify it on the Gujarat RERA portal.",
+  "projectType": "residential",
+  "projectTypeLabel": "Residential",
+  "status": "Under construction",
+  "possession": "Mar 2027",
+  "configurations": "5 & 6 BHK Duplex",
+  "priceDisplay": "₹8.6 to 19.6 Cr",
+  "priceValue": 86000000,
+  "description": [
+    "Rajyash Royce One is an under construction residential project by Rajyash Group in Ambli, Ahmedabad, offering 5 & 6 BHK Duplex homes. Possession: Mar 2027.",
+    "Priced from approximately ₹8.6 to 19.6 Cr."
+  ],
+  "amenities": [],
+  "photos": [
+    "/uploads/projects/residential/rajyash-royce-one/photos/photo-01.jpg",
+    "/uploads/projects/residential/rajyash-royce-one/photos/photo-02.jpg"
+  ],
+  "photoLabels": [
+    "Project photo",
+    "Project photo"
+  ],
+  "priceAsOf": "2026-09-24",
+  "priceSource": "City Property Services project master",
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/rajyash-royce-one-ambli/",
+    "slug": "rajyash-royce-one-ambli",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
+  },
+  "dataGaps": [
+    "No RERA registration number on file.",
+    "No carpet or super built-up areas on file."
+  ],
+  "floors": "",
+  "totalUnits": null,
+  "lifts": null,
+  "basements": null,
+  "landArea": null,
+  "floorMix": [],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": null,
+    "floorRise": null
+  },
+  "brochure": null
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "sheetal-gharana",
+  "name": "Sheetal Gharana",
+  "category": "residential",
+  "developer": null,
+  "address": "Sheetal Gharana, Ambli, Ahmedabad",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.03072,
+    "lng": 72.47521
+  },
+  "rera": null,
+  "reraNote": "No RERA registration number is on file for this project. Ask us for the certificate before you book, and verify it on the Gujarat RERA portal.",
+  "projectType": "residential",
+  "projectTypeLabel": "Residential",
+  "status": "Under construction",
+  "possession": null,
+  "configurations": "5 & 6 BHK",
+  "priceDisplay": "₹5.7 to 11.4 Cr",
+  "priceValue": 57000000,
+  "description": [
+    "Sheetal Gharana is an under construction residential project in Ambli, Ahmedabad, offering 5 & 6 BHK homes.",
+    "Priced from approximately ₹5.7 to 11.4 Cr. Located opposite Sankalp Iconic Tower."
+  ],
+  "amenities": [],
+  "photos": [
+    "/uploads/projects/residential/sheetal-gharana/photos/photo-01.jpg",
+    "/uploads/projects/residential/sheetal-gharana/photos/photo-02.jpg"
+  ],
+  "photoLabels": [
+    "Project photo",
+    "Project photo"
+  ],
+  "priceAsOf": "2026-09-24",
+  "priceSource": "City Property Services project master",
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/sheetal-gharana-ambli/",
+    "slug": "sheetal-gharana-ambli",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
+  },
+  "dataGaps": [
+    "No possession date we can stand behind — the submitted date had passed or was marked for verification.",
+    "No RERA registration number on file.",
+    "No carpet or super built-up areas on file.",
+    "Developer not stated in the source listing."
+  ],
+  "floors": "",
+  "totalUnits": null,
+  "lifts": null,
+  "basements": null,
+  "landArea": null,
+  "floorMix": [],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": null,
+    "floorRise": null
+  },
+  "brochure": null
+}

@@ -8,13 +8,13 @@ import ProjectEnquiry from '../../components/ProjectEnquiry.astro';
 import { COMMERCIAL_PROJECTS_LIVE } from '../../lib/flags';
 import { projectContent, rateDisclaimer } from '../../lib/commercial-content';
 import {
-  commercialProjects, commercialPath, PROJECTS_PATH, isReady, possessionLabel,
+  allProjects, commercialPath, PROJECTS_PATH, isReady, possessionLabel,
   rate, rateLine, sections, useSummary, type CommercialProject,
 } from '../../lib/commercial-projects';
 import { site } from '../../lib/config';
 
 export function getStaticPaths() {
-  return commercialProjects.map((p) => ({ params: { project: p.slug }, props: { p } }));
+  return allProjects.map((p) => ({ params: { project: p.slug }, props: { p } }));
 }
 interface Props { p: CommercialProject }
 const { p } = Astro.props;
@@ -36,7 +36,8 @@ const retRegular = p.pricing.retailByFloor.some((r) => r.regular);
 const retDp = p.pricing.retailByFloor.some((r) => r.dp);
 const hasRates = p.pricing.office.length > 0 || p.pricing.retailByFloor.length > 0;
 
-const others = commercialProjects.filter((o) => o.slug !== p.slug);
+// Siblings come from the same category, so an office page does not suggest flats.
+const others = allProjects.filter((o) => o.slug !== p.slug && o.category === p.category);
 const nearby = others.filter((o) => o.localitySlug === p.localitySlug);
 const rest = others.filter((o) => o.localitySlug !== p.localitySlug);
 const siblings = [...nearby, ...rest].slice(0, 4);
@@ -80,6 +81,19 @@ const siblings = [...nearby, ...rest].slice(0, 4);
       <h2>About {p.name}</h2>
       {c.overview.map((para) => <p class="cp-para">{para}</p>)}
     </section>
+
+    {p.category === 'residential' && (
+      <section class="cp-sec" id="homes">
+        <h2>Homes and price</h2>
+        <dl class="facts-list">
+          <div><dt>Configurations</dt><dd>{p.configurations}</dd></div>
+          <div><dt>Price</dt><dd>{rateLine(p)}</dd></div>
+          <div><dt>Status</dt><dd>{p.status}</dd></div>
+          <div><dt>Possession</dt><dd>{possessionLabel(p)}</dd></div>
+        </dl>
+        <p class="cp-note">Price as recorded in the City Property Services project master on 24 September 2026. Carpet and super built-up areas for this project are not yet on file — ask us and we will get them from the developer with the current price.</p>
+      </section>
+    )}
 
     {p.floorMix.length > 0 && (
       <section class="cp-sec" id="floors">
@@ -212,7 +226,7 @@ const siblings = [...nearby, ...rest].slice(0, 4);
             </li>
           ))}
         </ul>
-        <p style="margin-top:16px;"><a class="btn btn-secondary btn-sm" href={PROJECTS_PATH}>See all {commercialProjects.length} projects →</a></p>
+        <p style="margin-top:16px;"><a class="btn btn-secondary btn-sm" href={PROJECTS_PATH}>See all {allProjects.length} projects →</a></p>
       </section>
     )}
 

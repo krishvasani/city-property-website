@@ -1,0 +1,62 @@
+{
+  "slug": "the-emberlynn",
+  "name": "The Emberlynn",
+  "category": "residential",
+  "developer": "Sanskrut Group",
+  "address": "The Emberlynn, Ambli, Ahmedabad",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.03464,
+    "lng": 72.47229
+  },
+  "rera": null,
+  "reraNote": "No RERA registration number is on file for this project. Ask us for the certificate before you book, and verify it on the Gujarat RERA portal.",
+  "projectType": "residential",
+  "projectTypeLabel": "Residential",
+  "status": "Under construction",
+  "possession": null,
+  "configurations": "4 BHK",
+  "priceDisplay": "₹6.5 to 7.4 Cr",
+  "priceValue": 65000000,
+  "description": [
+    "The Emberlynn is an under construction residential project by Sanskrut Group in Ambli, Ahmedabad, offering 4 BHK homes.",
+    "Priced from approximately ₹6.5 to 7.4 Cr. Located near Shell Petrol Pump."
+  ],
+  "amenities": [],
+  "photos": [
+    "/uploads/projects/residential/the-emberlynn/photos/photo-01.jpg",
+    "/uploads/projects/residential/the-emberlynn/photos/photo-02.jpg"
+  ],
+  "photoLabels": [
+    "Project photo",
+    "Project photo"
+  ],
+  "priceAsOf": "2026-09-24",
+  "priceSource": "City Property Services project master",
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/the-emberlynn-ambli/",
+    "slug": "the-emberlynn-ambli",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
+  },
+  "dataGaps": [
+    "No possession date we can stand behind — the submitted date had passed or was marked for verification.",
+    "No RERA registration number on file.",
+    "No carpet or super built-up areas on file."
+  ],
+  "floors": "",
+  "totalUnits": null,
+  "lifts": null,
+  "basements": null,
+  "landArea": null,
+  "floorMix": [],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": null,
+    "floorRise": null
+  },
+  "brochure": null
+}

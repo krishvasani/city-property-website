@@ -1,0 +1,62 @@
+{
+  "slug": "madhav-oeuvre-3",
+  "name": "Madhav Oeuvre 3",
+  "category": "residential",
+  "developer": "Madhav Group",
+  "address": "Madhav Oeuvre 3, Ambli, Ahmedabad",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.0453,
+    "lng": 72.4785
+  },
+  "rera": null,
+  "reraNote": "No RERA registration number is on file for this project. Ask us for the certificate before you book, and verify it on the Gujarat RERA portal.",
+  "projectType": "residential",
+  "projectTypeLabel": "Residential",
+  "status": "Under construction",
+  "possession": null,
+  "configurations": "4 & 5 BHK",
+  "priceDisplay": "₹4.4 to 5.6 Cr",
+  "priceValue": 44000000,
+  "description": [
+    "Madhav Oeuvre 3 is an under construction residential project by Madhav Group in Ambli, Ahmedabad, offering 4 & 5 BHK homes.",
+    "Priced from approximately ₹4.4 to 5.6 Cr. Located opposite Belvista."
+  ],
+  "amenities": [],
+  "photos": [
+    "/uploads/projects/residential/madhav-oeuvre-3/photos/photo-01.jpg",
+    "/uploads/projects/residential/madhav-oeuvre-3/photos/photo-02.jpg"
+  ],
+  "photoLabels": [
+    "Project photo",
+    "Project photo"
+  ],
+  "priceAsOf": "2026-09-24",
+  "priceSource": "City Property Services project master",
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/madhav-oeuvre-3-ambli/",
+    "slug": "madhav-oeuvre-3-ambli",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
+  },
+  "dataGaps": [
+    "No possession date we can stand behind — the submitted date had passed or was marked for verification.",
+    "No RERA registration number on file.",
+    "No carpet or super built-up areas on file."
+  ],
+  "floors": "",
+  "totalUnits": null,
+  "lifts": null,
+  "basements": null,
+  "landArea": null,
+  "floorMix": [],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": null,
+    "floorRise": null
+  },
+  "brochure": null
+}

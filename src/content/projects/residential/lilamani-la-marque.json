@@ -1,0 +1,61 @@
+{
+  "slug": "lilamani-la-marque",
+  "name": "Lilamani La Marque",
+  "category": "residential",
+  "developer": "Lilamani Group",
+  "address": "Lilamani La Marque, Ambli, Ahmedabad",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.04372,
+    "lng": 72.47659
+  },
+  "rera": null,
+  "reraNote": "No RERA registration number is on file for this project. Ask us for the certificate before you book, and verify it on the Gujarat RERA portal.",
+  "projectType": "residential",
+  "projectTypeLabel": "Residential",
+  "status": "Under construction",
+  "possession": "Under construction",
+  "configurations": "4 & 5 BHK Duplex",
+  "priceDisplay": "Price on request",
+  "priceValue": null,
+  "description": [
+    "Lilamani La Marque is an under construction residential project by Lilamani Group in Ambli, Ahmedabad, offering 4 & 5 BHK Duplex homes. Possession: Under construction.",
+    "Located near Altius 2."
+  ],
+  "amenities": [],
+  "photos": [
+    "/uploads/projects/residential/lilamani-la-marque/photos/photo-01.jpg",
+    "/uploads/projects/residential/lilamani-la-marque/photos/photo-02.jpg"
+  ],
+  "photoLabels": [
+    "Project photo",
+    "Project photo"
+  ],
+  "priceAsOf": "2026-09-24",
+  "priceSource": "City Property Services project master",
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/lilamani-la-marque-ambli/",
+    "slug": "lilamani-la-marque-ambli",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
+  },
+  "dataGaps": [
+    "No RERA registration number on file.",
+    "No carpet or super built-up areas on file."
+  ],
+  "floors": "",
+  "totalUnits": null,
+  "lifts": null,
+  "basements": null,
+  "landArea": null,
+  "floorMix": [],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": null,
+    "floorRise": null
+  },
+  "brochure": null
+}

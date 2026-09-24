@@ -9,8 +9,8 @@ import WhatsAppButton from '../../components/WhatsAppButton.astro';
 import { COMMERCIAL_PROJECTS_LIVE, SHANTIGRAM_LIVE } from '../../lib/flags';
 import { indexContent } from '../../lib/commercial-content';
 import {
-  commercialProjects, commercialPath, isReady, possessionLabel, rateLine,
-  sizeRange, useSummary,
+  commercialProjects, residentialProjects, allProjects, commercialPath, isReady,
+  possessionLabel, rateLine, sizeRange, useSummary,
 } from '../../lib/commercial-projects';
 import { projects as shantigramProjects, HUB_PATH } from '../../lib/projects';
 import { contact, site } from '../../lib/config';
@@ -43,7 +43,7 @@ const wa = 'Hi City Property Services, I’d like to know about new commercial p
     </section>
 
     <section class="cpi-sec">
-      <h2>All {all.length} projects at a glance</h2>
+      <h2>All {all.length} commercial projects at a glance</h2>
       <p class="cpi-sub">Sorted with ready buildings first, then by possession date. Carpet area is the range across the whole building; rates are per sq ft as quoted by each developer's sales team on 24 September 2026.</p>
       <div class="table-wrap">
         <table class="cmp-table">
@@ -71,7 +71,7 @@ const wa = 'Hi City Property Services, I’d like to know about new commercial p
     </section>
 
     <section class="cpi-sec">
-      <h2>The projects</h2>
+      <h2>The commercial projects</h2>
       <ul class="proj-grid">
         {all.map((p) => (
           <li>
@@ -103,6 +103,31 @@ const wa = 'Hi City Property Services, I’d like to know about new commercial p
         })}
       </ul>
     </section>
+
+    {residentialProjects.length > 0 && (
+      <section class="cpi-sec" id="residential">
+        <h2>New residential projects in Ambli</h2>
+        <p class="cpi-sub">{residentialProjects.length} apartment projects we are currently advising on in Ambli, sorted with ready projects first. Carpet areas and RERA registrations for these are not yet on file — ask us and we will get them from the developer along with the current price.</p>
+        <div class="table-wrap">
+          <table class="cmp-table">
+            <thead>
+              <tr><th scope="col">Project</th><th scope="col">Developer</th><th scope="col">Configurations</th><th scope="col">Price</th><th scope="col">Possession</th></tr>
+            </thead>
+            <tbody>
+              {residentialProjects.map((p) => (
+                <tr>
+                  <th scope="row"><a href={commercialPath(p)}>{p.name}</a></th>
+                  <td>{p.developer ?? '—'}</td>
+                  <td>{p.configurations}</td>
+                  <td>{rateLine(p)}</td>
+                  <td><span class:list={['status', { ready: isReady(p) }]}>{possessionLabel(p)}</span></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    )}
 
     {SHANTIGRAM_LIVE && (
       <section class="cpi-sec cpi-cross">

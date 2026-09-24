@@ -1,0 +1,62 @@
+{
+  "slug": "satyamev-luxor",
+  "name": "Satyamev Luxor",
+  "category": "residential",
+  "developer": "Satyamev Developers",
+  "address": "Satyamev Luxor, Ambli, Ahmedabad",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.02999,
+    "lng": 72.48212
+  },
+  "rera": null,
+  "reraNote": "No RERA registration number is on file for this project. Ask us for the certificate before you book, and verify it on the Gujarat RERA portal.",
+  "projectType": "residential",
+  "projectTypeLabel": "Residential",
+  "status": "Under construction",
+  "possession": null,
+  "configurations": "4 & 5 BHK + Penthouse",
+  "priceDisplay": "₹2.8 to 2.9 Cr",
+  "priceValue": 28000000,
+  "description": [
+    "Satyamev Luxor is an under construction residential project by Satyamev Developers in Ambli, Ahmedabad, offering 4 & 5 BHK + Penthouse homes.",
+    "Priced from approximately ₹2.8 to 2.9 Cr. Located near Vakil Bridge."
+  ],
+  "amenities": [],
+  "photos": [
+    "/uploads/projects/residential/satyamev-luxor/photos/photo-01.jpg",
+    "/uploads/projects/residential/satyamev-luxor/photos/photo-02.jpg"
+  ],
+  "photoLabels": [
+    "Project photo",
+    "Project photo"
+  ],
+  "priceAsOf": "2026-09-24",
+  "priceSource": "City Property Services project master",
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/satyamev-luxor-ambli/",
+    "slug": "satyamev-luxor-ambli",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
+  },
+  "dataGaps": [
+    "No possession date we can stand behind — the submitted date had passed or was marked for verification.",
+    "No RERA registration number on file.",
+    "No carpet or super built-up areas on file."
+  ],
+  "floors": "",
+  "totalUnits": null,
+  "lifts": null,
+  "basements": null,
+  "landArea": null,
+  "floorMix": [],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": null,
+    "floorRise": null
+  },
+  "brochure": null
+}

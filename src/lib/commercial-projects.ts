@@ -23,7 +23,18 @@ export interface RetailRate { floor: string; regular?: number; dp?: number }
 export interface CommercialProject {
   slug: string;
   name: string;
-  developer: string;
+  /** 'commercial' = an office/retail building; 'residential' = an Ambli apartment project. */
+  category?: 'commercial' | 'residential';
+  /** Residential only: "4 & 6 BHK + Penthouse". */
+  configurations?: string;
+  /** Residential only: the price band as the project master states it. */
+  priceDisplay?: string;
+  priceValue?: number | null;
+  /** Residential only: the paragraphs carried over from the listing. */
+  description?: string[];
+  /** The legacy /property/ URL this project came from, for the Phase 1 redirects. */
+  sourceListing?: { url: string; slug: string; note: string };
+  developer: string | null;
   address: string;
   localitySlug: string;
   localityName: string;
@@ -32,7 +43,7 @@ export interface CommercialProject {
   /** Gujarat RERA registration, or null when it could not be published — see reraNote. */
   rera: string | null;
   reraNote: string | null;
-  projectType: 'office' | 'retail' | 'mixed-use';
+  projectType: 'office' | 'retail' | 'mixed-use' | 'residential';
   projectTypeLabel: string;
   status: string;
   /** ISO date, or null when the building is ready. */
@@ -59,13 +70,24 @@ export interface CommercialProject {
   dataGaps: string[];
 }
 
-const files = import.meta.glob<{ default: CommercialProject }>('../content/projects/commercial/*.json', { eager: true });
+const commercialFiles = import.meta.glob<{ default: CommercialProject }>('../content/projects/commercial/*.json', { eager: true });
+const residentialFiles = import.meta.glob<{ default: CommercialProject }>('../content/projects/residential/*.json', { eager: true });
 
-/** All commercial projects, ready buildings first, then by possession date, then by name. */
-export const commercialProjects: CommercialProject[] = Object.values(files)
-  .map((m) => m.default)
-  .map((p) => ({ ...p, amenities: [...p.amenities].sort((a, b) => a.localeCompare(b)) }))
-  .sort((a, b) => Number(isReady(b)) - Number(isReady(a)) || (a.possession ?? '').localeCompare(b.possession ?? '') || a.name.localeCompare(b.name));
+const load = (files: Record<string, { default: CommercialProject }>, category: 'commercial' | 'residential') =>
+  Object.values(files)
+    .map((m) => ({ ...m.default, category: m.default.category ?? category }))
+    .map((p) => ({ ...p, amenities: [...p.amenities].sort((a, b) => a.localeCompare(b)) }));
+
+/** Ready buildings first, then by possession date, then by name. */
+const order = (a: CommercialProject, b: CommercialProject) =>
+  Number(isReady(b)) - Number(isReady(a)) || (a.possession ?? '~').localeCompare(b.possession ?? '~') || a.name.localeCompare(b.name);
+
+/** The 8 office/retail buildings. */
+export const commercialProjects: CommercialProject[] = load(commercialFiles, 'commercial').sort(order);
+/** The Ambli apartment projects. */
+export const residentialProjects: CommercialProject[] = load(residentialFiles, 'residential').sort(order);
+/** Everything under /projects/ that uses the shared template. */
+export const allProjects: CommercialProject[] = [...commercialProjects, ...residentialProjects];
 
 export const PROJECTS_PATH = '/projects/';
 export const commercialPath = (p: CommercialProject) => `${PROJECTS_PATH}${p.slug}/`;
@@ -74,9 +96,14 @@ export function isReady(p: CommercialProject): boolean {
   return /ready/i.test(p.status);
 }
 
-/** "2027-12-31" → "Dec 2027". Ready buildings return "Ready to move in". */
+/**
+ * "2027-12-31" → "Dec 2027". Residential records already carry a display string
+ * ("Dec 2027", "Diwali 2029"), which passes through. A project with no date we
+ * can stand behind says so rather than claiming to be ready.
+ */
 export function possessionLabel(p: CommercialProject): string {
-  if (isReady(p) || !p.possession) return 'Ready to move in';
+  if (isReady(p)) return 'Ready to move in';
+  if (!p.possession) return 'Possession date on request';
   const d = new Date(p.possession);
   return Number.isNaN(d.getTime()) ? p.possession : d.toLocaleDateString('en-IN', { month: 'short', year: 'numeric' });
 }
@@ -95,6 +122,7 @@ export function rateFloor(p: CommercialProject): number | undefined {
 
 /** "Offices from ₹8,500 per sq ft" · "Retail from ₹11,000 per sq ft" · "On request". */
 export function rateLine(p: CommercialProject): string {
+  if (p.category === 'residential') return p.priceDisplay && !/on request/i.test(p.priceDisplay) ? p.priceDisplay : 'Price on request';
   const off = p.pricing.office.flatMap((o) => [o.regular, o.dp]).filter((n): n is number => typeof n === 'number');
   const ret = p.pricing.retailByFloor.flatMap((r) => [r.regular, r.dp]).filter((n): n is number => typeof n === 'number');
   const parts: string[] = [];
@@ -115,6 +143,7 @@ export function sizeRange(p: CommercialProject): string | undefined {
 
 /** The uses actually present in the floor mix: "Retail and offices". */
 export function useSummary(p: CommercialProject): string {
+  if (p.category === 'residential') return p.configurations || 'Homes';
   const retail = p.floorMix.some((f) => f.use && /retail|showroom/i.test(f.use)) || p.pricing.retailByFloor.length > 0;
   const office = p.floorMix.some((f) => f.use && /office|corporate/i.test(f.use)) || p.pricing.office.length > 0;
   if (retail && office) return 'Retail and offices';
@@ -126,6 +155,7 @@ export function useSummary(p: CommercialProject): string {
 /** Page sections, in order, for the sticky in-page nav. Only sections with content. */
 export function sections(p: CommercialProject): { id: string; label: string }[] {
   const s = [{ id: 'overview', label: 'Overview' }];
+  if (p.category === 'residential') s.push({ id: 'homes', label: 'Homes and price' });
   if (p.floorMix.length) s.push({ id: 'floors', label: 'Floor plan' });
   if (rateFloor(p) !== undefined || p.pricing.extraCharges) s.push({ id: 'pricing', label: 'Pricing' });
   if (p.amenities.length) s.push({ id: 'amenities', label: 'Amenities' });

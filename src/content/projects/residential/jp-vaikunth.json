@@ -1,0 +1,62 @@
+{
+  "slug": "jp-vaikunth",
+  "name": "JP Vaikunth",
+  "category": "residential",
+  "developer": "JP Initiatives LLP",
+  "address": "JP Vaikunth, Ambli, Ahmedabad",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.03799,
+    "lng": 72.48115
+  },
+  "rera": null,
+  "reraNote": "No RERA registration number is on file for this project. Ask us for the certificate before you book, and verify it on the Gujarat RERA portal.",
+  "projectType": "residential",
+  "projectTypeLabel": "Residential",
+  "status": "Under construction",
+  "possession": null,
+  "configurations": "4 & 5 BHK",
+  "priceDisplay": "₹14.3 to 15 Cr",
+  "priceValue": 143000000,
+  "description": [
+    "JP Vaikunth is an under construction residential project by JP Initiatives LLP in Ambli, Ahmedabad, offering 4 & 5 BHK homes.",
+    "Priced from approximately ₹14.3 to 15 Cr. Located near Earth 12."
+  ],
+  "amenities": [],
+  "photos": [
+    "/uploads/projects/residential/jp-vaikunth/photos/photo-01.jpg",
+    "/uploads/projects/residential/jp-vaikunth/photos/photo-02.jpg"
+  ],
+  "photoLabels": [
+    "Project photo",
+    "Project photo"
+  ],
+  "priceAsOf": "2026-09-24",
+  "priceSource": "City Property Services project master",
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/jp-vaikunth-ambli/",
+    "slug": "jp-vaikunth-ambli",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
+  },
+  "dataGaps": [
+    "No possession date we can stand behind — the submitted date had passed or was marked for verification.",
+    "No RERA registration number on file.",
+    "No carpet or super built-up areas on file."
+  ],
+  "floors": "",
+  "totalUnits": null,
+  "lifts": null,
+  "basements": null,
+  "landArea": null,
+  "floorMix": [],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": null,
+    "floorRise": null
+  },
+  "brochure": null
+}

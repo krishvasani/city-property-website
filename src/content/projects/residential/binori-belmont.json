@@ -1,0 +1,61 @@
+{
+  "slug": "binori-belmont",
+  "name": "Binori Belmont",
+  "category": "residential",
+  "developer": "Binori Group",
+  "address": "Binori Belmont, Ambli, Ahmedabad",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.03466,
+    "lng": 72.47177
+  },
+  "rera": null,
+  "reraNote": "No RERA registration number is on file for this project. Ask us for the certificate before you book, and verify it on the Gujarat RERA portal.",
+  "projectType": "residential",
+  "projectTypeLabel": "Residential",
+  "status": "Under construction",
+  "possession": "Dec 2027",
+  "configurations": "4 & 6 BHK + Penthouse",
+  "priceDisplay": "₹5.8 to 9.3 Cr",
+  "priceValue": 58000000,
+  "description": [
+    "Binori Belmont is an under construction residential project by Binori Group in Ambli, Ahmedabad, offering 4 & 6 BHK + Penthouse homes. Possession: Dec 2027.",
+    "Priced from approximately ₹5.8 to 9.3 Cr. Located opposite Landmark Hotel."
+  ],
+  "amenities": [],
+  "photos": [
+    "/uploads/projects/residential/binori-belmont/photos/photo-01.jpg",
+    "/uploads/projects/residential/binori-belmont/photos/photo-02.jpg"
+  ],
+  "photoLabels": [
+    "Project photo",
+    "Project photo"
+  ],
+  "priceAsOf": "2026-09-24",
+  "priceSource": "City Property Services project master",
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/binori-belmont-ambli/",
+    "slug": "binori-belmont-ambli",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
+  },
+  "dataGaps": [
+    "No RERA registration number on file.",
+    "No carpet or super built-up areas on file."
+  ],
+  "floors": "",
+  "totalUnits": null,
+  "lifts": null,
+  "basements": null,
+  "landArea": null,
+  "floorMix": [],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": null,
+    "floorRise": null
+  },
+  "brochure": null
+}

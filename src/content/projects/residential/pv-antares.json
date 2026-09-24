@@ -1,0 +1,61 @@
+{
+  "slug": "pv-antares",
+  "name": "PV Antares",
+  "category": "residential",
+  "developer": "Parshwa Infra Ventures",
+  "address": "PV Antares, Ambli, Ahmedabad",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.0334,
+    "lng": 72.46821
+  },
+  "rera": null,
+  "reraNote": "No RERA registration number is on file for this project. Ask us for the certificate before you book, and verify it on the Gujarat RERA portal.",
+  "projectType": "residential",
+  "projectTypeLabel": "Residential",
+  "status": "Ready to move in",
+  "possession": null,
+  "configurations": "5 BHK",
+  "priceDisplay": "Price on request",
+  "priceValue": null,
+  "description": [
+    "PV Antares is a ready to move residential project by Parshwa Infra Ventures in Ambli, Ahmedabad, offering 5 BHK homes. Ready to move in."
+  ],
+  "amenities": [],
+  "photos": [
+    "/uploads/projects/residential/pv-antares/photos/photo-01.jpg",
+    "/uploads/projects/residential/pv-antares/photos/photo-02.jpg"
+  ],
+  "photoLabels": [
+    "Project photo",
+    "Project photo"
+  ],
+  "priceAsOf": "2026-09-24",
+  "priceSource": "City Property Services project master",
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/pv-antares-ambli/",
+    "slug": "pv-antares-ambli",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
+  },
+  "dataGaps": [
+    "No possession date we can stand behind — the submitted date had passed or was marked for verification.",
+    "No RERA registration number on file.",
+    "No carpet or super built-up areas on file."
+  ],
+  "floors": "",
+  "totalUnits": null,
+  "lifts": null,
+  "basements": null,
+  "landArea": null,
+  "floorMix": [],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": null,
+    "floorRise": null
+  },
+  "brochure": null
+}

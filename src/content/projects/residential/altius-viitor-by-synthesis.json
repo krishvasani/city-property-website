@@ -1,0 +1,68 @@
+{
+  "slug": "altius-viitor-by-synthesis",
+  "name": "Altius Viitor by Synthesis",
+  "category": "residential",
+  "developer": "Synthesis is a ready to move residential project by Synthesis Framework LLP",
+  "address": "Altius Viitor by Synthesis, Ambli, Ahmedabad",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.04271,
+    "lng": 72.4753
+  },
+  "rera": null,
+  "reraNote": "No RERA registration number is on file for this project. Ask us for the certificate before you book, and verify it on the Gujarat RERA portal.",
+  "projectType": "residential",
+  "projectTypeLabel": "Residential",
+  "status": "Ready to move in",
+  "possession": null,
+  "configurations": "4 BHK",
+  "priceDisplay": "Price on request",
+  "priceValue": null,
+  "description": [
+    "Altius Viitor by Synthesis is a ready to move residential project by Synthesis Framework LLP in Ambli, Ahmedabad, offering 4 BHK homes. Ready to move in.",
+    "Located behind Sankalp Grace 2."
+  ],
+  "amenities": [],
+  "photos": [
+    "/uploads/projects/residential/altius-viitor-by-synthesis/photos/photo-01.jpg",
+    "/uploads/projects/residential/altius-viitor-by-synthesis/photos/photo-02.jpg",
+    "/uploads/projects/residential/altius-viitor-by-synthesis/photos/photo-03.jpg",
+    "/uploads/projects/residential/altius-viitor-by-synthesis/photos/photo-04.jpg",
+    "/uploads/projects/residential/altius-viitor-by-synthesis/photos/photo-05.jpg"
+  ],
+  "photoLabels": [
+    "Project photo",
+    "Project photo",
+    "Project photo",
+    "Project photo",
+    "Project photo"
+  ],
+  "priceAsOf": "2026-09-24",
+  "priceSource": "City Property Services project master",
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/altius-viitor-by-synthesis-ambli/",
+    "slug": "altius-viitor-by-synthesis-ambli",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
+  },
+  "dataGaps": [
+    "No possession date we can stand behind — the submitted date had passed or was marked for verification.",
+    "No RERA registration number on file.",
+    "No carpet or super built-up areas on file."
+  ],
+  "floors": "",
+  "totalUnits": null,
+  "lifts": null,
+  "basements": null,
+  "landArea": null,
+  "floorMix": [],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": null,
+    "floorRise": null
+  },
+  "brochure": null
+}

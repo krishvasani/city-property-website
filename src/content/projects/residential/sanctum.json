@@ -1,0 +1,61 @@
+{
+  "slug": "sanctum",
+  "name": "Sanctum",
+  "category": "residential",
+  "developer": "Dev Shrushti / Ratilal Group",
+  "address": "Sanctum, Ambli, Ahmedabad",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.02913,
+    "lng": 72.4857
+  },
+  "rera": null,
+  "reraNote": "No RERA registration number is on file for this project. Ask us for the certificate before you book, and verify it on the Gujarat RERA portal.",
+  "projectType": "residential",
+  "projectTypeLabel": "Residential",
+  "status": "Under construction",
+  "possession": "Dec 2025",
+  "configurations": "4 BHK",
+  "priceDisplay": "₹2.3 to 2.7 Cr",
+  "priceValue": 23000000,
+  "description": [
+    "Sanctum is an under construction residential project by Dev Shrushti / Ratilal Group in Ambli, Ahmedabad, offering 4 BHK homes. Possession: Dec 2025.",
+    "Priced from approximately ₹2.3 to 2.7 Cr. Located behind Shell Petrol Pump."
+  ],
+  "amenities": [],
+  "photos": [
+    "/uploads/projects/residential/sanctum/photos/photo-01.jpg",
+    "/uploads/projects/residential/sanctum/photos/photo-02.jpg"
+  ],
+  "photoLabels": [
+    "Project photo",
+    "Project photo"
+  ],
+  "priceAsOf": "2026-09-24",
+  "priceSource": "City Property Services project master",
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/sanctum-ambli/",
+    "slug": "sanctum-ambli",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
+  },
+  "dataGaps": [
+    "No RERA registration number on file.",
+    "No carpet or super built-up areas on file."
+  ],
+  "floors": "",
+  "totalUnits": null,
+  "lifts": null,
+  "basements": null,
+  "landArea": null,
+  "floorMix": [],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": null,
+    "floorRise": null
+  },
+  "brochure": null
+}

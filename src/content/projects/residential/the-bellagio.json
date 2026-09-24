@@ -1,0 +1,61 @@
+{
+  "slug": "the-bellagio",
+  "name": "The Bellagio",
+  "category": "residential",
+  "developer": "Palak",
+  "address": "The Bellagio, Ambli, Ahmedabad",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.03415,
+    "lng": 72.48086
+  },
+  "rera": null,
+  "reraNote": "No RERA registration number is on file for this project. Ask us for the certificate before you book, and verify it on the Gujarat RERA portal.",
+  "projectType": "residential",
+  "projectTypeLabel": "Residential",
+  "status": "Under construction",
+  "possession": "Dec 2026",
+  "configurations": "4 & 5 BHK",
+  "priceDisplay": "₹5.7 to 8.2 Cr",
+  "priceValue": 57000000,
+  "description": [
+    "The Bellagio is an under construction residential project by Palak in Ambli, Ahmedabad, offering 4 & 5 BHK homes. Possession: Dec 2026.",
+    "Priced from approximately ₹5.7 to 8.2 Cr."
+  ],
+  "amenities": [],
+  "photos": [
+    "/uploads/projects/residential/the-bellagio/photos/photo-01.jpg",
+    "/uploads/projects/residential/the-bellagio/photos/photo-02.jpg"
+  ],
+  "photoLabels": [
+    "Project photo",
+    "Project photo"
+  ],
+  "priceAsOf": "2026-09-24",
+  "priceSource": "City Property Services project master",
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/the-bellagio-ambli/",
+    "slug": "the-bellagio-ambli",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
+  },
+  "dataGaps": [
+    "No RERA registration number on file.",
+    "No carpet or super built-up areas on file."
+  ],
+  "floors": "",
+  "totalUnits": null,
+  "lifts": null,
+  "basements": null,
+  "landArea": null,
+  "floorMix": [],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": null,
+    "floorRise": null
+  },
+  "brochure": null
+}

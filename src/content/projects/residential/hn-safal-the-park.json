@@ -1,0 +1,65 @@
+{
+  "slug": "hn-safal-the-park",
+  "name": "HN Safal The Park",
+  "category": "residential",
+  "developer": "HN Safal Builders",
+  "address": "HN Safal The Park, Ambli, Ahmedabad",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.03615,
+    "lng": 72.47489
+  },
+  "rera": null,
+  "reraNote": "No RERA registration number is on file for this project. Ask us for the certificate before you book, and verify it on the Gujarat RERA portal.",
+  "projectType": "residential",
+  "projectTypeLabel": "Residential",
+  "status": "Under construction",
+  "possession": "Sep 2027",
+  "configurations": "5 BHK",
+  "priceDisplay": "₹7.4 to 7.5 Cr",
+  "priceValue": 74000000,
+  "description": [
+    "HN Safal The Park is an under construction residential project by HN Safal Builders in Ambli, Ahmedabad, offering 5 BHK homes. Possession: Sep 2027.",
+    "Priced from approximately ₹7.4 to 7.5 Cr. Located opposite Emberlynn."
+  ],
+  "amenities": [],
+  "photos": [
+    "/uploads/projects/residential/hn-safal-the-park/photos/photo-01.jpg",
+    "/uploads/projects/residential/hn-safal-the-park/photos/photo-02.jpg",
+    "/uploads/projects/residential/hn-safal-the-park/photos/photo-03.jpg",
+    "/uploads/projects/residential/hn-safal-the-park/photos/photo-04.jpg"
+  ],
+  "photoLabels": [
+    "Project photo",
+    "Project photo",
+    "Project photo",
+    "Project photo"
+  ],
+  "priceAsOf": "2026-09-24",
+  "priceSource": "City Property Services project master",
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/hn-safal-the-park-ambli/",
+    "slug": "hn-safal-the-park-ambli",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
+  },
+  "dataGaps": [
+    "No RERA registration number on file.",
+    "No carpet or super built-up areas on file."
+  ],
+  "floors": "",
+  "totalUnits": null,
+  "lifts": null,
+  "basements": null,
+  "landArea": null,
+  "floorMix": [],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": null,
+    "floorRise": null
+  },
+  "brochure": null
+}

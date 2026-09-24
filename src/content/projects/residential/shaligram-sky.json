@@ -1,0 +1,56 @@
+{
+  "slug": "shaligram-sky",
+  "name": "Shaligram Sky",
+  "category": "residential",
+  "developer": "Shaligram Space LLP",
+  "address": "Shaligram Sky, Ambli, Ahmedabad",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.0312,
+    "lng": 72.47374
+  },
+  "rera": null,
+  "reraNote": "No RERA registration number is on file for this project. Ask us for the certificate before you book, and verify it on the Gujarat RERA portal.",
+  "projectType": "residential",
+  "projectTypeLabel": "Residential",
+  "status": "Under construction",
+  "possession": "Jun 2028",
+  "configurations": "4 BHK",
+  "priceDisplay": "₹2.4 to 3.2 Cr",
+  "priceValue": 24000000,
+  "description": [
+    "Shaligram Sky is an under construction residential project by Shaligram Space LLP in Ambli, Ahmedabad, offering 4 BHK homes. Possession: Jun 2028.",
+    "Priced from approximately ₹2.4 to 3.2 Cr."
+  ],
+  "amenities": [],
+  "photos": [],
+  "photoLabels": [],
+  "priceAsOf": "2026-09-24",
+  "priceSource": "City Property Services project master",
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/shaligram-sky-ambli/",
+    "slug": "shaligram-sky-ambli",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
+  },
+  "dataGaps": [
+    "No photographs.",
+    "No RERA registration number on file.",
+    "No carpet or super built-up areas on file."
+  ],
+  "floors": "",
+  "totalUnits": null,
+  "lifts": null,
+  "basements": null,
+  "landArea": null,
+  "floorMix": [],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": null,
+    "floorRise": null
+  },
+  "brochure": null
+}
