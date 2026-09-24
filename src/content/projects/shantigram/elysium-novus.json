@@ -120,7 +120,7 @@
     "Type - 5 Block J",
     "Master layout"
   ],
-  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "imageSource": "Photo sets supplied by City Property Services (cover and order as curated), plus additional renders from the Adani Realty project page (fetched 2026-09-20)",
   "developerSite": {
     "url": "https://www.adanirealty.com/residential-projects/ahmedabad/elysium-novus",
     "fetched": "2026-09-20",
@@ -131,5 +131,14 @@
     "reraFull": "RERA No. RAA14729/270125/311228",
     "startingPrice": "₹1.23 Cr (all incl.)",
     "faqCount": 8
+  },
+  "geo": {
+    "lat": 23.1709,
+    "lng": 72.53749
+  },
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/adani-elysium-novus-shantigram/",
+    "slug": "adani-elysium-novus-shantigram",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
   }
 }

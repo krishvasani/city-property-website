@@ -64,7 +64,13 @@
     "/uploads/projects/shantigram/embrace/photos/photo-11.jpg",
     "/uploads/projects/shantigram/embrace/photos/photo-12.jpg",
     "/uploads/projects/shantigram/embrace/photos/photo-13.jpg",
-    "/uploads/projects/shantigram/embrace/photos/photo-14.jpg"
+    "/uploads/projects/shantigram/embrace/photos/photo-14.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-15.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-16.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-17.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-18.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-19.jpg",
+    "/uploads/projects/shantigram/embrace/photos/photo-20.jpg"
   ],
   "floorPlans": [
     "/uploads/projects/shantigram/embrace/floor-plans/plan-01.jpg",
@@ -108,6 +114,12 @@
     "Artistic Impression",
     "Artistic Impression",
     "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
     "Artistic Impression"
   ],
   "floorPlanLabels": [
@@ -122,7 +134,7 @@
     "3 BHK  Block C  Unit Plan 2  Typical Floor  3 5 7  9",
     "3 BHK - Block C Penthouse - Upper Level - 13th Floor"
   ],
-  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "imageSource": "Photo sets supplied by City Property Services (cover and order as curated), plus additional renders from the Adani Realty project page (fetched 2026-09-20)",
   "developerSite": {
     "url": "https://www.adanirealty.com/residential-projects/ahmedabad/embrace",
     "fetched": "2026-09-20",
@@ -133,5 +145,14 @@
     "reraFull": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/RAA12526/251023",
     "startingPrice": "₹ 1.42 Cr. (all-incl.)",
     "faqCount": 8
+  },
+  "geo": {
+    "lat": 23.15675,
+    "lng": 72.52969
+  },
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/adani-embrace-shantigram/",
+    "slug": "adani-embrace-shantigram",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
   }
 }

@@ -57,8 +57,7 @@
     "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-08.jpg",
     "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-09.jpg",
     "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-10.jpg",
-    "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-11.jpg",
-    "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-12.jpg"
+    "/uploads/projects/shantigram/the-storeys-infinity/photos/photo-11.jpg"
   ],
   "floorPlans": [
     "/uploads/projects/shantigram/the-storeys-infinity/floor-plans/plan-01.jpg",
@@ -87,7 +86,6 @@
   "priceNote": "Project-level band from the CPS Series Master; the developer has not published per-configuration prices. The project fact sheet records pricing as on request; the band is the Series Master’s figure.",
   "photoLabels": [
     "Artistic Impression",
-    "",
     "Artistic Impression",
     "Artistic Impression",
     "Artistic Impression",
@@ -97,7 +95,7 @@
     "Artistic Impression",
     "Artistic Impression",
     "Artistic Impression",
-    "Indoor Swimming Pool"
+    ""
   ],
   "floorPlanLabels": [
     "Block plan 3rd to 10th floor",
@@ -107,7 +105,7 @@
     "Master layout",
     "Master layout"
   ],
-  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "imageSource": "Photo sets supplied by City Property Services (cover and order as curated), plus additional renders from the Adani Realty project page (fetched 2026-09-20)",
   "developerSite": {
     "url": "https://www.adanirealty.com/residential-projects/ahmedabad/the-storeys-infinity",
     "fetched": "2026-09-20",
@@ -119,5 +117,14 @@
     "startingPrice": "3.5 Cr. (all incl.)",
     "faqCount": 9,
     "reraFullNote": "The developer site shows Amora’s registration (MAA16481…) on this page — a site error; the fact sheet number is used."
+  },
+  "geo": {
+    "lat": 23.1688,
+    "lng": 72.54151
+  },
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/adani-storeys-infinity-shantigram/",
+    "slug": "adani-storeys-infinity-shantigram",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
   }
 }

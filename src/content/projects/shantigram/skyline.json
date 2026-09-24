@@ -94,7 +94,7 @@
     "Skyline Penthouse Upper Level",
     "Master layout"
   ],
-  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "imageSource": "Photo sets supplied by City Property Services (cover and order as curated), plus additional renders from the Adani Realty project page (fetched 2026-09-20)",
   "developerSite": {
     "url": "https://www.adanirealty.com/residential-projects/ahmedabad/skyline",
     "fetched": "2026-09-20",
@@ -105,5 +105,14 @@
     "reraFull": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/Ahmedabad Urban Development Authority/RAA14084/020924/300929",
     "startingPrice": "Rs. 1.95 Cr. (all-incl.)",
     "faqCount": 10
+  },
+  "geo": {
+    "lat": 23.17166,
+    "lng": 72.54055
+  },
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/adani-skyline-shantigram/",
+    "slug": "adani-skyline-shantigram",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
   }
 }

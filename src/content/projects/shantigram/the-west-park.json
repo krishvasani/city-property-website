@@ -103,7 +103,7 @@
   "floorPlanLabels": [
     "Master layout"
   ],
-  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "imageSource": "Photo sets supplied by City Property Services (cover and order as curated), plus additional renders from the Adani Realty project page (fetched 2026-09-20)",
   "developerSite": {
     "url": "https://www.adanirealty.com/residential-projects/ahmedabad/the-west-park",
     "fetched": "2026-09-20",
@@ -114,5 +114,14 @@
     "reraFull": "PR/GJ/GANDHINAGAR/GANDHINAGAR/AUDA/RAA11300/020323",
     "startingPrice": "Available on Request",
     "faqCount": 8
+  },
+  "geo": {
+    "lat": 23.17368,
+    "lng": 72.54086
+  },
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/adani-west-park-shantigram/",
+    "slug": "adani-west-park-shantigram",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
   }
 }

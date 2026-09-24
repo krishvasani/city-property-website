@@ -115,7 +115,7 @@
     "2nd to 19th Floor Unit 201 Plan",
     "2nd to 19th Floor Unit 202 Typical Unit Plan"
   ],
-  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "imageSource": "Photo sets supplied by City Property Services (cover and order as curated), plus additional renders from the Adani Realty project page (fetched 2026-09-20)",
   "developerSite": {
     "url": "https://www.adanirealty.com/residential-projects/ahmedabad/greenfield",
     "fetched": "2026-09-20",
@@ -126,5 +126,14 @@
     "reraFull": "RERA No. RAA14879/250225/311229",
     "startingPrice": "₹ 1.73 Cr. Onwards*",
     "faqCount": 12
+  },
+  "geo": {
+    "lat": 23.16425,
+    "lng": 72.54563
+  },
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/adani-greenfield-shantigram/",
+    "slug": "adani-greenfield-shantigram",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
   }
 }

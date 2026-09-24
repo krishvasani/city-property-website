@@ -87,7 +87,10 @@
     "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-07.jpg",
     "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-08.jpg",
     "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-09.jpg",
-    "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-10.jpg"
+    "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-10.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-11.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-12.jpg",
+    "/uploads/projects/shantigram/the-storeys-golf-coast/photos/photo-13.jpg"
   ],
   "floorPlans": [
     "/uploads/projects/shantigram/the-storeys-golf-coast/floor-plans/plan-01.jpg",
@@ -128,6 +131,9 @@
     "Artistic Impression",
     "Artistic Impression",
     "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
+    "Artistic Impression",
     "Artistic Impression"
   ],
   "floorPlanLabels": [
@@ -142,7 +148,7 @@
     "Master layout",
     "Master layout"
   ],
-  "imageSource": "Adani Realty project page (developer renders and actual images), fetched 2026-09-20",
+  "imageSource": "Photo sets supplied by City Property Services (cover and order as curated), plus additional renders from the Adani Realty project page (fetched 2026-09-20)",
   "developerSite": {
     "url": "https://www.adanirealty.com/residential-projects/ahmedabad/the-storeys-golf-coast",
     "fetched": "2026-09-20",
@@ -153,5 +159,14 @@
     "reraFull": "RERA No. RAA14971/170325/311228",
     "startingPrice": "Available on Request",
     "faqCount": 12
+  },
+  "geo": {
+    "lat": 23.15488,
+    "lng": 72.53995
+  },
+  "sourceListing": {
+    "url": "https://cityprop.co.in/property/adani-storeys-golf-coast-shantigram/",
+    "slug": "adani-storeys-golf-coast-shantigram",
+    "note": "Legacy listing URL for this project; to be 301-redirected to this project page in Phase 1."
   }
 }
