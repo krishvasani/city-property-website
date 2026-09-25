@@ -159,7 +159,7 @@ const siblings = [...nearby, ...rest].slice(0, 4);
                   {p.pricing.retailByFloor.map((r) => (
                     <tr>
                       <th scope="row">{r.floor === 'G' ? 'Ground' : r.floor}</th>
-                      {retRegular && <td>{r.regular ? rate(r.regular) : '—'}</td>}
+                      {retRegular && <td>{r.regular ? rate(r.regular) : '—'}{r.note && <span class="muted small"> — {r.note}</span>}</td>}
                       {retDp && <td>{r.dp ? rate(r.dp) : '—'}</td>}
                     </tr>
                   ))}
@@ -173,7 +173,7 @@ const siblings = [...nearby, ...rest].slice(0, 4);
         {(p.pricing.extraCharges || p.pricing.floorRise) && (
           <dl class="facts-list" style="margin-top:20px;">
             {p.pricing.extraCharges && <div><dt>On top of the basic rate</dt><dd>{p.pricing.extraCharges}</dd></div>}
-            {p.pricing.floorRise && <div><dt>Floor rise</dt><dd>{p.pricing.floorRise}</dd></div>}
+            {p.pricing.floorRise && <div><dt>Floor rise / PLC</dt><dd>{p.pricing.floorRise}</dd></div>}
           </dl>
         )}
 

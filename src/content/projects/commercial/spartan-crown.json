@@ -1,0 +1,123 @@
+{
+  "slug": "spartan-crown",
+  "name": "Spartan Crown",
+  "developer": "Spartan Group",
+  "address": "Pakwan Cross Road, SG Highway, Bodakdev, Ahmedabad, Gujarat 380054",
+  "localitySlug": "bodakdev",
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.039168,
+    "lng": 72.511389
+  },
+  "rera": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/Ahmedabad Municipal Corporation/CAA17032/290626/311229",
+  "reraNote": null,
+  "projectType": "retail",
+  "projectTypeLabel": "Retail",
+  "status": "Under Construction",
+  "possession": "2029-12-31",
+  "floors": "G+5",
+  "totalUnits": "60",
+  "lifts": 4,
+  "basements": 3,
+  "landArea": "3,414 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "Ground",
+      "use": "Retail",
+      "unitsPerFloor": "9",
+      "carpet": "2,570 – 3,625 sq ft",
+      "sbu": "4,850 – 6,832 sq ft",
+      "ceiling": "15 ft"
+    },
+    {
+      "floor": "1, 2 & 5",
+      "use": "Retail",
+      "unitsPerFloor": "9",
+      "carpet": "1,280 – 1,950 sq ft",
+      "sbu": "2,413 – 3,664 sq ft",
+      "ceiling": "13 ft"
+    },
+    {
+      "floor": "3 & 4",
+      "use": "Retail",
+      "unitsPerFloor": "12",
+      "carpet": "860 – 1,950 sq ft",
+      "sbu": "1,614 – 3,664 sq ft",
+      "ceiling": "13 ft"
+    }
+  ],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [
+      {
+        "floor": "G and 1",
+        "regular": 15000,
+        "note": "Sold out"
+      },
+      {
+        "floor": "2",
+        "regular": 8750,
+        "note": "Sold out"
+      },
+      {
+        "floor": "3",
+        "regular": 7750
+      },
+      {
+        "floor": "4",
+        "regular": 7250
+      },
+      {
+        "floor": "5 & 6",
+        "regular": 6750
+      }
+    ],
+    "retailDpNote": "Down-payment rates for retail are quoted on the table by the developer.",
+    "extraCharges": "₹900 per sq ft AMC, AUDA and AEC; ₹200 maintenance deposit; ₹50 per sq ft running maintenance for 2 years; legal ₹20,000; parking ₹7 lakh",
+    "floorRise": null
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "cityproperties09@gmail.com",
+    "developerSalesContact": "Riteshbhai",
+    "developerSalesPhone": "8511996996",
+    "notes": "dp  clear in 3 months",
+    "uploads": [
+      "https://drive.google.com/open?id=1wDWbOpsf4I3xtSNrPJ5f5nl-TvIry7RH",
+      "https://drive.google.com/open?id=18ytNzKQ140NqlvF1T17JrLZtDyMsC9g1",
+      "https://drive.google.com/open?id=1OLK4yyW_WUxNvJ3Yj4D1vAz12hILc2uh",
+      "https://drive.google.com/open?id=1mJ_TcSwCqk6TmsuOZmtry1E8ZXnn9YkM"
+    ],
+    "submittedAt": "2026-09-25T12:40:51"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder.",
+    "Retail rates are quoted for floors 5 and 6, but the building is submitted as G+5. Confirm the top floor."
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "slug": "tremont-tower-1",
+  "name": "Tremont Tower 1",
+  "developer": "Tremont Group",
+  "address": "SG Highway, opposite the Jaguar Land Rover showroom, near Box Park, Gota, Ahmedabad, Gujarat 382481",
+  "localitySlug": "gota",
+  "localityName": "Gota",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.110264,
+    "lng": 72.534353
+  },
+  "rera": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/Ahmedabad Municipal Corporation/CAA15901/250925/311229",
+  "reraNote": null,
+  "projectType": "mixed-use",
+  "projectTypeLabel": "Mixed use",
+  "status": "Under Construction",
+  "possession": "2029-12-31",
+  "floors": "G+33",
+  "totalUnits": "500",
+  "lifts": 14,
+  "basements": 4,
+  "landArea": "6,100 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "Ground",
+      "use": "Retail",
+      "unitsPerFloor": "22",
+      "carpet": "Approx. 620 – 1,725 sq ft",
+      "sbu": "Approx. 850 – 2,350 sq ft",
+      "ceiling": "Not specified"
+    },
+    {
+      "floor": "1 to 2",
+      "use": "Retail",
+      "unitsPerFloor": "22",
+      "carpet": "Approx. 510 – 1,600 sq ft",
+      "sbu": "Approx. 700 – 2,200 sq ft",
+      "ceiling": "Not specified"
+    },
+    {
+      "floor": "3",
+      "use": "Mixed use (retail + office + co-working)",
+      "unitsPerFloor": "22 retail + 1 office",
+      "carpet": "Approx. 510 – 1,700 sq ft",
+      "sbu": "Approx. 700 – 2,293 sq ft",
+      "ceiling": "Not specified"
+    },
+    {
+      "floor": "4",
+      "use": "Offices",
+      "unitsPerFloor": "17",
+      "carpet": "Approx. 500 – 2,300 sq ft",
+      "sbu": "Approx. 700 – 3,000 sq ft",
+      "ceiling": "Not specified"
+    },
+    {
+      "floor": "5 to 19",
+      "use": "Offices",
+      "unitsPerFloor": "17",
+      "carpet": "Approx. 500 – 2,600 sq ft",
+      "sbu": "Approx. 700 – 3,400 sq ft",
+      "ceiling": "Not specified"
+    },
+    {
+      "floor": "20",
+      "use": "Skip / service floor",
+      "unitsPerFloor": "No saleable units",
+      "carpet": null,
+      "sbu": null,
+      "ceiling": "Not specified"
+    },
+    {
+      "floor": "21 to 33",
+      "use": "Offices",
+      "unitsPerFloor": "17",
+      "carpet": "Approx. 540 – 2,600 sq ft",
+      "sbu": "Approx. 750 – 3,400 sq ft",
+      "ceiling": "Not specified"
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices",
+        "regular": 7100,
+        "dp": 6600
+      }
+    ],
+    "retailByFloor": [
+      {
+        "floor": "G",
+        "dp": 20000
+      },
+      {
+        "floor": "1",
+        "dp": 14500
+      },
+      {
+        "floor": "2",
+        "dp": 12500
+      },
+      {
+        "floor": "3",
+        "dp": 10500
+      }
+    ],
+    "retailDpNote": null,
+    "extraCharges": "₹650 per sq ft development charges; ₹125 per sq ft maintenance deposit; ₹150 per sq ft running maintenance for 3 years from BU; parking ₹2.5 lakh",
+    "floorRise": "₹50 per sq ft from the 11th floor"
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "mihirwork112@gmail.com",
+    "developerSalesContact": "Nirav Halani",
+    "developerSalesPhone": "+91 7600019856",
+    "notes": "Payment terms :- At booking 30% & rest 5%",
+    "uploads": [
+      "https://drive.google.com/open?id=17lX0bzzksCax1YAnKoq3Fk2mNIzJ2WVt",
+      "https://drive.google.com/open?id=1t7i7d--LJU_TEGl_PjYDHKusYgKMqHy7",
+      "https://drive.google.com/open?id=1nZ-s8QB96yj1FkkfTKtaU70wMHk7GvFe",
+      "https://drive.google.com/open?id=1KBZl5fdiDXFMheTv65r0OZXzCg1lbjHu",
+      "https://drive.google.com/open?id=1Lu2LFlEk8azmvajMRcHdyWYLYdQP4tAs",
+      "https://drive.google.com/open?id=1XUa_Jc9Drb_PWJBPKzHmQXr9Wd-SxplG"
+    ],
+    "submittedAt": "2026-09-25T15:16:09"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder.",
+    "Ceiling heights were submitted as \"Not specified\" for every floor."
+  ]
+}

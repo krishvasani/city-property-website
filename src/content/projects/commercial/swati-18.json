@@ -1,0 +1,164 @@
+{
+  "slug": "swati-18",
+  "name": "Swati 18",
+  "developer": "Swatisandhya Procon LLP",
+  "address": "SG Highway, opposite Palladium Mall, Thaltej, Ahmedabad, Gujarat 380054",
+  "localitySlug": "thaltej",
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.059308,
+    "lng": 72.5209
+  },
+  "rera": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/Ahmedabad Municipal Corporation/CAA11921/A1C/300424/311228",
+  "reraNote": null,
+  "projectType": "mixed-use",
+  "projectTypeLabel": "Mixed use",
+  "status": "Under Construction",
+  "possession": "2027-12-01",
+  "floors": "G+18",
+  "totalUnits": "401",
+  "lifts": 18,
+  "basements": 5,
+  "landArea": "12,000 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking"
+  ],
+  "floorMix": [
+    {
+      "floor": "G A+B",
+      "use": "Retail & office",
+      "unitsPerFloor": "23 retails & 2 offices",
+      "carpet": "1,200 – 1,450 sq ft",
+      "sbu": "2,366 – 2,823 sq ft",
+      "ceiling": "14 ft"
+    },
+    {
+      "floor": "1 A+B",
+      "use": "Retail & office",
+      "unitsPerFloor": "20 retails & 2 offices",
+      "carpet": "1,100 – 2,800 sq ft",
+      "sbu": "2,130 – 5,543 sq ft",
+      "ceiling": "14 ft"
+    },
+    {
+      "floor": "2 A+B",
+      "use": "Retail & office",
+      "unitsPerFloor": "20 retails & 1 office",
+      "carpet": "1,100 – 2,800 sq ft",
+      "sbu": "2,130 – 5,543 sq ft",
+      "ceiling": "14 ft"
+    },
+    {
+      "floor": "3 TOWER A",
+      "use": "Office with terrace & amenities",
+      "unitsPerFloor": "9 office",
+      "carpet": "700 – 1,500 sq ft",
+      "sbu": "1,359 + ( 570T ) – 2,944 + ( 1450T ) sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "3 TOWER B",
+      "use": "Office with terrace & amenities",
+      "unitsPerFloor": "9 office",
+      "carpet": "560 – 1,400 sq ft",
+      "sbu": "1,119 + ( 630T ) – 2,763 + ( 4360T ) sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "4 to 17 TOWER A",
+      "use": "Office",
+      "unitsPerFloor": "10 office",
+      "carpet": "620 – 1,950 sq ft",
+      "sbu": "1,222 – 3,869 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "4 to 17 TOWER B",
+      "use": "Office",
+      "unitsPerFloor": "11 office",
+      "carpet": "560 – 1,950 sq ft",
+      "sbu": "1,119 – 3,869 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "18 TOWER A",
+      "use": "Office",
+      "unitsPerFloor": "10 office",
+      "carpet": "620 – 1,950 sq ft",
+      "sbu": "1,222 – 3,869 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "18 TOWER B",
+      "use": "Office",
+      "unitsPerFloor": "11 office",
+      "carpet": "560 – 1,400 sq ft",
+      "sbu": "1,119 – 2,763 sqf sq ft",
+      "ceiling": "11 ft"
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices",
+        "regular": 8900
+      }
+    ],
+    "retailByFloor": [
+      {
+        "floor": "G",
+        "dp": 25000
+      },
+      {
+        "floor": "1",
+        "dp": 13000
+      },
+      {
+        "floor": "2",
+        "dp": 11000
+      }
+    ],
+    "retailDpNote": null,
+    "extraCharges": "₹850 per sq ft package",
+    "floorRise": null
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "chetanm080@gmail.com",
+    "developerSalesContact": "Dhavalbhai Thakkar",
+    "developerSalesPhone": "9978441445",
+    "notes": "Office = 3rd - 13th - rg - 8900/-  only & 14th-18th - 9200/- only",
+    "uploads": [
+      "https://drive.google.com/open?id=138l7JMjSlrIQcmkwaTAlZn5qvuwCSnT6",
+      "https://drive.google.com/open?id=1hDz4oSWk7f16Evd63wbRZVe6MImsesEK",
+      "https://drive.google.com/open?id=1FeqhZmbWDD7W7pQ2Gg9m65aWXmIckLjD",
+      "https://drive.google.com/open?id=1D_MvfgFFxpuAcWR8-25BjUu-h6Up2f9n",
+      "https://drive.google.com/open?id=1mynWHr-O936IPK1j5it5vGxY8VNqjtkQ",
+      "https://drive.google.com/open?id=1H_17xyzUVVOJvJegRVj5lYGQbj7d8iHl"
+    ],
+    "submittedAt": "2026-09-25T10:37:55"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder."
+  ]
+}

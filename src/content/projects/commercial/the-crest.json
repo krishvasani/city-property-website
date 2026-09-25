@@ -1,0 +1,143 @@
+{
+  "slug": "the-crest",
+  "name": "The Crest",
+  "developer": "Avyanna Group",
+  "address": "Beside Wide Angle Cinema, SG Highway, Ahmedabad 380015",
+  "localitySlug": "sg-highway",
+  "localityName": "SG Highway",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.024476,
+    "lng": 72.507188
+  },
+  "rera": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/Ahmedabad Municipal Corporation/CAA15851/160925/311229",
+  "reraNote": null,
+  "projectType": "mixed-use",
+  "projectTypeLabel": "Mixed use",
+  "status": "Under Construction",
+  "possession": "2030-04-30",
+  "floors": "G+18",
+  "totalUnits": "12 SHOWROOMS, 27 OFFICES",
+  "lifts": 8,
+  "basements": 3,
+  "landArea": "4,743 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "BU Permission",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "Ground",
+      "use": "Showrooms",
+      "unitsPerFloor": "6",
+      "carpet": "1,100 – 3,130 sq ft",
+      "sbu": "2,000 – 5,800 sq ft",
+      "ceiling": "14.5 ft"
+    },
+    {
+      "floor": "1",
+      "use": "Showrooms",
+      "unitsPerFloor": "6",
+      "carpet": "905 – 3,370 sq ft",
+      "sbu": "1,650 – 6,300 sq ft",
+      "ceiling": "11.1 ft"
+    },
+    {
+      "floor": "2",
+      "use": "Offices",
+      "unitsPerFloor": "2",
+      "carpet": "3,600 & 4,515 sq ft",
+      "sbu": null,
+      "ceiling": "11.1 ft"
+    },
+    {
+      "floor": "3 to 11",
+      "use": "Offices",
+      "unitsPerFloor": "2",
+      "carpet": "3,605 – 5,155 sq ft",
+      "sbu": "6,550 – 9,500 sq ft",
+      "ceiling": "11.1 ft"
+    },
+    {
+      "floor": "12",
+      "use": "Office",
+      "unitsPerFloor": "1",
+      "carpet": "5,885 sq ft",
+      "sbu": "17,000 sq ft",
+      "ceiling": "11.1 ft"
+    },
+    {
+      "floor": "13 to 18",
+      "use": "Offices",
+      "unitsPerFloor": "1",
+      "carpet": "6,805 sq ft",
+      "sbu": "13,000 sq ft",
+      "ceiling": "11.1 ft"
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices",
+        "regular": 9500,
+        "dp": 8300
+      }
+    ],
+    "retailByFloor": [
+      {
+        "floor": "Showrooms",
+        "regular": 25000,
+        "dp": 21000
+      }
+    ],
+    "retailDpNote": null,
+    "extraCharges": null,
+    "floorRise": null
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "cityproperties09@gmail.com",
+    "developerSalesContact": "Pooja",
+    "developerSalesPhone": "9724818282",
+    "notes": null,
+    "uploads": [
+      "https://drive.google.com/open?id=17YIAXngGx30tpw9ILveucRS2U3gFPClk",
+      "https://drive.google.com/open?id=1nsTtWtVgsRbjBDVFR2co1JegjHCe_gr4",
+      "https://drive.google.com/open?id=1RZFnkKYwti0bHoYRtlLhS5BNnRbUrLgT",
+      "https://drive.google.com/open?id=1c20KD-KMoLLJdXuBA5QzJZFBB-DYH4_9",
+      "https://drive.google.com/open?id=1Hb0uiSczRwIPU9SHfQQb2iz7eh59OuhM",
+      "https://drive.google.com/open?id=1414G1aZ7aXYPb0ds_55aQz8MkPhXHs0F",
+      "https://drive.google.com/open?id=1PTrotQUE4kPgGuRWRVJrxg8_Q3MclbAZ",
+      "https://drive.google.com/open?id=175IPU6gEN2OG-BZvcqx0QbkCq5Z0avDS",
+      "https://drive.google.com/open?id=1wZscuIqa12y0EJx0yB8IzgbyJ4cTOi6a",
+      "https://drive.google.com/open?id=1x0SgY58SV6YReiVacg3lJClC4yoVjzaw"
+    ],
+    "submittedAt": "2026-09-25T15:07:29"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder.",
+    "Package and other charges were submitted as \"++\" with no figures. Ask the developer what sits on top of the basic rate."
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "slug": "aarvi-arete",
+  "name": "Aarvi Arete",
+  "developer": "Aarvi Group",
+  "address": "Near Sindhu Bhavan Road extension and Taj Skyline, SP Ring Road, Ahmedabad",
+  "localitySlug": "sindhu-bhavan-road",
+  "localityName": "Sindhu Bhavan Road",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.041739,
+    "lng": 72.469743
+  },
+  "rera": "PR/GJ/AHMEDABAD/DASKROI/Ahmedabad Municipal Corporation/CAA16277/010126/310329",
+  "reraNote": null,
+  "projectType": "mixed-use",
+  "projectTypeLabel": "Mixed use",
+  "status": "Under Construction",
+  "possession": "2028-12-30",
+  "floors": "G+18",
+  "totalUnits": "100",
+  "lifts": 14,
+  "basements": 4,
+  "landArea": "5,590 sq ft",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "Ground",
+      "use": "Retail",
+      "unitsPerFloor": "8",
+      "carpet": "900 – 1,800 sq ft",
+      "sbu": "1,662 – 3,632 sq ft",
+      "ceiling": "15 ft"
+    },
+    {
+      "floor": "1st",
+      "use": "Retail",
+      "unitsPerFloor": "6",
+      "carpet": "1,100 – 2,500 sq ft",
+      "sbu": "2,249 – 5,064 sq ft",
+      "ceiling": "13.5 ft"
+    },
+    {
+      "floor": "2nd & 3rd",
+      "use": "Retail",
+      "unitsPerFloor": "6",
+      "carpet": "1,100 – 2,500 sq ft",
+      "sbu": "2,249 – 5,182 sq ft",
+      "ceiling": "13.5 ft"
+    },
+    {
+      "floor": "4th & 5th",
+      "use": "Office",
+      "unitsPerFloor": "11",
+      "carpet": "700 – 3,000 sq ft",
+      "sbu": "1,369 – 6,058 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "6th ,8th, 9th",
+      "use": "Office",
+      "unitsPerFloor": "16",
+      "carpet": "500 – 1,370 sq ft",
+      "sbu": "979 – 2,741 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "7th",
+      "use": "Office",
+      "unitsPerFloor": "4",
+      "carpet": "1,200 – 5,400 sq ft",
+      "sbu": "2,450 – 10,791 sq ft",
+      "ceiling": "11 ft"
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices",
+        "regular": 8500
+      }
+    ],
+    "retailByFloor": [
+      {
+        "floor": "G",
+        "regular": 28000,
+        "dp": 24000
+      },
+      {
+        "floor": "1",
+        "regular": 15000,
+        "dp": 13000
+      },
+      {
+        "floor": "2",
+        "regular": 13000,
+        "dp": 11000
+      },
+      {
+        "floor": "3",
+        "regular": 11000,
+        "dp": 9500
+      }
+    ],
+    "retailDpNote": null,
+    "extraCharges": "₹850 per sq ft package",
+    "floorRise": "Preferential location charge: ₹1,000 per sq ft for a corner retail unit, ₹500 per sq ft for a corner office"
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "mihirwork112@gmail.com",
+    "developerSalesContact": "Nihar patel",
+    "developerSalesPhone": "9723330119",
+    "notes": null,
+    "uploads": [
+      "https://drive.google.com/open?id=15xvAVyvEdYnAOoJSBkwNVBepgmyVjZ8b",
+      "https://drive.google.com/open?id=1o9ABtnfj4hJAIz_zOTYwgGTn0ieVSFHl",
+      "https://drive.google.com/open?id=1DX-fss-B4yx-BGEXreMTQzzeJwJYv0ij",
+      "https://drive.google.com/open?id=1wzayZ0l7pnhO3Y2uuT9Eo-xOieEnGyov",
+      "https://drive.google.com/open?id=1WYc7yPuWJJfhnDVsRpvEZL2Z0TZjVBZ3",
+      "https://drive.google.com/open?id=1eRsieqarfG37Jpy0dn0EIioiM1j6S1W6",
+      "https://drive.google.com/open?id=1GayVgg8JZqfZaTQ4kZ7-KoZecbdYJebY",
+      "https://drive.google.com/open?id=1JlJfQEekPmo94h7qR-c_3IQdgQyV43dW",
+      "https://drive.google.com/open?id=1_YPCpwkcHAMtEOF2mkB7vafIMcpC7XSP",
+      "https://drive.google.com/open?id=1q3T5klag1eGrO3ZqKqY_Ch4wHcQ_k8YT"
+    ],
+    "submittedAt": "2026-09-24T19:10:54"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder.",
+    "Land area was submitted in square feet (5,590 sq ft) where every other project gives square yards. Worth confirming."
+  ]
+}

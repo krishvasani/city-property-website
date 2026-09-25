@@ -1,0 +1,159 @@
+{
+  "slug": "sakar-one",
+  "name": "Sakar One",
+  "developer": "Saanidhya Infra & Bakeri Group",
+  "address": "Near Shilaj Overbridge, Thaltej–Shilaj Main Road, Thaltej, Ahmedabad",
+  "localitySlug": "thaltej",
+  "localityName": "Thaltej",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.056335,
+    "lng": 72.494516
+  },
+  "rera": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AMC/CAA16119/181125/311228",
+  "reraNote": null,
+  "projectType": "mixed-use",
+  "projectTypeLabel": "Mixed use",
+  "status": "Under Construction",
+  "possession": "2027-12-31",
+  "floors": "G+5",
+  "totalUnits": "31",
+  "lifts": 4,
+  "basements": 2,
+  "landArea": "2,100 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "Ground",
+      "use": "Retail",
+      "unitsPerFloor": "6",
+      "carpet": "1,200 – 1,300 sq ft",
+      "sbu": "2,292 – 2,350 sq ft",
+      "ceiling": "14 ft"
+    },
+    {
+      "floor": "1st",
+      "use": "Retail",
+      "unitsPerFloor": "6",
+      "carpet": "1,100 – 1,300 sq ft",
+      "sbu": "2,077 – 2,454 sq ft",
+      "ceiling": "14 ft"
+    },
+    {
+      "floor": "2nd",
+      "use": "Retail",
+      "unitsPerFloor": "6",
+      "carpet": "1,100 – 1,300 sq ft",
+      "sbu": "2,077 – 2,454 sq ft",
+      "ceiling": "14 ft"
+    },
+    {
+      "floor": "3rd",
+      "use": "Office",
+      "unitsPerFloor": "5 with terrace",
+      "carpet": "900 – 1,400 sq ft",
+      "sbu": "1,754 – 2,712 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "4th",
+      "use": "Office",
+      "unitsPerFloor": "4 with terrace",
+      "carpet": "800 – 1,700 sq ft",
+      "sbu": "1,496 – 3,228 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "5th",
+      "use": "Office",
+      "unitsPerFloor": "4 with terrace",
+      "carpet": "650 – 950 sq ft",
+      "sbu": "1,195 – 1,797 sq ft",
+      "ceiling": "11 ft"
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices",
+        "regular": 8500
+      }
+    ],
+    "retailByFloor": [
+      {
+        "floor": "G",
+        "regular": 26000
+      },
+      {
+        "floor": "1",
+        "regular": 20000
+      },
+      {
+        "floor": "2",
+        "regular": 14000
+      },
+      {
+        "floor": "3",
+        "regular": 11000,
+        "note": "Terrace area ₹5,500 per sq ft"
+      },
+      {
+        "floor": "4",
+        "regular": 8500,
+        "note": "Terrace area ₹4,250 per sq ft"
+      },
+      {
+        "floor": "5",
+        "regular": 8500,
+        "note": "Terrace area ₹4,250 per sq ft"
+      }
+    ],
+    "retailDpNote": null,
+    "extraCharges": "₹1,100 per sq ft AUDA and AMC; office ₹100 running maintenance; retail ₹200 maintenance deposit; ₹3.50 per sq ft running maintenance; parking ₹3 lakh; GST 12%; stamp duty 5.9%; legal ₹30,000",
+    "floorRise": null
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "mihirwork112@gmail.com",
+    "developerSalesContact": "Gunjan ben patel",
+    "developerSalesPhone": "7043651561",
+    "notes": null,
+    "uploads": [
+      "https://drive.google.com/open?id=1UB9b8EweZgf0uM2UNjs8R2lbK8sN3vDE",
+      "https://drive.google.com/open?id=1cvQeJ8HZ6NfJBM1PKzayXbi00-QDvo1R",
+      "https://drive.google.com/open?id=1W4_wLLf_3b4SEYoPiqdrlchkhSw7CCjb",
+      "https://drive.google.com/open?id=1kqHBdfm8PWAtPXcNxfdGYPxC-VUDY1Kc",
+      "https://drive.google.com/open?id=1tUiH7qiNLgOFipPu0r41kMW1p8kUWm9E",
+      "https://drive.google.com/open?id=1aSjWRFQVqcAhQKLsmxBC6RQMnOIBb9ao",
+      "https://drive.google.com/open?id=1Y7aeLOt6CBHJN9al8k5DMWhHusozEcIR"
+    ],
+    "submittedAt": "2026-09-25T12:45:12"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder."
+  ]
+}

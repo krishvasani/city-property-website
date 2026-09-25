@@ -48,46 +48,69 @@
       "use": "Retail",
       "unitsPerFloor": "3",
       "carpet": "1,850 – 2,680 sq ft",
-      "sbu": "3,400 – 4,880 sq ft",
+      "sbu": "3,600 – 5,400 sq ft",
       "ceiling": "14 ft"
     },
     {
       "floor": "1",
       "use": "Retail",
       "unitsPerFloor": "3",
-      "carpet": "From 1,850 sq ft",
-      "sbu": "From 3,400 sq ft",
+      "carpet": "1,850 – 3,200 sq ft",
+      "sbu": "3,600 – 6,279 sq ft",
       "ceiling": "14 ft"
     },
     {
       "floor": "1",
       "use": "Office",
       "unitsPerFloor": "2",
-      "carpet": "675 & 1,450 sq ft",
-      "sbu": "1,250 & 2,650 sq ft",
+      "carpet": "700 – 1,450 sq ft",
+      "sbu": "1,400 & 2,900 sq ft",
       "ceiling": "14 ft"
+    },
+    {
+      "floor": "2",
+      "use": "Retail",
+      "unitsPerFloor": "3",
+      "carpet": "1,800 – 3,100 sq ft",
+      "sbu": "3,400 – 6,279 sq ft",
+      "ceiling": "14 ft"
+    },
+    {
+      "floor": "3",
+      "use": "Office",
+      "unitsPerFloor": "11",
+      "carpet": "650 – 1,300 sq ft",
+      "sbu": "1,250 – 2,600 sq ft",
+      "ceiling": "13 ft"
+    },
+    {
+      "floor": "4 to 11",
+      "use": "Office",
+      "unitsPerFloor": "11",
+      "carpet": "600 – 1,300 sq ft",
+      "sbu": "1,250 – 2,600 sq ft",
+      "ceiling": "13 ft"
     }
   ],
   "pricing": {
     "office": [
       {
         "label": "Offices",
-        "regular": 4250,
-        "dp": 4000
+        "regular": 9000
       }
     ],
     "retailByFloor": [
       {
         "floor": "G",
-        "regular": 12000
+        "regular": 24000
       },
       {
         "floor": "1",
-        "regular": 10500
+        "regular": 21000
       },
       {
         "floor": "2",
-        "regular": 8700
+        "regular": 17000
       }
     ],
     "retailDpNote": "Down-payment rates for retail are quoted on the table by the developer.",
@@ -101,8 +124,8 @@
   "brochure": null,
   "internal": {
     "submittedBy": "cityproperties09@gmail.com",
-    "developerSalesContact": "Gunjan Patel",
-    "developerSalesPhone": "7043651561",
+    "developerSalesContact": "devanshi patel",
+    "developerSalesPhone": "7984524563",
     "notes": "Dp 3 months clear",
     "uploads": [
       "https://drive.google.com/open?id=1t2Q2QNFuTgwwiCVPDLntAtBP_bqG3AgT",
@@ -114,10 +137,9 @@
       "https://drive.google.com/open?id=15efeSgB0HGiszLeZsOXJGfy9Uk_ZFA6a",
       "https://drive.google.com/open?id=15jxA7grzE7eXz9SODElzP-PEsPv4jm7_"
     ],
-    "submittedAt": "2026-09-24T18:04:00"
+    "submittedAt": "2026-09-25T11:49:49"
   },
   "dataGaps": [
-    "No photographs yet — the submitted images sit in a private Google Drive folder.",
-    "The floor-by-floor submission covers only the ground and first floors of a G+11 building with 110 units. The rest of the stack is missing."
+    "No photographs yet — the submitted images sit in a private Google Drive folder."
   ]
 }
