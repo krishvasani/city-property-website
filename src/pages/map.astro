@@ -2,22 +2,29 @@
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import { getProperties } from '../lib/data';
+import { allProjectCards, asCardProperty } from '../lib/all-projects';
 import { getLocalityById } from '../data/localities';
 import { categoryFor, CATEGORY_LABEL, CATEGORY_ORDER } from '../lib/format';
 import { map as mapCfg } from '../lib/config';
 import type { Property } from '../lib/types';
 
-const all = await getProperties();
+// The map carries both: the 72 projects and the warehouse listings. Projects are
+// adapted to the listing shape (the same adapter the /buy/ cards use) and carry
+// their own URL, since they live under /projects/ rather than /property/.
+const listings = (await getProperties()).map((p) => ({ p, url: `/property/${p.slug}/` }));
+const projects = allProjectCards.map((c) => ({ p: asCardProperty(c), url: c.url }));
+const all = [...projects, ...listings];
+
 // Resolve coordinates: use the property's own geo, else fall back to the
 // locality centroid from the locality dataset. Drop only those with neither.
 const resolved = all
-  .map((p) => {
+  .map(({ p, url }) => {
     const loc = p.localitySlug ? getLocalityById(p.localitySlug) : undefined;
     const lat = p.geo?.lat ?? loc?.latitude ?? null;
     const lng = p.geo?.lng ?? loc?.longitude ?? null;
-    return { p, lat, lng, region: loc?.region ?? '' };
+    return { p, url, lat, lng, region: loc?.region ?? '' };
   })
-  .filter((x): x is { p: Property; lat: number; lng: number; region: string } => x.lat != null && x.lng != null);
+  .filter((x): x is { p: Property; url: string; lat: number; lng: number; region: string } => x.lat != null && x.lng != null);
 const properties = resolved.map((x) => x.p);
 
 const catsPresent = CATEGORY_ORDER.filter((c) => properties.some((p) => categoryFor(p.propertyType) === c));
@@ -25,8 +32,9 @@ const localities = [...new Map(properties.filter((p) => p.localitySlug).map((p) 
 const regionsPresent = [...new Set(resolved.map((x) => x.region).filter(Boolean))].sort();
 
 // Compact data for the client (markers + bounds filtering)
-const data = resolved.map(({ p, lat, lng, region }) => ({
+const data = resolved.map(({ p, url, lat, lng, region }) => ({
   slug: p.slug,
+  url,
   title: p.title,
   price: p.priceDisplay,
   per: p.pricePer ?? '',
@@ -107,7 +115,7 @@ const imgFallback =
           <span><b id="area-count">{properties.length}</b> in this area</span>
         </div>
         <div class="mapx-cards" id="map-cards">
-          {properties.map((p) => (
+          {resolved.map(({ p, url }) => (
             <article
               class="mcard"
               data-slug={p.slug}
@@ -130,7 +138,7 @@ const imgFallback =
                 <div class="mcard-price">{p.priceDisplay}{p.pricePer ? ' ' : ''}{p.pricePer && <span class="per">{p.pricePer}</span>}</div>
                 <div class="mcard-title">{p.title}</div>
                 <div class="mcard-loc"><Icon name="pin" sw={1.8} />{p.localityName}</div>
-                <a class="mcard-link" href={`/property/${p.slug}/`}>View details →</a>
+                <a class="mcard-link" href={url}>View details →</a>
               </div>
             </article>
           ))}
@@ -196,7 +204,7 @@ const imgFallback =
 
 <script>
   type P = {
-    slug: string; title: string; price: string; per: string; loc: string; type: string; category: string;
+    slug: string; url: string; title: string; price: string; per: string; loc: string; type: string; category: string;
     status: string; statusLabel: string; priceValue: number; area: number; beds: number;
     newAt: string; lat: number; lng: number; localitySlug: string; region: string;
   };
@@ -314,7 +322,7 @@ const imgFallback =
     popup?.remove();
     popup = new (window as any).mapboxgl.Popup({ offset: 18, closeButton: false })
       .setLngLat([p.lng, p.lat])
-      .setHTML(`<div class="mpop"><div class="mpop-price">${p.price}${p.per ? ` <span class="per">${p.per}</span>` : ''}</div><div class="mpop-title">${p.title}</div><div class="mpop-loc">${p.loc}</div><a href="/property/${p.slug}">View details →</a></div>`)
+      .setHTML(`<div class="mpop"><div class="mpop-price">${p.price}${p.per ? ` <span class="per">${p.per}</span>` : ''}</div><div class="mpop-title">${p.title}</div><div class="mpop-loc">${p.loc}</div><a href="${p.url}">View details →</a></div>`)
       .addTo(map);
   }
 

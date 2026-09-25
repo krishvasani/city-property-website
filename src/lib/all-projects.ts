@@ -121,13 +121,18 @@ export const projectCounts = {
 /** A project as the listing card expects it. Pair with `href: card.url`. */
 export function asCardProperty(c: ProjectCard): Property {
   const residential = c.category === 'residential';
+  // Every project is for sale — the map's Buy/Rent control and the explorers key
+  // off `status`, so an under-construction project must not read as a rental.
+  // The tag text carries the build stage instead.
   return {
     slug: c.slug,
     title: c.name,
-    // Ready projects take the solid tag, under-construction ones the soft tag.
-    status: c.ready ? 'sale' : 'rent',
+    status: 'sale',
     statusLabel: c.ready ? 'Ready to move in' : 'Under construction',
     propertyType: residential ? 'apartment' : 'office',
+    // First number in "4 & 6 BHK + Penthouse" / "1 BDR · 2 BDR", so the map's
+    // bedroom filter applies to residential projects.
+    beds: residential ? Number((c.typeLabel.match(/\d+/) ?? [])[0]) || undefined : undefined,
     priceDisplay: c.priceDisplay,
     pricePer: c.pricePer,
     priceValue: c.priceValue ?? undefined,
