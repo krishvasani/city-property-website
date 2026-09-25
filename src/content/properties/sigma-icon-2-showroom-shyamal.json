@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.11 Cr",
   "localityName": "Shyamal",
   "city": "Ahmedabad",
@@ -58,5 +58,7 @@
     "Salon"
   ],
   "localitySlug": "shyamal",
-  "mainImage": "/uploads/properties/sigma-icon-2-showroom-shyamal/photo-1.jpg"
+  "mainImage": "/uploads/properties/sigma-icon-2-showroom-shyamal/photo-1.jpg",
+  "retiredTo": "/localities/shyamal/",
+  "retiredAt": "2026-09-25"
 }

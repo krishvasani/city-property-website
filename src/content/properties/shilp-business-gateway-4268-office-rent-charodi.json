@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹170,000",
   "localityName": "Charodi",
   "city": "Ahmedabad",
@@ -51,5 +51,7 @@
   "pricePer": "per month",
   "furnishing": "Unfurnished",
   "localitySlug": "charodi",
-  "mainImage": "/uploads/properties/shilp-business-gateway-4268-office-rent-charodi/photo-1.jpg"
+  "mainImage": "/uploads/properties/shilp-business-gateway-4268-office-rent-charodi/photo-1.jpg",
+  "retiredTo": "/localities/charodi/",
+  "retiredAt": "2026-09-25"
 }

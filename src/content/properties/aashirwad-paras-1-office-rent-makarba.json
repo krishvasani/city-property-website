@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹60,000",
   "priceValue": 60000,
   "localityName": "Makarba",
@@ -31,5 +31,7 @@
   },
   "pricePer": "per month",
   "furnishing": "Fully furnished",
-  "localitySlug": "makarba"
+  "localitySlug": "makarba",
+  "retiredTo": "/localities/makarba/",
+  "retiredAt": "2026-09-25"
 }

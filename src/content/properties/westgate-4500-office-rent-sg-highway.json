@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹70 / sq.ft",
   "localityName": "SG Highway",
   "city": "Ahmedabad",
@@ -50,5 +50,7 @@
   "furnishing": "Fully furnished",
   "parking": "3 car parks",
   "localitySlug": "sg-highway",
-  "mainImage": "/uploads/properties/westgate-4500-office-rent-sg-highway/photo-1.jpg"
+  "mainImage": "/uploads/properties/westgate-4500-office-rent-sg-highway/photo-1.jpg",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

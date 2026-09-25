@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.95 Cr",
   "priceValue": 19500000,
   "localityName": "Gulbai Tekra",
@@ -36,5 +36,7 @@
   "geo": {
     "lat": 23.026316475010045,
     "lng": 72.55197332887691
-  }
+  },
+  "retiredTo": "/localities/gulbai-tekra/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹140,000",
   "priceValue": 140000,
   "localityName": "Bopal",
@@ -37,5 +37,7 @@
   "geo": {
     "lat": 23.023995562061693,
     "lng": 72.47884135664236
-  }
+  },
+  "retiredTo": "/localities/bopal/",
+  "retiredAt": "2026-09-25"
 }

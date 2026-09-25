@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹3.3 Cr",
   "priceValue": 33000000,
   "localityName": "Navrangpura",
@@ -36,5 +36,7 @@
   "perSqftDisplay": "₹7,333 per sq.ft",
   "furnishing": "Fully furnished",
   "mainImage": "/uploads/properties/manor-max-office-sale-navrangpura/photo-1.jpg",
-  "localitySlug": "navrangpura"
+  "localitySlug": "navrangpura",
+  "retiredTo": "/localities/navrangpura/",
+  "retiredAt": "2026-09-25"
 }

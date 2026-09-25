@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.83 to 3.73 Cr",
   "priceValue": 18300000,
   "localityName": "Shantigram",
@@ -74,5 +74,7 @@
   "geo": {
     "lat": 23.16425,
     "lng": 72.54563
-  }
+  },
+  "retiredTo": "/projects/adani-shantigram/greenfield/",
+  "retiredAt": "2026-09-25"
 }

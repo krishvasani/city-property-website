@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹60 / sq.ft",
   "priceValue": 600000,
   "localityName": "Bodakdev",
@@ -38,5 +38,7 @@
   "furnishing": "Fully furnished",
   "carpetArea": "6,000 sq.ft",
   "mainImage": "/uploads/properties/9th-avenue-office-rent-bodakdev/photo-1.jpg",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.4 Cr",
   "localityName": "Navrangpura",
   "city": "Ahmedabad",
@@ -41,5 +41,7 @@
   "perSqftDisplay": "₹8,000 per sq.ft",
   "furnishing": "Unfurnished",
   "localitySlug": "navrangpura",
-  "mainImage": "/uploads/properties/campus-corner-office-sale-navrangpura/photo-1.jpg"
+  "mainImage": "/uploads/properties/campus-corner-office-sale-navrangpura/photo-1.jpg",
+  "retiredTo": "/localities/navrangpura/",
+  "retiredAt": "2026-09-25"
 }

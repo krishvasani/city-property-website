@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.28 to 2.43 Cr",
   "priceValue": 22800000,
   "localityName": "Shantigram",
@@ -54,5 +54,7 @@
   "geo": {
     "lat": 23.17166,
     "lng": 72.54055
-  }
+  },
+  "retiredTo": "/projects/adani-shantigram/skyline/",
+  "retiredAt": "2026-09-25"
 }

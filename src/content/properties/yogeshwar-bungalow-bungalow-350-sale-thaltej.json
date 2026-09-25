@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.25 Cr",
   "priceValue": 52500000,
   "localityName": "Thaltej",
@@ -35,5 +35,7 @@
   "geo": {
     "lat": 23.062987307426432,
     "lng": 72.52287662106158
-  }
+  },
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1,15,000",
   "localityName": "Bopal",
   "city": "Ahmedabad",
@@ -115,5 +115,7 @@
     "lng": 72.46981921628094
   },
   "mainImage": "/uploads/properties/rajyesh-regus-penthouse-rent-bopal/photo-1.jpg",
-  "localitySlug": "bopal"
+  "localitySlug": "bopal",
+  "retiredTo": "/localities/bopal/",
+  "retiredAt": "2026-09-25"
 }

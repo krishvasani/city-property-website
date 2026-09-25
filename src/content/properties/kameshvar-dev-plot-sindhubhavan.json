@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "plot",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹10.85 Cr",
   "localityName": "Sindhubhavan",
   "city": "Ahmedabad",
@@ -27,5 +27,7 @@
     "lat": 23.037137,
     "lng": 72.507757
   },
-  "localitySlug": "sindhu-bhavan-road"
+  "localitySlug": "sindhu-bhavan-road",
+  "retiredTo": "/localities/sindhu-bhavan-road/",
+  "retiredAt": "2026-09-25"
 }

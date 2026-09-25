@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹35 / sq.ft",
   "localityName": "Ambli",
   "city": "Ahmedabad",
@@ -33,5 +33,7 @@
   "perSqftDisplay": "₹35 per sq.ft",
   "furnishing": "Unfurnished",
   "parking": "4 car parks",
-  "localitySlug": "ambli"
+  "localitySlug": "ambli",
+  "retiredTo": "/localities/ambli/",
+  "retiredAt": "2026-09-25"
 }

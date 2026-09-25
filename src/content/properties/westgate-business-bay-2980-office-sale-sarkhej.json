@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.9 Cr",
   "localityName": "Sarkhej",
   "city": "Ahmedabad",
@@ -46,5 +46,7 @@
   "perSqftDisplay": "₹6,376 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "sarkhej",
-  "mainImage": "/uploads/properties/westgate-business-bay-2980-office-sale-sarkhej/photo-1.jpg"
+  "mainImage": "/uploads/properties/westgate-business-bay-2980-office-sale-sarkhej/photo-1.jpg",
+  "retiredTo": "/localities/sarkhej/",
+  "retiredAt": "2026-09-25"
 }

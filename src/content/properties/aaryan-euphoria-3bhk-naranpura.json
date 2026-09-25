@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.15 Cr",
   "localityName": "Naranpura",
   "city": "Ahmedabad",
@@ -157,5 +157,7 @@
     "lng": 72.53094351107184
   },
   "mainImage": "/uploads/properties/aaryan-euphoria-3bhk-naranpura/photo-1.jpg",
-  "localitySlug": "naranpura"
+  "localitySlug": "naranpura",
+  "retiredTo": "/localities/naranpura/",
+  "retiredAt": "2026-09-25"
 }

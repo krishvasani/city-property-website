@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹960,000",
   "priceValue": 960000,
   "localityName": "Memnagar",
@@ -33,5 +33,7 @@
   "pricePer": "per month",
   "furnishing": "Unfurnished",
   "parking": "12 car parks",
-  "localitySlug": "memnagar"
+  "localitySlug": "memnagar",
+  "retiredTo": "/localities/memnagar/",
+  "retiredAt": "2026-09-25"
 }

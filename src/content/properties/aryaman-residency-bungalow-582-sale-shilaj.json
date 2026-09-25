@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹10.5 Cr",
   "priceValue": 105000000,
   "localityName": "Shilaj",
@@ -25,5 +25,7 @@
   "geo": {
     "lat": 23.05566416816312,
     "lng": 72.46513998405993
-  }
+  },
+  "retiredTo": "/localities/shilaj/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.6 Cr",
   "priceValue": 26000000,
   "localityName": "Thaltej",
@@ -36,5 +36,7 @@
   "geo": {
     "lat": 23.055194675521157,
     "lng": 72.52842505628618
-  }
+  },
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "localityName": "Satellite",
   "city": "Ahmedabad",
@@ -68,5 +68,7 @@
     "Clothing"
   ],
   "mainImage": "/uploads/properties/siddhivinayak-complex-showroom-satellite/photo-1.jpg",
-  "localitySlug": "satellite"
+  "localitySlug": "satellite",
+  "retiredTo": "/localities/satellite/",
+  "retiredAt": "2026-09-25"
 }

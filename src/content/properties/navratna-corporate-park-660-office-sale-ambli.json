@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.6 Cr",
   "localityName": "Ambli",
   "city": "Ahmedabad",
@@ -47,5 +47,7 @@
   "furnishing": "Fully furnished",
   "carpetArea": "660 sq.ft",
   "localitySlug": "ambli",
-  "mainImage": "/uploads/properties/navratna-corporate-park-660-office-sale-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/navratna-corporate-park-660-office-sale-ambli/photo-1.jpg",
+  "retiredTo": "/localities/ambli/",
+  "retiredAt": "2026-09-25"
 }

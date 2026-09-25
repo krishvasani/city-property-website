@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "plot",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹9 Cr",
   "localityName": "Vastrapur",
   "city": "Ahmedabad",
@@ -27,5 +27,7 @@
     "lat": 23.043844798893733,
     "lng": 72.52577421138716
   },
-  "localitySlug": "vastrapur"
+  "localitySlug": "vastrapur",
+  "retiredTo": "/localities/vastrapur/",
+  "retiredAt": "2026-09-25"
 }

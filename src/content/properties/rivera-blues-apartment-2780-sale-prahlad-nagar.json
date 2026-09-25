@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹3.5 Cr",
   "priceValue": 35000000,
   "localityName": "Prahladnagar",
@@ -36,5 +36,7 @@
   "geo": {
     "lat": 23.0010497829455,
     "lng": 72.503070414034
-  }
+  },
+  "retiredTo": "/localities/prahlad-nagar/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.6 Cr",
   "priceValue": 26000000,
   "localityName": "Gota",
@@ -36,5 +36,7 @@
   "geo": {
     "lat": 23.103758111556456,
     "lng": 72.5347825254082
-  }
+  },
+  "retiredTo": "/localities/gota/",
+  "retiredAt": "2026-09-25"
 }

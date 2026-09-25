@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4 Cr",
   "priceValue": 40000000,
   "localityName": "Satellite",
@@ -27,5 +27,7 @@
   "geo": {
     "lat": 23.019318662432553,
     "lng": 72.51704090207913
-  }
+  },
+  "retiredTo": "/localities/satellite/",
+  "retiredAt": "2026-09-25"
 }

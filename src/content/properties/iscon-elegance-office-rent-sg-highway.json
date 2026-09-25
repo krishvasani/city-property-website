@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹150,000",
   "localityName": "SG Highway",
   "city": "Ahmedabad",
@@ -45,5 +45,7 @@
   "builtUpArea": "2,477 sq.ft",
   "parking": "2 car parks",
   "localitySlug": "sg-highway",
-  "mainImage": "/uploads/properties/iscon-elegance-office-rent-sg-highway/photo-1.jpg"
+  "mainImage": "/uploads/properties/iscon-elegance-office-rent-sg-highway/photo-1.jpg",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

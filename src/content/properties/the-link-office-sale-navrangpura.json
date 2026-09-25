@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.35 Cr",
   "priceValue": 13500000,
   "localityName": "Navrangpura",
@@ -46,5 +46,7 @@
   "perSqftDisplay": "₹9,408 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "navrangpura",
-  "mainImage": "/uploads/properties/the-link-office-sale-navrangpura/photo-1.jpg"
+  "mainImage": "/uploads/properties/the-link-office-sale-navrangpura/photo-1.jpg",
+  "retiredTo": "/localities/navrangpura/",
+  "retiredAt": "2026-09-25"
 }

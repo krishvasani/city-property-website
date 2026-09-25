@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.12 Cr",
   "priceValue": 51250000,
   "perSqftDisplay": "₹25,000 per sq.ft",
@@ -38,5 +38,7 @@
   "geo": {
     "lat": 23.052483009161485,
     "lng": 72.50078078690466
-  }
+  },
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

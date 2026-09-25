@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹35 / sq.ft",
   "priceValue": 36925,
   "localityName": "Ambli",
@@ -53,5 +53,7 @@
   "furnishing": "Unfurnished",
   "builtUpArea": "1,055 sq.ft",
   "localitySlug": "ambli",
-  "mainImage": "/uploads/properties/colonnade-1055-office-rent-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/colonnade-1055-office-rent-ambli/photo-1.jpg",
+  "retiredTo": "/localities/ambli/",
+  "retiredAt": "2026-09-25"
 }

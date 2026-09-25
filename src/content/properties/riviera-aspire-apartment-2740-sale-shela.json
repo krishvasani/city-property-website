@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.48 Cr",
   "priceValue": 14796000,
   "localityName": "Shela",
@@ -37,5 +37,7 @@
   "geo": {
     "lat": 23.005352856258664,
     "lng": 72.45948399335366
-  }
+  },
+  "retiredTo": "/localities/shela/",
+  "retiredAt": "2026-09-25"
 }

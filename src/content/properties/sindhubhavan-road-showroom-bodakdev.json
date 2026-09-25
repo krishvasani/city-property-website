@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹6.58 Cr",
   "priceValue": 65800000,
   "localityName": "Bodakdev",
@@ -95,5 +95,7 @@
     "Salon"
   ],
   "mainImage": "/uploads/properties/sindhubhavan-road-showroom-bodakdev/photo-1.jpg",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹45 / sq.ft",
   "localityName": "Bodakdev",
   "city": "Ahmedabad",
@@ -57,5 +57,7 @@
   "perSqftDisplay": "₹45 per sq.ft plus taxes",
   "furnishing": "Unfurnished",
   "localitySlug": "bodakdev",
-  "mainImage": "/uploads/properties/sankalp-square-3a-2529-office-rent-bodakdev/photo-1.jpg"
+  "mainImage": "/uploads/properties/sankalp-square-3a-2529-office-rent-bodakdev/photo-1.jpg",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

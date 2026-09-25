@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹55 / sq.ft",
   "localityName": "Satellite",
   "city": "Ahmedabad",
@@ -31,5 +31,7 @@
   "perSqftDisplay": "₹55 per sq.ft",
   "furnishing": "Fully furnished",
   "builtUpArea": "5,000 sq.ft",
-  "localitySlug": "satellite"
+  "localitySlug": "satellite",
+  "retiredTo": "/localities/satellite/",
+  "retiredAt": "2026-09-25"
 }

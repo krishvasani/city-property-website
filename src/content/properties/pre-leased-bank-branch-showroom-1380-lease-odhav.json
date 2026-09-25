@@ -4,7 +4,7 @@
   "status": "lease",
   "propertyType": "investment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹97,500",
   "priceValue": 97500,
   "pricePer": "per month",
@@ -38,5 +38,7 @@
   "geo": {
     "lat": 23.024111506741978,
     "lng": 72.66506992862972
-  }
+  },
+  "retiredTo": "/localities/odhav/",
+  "retiredAt": "2026-09-25"
 }

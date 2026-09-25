@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.16 Cr",
   "priceValue": 21624000,
   "localityName": "Ambli",
@@ -38,5 +38,7 @@
   "geo": {
     "lat": 23.030539024566757,
     "lng": 72.47861373695929
-  }
+  },
+  "retiredTo": "/localities/ambli/",
+  "retiredAt": "2026-09-25"
 }

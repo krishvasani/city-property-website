@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹3.36 Cr",
   "localityName": "Memnagar",
   "city": "Ahmedabad",
@@ -29,5 +29,7 @@
   "priceValue": 33600000,
   "perSqftDisplay": "₹8,000 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "memnagar"
+  "localitySlug": "memnagar",
+  "retiredTo": "/localities/memnagar/",
+  "retiredAt": "2026-09-25"
 }

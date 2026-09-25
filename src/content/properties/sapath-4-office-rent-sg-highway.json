@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹50 / sq.ft",
   "localityName": "SG Highway",
   "city": "Ahmedabad",
@@ -58,5 +58,7 @@
   "furnishing": "Fully furnished",
   "builtUpArea": "3,540 sq.ft",
   "localitySlug": "sg-highway",
-  "mainImage": "/uploads/properties/sapath-4-office-rent-sg-highway/photo-1.jpg"
+  "mainImage": "/uploads/properties/sapath-4-office-rent-sg-highway/photo-1.jpg",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

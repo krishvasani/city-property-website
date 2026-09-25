@@ -102,6 +102,21 @@ function toProperty(d: any): Property {
   };
 }
 
+/**
+ * Localities that hold a listing, or held one before Phase 1 archived it.
+ * Their guide pages must stay live: the Phase 1 redirects point at them, and the
+ * brief keeps them as area guides even with no inventory.
+ */
+let _localitiesEverListed: Promise<Set<string>> | null = null;
+export function getLocalitiesEverListed(): Promise<Set<string>> {
+  if (_localitiesEverListed) return _localitiesEverListed;
+  _localitiesEverListed = (async () => {
+    const entries = await getCollection('properties'); // drafts included, on purpose
+    return new Set(entries.map((e) => e.data.localitySlug).filter((s): s is string => !!s));
+  })();
+  return _localitiesEverListed;
+}
+
 let _properties: Promise<Property[]> | null = null;
 
 export function getProperties(): Promise<Property[]> {
@@ -130,8 +145,16 @@ export async function getProperty(slug: string): Promise<Property | undefined> {
 
 export async function getFeatured(limit = 3): Promise<Property[]> {
   const all = await getProperties();
-  const featured = all.filter((p) => p.featured);
-  return (featured.length ? featured : all).slice(0, limit);
+  // Only listings explicitly flagged `featured`. It used to fall back to the
+  // first few listings, which after Phase 1 surfaced arbitrary warehouses on the
+  // homepage under "a curated set our team thinks you'll love".
+  return all.filter((p) => p.featured).slice(0, limit);
+}
+
+/** Any listing, for the style guide's sample card. */
+export async function getSampleProperty(): Promise<Property | undefined> {
+  const [featured] = await getFeatured(1);
+  return featured ?? (await getProperties())[0];
 }
 
 /**

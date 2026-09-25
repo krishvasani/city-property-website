@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹6.5 Cr",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -135,5 +135,7 @@
     "lng": 72.5142174525066
   },
   "mainImage": "/uploads/properties/shangrila-bungalow-thaltej/photo-1.jpg",
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹86 L to 1.05 Cr",
   "priceValue": 8600000,
   "localityName": "Shantigram",
@@ -88,5 +88,7 @@
   "geo": {
     "lat": 23.17374,
     "lng": 72.53098
-  }
+  },
+  "retiredTo": "/projects/adani-shantigram/ikaria/",
+  "retiredAt": "2026-09-25"
 }

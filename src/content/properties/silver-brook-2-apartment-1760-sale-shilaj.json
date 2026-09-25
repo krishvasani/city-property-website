@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹65 L",
   "priceValue": 6500000,
   "localityName": "Shilaj",
@@ -35,5 +35,7 @@
   "geo": {
     "lat": 23.059913147015354,
     "lng": 72.48034289125195
-  }
+  },
+  "retiredTo": "/localities/shilaj/",
+  "retiredAt": "2026-09-25"
 }

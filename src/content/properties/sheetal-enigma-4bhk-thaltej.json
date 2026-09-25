@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.2 Cr",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -30,5 +30,7 @@
     "lat": 23.062976612481187,
     "lng": 72.49087150695507
   },
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

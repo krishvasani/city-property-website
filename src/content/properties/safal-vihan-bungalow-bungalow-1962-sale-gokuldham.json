@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹15.5 Cr",
   "priceValue": 155000000,
   "localityName": "Gokuldham",
@@ -25,5 +25,7 @@
   "geo": {
     "lat": 22.984218571026606,
     "lng": 72.45959305261032
-  }
+  },
+  "retiredTo": "/localities/gokuldham/",
+  "retiredAt": "2026-09-25"
 }

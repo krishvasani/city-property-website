@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "plot",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.88 Cr",
   "localityName": "Shilaj",
   "city": "Ahmedabad",
@@ -27,5 +27,7 @@
     "lat": 23.041535,
     "lng": 72.466682
   },
-  "localitySlug": "shilaj"
+  "localitySlug": "shilaj",
+  "retiredTo": "/localities/shilaj/",
+  "retiredAt": "2026-09-25"
 }

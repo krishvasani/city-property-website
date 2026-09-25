@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.35 Cr",
   "priceValue": 23500000,
   "localityName": "Bopal",
@@ -36,5 +36,7 @@
   "geo": {
     "lat": 23.02539823514198,
     "lng": 72.49438315340663
-  }
+  },
+  "retiredTo": "/localities/bopal/",
+  "retiredAt": "2026-09-25"
 }

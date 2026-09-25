@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.64 Cr",
   "priceValue": 56430500,
   "localityName": "Bodakdev",
@@ -61,5 +61,7 @@
   "builtUpArea": "4,907 sq.ft",
   "parking": "4 car parks",
   "mainImage": "/uploads/properties/sankalp-square-3a-office-sale-bodakdev/photo-1.jpg",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

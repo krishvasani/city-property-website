@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹50 / sq.ft",
   "priceValue": 200500,
   "localityName": "Ambli",
@@ -92,5 +92,7 @@
   "pricePer": "per month",
   "furnishing": "Fully furnished",
   "mainImage": "/uploads/properties/one-world-west-office-rent-ambli/photo-1.jpg",
-  "localitySlug": "ambli"
+  "localitySlug": "ambli",
+  "retiredTo": "/localities/ambli/",
+  "retiredAt": "2026-09-25"
 }

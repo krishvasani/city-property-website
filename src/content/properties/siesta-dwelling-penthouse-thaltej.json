@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.35 Cr",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -158,5 +158,7 @@
     "lng": 72.49087150695507
   },
   "mainImage": "/uploads/properties/siesta-dwelling-penthouse-thaltej/photo-1.jpg",
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

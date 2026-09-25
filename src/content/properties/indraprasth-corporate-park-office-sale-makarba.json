@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.34 Cr",
   "localityName": "Makarba",
   "city": "Ahmedabad",
@@ -46,5 +46,7 @@
   "perSqftDisplay": "₹8,500 per sq.ft",
   "furnishing": "Unfurnished",
   "localitySlug": "makarba",
-  "mainImage": "/uploads/properties/indraprasth-corporate-park-office-sale-makarba/photo-1.jpg"
+  "mainImage": "/uploads/properties/indraprasth-corporate-park-office-sale-makarba/photo-1.jpg",
+  "retiredTo": "/localities/makarba/",
+  "retiredAt": "2026-09-25"
 }

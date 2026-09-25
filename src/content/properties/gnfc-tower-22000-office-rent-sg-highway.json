@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹880,000",
   "priceValue": 880000,
   "localityName": "SG Highway",
@@ -81,5 +81,7 @@
   "pricePer": "per month",
   "furnishing": "Fully furnished",
   "mainImage": "/uploads/properties/gnfc-tower-22000-office-rent-sg-highway/photo-1.jpg",
-  "localitySlug": "sg-highway"
+  "localitySlug": "sg-highway",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

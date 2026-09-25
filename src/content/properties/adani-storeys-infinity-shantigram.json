@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹3.26 to 6.82 Cr",
   "priceOnRequest": false,
   "localityName": "Shantigram",
@@ -90,5 +90,7 @@
     "lat": 23.1688,
     "lng": 72.54151
   },
-  "priceValue": 32600000
+  "priceValue": 32600000,
+  "retiredTo": "/projects/adani-shantigram/the-storeys-infinity/",
+  "retiredAt": "2026-09-25"
 }

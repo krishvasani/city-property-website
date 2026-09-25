@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "priceOnRequest": true,
   "localityName": "Vastrapur",
@@ -31,5 +31,7 @@
   "geo": {
     "lat": 23.039643886322352,
     "lng": 72.53264848242438
-  }
+  },
+  "retiredTo": "/localities/vastrapur/",
+  "retiredAt": "2026-09-25"
 }

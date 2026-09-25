@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹60 / sq.ft",
   "priceValue": 288900,
   "localityName": "Ambawadi",
@@ -40,5 +40,7 @@
   "furnishing": "Unfurnished",
   "builtUpArea": "4,815 sq.ft",
   "mainImage": "/uploads/properties/shivalik-10-4815-office-rent-ambawadi/photo-1.jpg",
-  "localitySlug": "ambawadi"
+  "localitySlug": "ambawadi",
+  "retiredTo": "/localities/ambawadi/",
+  "retiredAt": "2026-09-25"
 }

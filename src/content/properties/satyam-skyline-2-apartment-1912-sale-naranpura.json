@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.4 Cr",
   "priceValue": 14000000,
   "localityName": "Naranpura",
@@ -36,5 +36,7 @@
   "geo": {
     "lat": 23.055178929162416,
     "lng": 72.54838836114256
-  }
+  },
+  "retiredTo": "/localities/naranpura/",
+  "retiredAt": "2026-09-25"
 }

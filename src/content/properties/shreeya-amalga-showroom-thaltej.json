@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2,20,000",
   "priceValue": 220000,
   "localityName": "Thaltej",
@@ -51,5 +51,7 @@
   "carpetArea": "1,980 sq.ft",
   "builtUpArea": "3,420 sq.ft",
   "mainImage": "/uploads/properties/shreeya-amalga-showroom-thaltej/photo-1.jpg",
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

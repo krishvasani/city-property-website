@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹45 / sq.ft",
   "localityName": "Prahlad Nagar",
   "city": "Ahmedabad",
@@ -105,5 +105,7 @@
     "Salon"
   ],
   "mainImage": "/uploads/properties/prahladnagar-showroom-rent/photo-1.jpg",
-  "localitySlug": "prahlad-nagar"
+  "localitySlug": "prahlad-nagar",
+  "retiredTo": "/localities/prahlad-nagar/",
+  "retiredAt": "2026-09-25"
 }

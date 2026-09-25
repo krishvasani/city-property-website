@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.8 Cr",
   "localityName": "Satellite",
   "city": "Ahmedabad",
@@ -29,5 +29,7 @@
   "priceValue": 48000000,
   "perSqftDisplay": "₹8,000 per sq.ft",
   "furnishing": "Unfurnished",
-  "localitySlug": "satellite"
+  "localitySlug": "satellite",
+  "retiredTo": "/localities/satellite/",
+  "retiredAt": "2026-09-25"
 }

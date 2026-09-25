@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹45 / sq.ft",
   "priceValue": 164025,
   "localityName": "Navrangpura",
@@ -54,5 +54,7 @@
   "perSqftDisplay": "₹45 per sq.ft",
   "furnishing": "Unfurnished",
   "mainImage": "/uploads/properties/swapnil-5-office-rent-navrangpura/photo-1.jpg",
-  "localitySlug": "navrangpura"
+  "localitySlug": "navrangpura",
+  "retiredTo": "/localities/navrangpura/",
+  "retiredAt": "2026-09-25"
 }

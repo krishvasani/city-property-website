@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹10.5 Cr",
   "priceValue": 105000000,
   "localityName": "Bodakdev",
@@ -50,5 +50,7 @@
   "furnishing": "Fully furnished",
   "parking": "10 car parks",
   "mainImage": "/uploads/properties/pv-enclave-office-sale-bodakdev/photo-1.jpg",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

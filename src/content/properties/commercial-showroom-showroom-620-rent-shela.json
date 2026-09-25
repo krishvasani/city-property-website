@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹50,000",
   "priceValue": 50000,
   "pricePer": "per month",
@@ -32,5 +32,7 @@
   "geo": {
     "lat": 23.00613944513142,
     "lng": 72.46761168348081
-  }
+  },
+  "retiredTo": "/localities/shela/",
+  "retiredAt": "2026-09-25"
 }

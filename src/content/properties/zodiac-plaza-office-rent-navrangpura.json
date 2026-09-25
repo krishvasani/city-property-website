@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹65 / sq.ft",
   "priceValue": 495625,
   "localityName": "Navrangpura",
@@ -40,5 +40,7 @@
   "furnishing": "Fully furnished",
   "parking": "3 car parks",
   "mainImage": "/uploads/properties/zodiac-plaza-office-rent-navrangpura/photo-1.jpg",
-  "localitySlug": "navrangpura"
+  "localitySlug": "navrangpura",
+  "retiredTo": "/localities/navrangpura/",
+  "retiredAt": "2026-09-25"
 }

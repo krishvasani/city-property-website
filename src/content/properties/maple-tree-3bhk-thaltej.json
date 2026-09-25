@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.6 Cr",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -76,5 +76,7 @@
     "lng": 72.49009903081551
   },
   "mainImage": "/uploads/properties/maple-tree-3bhk-thaltej/photo-1.jpg",
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

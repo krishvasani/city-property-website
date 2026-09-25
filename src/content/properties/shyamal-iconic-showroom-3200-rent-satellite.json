@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹400,000",
   "priceValue": 400000,
   "pricePer": "per month",
@@ -43,5 +43,7 @@
   "geo": {
     "lat": 23.01495101648262,
     "lng": 72.53101487541787
-  }
+  },
+  "retiredTo": "/localities/satellite/",
+  "retiredAt": "2026-09-25"
 }

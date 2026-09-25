@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "localityName": "Ambawadi",
   "city": "Ahmedabad",
@@ -28,5 +28,7 @@
   },
   "priceOnRequest": true,
   "furnishing": "Unfurnished",
-  "localitySlug": "ambawadi"
+  "localitySlug": "ambawadi",
+  "retiredTo": "/localities/ambawadi/",
+  "retiredAt": "2026-09-25"
 }

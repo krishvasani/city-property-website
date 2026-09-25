@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.35 Cr",
   "localityName": "Bodakdev",
   "city": "Ahmedabad",
@@ -47,5 +47,7 @@
     "lng": 72.51017393036462
   },
   "localitySlug": "bodakdev",
-  "mainImage": "/uploads/properties/pushpraj-tower-4bhk-bodakdev/photo-1.jpg"
+  "mainImage": "/uploads/properties/pushpraj-tower-4bhk-bodakdev/photo-1.jpg",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

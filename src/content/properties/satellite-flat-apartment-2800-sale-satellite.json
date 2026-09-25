@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.52 Cr",
   "priceValue": 25200000,
   "localityName": "Satellite",
@@ -36,5 +36,7 @@
   "geo": {
     "lat": 23.022308236401784,
     "lng": 72.51772846255744
-  }
+  },
+  "retiredTo": "/localities/satellite/",
+  "retiredAt": "2026-09-25"
 }

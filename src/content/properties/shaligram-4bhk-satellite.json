@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹3.25 Cr",
   "localityName": "Satellite",
   "city": "Ahmedabad",
@@ -80,5 +80,7 @@
     "lng": 72.53349761208636
   },
   "mainImage": "/uploads/properties/shaligram-4bhk-satellite/photo-1.jpg",
-  "localitySlug": "satellite"
+  "localitySlug": "satellite",
+  "retiredTo": "/localities/satellite/",
+  "retiredAt": "2026-09-25"
 }

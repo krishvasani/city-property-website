@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹70 / sq.ft",
   "priceValue": 786520,
   "localityName": "Bodakdev",
@@ -51,5 +51,7 @@
   "furnishing": "Fully furnished",
   "parking": "10 car parks",
   "mainImage": "/uploads/properties/pv-enclave-office-rent-bodakdev/photo-1.jpg",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

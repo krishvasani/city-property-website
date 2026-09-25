@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2,00,000",
   "localityName": "SG Highway",
   "city": "Ahmedabad",
@@ -154,5 +154,7 @@
     "lng": 72.50491095668345
   },
   "mainImage": "/uploads/properties/parijat-eclet-4bhk-rent-sg-highway/photo-1.jpg",
-  "localitySlug": "sg-highway"
+  "localitySlug": "sg-highway",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

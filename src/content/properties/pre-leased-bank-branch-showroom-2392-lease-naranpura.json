@@ -4,7 +4,7 @@
   "status": "lease",
   "propertyType": "investment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹220,000",
   "priceValue": 220000,
   "pricePer": "per month",
@@ -38,5 +38,7 @@
   "geo": {
     "lat": 23.05163558089075,
     "lng": 72.54736768569137
-  }
+  },
+  "retiredTo": "/localities/naranpura/",
+  "retiredAt": "2026-09-25"
 }

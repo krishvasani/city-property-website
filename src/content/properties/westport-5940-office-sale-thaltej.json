@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.05 Cr",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -39,5 +39,7 @@
   "furnishing": "Unfurnished",
   "parking": "4 car parks",
   "localitySlug": "thaltej",
-  "mainImage": "/uploads/properties/westport-5940-office-sale-thaltej/photo-1.jpg"
+  "mainImage": "/uploads/properties/westport-5940-office-sale-thaltej/photo-1.jpg",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

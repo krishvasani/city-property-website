@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹65 / sq.ft",
   "priceValue": 835900,
   "localityName": "Bodakdev",
@@ -56,5 +56,7 @@
   "furnishing": "Fully furnished",
   "parking": "20 car parks",
   "mainImage": "/uploads/properties/neptun-house-office-rent-bodakdev/photo-1.jpg",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

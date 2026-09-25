@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹73 L",
   "localityName": "Ambawadi",
   "city": "Ahmedabad",
@@ -46,5 +46,7 @@
   "perSqftDisplay": "₹8,066 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "ambawadi",
-  "mainImage": "/uploads/properties/ashwamegh-elegance-2-office-sale-ambawadi/photo-1.jpg"
+  "mainImage": "/uploads/properties/ashwamegh-elegance-2-office-sale-ambawadi/photo-1.jpg",
+  "retiredTo": "/localities/ambawadi/",
+  "retiredAt": "2026-09-25"
 }

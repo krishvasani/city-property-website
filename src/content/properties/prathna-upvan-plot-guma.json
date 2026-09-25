@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "plot",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹13.5 Cr",
   "localityName": "Guma",
   "city": "Ahmedabad",
@@ -27,5 +27,7 @@
     "lat": 23.04248487041597,
     "lng": 72.43986356390462
   },
-  "localitySlug": "guma"
+  "localitySlug": "guma",
+  "retiredTo": "/localities/guma/",
+  "retiredAt": "2026-09-25"
 }

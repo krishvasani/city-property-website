@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹160,000",
   "priceValue": 160000,
   "pricePer": "per month",
@@ -32,5 +32,7 @@
   "geo": {
     "lat": 23.042275389273854,
     "lng": 72.52891854912242
-  }
+  },
+  "retiredTo": "/localities/vastrapur/",
+  "retiredAt": "2026-09-25"
 }

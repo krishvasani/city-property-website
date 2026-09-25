@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹26,000",
   "priceValue": 26000,
   "localityName": "SG Highway",
@@ -48,5 +48,7 @@
   "pricePer": "per month",
   "furnishing": "Fully furnished",
   "localitySlug": "sg-highway",
-  "mainImage": "/uploads/properties/shivalik-shilp-office-rent-sg-highway/photo-1.jpg"
+  "mainImage": "/uploads/properties/shivalik-shilp-office-rent-sg-highway/photo-1.jpg",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

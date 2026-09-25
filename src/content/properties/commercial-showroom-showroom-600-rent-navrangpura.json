@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹90,000",
   "priceValue": 90000,
   "pricePer": "per month",
@@ -32,5 +32,7 @@
   "geo": {
     "lat": 23.033554036193134,
     "lng": 72.56009340731292
-  }
+  },
+  "retiredTo": "/localities/navrangpura/",
+  "retiredAt": "2026-09-25"
 }

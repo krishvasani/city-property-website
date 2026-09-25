@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹7.5 Cr",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -52,5 +52,7 @@
     "lng": 72.48438686554186
   },
   "localitySlug": "thaltej",
-  "mainImage": "/uploads/properties/sankalp-grace-3-flat-thaltej/photo-1.jpg"
+  "mainImage": "/uploads/properties/sankalp-grace-3-flat-thaltej/photo-1.jpg",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

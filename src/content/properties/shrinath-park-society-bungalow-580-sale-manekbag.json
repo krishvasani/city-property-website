@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.25 Cr",
   "priceValue": 52500000,
   "localityName": "Manekbag",
@@ -28,5 +28,7 @@
   "geo": {
     "lat": 23.01752192800974,
     "lng": 72.54060531240081
-  }
+  },
+  "retiredTo": "/localities/manekbag/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹45 / sq.ft",
   "localityName": "SG Highway",
   "city": "Ahmedabad",
@@ -33,5 +33,7 @@
   "perSqftDisplay": "₹45 per sq.ft",
   "furnishing": "Fully furnished",
   "parking": "8 car parks",
-  "localitySlug": "sg-highway"
+  "localitySlug": "sg-highway",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

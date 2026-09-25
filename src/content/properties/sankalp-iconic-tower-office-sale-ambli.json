@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.35 Cr",
   "localityName": "Ambli",
   "city": "Ahmedabad",
@@ -56,5 +56,7 @@
   "perSqftDisplay": "₹10,417 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "ambli",
-  "mainImage": "/uploads/properties/sankalp-iconic-tower-office-sale-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/sankalp-iconic-tower-office-sale-ambli/photo-1.jpg",
+  "retiredTo": "/localities/ambli/",
+  "retiredAt": "2026-09-25"
 }

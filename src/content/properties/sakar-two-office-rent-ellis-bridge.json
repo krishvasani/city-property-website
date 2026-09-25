@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹50 / sq.ft",
   "priceValue": 550000,
   "localityName": "Ellis Bridge",
@@ -48,5 +48,7 @@
   "carpetArea": "9,000 sq.ft",
   "parking": "6 car parks",
   "mainImage": "/uploads/properties/sakar-two-office-rent-ellis-bridge/photo-1.jpg",
-  "localitySlug": "ellisbridge"
+  "localitySlug": "ellisbridge",
+  "retiredTo": "/localities/ellisbridge/",
+  "retiredAt": "2026-09-25"
 }

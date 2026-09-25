@@ -4,7 +4,7 @@
   "status": "lease",
   "propertyType": "investment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹160,000",
   "priceValue": 160000,
   "pricePer": "per month",
@@ -38,5 +38,7 @@
   "geo": {
     "lat": 23.041770041256036,
     "lng": 72.5284364041737
-  }
+  },
+  "retiredTo": "/localities/vastrapur/",
+  "retiredAt": "2026-09-25"
 }

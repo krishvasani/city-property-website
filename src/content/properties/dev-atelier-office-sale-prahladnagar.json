@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹44 L",
   "priceValue": 4407200,
   "localityName": "Prahlad Nagar",
@@ -53,5 +53,7 @@
   "perSqftDisplay": "₹5,600 per sq.ft",
   "furnishing": "Unfurnished",
   "localitySlug": "prahlad-nagar",
-  "mainImage": "/uploads/properties/dev-atelier-office-sale-prahladnagar/photo-1.jpg"
+  "mainImage": "/uploads/properties/dev-atelier-office-sale-prahladnagar/photo-1.jpg",
+  "retiredTo": "/localities/prahlad-nagar/",
+  "retiredAt": "2026-09-25"
 }

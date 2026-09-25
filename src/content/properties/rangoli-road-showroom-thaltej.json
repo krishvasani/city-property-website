@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹350 / sq.ft",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -89,5 +89,7 @@
     "Clothing"
   ],
   "mainImage": "/uploads/properties/rangoli-road-showroom-thaltej/photo-1.jpg",
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

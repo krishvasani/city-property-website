@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "plot",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.81 Cr",
   "priceValue": 48100000,
   "localityName": "Chekhla",
@@ -25,5 +25,7 @@
   "geo": {
     "lat": 23.072905146594795,
     "lng": 72.5099223510318
-  }
+  },
+  "retiredTo": "/localities/chekhla/",
+  "retiredAt": "2026-09-25"
 }

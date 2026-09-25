@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "plot",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.92 Cr",
   "priceValue": 49200000,
   "localityName": "Rancharda",
@@ -32,5 +32,7 @@
   "geo": {
     "lat": 23.081072388672208,
     "lng": 72.44398577648786
-  }
+  },
+  "retiredTo": "/localities/rancharda/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.59 Cr",
   "localityName": "Bodakdev",
   "city": "Ahmedabad",
@@ -51,5 +51,7 @@
   "perSqftDisplay": "₹11,000 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "bodakdev",
-  "mainImage": "/uploads/properties/aaron-spectra-office-sale-bodakdev/photo-1.jpg"
+  "mainImage": "/uploads/properties/aaron-spectra-office-sale-bodakdev/photo-1.jpg",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

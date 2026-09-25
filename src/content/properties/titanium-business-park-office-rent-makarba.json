@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹150,000",
   "localityName": "Makarba",
   "city": "Ahmedabad",
@@ -33,5 +33,7 @@
   "furnishing": "Fully furnished",
   "builtUpArea": "2,260 sq.ft",
   "parking": "3 car parks",
-  "localitySlug": "makarba"
+  "localitySlug": "makarba",
+  "retiredTo": "/localities/makarba/",
+  "retiredAt": "2026-09-25"
 }

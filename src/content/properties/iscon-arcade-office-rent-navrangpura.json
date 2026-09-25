@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹50 / sq.ft",
   "localityName": "Navrangpura",
   "city": "Ahmedabad",
@@ -42,5 +42,7 @@
   "perSqftDisplay": "₹50 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "navrangpura",
-  "mainImage": "/uploads/properties/iscon-arcade-office-rent-navrangpura/photo-1.jpg"
+  "mainImage": "/uploads/properties/iscon-arcade-office-rent-navrangpura/photo-1.jpg",
+  "retiredTo": "/localities/navrangpura/",
+  "retiredAt": "2026-09-25"
 }

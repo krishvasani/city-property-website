@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹42 / sq.ft",
   "priceValue": 41244,
   "localityName": "Bodakdev",
@@ -44,5 +44,7 @@
   "perSqftDisplay": "₹42 per sq.ft",
   "furnishing": "Unfurnished",
   "localitySlug": "bodakdev",
-  "mainImage": "/uploads/properties/sankalp-square-3b-982-office-rent-bodakdev/photo-1.jpg"
+  "mainImage": "/uploads/properties/sankalp-square-3b-982-office-rent-bodakdev/photo-1.jpg",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

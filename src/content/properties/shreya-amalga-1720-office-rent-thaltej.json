@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹59,000",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -46,5 +46,7 @@
   "pricePer": "per month",
   "furnishing": "Unfurnished",
   "localitySlug": "thaltej",
-  "mainImage": "/uploads/properties/shreya-amalga-1720-office-rent-thaltej/photo-1.jpg"
+  "mainImage": "/uploads/properties/shreya-amalga-1720-office-rent-thaltej/photo-1.jpg",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

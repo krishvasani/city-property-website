@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.55 Cr",
   "priceValue": 45500000,
   "perSqftDisplay": "₹13,000 per sq.ft",
@@ -42,5 +42,7 @@
   "geo": {
     "lat": 23.05245790380886,
     "lng": 72.48079274625202
-  }
+  },
+  "retiredTo": "/localities/shilaj/",
+  "retiredAt": "2026-09-25"
 }

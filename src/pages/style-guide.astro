@@ -2,11 +2,11 @@
 // Living design-system reference (internal). Ported from the bundle's index.html.
 // Not linked in the public nav; visit /style-guide directly.
 import Base from '../layouts/Base.astro';
-import { getFeatured } from '../lib/data';
+import { getSampleProperty } from '../lib/data';
 
 // Sample listing for the "Property detail" screen card — resolved from live
 // content at build time so the link can never point at a removed listing.
-const [sample] = await getFeatured(1);
+const sample = await getSampleProperty();
 const sampleHref = sample ? `/property/${sample.slug}/` : '/buy/';
 ---
 <Base title="Design System · City Property Services" description="The living design-system reference for City Property Services." navVariant="guide" hideFloatingWhatsApp noindex>

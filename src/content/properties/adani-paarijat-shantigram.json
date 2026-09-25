@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "From ₹2.42 Cr",
   "priceValue": 24200000,
   "localityName": "Shantigram",
@@ -83,5 +83,7 @@
   "geo": {
     "lat": 23.16264,
     "lng": 72.53609
-  }
+  },
+  "retiredTo": "/projects/adani-shantigram/paarijat/",
+  "retiredAt": "2026-09-25"
 }

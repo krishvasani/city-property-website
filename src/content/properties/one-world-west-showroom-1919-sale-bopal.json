@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.18 Cr",
   "priceValue": 51813000,
   "perSqftDisplay": "₹27,000 per sq.ft",
@@ -48,5 +48,7 @@
   "geo": {
     "lat": 23.025486589860336,
     "lng": 72.47747747302694
-  }
+  },
+  "retiredTo": "/localities/bopal/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.07 Cr",
   "priceValue": 10665000,
   "localityName": "Bodakdev",
@@ -49,5 +49,7 @@
   "furnishing": "Unfurnished",
   "builtUpArea": "1,350 sq.ft",
   "localitySlug": "bodakdev",
-  "mainImage": "/uploads/properties/binori-b-square-3-office-sale-bodakdev/photo-1.jpg"
+  "mainImage": "/uploads/properties/binori-b-square-3-office-sale-bodakdev/photo-1.jpg",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

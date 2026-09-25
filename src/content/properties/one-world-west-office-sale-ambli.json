@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.21 Cr",
   "priceValue": 42105000,
   "localityName": "Ambli",
@@ -91,5 +91,7 @@
   "perSqftDisplay": "₹10,500 per sq.ft",
   "furnishing": "Fully furnished",
   "mainImage": "/uploads/properties/one-world-west-office-sale-ambli/photo-1.jpg",
-  "localitySlug": "ambli"
+  "localitySlug": "ambli",
+  "retiredTo": "/localities/ambli/",
+  "retiredAt": "2026-09-25"
 }

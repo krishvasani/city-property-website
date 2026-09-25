@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹40,000",
   "priceValue": 40000,
   "localityName": "Prahladnagar",
@@ -38,5 +38,7 @@
   "geo": {
     "lat": 23.015536579060498,
     "lng": 72.51355065183576
-  }
+  },
+  "retiredTo": "/localities/prahlad-nagar/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹7 Cr",
   "priceValue": 70000000,
   "localityName": "Bodakdev",
@@ -68,5 +68,7 @@
   "perSqftDisplay": "₹14,000 per sq.ft",
   "furnishing": "Fully furnished",
   "mainImage": "/uploads/properties/maruti-vertex-office-sale-bodakdev/photo-1.jpg",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.9 Cr",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -78,5 +78,7 @@
     "lng": 72.49233062855205
   },
   "mainImage": "/uploads/properties/maruti-zenobia-3bhk-thaltej/photo-1.jpg",
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

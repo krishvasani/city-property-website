@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.73 Cr",
   "priceValue": 27297000,
   "localityName": "Ashram Road",
@@ -42,5 +42,7 @@
   "furnishing": "Fully furnished",
   "builtUpArea": "3,033 sq.ft",
   "mainImage": "/uploads/properties/ratna-business-square-office-sale-ashram-road/photo-1.jpg",
-  "localitySlug": "ashram-road"
+  "localitySlug": "ashram-road",
+  "retiredTo": "/localities/ashram-road/",
+  "retiredAt": "2026-09-25"
 }

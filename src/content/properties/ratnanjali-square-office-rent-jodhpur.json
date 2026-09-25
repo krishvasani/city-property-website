@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹90 / sq.ft",
   "localityName": "Jodhpur",
   "city": "Ahmedabad",
@@ -30,5 +30,7 @@
   "pricePer": "per month",
   "perSqftDisplay": "₹90 per sq.ft",
   "furnishing": "Unfurnished",
-  "localitySlug": "jodhpur"
+  "localitySlug": "jodhpur",
+  "retiredTo": "/localities/jodhpur/",
+  "retiredAt": "2026-09-25"
 }

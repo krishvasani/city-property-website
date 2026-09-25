@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "plot",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.33 Cr",
   "localityName": "Thol Road",
   "city": "Ahmedabad",
@@ -27,5 +27,7 @@
     "lat": 23.092925200535284,
     "lng": 72.42792953035764
   },
-  "localitySlug": "thol-road"
+  "localitySlug": "thol-road",
+  "retiredTo": "/localities/thol-road/",
+  "retiredAt": "2026-09-25"
 }

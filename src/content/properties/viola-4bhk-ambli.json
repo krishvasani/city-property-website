@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.73 Cr",
   "localityName": "Ambli",
   "city": "Ahmedabad",
@@ -31,5 +31,7 @@
     "lat": 23.037086,
     "lng": 72.476278
   },
-  "localitySlug": "ambli"
+  "localitySlug": "ambli",
+  "retiredTo": "/localities/ambli/",
+  "retiredAt": "2026-09-25"
 }

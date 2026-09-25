@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹8.40 to 9.30 Cr",
   "priceValue": 84000000,
   "localityName": "Shantigram",
@@ -94,5 +94,7 @@
   "geo": {
     "lat": 23.1572,
     "lng": 72.5398
-  }
+  },
+  "retiredTo": "/projects/adani-shantigram/the-north-park/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹3.11 Cr",
   "localityName": "Bopal",
   "city": "Ahmedabad",
@@ -30,5 +30,7 @@
     "lat": 23.029960576008488,
     "lng": 72.46475773307566
   },
-  "localitySlug": "bopal"
+  "localitySlug": "bopal",
+  "retiredTo": "/localities/bopal/",
+  "retiredAt": "2026-09-25"
 }

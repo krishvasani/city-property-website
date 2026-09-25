@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹60 / sq.ft",
   "priceValue": 132000,
   "localityName": "SG Highway",
@@ -34,5 +34,7 @@
   "furnishing": "Fully furnished",
   "builtUpArea": "2,200 sq.ft",
   "carpetArea": "1,350 sq.ft",
-  "localitySlug": "sg-highway"
+  "localitySlug": "sg-highway",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

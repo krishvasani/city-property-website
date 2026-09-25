@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.42 Cr",
   "priceValue": 14227200,
   "localityName": "Ambli",
@@ -51,5 +51,7 @@
   "perSqftDisplay": "₹7,600 per sq.ft",
   "furnishing": "Unfurnished",
   "localitySlug": "ambli",
-  "mainImage": "/uploads/properties/colonnade-1872-office-sale-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/colonnade-1872-office-sale-ambli/photo-1.jpg",
+  "retiredTo": "/localities/ambli/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹37,000",
   "priceValue": 37000,
   "localityName": "South Bopal",
@@ -35,5 +35,7 @@
   "geo": {
     "lat": 23.015570563431822,
     "lng": 72.47332003467102
-  }
+  },
+  "retiredTo": "/localities/south-bopal/",
+  "retiredAt": "2026-09-25"
 }

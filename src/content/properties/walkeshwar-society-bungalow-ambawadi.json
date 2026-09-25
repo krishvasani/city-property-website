@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.25 Cr",
   "localityName": "Ambawadi",
   "city": "Ahmedabad",
@@ -66,5 +66,7 @@
     "lng": 72.54579336603008
   },
   "mainImage": "/uploads/properties/walkeshwar-society-bungalow-ambawadi/photo-1.jpg",
-  "localitySlug": "ambawadi"
+  "localitySlug": "ambawadi",
+  "retiredTo": "/localities/ambawadi/",
+  "retiredAt": "2026-09-25"
 }

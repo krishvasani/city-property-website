@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.75 Cr",
   "priceValue": 27500000,
   "localityName": "Navrangpura",
@@ -31,5 +31,7 @@
   "geo": {
     "lat": 23.03066191074626,
     "lng": 72.55508070705275
-  }
+  },
+  "retiredTo": "/localities/navrangpura/",
+  "retiredAt": "2026-09-25"
 }

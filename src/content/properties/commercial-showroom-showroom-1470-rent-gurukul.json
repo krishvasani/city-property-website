@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹176,400",
   "priceValue": 176400,
   "pricePer": "per month",
@@ -33,5 +33,7 @@
   "geo": {
     "lat": 23.05112060088934,
     "lng": 72.53377028784057
-  }
+  },
+  "retiredTo": "/localities/gurukul/",
+  "retiredAt": "2026-09-25"
 }

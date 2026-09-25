@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹8.5 Cr",
   "localityName": "Prahlad Nagar",
   "city": "Ahmedabad",
@@ -29,5 +29,7 @@
     "lat": 23.012812737487597,
     "lng": 72.50345024226357
   },
-  "localitySlug": "prahlad-nagar"
+  "localitySlug": "prahlad-nagar",
+  "retiredTo": "/localities/prahlad-nagar/",
+  "retiredAt": "2026-09-25"
 }

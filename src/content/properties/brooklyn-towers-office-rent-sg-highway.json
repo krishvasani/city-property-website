@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹360,000",
   "priceValue": 360000,
   "localityName": "SG Highway",
@@ -60,5 +60,7 @@
   "builtUpArea": "4,300 sq.ft",
   "parking": "4 car parks",
   "mainImage": "/uploads/properties/brooklyn-towers-office-rent-sg-highway/photo-1.jpg",
-  "localitySlug": "sg-highway"
+  "localitySlug": "sg-highway",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

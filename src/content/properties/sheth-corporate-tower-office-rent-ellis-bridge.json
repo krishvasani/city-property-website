@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹55 / sq.ft",
   "localityName": "Ellis Bridge",
   "city": "Ahmedabad",
@@ -31,5 +31,7 @@
   "perSqftDisplay": "₹55 per sq.ft plus taxes",
   "furnishing": "Fully furnished",
   "builtUpArea": "2,222 sq.ft",
-  "localitySlug": "ellisbridge"
+  "localitySlug": "ellisbridge",
+  "retiredTo": "/localities/ellisbridge/",
+  "retiredAt": "2026-09-25"
 }

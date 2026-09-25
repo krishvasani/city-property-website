@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.28 Cr",
   "priceValue": 12800000,
   "localityName": "Sola",
@@ -51,5 +51,7 @@
   "perSqftDisplay": "₹8,000 per sq.ft",
   "furnishing": "Fully furnished",
   "mainImage": "/uploads/properties/ganesh-meridian-office-sale-sola/photo-1.jpg",
-  "localitySlug": "sola"
+  "localitySlug": "sola",
+  "retiredTo": "/localities/sola/",
+  "retiredAt": "2026-09-25"
 }

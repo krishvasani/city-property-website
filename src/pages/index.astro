@@ -10,7 +10,7 @@ import { landingCombos } from '../lib/landing';
 import { sideWord, TYPE_SLUG_LABEL, TYPE_SLUG_CATEGORY } from '../lib/landing-core';
 import { SHANTIGRAM_LIVE, COMMERCIAL_PROJECTS_LIVE } from '../lib/flags';
 import { projects as shantigramProjects, HUB_PATH as SHANTIGRAM_HUB } from '../lib/projects';
-import { commercialProjects } from '../lib/commercial-projects';
+import { projectCounts } from '../lib/all-projects';
 import { categoryFor } from '../lib/format';
 import { existsSync } from 'node:fs';
 import { site } from '../lib/config';
@@ -33,15 +33,21 @@ const whyUs = [
 ];
 
 // Live counts per category (tracks the real number of listings we have).
-const catCount = (c: string) => allProperties.filter((p) => categoryFor(p.propertyType) === c).length;
+// Since Phase 1 the sale side of the site is projects, not listings, so the tiles
+// count both: residential and commercial are project-led, industrial is warehouses.
+const projectCount = (c: string) =>
+  c === 'residential' ? projectCounts.residential : c === 'commercial' ? projectCounts.commercial : 0;
+const catCount = (c: string) => allProperties.filter((p) => categoryFor(p.propertyType) === c).length + projectCount(c);
 const countLabel = (c: string) => {
   const n = catCount(c);
-  return n > 0 ? `${n} listing${n === 1 ? '' : 's'}` : 'Coming soon';
+  const noun = projectCount(c) > 0 ? 'project' : 'listing';
+  return n > 0 ? `${n} ${noun}${n === 1 ? '' : 's'}` : 'Coming soon';
 };
 // Send each tile to the page where that category actually has listings: Buy if
 // any are for sale, otherwise Rent (e.g. warehouses are lease-only). Prevents
 // the tile linking to an empty filtered page.
 const catPage = (c: string) => {
+  if (projectCount(c) > 0) return 'buy';
   const inCat = allProperties.filter((p) => categoryFor(p.propertyType) === c);
   if (inCat.some((p) => p.status === 'sale')) return 'buy';
   if (inCat.some((p) => p.status === 'rent' || p.status === 'lease')) return 'rent';
@@ -112,20 +118,22 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
       </div>
     </section>
 
-    <!-- FEATURED LISTINGS -->
-    <section class="section wrap-wide reveal">
-      <div class="section-head">
-        <div>
-          <div class="eyebrow">Handpicked</div>
-          <h2 style="margin-top:10px;">Featured properties</h2>
-          <p>A curated set our team thinks you’ll love this week.</p>
+    <!-- FEATURED LISTINGS — hidden while nothing is flagged featured -->
+    {featured.length > 0 && (
+      <section class="section wrap-wide reveal">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Handpicked</div>
+            <h2 style="margin-top:10px;">Featured properties</h2>
+            <p>A curated set our team thinks you’ll love this week.</p>
+          </div>
+          <a class="btn btn-secondary" href="/buy/">View all listings →</a>
         </div>
-        <a class="btn btn-secondary" href="/buy/">View all listings →</a>
-      </div>
-      <div class="cards" data-stagger>
-        {featured.map((p) => <PropertyCard property={p} />)}
-      </div>
-    </section>
+        <div class="cards" data-stagger>
+          {featured.map((p) => <PropertyCard property={p} />)}
+        </div>
+      </section>
+    )}
 
     <!-- BROWSE BY AREA & TYPE -->
     <section class="section wrap-wide reveal" id="browse">
@@ -145,10 +153,10 @@ const cirilServices = ['Commercial / Office', 'Investment', 'Retail', 'Industria
         </a>
       )}
       {COMMERCIAL_PROJECTS_LIVE && (
-        <a class="browse-feature" href="/projects/">
+        <a class="browse-feature" href="/buy/">
           <span class="browse-feature-eyebrow">New commercial projects</span>
           <span class="browse-feature-title">Offices and retail in west Ahmedabad</span>
-          <span class="browse-feature-meta">{commercialProjects.length} new buildings compared — floor plans, carpet areas, rates per sq ft, RERA and possession →</span>
+          <span class="browse-feature-meta">{projectCounts.commercial} new buildings compared — floor plans, carpet areas, rates per sq ft, RERA and possession →</span>
         </a>
       )}
       <div class="browse-grid">

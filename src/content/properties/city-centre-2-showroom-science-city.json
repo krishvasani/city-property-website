@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹100 / sq.ft",
   "priceValue": 340200,
   "localityName": "Science City",
@@ -89,5 +89,7 @@
     "Restaurant"
   ],
   "mainImage": "/uploads/properties/city-centre-2-showroom-science-city/photo-1.jpg",
-  "localitySlug": "science-city"
+  "localitySlug": "science-city",
+  "retiredTo": "/localities/science-city/",
+  "retiredAt": "2026-09-25"
 }

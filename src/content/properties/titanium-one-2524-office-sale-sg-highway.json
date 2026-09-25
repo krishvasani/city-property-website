@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.52 Cr",
   "localityName": "SG Highway",
   "city": "Ahmedabad",
@@ -46,5 +46,7 @@
   "perSqftDisplay": "₹10,000 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "sg-highway",
-  "mainImage": "/uploads/properties/titanium-one-2524-office-sale-sg-highway/photo-1.jpg"
+  "mainImage": "/uploads/properties/titanium-one-2524-office-sale-sg-highway/photo-1.jpg",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

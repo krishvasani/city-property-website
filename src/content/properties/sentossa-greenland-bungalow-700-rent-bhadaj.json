@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹65,000",
   "priceValue": 65000,
   "localityName": "Bhadaj",
@@ -36,5 +36,7 @@
   "geo": {
     "lat": 23.099842386137418,
     "lng": 72.49496629343027
-  }
+  },
+  "retiredTo": "/localities/bhadaj/",
+  "retiredAt": "2026-09-25"
 }

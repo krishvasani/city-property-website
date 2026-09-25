@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹170,000",
   "priceValue": 170000,
   "pricePer": "per month",
@@ -32,5 +32,7 @@
   "geo": {
     "lat": 23.02432122723907,
     "lng": 72.54860960611971
-  }
+  },
+  "retiredTo": "/localities/ambawadi/",
+  "retiredAt": "2026-09-25"
 }

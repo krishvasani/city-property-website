@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹55,000",
   "priceValue": 55000,
   "localityName": "Satellite",
@@ -35,5 +35,7 @@
   "geo": {
     "lat": 23.020365699386176,
     "lng": 72.51670444079096
-  }
+  },
+  "retiredTo": "/localities/satellite/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.62 to 7.02 Cr",
   "priceOnRequest": false,
   "localityName": "Shantigram",
@@ -105,5 +105,7 @@
     "lat": 23.15488,
     "lng": 72.53995
   },
-  "priceValue": 56200000
+  "priceValue": 56200000,
+  "retiredTo": "/projects/adani-shantigram/the-storeys-golf-coast/",
+  "retiredAt": "2026-09-25"
 }

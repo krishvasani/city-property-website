@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "plot",
   "featured": true,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹30.76 Cr",
   "localityName": "Rancharda",
   "city": "Ahmedabad",
@@ -54,5 +54,7 @@
     "lng": 72.42908878499554
   },
   "mainImage": "/uploads/properties/santoor-farm-plot-rancharda/photo-1.jpg",
-  "localitySlug": "rancharda"
+  "localitySlug": "rancharda",
+  "retiredTo": "/localities/rancharda/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹220,000",
   "priceValue": 220000,
   "pricePer": "per month",
@@ -32,5 +32,7 @@
   "geo": {
     "lat": 23.04103263575395,
     "lng": 72.49865444246937
-  }
+  },
+  "retiredTo": "/localities/sindhu-bhavan-road/",
+  "retiredAt": "2026-09-25"
 }

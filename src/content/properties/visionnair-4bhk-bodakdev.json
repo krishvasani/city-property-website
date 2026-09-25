@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.9 Cr",
   "localityName": "Bodakdev",
   "city": "Ahmedabad",
@@ -78,5 +78,7 @@
     "lng": 72.50841317981155
   },
   "mainImage": "/uploads/properties/visionnair-4bhk-bodakdev/photo-1.jpg",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

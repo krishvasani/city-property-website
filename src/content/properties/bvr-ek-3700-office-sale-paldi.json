@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹3.88 Cr",
   "localityName": "Paldi",
   "city": "Ahmedabad",
@@ -51,5 +51,7 @@
   "perSqftDisplay": "₹10,500 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "paldi",
-  "mainImage": "/uploads/properties/bvr-ek-3700-office-sale-paldi/photo-1.jpg"
+  "mainImage": "/uploads/properties/bvr-ek-3700-office-sale-paldi/photo-1.jpg",
+  "retiredTo": "/localities/paldi/",
+  "retiredAt": "2026-09-25"
 }

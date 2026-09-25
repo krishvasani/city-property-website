@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.8 Cr",
   "priceValue": 58000000,
   "localityName": "Ghatlodia",
@@ -37,5 +37,7 @@
   "geo": {
     "lat": 23.068386820730986,
     "lng": 72.53933909330033
-  }
+  },
+  "retiredTo": "/localities/ghatlodia/",
+  "retiredAt": "2026-09-25"
 }

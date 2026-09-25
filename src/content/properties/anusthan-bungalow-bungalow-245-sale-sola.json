@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.35 Cr",
   "priceValue": 53500000,
   "localityName": "Sola",
@@ -34,5 +34,7 @@
   "geo": {
     "lat": 23.065977172325518,
     "lng": 72.51769262197304
-  }
+  },
+  "retiredTo": "/localities/sola/",
+  "retiredAt": "2026-09-25"
 }

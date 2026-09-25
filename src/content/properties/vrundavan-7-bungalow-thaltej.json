@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹11.5 Cr",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -29,5 +29,7 @@
     "lat": 23.05792239570663,
     "lng": 72.4979954535756
   },
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

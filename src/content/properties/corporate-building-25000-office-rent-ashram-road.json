@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹50 / sq.ft",
   "localityName": "Ashram Road",
   "city": "Ahmedabad",
@@ -33,5 +33,7 @@
   "perSqftDisplay": "₹50 per sq.ft",
   "furnishing": "Unfurnished",
   "parking": "8 car parks",
-  "localitySlug": "ashram-road"
+  "localitySlug": "ashram-road",
+  "retiredTo": "/localities/ashram-road/",
+  "retiredAt": "2026-09-25"
 }

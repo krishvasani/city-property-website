@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.85 Cr",
   "localityName": "Bopal",
   "city": "Ahmedabad",
@@ -32,5 +32,7 @@
   "perSqftDisplay": "₹6,000 per sq.ft",
   "furnishing": "Unfurnished",
   "parking": "6 car parks",
-  "localitySlug": "bopal"
+  "localitySlug": "bopal",
+  "retiredTo": "/localities/bopal/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "plot",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "From ₹9.25 Cr",
   "priceValue": 92500000,
   "localityName": "Shantigram",
@@ -57,5 +57,7 @@
   "geo": {
     "lat": 23.17368,
     "lng": 72.54086
-  }
+  },
+  "retiredTo": "/projects/adani-shantigram/the-west-park/",
+  "retiredAt": "2026-09-25"
 }

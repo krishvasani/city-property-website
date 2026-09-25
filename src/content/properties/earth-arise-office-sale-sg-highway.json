@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹3.47 Cr",
   "priceValue": 34722500,
   "localityName": "SG Highway",
@@ -57,5 +57,7 @@
   "furnishing": "Fully furnished",
   "builtUpArea": "3,655 sq.ft",
   "mainImage": "/uploads/properties/earth-arise-office-sale-sg-highway/photo-1.jpg",
-  "localitySlug": "sg-highway"
+  "localitySlug": "sg-highway",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

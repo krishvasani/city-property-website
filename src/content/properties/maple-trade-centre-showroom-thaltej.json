@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.6 Cr",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -83,5 +83,7 @@
     "Salon"
   ],
   "mainImage": "/uploads/properties/maple-trade-centre-showroom-thaltej/photo-1.jpg",
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

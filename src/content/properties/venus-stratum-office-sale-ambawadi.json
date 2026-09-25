@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹3.86 Cr",
   "localityName": "Ambawadi",
   "city": "Ahmedabad",
@@ -44,5 +44,7 @@
   "furnishing": "Unfurnished",
   "parking": "4 car parks",
   "localitySlug": "ambawadi",
-  "mainImage": "/uploads/properties/venus-stratum-office-sale-ambawadi/photo-1.jpg"
+  "mainImage": "/uploads/properties/venus-stratum-office-sale-ambawadi/photo-1.jpg",
+  "retiredTo": "/localities/ambawadi/",
+  "retiredAt": "2026-09-25"
 }

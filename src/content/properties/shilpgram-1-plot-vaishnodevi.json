@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "plot",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "localityName": "Vaishnodevi",
   "city": "Ahmedabad",
@@ -64,5 +64,7 @@
     "lat": 23.113757,
     "lng": 72.541764
   },
-  "localitySlug": "vaishnodevi-circle"
+  "localitySlug": "vaishnodevi-circle",
+  "retiredTo": "/localities/vaishnodevi-circle/",
+  "retiredAt": "2026-09-25"
 }

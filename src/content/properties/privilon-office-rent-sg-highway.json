@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹70 / sq.ft",
   "priceValue": 700000,
   "localityName": "SG Highway",
@@ -61,5 +61,7 @@
   "furnishing": "Fully furnished",
   "parking": "10 car parks",
   "mainImage": "/uploads/properties/privilon-office-rent-sg-highway/photo-1.jpg",
-  "localitySlug": "sg-highway"
+  "localitySlug": "sg-highway",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

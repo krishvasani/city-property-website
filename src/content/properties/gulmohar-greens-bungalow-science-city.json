@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹8 Cr",
   "localityName": "Science City",
   "city": "Ahmedabad",
@@ -42,5 +42,7 @@
     "lng": 72.5163582099336
   },
   "localitySlug": "science-city",
-  "mainImage": "/uploads/properties/gulmohar-greens-bungalow-science-city/photo-1.jpg"
+  "mainImage": "/uploads/properties/gulmohar-greens-bungalow-science-city/photo-1.jpg",
+  "retiredTo": "/localities/science-city/",
+  "retiredAt": "2026-09-25"
 }

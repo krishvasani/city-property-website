@@ -1,16 +1,16 @@
 // Page copy, meta and JSON-LD for the commercial project pages
-// (/projects/ and /projects/{slug}/). Everything here is composed from the
+// (/projects/{slug}/). Everything here is composed from the
 // facts in src/content/projects/commercial/*.json — nothing is asserted that
 // the intake form did not state.
 import { site } from './config';
 import { localities } from '../data/localities';
 import {
-  allProjects, commercialProjects, residentialProjects, commercialPath, isReady,
-  possessionLabel, rate, rateFloor, rateLine, sizeRange, useSummary, type CommercialProject,
+  commercialPath, isReady, possessionLabel, rateLine, sizeRange, useSummary,
+  type CommercialProject,
 } from './commercial-projects';
 
 const ORG_ID = `${site.url}/#organization`;
-const PROJECTS_URL = '/projects/';
+const PROJECTS_URL = '/buy/';
 const clean = (s: string) => s.replace(/\s+/g, ' ').replace(/\s+([,.;])/g, '$1').trim();
 const list = (a: string[]) => (a.length <= 1 ? a[0] ?? '' : `${a.slice(0, -1).join(', ')} and ${a[a.length - 1]}`);
 const localityOf = (p: CommercialProject) => localities.find((l) => l.id === p.localitySlug);
@@ -243,73 +243,4 @@ export function projectContent(p: CommercialProject): ProjectContent {
     ],
     graph,
   };
-}
-
-export interface IndexContent {
-  title: string;
-  description: string;
-  h1: string;
-  intro: string[];
-  faq: { q: string; a: string }[];
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  graph: Record<string, any>[];
-}
-
-/** Copy and schema for the /projects/ index. */
-export function indexContent(): IndexContent {
-  const url = `${site.url}${PROJECTS_URL}`;
-  const all = commercialProjects;
-  const ready = all.filter(isReady);
-  const areas = [...new Set(all.map((p) => p.localityName))].sort();
-  const rated = all.map(rateFloor).filter((n): n is number => typeof n === 'number');
-  const lo = Math.min(...rated);
-
-  const h1 = 'New commercial projects in Ahmedabad';
-  const title = 'New Commercial Projects in Ahmedabad';
-  const description = clean(`${all.length} new office and retail projects in west Ahmedabad — ${list(areas.slice(0, 4))} — compared on floor plan, carpet area, rate per sq ft, RERA and possession. Rates from ${rate(lo)} per sq ft.`).slice(0, 158);
-
-  const intro = [
-    clean(`City Property Services tracks new commercial buildings across west Ahmedabad. These are the ${all.length} projects we are currently advising on: ${list(areas)}. Each page gives the same thing — the floor-by-floor plan with carpet and super built-up areas, the rate card including package and floor-rise charges, the amenity list, the RERA registration and the possession date.`),
-    clean(`${ready.length ? `${ready.length === 1 ? 'One' : ready.length} of the ${all.length} ${ready.length === 1 ? 'is' : 'are'} ready to move in — ${list(ready.map((p) => p.name))} — and the rest are under construction.` : 'All of these are under construction.'} Rates come from each developer's sales team and are dated on the page. They move, and what a package covers differs from building to building, so treat them as a starting point and let us confirm before you commit.`),
-    clean(`We are an independent property consultant registered with Gujarat RERA (${site.rera}). We are not the developer of any project listed here. We advise on the floor and the unit rather than the building, negotiate on your behalf, and handle the paperwork.`),
-  ];
-
-  const faq = [
-    {
-      q: 'What is the difference between carpet area and super built-up area?',
-      a: 'Carpet area is the usable floor area inside your walls — the figure RERA requires. Super built-up area adds your share of lobbies, staircases, lifts and common services. In these buildings the super built-up figure is typically 1.8 to 2.2 times the carpet area, and most Ahmedabad developers quote their per-sq-ft rate against super built-up, not carpet. Always ask which basis a quote uses before you compare two buildings.',
-    },
-    {
-      q: 'What is a down-payment rate?',
-      a: 'Developers here usually quote two rates. The regular or construction-linked rate is paid in instalments tied to construction milestones. The down-payment rate is lower and is paid up front, or close to it, within a short window. Which one applies changes the total materially, so the tables on each project page show both wherever the developer quotes both.',
-    },
-    {
-      q: 'What are package and floor-rise charges?',
-      a: 'The package charge is a per-sq-ft amount on top of the basic rate covering items like maintenance deposits, AUDA and electricity connection charges and common-area fit-out — what it includes varies by builder. Floor rise is a per-sq-ft premium for higher floors. Parking, legal fees, GST and stamp duty are usually extra again. Each project page lists what the developer told us.',
-    },
-    {
-      q: 'Do you charge buyers a fee?',
-      a: 'We are paid by the developer on a completed transaction in most cases. Where that is not so we will tell you before you see anything. Either way our advice on which floor and which building suits your requirement is not tied to a single project — we work across all of them.',
-    },
-  ];
-
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const graph: Record<string, any>[] = [
-    { '@type': 'CollectionPage', '@id': `${url}#page`, url, name: h1, description, isPartOf: { '@id': `${site.url}/#website` }, provider: { '@id': ORG_ID }, about: { '@id': `${url}#list` } },
-    {
-      '@type': 'ItemList',
-      '@id': `${url}#list`,
-      name: 'New commercial projects in Ahmedabad',
-      numberOfItems: all.length,
-      itemListOrder: 'https://schema.org/ItemListUnordered',
-      itemListElement: all.map((p, i) => ({
-        '@type': 'ListItem', position: i + 1, name: p.name,
-        url: `${site.url}${commercialPath(p)}`,
-        item: { '@id': `${site.url}${commercialPath(p)}#project` },
-      })),
-    },
-    { '@type': 'FAQPage', '@id': `${url}#faq`, mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
-  ];
-
-  return { title, description, h1, intro, faq, graph };
 }

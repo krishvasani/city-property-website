@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.51 Cr",
   "priceValue": 25079600,
   "localityName": "Bodakdev",
@@ -38,5 +38,7 @@
   "perSqftDisplay": "₹9,100 per sq.ft",
   "furnishing": "Unfurnished",
   "mainImage": "/uploads/properties/pv-enclave-2756-office-sale-bodakdev/photo-1.jpg",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹73 L",
   "localityName": "Makarba",
   "city": "Ahmedabad",
@@ -46,5 +46,7 @@
   "perSqftDisplay": "₹7,000 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "makarba",
-  "mainImage": "/uploads/properties/solitaire-corporate-park-office-sale-makarba/photo-1.jpg"
+  "mainImage": "/uploads/properties/solitaire-corporate-park-office-sale-makarba/photo-1.jpg",
+  "retiredTo": "/localities/makarba/",
+  "retiredAt": "2026-09-25"
 }

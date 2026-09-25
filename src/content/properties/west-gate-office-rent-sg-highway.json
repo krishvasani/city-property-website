@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹68 / sq.ft",
   "priceValue": 289000,
   "localityName": "SG Highway",
@@ -48,5 +48,7 @@
   "perSqftDisplay": "₹68 per sq.ft",
   "pricePer": "per month",
   "mainImage": "/uploads/properties/west-gate-office-rent-sg-highway/photo-1.jpg",
-  "localitySlug": "sg-highway"
+  "localitySlug": "sg-highway",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

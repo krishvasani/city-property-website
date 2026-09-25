@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.22 Cr",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -46,5 +46,7 @@
   "perSqftDisplay": "₹7,991 per sq.ft",
   "furnishing": "Unfurnished",
   "localitySlug": "thaltej",
-  "mainImage": "/uploads/properties/swati-18-2778-office-sale-thaltej/photo-1.jpg"
+  "mainImage": "/uploads/properties/swati-18-2778-office-sale-thaltej/photo-1.jpg",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

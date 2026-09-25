@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹68 / sq.ft",
   "priceValue": 666400,
   "localityName": "Bodakdev",
@@ -38,5 +38,7 @@
   "furnishing": "Fully furnished",
   "builtUpArea": "9,800 sq.ft",
   "mainImage": "/uploads/properties/corporate-house-sbr-office-rent-bodakdev/photo-1.jpg",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

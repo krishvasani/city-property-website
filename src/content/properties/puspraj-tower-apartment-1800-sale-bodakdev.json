@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.55 Cr",
   "priceValue": 15500000,
   "localityName": "Bodakdev",
@@ -46,5 +46,7 @@
   "geo": {
     "lat": 23.041491596735096,
     "lng": 72.51883391330597
-  }
+  },
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

@@ -8,7 +8,7 @@ import ProjectEnquiry from '../../components/ProjectEnquiry.astro';
 import { COMMERCIAL_PROJECTS_LIVE } from '../../lib/flags';
 import { projectContent, rateDisclaimer } from '../../lib/commercial-content';
 import {
-  allProjects, commercialPath, PROJECTS_PATH, isReady, possessionLabel,
+  allProjects, commercialPath, PROJECTS_INDEX, isReady, possessionLabel,
   rate, rateLine, sections, useSummary, type CommercialProject,
 } from '../../lib/commercial-projects';
 import { site } from '../../lib/config';
@@ -56,7 +56,7 @@ const siblings = [...nearby, ...rest].slice(0, 4);
   <main class="wrap-wide cp">
     <nav class="crumb" aria-label="Breadcrumb">
       <a href="/">Home</a><span class="sep">›</span>
-      <a href={PROJECTS_PATH}>Projects</a><span class="sep">›</span>
+      <a href={PROJECTS_INDEX}>Projects</a><span class="sep">›</span>
       <span style="color:var(--ink);">{p.name}</span>
     </nav>
 
@@ -226,7 +226,7 @@ const siblings = [...nearby, ...rest].slice(0, 4);
             </li>
           ))}
         </ul>
-        <p style="margin-top:16px;"><a class="btn btn-secondary btn-sm" href={PROJECTS_PATH}>See all {allProjects.length} projects →</a></p>
+        <p style="margin-top:16px;"><a class="btn btn-secondary btn-sm" href={PROJECTS_INDEX}>See all {allProjects.length} projects →</a></p>
       </section>
     )}
 

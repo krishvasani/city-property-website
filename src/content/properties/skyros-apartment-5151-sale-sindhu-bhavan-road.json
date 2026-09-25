@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹3.97 Cr",
   "priceValue": 39662700,
   "localityName": "Sindhu Bhavan Road",
@@ -37,5 +37,7 @@
   "geo": {
     "lat": 23.039582872360114,
     "lng": 72.50279484150961
-  }
+  },
+  "retiredTo": "/localities/sindhu-bhavan-road/",
+  "retiredAt": "2026-09-25"
 }

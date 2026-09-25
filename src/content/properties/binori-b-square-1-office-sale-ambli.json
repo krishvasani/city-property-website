@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.1 Cr",
   "localityName": "Ambli",
   "city": "Ahmedabad",
@@ -44,5 +44,7 @@
   "furnishing": "Fully furnished",
   "parking": "3 car parks",
   "localitySlug": "ambli",
-  "mainImage": "/uploads/properties/binori-b-square-1-office-sale-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/binori-b-square-1-office-sale-ambli/photo-1.jpg",
+  "retiredTo": "/localities/ambli/",
+  "retiredAt": "2026-09-25"
 }

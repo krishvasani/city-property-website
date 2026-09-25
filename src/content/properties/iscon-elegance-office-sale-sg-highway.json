@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.23 Cr",
   "localityName": "SG Highway",
   "city": "Ahmedabad",
@@ -41,5 +41,7 @@
   "perSqftDisplay": "₹9,000 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "sg-highway",
-  "mainImage": "/uploads/properties/iscon-elegance-office-sale-sg-highway/photo-1.jpg"
+  "mainImage": "/uploads/properties/iscon-elegance-office-sale-sg-highway/photo-1.jpg",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

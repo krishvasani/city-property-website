@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.26 Cr",
   "localityName": "Ghatlodia",
   "city": "Ahmedabad",
@@ -46,5 +46,7 @@
   "perSqftDisplay": "₹7,000 per sq.ft",
   "furnishing": "Unfurnished",
   "localitySlug": "ghatlodia",
-  "mainImage": "/uploads/properties/solaris-business-hub-1800-office-sale-ghatlodia/photo-1.jpg"
+  "mainImage": "/uploads/properties/solaris-business-hub-1800-office-sale-ghatlodia/photo-1.jpg",
+  "retiredTo": "/localities/ghatlodia/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹300,000",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -33,5 +33,7 @@
   "furnishing": "Fully furnished",
   "builtUpArea": "4,593 sq.ft",
   "parking": "4 car parks",
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

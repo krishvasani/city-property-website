@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹7.56 Cr",
   "priceValue": 75600000,
   "localityName": "Ambli",
@@ -31,5 +31,7 @@
   },
   "perSqftDisplay": "₹9,000 per sq.ft",
   "furnishing": "Fully furnished",
-  "localitySlug": "ambli"
+  "localitySlug": "ambli",
+  "retiredTo": "/localities/ambli/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "plot",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.8 Cr",
   "localityName": "Ghuma",
   "city": "Ahmedabad",
@@ -54,5 +54,7 @@
     "lng": 72.45746834255948
   },
   "mainImage": "/uploads/properties/sun-village-plot-ghuma/photo-1.jpg",
-  "localitySlug": "ghuma"
+  "localitySlug": "ghuma",
+  "retiredTo": "/localities/ghuma/",
+  "retiredAt": "2026-09-25"
 }

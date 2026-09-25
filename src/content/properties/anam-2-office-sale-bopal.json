@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹3.25 Cr",
   "priceValue": 32500000,
   "localityName": "Bopal",
@@ -68,5 +68,7 @@
   "perSqftDisplay": "₹6,500 per sq.ft",
   "furnishing": "Unfurnished",
   "mainImage": "/uploads/properties/anam-2-office-sale-bopal/photo-1.jpg",
-  "localitySlug": "bopal"
+  "localitySlug": "bopal",
+  "retiredTo": "/localities/bopal/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹75 / sq.ft",
   "localityName": "Ambli",
   "city": "Ahmedabad",
@@ -57,5 +57,7 @@
   "perSqftDisplay": "₹75 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "ambli",
-  "mainImage": "/uploads/properties/sankalp-iconic-tower-office-rent-ambli/photo-1.jpg"
+  "mainImage": "/uploads/properties/sankalp-iconic-tower-office-rent-ambli/photo-1.jpg",
+  "retiredTo": "/localities/ambli/",
+  "retiredAt": "2026-09-25"
 }

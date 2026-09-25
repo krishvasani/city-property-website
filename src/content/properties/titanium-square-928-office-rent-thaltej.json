@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹55,000",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -29,5 +29,7 @@
   "priceValue": 55000,
   "pricePer": "per month",
   "furnishing": "Unfurnished",
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

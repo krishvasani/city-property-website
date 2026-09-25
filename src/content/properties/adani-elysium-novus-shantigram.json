@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.23 to 1.61 Cr",
   "priceValue": 12300000,
   "localityName": "Shantigram",
@@ -64,5 +64,7 @@
   "geo": {
     "lat": 23.1709,
     "lng": 72.53749
-  }
+  },
+  "retiredTo": "/projects/adani-shantigram/elysium-novus/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹90,000",
   "localityName": "Satellite",
   "city": "Ahmedabad",
@@ -32,5 +32,7 @@
   "pricePer": "per month",
   "furnishing": "Unfurnished",
   "parking": "2 car parks",
-  "localitySlug": "satellite"
+  "localitySlug": "satellite",
+  "retiredTo": "/localities/satellite/",
+  "retiredAt": "2026-09-25"
 }

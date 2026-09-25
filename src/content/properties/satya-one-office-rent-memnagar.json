@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹60 / sq.ft",
   "priceValue": 428640,
   "localityName": "Memnagar",
@@ -70,5 +70,7 @@
   "furnishing": "Fully furnished",
   "builtUpArea": "7,144 sq.ft",
   "mainImage": "/uploads/properties/satya-one-office-rent-memnagar/photo-1.jpg",
-  "localitySlug": "memnagar"
+  "localitySlug": "memnagar",
+  "retiredTo": "/localities/memnagar/",
+  "retiredAt": "2026-09-25"
 }

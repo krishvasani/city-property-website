@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹168,000",
   "priceValue": 168000,
   "pricePer": "per month",
@@ -43,5 +43,7 @@
   "geo": {
     "lat": 23.052478613206254,
     "lng": 72.48073338225709
-  }
+  },
+  "retiredTo": "/localities/shilaj/",
+  "retiredAt": "2026-09-25"
 }

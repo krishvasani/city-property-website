@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹55 / sq.ft",
   "localityName": "SG Highway",
   "city": "Ahmedabad",
@@ -47,5 +47,7 @@
   "perSqftDisplay": "₹55 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "sg-highway",
-  "mainImage": "/uploads/properties/shivalik-shilp-1100-office-rent-sg-highway/photo-1.jpg"
+  "mainImage": "/uploads/properties/shivalik-shilp-1100-office-rent-sg-highway/photo-1.jpg",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.75 Cr",
   "localityName": "Makarba",
   "city": "Ahmedabad",
@@ -46,5 +46,7 @@
   "perSqftDisplay": "₹10,000 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "makarba",
-  "mainImage": "/uploads/properties/brooklyn-tower-4747-office-sale-makarba/photo-1.jpg"
+  "mainImage": "/uploads/properties/brooklyn-tower-4747-office-sale-makarba/photo-1.jpg",
+  "retiredTo": "/localities/makarba/",
+  "retiredAt": "2026-09-25"
 }

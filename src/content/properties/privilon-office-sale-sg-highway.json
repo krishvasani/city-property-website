@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹11.5 Cr",
   "priceValue": 115000000,
   "localityName": "SG Highway",
@@ -60,5 +60,7 @@
   "furnishing": "Fully furnished",
   "parking": "10 car parks",
   "mainImage": "/uploads/properties/privilon-office-sale-sg-highway/photo-1.jpg",
-  "localitySlug": "sg-highway"
+  "localitySlug": "sg-highway",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

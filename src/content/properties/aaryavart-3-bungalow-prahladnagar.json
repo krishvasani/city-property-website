@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "Price on request",
   "localityName": "Prahlad Nagar",
   "city": "Ahmedabad",
@@ -114,5 +114,7 @@
     "lng": 72.50366178036006
   },
   "mainImage": "/uploads/properties/aaryavart-3-bungalow-prahladnagar/photo-1.jpg",
-  "localitySlug": "prahlad-nagar"
+  "localitySlug": "prahlad-nagar",
+  "retiredTo": "/localities/prahlad-nagar/",
+  "retiredAt": "2026-09-25"
 }

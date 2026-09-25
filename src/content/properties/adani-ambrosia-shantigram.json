@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.45 to 2.94 Cr",
   "priceValue": 24500000,
   "localityName": "Shantigram",
@@ -84,5 +84,7 @@
   "geo": {
     "lat": 23.16812,
     "lng": 72.53567
-  }
+  },
+  "retiredTo": "/projects/adani-shantigram/ambrosia/",
+  "retiredAt": "2026-09-25"
 }

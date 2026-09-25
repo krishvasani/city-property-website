@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹7.5 Cr",
   "priceValue": 75000000,
   "localityName": "Shyamal",
@@ -35,5 +35,7 @@
   "geo": {
     "lat": 23.017380349970214,
     "lng": 72.53150413549909
-  }
+  },
+  "retiredTo": "/localities/shyamal/",
+  "retiredAt": "2026-09-25"
 }

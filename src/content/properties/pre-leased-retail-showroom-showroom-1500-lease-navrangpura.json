@@ -4,7 +4,7 @@
   "status": "lease",
   "propertyType": "investment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹111,000",
   "priceValue": 111000,
   "pricePer": "per month",
@@ -38,5 +38,7 @@
   "geo": {
     "lat": 23.035595784487683,
     "lng": 72.55510875945566
-  }
+  },
+  "retiredTo": "/localities/navrangpura/",
+  "retiredAt": "2026-09-25"
 }

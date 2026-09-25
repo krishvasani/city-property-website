@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹41,500",
   "localityName": "Bodakdev",
   "city": "Ahmedabad",
@@ -29,5 +29,7 @@
   "priceValue": 41500,
   "pricePer": "per month",
   "furnishing": "Fully furnished",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

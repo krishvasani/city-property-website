@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.85 Cr",
   "localityName": "Vejalpur",
   "city": "Ahmedabad",
@@ -123,5 +123,7 @@
     "lng": 72.51488406631654
   },
   "mainImage": "/uploads/properties/shyam-tirth-apartment-vejalpur/photo-1.jpg",
-  "localitySlug": "vejalpur"
+  "localitySlug": "vejalpur",
+  "retiredTo": "/localities/vejalpur/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹79 L",
   "priceValue": 7862500,
   "localityName": "Paldi",
@@ -53,5 +53,7 @@
   "perSqftDisplay": "₹8,500 per sq.ft",
   "furnishing": "Unfurnished",
   "localitySlug": "paldi",
-  "mainImage": "/uploads/properties/bvr-ek-925-office-sale-paldi/photo-1.jpg"
+  "mainImage": "/uploads/properties/bvr-ek-925-office-sale-paldi/photo-1.jpg",
+  "retiredTo": "/localities/paldi/",
+  "retiredAt": "2026-09-25"
 }

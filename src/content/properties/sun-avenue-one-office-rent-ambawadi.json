@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹58 / sq.ft",
   "priceValue": 1119400,
   "localityName": "Ambawadi",
@@ -65,5 +65,7 @@
   "furnishing": "Fully furnished",
   "parking": "15 car parks",
   "mainImage": "/uploads/properties/sun-avenue-one-office-rent-ambawadi/photo-1.jpg",
-  "localitySlug": "ambawadi"
+  "localitySlug": "ambawadi",
+  "retiredTo": "/localities/ambawadi/",
+  "retiredAt": "2026-09-25"
 }

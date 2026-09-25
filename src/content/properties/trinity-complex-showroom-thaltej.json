@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹110 / sq.ft",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -46,5 +46,7 @@
     "Cafe",
     "Restaurant"
   ],
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹75 / sq.ft",
   "priceValue": 585000,
   "localityName": "Ambli",
@@ -49,5 +49,7 @@
   "pricePer": "per month",
   "furnishing": "Fully furnished",
   "mainImage": "/uploads/properties/navratna-corporate-park-7800-office-ambli/photo-1.jpg",
-  "localitySlug": "ambli"
+  "localitySlug": "ambli",
+  "retiredTo": "/localities/ambli/",
+  "retiredAt": "2026-09-25"
 }

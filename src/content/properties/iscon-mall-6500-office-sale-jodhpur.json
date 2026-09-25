@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹6.17 Cr",
   "localityName": "Jodhpur",
   "city": "Ahmedabad",
@@ -37,5 +37,7 @@
   "furnishing": "Fully furnished",
   "builtUpArea": "6,500 sq.ft",
   "localitySlug": "jodhpur",
-  "mainImage": "/uploads/properties/iscon-mall-6500-office-sale-jodhpur/photo-1.jpg"
+  "mainImage": "/uploads/properties/iscon-mall-6500-office-sale-jodhpur/photo-1.jpg",
+  "retiredTo": "/localities/jodhpur/",
+  "retiredAt": "2026-09-25"
 }

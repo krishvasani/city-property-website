@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹180,000",
   "priceValue": 180000,
   "pricePer": "per month",
@@ -32,5 +32,7 @@
   "geo": {
     "lat": 23.02721497691514,
     "lng": 72.5063484539343
-  }
+  },
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

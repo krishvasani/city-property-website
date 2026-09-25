@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹595,000",
   "priceValue": 595000,
   "pricePer": "per month",
@@ -38,5 +38,7 @@
   "geo": {
     "lat": 23.012764202483673,
     "lng": 72.51197662931185
-  }
+  },
+  "retiredTo": "/localities/prahlad-nagar/",
+  "retiredAt": "2026-09-25"
 }

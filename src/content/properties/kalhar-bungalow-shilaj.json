@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹9.2 Cr",
   "localityName": "Shilaj",
   "city": "Ahmedabad",
@@ -42,5 +42,7 @@
     "lng": 72.46870429173967
   },
   "localitySlug": "shilaj",
-  "mainImage": "/uploads/properties/kalhar-bungalow-shilaj/photo-1.jpg"
+  "mainImage": "/uploads/properties/kalhar-bungalow-shilaj/photo-1.jpg",
+  "retiredTo": "/localities/shilaj/",
+  "retiredAt": "2026-09-25"
 }

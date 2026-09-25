@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.6 Cr",
   "priceValue": 46000000,
   "perSqftDisplay": "₹20,000 per sq.ft",
@@ -38,5 +38,7 @@
   "geo": {
     "lat": 23.046891928929366,
     "lng": 72.50795483689427
-  }
+  },
+  "retiredTo": "/localities/sindhu-bhavan-road/",
+  "retiredAt": "2026-09-25"
 }

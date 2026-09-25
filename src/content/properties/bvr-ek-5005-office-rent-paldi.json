@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹70 / sq.ft",
   "localityName": "Paldi",
   "city": "Ahmedabad",
@@ -55,5 +55,7 @@
   "furnishing": "Fully furnished",
   "parking": "4 car parks",
   "localitySlug": "paldi",
-  "mainImage": "/uploads/properties/bvr-ek-5005-office-rent-paldi/photo-1.jpg"
+  "mainImage": "/uploads/properties/bvr-ek-5005-office-rent-paldi/photo-1.jpg",
+  "retiredTo": "/localities/paldi/",
+  "retiredAt": "2026-09-25"
 }

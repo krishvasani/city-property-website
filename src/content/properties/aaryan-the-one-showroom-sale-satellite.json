@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹3.87 Cr",
   "localityName": "Satellite",
   "city": "Ahmedabad",
@@ -89,5 +89,7 @@
     "Salon"
   ],
   "mainImage": "/uploads/properties/aaryan-the-one-showroom-sale-satellite/photo-1.jpg",
-  "localitySlug": "satellite"
+  "localitySlug": "satellite",
+  "retiredTo": "/localities/satellite/",
+  "retiredAt": "2026-09-25"
 }

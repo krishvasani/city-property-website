@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹16 Cr",
   "localityName": "Bodakdev",
   "city": "Ahmedabad",
@@ -30,5 +30,7 @@
     "lat": 23.044192215755103,
     "lng": 72.4810085230243
   },
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

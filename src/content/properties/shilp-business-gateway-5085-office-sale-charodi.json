@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹3.31 Cr",
   "localityName": "Charodi",
   "city": "Ahmedabad",
@@ -52,5 +52,7 @@
   "furnishing": "Unfurnished",
   "builtUpArea": "5,085 sq.ft",
   "localitySlug": "charodi",
-  "mainImage": "/uploads/properties/shilp-business-gateway-5085-office-sale-charodi/photo-1.jpg"
+  "mainImage": "/uploads/properties/shilp-business-gateway-5085-office-sale-charodi/photo-1.jpg",
+  "retiredTo": "/localities/charodi/",
+  "retiredAt": "2026-09-25"
 }

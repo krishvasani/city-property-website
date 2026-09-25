@@ -90,6 +90,8 @@ export const residentialProjects: CommercialProject[] = load(residentialFiles, '
 export const allProjects: CommercialProject[] = [...commercialProjects, ...residentialProjects];
 
 export const PROJECTS_PATH = '/projects/';
+/** Where the project index lives. /buy/ is the explorer; /projects/ 301s to it. */
+export const PROJECTS_INDEX = '/buy/';
 export const commercialPath = (p: CommercialProject) => `${PROJECTS_PATH}${p.slug}/`;
 
 export function isReady(p: CommercialProject): boolean {

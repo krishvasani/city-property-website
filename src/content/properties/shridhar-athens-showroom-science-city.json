@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹80 / sq.ft",
   "priceValue": 408000,
   "localityName": "Science City",
@@ -109,5 +109,7 @@
     "Jewellery"
   ],
   "mainImage": "/uploads/properties/shridhar-athens-showroom-science-city/photo-1.jpg",
-  "localitySlug": "science-city"
+  "localitySlug": "science-city",
+  "retiredTo": "/localities/science-city/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.38 to 18.04 Cr",
   "priceValue": 53800000,
   "localityName": "Shantigram",
@@ -104,5 +104,7 @@
   "geo": {
     "lat": 23.15559,
     "lng": 72.54018
-  }
+  },
+  "retiredTo": "/projects/adani-shantigram/belrosa/",
+  "retiredAt": "2026-09-25"
 }

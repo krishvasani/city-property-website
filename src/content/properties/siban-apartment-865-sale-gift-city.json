@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹78 L",
   "priceValue": 7790000,
   "localityName": "GIFT City",
@@ -32,5 +32,7 @@
   "geo": {
     "lat": 23.161242740832147,
     "lng": 72.69837173694768
-  }
+  },
+  "retiredTo": "/localities/gift-city/",
+  "retiredAt": "2026-09-25"
 }

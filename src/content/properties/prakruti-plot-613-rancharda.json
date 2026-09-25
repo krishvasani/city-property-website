@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "plot",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.57 Cr",
   "localityName": "Rancharda",
   "city": "Ahmedabad",
@@ -27,5 +27,7 @@
     "lat": 23.07114,
     "lng": 72.442511
   },
-  "localitySlug": "rancharda"
+  "localitySlug": "rancharda",
+  "retiredTo": "/localities/rancharda/",
+  "retiredAt": "2026-09-25"
 }

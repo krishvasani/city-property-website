@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4 Cr",
   "priceValue": 40000000,
   "localityName": "Hebatpur",
@@ -36,5 +36,7 @@
   "geo": {
     "lat": 23.05501368430689,
     "lng": 72.48346456888657
-  }
+  },
+  "retiredTo": "/localities/hebatpur/",
+  "retiredAt": "2026-09-25"
 }

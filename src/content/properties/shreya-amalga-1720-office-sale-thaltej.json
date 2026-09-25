@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.46 Cr",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -46,5 +46,7 @@
   "perSqftDisplay": "₹8,500 per sq.ft",
   "furnishing": "Unfurnished",
   "localitySlug": "thaltej",
-  "mainImage": "/uploads/properties/shreya-amalga-1720-office-sale-thaltej/photo-1.jpg"
+  "mainImage": "/uploads/properties/shreya-amalga-1720-office-sale-thaltej/photo-1.jpg",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

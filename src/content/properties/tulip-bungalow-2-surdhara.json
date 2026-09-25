@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹3.9 Cr",
   "localityName": "Surdhara",
   "city": "Ahmedabad",
@@ -27,5 +27,7 @@
     "lat": 23.055979,
     "lng": 72.501672
   },
-  "localitySlug": "surdhara"
+  "localitySlug": "surdhara",
+  "retiredTo": "/localities/surdhara/",
+  "retiredAt": "2026-09-25"
 }

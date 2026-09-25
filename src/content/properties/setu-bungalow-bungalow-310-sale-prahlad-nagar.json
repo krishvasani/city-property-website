@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "bungalow",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹5.25 Cr",
   "priceValue": 52500000,
   "localityName": "Prahladnagar",
@@ -35,5 +35,7 @@
   "geo": {
     "lat": 23.015613662631544,
     "lng": 72.50950343463771
-  }
+  },
+  "retiredTo": "/localities/prahlad-nagar/",
+  "retiredAt": "2026-09-25"
 }

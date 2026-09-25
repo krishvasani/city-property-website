@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹65 / sq.ft",
   "priceValue": 152425,
   "localityName": "Bodakdev",
@@ -33,5 +33,7 @@
   "perSqftDisplay": "₹65 per sq.ft plus taxes",
   "furnishing": "Fully furnished",
   "parking": "2 car parks",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

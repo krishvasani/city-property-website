@@ -8,7 +8,7 @@ import Icon from '../../components/Icon.astro';
 import LeadForm from '../../components/LeadForm.astro';
 import CallButton from '../../components/CallButton.astro';
 import WhatsAppButton from '../../components/WhatsAppButton.astro';
-import { getProperties } from '../../lib/data';
+import { getLocalitiesEverListed, getProperties } from '../../lib/data';
 import { getAllLocalities, getLocalityById, propertyTextMatchesLocality } from '../../data/localities';
 import { contact } from '../../lib/config';
 import { landingCombos, comboLabel } from '../../lib/landing';
@@ -21,10 +21,11 @@ import { projects as shantigramProjects } from '../../lib/projects';
 // live listings, so pages are useful (never thin) and property breadcrumbs resolve.
 export async function getStaticPaths() {
   const localities = getAllLocalities();
-  const props = await getProperties();
-  const withListings = new Set(props.map((p) => p.localitySlug).filter(Boolean));
+  // Includes localities whose listings were archived in Phase 1 — their guide
+  // pages are the redirect targets for those listings, so they must keep building.
+  const everListed = await getLocalitiesEverListed();
   return localities
-    .filter((l) => l.priority <= 2 || withListings.has(l.id))
+    .filter((l) => l.priority <= 2 || everListed.has(l.id))
     .map((l) => ({ params: { slug: l.slug }, props: { localityId: l.id } }));
 }
 

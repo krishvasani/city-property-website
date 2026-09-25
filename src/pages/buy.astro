@@ -1,29 +1,231 @@
 ---
+// /buy/ — the projects explorer. This URL used to list individual properties for
+// sale; since Phase 1 the site sells projects, so it now filters the 72 project
+// pages. The URL is unchanged deliberately: it carries the rankings.
 import Base from '../layouts/Base.astro';
-import ListingExplorer from '../components/ListingExplorer.astro';
-import { getProperties } from '../lib/data';
+import LeadForm from '../components/LeadForm.astro';
+import CallButton from '../components/CallButton.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import { allProjectCards, projectLocalities, projectCounts } from '../lib/all-projects';
+import { contact, site } from '../lib/config';
 
-const all = await getProperties();
-const properties = all.filter((p) => p.status === 'sale');
+const cards = allProjectCards;
+const areas = projectLocalities;
+const wa = 'Hi City Property Services, I’d like to know about new projects in Ahmedabad.';
 
-const budgetOptions = [
-  { label: 'Up to ₹50 L', value: '0-5000000' },
-  { label: '₹50 L to 1 Cr', value: '5000000-10000000' },
-  { label: '₹1 to 2 Cr', value: '10000000-20000000' },
-  { label: '₹2 Cr +', value: '20000000-' },
+const title = 'New Projects in Ahmedabad';
+const description = `${projectCounts.all} new projects in Ahmedabad — ${projectCounts.residential} residential, ${projectCounts.commercial} commercial — across ${areas.length} areas, with price, possession and RERA on every page.`;
+
+const graph = [
+  {
+    '@type': 'CollectionPage',
+    '@id': `${site.url}/buy/#page`,
+    url: `${site.url}/buy/`,
+    name: title,
+    description,
+    isPartOf: { '@id': `${site.url}/#website` },
+    provider: { '@id': `${site.url}/#organization` },
+    about: { '@id': `${site.url}/buy/#list` },
+  },
+  {
+    '@type': 'ItemList',
+    '@id': `${site.url}/buy/#list`,
+    name: title,
+    numberOfItems: cards.length,
+    itemListOrder: 'https://schema.org/ItemListUnordered',
+    itemListElement: cards.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: c.name,
+      url: `${site.url}${c.url}`,
+    })),
+  },
 ];
 ---
 <Base
-  title="Properties for Sale in Ahmedabad"
-  description="Browse homes, plots, offices and industrial property for sale across Ahmedabad including Prahlad Nagar, Satellite, SG Highway, Bopal, Shela and more."
+  title={title}
+  description={description}
   brandSuffix={false}
+  breadcrumbs={[{ name: 'Home', url: `${site.url}/` }, { name: 'Projects', url: `${site.url}/buy/` }]}
+  jsonLd={graph}
   active="buy"
 >
-  <ListingExplorer
-    properties={properties}
-    heading="Properties for Sale in Ahmedabad"
-    emptyText="No sale properties match your filters right now."
-    budgetOptions={budgetOptions}
-    budgetLabel="Budget"
-  />
+  <main class="wrap-wide px">
+    <section class="px-head">
+      <div class="eyebrow">New projects · Ahmedabad</div>
+      <h1 class="display">New projects in Ahmedabad</h1>
+      <p class="body-lg muted">
+        Every project we are currently advising on — {projectCounts.residential} residential and {projectCounts.commercial} commercial,
+        across {areas.length} areas. Each page carries the configurations or floor plan, the price, the possession date and the RERA
+        registration where one is on file. We are an independent consultant registered with Gujarat RERA ({site.rera}); we are not the
+        developer of any project here.
+      </p>
+    </section>
+
+    <section class="px-filters" aria-label="Filter projects">
+      <div class="px-chips" role="group" aria-label="Project type">
+        <button type="button" class="px-chip is-on" data-cat="all" aria-pressed="true">All <span>{projectCounts.all}</span></button>
+        <button type="button" class="px-chip" data-cat="residential" aria-pressed="false">Residential <span>{projectCounts.residential}</span></button>
+        <button type="button" class="px-chip" data-cat="commercial" aria-pressed="false">Commercial <span>{projectCounts.commercial}</span></button>
+      </div>
+      <div class="px-selects">
+        <label class="px-field">
+          <span>Area</span>
+          <select id="px-area">
+            <option value="">All areas</option>
+            {areas.map((a) => <option value={a.slug}>{a.name}</option>)}
+          </select>
+        </label>
+        <label class="px-field">
+          <span>Status</span>
+          <select id="px-status">
+            <option value="">Any status</option>
+            <option value="ready">Ready to move in</option>
+            <option value="soon">Under construction</option>
+          </select>
+        </label>
+        <label class="px-field px-search">
+          <span>Search</span>
+          <input id="px-q" type="search" placeholder="Project or developer name" autocomplete="off" />
+        </label>
+      </div>
+      <p class="px-count" aria-live="polite"><b id="px-n">{cards.length}</b> projects</p>
+    </section>
+
+    <ul class="px-grid" id="px-grid">
+      {cards.map((c) => (
+        <li
+          class="px-item"
+          data-cat={c.category}
+          data-area={c.localitySlug}
+          data-ready={c.ready ? '1' : '0'}
+          data-search={c.search}
+        >
+          <a class="proj-card" href={c.url}>
+            {c.photo
+              ? <img src={c.photo} alt={`${c.name}, ${c.localityName}`} loading="lazy" />
+              : <div class="ph" data-label="Photographs pending"></div>}
+            <span class="proj-card-body">
+              <span class="proj-card-name">{c.name}</span>
+              <span class="proj-card-meta">{c.typeLabel} · {c.localityName}</span>
+              <span class="proj-card-meta muted">{c.developer ?? 'Developer on request'} · {c.possession}</span>
+              <span class="proj-card-rate">{c.priceLine}</span>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <p class="px-empty" id="px-empty" hidden>No projects match those filters. Clear a filter, or tell us what you need below and we will find it.</p>
+
+    <section class="proj-enquiry" id="enquire">
+      <div class="proj-enquiry-copy">
+        <div class="eyebrow">Independent advice</div>
+        <h2>Tell us what you need</h2>
+        <p class="muted">
+          Give us the size, the budget and the area, and we will come back with the projects that fit and what is actually unsold in them.
+          We work across every project here rather than pushing one, and we handle the paperwork through to registration.
+        </p>
+        <div class="row" style="gap:10px;margin-top:18px;flex-wrap:wrap;">
+          <CallButton label="Call Now" number={contact.phone} />
+          <WhatsAppButton label="WhatsApp Us" message={wa} />
+        </div>
+      </div>
+      <div class="panel">
+        <LeadForm
+          name="viewing"
+          submitLabel="Send my requirement"
+          messageLabel="What are you looking for?"
+          messagePlaceholder="e.g. 4 BHK in Ambli up to ₹5 Cr, or 2,000 sq ft office on SG Highway…"
+          context={{ project: 'Projects explorer', projectUrl: `${site.url}/buy/` }}
+          whatsappFallback={wa}
+        />
+      </div>
+    </section>
+  </main>
 </Base>
+
+<style is:global>
+  .px-head { padding: 34px 0 0; }
+  .px-head h1 { max-width: 16ch; margin-top: 12px; }
+  .px-head p { max-width: 74ch; margin-top: 16px; }
+
+  .px-filters { margin-top: 30px; padding: 16px 18px; background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); box-shadow: var(--shadow-xs); display: flex; flex-direction: column; gap: 14px; }
+  .px-chips { display: flex; gap: 8px; flex-wrap: wrap; }
+  .px-chip { display: inline-flex; align-items: center; gap: 7px; padding: 9px 15px; border-radius: 999px; border: 1px solid var(--hairline); background: var(--surface-2); color: var(--text); font-size: 14.5px; font-weight: 600; cursor: pointer; transition: background var(--t) var(--ease), color var(--t) var(--ease), border-color var(--t) var(--ease); }
+  .px-chip span { font-size: 12.5px; color: var(--text-muted); font-weight: 600; }
+  .px-chip:hover { border-color: var(--navy); }
+  .px-chip.is-on { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .px-chip.is-on span { color: rgba(255,255,255,.75); }
+
+  .px-selects { display: grid; grid-template-columns: 1fr 1fr 2fr; gap: 12px; }
+  .px-field { display: flex; flex-direction: column; gap: 5px; }
+  .px-field > span { font-size: 12.5px; text-transform: uppercase; letter-spacing: .04em; color: var(--text-muted); font-weight: 600; }
+  .px-field select, .px-field input { width: 100%; padding: 10px 12px; border-radius: var(--r); border: 1px solid var(--hairline); background: var(--surface); color: var(--ink); font-size: 14.5px; font-family: inherit; }
+  .px-field select:focus, .px-field input:focus { outline: 2px solid var(--navy); outline-offset: 1px; }
+  .px-count { margin: 0; font-size: 13.5px; color: var(--text-muted); }
+  .px-count b { color: var(--ink); }
+
+  .px-grid { list-style: none; margin: 26px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .px-item[hidden] { display: none; }
+  .px .proj-card { display: flex; flex-direction: column; height: 100%; background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--shadow-xs); transition: transform var(--t) var(--ease), box-shadow var(--t) var(--ease); }
+  .px .proj-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+  .px .proj-card img, .px .proj-card .ph { aspect-ratio: 16 / 10; width: 100%; object-fit: cover; object-position: center 30%; display: block; }
+  .px .proj-card-body { display: flex; flex-direction: column; gap: 3px; padding: 12px 14px 14px; }
+  .px .proj-card-name { font-weight: 700; color: var(--ink); font-size: 16px; }
+  .px .proj-card-meta { font-size: 13.5px; color: var(--text); }
+  .px .proj-card-rate { font-size: 13.5px; color: var(--navy); font-weight: 600; margin-top: 4px; }
+  .px-empty { margin: 30px 0 0; padding: 20px; background: var(--surface-2); border-radius: var(--r-lg); color: var(--text); }
+
+  @media (max-width: 1000px) { .px-grid { grid-template-columns: repeat(2, 1fr); } .px-selects { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .px-grid { grid-template-columns: 1fr; } .px-selects { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+  // Filtering is plain DOM work on markup that is already in the HTML, so the
+  // full list renders without JS and filtering costs no network request.
+  const grid = document.getElementById('px-grid');
+  if (grid) {
+    const items = [...grid.querySelectorAll<HTMLElement>('.px-item')];
+    const chips = [...document.querySelectorAll<HTMLButtonElement>('.px-chip')];
+    const area = document.getElementById('px-area') as HTMLSelectElement | null;
+    const status = document.getElementById('px-status') as HTMLSelectElement | null;
+    const q = document.getElementById('px-q') as HTMLInputElement | null;
+    const n = document.getElementById('px-n');
+    const empty = document.getElementById('px-empty');
+    let cat = 'all';
+
+    const apply = () => {
+      const a = area?.value ?? '';
+      const st = status?.value ?? '';
+      const term = (q?.value ?? '').trim().toLowerCase();
+      let shown = 0;
+      for (const el of items) {
+        const ok =
+          (cat === 'all' || el.dataset.cat === cat) &&
+          (!a || el.dataset.area === a) &&
+          (!st || (st === 'ready') === (el.dataset.ready === '1')) &&
+          (!term || (el.dataset.search ?? '').includes(term));
+        el.hidden = !ok;
+        if (ok) shown++;
+      }
+      if (n) n.textContent = String(shown);
+      if (empty) empty.hidden = shown > 0;
+    };
+
+    chips.forEach((c) =>
+      c.addEventListener('click', () => {
+        cat = c.dataset.cat ?? 'all';
+        chips.forEach((o) => {
+          const on = o === c;
+          o.classList.toggle('is-on', on);
+          o.setAttribute('aria-pressed', String(on));
+        });
+        apply();
+      }),
+    );
+    area?.addEventListener('change', apply);
+    status?.addEventListener('change', apply);
+    q?.addEventListener('input', apply);
+  }
+</script>

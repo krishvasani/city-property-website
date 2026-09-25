@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹80 L",
   "priceValue": 7964000,
   "localityName": "Vastrapur",
@@ -58,5 +58,7 @@
   "perSqftDisplay": "₹11,000 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "vastrapur",
-  "mainImage": "/uploads/properties/ratnakar-nine-square-724-office-sale-vastrapur/photo-1.jpg"
+  "mainImage": "/uploads/properties/ratnakar-nine-square-724-office-sale-vastrapur/photo-1.jpg",
+  "retiredTo": "/localities/vastrapur/",
+  "retiredAt": "2026-09-25"
 }

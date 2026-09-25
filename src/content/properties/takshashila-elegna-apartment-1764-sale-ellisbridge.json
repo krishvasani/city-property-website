@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.35 Cr",
   "priceValue": 13500000,
   "localityName": "Ellisbridge",
@@ -36,5 +36,7 @@
   "geo": {
     "lat": 23.02556957473804,
     "lng": 72.5656879106234
-  }
+  },
+  "retiredTo": "/localities/ellisbridge/",
+  "retiredAt": "2026-09-25"
 }

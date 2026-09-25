@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹65 / sq.ft",
   "localityName": "Prahlad Nagar",
   "city": "Ahmedabad",
@@ -79,5 +79,7 @@
     "lng": 72.51244450306353
   },
   "mainImage": "/uploads/properties/venus-atlantis-office-rent-prahladnagar/photo-1.jpg",
-  "localitySlug": "prahlad-nagar"
+  "localitySlug": "prahlad-nagar",
+  "retiredTo": "/localities/prahlad-nagar/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹42 / sq.ft",
   "priceValue": 42000,
   "localityName": "Makarba",
@@ -49,5 +49,7 @@
   "perSqftDisplay": "₹42 per sq.ft",
   "furnishing": "Fully furnished",
   "mainImage": "/uploads/properties/solitaire-corporate-park-office-rent-makarba/photo-1.jpg",
-  "localitySlug": "makarba"
+  "localitySlug": "makarba",
+  "retiredTo": "/localities/makarba/",
+  "retiredAt": "2026-09-25"
 }

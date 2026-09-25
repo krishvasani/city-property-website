@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "plot",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹2.14 Cr",
   "priceValue": 21360000,
   "localityName": "Lapkaman",
@@ -25,5 +25,7 @@
   "geo": {
     "lat": 23.129642769778613,
     "lng": 72.48798688914461
-  }
+  },
+  "retiredTo": "/localities/lapkaman/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.03 Cr",
   "priceValue": 10311000,
   "localityName": "Navrangpura",
@@ -48,5 +48,7 @@
   "perSqftDisplay": "₹7,000 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "navrangpura",
-  "mainImage": "/uploads/properties/aarya-epoch-office-sale-navrangpura/photo-1.jpg"
+  "mainImage": "/uploads/properties/aarya-epoch-office-sale-navrangpura/photo-1.jpg",
+  "retiredTo": "/localities/navrangpura/",
+  "retiredAt": "2026-09-25"
 }

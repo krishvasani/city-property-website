@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.22 Cr",
   "priceValue": 12187500,
   "localityName": "Jodhpur",
@@ -38,5 +38,7 @@
   "perSqftDisplay": "₹6,500 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "jodhpur",
-  "mainImage": "/uploads/properties/iscon-mall-office-sale-jodhpur/photo-1.jpg"
+  "mainImage": "/uploads/properties/iscon-mall-office-sale-jodhpur/photo-1.jpg",
+  "retiredTo": "/localities/jodhpur/",
+  "retiredAt": "2026-09-25"
 }

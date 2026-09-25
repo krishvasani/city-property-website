@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": true,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.6 Cr",
   "priceValue": 45964800,
   "localityName": "Thaltej",
@@ -60,5 +60,7 @@
   "furnishing": "Fully furnished",
   "parking": "3 car parks",
   "mainImage": "/uploads/properties/westface-office-sale-thaltej/photo-1.jpg",
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

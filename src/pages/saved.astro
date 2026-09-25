@@ -3,6 +3,21 @@ import Base from '../layouts/Base.astro';
 import PropertyCard from '../components/PropertyCard.astro';
 import { getProperties } from '../lib/data';
 const properties = await getProperties();
+
+// Slugs retired in Phase 1, and where each one went. A visitor who saved a
+// listing before it was retired gets told where it is now, rather than watching
+// it vanish. Built from the archived JSON, so it stays accurate automatically.
+const archived = import.meta.glob<{ default: { slug?: string; title?: string; draft?: boolean; retiredTo?: string } }>(
+  '../content/properties/*.json',
+  { eager: true },
+);
+const retired: Record<string, { to: string; title: string }> = {};
+for (const [path, mod] of Object.entries(archived)) {
+  const d = mod.default;
+  if (!d?.draft || !d.retiredTo) continue;
+  const slug = d.slug ?? path.split('/').pop()!.replace('.json', '');
+  retired[slug] = { to: d.retiredTo, title: d.title ?? slug };
+}
 ---
 <Base title="Saved properties" description="Your shortlisted properties." active="buy" noindex>
   <main class="wrap-wide">
@@ -16,13 +31,24 @@ const properties = await getProperties();
       {properties.map((p) => <PropertyCard property={p} />)}
     </div>
 
-    <div id="saved-empty" hidden style="padding:40px 0 100px;">
-      <p class="muted">Nothing saved yet. <a href="/buy/" style="color:var(--navy);font-weight:600;">Browse listings →</a></p>
+    <div id="saved-moved" hidden class="saved-note">
+      <p><b id="saved-moved-n">0</b> of your saved properties are no longer listed. Most were individual units we have stopped listing; several are now project pages.</p>
+      <ul id="saved-moved-list"></ul>
     </div>
+
+    <div id="saved-empty" hidden style="padding:40px 0 100px;">
+      <p class="muted">Nothing saved yet. <a href="/buy/" style="color:var(--navy);font-weight:600;">Browse projects →</a></p>
+    </div>
+
+    <script id="retired-map" type="application/json" set:html={JSON.stringify(retired)}></script>
   </main>
 </Base>
 
 <style>
+  .saved-note { margin: 0 0 28px; padding: 16px 20px; background: var(--surface-2); border: 1px solid var(--hairline); border-radius: var(--r-lg); }
+  .saved-note p { margin: 0; color: var(--text); }
+  .saved-note ul { margin: 10px 0 0; padding-left: 18px; color: var(--text); font-size: 14.5px; line-height: 1.7; }
+  .saved-note a { color: var(--navy); font-weight: 600; }
   .saved-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; padding-bottom: 100px; }
   @media (max-width: 980px) { .saved-grid { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 680px) { .saved-grid { grid-template-columns: 1fr; } }
@@ -33,6 +59,12 @@ const properties = await getProperties();
   const grid = document.getElementById('saved-grid')!;
   const empty = document.getElementById('saved-empty')!;
   const nEl = document.getElementById('saved-n')!;
+  const moved = document.getElementById('saved-moved')!;
+  const movedN = document.getElementById('saved-moved-n')!;
+  const movedList = document.getElementById('saved-moved-list')!;
+  const retired: Record<string, { to: string; title: string }> = JSON.parse(
+    document.getElementById('retired-map')?.textContent || '{}',
+  );
 
   function refresh() {
     const saved = new Set(getSaved());
@@ -43,8 +75,23 @@ const properties = await getProperties();
       c.style.display = on ? '' : 'none';
       if (on) shown++;
     });
+    // Saved items that no longer have a page, and where each one went.
+    const gone = [...saved].filter((s) => retired[s]);
+    movedN.textContent = String(gone.length);
+    moved.hidden = gone.length === 0;
+    if (gone.length) {
+      movedList.innerHTML = '';
+      for (const s of gone.slice(0, 12)) {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = retired[s].to;
+        a.textContent = retired[s].title;
+        li.append(a, document.createTextNode(' — see ' + retired[s].to));
+        movedList.append(li);
+      }
+    }
     nEl.textContent = String(shown);
-    empty.hidden = shown !== 0;
+    empty.hidden = shown !== 0 || gone.length > 0;
     grid.hidden = shown === 0;
   }
   refresh();

@@ -124,7 +124,13 @@ const fill = (t: string) => t
   .replace(/\{topLocalities\}/g, landingGroups.slice(0, 5).map((g) => g.name).join(', ') || localityNames.slice(0, 5).join(', '))
   .replace(/\{sizeRange\}/g, allStats?.sizeRange ?? 'a range of sizes')
   .replace(/\{buildings\}/g, (allStats?.buildings ?? []).slice(0, 6).join(', '));
-const faqFilled = faq.map((f) => ({ q: fill(f.q), a: fill(f.a) }));
+// A question answered from live inventory reads as broken when there is none
+// ("our 0 current office listings, from on request"), so drop those rather than
+// print a zero. Since Phase 1 the sale side is projects, not listings.
+const LISTING_TOKENS = /\{(count|saleCount|rentCount|saleRange|rentRange|localityCount|topLocalities|sizeRange|buildings)\}/;
+const faqFilled = faq
+  .filter((f) => !(mine.length === 0 && LISTING_TOKENS.test(`${f.q} ${f.a}`)))
+  .map((f) => ({ q: fill(f.q), a: fill(f.a) }));
 const liveLine = mine.length
   ? [
       `${mine.length} live listing${mine.length === 1 ? '' : 's'} across ${localityNames.length} localit${localityNames.length === 1 ? 'y' : 'ies'}`,

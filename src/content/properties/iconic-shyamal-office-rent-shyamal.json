@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹43 / sq.ft",
   "priceValue": 126119,
   "localityName": "Shyamal",
@@ -35,5 +35,7 @@
   "furnishing": "Unfurnished",
   "builtUpArea": "2,933 sq.ft",
   "parking": "2 car parks",
-  "localitySlug": "shyamal"
+  "localitySlug": "shyamal",
+  "retiredTo": "/localities/shyamal/",
+  "retiredAt": "2026-09-25"
 }

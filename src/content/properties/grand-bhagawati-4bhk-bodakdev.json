@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "apartment",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.8 Cr",
   "localityName": "Bodakdev",
   "city": "Ahmedabad",
@@ -77,5 +77,7 @@
     "lng": 72.51506245007268
   },
   "mainImage": "/uploads/properties/grand-bhagawati-4bhk-bodakdev/photo-1.jpg",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹4.6 Cr",
   "priceValue": 46000000,
   "perSqftDisplay": "₹20,000 per sq.ft",
@@ -48,5 +48,7 @@
   "geo": {
     "lat": 23.027035532736686,
     "lng": 72.5060222256931
-  }
+  },
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

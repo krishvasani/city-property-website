@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹3.36 Cr",
   "priceValue": 33600000,
   "perSqftDisplay": "₹14,000 per sq.ft",
@@ -53,5 +53,7 @@
   "geo": {
     "lat": 23.046252720030513,
     "lng": 72.53622419920973
-  }
+  },
+  "retiredTo": "/localities/memnagar/",
+  "retiredAt": "2026-09-25"
 }

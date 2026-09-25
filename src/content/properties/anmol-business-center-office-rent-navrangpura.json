@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹50 / sq.ft",
   "localityName": "Navrangpura",
   "city": "Ahmedabad",
@@ -33,5 +33,7 @@
   "perSqftDisplay": "₹50 per sq.ft",
   "furnishing": "Unfurnished",
   "parking": "4 car parks",
-  "localitySlug": "navrangpura"
+  "localitySlug": "navrangpura",
+  "retiredTo": "/localities/navrangpura/",
+  "retiredAt": "2026-09-25"
 }

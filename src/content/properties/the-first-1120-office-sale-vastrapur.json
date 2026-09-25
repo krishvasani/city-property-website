@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.12 Cr",
   "localityName": "Vastrapur",
   "city": "Ahmedabad",
@@ -41,5 +41,7 @@
   "perSqftDisplay": "₹10,000 per sq.ft",
   "furnishing": "Fully furnished",
   "localitySlug": "vastrapur",
-  "mainImage": "/uploads/properties/the-first-1120-office-sale-vastrapur/photo-1.jpg"
+  "mainImage": "/uploads/properties/the-first-1120-office-sale-vastrapur/photo-1.jpg",
+  "retiredTo": "/localities/vastrapur/",
+  "retiredAt": "2026-09-25"
 }

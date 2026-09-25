@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹50 / sq.ft",
   "priceValue": 482500,
   "localityName": "Bodakdev",
@@ -41,5 +41,7 @@
   "furnishing": "Fully furnished",
   "parking": "10 car parks",
   "mainImage": "/uploads/properties/avdhesh-house-office-rent-bodakdev/photo-1.jpg",
-  "localitySlug": "bodakdev"
+  "localitySlug": "bodakdev",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }

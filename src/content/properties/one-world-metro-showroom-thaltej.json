@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹110 / sq.ft",
   "localityName": "Thaltej",
   "city": "Ahmedabad",
@@ -93,5 +93,7 @@
     "Restaurant"
   ],
   "mainImage": "/uploads/properties/one-world-metro-showroom-thaltej/photo-1.jpg",
-  "localitySlug": "thaltej"
+  "localitySlug": "thaltej",
+  "retiredTo": "/localities/thaltej/",
+  "retiredAt": "2026-09-25"
 }

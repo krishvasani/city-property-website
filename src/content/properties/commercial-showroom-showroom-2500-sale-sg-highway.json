@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "showroom",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹15 Cr",
   "priceValue": 150000000,
   "localityName": "SG Highway",
@@ -31,5 +31,7 @@
   "geo": {
     "lat": 23.026503604768433,
     "lng": 72.507889980075
-  }
+  },
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

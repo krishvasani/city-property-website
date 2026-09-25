@@ -4,7 +4,7 @@
   "status": "rent",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹64,150",
   "priceValue": 64150,
   "localityName": "Vastrapur",
@@ -56,5 +56,7 @@
   "pricePer": "per month",
   "furnishing": "Fully furnished",
   "localitySlug": "vastrapur",
-  "mainImage": "/uploads/properties/ratnakar-nine-square-1283-office-rent-vastrapur/photo-1.jpg"
+  "mainImage": "/uploads/properties/ratnakar-nine-square-1283-office-rent-vastrapur/photo-1.jpg",
+  "retiredTo": "/localities/vastrapur/",
+  "retiredAt": "2026-09-25"
 }

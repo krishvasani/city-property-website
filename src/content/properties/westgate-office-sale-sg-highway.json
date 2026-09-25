@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.39 Cr",
   "priceValue": 13897500,
   "localityName": "SG Highway",
@@ -47,5 +47,7 @@
   "furnishing": "Unfurnished",
   "builtUpArea": "1,635 sq.ft",
   "localitySlug": "sg-highway",
-  "mainImage": "/uploads/properties/westgate-office-sale-sg-highway/photo-1.jpg"
+  "mainImage": "/uploads/properties/westgate-office-sale-sg-highway/photo-1.jpg",
+  "retiredTo": "/localities/sg-highway/",
+  "retiredAt": "2026-09-25"
 }

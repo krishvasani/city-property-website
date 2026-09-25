@@ -4,7 +4,7 @@
   "status": "sale",
   "propertyType": "office",
   "featured": false,
-  "draft": false,
+  "draft": true,
   "priceDisplay": "₹1.9 Cr",
   "priceValue": 19000000,
   "localityName": "Bodakdev",
@@ -45,5 +45,7 @@
   },
   "perSqftDisplay": "₹11,515 per sq.ft",
   "localitySlug": "bodakdev",
-  "mainImage": "/uploads/properties/k-158-office-sale-bodakdev/photo-1.jpg"
+  "mainImage": "/uploads/properties/k-158-office-sale-bodakdev/photo-1.jpg",
+  "retiredTo": "/localities/bodakdev/",
+  "retiredAt": "2026-09-25"
 }
