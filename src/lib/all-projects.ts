@@ -4,7 +4,8 @@
 // commercial buildings, and the Ambli residential projects. This normalises
 // them into the single card shape the explorer filters and renders.
 import { projects as shantigram, projectPath as shantigramPath, priceBand, configSummary, possessionLabel as shPossession, typeLabel as shTypeLabel } from './projects';
-import { commercialProjects, residentialProjects, commercialPath, possessionLabel, rateLine, useSummary, isReady } from './commercial-projects';
+import { commercialProjects, residentialProjects, commercialPath, possessionLabel, rate, rateFloor, rateLine, useSummary, isReady } from './commercial-projects';
+import type { Property } from './types';
 
 export interface ProjectCard {
   slug: string;
@@ -17,8 +18,12 @@ export interface ProjectCard {
   developer: string | null;
   localityName: string;
   localitySlug: string;
-  /** "₹5.8 to 9.3 Cr" or "Offices from ₹8,500 per sq ft". */
+  /** "₹5.8 to 9.3 Cr" or "Offices from ₹8,500 per sq ft" — the long form, for tables. */
   priceLine: string;
+  /** The headline figure for a card: "₹5.8 to 9.3 Cr" or "₹8,500". */
+  priceDisplay: string;
+  /** The unit under it, when the figure is a rate: "per sq ft onwards". */
+  pricePer?: string;
   /** Rupees, for sorting and the budget filter. Commercial rates are per sq ft, so they have none. */
   priceValue: number | null;
   possession: string;
@@ -47,6 +52,7 @@ export const allProjectCards: ProjectCard[] = [
       localityName: 'Shantigram',
       localitySlug: 'shantigram',
       priceLine: priceBand(p),
+      priceDisplay: priceBand(p),
       priceValue: p.priceRange?.min ?? null,
       possession: shPossession(p),
       ready: /ready/i.test(p.status),
@@ -65,6 +71,7 @@ export const allProjectCards: ProjectCard[] = [
       localityName: p.localityName,
       localitySlug: p.localitySlug,
       priceLine: rateLine(p),
+      priceDisplay: rateLine(p),
       priceValue: p.priceValue ?? null,
       possession: possessionLabel(p),
       ready: isReady(p),
@@ -83,6 +90,8 @@ export const allProjectCards: ProjectCard[] = [
       localityName: p.localityName,
       localitySlug: p.localitySlug,
       priceLine: rateLine(p),
+      priceDisplay: rateFloor(p) !== undefined ? rate(rateFloor(p)!) : 'Rates on request',
+      pricePer: rateFloor(p) !== undefined ? 'per sq ft onwards' : undefined,
       priceValue: null, // quoted per sq ft, not comparable with a total price
       possession: possessionLabel(p),
       ready: isReady(p),
@@ -103,3 +112,34 @@ export const projectCounts = {
   commercial: allProjectCards.filter((c) => c.category === 'commercial').length,
   ready: allProjectCards.filter((c) => c.ready).length,
 };
+
+// --- rendering projects with the listing card -------------------------------
+// The /buy/ and /saved/ grids use the same PropertyCard as the warehouse
+// listings, so the cards match in size, structure and hover by construction
+// rather than by a parallel stylesheet. This adapts a project to the shape that
+// card reads. `cardMeta` overrides the bed/bath/area row it would otherwise build.
+/** A project as the listing card expects it. Pair with `href: card.url`. */
+export function asCardProperty(c: ProjectCard): Property {
+  const residential = c.category === 'residential';
+  return {
+    slug: c.slug,
+    title: c.name,
+    // Ready projects take the solid tag, under-construction ones the soft tag.
+    status: c.ready ? 'sale' : 'rent',
+    statusLabel: c.ready ? 'Ready to move in' : 'Under construction',
+    propertyType: residential ? 'apartment' : 'office',
+    priceDisplay: c.priceDisplay,
+    pricePer: c.pricePer,
+    priceValue: c.priceValue ?? undefined,
+    localityName: c.localityName,
+    localitySlug: c.localitySlug,
+    city: 'Ahmedabad',
+    address: c.localityName,
+    geo: c.geo ?? undefined,
+    photos: c.photo ? [{ url: c.photo, alt: `${c.name}, ${c.localityName}` }] : [],
+    cardMeta: [
+      { icon: residential ? 'residential' : 'commercial', label: c.typeLabel },
+      { icon: 'clock', label: c.possession },
+    ],
+  } as unknown as Property;
+}

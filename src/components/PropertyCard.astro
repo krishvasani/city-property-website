@@ -4,12 +4,16 @@ import Tag from './Tag.astro';
 import { cardMetaFor, tagVariantFor, categoryFor } from '../lib/format';
 import type { Property } from '../lib/types';
 
-interface Props { property: Property; }
-const { property: p } = Astro.props;
+interface Props {
+  property: Property;
+  /** Override the link target. Projects live under /projects/, not /property/. */
+  href?: string;
+}
+const { property: p, href: hrefOverride } = Astro.props;
 
 const meta = cardMetaFor(p);
 const variant = tagVariantFor(p);
-const href = `/property/${p.slug}/`;
+const href = hrefOverride ?? `/property/${p.slug}/`;
 const photo = p.photos?.[0];
 const bedsNum = typeof p.beds === 'number' ? p.beds : '';
 const searchText = [p.title, p.localityName, p.address].filter(Boolean).join(' ').toLowerCase();

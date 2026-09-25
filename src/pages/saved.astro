@@ -2,7 +2,11 @@
 import Base from '../layouts/Base.astro';
 import PropertyCard from '../components/PropertyCard.astro';
 import { getProperties } from '../lib/data';
+import { allProjectCards, asCardProperty } from '../lib/all-projects';
 const properties = await getProperties();
+// Project cards carry the same heart as listing cards, so a saved project has to
+// have somewhere to show up.
+const projects = allProjectCards;
 
 // Slugs retired in Phase 1, and where each one went. A visitor who saved a
 // listing before it was retired gets told where it is now, rather than watching
@@ -24,10 +28,11 @@ for (const [path, mod] of Object.entries(archived)) {
     <section style="padding:48px 0 16px;">
       <div class="eyebrow">Your shortlist</div>
       <h1 class="h1" style="margin-top:10px;">Saved properties</h1>
-      <p class="small muted" style="margin-top:6px;"><span id="saved-n">0</span> saved · tap the heart on any listing to add it here.</p>
+      <p class="small muted" style="margin-top:6px;"><span id="saved-n">0</span> saved · tap the heart on any project or listing to add it here.</p>
     </section>
 
     <div class="saved-grid" id="saved-grid" data-stagger>
+      {projects.map((c) => <PropertyCard property={asCardProperty(c)} href={c.url} />)}
       {properties.map((p) => <PropertyCard property={p} />)}
     </div>
 
