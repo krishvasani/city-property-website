@@ -4,7 +4,7 @@ import Icon from '../components/Icon.astro';
 import { getProperties } from '../lib/data';
 import { allProjectCards, asCardProperty } from '../lib/all-projects';
 import { getLocalityById } from '../data/localities';
-import { categoryFor, CATEGORY_LABEL, CATEGORY_ORDER } from '../lib/format';
+import { categoryFor } from '../lib/format';
 import { map as mapCfg } from '../lib/config';
 import type { Property } from '../lib/types';
 
@@ -27,9 +27,16 @@ const resolved = all
   .filter((x): x is { p: Property; url: string; lat: number; lng: number; region: string } => x.lat != null && x.lng != null);
 const properties = resolved.map((x) => x.p);
 
-const catsPresent = CATEGORY_ORDER.filter((c) => properties.some((p) => categoryFor(p.propertyType) === c));
-const localities = [...new Map(properties.filter((p) => p.localitySlug).map((p) => [p.localitySlug, p.localityName])).entries()];
-const regionsPresent = [...new Set(resolved.map((x) => x.region).filter(Boolean))].sort();
+// The map shows one category at a time, commercial first. These are the only
+// three groups on the site now: commercial projects, residential projects and
+// warehouse listings.
+const countOf = (c: string) => properties.filter((p) => categoryFor(p.propertyType) === c).length;
+const VIEWS = [
+  { key: 'commercial', label: 'Commercial', n: countOf('commercial') },
+  { key: 'residential', label: 'Residential', n: countOf('residential') },
+  { key: 'industrial', label: 'Warehouses', n: countOf('industrial') },
+];
+const DEFAULT_VIEW = 'commercial';
 
 // Compact data for the client (markers + bounds filtering)
 const data = resolved.map(({ p, url, lat, lng, region }) => ({
@@ -59,46 +66,24 @@ const imgFallback =
 ---
 <Base
   title="Property Map of Ahmedabad"
-  description="Explore every City Property Services listing on a live map of Ahmedabad. Pan and zoom to see only the properties in view, with filters for buy and rent."
+  description="Every City Property Services project and warehouse on a live map of Ahmedabad. Opens on commercial projects; switch to residential or warehouses."
   active="map"
 >
   <main class="mapx">
-    <!-- FILTERS -->
+    <!-- VIEW SWITCH — one category at a time, commercial first -->
     <div class="mapx-filters">
       <div class="mapx-filters-inner">
         <h1 class="mapx-h1">Property map of Ahmedabad</h1>
-        <div class="segment" id="purpose-seg" role="tablist" aria-label="Purpose">
-          <button class="is-active" data-status="">All</button>
-          <button data-status="sale">Buy</button>
-          <button data-status="rent">Rent</button>
+        <div class="segment" id="view-seg" role="tablist" aria-label="What to show on the map">
+          {VIEWS.map((v) => (
+            <button
+              role="tab"
+              class:list={{ 'is-active': v.key === DEFAULT_VIEW }}
+              aria-selected={v.key === DEFAULT_VIEW ? 'true' : 'false'}
+              data-view={v.key}
+            >{v.label} <span class="seg-n">{v.n}</span></button>
+          ))}
         </div>
-        <select class="filter-select" id="f-type" aria-label="Property type">
-          <option value="">All types</option>
-          {catsPresent.map((c) => <option value={c}>{CATEGORY_LABEL[c]}</option>)}
-        </select>
-        <select class="filter-select" id="f-region" aria-label="Region">
-          <option value="">All regions</option>
-          {regionsPresent.map((r) => <option value={r}>{r}</option>)}
-        </select>
-        <select class="filter-select" id="f-locality" aria-label="Locality">
-          <option value="">All localities</option>
-          {localities.map(([slug, name]) => <option value={slug}>{name}</option>)}
-        </select>
-        <select class="filter-select" id="f-beds" aria-label="Bedrooms">
-          <option value="">Any beds</option>
-          <option value="1">1+ beds</option>
-          <option value="2">2+ beds</option>
-          <option value="3">3+ beds</option>
-          <option value="4">4+ beds</option>
-        </select>
-        <select class="filter-select" id="f-budget" aria-label="Budget"><option value="">Any budget</option></select>
-        <div class="grow"></div>
-        <select class="filter-select" id="f-sort" aria-label="Sort">
-          <option value="recommended">Sort: Recommended</option>
-          <option value="price-asc">Price: low to high</option>
-          <option value="price-desc">Price: high to low</option>
-          <option value="newest">Newest first</option>
-        </select>
       </div>
     </div>
 
@@ -112,12 +97,13 @@ const imgFallback =
 
       <aside class="mapx-list">
         <div class="mapx-list-head">
-          <span><b id="area-count">{properties.length}</b> in this area</span>
+          <span><b id="area-count">{VIEWS.find((v) => v.key === DEFAULT_VIEW)!.n}</b> in this area</span>
         </div>
         <div class="mapx-cards" id="map-cards">
           {resolved.map(({ p, url }) => (
             <article
               class="mcard"
+              hidden={categoryFor(p.propertyType) !== DEFAULT_VIEW}
               data-slug={p.slug}
               data-type={p.propertyType}
               data-status={p.status}
@@ -158,8 +144,12 @@ const imgFallback =
   .mapx-filters { border-bottom: 1px solid var(--hairline); background: var(--surface); flex: none; }
   .mapx-filters-inner { display: flex; align-items: center; gap: 10px; padding: 12px 24px; flex-wrap: wrap; }
   .mapx-h1 { font-size: 17px; line-height: 1.2; letter-spacing: -.01em; font-weight: 700; color: var(--ink); margin: 0 8px 0 0; flex: none; }
-  .mapx-filters .grow { flex: 1; }
-  .filter-select { border: 1px solid var(--border); border-radius: var(--r-pill); padding: 9px 14px; font: inherit; font-size: 14px; font-weight: 600; color: var(--ink); background: var(--surface); cursor: pointer; }
+  /* The view switch replaced the old filter row, so .grow / .filter-select went with it. */
+  .mapx-filters .segment button { display: inline-flex; align-items: center; gap: 7px; }
+  .seg-n { font-size: 12.5px; font-weight: 600; color: var(--text-faint); }
+  .segment button.is-active .seg-n { color: var(--text-muted); }
+  /* .mcard sets display:grid, which beats the UA rule for [hidden]. */
+  .mcard[hidden] { display: none; }
   .mapx-split { flex: 1; display: grid; grid-template-columns: 1fr 420px; min-height: 0; }
   .mapx-map { position: relative; background: #eef1f3; }
   .mapx-map .map-missing { position: absolute; inset: 0; display: grid; place-items: center; color: var(--text-muted); padding: 24px; text-align: center; }
@@ -217,56 +207,17 @@ const imgFallback =
   const emptyEl = document.getElementById('map-empty')!;
   const cardsWrap = document.getElementById('map-cards')!;
 
-  const SALE_BUDGETS = [
-    ['Up to ₹50 L', '0-5000000'], ['₹50 L to 1 Cr', '5000000-10000000'],
-    ['₹1 to 2 Cr', '10000000-20000000'], ['₹2 Cr +', '20000000-'],
-  ];
-  const RENT_BUDGETS = [
-    ['Up to ₹25,000', '0-25000'], ['₹25k to 50k', '25000-50000'],
-    ['₹50k to 1 L', '50000-100000'], ['₹1 L +', '100000-'],
-  ];
-
-  const state = { status: '', type: '', region: '', locality: '', beds: 0, budget: '', sort: 'recommended' };
-
-  const seg = document.getElementById('purpose-seg')!;
-  const fType = document.getElementById('f-type') as HTMLSelectElement;
-  const fRegion = document.getElementById('f-region') as HTMLSelectElement;
-  const fLoc = document.getElementById('f-locality') as HTMLSelectElement;
-  const fBeds = document.getElementById('f-beds') as HTMLSelectElement;
-  const fBudget = document.getElementById('f-budget') as HTMLSelectElement;
-  const fSort = document.getElementById('f-sort') as HTMLSelectElement;
-
-  function repopulateBudget() {
-    const opts = state.status === 'rent' ? RENT_BUDGETS
-      : state.status === 'sale' ? SALE_BUDGETS : [];
-    fBudget.innerHTML = '<option value="">Any budget</option>' +
-      opts.map(([l, v]) => `<option value="${v}">${l}</option>`).join('');
-    state.budget = '';
-  }
+  // One category at a time. The page opens on commercial; the other two are a
+  // click away. Nothing else filters the map any more.
+  const seg = document.getElementById('view-seg')!;
+  const state = { view: seg.querySelector<HTMLElement>('button.is-active')?.dataset.view || 'commercial' };
 
   function passesFilters(p: P): boolean {
-    // Rent and lease are treated as the same thing: the Rent filter shows both.
-    if (state.status === 'rent') {
-      if (p.status !== 'rent' && p.status !== 'lease') return false;
-    } else if (state.status && p.status !== state.status) return false;
-    if (state.type && p.category !== state.type) return false;
-    if (state.region && p.region !== state.region) return false;
-    if (state.locality && p.localitySlug !== state.locality) return false;
-    if (state.beds && p.beds < state.beds) return false;
-    if (state.budget) {
-      const [lo, hi] = state.budget.split('-');
-      const min = lo ? +lo : 0, max = hi ? +hi : Infinity;
-      if (p.priceValue < min || p.priceValue > max) return false;
-    }
-    return true;
+    return p.category === state.view;
   }
 
   function sortList(list: P[]): P[] {
-    const a = [...list];
-    if (state.sort === 'price-asc') a.sort((x, y) => x.priceValue - y.priceValue);
-    else if (state.sort === 'price-desc') a.sort((x, y) => y.priceValue - x.priceValue);
-    else if (state.sort === 'newest') a.sort((x, y) => (y.newAt || '').localeCompare(x.newAt || ''));
-    return a;
+    return list;
   }
 
   // ── Mapbox ─────────────────────────────────────────────────────────
@@ -299,6 +250,17 @@ const imgFallback =
     }
   }
 
+  /** Frame the map on the category being shown. */
+  function fitToView() {
+    const mapboxgl = (window as any).mapboxgl;
+    if (!map || !mapboxgl) return;
+    const pts = data.filter(passesFilters);
+    if (!pts.length) return;
+    const b = new mapboxgl.LngLatBounds();
+    pts.forEach((p) => b.extend([p.lng, p.lat]));
+    map.fitBounds(b, { padding: 70, maxZoom: 13, duration: 600 });
+  }
+
   function refreshInView() {
     if (!map) return;
     const b = map.getBounds();
@@ -308,7 +270,7 @@ const imgFallback =
 
   function renderList(list: P[]) {
     const show = new Set(list.map((p) => p.slug));
-    cards.forEach((c) => (c.style.display = show.has(c.dataset.slug!) ? '' : 'none'));
+    cards.forEach((c) => (c.hidden = !show.has(c.dataset.slug!)));
     // reorder
     list.forEach((p) => { const c = cardBySlug.get(p.slug); if (c) cardsWrap.appendChild(c); });
     countEl.textContent = String(list.length);
@@ -351,7 +313,8 @@ const imgFallback =
       markers.set(p.slug, m);
       bounds.extend([p.lng, p.lat]);
     });
-    if (data.length > 1) map.fitBounds(bounds, { padding: 70, maxZoom: 13 });
+    void bounds;
+    fitToView();   // open framed on the default view, not on everything
 
     map.on('moveend', refreshInView);
     map.on('load', () => { applyFilters(); });
@@ -369,20 +332,17 @@ const imgFallback =
     });
   });
 
-  // ── Filter controls ────────────────────────────────────────────────
+  // ── View switch ────────────────────────────────────────────────────
   seg.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
-    seg.querySelectorAll('button').forEach((x) => x.classList.remove('is-active'));
-    b.classList.add('is-active');
-    state.status = b.getAttribute('data-status') || '';
-    repopulateBudget();
+    seg.querySelectorAll('button').forEach((x) => {
+      const on = x === b;
+      x.classList.toggle('is-active', on);
+      x.setAttribute('aria-selected', String(on));
+    });
+    state.view = b.getAttribute('data-view') || 'commercial';
     applyFilters();
+    fitToView();   // move the map to wherever this category actually is
   }));
-  fType.addEventListener('change', () => { state.type = fType.value; applyFilters(); });
-  fRegion.addEventListener('change', () => { state.region = fRegion.value; applyFilters(); });
-  fLoc.addEventListener('change', () => { state.locality = fLoc.value; applyFilters(); });
-  fBeds.addEventListener('change', () => { state.beds = +fBeds.value || 0; applyFilters(); });
-  fBudget.addEventListener('change', () => { state.budget = fBudget.value; applyFilters(); });
-  fSort.addEventListener('change', () => { state.sort = fSort.value; refreshInView(); });
 
   initMap();
 </script>
