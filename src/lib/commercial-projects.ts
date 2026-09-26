@@ -17,7 +17,7 @@ export interface FloorRow {
   ceiling: string | null;
 }
 /** A per-sq-ft rate. `regular` = construction-linked plan, `dp` = down-payment plan. */
-export interface OfficeRate { label: string; regular?: number; dp?: number }
+export interface OfficeRate { label: string; regular?: number; dp?: number; note?: string }
 export interface RetailRate { floor: string; regular?: number; dp?: number; note?: string }
 
 export interface CommercialProject {

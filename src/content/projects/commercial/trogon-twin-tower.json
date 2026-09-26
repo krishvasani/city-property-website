@@ -1,0 +1,234 @@
+{
+  "slug": "trogon-twin-tower",
+  "name": "Trogon Twin Tower",
+  "developer": "Trogon Group",
+  "address": "Vaishnodevi Circle, SG Highway, Ahmedabad, Gujarat 382210",
+  "localitySlug": "vaishnodevi-circle",
+  "localityName": "Vaishnodevi Circle",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.136597,
+    "lng": 72.54328
+  },
+  "rera": "PR/GJ/GANDHINAGAR/GANDHINAGAR/Others/CAA12218/A1C/040124",
+  "reraNote": null,
+  "projectType": "mixed-use",
+  "projectTypeLabel": "Mixed use",
+  "status": "Under Construction",
+  "possession": "2027-03-31",
+  "floors": "G+32",
+  "totalUnits": "928",
+  "lifts": 24,
+  "basements": 4,
+  "landArea": "16,600 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "Ground",
+      "use": "Retail / showrooms",
+      "unitsPerFloor": "24",
+      "carpet": "1,160 – 6,700 sq ft",
+      "sbu": "2,168 – 12,778 sq ft",
+      "ceiling": "15.6 ft"
+    },
+    {
+      "floor": "1",
+      "use": "Retail / showrooms",
+      "unitsPerFloor": "24 units",
+      "carpet": "1,027 – 6,700 sq ft",
+      "sbu": "2,168 – 12,778 sq ft",
+      "ceiling": "15.6 ft"
+    },
+    {
+      "floor": "2 to 4",
+      "use": "Retail / showrooms",
+      "unitsPerFloor": "24 units per floor",
+      "carpet": "490 – 1,281 sq ft",
+      "sbu": "980 – 2,400 sq ft",
+      "ceiling": "15.6 ft"
+    },
+    {
+      "floor": "5",
+      "use": "Restaurant / food & beverage",
+      "unitsPerFloor": "12 A -12 B =24",
+      "carpet": "490 – 2,290 sq ft",
+      "sbu": "928 – 4,846 sq ft",
+      "ceiling": "14 ft"
+    },
+    {
+      "floor": "6",
+      "use": "Offices",
+      "unitsPerFloor": "28",
+      "carpet": "490 – 1,800 sq ft",
+      "sbu": "928 – 3,606 sq ft",
+      "ceiling": "10.5 ft"
+    },
+    {
+      "floor": "7th to 13th",
+      "use": "Offices",
+      "unitsPerFloor": "28",
+      "carpet": "490 – 1,600 sq ft",
+      "sbu": "928 – 3,345 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "15 to 17th",
+      "use": "Offices",
+      "unitsPerFloor": "28",
+      "carpet": "490 – 1,400 sq ft",
+      "sbu": "928 – 3,089 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "18th",
+      "use": "Office",
+      "unitsPerFloor": "28",
+      "carpet": "490 – 1,600 sq ft",
+      "sbu": "929 – 3,349 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "19th",
+      "use": "Skip floor",
+      "unitsPerFloor": null,
+      "carpet": null,
+      "sbu": null,
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "20",
+      "use": "Offices",
+      "unitsPerFloor": "28",
+      "carpet": "1,000 – 1,500 sq ft",
+      "sbu": "1,856 – 3,089 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "21 to 23rd",
+      "use": "Offices",
+      "unitsPerFloor": "28",
+      "carpet": "1,100 – 1,700 sq ft",
+      "sbu": "2,101 – 3,349 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "24th",
+      "use": "Offices",
+      "unitsPerFloor": "28",
+      "carpet": "1,250 – 2,100 sq ft",
+      "sbu": "2,399 – 4,270 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "25 & 26th",
+      "use": "Offices",
+      "unitsPerFloor": "28",
+      "carpet": "1,700 – 2,550 sq ft",
+      "sbu": "3,399 – 5,190 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "27th",
+      "use": "Offices",
+      "unitsPerFloor": "28",
+      "carpet": "1,250 – 4,600 sq ft",
+      "sbu": "2,399 – 9,010 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "28 to 32nd",
+      "use": "Offices",
+      "unitsPerFloor": "28",
+      "carpet": "290 – 1,450 sq ft",
+      "sbu": "685 – 3,082 sq ft",
+      "ceiling": "11 ft"
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices, floors 6 to 12",
+        "regular": 7500
+      },
+      {
+        "label": "Offices, floors 13 to 22",
+        "regular": 8000
+      },
+      {
+        "label": "Offices, floor 23 and above",
+        "regular": 8500
+      }
+    ],
+    "retailByFloor": [
+      {
+        "floor": "G",
+        "dp": 25500
+      },
+      {
+        "floor": "1",
+        "dp": 15500
+      },
+      {
+        "floor": "2",
+        "dp": 13500
+      },
+      {
+        "floor": "3",
+        "dp": 11500
+      },
+      {
+        "floor": "4",
+        "dp": 9500
+      }
+    ],
+    "retailDpNote": null,
+    "extraCharges": "₹800 per sq ft and above; parking ₹2.5 lakh",
+    "floorRise": "₹75 per sq ft and above from the 6th floor"
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "mihirwork112@gmail.com",
+    "developerSalesContact": "Kanant thakkar",
+    "developerSalesPhone": "+91 9925560056",
+    "notes": null,
+    "uploads": [
+      "https://drive.google.com/open?id=1eUF6h-ZrPw_IBUzHSYGjAEOPfzYGAKP-",
+      "https://drive.google.com/open?id=1-VEb6Qh6Lf8lER5yTG6Tmk9II_au1yhR",
+      "https://drive.google.com/open?id=1KcaKxH9L2lJDQRJzAYfY5uernz_nXEDn",
+      "https://drive.google.com/open?id=1XvqUmuPGpuV6imNEhfBUt5l_hDqSHJT1",
+      "https://drive.google.com/open?id=1XlVF8MolUyVEva7olcavH0guwXLbBUgf",
+      "https://drive.google.com/open?id=1zK5JG4KN2F19WsDtqf6mlgvUeSBtjt35",
+      "https://drive.google.com/open?id=1ACWoBeIcsX8KK-fWJo-97782bwr6rB-j",
+      "https://drive.google.com/open?id=1dQP4YPL8MvM7UjOY6UpBlM4NqdPLE2kf",
+      "https://drive.google.com/open?id=15hdzjFpRBwuiS5oiYk2pqrz1ukOwCArl"
+    ],
+    "submittedAt": "2026-09-26T11:53:08"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder."
+  ]
+}

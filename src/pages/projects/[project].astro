@@ -139,7 +139,7 @@ const siblings = [...nearby, ...rest].slice(0, 4);
                   {p.pricing.office.map((o) => (
                     <tr>
                       <th scope="row">{o.label}</th>
-                      {offRegular && <td>{o.regular ? rate(o.regular) : '—'}</td>}
+                      {offRegular && <td>{o.regular ? rate(o.regular) : '—'}{o.note && <span class="muted small"> — {o.note}</span>}</td>}
                       {offDp && <td>{o.dp ? rate(o.dp) : '—'}</td>}
                     </tr>
                   ))}
@@ -159,8 +159,9 @@ const siblings = [...nearby, ...rest].slice(0, 4);
                   {p.pricing.retailByFloor.map((r) => (
                     <tr>
                       <th scope="row">{r.floor === 'G' ? 'Ground' : r.floor}</th>
+                      {/* the note hangs off whichever rate column this project actually has */}
                       {retRegular && <td>{r.regular ? rate(r.regular) : '—'}{r.note && <span class="muted small"> — {r.note}</span>}</td>}
-                      {retDp && <td>{r.dp ? rate(r.dp) : '—'}</td>}
+                      {retDp && <td>{r.dp ? rate(r.dp) : '—'}{!retRegular && r.note && <span class="muted small"> — {r.note}</span>}</td>}
                     </tr>
                   ))}
                 </tbody>

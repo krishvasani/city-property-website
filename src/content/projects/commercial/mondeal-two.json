@@ -1,0 +1,124 @@
+{
+  "slug": "mondeal-two",
+  "name": "Mondeal Two",
+  "developer": "HN Safal Group",
+  "address": "Iscon–Ambli Road, near DoubleTree by Hilton and the Antriksh Colony BRTS stop, Ahmedabad",
+  "localitySlug": "iskcon",
+  "localityName": "ISKCON",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.028526,
+    "lng": 72.500914
+  },
+  "rera": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/AUDA/CAA12151/170823",
+  "reraNote": null,
+  "projectType": "mixed-use",
+  "projectTypeLabel": "Mixed use",
+  "status": "Under Construction",
+  "possession": "2028-12-31",
+  "floors": "G+12",
+  "totalUnits": "150",
+  "lifts": 10,
+  "basements": 4,
+  "landArea": "5,910 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "Ground",
+      "use": "Retail",
+      "unitsPerFloor": "13",
+      "carpet": "849 – 1,382 sq ft",
+      "sbu": "1,700 – 2,800 sq ft",
+      "ceiling": "13'9\"ft"
+    },
+    {
+      "floor": "1st",
+      "use": "Retail + office",
+      "unitsPerFloor": "16 total (15 showrooms + 1 office)",
+      "carpet": "687 – 1,395 sq ft",
+      "sbu": "1,450 – 2,800 sq ft",
+      "ceiling": null
+    },
+    {
+      "floor": "2nd",
+      "use": "Offices",
+      "unitsPerFloor": "9",
+      "carpet": "1,379 – 2,878 sq ft",
+      "sbu": "2,800 – 5,800 sq ft",
+      "ceiling": null
+    },
+    {
+      "floor": "3rd to 9th",
+      "use": "Offices",
+      "unitsPerFloor": "11",
+      "carpet": "1,247 – 2,878 sq ft",
+      "sbu": "2,500 – 5,800 sq ft",
+      "ceiling": null
+    },
+    {
+      "floor": "10th to 12th",
+      "use": "Offices",
+      "unitsPerFloor": "11",
+      "carpet": "1,247 – 3,120 sq ft",
+      "sbu": "2,500 – 6,250 sq ft",
+      "ceiling": null
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices",
+        "regular": 10000
+      }
+    ],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": "₹1,000 per sq ft development charges; one car park included per roughly 1,200 to 1,500 sq ft; legal ₹25,000",
+    "floorRise": null
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "mihirwork112@gmail.com",
+    "developerSalesContact": "Parag shukla",
+    "developerSalesPhone": "+91 8980038448",
+    "notes": null,
+    "uploads": [
+      "https://drive.google.com/open?id=10Mx-P6phzboXcvkeTJSCx0BVYOnIhSz2",
+      "https://drive.google.com/open?id=1GW0sDDBxAgoJ0kTAl3dMYBrC_MroSwod",
+      "https://drive.google.com/open?id=1BMYvvIEAORbUY_bH3vKazpFbY3u3H96F",
+      "https://drive.google.com/open?id=1dik7UEiOVFb8BLySKYne3wNC2BqSyM2S",
+      "https://drive.google.com/open?id=1dFup_jlAuh-QZX0MOF5law0dsWVclHwD",
+      "https://drive.google.com/open?id=1fedymtGfPPfqAVTp-UngzCD6hBknsmSh",
+      "https://drive.google.com/open?id=1KifOMc67_X8vtJwMAsrDw_DyflTaOV2c",
+      "https://drive.google.com/open?id=1mGxiGUIXC2So4gx7ExGaTnKrQ0HQoI5d"
+    ],
+    "submittedAt": "2026-09-26T17:22:05"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder."
+  ]
+}

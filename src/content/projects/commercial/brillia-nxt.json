@@ -1,0 +1,138 @@
+{
+  "slug": "brillia-nxt",
+  "name": "Brillia NXT",
+  "developer": "Pravish Group",
+  "address": "SG Highway, near Pakwan Junction, Bodakdev, Ahmedabad, Gujarat 380054",
+  "localitySlug": "bodakdev",
+  "localityName": "Bodakdev",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.040217,
+    "lng": 72.511953
+  },
+  "rera": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/Ahmedabad Municipal Corporation/CAA16739/210426/300629",
+  "reraNote": null,
+  "projectType": "mixed-use",
+  "projectTypeLabel": "Mixed use",
+  "status": "Under Construction",
+  "possession": "2027-12-31",
+  "floors": "G+11",
+  "totalUnits": "125",
+  "lifts": 6,
+  "basements": 3,
+  "landArea": "3,200 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "Ground",
+      "use": "Retail",
+      "unitsPerFloor": "6",
+      "carpet": "1,050 – 1,250 sq ft",
+      "sbu": "2,191 – 2,551 sq ft",
+      "ceiling": "12 ft"
+    },
+    {
+      "floor": "1st",
+      "use": "Retail",
+      "unitsPerFloor": "5",
+      "carpet": "1,550 – 3,400 sq ft",
+      "sbu": "3,114 – 6,627 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "2nd",
+      "use": "Retail and 1 office",
+      "unitsPerFloor": "6 to 8",
+      "carpet": "850 – 3,500 sq ft",
+      "sbu": "1,750 – 6,997 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "3rd",
+      "use": "Offices",
+      "unitsPerFloor": "11",
+      "carpet": "600 – 1,250 sq ft",
+      "sbu": "1,165 – 2,452 sq ft",
+      "ceiling": "11 ft"
+    },
+    {
+      "floor": "4th to 11th",
+      "use": "Offices",
+      "unitsPerFloor": "11",
+      "carpet": "500 – 2,100 sq ft",
+      "sbu": "967 – 3,925 sq ft",
+      "ceiling": "11 ft"
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices",
+        "regular": 9500
+      }
+    ],
+    "retailByFloor": [
+      {
+        "floor": "G",
+        "dp": 28000
+      },
+      {
+        "floor": "1",
+        "regular": 18000,
+        "dp": 16000
+      },
+      {
+        "floor": "2",
+        "regular": 15000,
+        "dp": 13000
+      }
+    ],
+    "retailDpNote": "The developer describes the ground-floor retail rate as a semi down-payment plan.",
+    "extraCharges": "₹996 per sq ft",
+    "floorRise": "₹500 per sq ft on floors 8 to 11"
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "mihir2443@gmail.com",
+    "developerSalesContact": "Harsh Thakkar",
+    "developerSalesPhone": "7990848408",
+    "notes": null,
+    "uploads": [
+      "https://drive.google.com/open?id=1TUiPdTAz06ZZiHxqJ_5lanDx7EW_k1yK",
+      "https://drive.google.com/open?id=10w0EVAaNkrXPosbrM9No0VuNRVcb5vNg",
+      "https://drive.google.com/open?id=1fPkDo1BfquNaw1DtnEtwezDC5Hou9HjJ",
+      "https://drive.google.com/open?id=1LbpYcDUASimqZ9PU_YmX_O_Cp_XJcWAr",
+      "https://drive.google.com/open?id=1zKfh1LkCQckXuc29m33ErzGze-YU6Ltz",
+      "https://drive.google.com/open?id=197Bh9G0xHsHwhd9AB_eRqv7w26wkmq0-",
+      "https://drive.google.com/open?id=1e22faI-3kepNnuOTabesSK0N7mKsa3SS"
+    ],
+    "submittedAt": "2026-09-25T19:05:39"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder."
+  ]
+}

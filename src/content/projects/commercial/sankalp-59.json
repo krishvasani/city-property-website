@@ -1,0 +1,152 @@
+{
+  "slug": "sankalp-59",
+  "name": "Sankalp 59",
+  "developer": "Sankalp Realty",
+  "address": "Umiya Dham Road, SG Highway, Ahmedabad, Gujarat 382501",
+  "localitySlug": "vaishnodevi-circle",
+  "localityName": "Vaishnodevi Circle",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.141959,
+    "lng": 72.542678
+  },
+  "rera": "PR/GJ/GANDHINAGAR/GANDHINAGAR/Gandhinagar Municipal Corporation/CAA14678/A2C/040826/310328",
+  "reraNote": null,
+  "projectType": "mixed-use",
+  "projectTypeLabel": "Mixed use",
+  "status": "Under Construction",
+  "possession": "2027-06-01",
+  "floors": "G+12",
+  "totalUnits": "128",
+  "lifts": 9,
+  "basements": 3,
+  "landArea": "5,200 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "Pantry Provision",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking"
+  ],
+  "floorMix": [
+    {
+      "floor": "Ground",
+      "use": "Retail",
+      "unitsPerFloor": "21",
+      "carpet": "460 – 1,050 sq ft",
+      "sbu": "919 – 2,100 sq ft",
+      "ceiling": "14 ft"
+    },
+    {
+      "floor": "1",
+      "use": "Retail",
+      "unitsPerFloor": "19",
+      "carpet": "460 – 1,450 sq ft",
+      "sbu": "919 – 2,892 sq ft",
+      "ceiling": "13 ft"
+    },
+    {
+      "floor": "2 to 3",
+      "use": "Retail",
+      "unitsPerFloor": "19",
+      "carpet": "460 – 1,450 sq ft",
+      "sbu": "919 – 2,892 sq ft",
+      "ceiling": "13 ft"
+    },
+    {
+      "floor": "4 to 5",
+      "use": "Office",
+      "unitsPerFloor": "23",
+      "carpet": "460 – 1,450 sq ft",
+      "sbu": "750 – 3,192 sq ft",
+      "ceiling": "10 ft"
+    },
+    {
+      "floor": "4 to 5",
+      "use": "Office",
+      "unitsPerFloor": "23",
+      "carpet": "460 – 1,600 sq ft",
+      "sbu": "750 – 3,192 sq ft",
+      "ceiling": "10 ft"
+    },
+    {
+      "floor": "6 to 7",
+      "use": "Office + terrace",
+      "unitsPerFloor": "22",
+      "carpet": "400 – 1,150 sq ft",
+      "sbu": "756 – 2,295 sq ft",
+      "ceiling": "10 ft"
+    },
+    {
+      "floor": "8 to 10",
+      "use": "Office + terrace",
+      "unitsPerFloor": "20",
+      "carpet": "330 – 1,110 sq ft",
+      "sbu": "630 – 2,221 sq ft",
+      "ceiling": "10 ft"
+    },
+    {
+      "floor": "11 to 12",
+      "use": "Office + terrace",
+      "unitsPerFloor": "20",
+      "carpet": "270 – 690 sq ft",
+      "sbu": "526 – 1,380 sq ft",
+      "ceiling": "10 ft"
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices",
+        "regular": 7000
+      }
+    ],
+    "retailByFloor": [
+      {
+        "floor": "G",
+        "dp": 20000,
+        "note": "Internal road ₹18,000 per sq ft"
+      },
+      {
+        "floor": "1",
+        "dp": 17000,
+        "note": "Internal road ₹15,000 per sq ft"
+      },
+      {
+        "floor": "2",
+        "dp": 15000,
+        "note": "Internal road ₹13,000 per sq ft"
+      }
+    ],
+    "retailDpNote": "Rates shown are for main-road frontage; the internal-road rate is given alongside each.",
+    "extraCharges": "₹950 per sq ft",
+    "floorRise": null
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "chetanm080@gmail.com",
+    "developerSalesContact": "Namrata",
+    "developerSalesPhone": "9978050000",
+    "notes": null,
+    "uploads": [
+      "https://drive.google.com/open?id=1IwYiUWDFKSBBVPt0_5LhBrQK385b5G3M"
+    ],
+    "submittedAt": "2026-09-26T13:04:12"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder."
+  ]
+}

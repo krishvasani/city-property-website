@@ -1,0 +1,148 @@
+{
+  "slug": "sakar-three",
+  "name": "Sakar Three",
+  "developer": "Bakeri & Sanidhya Group",
+  "address": "SV Desai Marg, Vasant Vihar, University Area, Ahmedabad, Gujarat 380009",
+  "localitySlug": "university-area",
+  "localityName": "University Area",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.035117,
+    "lng": 72.55502
+  },
+  "rera": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/Ahmedabad Municipal Corporation/CAA17262/170826/311229",
+  "reraNote": null,
+  "projectType": "mixed-use",
+  "projectTypeLabel": "Mixed use",
+  "status": "Under Construction",
+  "possession": "2029-12-31",
+  "floors": "G+6",
+  "totalUnits": "24 SHOPS, 52 OFFICES",
+  "lifts": 5,
+  "basements": 2,
+  "landArea": "4,840 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "BU Permission",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "Ground",
+      "use": "Shops",
+      "unitsPerFloor": "8",
+      "carpet": "900 – 1,550 sq ft",
+      "sbu": "1,620 – 2,775 sq ft",
+      "ceiling": "15 ft"
+    },
+    {
+      "floor": "1",
+      "use": "Shops",
+      "unitsPerFloor": "8",
+      "carpet": "750 – 1,510 sq ft",
+      "sbu": "1,355 – 2,745 sq ft",
+      "ceiling": "15 ft"
+    },
+    {
+      "floor": "2",
+      "use": "Shops",
+      "unitsPerFloor": "4",
+      "carpet": "2,355 – 3,010 sq ft",
+      "sbu": "4,280 – 5,470 sq ft",
+      "ceiling": "15 ft"
+    },
+    {
+      "floor": "3",
+      "use": "Shops",
+      "unitsPerFloor": "4",
+      "carpet": "2,355 – 3,010 sq ft",
+      "sbu": "4,280 – 5,470 sq ft",
+      "ceiling": "15 ft"
+    },
+    {
+      "floor": "4 & 5",
+      "use": "Offices",
+      "unitsPerFloor": "19",
+      "carpet": "290 – 370 sq ft",
+      "sbu": "540 – 680 sq ft",
+      "ceiling": "13 ft"
+    },
+    {
+      "floor": "6",
+      "use": "Offices",
+      "unitsPerFloor": "14",
+      "carpet": "290 – 370 sq ft",
+      "sbu": "540 – 680 sq ft",
+      "ceiling": "13 ft"
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices",
+        "regular": 8000,
+        "dp": 7000
+      }
+    ],
+    "retailByFloor": [
+      {
+        "floor": "G",
+        "dp": 28000
+      },
+      {
+        "floor": "1",
+        "dp": 21000
+      },
+      {
+        "floor": "2",
+        "dp": 10000
+      },
+      {
+        "floor": "3",
+        "dp": 8500
+      }
+    ],
+    "retailDpNote": null,
+    "extraCharges": "₹1,100 per sq ft package all inclusive; ₹3.50 per sq ft running maintenance for 2 years; maintenance deposit ₹100 for offices and ₹200 for retail",
+    "floorRise": null
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "cityproperties09@gmail.com",
+    "developerSalesContact": "Rytham Patel",
+    "developerSalesPhone": "9033466155",
+    "notes": "dp 3 months clear",
+    "uploads": [
+      "https://drive.google.com/open?id=1fiuVn-UI4EbrcNEHAtr_bdWWZSIWLnWZ",
+      "https://drive.google.com/open?id=1eXvbCDhwhlPgjvPi0S4O9_uXmUEhbU4Y",
+      "https://drive.google.com/open?id=1hUsc6-qeMgWeEjsq358i6Na58PRJ4SSX",
+      "https://drive.google.com/open?id=1QfvrV2ZpVlPjQSCY5zRzlj7-9w19bmwk",
+      "https://drive.google.com/open?id=1ILJ-q8YH9eC_uhvG_4HIPGRIFH5Qt18k",
+      "https://drive.google.com/open?id=1jb6V-1LEIA0z1nVDe9AS0KTpHKjJhZdl"
+    ],
+    "submittedAt": "2026-09-26T11:26:54"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder."
+  ]
+}

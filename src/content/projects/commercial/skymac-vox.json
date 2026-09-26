@@ -1,0 +1,148 @@
+{
+  "slug": "skymac-vox",
+  "name": "Skymac Vox",
+  "developer": "Sky Mac Group",
+  "address": "Sindhu Bhavan Marg, opposite Taj Skyline, PRL Colony, Thaltej, Ahmedabad, Gujarat 380059",
+  "localitySlug": "sindhu-bhavan-road",
+  "localityName": "Sindhu Bhavan Road",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.042974,
+    "lng": 72.482001
+  },
+  "rera": "Ahmedabad Municipal Corporation/CAA16972/080626/310331",
+  "reraNote": null,
+  "projectType": "mixed-use",
+  "projectTypeLabel": "Mixed use",
+  "status": "Under Construction",
+  "possession": "2031-03-31",
+  "floors": "G+19",
+  "totalUnits": "25 SHOWROOMS, 8 CORPORATE OFFICES, 28 PREMIUM OFFICES",
+  "lifts": 8,
+  "basements": 4,
+  "landArea": "4,400 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "BU Permission",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "Ground",
+      "use": "Shop/showoom",
+      "unitsPerFloor": "7",
+      "carpet": "1,240 – 1,755 sq ft",
+      "sbu": "2,255 – 3,190 sq ft",
+      "ceiling": "14 ft"
+    },
+    {
+      "floor": "1, 2",
+      "use": "Shop/showoom",
+      "unitsPerFloor": "9",
+      "carpet": "860 – 1,755 sq ft",
+      "sbu": "1,562 – 3,190 sq ft",
+      "ceiling": "14 ft"
+    },
+    {
+      "floor": "3 to 11",
+      "use": "Hotel",
+      "unitsPerFloor": null,
+      "carpet": null,
+      "sbu": null,
+      "ceiling": null
+    },
+    {
+      "floor": "12 to 17",
+      "use": "Offices",
+      "unitsPerFloor": "8",
+      "carpet": "1,175 – 1,930 sq ft",
+      "sbu": "2,133 – 3,505 sq ft",
+      "ceiling": "11.5 ft"
+    },
+    {
+      "floor": "18",
+      "use": "Corporate offices",
+      "unitsPerFloor": "4",
+      "carpet": "1,285 – 3,660 sq ft",
+      "sbu": "5,000 – 6,655 sq ft",
+      "ceiling": "11.5 ft"
+    },
+    {
+      "floor": "19",
+      "use": "Corporate offices",
+      "unitsPerFloor": "5",
+      "carpet": "425 – 2,520 sq ft",
+      "sbu": "770 – 4,580 sq ft",
+      "ceiling": "11.5 ft"
+    }
+  ],
+  "pricing": {
+    "office": [
+      {
+        "label": "Offices",
+        "regular": 11000,
+        "dp": 8500
+      }
+    ],
+    "retailByFloor": [
+      {
+        "floor": "G",
+        "regular": 28000,
+        "dp": 28000
+      },
+      {
+        "floor": "1",
+        "regular": 21000,
+        "dp": 16500
+      },
+      {
+        "floor": "2",
+        "regular": 17500,
+        "dp": 13500
+      }
+    ],
+    "retailDpNote": null,
+    "extraCharges": "₹1,400 per sq ft package, including an allotted car park",
+    "floorRise": "₹100 per sq ft per floor from the 14th"
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "cityproperties09@gmail.com",
+    "developerSalesContact": "Diya",
+    "developerSalesPhone": "9099519985",
+    "notes": "dp 2-3 months clear & rg - 30% construction\n5 - 10 % retail as per build",
+    "uploads": [
+      "https://drive.google.com/open?id=1cdCgpt62uxfWPDT0qI0Ieg-10Z7zDknQ",
+      "https://drive.google.com/open?id=1l3xo5mr5dU_S49vN21233xnAg4nDpchP",
+      "https://drive.google.com/open?id=1s15RAFCRyFgLCjc57h6PFcHzwW88DZW_",
+      "https://drive.google.com/open?id=1uyIyXbC5iIjuN5Bgnl4Kpalt8W2Xdy7-",
+      "https://drive.google.com/open?id=1vLpv4VXlsk1BqbeC32wlu1WKM9pcaYQg",
+      "https://drive.google.com/open?id=1gkYTlCyArUlCu2eX1ZR_ajBHB-s9QZxb"
+    ],
+    "submittedAt": "2026-09-26T12:43:57"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder.",
+    "The RERA registration is submitted without the usual PR/GJ/... prefix. Verify the full number on the Gujarat RERA portal."
+  ]
+}

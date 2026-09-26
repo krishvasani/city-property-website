@@ -1,0 +1,99 @@
+{
+  "slug": "palak-estrella",
+  "name": "Palak Estrella",
+  "developer": "Palak Group",
+  "address": "Opposite Swati Senor, Ambli bus stand, Iscon–Ambli Road, Ambli, Ahmedabad 380058",
+  "localitySlug": "ambli",
+  "localityName": "Ambli",
+  "city": "Ahmedabad",
+  "geo": {
+    "lat": 23.027009,
+    "lng": 72.484285
+  },
+  "rera": "PR/GJ/AHMEDABAD/AHMEDABAD CITY/Ahmedabad Municipal Corporation/CAA13285/080424/310329",
+  "reraNote": null,
+  "projectType": "office",
+  "projectTypeLabel": "Office",
+  "status": "Under Construction",
+  "possession": "2027-12-26",
+  "floors": "G+21",
+  "totalUnits": "336",
+  "lifts": 12,
+  "basements": 7,
+  "landArea": "6,100 sq yards",
+  "amenities": [
+    "24 Hour Water Supply",
+    "24x7 Security",
+    "Allotted Parking",
+    "Basement Parking",
+    "BU Permission",
+    "CCTV Surveillance",
+    "Central AC / AC Provision",
+    "Fire Fighting Systems",
+    "Fire NOC",
+    "Glass Facade",
+    "Grand Entrance Lobby",
+    "High Speed Internet Connectivity",
+    "Pantry Provision",
+    "Passenger Lifts",
+    "Power Backup",
+    "RERA Registered",
+    "Service / Goods Lift",
+    "Vastu Compliant",
+    "Visitor Parking",
+    "Washrooms on Each Floor"
+  ],
+  "floorMix": [
+    {
+      "floor": "1 to 21 A Block",
+      "use": "Offices",
+      "unitsPerFloor": "7",
+      "carpet": "900 – 2,900 sq ft",
+      "sbu": "1,640 – 5,265 sq ft",
+      "ceiling": null
+    },
+    {
+      "floor": "1 to 21 B Block",
+      "use": "Offices",
+      "unitsPerFloor": "9",
+      "carpet": "725 – 1,250 sq ft",
+      "sbu": "1,315 – 2,270 sq ft",
+      "ceiling": null
+    }
+  ],
+  "pricing": {
+    "office": [],
+    "retailByFloor": [],
+    "retailDpNote": null,
+    "extraCharges": "₹1,222 per sq ft package all inclusive, car parking included",
+    "floorRise": "₹50 per sq ft from the 6th floor"
+  },
+  "priceAsOf": "2026-09-24",
+  "priceSource": "Developer sales team, via the City Property Services project intake form, 24 September 2026",
+  "photos": [],
+  "photoLabels": [],
+  "brochure": null,
+  "internal": {
+    "submittedBy": "cityproperties09@gmail.com",
+    "developerSalesContact": "Kinjalben",
+    "developerSalesPhone": "9099965887",
+    "notes": "at booking 30% & rest 5%",
+    "uploads": [
+      "https://drive.google.com/open?id=1D3Nc19m-zL-rxyfaHgTT7bPHUrRdefh1",
+      "https://drive.google.com/open?id=1W61aKaIJpmVvu7lM621vs_aSGTSr8P5k",
+      "https://drive.google.com/open?id=1DPZ4Sxb83L8ufnwGs_-GDQ5mapjVmBxi",
+      "https://drive.google.com/open?id=1-McDY2fuu49OzJxOdGRHYX4z8oSW6DgA",
+      "https://drive.google.com/open?id=1Ns_VfxztD3zMSnP7KynqHJl4PxcVaXn8",
+      "https://drive.google.com/open?id=1BDnCWfXM3C43KYooYx_2VuhoJEdnNrro",
+      "https://drive.google.com/open?id=1pWTtQ2rsj0NaOqXuVl6U3QYJTlO32pkz",
+      "https://drive.google.com/open?id=1D7UQhqPzm5QWwGQ8WhrNG4excNAOX5K8",
+      "https://drive.google.com/open?id=1H8q-c92ubevXb6zyaQU5UFRAawYCJCr5",
+      "https://drive.google.com/open?id=1vmNNaFdRDW3iASQbzTrS_tc2etyAXtOv"
+    ],
+    "submittedAt": "2026-09-26T17:39:40"
+  },
+  "dataGaps": [
+    "No photographs yet — the submitted images sit in a private Google Drive folder.",
+    "Office rates were submitted as \"00\". No rate is published; ask the developer for the current rate card."
+  ]
+}
